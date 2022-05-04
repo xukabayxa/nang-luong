@@ -106,19 +106,19 @@
             <div class="uk-width-1-1 uk-width-auto@m uk-text-center uk-text-left@m uk-style-secondary uk-text-faded uk-text-14 uk-lh-15">
                 <div class="uk-display-inline-block uk-footer-items">
 											<span class="uk-margin-right uk-footer-item">
-							<a href="https://www.agpgroup.com/privacy-policy/">
+							<a href="{{route('front.policy')}}">
 								Privacy Policy							</a>
 						</span>
                     <span class="uk-margin-right uk-footer-item">
-							<a href="https://www.agpgroup.com/terms-of-use/">
+							<a href="{{route('front.policy')}}">
 								Terms of Use							</a>
 						</span>
                     <span class="uk-margin-right uk-footer-item">
-							<a href="https://www.agpgroup.com/cookie-policy/">
+							<a href="{{route('front.policy')}}">
 								Cookie Policy							</a>
 						</span>
                     <span class="uk-margin-right uk-footer-item">
-							<a href="https://www.agpgroup.com/sitemap/">
+							<a href="{{route('front.sitemap')}}/">
 								Sitemap							</a>
 						</span>
                 </div>

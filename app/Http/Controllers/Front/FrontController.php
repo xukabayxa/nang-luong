@@ -484,18 +484,19 @@ class FrontController extends Controller
         return view('site.insights');
     }
 
+    public function sitemap()
+    {
+        return view('site.sitemap');
+    }
+
+    public function policy()
+    {
+        return view('site.cookie-policy');
+    }
+
     public function post()
     {
         return view('site.news_detail');
-    }
-
-    public function policy(Request $request, $id)
-    {
-        // cho mobile
-        $bannersRight = Banner::query()->where(['position' => 'right'])->latest()->limit(3)->get();
-        $policy = Policy::query()->where('status', true)->find($id);
-
-        return view($this->view . '.policy', compact('policy', 'bannersRight'));
     }
 
     public function contact(Request $request)

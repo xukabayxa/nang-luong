@@ -36,6 +36,8 @@ Route::group(['namespace' => 'Front'], function () {
 
     Route::get('/global-reach','FrontController@globalReach')->name('front.globalReach');
     Route::get('/insights','FrontController@insights')->name('front.insights');
+    Route::get('/sitemap','FrontController@sitemap')->name('front.sitemap');
+    Route::get('/cookie-policy','FrontController@policy')->name('front.policy');
     Route::get('/post','FrontController@post')->name('front.post');
 
 });
