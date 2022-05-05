@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Front'], function () {
+Route::group(['namespace' => 'Front', 'middleware' => 'locale'], function () {
     Route::get('/gio-hang','CartController@index')->name('cart');
     Route::post('/{productId}/add-product-to-cart','CartController@addItem')->name('cart.add.item');
     Route::get('/remove-product-to-cart','CartController@removeItem')->name('cart.remove.item');
@@ -39,6 +39,8 @@ Route::group(['namespace' => 'Front'], function () {
     Route::get('/sitemap','FrontController@sitemap')->name('front.sitemap');
     Route::get('/cookie-policy','FrontController@policy')->name('front.policy');
     Route::get('/post','FrontController@post')->name('front.post');
+
+    Route::get('change-language/{language}', 'FrontController@changeLanguage')->name('front.change-language');
 
 });
 

@@ -17,36 +17,38 @@
                     uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 150;">
                     Latest Insights & Press
                 </h1>
+
                 <div uk-grid class="uk-grid uk-grid-xmedium">
+                    @foreach($posts->take(1) as $post)
                     <div class="uk-width-2-3@m uk-feat-article" uk-scrollspy="cls: uk-animation-fade; delay: 350;">
                         <div class="uk-cover-container">
-                            <a href="https://www.agpgroup.com/insights/agp-sustainable-real-assets-and-hartree-partners-announce-us-expansion-of-global-solar-partnership/">
+                            <a href="">
                                 <canvas width="1000" height="662"></canvas>
-                                <img data-src="https://media.agpgroup.com/uploads/2022/03/SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale.option=fill&cw=1024&ch=384&cx=center&cy=center"
+                                <img data-src="{{$post->image->path}}"
                                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                      class=" Sirv uk-utility-object-fit-cover "
                                      alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
                                      title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"/> </a>
                         </div>
+
                         <div class="uk-flex@s uk-flex-between uk-flex-middle uk-margin">
                             <div class="uk-style-primary-m uk-text-4 uk-text-lh-4 uk-width-2-3@m uk-width-1-1">
                                 <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-margin-small-bottom uk-hidden@s">
                                     22.03.22 </h6>
                                 <a href="https://www.agpgroup.com/insights/agp-sustainable-real-assets-and-hartree-partners-announce-us-expansion-of-global-solar-partnership/"
                                    class="uk-color-dark">
-                                    AGP Sustainable Real Assets and Hartree Partners Announce US Expansion
-                                    of&hellip; </a>
+                                    {{$post->name}}</a>
                             </div>
                             <div class="uk-text-right@s uk-width-expand@m">
                                 <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-visible@s">
                                     22.03.22 </h6>
                                 <p class="uk-style-primary-l uk-text-11 uk-text-lh-1">
-                                    [New York, 22nd March 2022] AGP Sustainable Real Assets Pte Ltd (AGP) and Hartree
-                                    Partners, LP (Hartree) today announce the launch of AMPYR Energy USA, the second
-                                    joint venture between the two organizations in just&hellip; </p>
+                                    {{$post->intro}}</p>
                             </div>
                         </div>
                     </div>
+                    @endforeach
+
                     <div class="uk-width-expand@m">
                         <div class="uk-grid" uk-grid>
                             <div class="uk-feat-article uk-width-1-1@m uk-width-1-2@s"

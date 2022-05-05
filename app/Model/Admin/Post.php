@@ -11,6 +11,9 @@ use DB;
 use App\Model\Common\Notification;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
+use Symfony\Contracts\Translation\TranslatableInterface;
+use Astrotomic\Translatable\Contracts\Translatable as TranslatableContract;
+use Astrotomic\Translatable\Translatable;
 
 class Post extends BaseModel
 {

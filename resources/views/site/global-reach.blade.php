@@ -11,6 +11,29 @@
 
     <!-- <span></span> -->
     <section id="sozo-main">
+        <div class="uk-section uk-background-dark uk-position-relative uk-overflow-hidden">
+            <div class="uk-container">
+                <div class="uk-position-map-bg uk-hidden@s">
+                    <img src="https://www.agpgroup.com/app/themes/sozo/public/images/map-no-labels.svg">
+                </div>
+                <div class="uk-background-wash-map uk-position-cover uk-hidden@s"></div>
+                <p class="uk-light uk-margin-remove-top@s uk-margin-small-bottom uk-style-primary-l uk-text-3 uk-text-lh-4 uk-text-center"
+                   uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">Our global expertise</p>
+                <div class="uk-hidden@s uk-text-center uk-margin-medium-bottom"
+                     uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">
+                    <a class="uk-button uk-color-tertiary uk-style-secondary-b "
+                       href="https://www.agpgroup.com/contact/">
+                        <span class="uk-color-tertiary uk-text-middle uk-margin-right">see our office locations</span>
+                        <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
+                              uk-icon="icon: button-circle; ratio: 1"></span>
+                    </a>
+                </div>
+                <img class="uk-visible@s"
+                     src="https://media.agpgroup.com/uploads/2022/03/global-expertise-map-31-03-22.png"
+                     uk-scrollspy="cls: uk-animation-fade; delay: 400;">
+            </div>
+        </div>
+
         <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
 
             <div class="uk-position-cover">
@@ -56,8 +79,6 @@
         </div>
 
         <div class="uk-position-relative uk-background-dark uk-light  ">
-
-
             <div class=" uk-container   uk-section uk-padding-navbar-top"
                  uk-scrollspy="target: .uk-animation-parent; cls: uk-animation-fade; delay: 250; repeat: true;">
 
@@ -102,28 +123,6 @@
 
         </div>
 
-        <div class="uk-section uk-background-dark uk-position-relative uk-overflow-hidden">
-            <div class="uk-container">
-                <div class="uk-position-map-bg uk-hidden@s">
-                    <img src="https://www.agpgroup.com/app/themes/sozo/public/images/map-no-labels.svg">
-                </div>
-                <div class="uk-background-wash-map uk-position-cover uk-hidden@s"></div>
-                <p class="uk-light uk-margin-remove-top@s uk-margin-small-bottom uk-style-primary-l uk-text-3 uk-text-lh-4 uk-text-center"
-                   uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">Our global expertise</p>
-                <div class="uk-hidden@s uk-text-center uk-margin-medium-bottom"
-                     uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">
-                    <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                       href="https://www.agpgroup.com/contact/">
-                        <span class="uk-color-tertiary uk-text-middle uk-margin-right">see our office locations</span>
-                        <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
-                              uk-icon="icon: button-circle; ratio: 1"></span>
-                    </a>
-                </div>
-                <img class="uk-visible@s"
-                     src="https://media.agpgroup.com/uploads/2022/03/global-expertise-map-31-03-22.png"
-                     uk-scrollspy="cls: uk-animation-fade; delay: 400;">
-            </div>
-        </div>
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>

@@ -27,7 +27,8 @@
                 cate_id: this.cate_id,
                 intro: this.intro,
                 body: this.body,
-                status: this.status
+                status: this.status,
+                language_id: this.language_id,
             }
 
             data = jsonToFormData(data);

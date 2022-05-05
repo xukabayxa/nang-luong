@@ -58,21 +58,22 @@
                 <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
                     <div class="uk-width-2xmedium uk-position-z-index">
                         <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            Partner
+                            SP GROUP
                             <span class="uk-style-line teal thick"></span>
                         </div>
                         <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            Josh Carmody </h4>
-                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
-                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
-                                <a href="https://au.linkedin.com/in/josh-carmody-35b30413" target="_blank"
-                                   rel="noreferrer">
-                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
-                                </a>
-                            </div>
-                            <img src="https://media.agpgroup.com/uploads/2021/09/australia-flag-circle.png?h=4096"
-                                 class="uk-display-inline uk-width-flag" width="50" height="50">
-                        </div>
+                            <img src="/site/system/partner/img.png" style="width: auto; max-height: 120px">
+                           </h4>
+{{--                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">--}}
+{{--                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">--}}
+{{--                                <a href="https://au.linkedin.com/in/josh-carmody-35b30413" target="_blank"--}}
+{{--                                   rel="noreferrer">--}}
+{{--                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                            <img src="https://media.agpgroup.com/uploads/2021/09/australia-flag-circle.png?h=4096"--}}
+{{--                                 class="uk-display-inline uk-width-flag" width="50" height="50">--}}
+{{--                        </div>--}}
                     </div>
                     <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-teal"
                           uk-icon="icon: half-circle; ratio: 1"></span>
@@ -84,21 +85,10 @@
                             <span class="uk-style-line orange thick"></span>
                         </div>
                         <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            Ben Salmon </h4>
-                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
-                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
-                                <a href="https://in.linkedin.com/in/ben-salmon-b9205533" target="_blank"
-                                   rel="noreferrer">
-                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
-                                </a>
-                            </div>
-                            <img src="https://media.agpgroup.com/uploads/2021/09/australia-flag-circle.png?h=4096"
-                                 class="uk-display-inline uk-width-flag" width="50" height="50">
-                            <img src="https://media.agpgroup.com/uploads/2021/09/india-flag-circle.png?h=4096"
-                                 class="uk-display-inline uk-width-flag uk-margin-xsmall-left" width="50" height="50">
-                            <img src="https://media.agpgroup.com/uploads/2021/09/singapore-flag-circle-outline.png"
-                                 class="uk-display-inline uk-width-flag uk-margin-xsmall-left" width="50" height="50">
-                        </div>
+                            <img src="/site/system/partner/img_1.png" style="width: auto; max-height: 120px">
+
+                        </h4>
+
                     </div>
                     <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-orange"
                           uk-icon="icon: half-circle; ratio: 1"></span>
@@ -110,17 +100,8 @@
                             <span class="uk-style-line orange thick"></span>
                         </div>
                         <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            Rajpal Singh Chaudhary </h4>
-                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
-                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
-                                <a href="https://sg.linkedin.com/in/rajpal-singh-chaudhary-979a25204" target="_blank"
-                                   rel="noreferrer">
-                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
-                                </a>
-                            </div>
-                            <img src="https://media.agpgroup.com/uploads/2021/09/singapore-flag-circle-outline.png"
-                                 class="uk-display-inline uk-width-flag" width="50" height="50">
-                        </div>
+                            <img src="/site/system/partner/img_2.png" style="width: auto; max-height: 120px">
+                        </h4>
                     </div>
                     <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-orange"
                           uk-icon="icon: half-circle; ratio: 1"></span>
@@ -132,17 +113,8 @@
                             <span class="uk-style-line teal thick"></span>
                         </div>
                         <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            Andrew Gould </h4>
-                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
-                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
-                                <a href="https://uk.linkedin.com/in/andrew-gould-29194995" target="_blank"
-                                   rel="noreferrer">
-                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
-                                </a>
-                            </div>
-                            <img src="https://media.agpgroup.com/uploads/2021/09/united-kingdom-flag-circle.png"
-                                 class="uk-display-inline uk-width-flag" width="50" height="50">
-                        </div>
+                            <img src="/site/system/partner/img_3.png" style="width: auto; max-height: 140px">
+                        </h4>
                     </div>
                     <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-teal"
                           uk-icon="icon: half-circle; ratio: 1"></span>
@@ -167,118 +139,6 @@
                         </div>
                     </div>
                     <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-orange"
-                          uk-icon="icon: half-circle; ratio: 1"></span>
-                </div>
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
-                    <div class="uk-width-2xmedium uk-position-z-index">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            Partner
-                            <span class="uk-style-line red thick"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            Rajesh Gathala </h4>
-                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
-                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
-                                <a href="https://ch.linkedin.com/in/gathala" target="_blank" rel="noreferrer">
-                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
-                                </a>
-                            </div>
-                            <img src="https://media.agpgroup.com/uploads/2021/09/europe-flag-circle.png"
-                                 class="uk-display-inline uk-width-flag" width="50" height="50">
-                        </div>
-                    </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-red"
-                          uk-icon="icon: half-circle; ratio: 1"></span>
-                </div>
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
-                    <div class="uk-width-2xmedium uk-position-z-index">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            Partner
-                            <span class="uk-style-line teal thick"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            Yongbin Chen </h4>
-                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
-                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
-                                <a href="https://sg.linkedin.com/in/yongbin-chen-495825204?trk=public_profile_browsemap_profile-result-card_result-card_full-click"
-                                   target="_blank" rel="noreferrer">
-                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
-                                </a>
-                            </div>
-                            <img src="https://media.agpgroup.com/uploads/2021/09/singapore-flag-circle-outline.png"
-                                 class="uk-display-inline uk-width-flag" width="50" height="50">
-                        </div>
-                    </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-teal"
-                          uk-icon="icon: half-circle; ratio: 1"></span>
-                </div>
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
-                    <div class="uk-width-2xmedium uk-position-z-index">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            Partner
-                            <span class="uk-style-line orange thick"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            Ashootosh Sharma </h4>
-                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
-                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
-                                <a href="https://in.linkedin.com/in/ashootosh" target="_blank" rel="noreferrer">
-                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
-                                </a>
-                            </div>
-                            <img src="https://media.agpgroup.com/uploads/2021/09/india-flag-circle.png?h=4096"
-                                 class="uk-display-inline uk-width-flag" width="50" height="50">
-                        </div>
-                    </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-orange"
-                          uk-icon="icon: half-circle; ratio: 1"></span>
-                </div>
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
-                    <div class="uk-width-2xmedium uk-position-z-index">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            Partner
-                            <span class="uk-style-line red thick"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            Saurabh Beniwal </h4>
-                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
-                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
-                                <a href="https://www.linkedin.com/in/saurabh-beniwal-a34844/?originalSubdomain=sg"
-                                   target="_blank" rel="noreferrer">
-                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
-                                </a>
-                            </div>
-                            <img src="https://media.agpgroup.com/uploads/2021/09/singapore-flag-circle-outline.png"
-                                 class="uk-display-inline uk-width-flag" width="50" height="50">
-                            <img src="https://media.agpgroup.com/uploads/2022/02/usa-flag.png"
-                                 class="uk-display-inline uk-width-flag uk-margin-xsmall-left" width="50" height="50">
-                        </div>
-                    </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-red"
-                          uk-icon="icon: half-circle; ratio: 1"></span>
-                </div>
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
-                    <div class="uk-width-2xmedium uk-position-z-index">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            Partner
-                            <span class="uk-style-line teal thick"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            Tarun Agarwal </h4>
-                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
-                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
-                                <a href="https://www.linkedin.com/in/tarunagrawal/?originalSubdomain=in" target="_blank"
-                                   rel="noreferrer">
-                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
-                                </a>
-                            </div>
-                            <img src="https://media.agpgroup.com/uploads/2021/09/india-flag-circle.png?h=4096"
-                                 class="uk-display-inline uk-width-flag" width="50" height="50">
-                            <img src="https://media.agpgroup.com/uploads/2021/09/europe-flag-circle.png"
-                                 class="uk-display-inline uk-width-flag uk-margin-xsmall-left" width="50" height="50">
-                        </div>
-                    </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-teal"
                           uk-icon="icon: half-circle; ratio: 1"></span>
                 </div>
             </div>

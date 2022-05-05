@@ -13,7 +13,7 @@
 </div>
 
 <script type="text/javascript" src="/site/js/jquery-3.4.1.min.js"></script>
-<script src="/site/js/app-oyz5et.js" defer="defer" type="text/javascript"></script>
+<script src="/site/js/script.js" defer="defer" type="text/javascript"></script>
 <script>
     /* This JavaScript is used for different helper functions, such as Sirv object updates with Ajax. */
 
@@ -66,5 +66,12 @@
 
 @stack('scripts')
 
+<script>
+    $(".lang").on("click",function(){
+
+        $(".choise-lang").toggle()
+
+    });
+</script>
 </body>
 </html>

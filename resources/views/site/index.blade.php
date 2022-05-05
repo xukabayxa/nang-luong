@@ -19,13 +19,15 @@
             <div class="uk-position-cover">
                 <div class="uk-cover-container">
                     <video uk-cover loop muted playsinline uk-video="autoplay: inview">
-                        <source src="https://www.agpgroup.com/app/uploads/2021/06/agp-homepage-video-v2-optim-1.mp4"
+{{--                        <source src="https://www.agpgroup.com/app/uploads/2021/06/agp-homepage-video-v2-optim-1.mp4"--}}
+{{--                                type="video/mp4">--}}
+                        <source src="/site/system/video.mp4"
                                 type="video/mp4">
                     </video>
                     <canvas width="1600" height="900"></canvas>
                 </div>
-
             </div>
+
             <div class="uk-background-gradient uk-position-cover"></div>
             <div class="uk-background-gradient-rev uk-position-cover"></div>
 
@@ -103,24 +105,25 @@
         <div class="uk-margin-top uk-margin-left uk-margin-right uk-margin-bottom uk-section-investments">
             <div class="uk-grid-collapse uk-child-width-expand@m" uk-grid
                  uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 400;">
+
                 <div class="uk-text-left uk-mega-menu-item items-1">
-                    <a href="https://www.agpgroup.com/investments/renewable-energy/" class="uk-animation-zoom">
-                        <div class="uk-cover-container uk-height-xlarge">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/04/b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled.jpg"
+                    <a href="{{route('front.investments1')}}" class="uk-animation-zoom">
+                        <div class="uk-cover-container ">
+                            <img data-src="/site/system/inves/i1.jpg"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"
                                  title="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"/>
-                            <canvas width="1600" height="720"></canvas>
+                            <canvas width="533.33333333333" height="720"></canvas>
                             <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
                         </div>
                         <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                             <div class="uk-position-bottom uk-padding-xmedium">
                                 <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                    RENEWABLE ENERGY</h4>
+                                    {{trans('message.renewable_energy')}}</h4>
                                 <a class="uk-button uk-color-primary uk-style-secondary-b "
-                                   href="https://www.agpgroup.com/investments/renewable-energy/">
-                                    <span class="uk-color-primary uk-text-middle uk-margin-right">Find out more</span>
+                                   href="{{route('front.investments1')}}">
+                                    <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
                                     <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                           uk-icon="icon: button-circle; ratio: 1"></span>
                                 </a>
@@ -128,24 +131,26 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="uk-text-left uk-mega-menu-item items-1">
-                    <a href="https://www.agpgroup.com/investments/sustainable-communities-infrastructure/"
+                    <a href="{{route('front.investments2')}}"
                        class="uk-animation-zoom">
-                        <div class="uk-cover-container uk-height-xlarge">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1156913631-scaled.jpg"
+                        <div class="uk-cover-container ">
+                            <img data-src="/site/system/inves/i2.jpg"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"
                                  title="iStock-1156913631-scaled"/>
-                            <canvas width="1600" height="720"></canvas>
+                            <canvas width="533.33333333333" height="720"></canvas>
                             <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
                         </div>
                         <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                             <div class="uk-position-bottom uk-padding-xmedium">
                                 <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                    SUSTAINABLE COMMUNITIES & INFRASTRUCTURE</h4>
+                                    {{trans('message.sustainable_infrastructure')}}
+                                </h4>
                                 <a class="uk-button uk-color-primary uk-style-secondary-b "
-                                   href="https://www.agpgroup.com/investments/sustainable-communities-infrastructure/">
-                                    <span class="uk-color-primary uk-text-middle uk-margin-right">Find out more</span>
+                                   href="{{route('front.investments2')}}">
+                                    <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
                                     <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                           uk-icon="icon: button-circle; ratio: 1"></span>
                                 </a>
@@ -153,23 +158,26 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="uk-text-left uk-mega-menu-item items-1">
-                    <a href="https://www.agpgroup.com/investments/green-technologies/" class="uk-animation-zoom">
-                        <div class="uk-cover-container uk-height-xlarge">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/green-tech-scaled.jpg"
+                    <a href="{{route('front.investments3')}}"
+                       class="uk-animation-zoom">
+                        <div class="uk-cover-container ">
+                            <img data-src="/site/system/inves/i3.jpg"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"
                                  title="green-tech-scaled"/>
-                            <canvas width="1600" height="720"></canvas>
+                            <canvas width="533.33333333333" height="720"></canvas>
                             <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
                         </div>
                         <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                             <div class="uk-position-bottom uk-padding-xmedium">
                                 <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                    GREEN TECHNOLOGIES</h4>
+                                    {{trans('message.future_solution')}} <br/>
+                                </h4>
                                 <a class="uk-button uk-color-primary uk-style-secondary-b "
-                                   href="https://www.agpgroup.com/investments/green-technologies/">
-                                    <span class="uk-color-primary uk-text-middle uk-margin-right">Find out more</span>
+                                   href="{{route('front.investments3')}}/">
+                                    <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
                                     <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                           uk-icon="icon: button-circle; ratio: 1"></span>
                                 </a>
@@ -330,7 +338,7 @@
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src="https://media.agpgroup.com/uploads/2021/04/cta-bg-scaled.jpg"
+                <img data-src="/site/system/b.jpg"
                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
             <div class="uk-text-center">
@@ -340,7 +348,7 @@
                         Partner with us to generate a positive impact for people and the environment </h4>
                     <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
                         <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                           href="https://www.agpgroup.com/contact/">
+                           href="{{route('front.contact')}}">
                             <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
                             <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
                                   uk-icon="icon: button-circle; ratio: 1"></span>

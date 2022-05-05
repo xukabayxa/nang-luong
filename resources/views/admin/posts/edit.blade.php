@@ -22,7 +22,9 @@ Chỉnh sửa bài viết
 <script>
   app.controller('Post', function ($scope, $http) {
     $scope.form = new Post(@json($object), {scope: $scope});
+    console.log($scope.form);
     $scope.loading = {};
+    $scope.languages = @json(\App\Model\Admin\Language::query()->get());
 
     $scope.submit = function(publish = 0) {
       $scope.loading.submit = true;

@@ -1,41 +1,43 @@
 <div class="uk-navbar-container uk-navbar-transparent uk-padding-xmedium-top uk-padding-xmedium-bottom">
     <nav class="uk-navbar uk-container">
-        <div class="uk-navbar-left">
+        <div class="uk-navbar-left" style="padding-left: 30px">
             <div class="logo" style="margin: 0; font-size: 0;">
-                <a href="{{route('front.home_page')}}" title="Company Name">
-                    <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: logo-dark; ratio: 1;"></span>
+                <a href="{{route('front.home_page')}}" title="RT ENERGY">
+                    <span class="uk-logo uk-icon uk-preserve">
+                        <img src="/site/system/logo.png"  style="width: 188px; height: 140px" alt="RT ENERGY">
+                    </span>
                 </a>
             </div>
         </div>
+
+{{--        phần menu header--}}
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@m">
                 <li class="menu-item-1">
                     <a class="uk-visible@m has-dropdown" href="#offcanvas-1" uk-toggle>
-                        About Us <span class="uk-icon uk-preserve uk-margin-xsmall-left"
+                        {{trans('message.about_menu')}}<span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                        uk-icon="icon: arrow-down-dark; ratio: 0.6"></span>
                     </a>
 
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
-                            <a class="uk-accordion-title" href="#">About Us<span
+                            <a class="uk-accordion-title" href="#">{{trans('message.about_menu')}}<span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down-dark; ratio: 0.6"></span></a>
                             <div class="uk-accordion-content">
                                 <ul>
                                     <li>
-                                        <a href="{{route('front.about')}}">Who We
-                                            Are</a>
+                                        <a href="{{route('front.about')}}">{{trans('message.who_we_are')}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about2')}}">What We
-                                            Do</a>
+                                        <a href="{{route('front.about2')}}">{{trans('message.what_we_do')}}
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about3')}}">UN SDGs</a>
+                                        <a href="{{route('front.about3')}}">{{trans('message.our_team')}}</a>
                                     </li>
                                     <li>
                                         <a href="{{route('front.about4')}}">AGP
-                                            Partners</a>
+                                            {{trans('message.our_partner')}}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -44,7 +46,7 @@
                 </li>
                 <li class="menu-item-2">
                     <a class="uk-visible@m has-dropdown" href="#offcanvas-2" uk-toggle>
-                        Our Investments <span class="uk-icon uk-preserve uk-margin-xsmall-left"
+                        {{trans('message.our_investments_menu')}}<span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                               uk-icon="icon: arrow-down-dark; ratio: 0.6"></span>
                     </a>
 
@@ -77,26 +79,107 @@
                 </li>
                 <li class="menu-item-3">
                     <a class="uk-visible@m " href="{{route('front.globalReach')}}">
-                        Global Reach </a>
+                        {{trans('message.our_global_presence_menu')}} </a>
 
                     <a class="uk-hidden@m" href="{{route('front.globalReach')}}">
-                        Global Reach</a>
+                        {{trans('message.our_global_presence_menu')}}</a>
                 </li>
                 <li class="menu-item-4">
                     <a class="uk-visible@m " href="{{route('front.insights')}}">
-                        Insights </a>
+                        {{trans('message.insights_menu')}} </a>
 
                     <a class="uk-hidden@m" href="{{route('front.insights')}}">
-                        Insights</a>
+                        {{trans('message.insights_menu')}}</a>
                 </li>
+
+                <style>
+                    .lang {
+                        border-left: 1px solid #fff;
+                    }
+                </style>
                 <li class="menu-item-5">
                     <a class="uk-visible@m " href="{{route('front.contact')}}">
-                        Contact </a>
+                        {{trans('message.contact_menu')}} </a>
 
                     <a class="uk-hidden@m" href="{{route('front.contact')}}">
-                        Contact</a>
+                        {{trans('message.contact_menu')}}</a>
                 </li>
             </ul>
+            <style>
+                .lang {
+                    padding-left: 10px;
+                }
+                .lang {
+                    float: right;
+                    margin: 0px;
+                }
+                .lang_box {
+                    border-radius: 4px;
+                    height: 26px;
+                    line-height: 35px;
+                    background-color: transparent;
+                    cursor: pointer;
+                    border: 0px solid #592c7c;
+                    /* width: 66px; */
+                }
+                .select-lang .ddTitleText img {
+                    float: left;
+                    height: 18px;
+                    margin: 4px 6px 0 0;
+                    border-radius: 4px;
+                }
+                img {
+                    vertical-align: middle;
+                }
+                .choise-lang {
+                    background: #fff none repeat scroll 0 0;
+                    border: 1px solid #ccc;
+                    display: block;
+                    position: absolute;
+                    top: 82px;
+                    width: 78px;
+                    z-index: 9999;
+                    display: none;
+                }
+                .choise-lang a:hover, .choise-lang a.selected {
+                    background-color: #e2d8e6;
+                }
+                .choise-lang a {
+                    float: left;
+                    width: 100%;
+                    text-align: center;
+                }
+                .choise-lang a img {
+                    height: 20px;
+                    padding: 0 2px 0 0;
+                    vertical-align: middle;
+                }
+            </style>
+            <div class="lang">
+                <div class="lang_box">
+                    <div class="select-lang">
+                        <!-- <span id="edit-lang-dropdown-select_arrow" class="arrow">
+                            <i class="fa fa-angle-down"></i>
+                        </span> -->
+                        @if(config('app.locale') == 'vi')
+                            <span class="ddTitleText" id="edit-lang-dropdown-select_titletext">
+                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png"></span>
+                        @else
+                            <span class="ddTitleText" id="edit-lang-dropdown-select_titletext">
+                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"></span>
+                        @endif
+
+                    </div>
+                    <div class="choise-lang">
+                        <a href="{{route('front.change-language', 'vi')}}" class="{{config('app.locale') == 'vi' ? 'selected' : '' }} enabled">
+                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png">
+                        </a>
+                        <a href="{{route('front.change-language', 'en')}}"  class="{{config('app.locale') == 'en' ? 'selected' : '' }} enabled">
+                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png" align="absmiddle">
+                        </a>
+                    </div>
+                </div>
+            </div>
             <a href="#offcanvas" uk-toggle="" class="uk-hidden@m uk-hamburger uk-flex uk-flex-middle">
                 <span class="uk-style-secondary-m">Menu</span>
                 <span class="uk-navbar-toggle uk-navbar-toggle-icon">
@@ -108,6 +191,7 @@
 					</span>
             </a>
         </div>
+{{--        end --}}
     </nav>
 </div>
 
@@ -118,10 +202,11 @@
         <div class="uk-background-wash uk-position-cover uk-offcanvas-close	" uk-close=""></div>
         <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-position-z-index-menu"
              uk-grid>
+{{--            phần menu about-us trổ xuống--}}
             <div class="uk-text-left uk-mega-menu-item items-4">
                 <a href="{{route('front.about')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-663800200-scaled.jpg"
+                        <img data-src="/site/system/about_us/a1.jpg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="iStock-663800200-scaled"
                              title="iStock-663800200-scaled"/>
@@ -131,7 +216,7 @@
                     <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                Who We Are</h4>
+                                {{trans('message.who_we_are')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
@@ -145,7 +230,7 @@
             <div class="uk-text-left uk-mega-menu-item items-4">
                 <a href="{{route('front.about2')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-864106820-scaled.jpg"
+                        <img data-src="/site/system/about_us/a2.jpg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="iStock-864106820-scaled"
                              title="iStock-864106820-scaled"/>
@@ -155,7 +240,7 @@
                     <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                What We Do</h4>
+                                {{trans('message.what_we_do')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about2')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
@@ -169,7 +254,7 @@
             <div class="uk-text-left uk-mega-menu-item items-4">
                 <a href="{{route('front.about3')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1199544859-scaled.jpg"
+                        <img data-src="/site/system/about_us/a3.jpg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="iStock-1199544859-scaled"
                              title="iStock-1199544859-scaled"/>
@@ -179,7 +264,7 @@
                     <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                UN SDGs</h4>
+                                {{trans('message.our_team')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about3')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
@@ -203,7 +288,7 @@
                     <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                AGP Partners</h4>
+                                {{trans('message.our_partner')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about4')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
@@ -214,18 +299,22 @@
                     </div>
                 </a>
             </div>
+{{--            end--}}
         </div>
     </div>
+
+
     <div class="uk-mega-menu  uk-offcanvas" uk-offcanvas="" id="offcanvas-2" data-parent="2"
          style="display: none;">
         <div class="uk-background-wash uk-position-cover uk-offcanvas-close	" uk-close=""></div>
         <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-position-z-index-menu"
              uk-grid>
 
+{{--            phần menu dự án đầu tư trổ xuống--}}
             <div class="uk-text-left uk-mega-menu-item items-3">
                 <a href="{{route('front.investments1')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="https://media.agpgroup.com/uploads/2021/04/b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled.jpg"
+                        <img data-src="/site/system/inves/i1.jpg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover "
                              alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"
@@ -236,8 +325,7 @@
                     <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                Renewable<br/>
-                                Energy</h4>
+                                {{trans('message.renewable_energy')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments1')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
@@ -253,7 +341,7 @@
                 <a href="{{route('front.investments2')}}"
                    class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1156913631-scaled.jpg"
+                        <img data-src="/site/system/inves/i2.jpg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"
                              title="iStock-1156913631-scaled"/>
@@ -263,9 +351,8 @@
                     <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                Sustainable <br/>
-                                Communities &amp; <br/>
-                                Infrastructure</h4>
+                                {{trans('message.sustainable_infrastructure')}}
+                                </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments2')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
@@ -281,7 +368,7 @@
                 <a href="{{route('front.investments3')}}"
                    class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="https://media.agpgroup.com/uploads/2021/05/green-tech-scaled.jpg"
+                        <img data-src="/site/system/inves/i3.jpg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"
                              title="green-tech-scaled"/>
@@ -291,8 +378,8 @@
                     <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                Green <br/>
-                                Technologies</h4>
+                                {{trans('message.future_solution')}} <br/>
+                              </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments3')}}/">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
@@ -303,7 +390,7 @@
                     </div>
                 </a>
             </div>
-
+{{--end--}}
         </div>
     </div>
 </div>

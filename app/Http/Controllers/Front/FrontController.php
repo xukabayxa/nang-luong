@@ -6,6 +6,7 @@ use App\Http\Traits\ResponseTrait;
 use App\Model\Admin\Banner;
 use App\Model\Admin\CategorySpecial;
 use App\Model\Admin\Contact;
+use App\Model\Admin\Language;
 use App\Model\Admin\Manufacturer;
 use App\Model\Admin\Origin;
 use App\Model\Admin\Policy;
@@ -481,7 +482,10 @@ class FrontController extends Controller
 
     public function insights()
     {
-        return view('site.insights');
+        $language = Language::query()->where('code', config('app.locale'))->first();
+        $posts = Post::query()->where('language_id', $language->id)->latest()->get();
+
+        return view('site.insights', compact('posts'));
     }
 
     public function sitemap()
@@ -497,6 +501,13 @@ class FrontController extends Controller
     public function post()
     {
         return view('site.news_detail');
+    }
+
+    public function changeLanguage($language)
+    {
+        \Session::put('language', $language);
+
+        return redirect()->back();
     }
 
     public function contact(Request $request)

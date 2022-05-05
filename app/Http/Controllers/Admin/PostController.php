@@ -85,6 +85,7 @@ class PostController extends Controller
 				'cate_id' => 'required|exists:post_categories,id',
 				'name' => 'required|unique:posts,name',
 				'status' => 'required|in:0,1',
+				'language_id' => 'nullable',
 				// 'intro' => 'nullable|max:255',
 				'body' => 'required',
 				'image' => 'required|file|mimes:jpg,jpeg,png|max:2000'
@@ -107,6 +108,7 @@ class PostController extends Controller
 			$object->intro = $request->intro;
 			$object->body = $request->body;
 			$object->status = $request->status;
+			$object->language_id = $request->language_id;
 			$object->save();
 
 			FileHelper::uploadFile($request->image, 'posts', $object->id, ThisModel::class, 'image', 3);
@@ -126,6 +128,7 @@ class PostController extends Controller
 	public function edit(Request $request,$id)
 	{
 		$object = ThisModel::getDataForEdit($id);
+
 		return view($this->view.'.edit', compact('object'));
 	}
 
@@ -169,6 +172,7 @@ class PostController extends Controller
 			$object->intro = $request->intro;
 			$object->body = $request->body;
 			$object->status = $request->status;
+            $object->language_id = $request->language_id;
 			$object->save();
 
 			if ($request->image) {

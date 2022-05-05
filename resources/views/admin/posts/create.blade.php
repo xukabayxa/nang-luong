@@ -18,6 +18,7 @@ Thêm mới bài viết
 <script>
   app.controller('Post', function ($scope, $http) {
     $scope.form = new Post({}, {scope: $scope});
+    $scope.languages = @json(\App\Model\Admin\Language::query()->get());
     $scope.loading = {}
 
     $scope.submit = function(publish = 0) {
