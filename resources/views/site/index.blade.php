@@ -58,7 +58,10 @@
 
             <div class="uk-scroller uk-container uk-text-center uk-position-bottom uk-position-large">
                 <a href="#scroll-target" uk-scroll>
-                    <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: arrow-in-circle; ratio: 1;"></span><br/>
+                    <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: arrow-in-circle; ratio: 1;">
+                        <svg width="37" height="38" viewBox="0 0 37 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">    <title>Group 2</title>    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">        <g id="Home" transform="translate(-942.000000, -979.000000)" stroke="#FFFFFF" stroke-width="2">            <g id="Group-10" transform="translate(902.000000, 980.608492)">                <g id="Group-2" transform="translate(40.500000, 0.000000)">                    <path d="M8.9399667,2.23287893 C11.4705971,0.810946623 14.3905952,0 17.5,0 C27.1649831,0 35,7.83501688 35,17.5 C35,27.1649831 27.1649831,35 17.5,35 C14.3737977,35 11.439054,34.180268 8.89898819,32.7440231" id="Oval-Copy-5" fill-rule="nonzero"></path>                    <polyline id="Path" transform="translate(17.500000, 17.500000) rotate(-270.000000) translate(-17.500000, -17.500000) " points="14.0334902 10.1956412 20.9665098 17.5 14.0334902 24.8043588"></polyline>                </g>            </g>        </g>    </g></svg>
+                    </span>
+                    <br/>
                     <span class="uk-style-secondary">scroll down</span>
                 </a>
             </div>
@@ -190,7 +193,7 @@
         <div class="uk-position-relative uk-background-image uk-flex uk-flex-middle uk-height-1-1 uk-margin-auto">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src="https://media.agpgroup.com/uploads/2021/04/64fee03f62e038e277e5863154ebf95e34ac28f6.jpg?w=1024&h=685&scale.option=fill&cw=1024&ch=685&cx=center&cy=center"
+                <img data-src="/site/system/home_1.jpg"
                      data-options="autostart:created;" class="uk-image-grayscale Sirv uk-utility-object-fit-cover "
                      alt="64fee03f62e038e277e5863154ebf95e34ac28f6.jpg?w=1024&h=685&scale"
                      title="64fee03f62e038e277e5863154ebf95e34ac28f6.jpg?w=1024&h=685&scale"/></div>

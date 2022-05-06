@@ -139,31 +139,30 @@
 
         <div class="uk-offcanvas-menu uk-flex uk-padding-xlarge-top uk-light">
             <ul class="uk-list uk-list-divider">
-                <li><a href="/">Home</a></li>
                 <li>
-                    <a class="uk-visible@m has-dropdown" href="#offcanvas-" uk-toggle>
-                        About Us <span class="uk-icon uk-preserve uk-margin-xsmall-left"
+                    <a class="uk-visible@m has-dropdown" href="{{route('front.about')}}" uk-toggle>
+                        {{trans('message.about_menu')}} <span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                        uk-icon="icon: arrow-down; ratio: 0.6"></span>
                     </a>
 
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
-                            <a class="uk-accordion-title" href="#">About Us<span
+                            <a class="uk-accordion-title" href="{{route('front.about')}}">{{trans('message.about_menu')}}<span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down; ratio: 0.6"></span></a>
                             <div class="uk-accordion-content">
                                 <ul>
                                     <li>
-                                        <a href="https://www.agpgroup.com/about-us/who-we-are/">Who We Are</a>
+                                        <a href="{{route('front.about')}}">{{trans('message.who_we_are')}}</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.agpgroup.com/about-us/what-we-do/">What We Do</a>
+                                        <a href="{{route('front.about2')}}">{{trans('message.what_we_do')}}</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.agpgroup.com/about-us/un-sdgs/">UN SDGs</a>
+                                        <a href="{{route('front.about3')}}">{{trans('message.our_team')}}</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.agpgroup.com/about-us/agp-partners/">AGP Partners</a>
+                                        <a href="{{route('front.about4')}}">{{trans('message.our_partner')}}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -172,30 +171,25 @@
                 </li>
                 <li>
                     <a class="uk-visible@m has-dropdown" href="#offcanvas-" uk-toggle>
-                        Our Investments <span class="uk-icon uk-preserve uk-margin-xsmall-left"
+                        {{trans('message.our_investments_menu')}} <span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                               uk-icon="icon: arrow-down; ratio: 0.6"></span>
                     </a>
 
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
-                            <a class="uk-accordion-title" href="#">Our Investments<span
+                            <a class="uk-accordion-title" href="#"> {{trans('message.our_investments_menu')}}<span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down; ratio: 0.6"></span></a>
                             <div class="uk-accordion-content">
                                 <ul>
                                     <li>
-                                        <a href="https://www.agpgroup.com/investments/renewable-energy/">Renewable<br/>
-                                            Energy</a>
+                                        <a href="{{route('front.investments1')}}">{{trans('message.renewable_energy')}}</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.agpgroup.com/investments/sustainable-communities-infrastructure/">Sustainable
-                                            <br/>
-                                            Communities &amp; <br/>
-                                            Infrastructure</a>
+                                        <a href="{{route('front.investments2')}}">{{trans('message.sustainable_infrastructure')}}</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.agpgroup.com/investments/green-technologies/">Green <br/>
-                                            Technologies</a>
+                                        <a href="{{route('front.investments3')}}"> {{trans('message.future_solution')}}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -204,24 +198,24 @@
                 </li>
                 <li>
                     <a class="uk-visible@m " href="{{route('front.globalReach')}}">
-                        Global Reach </a>
+                        {{trans('message.our_global_presence_menu')}} </a>
 
                     <a class="uk-hidden@m" href="{{route('front.globalReach')}}">
-                        Global Reach</a>
+                        {{trans('message.our_global_presence_menu')}} </a>
                 </li>
                 <li>
                     <a class="uk-visible@m " href="{{route('front.insights')}}">
-                        Insights </a>
+                        {{trans('message.insights_menu')}}  </a>
 
                     <a class="uk-hidden@m" href="{{route('front.insights')}}">
-                        Insights</a>
+                        {{trans('message.insights_menu')}}</a>
                 </li>
                 <li>
                     <a class="uk-visible@m " href="{{route('front.contact')}}">
-                        Contact </a>
+                        {{trans('message.contact_menu')}} </a>
 
                     <a class="uk-hidden@m" href="https://www.agpgroup.com/contact/">
-                        Contact</a>
+                        {{trans('message.contact_menu')}}</a>
                 </li>
             </ul>
         </div>

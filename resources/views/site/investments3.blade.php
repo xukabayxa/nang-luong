@@ -15,7 +15,7 @@
             <div class="uk-position-cover">
                 <div class="uk-cover-container">
                     <video uk-cover loop muted playsinline uk-video="autoplay: inview">
-                        <source src="https://www.agpgroup.com/app/uploads/2021/05/iStock-1289046239-optim.mp4"
+                        <source src="/site/system/inves/i_3.mp4"
                                 type="video/mp4">
                     </video>
                     <canvas width="1600" height="900"></canvas>
@@ -65,7 +65,7 @@
                     <div class="uk-animation-parent">
                         <div class="uk-margin-column-image">
                             <div class="uk-cover-container">
-                                <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-925854252-scaled.jpg?w=1024&h=680&scale.option=fill&cw=1024&ch=680&cx=center&cy=center"
+                                <img data-src="/site/system/inves/i_3_1.jpg"
                                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                      class=" Sirv uk-utility-object-fit-cover "
                                      alt="iStock-925854252-scaled.jpg?w=1024&h=680&scale"
@@ -148,7 +148,7 @@
                 <div class="uk-animation-parent">
                     <div class="uk-margin-column-image">
                         <div class="uk-cover-container">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1202736336-scaled.jpg?w=1024&h=768&scale.option=fill&cw=1024&ch=768&cx=center&cy=center"
+                            <img data-src="/site/system/inves/i_3_2.jpg"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="iStock-1202736336-scaled.jpg?w=1024&h=768&scale"
@@ -167,7 +167,7 @@
             <div class="uk-position-cover">
                 <div class="uk-cover-container">
                     <video uk-cover loop muted playsinline uk-video="autoplay: inview">
-                        <source src="https://www.agpgroup.com/app/uploads/2021/05/futurefeed-short.mp4"
+                        <source src="/site/system/video.mp4"
                                 type="video/mp4">
                     </video>
                     <canvas width="1600" height="900"></canvas>
@@ -210,7 +210,7 @@
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src="https://media.agpgroup.com/uploads/2021/04/cta-bg-scaled.jpg"
+                <img data-src="/site/system/inves/i_3_3.jpg"
                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
             <div class="uk-text-center">

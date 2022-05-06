@@ -44,7 +44,7 @@
                     </div>
                     <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 500;">
                         <div class="uk-cover-container">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-663800200-scaled.jpg?w=1024&h=683&scale.option=fill&cw=1024&ch=683&cx=center&cy=center"
+                            <img data-src="/site/system/about_us/a_1.jpg"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="iStock-663800200-scaled.jpg?w=1024&h=683&scale"

@@ -16,7 +16,7 @@
             <div class="uk-position-cover">
                 <div class="uk-cover-container">
                     <img
-                        data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1156913631-scaled.jpg?w=1024&h=682&scale.option=fill&cw=1024&ch=682&cx=center&cy=center"
+                        data-src="/site/system/inves/i_2.jpg"
                         data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                         class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled.jpg?w=1024&h=682&scale"
                         title="iStock-1156913631-scaled.jpg?w=1024&h=682&scale"/>
@@ -104,7 +104,7 @@
                     <div class="uk-cover-container">
                         <canvas width="935" height="935"></canvas>
                         <img
-                            data-src="https://media.agpgroup.com/uploads/2021/04/14b28b4c8e15414e047c2cca0c6cb3259be73fd2-scaled.jpg?w=1024&h=654&scale.option=fill&cw=1024&ch=654&cx=center&cy=center"
+                            data-src="/site/system/inves/i_2_1_2.jpg"
                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                             class="uk-image-grayscale Sirv uk-utility-object-fit-cover "
                             alt="14b28b4c8e15414e047c2cca0c6cb3259be73fd2-scaled.jpg?w=1024&h=654&scale"
@@ -146,7 +146,7 @@
             class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src="https://media.agpgroup.com/uploads/2021/04/cta-bg-scaled.jpg"
+                <img data-src="/site/system/inves/i_2_1.jpg"
                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
             <div class="uk-text-center">

@@ -1,10 +1,10 @@
 <div class="uk-navbar-container uk-navbar-transparent uk-padding-xmedium-top uk-padding-xmedium-bottom">
     <nav class="uk-navbar uk-container">
-        <div class="uk-navbar-left" style="padding-left: 30px">
+        <div class="uk-navbar-left" >
             <div class="logo" style="margin: 0; font-size: 0;">
                 <a href="{{route('front.home_page')}}" title="RT ENERGY">
                     <span class="uk-logo uk-icon uk-preserve">
-                        <img src="/site/system/logo.png"  style="width: 188px; height: 140px" alt="RT ENERGY">
+                        <img src="/site/system/logo.png"  style="height: 140px" alt="RT ENERGY">
                     </span>
                 </a>
             </div>
@@ -36,7 +36,7 @@
                                         <a href="{{route('front.about3')}}">{{trans('message.our_team')}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about4')}}">AGP
+                                        <a href="{{route('front.about4')}}">
                                             {{trans('message.our_partner')}}</a>
                                     </li>
                                 </ul>
@@ -52,7 +52,7 @@
 
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
-                            <a class="uk-accordion-title" href="#">Our Investments<span
+                            <a class="uk-accordion-title" href="#">{{trans('message.our_investments_menu')}}<span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down-dark; ratio: 0.6"></span></a>
                             <div class="uk-accordion-content">
@@ -105,7 +105,35 @@
                         {{trans('message.contact_menu')}}</a>
                 </li>
             </ul>
+
             <style>
+                @media only screen and (min-width: 768px) {
+                    .uk-navbar-left {
+                        padding-left: 30px;
+                    }
+                    .uk-navbar-right {
+                        margin-left: 280px;
+                    }
+                    .uk-navbar-left img {
+                        width: 188px;
+                    }
+                    .choise-lang {
+                        top: 80px;
+                    }
+                }
+                @media only screen and (max-width: 768px) {
+                    .uk-navbar-right {
+                        margin-left: auto;
+                    }
+
+                    .uk-navbar-left img {
+                        width: 100px;
+                    }
+                    .choise-lang {
+                        top: 80px;
+                    }
+                }
+
                 .lang {
                     padding-left: 10px;
                 }
@@ -136,7 +164,6 @@
                     border: 1px solid #ccc;
                     display: block;
                     position: absolute;
-                    top: 82px;
                     width: 78px;
                     z-index: 9999;
                     display: none;
@@ -155,6 +182,7 @@
                     vertical-align: middle;
                 }
             </style>
+
             <div class="lang">
                 <div class="lang_box">
                     <div class="select-lang">
@@ -180,6 +208,7 @@
                     </div>
                 </div>
             </div>
+
             <a href="#offcanvas" uk-toggle="" class="uk-hidden@m uk-hamburger uk-flex uk-flex-middle">
                 <span class="uk-style-secondary-m">Menu</span>
                 <span class="uk-navbar-toggle uk-navbar-toggle-icon">
