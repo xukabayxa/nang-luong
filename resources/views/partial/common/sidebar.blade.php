@@ -83,22 +83,9 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{{ route('origins.index') }}" class="nav-link {{ Request::routeIs('origins.create') ? 'active' : '' }}">
+                        <a href="{{ route('partners.index') }}" class="nav-link {{ Request::routeIs('partners.index') ? 'active' : '' }}">
                             <i class="far fas  fa-angle-right nav-icon"></i>
-                            <p>Danh mục xuất xứ</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ route('manufacturers.index') }}" class="nav-link {{ Request::routeIs('manufacturers.index') ? 'active' : '' }}">
-                            <i class="far fas  fa-angle-right nav-icon"></i>
-                            <p>Danh mục hãng sản xuất</p>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="{{ route('attributes.index') }}" class="nav-link {{ Request::routeIs('attributes.index') ? 'active' : '' }}">
-                            <i class="far fas  fa-angle-right nav-icon"></i>
-                            <p>Danh mục thuộc tính sản phẩm</p>
+                            <p>Danh mục đối tác</p>
                         </a>
                     </li>
 
