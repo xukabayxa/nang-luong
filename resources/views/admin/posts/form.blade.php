@@ -40,14 +40,14 @@
 	<div class="col-md-3 col-sm-4 col-xs-12">
 		<div class="form-group custom-group mb-4">
 			<label class="form-label required-label">Trạng thái</label>
-			<select id="my-select" class="form-control custom-select" ng-model="form.status">
+			<select select2 class="form-control" ng-model="form.status">
 				<option value="">Chọn trạng thái</option>
 				<option ng-repeat="s in form.statuses" ng-value="s.id" ng-selected="form.status == s.id"><% s.name %></option>
 			</select>
 		</div>
         <div class="form-group custom-group mb-4">
             <label class="form-label required-label">Ngôn ngữ</label>
-            <select id="my-select" class="form-control custom-select" ng-model="form.language_id">
+            <select select2 id="my-select" class="form-control" ng-model="form.language_id">
                 <option ng-repeat="l in languages" ng-value="l.id" ng-selected="form.language_id == l.id"><% l.name %></option>
             </select>
         </div>
