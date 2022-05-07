@@ -151,6 +151,19 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::get('/exportExcel','Admin\OriginController@exportExcel')->name('origins.exportExcel');
     });
 
+    // đối tác
+    Route::group(['prefix' => 'partners'], function () {
+        Route::get('/', 'Admin\PartnerController@index')->name('partners.index');
+        Route::get('/searchData', 'Admin\PartnerController@searchData')->name('partners.searchData');
+        Route::get('/{id}/show', 'Admin\PartnerController@show')->name('partners.show');
+        Route::get('/create', 'Admin\PartnerController@create')->name('partners.create');
+        Route::post('/', 'Admin\PartnerController@store')->name('partners.store');
+        Route::post('/{id}/update', 'Admin\PartnerController@update')->name('partners.update');
+        Route::get('/{id}/delete', 'Admin\PartnerController@delete')->name('partners.delete');
+        Route::get('/{id}/getDataForEdit', 'Admin\PartnerController@getDataForEdit');
+        Route::get('/exportExcel','Admin\PartnerController@exportExcel')->name('partners.exportExcel');
+    });
+
     // Danh mục đặc biệt
     Route::group(['prefix' => 'category-special'], function () {
         Route::get('/', 'Admin\CategorySpecialController@index')->name('category_special.index');

@@ -5,7 +5,9 @@
     @include('site.partials.head')
 </head>
 <body class="home page-template-default page page-id-6" ng-app="App">
+
 @include('site.partials.svg')
+
 <div class="uk-offcanvas-content">
     @yield('content')
 

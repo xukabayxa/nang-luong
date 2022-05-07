@@ -2,7 +2,8 @@
     <div class="uk-container uk-padding-medium-top">
         <div uk-grid class="uk-grid uk-flex-middle">
             <div class="uk-width-1-1 uk-width-expand@s uk-text-center uk-text-left@m">
-                <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: logo; ratio: 1;"></span>
+                <img src="/site/system/logo_2.png"  style="height: 120px" alt="RT ENERGY">
+                {{--                <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: logo; ratio: 1;"></span>--}}
             </div>
 
             <div class="uk-width-1-1 uk-width-2-3@m uk-flex uk-flex-middle uk-flex-center uk-flex-right@m uk-text-center uk-text-right@m uk-footer-logos">
