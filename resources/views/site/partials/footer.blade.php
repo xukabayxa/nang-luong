@@ -7,21 +7,57 @@
 
             <div class="uk-width-1-1 uk-width-2-3@m uk-flex uk-flex-middle uk-flex-center uk-flex-right@m uk-text-center uk-text-right@m uk-footer-logos">
                 <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                    <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals.html"
+                    <a href="#"
                        rel="noreferrer" target="_blank">
-                        <img src="https://media.agpgroup.com/uploads/2021/04/sustainable-development-goals-logo.png"
+                        <img src="{{ asset('/site/system/partner/p1.png') }}"
                              class="uk-width-footer-logo">
                     </a>
                 </div>
                 <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                    <a href="https://www.unpri.org/" rel="noreferrer" target="_blank">
-                        <img src="https://media.agpgroup.com/uploads/2021/04/PRI-Sig-White.png"
+                    <a href="#" rel="noreferrer" target="_blank">
+                        <img src="{{ asset('/site/system/partner/p2.png') }}"
                              class="uk-width-footer-logo">
                     </a>
                 </div>
                 <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                    <a href="https://www.ukgbc.org/" rel="noreferrer" target="_blank">
-                        <img src="https://media.agpgroup.com/uploads/2021/06/ukgbc-colour-1.png"
+                    <a href="" rel="noreferrer" target="_blank">
+                        <img src="{{ asset('/site/system/partner/p3.png') }}"
+                             class="uk-width-footer-logo">
+                    </a>
+                </div>
+                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
+                    <a href="" rel="noreferrer" target="_blank">
+                        <img src="{{ asset('/site/system/partner/p4.png') }}"
+                             class="uk-width-footer-logo">
+                    </a>
+                </div>
+                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
+                    <a href="" rel="noreferrer" target="_blank">
+                        <img src="{{ asset('/site/system/partner/p5.png') }}"
+                             class="uk-width-footer-logo">
+                    </a>
+                </div>
+                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
+                    <a href=" rel="noreferrer" target="_blank">
+                        <img src="{{ asset('/site/system/partner/p6.png') }}"
+                             class="uk-width-footer-logo">
+                    </a>
+                </div>
+                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
+                    <a href="" rel="noreferrer" target="_blank">
+                        <img src="{{ asset('/site/system/partner/p7.png') }}"
+                             class="uk-width-footer-logo">
+                    </a>
+                </div>
+                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
+                    <a href="/" rel="noreferrer" target="_blank">
+                        <img src="{{ asset('/site/system/partner/p8.png') }}"
+                             class="uk-width-footer-logo">
+                    </a>
+                </div>
+                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
+                    <a href="" rel="noreferrer" target="_blank">
+                        <img src="{{ asset('/site/system/partner/p9.png') }}"
                              class="uk-width-footer-logo">
                     </a>
                 </div>
