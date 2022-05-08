@@ -29,7 +29,7 @@
                     </a>
                 </div>
                 <img class="uk-visible@s"
-                     src=""
+                     src="https://media.agpgroup.com/uploads/2022/03/global-expertise-map-31-03-22.png"
                      uk-scrollspy="cls: uk-animation-fade; delay: 400;">
             </div>
         </div>
