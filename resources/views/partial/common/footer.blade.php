@@ -1,5 +1,5 @@
 <footer class="main-footer">
-    <strong>Copyright &copy; {{ date('Y') }} <a href="/">G7 AutoCare</a>.</strong>
+    <strong>Copyright &copy; {{ date('Y') }} <a href="/">DNS MEDIA</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
         <b>Version</b> {{ env('APP_VERSION', '1.0') }}

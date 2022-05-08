@@ -4,7 +4,7 @@
             <div class="logo" style="margin: 0; font-size: 0;">
                 <a href="{{route('front.home_page')}}" title="RT ENERGY">
                     <span class="uk-logo uk-icon uk-preserve">
-                        <img src="/site/system/logo.png"  style="height: 140px" alt="RT ENERGY">
+                        <img src="{{ asset('site/system/rt-logo-white.png') }}"  style="height: auto" alt="RT ENERGY">
                     </span>
                 </a>
             </div>
@@ -115,7 +115,7 @@
                         margin-left: 280px;
                     }
                     .uk-navbar-left img {
-                        width: 188px;
+                        width: 225px;
                     }
                     .choise-lang {
                         top: 80px;
@@ -424,6 +424,3 @@
     </div>
 </div>
 <!-- Sub Menu -->
-
-
-
