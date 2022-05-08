@@ -18,16 +18,15 @@ class HeaderComposer
     {
         $config = Config::query()->get()->first();
         $cartCollection = \Cart::getContent();
-        $total = \Cart::getTotal();
+       $total = \Cart::getTotal();
 
-        $productWishlist = \Cookie::get('productWishList');
+       $productWishlist = \Cookie::get('productWishList');
 
-        $productWishListArray = json_decode($productWishlist, true);
+       $productWishListArray = json_decode($productWishlist, true);
 
         if(! $productWishListArray) {
             $productWishListArray = [];
         }
-
-        $view->with(['config' => $config, 'cartItems' => $cartCollection, 'totalCart' => $total, 'productWishlist' => $productWishListArray]);
+       $view->with(['config' => $config, 'cartItems' => $cartCollection, 'totalCart' => $total, 'productWishlist' => $productWishListArray]);
     }
 }
