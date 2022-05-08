@@ -25,7 +25,7 @@
                 <p>This Cookie Policy sets out the basis on which we, AGP SUSTAINABLE REAL ASSETS HOLDINGS PTE LTD,
                     (Registration Number 201629337G), and/or its subsidiaries and affiliates are referred to in this
                     Policy as<b> “AGP Group”, “we” or “us” or “our”</b> collectively or singularly as the context
-                    requires, use cookies and similar technologies on our website (“<em>https://www.agpgroup.com</em>”)(<b>“Website”</b>).
+                    requires, use cookies and similar technologies on our website (“<em></em>”)(<b>“Website”</b>).
                 </p>
                 <p>&nbsp;</p>
                 <ol start="2">

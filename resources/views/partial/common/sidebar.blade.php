@@ -81,6 +81,7 @@
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
+
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
                         <a href="{{ route('partners.index') }}" class="nav-link {{ Request::routeIs('partners.index') ? 'active' : '' }}">

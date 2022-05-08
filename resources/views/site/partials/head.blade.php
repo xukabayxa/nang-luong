@@ -78,9 +78,6 @@
     </style>
     <link rel='stylesheet' id='app-css'  href='/site/css/style.css?ver=5.9.3' type='text/css' media='all' />
     <script src="/site/js/sirv.js?ver=5.9.3" defer="defer" type="text/javascript"></script>
-    <link rel="alternate" type="application/json+oembed" href="https://www.agpgroup.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.agpgroup.com%2F" />
-    <link rel="alternate" type="text/xml+oembed" href="https://www.agpgroup.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.agpgroup.com%2F&#038;format=xml" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.agpgroup.com/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="hhttps://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png">
     <link rel="manifest" href="/site.webmanifest">
@@ -98,21 +95,4 @@
         })(window,document,'script','dataLayer','GTM-WV4R23X');</script>
     <!-- End Google Tag Manager -->
 
-    <script type="application/ld+json">{
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "@id": "https://www.agpgroup.com",
-    "name": "Company Name",
-    "url": "https://www.agpgroup.com",
-    "logo": "https://www.agpgroup.com/app/themes/sozo/public/images/logo.png",
-    "location": {
-        "@type": "Place",
-        "name": "Singapore",
-        "address": {
-            "addressLocality": false,
-            "addressRegion": false,
-            "postalCode": false,
-            "streetAddress": false
-        }
-    }
-}</script>		</head>
+    	</head>

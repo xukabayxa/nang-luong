@@ -28,9 +28,9 @@
                                     For more information or questions, please email
                                 </h3>
                                 <div>
-                                    <a href="mailto:info@agpgroup.com"
+                                    <a href="#"
                                        class="uk-style-primary-b uk-text-8 uk-text-lh-3 uk-text-primary uk-text-underline">
-                                        info@agpgroup.com </a>
+                                        info@rt.com </a>
                                 </div>
                             </div>
                             <div class="uk-margin-medium">

@@ -15,7 +15,7 @@
             <div class="uk-position-relative uk-background-image uk-light">
                 <div class="uk-position-cover">
                     <div class="uk-cover-container">
-                        <img data-src="https://media.agpgroup.com/uploads/2022/03/ASE-EAL-Header-Image.png"
+                        <img data-src=""
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="ASE-EAL-Header-Image"
                              title="ASE-EAL-Header-Image"/>
@@ -139,7 +139,7 @@
                     <em><b>arbon-infrastructure-transition-programme/</b></em></p>
                 <p>&nbsp;</p>
                 <a class="uk-button uk-color-teal uk-style-secondary-b "
-                   href="https://www.agpgroup.com/app/uploads/2022/03/ASE-EAL-Press-Release.pdf">
+                   href="">
                     <span class="uk-color-teal uk-text-middle uk-margin-right">Download press release</span>
                     <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-teal"
                           uk-icon="icon: button-circle; ratio: 1"></span>
@@ -167,7 +167,7 @@
                         <div>
                             <div class="uk-cover-container uk-margin-small-bottom">
                                 <canvas width="460" height="370"></canvas>
-                                <img data-src="https://media.agpgroup.com/uploads/2022/03/SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale.option=fill&cw=1024&ch=384&cx=center&cy=center"
+                                <img data-src=""
                                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                      class=" Sirv uk-utility-object-fit-cover "
                                      alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
@@ -180,7 +180,7 @@
                                 AGP Sustainable Real Assets and Hartree Partners Announce US Expansion of Global Solar
                                 Partnership </h4>
                             <a class="uk-button uk-color-teal uk-style-secondary-b "
-                               href="https://www.agpgroup.com/insights/agp-sustainable-real-assets-and-hartree-partners-announce-us-expansion-of-global-solar-partnership/">
+                               href="">
                                 <span class="uk-color-teal uk-text-middle uk-margin-right">Read Article</span>
                                 <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-teal"
                                       uk-icon="icon: button-circle; ratio: 1"></span>

@@ -46,7 +46,7 @@
 
                         <div class="uk-margin-top">
                             <a class="uk-button uk-color-light uk-style-secondary-b "
-                               href="https://www.agpgroup.com/about-us/what-we-do/">
+                               href="">
                                 <span class="uk-color-light uk-text-middle uk-margin-right">discover our three key investment themes</span>
                                 <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-light"
                                       uk-icon="icon: button-circle; ratio: 1"></span>
@@ -85,7 +85,7 @@
                                 Goals (SDGs) with the aim to accelerate the transition to a net zero emissions future.
                             </div>
                             <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                               href="https://www.agpgroup.com/about-us/un-sdgs/">
+                               href="">
                                 <span class="uk-color-tertiary uk-text-middle uk-margin-right">SDGS of key relevance</span>
                                 <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
                                       uk-icon="icon: button-circle; ratio: 1"></span>
@@ -242,7 +242,7 @@
                             SDGs.
                         </div>
                         <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                           href="https://www.agpgroup.com/about-us/what-we-do/">
+                           href="">
                             <span class="uk-color-tertiary uk-text-middle uk-margin-right">how will we achieve it?</span>
                             <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
                                   uk-icon="icon: button-circle; ratio: 1"></span>
@@ -268,7 +268,7 @@
                     <div>
                         <div class="uk-cover-container uk-margin-small-bottom">
                             <canvas width="460" height="370"></canvas>
-                            <img data-src="https://media.agpgroup.com/uploads/2022/03/SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale.option=fill&cw=1024&ch=384&cx=center&cy=center"
+                            <img data-src=""
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
@@ -281,7 +281,7 @@
                             AGP Sustainable Real Assets and Hartree Partners Announce US Expansion of Global Solar
                             Partnership </h4>
                         <a class="uk-button uk-color-teal uk-style-secondary-b "
-                           href="https://www.agpgroup.com/insights/agp-sustainable-real-assets-and-hartree-partners-announce-us-expansion-of-global-solar-partnership/">
+                           href="">
                             <span class="uk-color-teal uk-text-middle uk-margin-right">Read Article</span>
                             <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-teal"
                                   uk-icon="icon: button-circle; ratio: 1"></span>
@@ -292,7 +292,7 @@
                     <div>
                         <div class="uk-cover-container uk-margin-small-bottom">
                             <canvas width="460" height="370"></canvas>
-                            <img data-src="https://media.agpgroup.com/uploads/2022/03/ASE-EAL-Header-Image.png?w=1024&h=505&scale.option=fill&cw=1024&ch=505&cx=center&cy=center"
+                            <img data-src=""
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="ASE-EAL-Header-Image.png?w=1024&h=505&scale"
@@ -305,7 +305,7 @@
                             AMPYR Solar Europe signs deal with Edinburgh Airport to develop solar farm, battery and
                             electric vehicle infrastructure </h4>
                         <a class="uk-button uk-color-teal uk-style-secondary-b "
-                           href="https://www.agpgroup.com/insights/ampyr-solar-europe-signs-deal-with-edinburgh-airport-to-develop-solar-farm-battery-and-electric-vehicle-infrastructure/">
+                           href="">
                             <span class="uk-color-teal uk-text-middle uk-margin-right">Read Article</span>
                             <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-teal"
                                   uk-icon="icon: button-circle; ratio: 1"></span>
@@ -316,7 +316,7 @@
                     <div>
                         <div class="uk-cover-container uk-margin-small-bottom">
                             <canvas width="460" height="370"></canvas>
-                            <img data-src="https://media.agpgroup.com/uploads/2019/06/iStock-1032683612-scaled.jpg?w=1024&h=683&scale.option=fill&cw=1024&ch=683&cx=center&cy=center"
+                            <img data-src=""
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="iStock-1032683612-scaled.jpg?w=1024&h=683&scale"
@@ -329,7 +329,7 @@
                             AMPYR Solar Europe Secures €400 Million from CARVAL Investors to Develop and Construct
                             Pipeline of European Solar Assets </h4>
                         <a class="uk-button uk-color-teal uk-style-secondary-b "
-                           href="https://www.agpgroup.com/insights/ampyr-solar-europe-secures-e400-million-from-carval-investors-to-develop-and-construct-pipeline-of-european-solar-assets/">
+                           href="">
                             <span class="uk-color-teal uk-text-middle uk-margin-right">Read Article</span>
                             <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-teal"
                                   uk-icon="icon: button-circle; ratio: 1"></span>

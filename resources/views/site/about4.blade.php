@@ -38,7 +38,7 @@
                     </div>
                     <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 500;">
                         <div class="uk-cover-container">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-492596662-scaled.jpg?w=1024&h=475&scale.option=fill&cw=1024&ch=475&cx=center&cy=center"
+                            <img data-src=""
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="iStock-492596662-scaled.jpg?w=1024&h=475&scale"
@@ -134,7 +134,7 @@
                                     <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
                                 </a>
                             </div>
-                            <img src="https://media.agpgroup.com/uploads/2021/09/singapore-flag-circle-outline.png"
+                            <img src=""
                                  class="uk-display-inline uk-width-flag" width="50" height="50">
                         </div>
                     </div>

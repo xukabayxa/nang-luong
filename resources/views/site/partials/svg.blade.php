@@ -214,7 +214,7 @@
                     <a class="uk-visible@m " href="{{route('front.contact')}}">
                         {{trans('message.contact_menu')}} </a>
 
-                    <a class="uk-hidden@m" href="https://www.agpgroup.com/contact/">
+                    <a class="uk-hidden@m" href="#">
                         {{trans('message.contact_menu')}}</a>
                 </li>
             </ul>
@@ -238,9 +238,9 @@
             <div class="uk-mega-menu uk-grid-collapse uk-child-width-expand@m uk-text-center uk-padding" uk-grid
                  data-parent="m-1">
                 <div class="uk-text-left uk-mega-menu-item items-4">
-                    <a href="https://www.agpgroup.com/about-us/who-we-are/" class="uk-animation-zoom">
+                    <a href="#" class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-663800200-scaled.jpg"
+                            <img data-src=""
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="iStock-663800200-scaled"
                                  title="iStock-663800200-scaled"/>
@@ -256,9 +256,9 @@
                     </a>
                 </div>
                 <div class="uk-text-left uk-mega-menu-item items-4">
-                    <a href="https://www.agpgroup.com/about-us/what-we-do/" class="uk-animation-zoom">
+                    <a href="#">
                         <div class="uk-cover-container ">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-864106820-scaled.jpg"
+                            <img data-src="#"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="iStock-864106820-scaled"
                                  title="iStock-864106820-scaled"/>
@@ -274,9 +274,9 @@
                     </a>
                 </div>
                 <div class="uk-text-left uk-mega-menu-item items-4">
-                    <a href="https://www.agpgroup.com/about-us/un-sdgs/" class="uk-animation-zoom">
+                    <a href="#" class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1199544859-scaled.jpg"
+                            <img data-src="#"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="iStock-1199544859-scaled"
                                  title="iStock-1199544859-scaled"/>
@@ -291,9 +291,9 @@
                     </a>
                 </div>
                 <div class="uk-text-left uk-mega-menu-item items-4">
-                    <a href="https://www.agpgroup.com/about-us/agp-partners/" class="uk-animation-zoom">
+                    <a href="#" class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-492596662-scaled.jpg"
+                            <img data-src="#"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="iStock-492596662-scaled"
                                  title="iStock-492596662-scaled"/>
@@ -329,9 +329,9 @@
             <div class="uk-mega-menu uk-grid-collapse uk-child-width-expand@m uk-text-center uk-padding" uk-grid
                  data-parent="m-2">
                 <div class="uk-text-left uk-mega-menu-item items-3">
-                    <a href="https://www.agpgroup.com/investments/renewable-energy/" class="uk-animation-zoom">
+                    <a href="#" class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/04/b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled.jpg"
+                            <img data-src="#"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"
@@ -348,10 +348,10 @@
                     </a>
                 </div>
                 <div class="uk-text-left uk-mega-menu-item items-3">
-                    <a href="https://www.agpgroup.com/investments/sustainable-communities-infrastructure/"
+                    <a href="#"
                        class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1156913631-scaled.jpg"
+                            <img data-src="#"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"
                                  title="iStock-1156913631-scaled"/>
@@ -369,9 +369,9 @@
                     </a>
                 </div>
                 <div class="uk-text-left uk-mega-menu-item items-3">
-                    <a href="https://www.agpgroup.com/investments/green-technologies/" class="uk-animation-zoom">
+                    <a href="#" class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/green-tech-scaled.jpg"
+                            <img data-src="#"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"
                                  title="green-tech-scaled"/>

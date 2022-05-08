@@ -10,19 +10,19 @@
                 <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                     <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals.html"
                        rel="noreferrer" target="_blank">
-                        <img src="https://media.agpgroup.com/uploads/2021/04/sustainable-development-goals-logo.png"
+                        <img src=""
                              class="uk-width-footer-logo">
                     </a>
                 </div>
                 <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                     <a href="https://www.unpri.org/" rel="noreferrer" target="_blank">
-                        <img src="https://media.agpgroup.com/uploads/2021/04/PRI-Sig-White.png"
+                        <img src=""
                              class="uk-width-footer-logo">
                     </a>
                 </div>
                 <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                     <a href="https://www.ukgbc.org/" rel="noreferrer" target="_blank">
-                        <img src="https://media.agpgroup.com/uploads/2021/06/ukgbc-colour-1.png"
+                        <img src=""
                              class="uk-width-footer-logo">
                     </a>
                 </div>
@@ -89,7 +89,7 @@
             </div>
 
             <div class="uk-width-1-1 uk-width-expand@m uk-flex-inline uk-text-13 uk-text-primary uk-text-underline uk-footer-item-contact">
-                <a href="mailto:info@agpgroup.com" class="uk-text-primary">
+                <a href="" class="uk-text-primary">
                     rtenrgy@gmail.com </a>
                 <a href=""
                    class="uk-margin-medium-left">

@@ -34,7 +34,7 @@
                     </div>
                     <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 500;">
                         <div class="uk-cover-container">
-                            <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1199544859-scaled.jpg?w=1024&h=536&scale.option=fill&cw=1024&ch=536&cx=center&cy=center"
+                            <img data-src=""
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="iStock-1199544859-scaled.jpg?w=1024&h=536&scale"
@@ -62,7 +62,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/1.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/2.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +126,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/3.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/4.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +191,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/5.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -223,7 +223,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/6.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -255,7 +255,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/7.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -287,7 +287,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/8.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -320,7 +320,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/9.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -353,7 +353,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/10.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -385,7 +385,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/11.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -417,7 +417,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/12.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -449,7 +449,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/13.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -481,7 +481,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/14.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -514,7 +514,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/15.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -548,7 +548,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/16.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -582,7 +582,7 @@
                                     </div>
                                     <div class="uk-position-relative uk-height-sdg">
                                         <img class="uk-position-center uk-width-sdg-image"
-                                             src="https://media.agpgroup.com/uploads/2021/05/17.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -604,7 +604,7 @@
                 </div>
                 <div>
                     <div class="uk-card uk-card-small uk-height-sdg-card uk-border-dark uk-card-body uk-position-relative uk-padding-3xmedium-left uk-padding-3xmedium-right uk-padding-xmedium-top uk-padding-xmedium-bottom">
-                        <img data-src="https://media.agpgroup.com/uploads/2021/04/sustainable-development-goals-stacked-logo.png"
+                        <img data-src=""
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class="uk-position-center uk-width-global-sdg Sirv" width="auto"
                              alt="sustainable-development-goals-stacked-logo"
@@ -627,7 +627,7 @@
                          style="border: 2px solid #26bde2">
                         <div class="uk-height-xsmall uk-width-small">
                             <img class="uk-height-xxsmall"
-                                 src="https://media.agpgroup.com/uploads/2021/05/clean-water-colour-icon.png">
+                                 src="">
                         </div>
                         <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-top"
                              style="color: #26bde2">
@@ -696,7 +696,7 @@
                          style="border: 2px solid #ffc300">
                         <div class="uk-height-xsmall uk-width-small">
                             <img class="uk-height-xxsmall"
-                                 src="https://media.agpgroup.com/uploads/2021/05/affordable-clean-energy-colour.png">
+                                 src="">
                         </div>
                         <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-top"
                              style="color: #ffc300">
@@ -765,7 +765,7 @@
                          style="border: 2px solid #ff5f03">
                         <div class="uk-height-xsmall uk-width-small">
                             <img class="uk-height-xxsmall"
-                                 src="https://media.agpgroup.com/uploads/2021/05/industry-colour.png">
+                                 src="">
                         </div>
                         <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-top"
                              style="color: #ff5f03">
@@ -835,7 +835,7 @@
                          style="border: 2px solid #f89d2a">
                         <div class="uk-height-xsmall uk-width-small">
                             <img class="uk-height-xxsmall"
-                                 src="https://media.agpgroup.com/uploads/2021/05/cities-colour.png">
+                                 src="">
                         </div>
                         <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-top"
                              style="color: #f89d2a">
@@ -904,7 +904,7 @@
                          style="border: 2px solid #c88b00">
                         <div class="uk-height-xsmall uk-width-small">
                             <img class="uk-height-xxsmall"
-                                 src="https://media.agpgroup.com/uploads/2021/05/production-colour.png">
+                                 src="">
                         </div>
                         <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-top"
                              style="color: #c88b00">
@@ -973,7 +973,7 @@
                          style="border: 2px solid #20823f">
                         <div class="uk-height-xsmall uk-width-small">
                             <img class="uk-height-xxsmall"
-                                 src="https://media.agpgroup.com/uploads/2021/05/climate-colour.png">
+                                 src="">
                         </div>
                         <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-top"
                              style="color: #20823f">
@@ -1044,7 +1044,7 @@
         <div class="uk-position-relative uk-background-image uk-flex uk-flex-middle uk-height-1-1 uk-margin-auto">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src="https://media.agpgroup.com/uploads/2021/04/64fee03f62e038e277e5863154ebf95e34ac28f6.jpg?w=1024&h=685&scale.option=fill&cw=1024&ch=685&cx=center&cy=center"
+                <img data-src=""
                      data-options="autostart:created;" class="uk-image-grayscale Sirv uk-utility-object-fit-cover "
                      alt="64fee03f62e038e277e5863154ebf95e34ac28f6.jpg?w=1024&h=685&scale"
                      title="64fee03f62e038e277e5863154ebf95e34ac28f6.jpg?w=1024&h=685&scale"/></div>
@@ -1090,7 +1090,7 @@
                 <div class="uk-position-cover">
                     <div class="uk-cover-container">
                         <canvas width="935" height="935"></canvas>
-                        <img data-src="https://media.agpgroup.com/uploads/2021/04/14b28b4c8e15414e047c2cca0c6cb3259be73fd2-scaled.jpg?w=1024&h=654&scale.option=fill&cw=1024&ch=654&cx=center&cy=center"
+                        <img data-src=""
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class="uk-image-grayscale Sirv uk-utility-object-fit-cover "
                              alt="14b28b4c8e15414e047c2cca0c6cb3259be73fd2-scaled.jpg?w=1024&h=654&scale"

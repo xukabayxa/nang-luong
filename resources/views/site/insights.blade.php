@@ -35,7 +35,7 @@
                             <div class="uk-style-primary-m uk-text-4 uk-text-lh-4 uk-width-2-3@m uk-width-1-1">
                                 <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-margin-small-bottom uk-hidden@s">
                                     22.03.22 </h6>
-                                <a href="https://www.agpgroup.com/insights/agp-sustainable-real-assets-and-hartree-partners-announce-us-expansion-of-global-solar-partnership/"
+                                <a href=""
                                    class="uk-color-dark">
                                     {{$post->name}}</a>
                             </div>
@@ -54,9 +54,9 @@
                             <div class="uk-feat-article uk-width-1-1@m uk-width-1-2@s"
                                  uk-scrollspy="cls: uk-animation-fade; delay: 450;">
                                 <div class="uk-cover-container">
-                                    <a href="https://www.agpgroup.com/insights/ampyr-solar-europe-secures-e400-million-from-carval-investors-to-develop-and-construct-pipeline-of-european-solar-assets/">
+                                    <a href="">
                                         <canvas width="1000" height="662"></canvas>
-                                        <img data-src="https://media.agpgroup.com/uploads/2019/06/iStock-1032683612-scaled.jpg?w=1024&h=683&scale.option=fill&cw=1024&ch=683&cx=center&cy=center"
+                                        <img data-src=""
                                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                              class=" Sirv uk-utility-object-fit-cover "
                                              alt="iStock-1032683612-scaled.jpg?w=1024&h=683&scale"
@@ -67,7 +67,7 @@
                                         <div class="uk-style-secondary-m uk-color-muted uk-text-12 uk-margin-small-bottom uk-text-ls-1 uk-text-lh-3 uk-hidden@s">
                                             16.02.22
                                         </div>
-                                        <a href="https://www.agpgroup.com/insights/ampyr-solar-europe-secures-e400-million-from-carval-investors-to-develop-and-construct-pipeline-of-european-solar-assets/"
+                                        <a href=""
                                            class="uk-color-dark">
                                             AMPYR Solar Europe Secures €400 Million from CARVAL Investors to Develop and
                                             Construct&hellip; </a>
@@ -80,9 +80,9 @@
                             <div class="uk-feat-article uk-width-1-1@m uk-width-1-2@s"
                                  uk-scrollspy="cls: uk-animation-fade; delay: 550;">
                                 <div class="uk-cover-container">
-                                    <a href="https://www.agpgroup.com/insights/ampyr-solar-europe-signs-deal-with-edinburgh-airport-to-develop-solar-farm-battery-and-electric-vehicle-infrastructure/">
+                                    <a href="">
                                         <canvas width="1000" height="662"></canvas>
-                                        <img data-src="https://media.agpgroup.com/uploads/2022/03/ASE-EAL-Header-Image.png?w=1024&h=505&scale.option=fill&cw=1024&ch=505&cx=center&cy=center"
+                                        <img data-src=""
                                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                              class=" Sirv uk-utility-object-fit-cover "
                                              alt="ASE-EAL-Header-Image.png?w=1024&h=505&scale"
@@ -93,7 +93,7 @@
                                         <div class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-margin-small-bottom uk-hidden@s">
                                             11.03.22
                                         </div>
-                                        <a href="https://www.agpgroup.com/insights/ampyr-solar-europe-signs-deal-with-edinburgh-airport-to-develop-solar-farm-battery-and-electric-vehicle-infrastructure/"
+                                        <a href=""
                                            class="uk-color-dark">
                                             AMPYR Solar Europe signs deal with Edinburgh Airport to develop solar farm,
                                             battery&hellip; </a>
@@ -122,9 +122,9 @@
                     <div>
                         <div class="uk-card uk-article-item">
                             <div class="uk-cover-container">
-                                <a href="https://www.agpgroup.com/insights/agp-sustainable-real-assets-and-hartree-partners-announce-us-expansion-of-global-solar-partnership/">
+                                <a href="">
                                     <canvas width="467" height="593"></canvas>
-                                    <img data-src="https://media.agpgroup.com/uploads/2022/03/SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale.option=fill&cw=1024&ch=384&cx=center&cy=center"
+                                    <img data-src=""
                                          data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                          class=" Sirv uk-utility-object-fit-cover "
                                          alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
@@ -135,7 +135,7 @@
                                 <div></div>
                             </div>
                             <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">
-                                <a href="https://www.agpgroup.com/insights/agp-sustainable-real-assets-and-hartree-partners-announce-us-expansion-of-global-solar-partnership/"
+                                <a href=""
                                    class="uk-color-dark">
                                     AGP Sustainable Real Assets and Hartree Partners Announce US Expansion of Global
                                     Solar&hellip; </a>
@@ -145,9 +145,9 @@
                     <div>
                         <div class="uk-card uk-article-item">
                             <div class="uk-cover-container">
-                                <a href="https://www.agpgroup.com/insights/ampyr-solar-europe-signs-deal-with-edinburgh-airport-to-develop-solar-farm-battery-and-electric-vehicle-infrastructure/">
+                                <a href="">
                                     <canvas width="467" height="593"></canvas>
-                                    <img data-src="https://media.agpgroup.com/uploads/2022/03/ASE-EAL-Header-Image.png?w=1024&h=505&scale.option=fill&cw=1024&ch=505&cx=center&cy=center"
+                                    <img data-src=""
                                          data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                          class=" Sirv uk-utility-object-fit-cover "
                                          alt="ASE-EAL-Header-Image.png?w=1024&h=505&scale"
@@ -158,7 +158,7 @@
                                 <div></div>
                             </div>
                             <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">
-                                <a href="https://www.agpgroup.com/insights/ampyr-solar-europe-signs-deal-with-edinburgh-airport-to-develop-solar-farm-battery-and-electric-vehicle-infrastructure/"
+                                <a href=""
                                    class="uk-color-dark">
                                     AMPYR Solar Europe signs deal with Edinburgh Airport to develop solar farm, battery&hellip; </a>
                             </div>
@@ -167,9 +167,9 @@
                     <div>
                         <div class="uk-card uk-article-item">
                             <div class="uk-cover-container">
-                                <a href="https://www.agpgroup.com/insights/ampyr-solar-europe-secures-e400-million-from-carval-investors-to-develop-and-construct-pipeline-of-european-solar-assets/">
+                                <a href="">
                                     <canvas width="467" height="593"></canvas>
-                                    <img data-src="https://media.agpgroup.com/uploads/2019/06/iStock-1032683612-scaled.jpg?w=1024&h=683&scale.option=fill&cw=1024&ch=683&cx=center&cy=center"
+                                    <img data-src=""
                                          data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                          class=" Sirv uk-utility-object-fit-cover "
                                          alt="iStock-1032683612-scaled.jpg?w=1024&h=683&scale"
@@ -180,7 +180,7 @@
                                 <div></div>
                             </div>
                             <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">
-                                <a href="https://www.agpgroup.com/insights/ampyr-solar-europe-secures-e400-million-from-carval-investors-to-develop-and-construct-pipeline-of-european-solar-assets/"
+                                <a href=""
                                    class="uk-color-dark">
                                     AMPYR Solar Europe Secures €400 Million from CARVAL Investors to Develop and
                                     Construct&hellip; </a>
@@ -205,7 +205,7 @@
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src="https://media.agpgroup.com/uploads/2021/04/cta-bg-scaled.jpg"
+                <img data-src=""
                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
             <div class="uk-text-center">
@@ -215,7 +215,7 @@
                         Partner with us to generate a positive impact for people and the environment </h4>
                     <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
                         <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                           href="https://www.agpgroup.com/contact/">
+                           href="">
                             <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
                             <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
                                   uk-icon="icon: button-circle; ratio: 1"></span>

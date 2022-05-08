@@ -33,7 +33,7 @@
                                 </div>
                                 <div uk-scrollspy="cls: uk-animation-fade; delay: 800;">
                                     <a class="uk-button uk-color-quartary uk-style-secondary-b "
-                                       href="https://www.agpgroup.com/global-reach/">
+                                       href="#">
                                         <span class="uk-color-quartary uk-text-middle uk-margin-right">Global Reach</span>
                                         <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-quartary"
                                               uk-icon="icon: button-circle; ratio: 1"></span>
@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="uk-text-center uk-margin-top">
                                         <img class="uk-height-xxsmall"
-                                             src="https://media.agpgroup.com/uploads/2021/05/6.png">
+                                             src="#">
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@
                                     </div>
                                     <div class="uk-text-center uk-margin-top">
                                         <img class="uk-height-xxsmall"
-                                             src="https://media.agpgroup.com/uploads/2021/05/7.png">
+                                             src="#">
                                     </div>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@
                                     </div>
                                     <div class="uk-text-center uk-margin-top">
                                         <img class="uk-height-xxsmall"
-                                             src="https://media.agpgroup.com/uploads/2021/05/9.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
                                     </div>
                                     <div class="uk-text-center uk-margin-top">
                                         <img class="uk-height-xxsmall"
-                                             src="https://media.agpgroup.com/uploads/2021/05/11.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -158,7 +158,7 @@
                                     </div>
                                     <div class="uk-text-center uk-margin-top">
                                         <img class="uk-height-xxsmall"
-                                             src="https://media.agpgroup.com/uploads/2021/05/12.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@
                                     </div>
                                     <div class="uk-text-center uk-margin-top">
                                         <img class="uk-height-xxsmall"
-                                             src="https://media.agpgroup.com/uploads/2021/05/13.png">
+                                             src="">
                                     </div>
                                 </div>
                             </div>
@@ -183,7 +183,7 @@
                                 We have identified six SDGs of particular relevance to AGP </h4>
                             <div class="uk-margin-small-top">
                                 <a class="uk-button uk-color-primary uk-style-secondary-b "
-                                   href="https://www.agpgroup.com/about-us/un-sdgs/">
+                                   href="">
                                     <span class="uk-color-primary uk-text-middle uk-margin-right">find out more</span>
                                     <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                           uk-icon="icon: button-circle; ratio: 1"></span>
@@ -301,7 +301,7 @@
                 <div class="uk-position-cover">
                     <div class="uk-cover-container">
                         <canvas width="935" height="935"></canvas>
-                        <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1216403909.jpg?w=1024&h=683&scale.option=fill&cw=1024&ch=683&cx=center&cy=center"
+                        <img data-src=""
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class="uk-image-grayscale Sirv uk-utility-object-fit-cover "
                              alt="iStock-1216403909.jpg?w=1024&h=683&scale"
@@ -346,7 +346,7 @@
                 </div>
                 <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-fade; delay: 500;">
                     <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                       href="https://www.agpgroup.com/contact/">
+                       href="">
                         <span class="uk-color-tertiary uk-text-middle uk-margin-right">Our locations</span>
                         <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
                               uk-icon="icon: button-circle; ratio: 1"></span>
@@ -357,7 +357,7 @@
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src="https://media.agpgroup.com/uploads/2021/04/cta-bg-scaled.jpg"
+                <img data-src=""
                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
             <div class="uk-text-center">
@@ -367,7 +367,7 @@
                         Partner with us to generate a positive impact for people and the environment </h4>
                     <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
                         <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                           href="https://www.agpgroup.com/contact/">
+                           href="">
                             <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
                             <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
                                   uk-icon="icon: button-circle; ratio: 1"></span>

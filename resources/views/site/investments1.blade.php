@@ -226,7 +226,7 @@
                         Partner with us to generate a positive impact for people and the environment </h4>
                     <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
                         <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                           href="https://www.agpgroup.com/contact/">
+                           href="">
                             <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
                             <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
                                   uk-icon="icon: button-circle; ratio: 1"></span>

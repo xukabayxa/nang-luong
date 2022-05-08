@@ -58,17 +58,17 @@
                             <div class="uk-accordion-content">
                                 <ul>
                                     <li>
-                                        <a href="https://www.agpgroup.com/investments/renewable-energy/">Renewable<br/>
+                                        <a href="">Renewable<br/>
                                             Energy</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.agpgroup.com/investments/sustainable-communities-infrastructure/">Sustainable
+                                        <a href="">Sustainable
                                             <br/>
                                             Communities &amp; <br/>
                                             Infrastructure</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.agpgroup.com/investments/green-technologies/">Green
+                                        <a href="">Green
                                             <br/>
                                             Technologies</a>
                                     </li>
@@ -307,7 +307,7 @@
             <div class="uk-text-left uk-mega-menu-item items-4">
                 <a href="{{route('front.about4')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-492596662-scaled.jpg"
+                        <img data-src=""
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="iStock-492596662-scaled"
                              title="iStock-492596662-scaled"/>

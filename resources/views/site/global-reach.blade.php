@@ -14,7 +14,7 @@
         <div class="uk-section uk-background-dark uk-position-relative uk-overflow-hidden">
             <div class="uk-container">
                 <div class="uk-position-map-bg uk-hidden@s">
-                    <img src="https://www.agpgroup.com/app/themes/sozo/public/images/map-no-labels.svg">
+                    <img src="">
                 </div>
                 <div class="uk-background-wash-map uk-position-cover uk-hidden@s"></div>
                 <p class="uk-light uk-margin-remove-top@s uk-margin-small-bottom uk-style-primary-l uk-text-3 uk-text-lh-4 uk-text-center"
@@ -22,14 +22,14 @@
                 <div class="uk-hidden@s uk-text-center uk-margin-medium-bottom"
                      uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">
                     <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                       href="https://www.agpgroup.com/contact/">
+                       href="">
                         <span class="uk-color-tertiary uk-text-middle uk-margin-right">see our office locations</span>
                         <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
                               uk-icon="icon: button-circle; ratio: 1"></span>
                     </a>
                 </div>
                 <img class="uk-visible@s"
-                     src="https://media.agpgroup.com/uploads/2022/03/global-expertise-map-31-03-22.png"
+                     src=""
                      uk-scrollspy="cls: uk-animation-fade; delay: 400;">
             </div>
         </div>
@@ -39,7 +39,7 @@
             <div class="uk-position-cover">
                 <div class="uk-cover-container">
                     <video uk-cover loop muted playsinline uk-video="autoplay: inview">
-                        <source src="https://www.agpgroup.com/app/uploads/2021/05/iStock-942182420-optim.mp4"
+                        <source src=""
                                 type="video/mp4">
                     </video>
                     <canvas width="1600" height="900"></canvas>
@@ -87,7 +87,7 @@
                     <div class="uk-animation-parent">
                         <div class="uk-margin-column-image">
                             <div class="uk-cover-container">
-                                <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1180355744-scaled.jpg?w=1024&h=683&scale.option=fill&cw=1024&ch=683&cx=center&cy=center"
+                                <img data-src=""
                                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                      class=" Sirv uk-utility-object-fit-cover "
                                      alt="iStock-1180355744-scaled.jpg?w=1024&h=683&scale"
@@ -126,7 +126,7 @@
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src="https://media.agpgroup.com/uploads/2021/04/cta-bg-scaled.jpg"
+                <img data-src=""
                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
             <div class="uk-text-center">
@@ -136,7 +136,7 @@
                         Partner with us to generate a positive impact for people and the environment </h4>
                     <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
                         <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                           href="https://www.agpgroup.com/contact/">
+                           href="">
                             <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
                             <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
                                   uk-icon="icon: button-circle; ratio: 1"></span>
