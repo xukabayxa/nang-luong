@@ -17,7 +17,7 @@
         <div class="uk-section uk-background-dark uk-position-relative uk-overflow-hidden">
             <div class="uk-container">
                 <div class="uk-position-map-bg uk-hidden@s">
-                    <img src="">
+                    <img src="/site/system/inves/i3.jpg">
                 </div>
                 <div class="uk-background-wash-map uk-position-cover uk-hidden@s"></div>
                 <p class="uk-light uk-margin-remove-top@s uk-margin-small-bottom uk-style-primary-l uk-text-3 uk-text-lh-4 uk-text-center"
@@ -42,7 +42,7 @@
             <div class="uk-position-cover">
                 <div class="uk-cover-container">
                     <video uk-cover loop muted playsinline uk-video="autoplay: inview">
-                        <source src=""
+                        <source src="/site/system/inves/i_3.mp4"
                                 type="video/mp4">
                     </video>
                     <canvas width="1600" height="900"></canvas>
@@ -90,7 +90,7 @@
                     <div class="uk-animation-parent">
                         <div class="uk-margin-column-image">
                             <div class="uk-cover-container">
-                                <img data-src=""
+                                <img data-src="/site/system/inves/i3.jpg" src="/site/system/inves/i3.jpg"
                                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                      class=" Sirv uk-utility-object-fit-cover "
                                      alt="iStock-1180355744-scaled.jpg?w=1024&h=683&scale"
@@ -129,7 +129,7 @@
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src=""
+                <img data-src="/site/system/inves/i_3_2.jpg" src="/site/system/inves/i_3_2.jpg"
                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
             <div class="uk-text-center">
