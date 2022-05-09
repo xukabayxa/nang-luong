@@ -4,7 +4,10 @@
 @endsection
 @section('content')
     <div uk-sticky="animation: uk-animation-slide-top;">
-        <div class="uk-background-transparent uk-border-navbar uk-background-light uk-dark uk-position-absolute uk-width-1-1">
+{{--        <div class="uk-background-transparent uk-border-navbar uk-background-light uk-dark uk-position-absolute uk-width-1-1">--}}
+{{--            @include('site.partials.header')--}}
+{{--        </div>--}}
+        <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
             @include('site.partials.header')
         </div>
     </div>

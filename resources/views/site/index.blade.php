@@ -229,7 +229,7 @@
                 <div>
                     <div class="uk-cover-container uk-margin-small-bottom">
                         <canvas width="460" height="370"></canvas>
-                        <img data-src="" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale" title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale" />
+                        <img data-src="/site/system/b.jpg" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale" title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale" />
                     </div>
                     <div class="uk-flex uk-flex-between uk-style-secondary-m uk-text-ls-1 uk-text-dark uk-text-12 uk-margin-small-bottom uk-padding-xsmall-top">
                         <div>22.03.22</div>
@@ -238,7 +238,7 @@
                     <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
                         AGP Sustainable Real Assets and Hartree Partners Announce US Expansion of Global Solar
                         Partnership </h4>
-                    <a class="uk-button uk-color-teal uk-style-secondary-b " href="https://www.agpgroup.com/insights/agp-sustainable-real-assets-and-hartree-partners-announce-us-expansion-of-global-solar-partnership/">
+                    <a class="uk-button uk-color-teal uk-style-secondary-b " href="#">
                         <span class="uk-color-teal uk-text-middle uk-margin-right" style="color: #114D81 !important">Read Article</span>
                         <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}" alt="win-icon">
                     </a>
@@ -249,7 +249,7 @@
                 <div>
                     <div class="uk-cover-container uk-margin-small-bottom">
                         <canvas width="460" height="370"></canvas>
-                        <img data-src="" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="ASE-EAL-Header-Image.png?w=1024&h=505&scale" title="ASE-EAL-Header-Image.png?w=1024&h=505&scale" />
+                        <img data-src="/site/system/about_us/a_1.jpg" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="ASE-EAL-Header-Image.png?w=1024&h=505&scale" title="ASE-EAL-Header-Image.png?w=1024&h=505&scale" />
                     </div>
                     <div class="uk-flex uk-flex-between uk-style-secondary-m uk-text-ls-1 uk-text-dark uk-text-12 uk-margin-small-bottom uk-padding-xsmall-top">
                         <div>11.03.22</div>
@@ -269,7 +269,7 @@
                 <div>
                     <div class="uk-cover-container uk-margin-small-bottom">
                         <canvas width="460" height="370"></canvas>
-                        <img data-src="" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="iStock-1032683612-scaled.jpg?w=1024&h=683&scale" title="iStock-1032683612-scaled.jpg?w=1024&h=683&scale" />
+                        <img data-src="/site/system/inves/i3.jpg" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="iStock-1032683612-scaled.jpg?w=1024&h=683&scale" title="iStock-1032683612-scaled.jpg?w=1024&h=683&scale" />
                     </div>
                     <div class="uk-flex uk-flex-between uk-style-secondary-m uk-text-ls-1 uk-text-dark uk-text-12 uk-margin-small-bottom uk-padding-xsmall-top">
                         <div>16.02.22</div>
