@@ -16,7 +16,7 @@
             <div class="uk-position-cover">
                 <div class="uk-cover-container">
                     <img
-                        data-src="/site/system/inves/i_2.jpg"
+                        data-src="/site/system/inves/i_2.jpg" src="/site/system/inves/i_2.jpg"
                         data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                         class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled.jpg?w=1024&h=682&scale"
                         title="iStock-1156913631-scaled.jpg?w=1024&h=682&scale"/>

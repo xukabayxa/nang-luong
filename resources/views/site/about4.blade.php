@@ -38,7 +38,7 @@
                     </div>
                     <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 500;">
                         <div class="uk-cover-container">
-                            <img data-src=""
+                            <img data-src="/site/system/inves/i_2_1_2.jpg"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="iStock-492596662-scaled.jpg?w=1024&h=475&scale"
@@ -62,7 +62,7 @@
                             <span class="uk-style-line teal thick"></span>
                         </div>
                         <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            <img src="/site/system/partner/img.png" style="width: auto; max-height: 120px">
+                            <img src="/site/system/partner/image024.png" style="width: auto; max-height: 120px">
                            </h4>
 {{--                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">--}}
 {{--                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">--}}
@@ -85,7 +85,7 @@
                             <span class="uk-style-line orange thick"></span>
                         </div>
                         <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            <img src="/site/system/partner/img_1.png" style="width: auto; max-height: 120px">
+                            <img src="/site/system/partner/image004.png" style="width: auto; max-height: 120px">
 
                         </h4>
 
@@ -100,7 +100,7 @@
                             <span class="uk-style-line orange thick"></span>
                         </div>
                         <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            <img src="/site/system/partner/img_2.png" style="width: auto; max-height: 120px">
+                            <img src="/site/system/partner/image005.jpg" style="width: auto; max-height: 120px">
                         </h4>
                     </div>
                     <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-orange"
@@ -113,7 +113,7 @@
                             <span class="uk-style-line teal thick"></span>
                         </div>
                         <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            <img src="/site/system/partner/img_3.png" style="width: auto; max-height: 140px">
+                            <img src="/site/system/partner/image006.png" style="width: auto; max-height: 140px">
                         </h4>
                     </div>
                     <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-teal"
@@ -126,7 +126,8 @@
                             <span class="uk-style-line orange thick"></span>
                         </div>
                         <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            Elmahdi Tahri </h4>
+                            <img src="/site/system/partner/image029.jpg"
+                                style="width: auto; max-height: 140px"> </h4>
                         <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
                             <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
                                 <a href="https://www.linkedin.com/in/elmahdi-tahri-5448b83/" target="_blank"
@@ -134,8 +135,7 @@
                                     <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
                                 </a>
                             </div>
-                            <img src=""
-                                 class="uk-display-inline uk-width-flag" width="50" height="50">
+
                         </div>
                     </div>
                     <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-orange"

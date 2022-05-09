@@ -34,7 +34,7 @@
                     </div>
                     <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 500;">
                         <div class="uk-cover-container">
-                            <img data-src=""
+                            <img data-src="/site/system/inves/i_2_1.jpg"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="iStock-1199544859-scaled.jpg?w=1024&h=536&scale"

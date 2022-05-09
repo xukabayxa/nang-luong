@@ -18,6 +18,7 @@
                         <source src="/site/system/inves/i_3.mp4"
                                 type="video/mp4">
                     </video>
+
                     <canvas width="1600" height="900"></canvas>
                 </div>
 
