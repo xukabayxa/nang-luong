@@ -232,101 +232,236 @@
         <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-position-z-index-menu"
              uk-grid>
 {{--            phần menu about-us trổ xuống--}}
-            <div class="uk-text-left uk-mega-menu-item items-4">
-                <a href="{{route('front.about')}}" class="uk-animation-zoom">
-                    <div class="uk-cover-container ">
-                        <img data-src="/site/system/about_us/a1.jpg"
-                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                             class=" Sirv uk-utility-object-fit-cover " alt="iStock-663800200-scaled"
-                             title="iStock-663800200-scaled"/>
-                        <canvas width="400" height="720"></canvas>
-                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
+{{--            <div class="uk-text-left uk-mega-menu-item items-4">--}}
+{{--                <a href="{{route('front.about')}}" class="uk-animation-zoom">--}}
+{{--                    <div class="uk-cover-container ">--}}
+{{--                        <img data-src="/site/system/about_us/a1.jpg"--}}
+{{--                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                             class=" Sirv uk-utility-object-fit-cover " alt="iStock-663800200-scaled"--}}
+{{--                             title="iStock-663800200-scaled"/>--}}
+{{--                        <canvas width="400" height="720"></canvas>--}}
+{{--                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
+{{--                        <div class="uk-position-bottom uk-padding-xmedium">--}}
+{{--                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
+{{--                                {{trans('message.who_we_are')}}</h4>--}}
+{{--                            <a class="uk-button uk-color-primary uk-style-secondary-b "--}}
+{{--                               href="{{route('front.about')}}">--}}
+{{--                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
+{{--                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"--}}
+{{--                                      uk-icon="icon: button-circle; ratio: 1"></span>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--            <div class="uk-text-left uk-mega-menu-item items-4">--}}
+{{--                <a href="{{route('front.about2')}}" class="uk-animation-zoom">--}}
+{{--                    <div class="uk-cover-container ">--}}
+{{--                        <img data-src="/site/system/about_us/a2.jpg"--}}
+{{--                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                             class=" Sirv uk-utility-object-fit-cover " alt="iStock-864106820-scaled"--}}
+{{--                             title="iStock-864106820-scaled"/>--}}
+{{--                        <canvas width="400" height="720"></canvas>--}}
+{{--                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
+{{--                        <div class="uk-position-bottom uk-padding-xmedium">--}}
+{{--                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
+{{--                                {{trans('message.what_we_do')}}</h4>--}}
+{{--                            <a class="uk-button uk-color-primary uk-style-secondary-b "--}}
+{{--                               href="{{route('front.about2')}}">--}}
+{{--                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
+{{--                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"--}}
+{{--                                      uk-icon="icon: button-circle; ratio: 1"></span>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--            <div class="uk-text-left uk-mega-menu-item items-4">--}}
+{{--                <a href="{{route('front.about3')}}" class="uk-animation-zoom">--}}
+{{--                    <div class="uk-cover-container ">--}}
+{{--                        <img data-src="/site/system/about_us/a3.jpg"--}}
+{{--                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                             class=" Sirv uk-utility-object-fit-cover " alt="iStock-1199544859-scaled"--}}
+{{--                             title="iStock-1199544859-scaled"/>--}}
+{{--                        <canvas width="400" height="720"></canvas>--}}
+{{--                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
+{{--                        <div class="uk-position-bottom uk-padding-xmedium">--}}
+{{--                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
+{{--                                {{trans('message.our_team')}}</h4>--}}
+{{--                            <a class="uk-button uk-color-primary uk-style-secondary-b "--}}
+{{--                               href="{{route('front.about3')}}">--}}
+{{--                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
+{{--                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"--}}
+{{--                                      uk-icon="icon: button-circle; ratio: 1"></span>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+{{--            <div class="uk-text-left uk-mega-menu-item items-4">--}}
+{{--                <a href="{{route('front.about4')}}" class="uk-animation-zoom">--}}
+{{--                    <div class="uk-cover-container ">--}}
+{{--                        <img data-src="/site/system/k.jpg"--}}
+{{--                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                             class=" Sirv uk-utility-object-fit-cover " alt="iStock-492596662-scaled"--}}
+{{--                             title="iStock-492596662-scaled"/>--}}
+{{--                        <canvas width="400" height="720"></canvas>--}}
+{{--                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
+{{--                        <div class="uk-position-bottom uk-padding-xmedium">--}}
+{{--                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
+{{--                                {{trans('message.our_partner')}}</h4>--}}
+{{--                            <a class="uk-button uk-color-primary uk-style-secondary-b "--}}
+{{--                               href="{{route('front.about4')}}">--}}
+{{--                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
+{{--                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"--}}
+{{--                                      uk-icon="icon: button-circle; ratio: 1"></span>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+
+            <style>
+                .businessList {
+                    height: calc(100vh - 72px);
+                    width: 100%;
+                    display: flex;
+                }
+                .businessItem {
+                     width: 25%;
+                     position: relative;
+                     background-color: #000;
+                     transition: all .25s ease-out;
+                     overflow: hidden;
+                 }
+                .businessImg {
+                    width: 100%;
+                    height: 100%;
+                    background-size: cover;
+                    background-position: center;
+                    transition: var(--transition-smooth);
+                    transform: scale(1.2);
+                }
+                .businessItem>.businessTitle {
+                    position: absolute;
+                    bottom: 0;
+                    padding: 100px 0 50px 50px;
+                    margin: 0;
+                    min-width: 25vw;
+                    width: 100%;
+                    font-size: 24px;
+                    background-image: linear-gradient(0, black, transparent);
+                    transform: none;
+                    transition: var(--transition-smooth);
+                    transition-delay: .5s;
+                }
+                .businessDetail {
+                    background-color: #333134;
+                    padding: 12px 48px 34px;
+                    position: absolute;
+                    bottom: 0;
+                    transform: translateY(140%);
+                    transition: var(--transition-smooth);
+                    transition-delay: .25s;
+                    min-width: 50vw;
+                    width: 100%;
+                }
+                .businessDetail .businessTitle, .businessTxt, .businessLink {
+                    opacity: 0;
+                    transition: var(--transition-smooth);
+                    transform: translateY(32px);
+                    transition-delay: .5s;
+                }
+                .businessTitle {
+                    font-size: 32px;
+                    color: var(--color-theme);
+                    font-weight: 700;
+                    position: relative;
+                    line-height: 36px;
+                    padding: 0;
+                    margin: 0;
+                    transition-delay: .5s;
+                }
+                .businessTxt {
+                    margin: 32px 0;
+                    height: max-content;
+                    overflow: hidden;
+                    transition-delay: .6s;
+                }
+                .businessDetail .businessTitle, .businessTxt, .businessLink {
+                    opacity: 0;
+                    transition: var(--transition-smooth);
+                    transform: translateY(32px);
+                    transition-delay: .5s;
+                }
+                .businessLink {
+                    text-transform: uppercase;
+                    background: url(../img/icon-linkArrow.png);
+                    background-repeat: no-repeat;
+                    background-position: right center;
+                    padding: 0 42px 0 0;
+                    transition-delay: .7s;
+                }
+
+                .businessItem:hover {
+                    width: 100%;
+                }
+
+                .businessItem:hover>.businessTitle {
+                    opacity: 0;
+                    transform: translateY(32px);
+                }
+
+                .businessItem:hover .businessDetail {
+                    transform: none;
+                }
+                .businessItem:hover .businessTitle, .businessItem:hover .businessTxt, .businessItem:hover .businessLink {
+                    opacity: 1;
+                    transform: none;
+                }
+            </style>
+
+            <div class="businessList">
+                <div class="businessItem">
+                    <div class="businessImg" style="background-image:url(/site/system/about_us/a1.jpg);"></div>
+                    <h2 class="businessTitle">{{trans('message.who_we_are')}}</h2>
+                    <div class="businessDetail">
+                        <h2 class="businessTitle">{{trans('message.who_we_are')}}</h2>
+                        <a href="{{route('front.about')}}" class="businessLink">Detail</a>
                     </div>
-                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                {{trans('message.who_we_are')}}</h4>
-                            <a class="uk-button uk-color-primary uk-style-secondary-b "
-                               href="{{route('front.about')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
-                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
-                                      uk-icon="icon: button-circle; ratio: 1"></span>
-                            </a>
-                        </div>
+                </div>
+                <div class="businessItem">
+                    <div class="businessImg" style="background-image:url(/site/system/about_us/a2.jpg);"></div>
+                    <h2 class="businessTitle">{{trans('message.what_we_do')}}</h2>
+                    <div class="businessDetail">
+                        <h2 class="businessTitle">{{trans('message.what_we_do')}}</h2>
+                        <a href="{{route('front.about2')}}" class="businessLink">Detail</a>
                     </div>
-                </a>
-            </div>
-            <div class="uk-text-left uk-mega-menu-item items-4">
-                <a href="{{route('front.about2')}}" class="uk-animation-zoom">
-                    <div class="uk-cover-container ">
-                        <img data-src="/site/system/about_us/a2.jpg"
-                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                             class=" Sirv uk-utility-object-fit-cover " alt="iStock-864106820-scaled"
-                             title="iStock-864106820-scaled"/>
-                        <canvas width="400" height="720"></canvas>
-                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
+                </div>
+                <div class="businessItem">
+                    <div class="businessImg" style="background-image:url(/site/system/about_us/a3.jpg);"></div>
+                    <h2 class="businessTitle">{{trans('message.our_team')}}</h2>
+                    <div class="businessDetail">
+                        <h2 class="businessTitle">{{trans('message.our_team')}}</h2>
+                        <a href="{{route('front.about3')}}" class="businessLink">Detail</a>
                     </div>
-                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                {{trans('message.what_we_do')}}</h4>
-                            <a class="uk-button uk-color-primary uk-style-secondary-b "
-                               href="{{route('front.about2')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
-                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
-                                      uk-icon="icon: button-circle; ratio: 1"></span>
-                            </a>
-                        </div>
+                </div>
+                <div class="businessItem">
+                    <div class="businessImg" style="background-image:url(/site/system/k.jpg);"></div>
+                    <h2 class="businessTitle"> {{trans('message.our_partner')}}</h2>
+                    <div class="businessDetail">
+                        <h2 class="businessTitle"> {{trans('message.our_partner')}}</h2>
+                        <a href="{{route('front.about4')}}" class="businessLink">Detail</a>
                     </div>
-                </a>
-            </div>
-            <div class="uk-text-left uk-mega-menu-item items-4">
-                <a href="{{route('front.about3')}}" class="uk-animation-zoom">
-                    <div class="uk-cover-container ">
-                        <img data-src="/site/system/about_us/a3.jpg"
-                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                             class=" Sirv uk-utility-object-fit-cover " alt="iStock-1199544859-scaled"
-                             title="iStock-1199544859-scaled"/>
-                        <canvas width="400" height="720"></canvas>
-                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
-                    </div>
-                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                {{trans('message.our_team')}}</h4>
-                            <a class="uk-button uk-color-primary uk-style-secondary-b "
-                               href="{{route('front.about3')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
-                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
-                                      uk-icon="icon: button-circle; ratio: 1"></span>
-                            </a>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="uk-text-left uk-mega-menu-item items-4">
-                <a href="{{route('front.about4')}}" class="uk-animation-zoom">
-                    <div class="uk-cover-container ">
-                        <img data-src="/site/system/k.jpg"
-                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                             class=" Sirv uk-utility-object-fit-cover " alt="iStock-492596662-scaled"
-                             title="iStock-492596662-scaled"/>
-                        <canvas width="400" height="720"></canvas>
-                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
-                    </div>
-                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                {{trans('message.our_partner')}}</h4>
-                            <a class="uk-button uk-color-primary uk-style-secondary-b "
-                               href="{{route('front.about4')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
-                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
-                                      uk-icon="icon: button-circle; ratio: 1"></span>
-                            </a>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
 {{--            end--}}
         </div>
@@ -340,84 +475,114 @@
              uk-grid>
 
 {{--            phần menu dự án đầu tư trổ xuống--}}
-            <div class="uk-text-left uk-mega-menu-item items-3">
-                <a href="{{route('front.investments1')}}" class="uk-animation-zoom">
-                    <div class="uk-cover-container ">
-                        <img data-src="/site/system/inves/i1.jpg"
-                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                             class=" Sirv uk-utility-object-fit-cover "
-                             alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"
-                             title="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"/>
-                        <canvas width="533.33333333333" height="720"></canvas>
-                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
-                    </div>
-                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                {{trans('message.renewable_energy')}}</h4>
-                            <a class="uk-button uk-color-primary uk-style-secondary-b "
-                               href="{{route('front.investments1')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
-                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
-                                      uk-icon="icon: button-circle; ratio: 1"></span>
-                            </a>
-                        </div>
-                    </div>
-                </a>
-            </div>
+{{--            <div class="uk-text-left uk-mega-menu-item items-3">--}}
+{{--                <a href="{{route('front.investments1')}}" class="uk-animation-zoom">--}}
+{{--                    <div class="uk-cover-container ">--}}
+{{--                        <img data-src="/site/system/inves/i1.jpg"--}}
+{{--                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                             class=" Sirv uk-utility-object-fit-cover "--}}
+{{--                             alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"--}}
+{{--                             title="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"/>--}}
+{{--                        <canvas width="533.33333333333" height="720"></canvas>--}}
+{{--                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
+{{--                        <div class="uk-position-bottom uk-padding-xmedium">--}}
+{{--                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
+{{--                                {{trans('message.renewable_energy')}}</h4>--}}
+{{--                            <a class="uk-button uk-color-primary uk-style-secondary-b "--}}
+{{--                               href="{{route('front.investments1')}}">--}}
+{{--                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
+{{--                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"--}}
+{{--                                      uk-icon="icon: button-circle; ratio: 1"></span>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
 
-            <div class="uk-text-left uk-mega-menu-item items-3">
-                <a href="{{route('front.investments2')}}"
-                   class="uk-animation-zoom">
-                    <div class="uk-cover-container ">
-                        <img data-src="/site/system/inves/i2.jpg"
-                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                             class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"
-                             title="iStock-1156913631-scaled"/>
-                        <canvas width="533.33333333333" height="720"></canvas>
-                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
-                    </div>
-                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                {{trans('message.sustainable_infrastructure')}}
-                                </h4>
-                            <a class="uk-button uk-color-primary uk-style-secondary-b "
-                               href="{{route('front.investments2')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
-                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
-                                      uk-icon="icon: button-circle; ratio: 1"></span>
-                            </a>
-                        </div>
-                    </div>
-                </a>
-            </div>
+{{--            <div class="uk-text-left uk-mega-menu-item items-3">--}}
+{{--                <a href="{{route('front.investments2')}}"--}}
+{{--                   class="uk-animation-zoom">--}}
+{{--                    <div class="uk-cover-container ">--}}
+{{--                        <img data-src="/site/system/inves/i2.jpg"--}}
+{{--                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                             class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"--}}
+{{--                             title="iStock-1156913631-scaled"/>--}}
+{{--                        <canvas width="533.33333333333" height="720"></canvas>--}}
+{{--                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
+{{--                        <div class="uk-position-bottom uk-padding-xmedium">--}}
+{{--                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
+{{--                                {{trans('message.sustainable_infrastructure')}}--}}
+{{--                                </h4>--}}
+{{--                            <a class="uk-button uk-color-primary uk-style-secondary-b "--}}
+{{--                               href="{{route('front.investments2')}}">--}}
+{{--                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
+{{--                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"--}}
+{{--                                      uk-icon="icon: button-circle; ratio: 1"></span>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
 
-            <div class="uk-text-left uk-mega-menu-item items-3">
-                <a href="{{route('front.investments3')}}"
-                   class="uk-animation-zoom">
-                    <div class="uk-cover-container ">
-                        <img data-src="/site/system/inves/i3.jpg"
-                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                             class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"
-                             title="green-tech-scaled"/>
-                        <canvas width="533.33333333333" height="720"></canvas>
-                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
+{{--            <div class="uk-text-left uk-mega-menu-item items-3">--}}
+{{--                <a href="{{route('front.investments3')}}"--}}
+{{--                   class="uk-animation-zoom">--}}
+{{--                    <div class="uk-cover-container ">--}}
+{{--                        <img data-src="/site/system/inves/i3.jpg"--}}
+{{--                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                             class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"--}}
+{{--                             title="green-tech-scaled"/>--}}
+{{--                        <canvas width="533.33333333333" height="720"></canvas>--}}
+{{--                        <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
+{{--                        <div class="uk-position-bottom uk-padding-xmedium">--}}
+{{--                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
+{{--                                {{trans('message.future_solution')}} <br/>--}}
+{{--                              </h4>--}}
+{{--                            <a class="uk-button uk-color-primary uk-style-secondary-b "--}}
+{{--                               href="{{route('front.investments3')}}/">--}}
+{{--                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
+{{--                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"--}}
+{{--                                      uk-icon="icon: button-circle; ratio: 1"></span>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
+
+
+
+            <div class="businessList">
+                <div class="businessItem">
+                    <div class="businessImg" style="background-image:url(/site/system/inves/i1.jpg);"></div>
+                    <h2 class="businessTitle">{{trans('message.renewable_energy')}}</h2>
+                    <div class="businessDetail">
+                        <h2 class="businessTitle">{{trans('message.renewable_energy')}}</h2>
+                        <a href="{{route('front.investments1')}}}" class="businessLink">Detail</a>
                     </div>
-                    <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                {{trans('message.future_solution')}} <br/>
-                              </h4>
-                            <a class="uk-button uk-color-primary uk-style-secondary-b "
-                               href="{{route('front.investments3')}}/">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
-                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
-                                      uk-icon="icon: button-circle; ratio: 1"></span>
-                            </a>
-                        </div>
+                </div>
+
+                <div class="businessItem">
+                    <div class="businessImg" style="background-image:url(/site/system/inves/i2.jpg);"></div>
+                    <h2 class="businessTitle"> {{trans('message.sustainable_infrastructure')}}</h2>
+                    <div class="businessDetail">
+                        <h2 class="businessTitle"> {{trans('message.sustainable_infrastructure')}}</h2>
+                        <a href="{{route('front.investments2')}}}" class="businessLink">Detail</a>
                     </div>
-                </a>
+                </div>
+                <div class="businessItem">
+                    <div class="businessImg" style="background-image:url(/site/system/inves/i3.jpg);"></div>
+                    <h2 class="businessTitle"> {{trans('message.future_solution')}}</h2>
+                    <div class="businessDetail">
+                        <h2 class="businessTitle"> {{trans('message.future_solution')}}</h2>
+                        <a href="{{route('front.investments3')}}" class="businessLink">Detail</a>
+                    </div>
+                </div>
             </div>
 {{--end--}}
         </div>

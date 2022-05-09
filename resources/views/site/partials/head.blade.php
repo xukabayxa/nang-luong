@@ -335,6 +335,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="hhttps://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4a90e2">
+    <link rel="stylesheet" href="/libs/owl/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/libs/owl/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 

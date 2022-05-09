@@ -3,8 +3,52 @@
 <head>
     @include('site.partials.meta-seo')
     @include('site.partials.head')
+    <style>
+        .loading {
+            background: #000;
+            opacity: 0.8;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 9999999999999;
+            display: block;
+        }
+
+        .loading .icon {
+            background: url('/site/system/logo.png') no-repeat center center / 200px 200px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            text-indent: -9999px;
+        }
+        .loading img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            /*width: 200px;*/
+            height: 6px;
+            text-indent: -9999px;
+        }
+    </style>
 </head>
-<body class="home page-template-default page page-id-6" ng-app="App">
+<body class="home page-template-default page page-id-6 preloading" ng-app="App">
+
+<div class="loader">
+    <div class="loading"><i class="icon"></i>
+        <img src="/site/system/loading_2.gif">
+    </div>
+</div>
 
 @include('site.partials.svg')
 
@@ -18,6 +62,12 @@
 <script src="/site/js/script.js" defer="defer" type="text/javascript"></script>
 <script>
     /* This JavaScript is used for different helper functions, such as Sirv object updates with Ajax. */
+
+    $(window).on('load', function(event) {
+        $('body').removeClass('preloading');
+        // $('.load').delay(1000).fadeOut('fast');
+        $('.loader').delay(1000).fadeOut('fast');
+    });
 
     jQuery(document).ajaxComplete(function () {
         if (arguments[1].responseText && arguments[1].responseText.match(/class *= *"[^"]*Sirv/gm)) {
