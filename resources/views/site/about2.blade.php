@@ -62,7 +62,7 @@
                 <div class="uk-text-left uk-mega-menu-item items-1">
                     <a href="#" class="uk-animation-zoom">
                         <div class="uk-cover-container uk-height-xlarge">
-                            <img data-src=""
+                            <img data-src="/site/system/k.jpg"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"
@@ -88,7 +88,7 @@
                     <a href="#"
                        class="uk-animation-zoom">
                         <div class="uk-cover-container uk-height-xlarge">
-                            <img data-src=""
+                            <img data-src="/site/system/l1.jpg"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"
                                  title="iStock-1156913631-scaled"/>
@@ -112,7 +112,7 @@
                 <div class="uk-text-left uk-mega-menu-item items-1">
                     <a href="" class="uk-animation-zoom">
                         <div class="uk-cover-container uk-height-xlarge">
-                            <img data-src=""
+                            <img data-src="/site/system/inves/i_1_1.jpg"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"
                                  title="green-tech-scaled"/>

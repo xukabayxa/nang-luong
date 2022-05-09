@@ -17,6 +17,7 @@
                     <img data-src="/site/system/inves/i_1.jpg"
                          data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                          class=" Sirv uk-utility-object-fit-cover "
+                         src = "/site/system/inves/i_1.jpg"
                          alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled.jpg?w=1024&h=684&scale"
                          title="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled.jpg?w=1024&h=684&scale"/>
                     <canvas width="1600" height="900"></canvas>
@@ -216,7 +217,7 @@
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src="/site/system/inves/i_1_1.jpg"
+                <img data-src="/site/system/inves/i_1_1.jpg" src = "/site/system/inves/i_1_1.jpg"
                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
             <div class="uk-text-center">
