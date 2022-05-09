@@ -143,7 +143,7 @@
             </style>
 
             <div class="owl-carousel owl-theme">
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/owlcarousel1.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/home_1.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
@@ -159,7 +159,7 @@
                     </div>
                 </div><!--/owl-slide-->
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/owlcarousel2.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/inves/i_3_1.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
@@ -175,7 +175,7 @@
                     </div>
                 </div><!--/owl-slide-->
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/owlcarousel3.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/inves/i_1.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
