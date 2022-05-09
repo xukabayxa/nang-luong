@@ -41,7 +41,7 @@
 
                 .owl-carousel .owl-slide {
                     position: relative;
-                    height: 100vh;
+                    height: 120vh;
                     background-color: lightgray;
                 }
 
@@ -81,11 +81,11 @@
                     outline: none;
                 }
 
-                /*.owl-carousel .owl-dots .owl-dot span {*/
-                /*    background: transparent;*/
-                /*    border: 1px solid var(--main-black-color);*/
-                /*    transition: all 0.2s ease;*/
-                /*}*/
+                .owl-carousel .owl-dots .owl-dot span {
+                    background: transparent;
+                    border: 1px solid var(--main-black-color);
+                    transition: all 0.2s ease;
+                }
 
                 /*.owl-carousel .owl-dots .owl-dot:hover span,*/
                 /*.owl-carousel .owl-dots .owl-dot.active span {*/
@@ -94,14 +94,18 @@
 
                 .owl-carousel .owl-nav {
                     left: 50%;
-                    top: 10%;
+                    top: 50%;
                     transform: translateX(-50%);
                     margin: 0;
+                    position: absolute;
+                    margin-top: 0;
+                    width: 100%;
                 }
 
                 .owl-carousel .owl-nav svg {
                     opacity: 0.3;
                     transition: opacity 0.3s;
+                    position: relative;
                 }
 
                 .owl-carousel .owl-nav button:hover svg {
@@ -125,6 +129,19 @@
                         width: 24px;
                         height: 24px;
                     }
+
+                    .owl-prev, .owl-next {
+                        width: 15px;
+                        height: 100px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        display: block !important;
+                        border:0px solid black;
+                    }
+                    .owl-prev { left: -20px; }
+                    .owl-next { right: -20px; }
+                    .owl-prev svg, .owl-next svg {transform : scale(2,5); color: #ccc;}
                 }
 
                 .owl-carousel .owl-dots {
@@ -143,32 +160,46 @@
             </style>
 
             <div class="owl-carousel owl-theme">
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/home_1.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/6.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
                                 <div class="owl-slide-text">
-                                    <h2 class="owl-slide-animated owl-slide-title">The bedding was hardly able to cover it</h2>
+                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
                                     <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                        One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
                                     </div>
-                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/pgR4yBMjum8" target="_blank" role="button">See Original Image</a>
+                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div><!--/owl-slide-->
 
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/home_1.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center justify-content-md-start">
+                            <div class="col-10 col-md-6 static">
+                                <div class="owl-slide-text">
+                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
+                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">
+                                    </div>
+                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="" target="_blank" role="button"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/owl-slide-->
+
+
                 <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/inves/i_3_1.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
                                 <div class="owl-slide-text">
-                                    <h2 class="owl-slide-animated owl-slide-title">Samsa was a travelling salesman.</h2>
+                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
                                     <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                        It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.
                                     </div>
-                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/Ijx8OxvKrgM" target="_blank" role="button">See Original Image</a>
+                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="" target="_blank" role="button"></a>
                                 </div>
                             </div>
                         </div>
@@ -180,16 +211,32 @@
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
                                 <div class="owl-slide-text">
-                                    <h2 class="owl-slide-animated owl-slide-title">A collection of textile samples.</h2>
+                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
                                     <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                        He lay on his armour-like back, and if he lifted his head a little he could see his brown belly.
                                     </div>
-                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button">See Original Image</a>
+                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div><!--/owl-slide-->
+                </div>
+
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/8.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center justify-content-md-start">
+                            <div class="col-10 col-md-6 static">
+                                <div class="owl-slide-text">
+                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
+                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">
+                                    </div>
+                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--/owl-slide-->
             </div>
 
             <!-- other sections here -->
@@ -272,7 +319,6 @@
                 </div>
             </div>
         </div>
-
 
         <div class="uk-section">
             <div class="uk-container uk-container-medium uk-text-center">
@@ -434,7 +480,6 @@
             </div>
         </div>
 
-
         <div class="uk-position-relative uk-container uk-container-large uk-recent-posts">
             <div class="uk-flex uk-flex-middle uk-text-left uk-margin-medium-bottom">
                 <div class="uk-style-secondary-m uk-text-11 uk-light">
@@ -559,6 +604,8 @@
 @push('scripts')
     <script src="/libs/owl/docs/assets/owlcarousel/owl.carousel.js"></script>
     <script>
+
+
         // $(".owl-carousel").owlCarousel({
         //
         //     //Basic Speeds
@@ -591,7 +638,7 @@
             setTimeout(() => {
                 $(".owl-item.active .owl-slide-animated").addClass("is-transitioned");
                 $("section").show();
-            }, 200);
+            }, 50);
         });
 
         const $owlCarousel = $(".owl-carousel").owlCarousel({
@@ -599,48 +646,12 @@
             loop: true,
             nav: true,
             slideSpeed : 20,
-            autoPlay : true,
+            autoplay : true,
             navText: [
-                // '<svg width="50" height="50" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>',
-                // '<svg width="50" height="50" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>' /* icons from https://iconmonstr.com */
+                '<svg class="left" width="50" height="50" viewBox="0 0 24 24" style="left: -620"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>',
+                '<svg class="right" width="50" height="50" viewBox="0 0 24 24" style="right: -620"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>' /* icons from https://iconmonstr.com */
             ]
         });
 
-        $owlCarousel.on("changed.owl.carousel", e => {
-            $(".owl-slide-animated").removeClass("is-transitioned");
-
-            const $currentOwlItem = $(".owl-item").eq(e.item.index);
-            $currentOwlItem.find(".owl-slide-animated").addClass("is-transitioned");
-
-            const $target = $currentOwlItem.find(".owl-slide-text");
-            doDotsCalculations($target);
-        });
-
-        $owlCarousel.on("resize.owl.carousel", () => {
-            setTimeout(() => {
-                setOwlDotsPosition();
-            }, 50);
-        });
-
-        /*if there isn't content underneath the carousel*/
-        //$owlCarousel.trigger("refresh.owl.carousel");
-
-        setOwlDotsPosition();
-
-        function setOwlDotsPosition() {
-            const $target = $(".owl-item.active .owl-slide-text");
-            doDotsCalculations($target);
-        }
-
-        function doDotsCalculations(el) {
-            const height = el.height();
-            const {top, left} = el.position();
-            const res = height + top + 20;
-
-            // $(".owl-carousel .owl-dots").css({
-            //     top: `${res}px`,
-            //     left: `${left}px`
-            // });
-        }
     </script>
 @endpush
