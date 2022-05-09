@@ -1,4 +1,4 @@
-<div class="uk-navbar-container uk-navbar-transparent uk-padding-xmedium-top uk-padding-xmedium-bottom">
+<div class="uk-navbar-container uk-navbar-transparent uk-padding-xmedium-top uk-padding-xmedium-bottom" style="background: #0A2C48">
     <nav class="uk-navbar uk-container">
         <div class="uk-navbar-left" >
             <div class="logo" style="margin: 0; font-size: 0;">
@@ -307,7 +307,7 @@
             <div class="uk-text-left uk-mega-menu-item items-4">
                 <a href="{{route('front.about4')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src=""
+                        <img data-src="/site/system/k.jpg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="iStock-492596662-scaled"
                              title="iStock-492596662-scaled"/>
