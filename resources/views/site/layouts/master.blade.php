@@ -18,15 +18,15 @@
         }
 
         .loading .icon {
-            background: url('/site/system/logo.png') no-repeat center center / 200px 200px;
+            background: url('/site/system/logo.png') no-repeat center center / 185px 185px;
             position: absolute;
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
             margin: auto;
-            width: 200px;
-            height: 200px;
+            width: 185px;
+            height: 185px;
             text-indent: -9999px;
         }
         .loading img {
@@ -46,7 +46,7 @@
 
 <div class="loader">
     <div class="loading"><i class="icon"></i>
-        <img src="/site/system/loading_2.gif">
+        <img src="/site/system/loading_3.gif">
     </div>
 </div>
 
