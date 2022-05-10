@@ -41,7 +41,7 @@
 
                 .owl-carousel .owl-slide {
                     position: relative;
-                    height: 120vh;
+                    height: 100vh;
                     background-color: lightgray;
                 }
 
