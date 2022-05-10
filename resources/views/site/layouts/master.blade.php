@@ -18,15 +18,15 @@
         }
 
         .loading .icon {
-            background: url('/site/system/logo.png') no-repeat center center / 185px 185px;
+            background: url('/site/system/logo.png') no-repeat center center / 170px 170px;
             position: absolute;
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
             margin: auto;
-            width: 185px;
-            height: 185px;
+            width: 170px;
+            height: 170px;
             text-indent: -9999px;
         }
         .loading img {
