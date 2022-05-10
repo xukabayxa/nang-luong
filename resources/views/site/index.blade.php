@@ -291,27 +291,27 @@
 {{--            </div>--}}
         </div>
 
-        <div class="uk-background-dark uk-section uk-light">
+        <div class="uk-background-light uk-section uk-dark">
             <div class="uk-container uk-container-xmedium">
                 <div>
                     <div class="uk-grid uk-grid-large" uk-grid>
                         <div class="uk-width-45@m" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 400;">
                             <div
-                                class="uk-style-tertiary uk-text-uppercase uk-text-4 uk-text-lh-4  uk-style-hline uk-position-relative">
+                                class="uk-style-tertiary uk-text-uppercase uk-text-4 uk-text-lh-4  uk-style-hline uk-position-relative" style="color: #0F4C81 !important">
                                 Sustainable Development and a Net zero emissions future
                             </div>
 
                         </div>
                         <div class="uk-width-expand@m" uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                            <div class="uk-margin-3xmedium-bottom uk-text-8 uk-style-primary-l">
+                            <div class="uk-margin-3xmedium-bottom uk-text-8 uk-style-primary-l" style="color: #0F4C81 !important">
                                 AGP exclusively invest in sustainable real assets across three key investment themes. We
                                 evaluate our investment strategy against the United Nations Sustainable Development
                                 Goals (SDGs) with the aim to accelerate the transition to a net zero emissions future.
                             </div>
                             <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">
                                 <span
-                                    class="uk-color-tertiary uk-text-middle uk-margin-right">SDGS of key relevance</span>
-                                <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}"
+                                    class="uk-color-tertiary uk-text-middle uk-margin-right" style="color: #0F4C81 !important">SDGS of key relevance</span>
+                                <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}"
                                      alt="win-icon">
                             </a>
                         </div>
@@ -320,7 +320,7 @@
             </div>
         </div>
 
-        <div class="uk-section">
+        <div class="uk-section uk-background-dark uk-light">
             <div class="uk-container uk-container-medium uk-text-center">
                 <h1 class="uk-style-primary-l uk-text-3 uk-text-lh-4"
                     uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">We exclusively invest in

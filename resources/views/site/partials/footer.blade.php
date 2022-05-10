@@ -52,7 +52,7 @@
                              class="uk-width-footer-logo">
                     </a>
                 </div>
-                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
+                {{-- <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                     <a href="/" rel="noreferrer" target="_blank">
                         <img src="{{ asset('/site/system/partner/p8.png') }}"
                              class="uk-width-footer-logo">
@@ -63,7 +63,7 @@
                         <img src="{{ asset('/site/system/partner/p9.png') }}"
                              class="uk-width-footer-logo">
                     </a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
