@@ -102,7 +102,7 @@
                     }
                 </style>
                 <li class="menu-item-5">
-                    <a class="uk-visible@m " href="{{route('front.contact')}}" style="color: #0F4C81 !important">
+                    <a class="uk-visible@m" href="{{route('front.contact')}}" style="color: #0F4C81 !important">
                         {{trans('message.contact_menu')}} </a>
 
                     <a class="uk-hidden@m" href="{{route('front.contact')}}" style="color: #0F4C81 !important">
@@ -122,7 +122,7 @@
                         width: 180px;
                     }
                     .choise-lang {
-                        top: 80px;
+                        top: 55px;
                     }
                 }
                 @media only screen and (max-width: 768px) {
@@ -134,7 +134,7 @@
                         width: 100px;
                     }
                     .choise-lang {
-                        top: 80px;
+                        top: 35px;
                     }
                 }
 
