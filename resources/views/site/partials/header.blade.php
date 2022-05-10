@@ -1,4 +1,4 @@
-<div class="uk-navbar-container uk-navbar-transparent uk-padding-xmedium-top uk-padding-xmedium-bottom" style="background: #0A2C48">
+<div class="uk-navbar-container uk-navbar-transparent uk-padding-xmedium-top uk-padding-xmedium-bottom" style="background: #fff">
     <nav class="uk-navbar uk-container">
         <div class="uk-navbar-left" >
             <div class="logo" style="margin: 0; font-size: 0;">
@@ -14,7 +14,7 @@
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@m">
                 <li class="menu-item-1">
-                    <a class="uk-visible@m has-dropdown" href="#offcanvas-1" uk-toggle>
+                    <a class="uk-visible@m has-dropdown" href="#offcanvas-1" uk-toggle style="color: #0F4C81 !important">
                         {{trans('message.about_menu')}}<span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                        uk-icon="icon: arrow-down-dark; ratio: 0.6"></span>
                     </a>
@@ -27,16 +27,16 @@
                             <div class="uk-accordion-content">
                                 <ul>
                                     <li>
-                                        <a href="{{route('front.about')}}">{{trans('message.who_we_are')}}</a>
+                                        <a href="{{route('front.about')}}" style="color: #0F4C81 !important">{{trans('message.who_we_are')}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about2')}}">{{trans('message.what_we_do')}}
+                                        <a href="{{route('front.about2')}}" style="color: #0F4C81 !important">{{trans('message.what_we_do')}}
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about3')}}">{{trans('message.our_team')}}</a>
+                                        <a href="{{route('front.about3')}}" style="color: #0F4C81 !important">{{trans('message.our_team')}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about4')}}">
+                                        <a href="{{route('front.about4')}}" style="color: #0F4C81 !important">
                                             {{trans('message.our_partner')}}</a>
                                     </li>
                                 </ul>
@@ -45,20 +45,20 @@
                     </ul>
                 </li>
                 <li class="menu-item-2">
-                    <a class="uk-visible@m has-dropdown" href="#offcanvas-2" uk-toggle>
+                    <a class="uk-visible@m has-dropdown" href="#offcanvas-2" uk-toggle style="color: #0F4C81 !important">
                         {{trans('message.our_investments_menu')}}<span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                               uk-icon="icon: arrow-down-dark; ratio: 0.6"></span>
                     </a>
 
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
-                            <a class="uk-accordion-title" href="#">{{trans('message.our_investments_menu')}}<span
+                            <a class="uk-accordion-title" href="#" style="color: #0F4C81 !important">{{trans('message.our_investments_menu')}}<span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down-dark; ratio: 0.6"></span></a>
                             <div class="uk-accordion-content">
                                 <ul>
                                     <li>
-                                        <a href="">Renewable<br/>
+                                        <a href="" >Renewable<br/>
                                             Energy</a>
                                     </li>
                                     <li>
@@ -78,17 +78,17 @@
                     </ul>
                 </li>
                 <li class="menu-item-3">
-                    <a class="uk-visible@m " href="{{route('front.globalReach')}}">
+                    <a class="uk-visible@m " href="{{route('front.globalReach')}}" style="color: #0F4C81 !important">
                         {{trans('message.our_global_presence_menu')}} </a>
 
-                    <a class="uk-hidden@m" href="{{route('front.globalReach')}}">
+                    <a class="uk-hidden@m" href="{{route('front.globalReach')}}" style="color: #0F4C81 !important">
                         {{trans('message.our_global_presence_menu')}}</a>
                 </li>
                 <li class="menu-item-4">
-                    <a class="uk-visible@m " href="{{route('front.insights')}}">
+                    <a class="uk-visible@m " href="{{route('front.insights')}}" style="color: #0F4C81 !important">
                         {{trans('message.insights_menu')}} </a>
 
-                    <a class="uk-hidden@m" href="{{route('front.insights')}}">
+                    <a class="uk-hidden@m" href="{{route('front.insights')}}" style="color: #0F4C81 !important">
                         {{trans('message.insights_menu')}}</a>
                 </li>
 
@@ -98,10 +98,10 @@
                     }
                 </style>
                 <li class="menu-item-5">
-                    <a class="uk-visible@m " href="{{route('front.contact')}}">
+                    <a class="uk-visible@m " href="{{route('front.contact')}}" style="color: #0F4C81 !important">
                         {{trans('message.contact_menu')}} </a>
 
-                    <a class="uk-hidden@m" href="{{route('front.contact')}}">
+                    <a class="uk-hidden@m" href="{{route('front.contact')}}" style="color: #0F4C81 !important">
                         {{trans('message.contact_menu')}}</a>
                 </li>
             </ul>
@@ -115,7 +115,7 @@
                         margin-left: 50px;
                     }
                     .uk-navbar-left img {
-                        width: 225px;
+                        width: 120px;
                     }
                     .choise-lang {
                         top: 80px;
