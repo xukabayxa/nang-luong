@@ -17,278 +17,278 @@
 
         <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
 
-            <style>
-                :root {
-                    --main-white-color: white;
-                    --main-black-color: black;
-                }
+{{--            <style>--}}
+{{--                :root {--}}
+{{--                    --main-white-color: white;--}}
+{{--                    --main-black-color: black;--}}
+{{--                }--}}
 
-                * {
-                    padding: 0;
-                    margin: 0;
-                    box-sizing: border-box;
-                }
+{{--                * {--}}
+{{--                    padding: 0;--}}
+{{--                    margin: 0;--}}
+{{--                    box-sizing: border-box;--}}
+{{--                }--}}
 
-                .static {
-                    position: static;
-                }
+{{--                .static {--}}
+{{--                    position: static;--}}
+{{--                }--}}
 
-                .cover {
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                }
+{{--                .cover {--}}
+{{--                    background-size: cover;--}}
+{{--                    background-position: center;--}}
+{{--                    background-repeat: no-repeat;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-slide {
-                    position: relative;
-                    height: 100vh;
-                    background-color: lightgray;
-                }
+{{--                .owl-carousel .owl-slide {--}}
+{{--                    position: relative;--}}
+{{--                    height: 100vh;--}}
+{{--                    background-color: lightgray;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-slide-animated {
-                    transform: translateX(20px);
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: all 0.05s;
-                }
+{{--                .owl-carousel .owl-slide-animated {--}}
+{{--                    transform: translateX(20px);--}}
+{{--                    opacity: 0;--}}
+{{--                    visibility: hidden;--}}
+{{--                    transition: all 0.05s;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-slide-animated.is-transitioned {
-                    transform: none;
-                    opacity: 1;
-                    visibility: visible;
-                    transition: all 0.5s;
-                }
+{{--                .owl-carousel .owl-slide-animated.is-transitioned {--}}
+{{--                    transform: none;--}}
+{{--                    opacity: 1;--}}
+{{--                    visibility: visible;--}}
+{{--                    transition: all 0.5s;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-slide-title.is-transitioned {
-                    transition-delay: 0.2s;
-                }
+{{--                .owl-carousel .owl-slide-title.is-transitioned {--}}
+{{--                    transition-delay: 0.2s;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-slide-subtitle.is-transitioned {
-                    transition-delay: 0.35s;
-                }
+{{--                .owl-carousel .owl-slide-subtitle.is-transitioned {--}}
+{{--                    transition-delay: 0.35s;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-slide-cta.is-transitioned {
-                    transition-delay: 0.5s;
-                }
+{{--                .owl-carousel .owl-slide-cta.is-transitioned {--}}
+{{--                    transition-delay: 0.5s;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-dots,
-                .owl-carousel .owl-nav {
-                    position: absolute;
-                }
+{{--                .owl-carousel .owl-dots,--}}
+{{--                .owl-carousel .owl-nav {--}}
+{{--                    position: absolute;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-dots .owl-dot,
-                .owl-carousel .owl-nav [class*="owl-"]:focus {
-                    outline: none;
-                }
+{{--                .owl-carousel .owl-dots .owl-dot,--}}
+{{--                .owl-carousel .owl-nav [class*="owl-"]:focus {--}}
+{{--                    outline: none;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-dots .owl-dot span {
-                    background: transparent;
-                    border: 1px solid var(--main-black-color);
-                    transition: all 0.2s ease;
-                }
+{{--                .owl-carousel .owl-dots .owl-dot span {--}}
+{{--                    background: transparent;--}}
+{{--                    border: 1px solid var(--main-black-color);--}}
+{{--                    transition: all 0.2s ease;--}}
+{{--                }--}}
 
-                /*.owl-carousel .owl-dots .owl-dot:hover span,*/
-                /*.owl-carousel .owl-dots .owl-dot.active span {*/
-                /*    background: var(--main-black-color);*/
-                /*}*/
+{{--                /*.owl-carousel .owl-dots .owl-dot:hover span,*/--}}
+{{--                /*.owl-carousel .owl-dots .owl-dot.active span {*/--}}
+{{--                /*    background: var(--main-black-color);*/--}}
+{{--                /*}*/--}}
 
-                .owl-carousel .owl-nav {
-                    left: 50%;
-                    top: 50%;
-                    transform: translateX(-50%);
-                    margin: 0;
-                    position: absolute;
-                    margin-top: 0;
-                    width: 100%;
-                }
+{{--                .owl-carousel .owl-nav {--}}
+{{--                    left: 50%;--}}
+{{--                    top: 50%;--}}
+{{--                    transform: translateX(-50%);--}}
+{{--                    margin: 0;--}}
+{{--                    position: absolute;--}}
+{{--                    margin-top: 0;--}}
+{{--                    width: 100%;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-nav svg {
-                    opacity: 0.3;
-                    transition: opacity 0.3s;
-                    position: relative;
-                }
+{{--                .owl-carousel .owl-nav svg {--}}
+{{--                    opacity: 0.3;--}}
+{{--                    transition: opacity 0.3s;--}}
+{{--                    position: relative;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-nav button:hover svg {
-                    opacity: 1;
-                }
+{{--                .owl-carousel .owl-nav button:hover svg {--}}
+{{--                    opacity: 1;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-nav [class*="owl-"]:hover {
-                    background: transparent;
-                }
+{{--                .owl-carousel .owl-nav [class*="owl-"]:hover {--}}
+{{--                    background: transparent;--}}
+{{--                }--}}
 
-                section {
-                    display: none;
-                }
+{{--                section {--}}
+{{--                    display: none;--}}
+{{--                }--}}
 
-                @media screen and (max-width: 575px) {
-                    .owl-carousel .owl-nav {
-                        top: 5%;
-                    }
+{{--                @media screen and (max-width: 575px) {--}}
+{{--                    .owl-carousel .owl-nav {--}}
+{{--                        top: 5%;--}}
+{{--                    }--}}
 
-                    .owl-carousel .owl-nav svg {
-                        width: 24px;
-                        height: 24px;
-                    }
+{{--                    .owl-carousel .owl-nav svg {--}}
+{{--                        width: 24px;--}}
+{{--                        height: 24px;--}}
+{{--                    }--}}
 
-                    .owl-prev, .owl-next {
-                        width: 15px;
-                        height: 100px;
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        display: block !important;
-                        border:0px solid black;
-                    }
-                    .owl-prev { left: -20px; }
-                    .owl-next { right: -20px; }
-                    .owl-prev svg, .owl-next svg {transform : scale(2,5); color: #ccc;}
-                }
+{{--                    .owl-prev, .owl-next {--}}
+{{--                        width: 15px;--}}
+{{--                        height: 100px;--}}
+{{--                        position: absolute;--}}
+{{--                        top: 50%;--}}
+{{--                        transform: translateY(-50%);--}}
+{{--                        display: block !important;--}}
+{{--                        border:0px solid black;--}}
+{{--                    }--}}
+{{--                    .owl-prev { left: -20px; }--}}
+{{--                    .owl-next { right: -20px; }--}}
+{{--                    .owl-prev svg, .owl-next svg {transform : scale(2,5); color: #ccc;}--}}
+{{--                }--}}
 
-                .owl-carousel .owl-dots {
-                    display: block;
-                    margin-top: -20px;
-                    text-align: center;
-                    width: 100%;
-                }
+{{--                .owl-carousel .owl-dots {--}}
+{{--                    display: block;--}}
+{{--                    margin-top: -20px;--}}
+{{--                    text-align: center;--}}
+{{--                    width: 100%;--}}
+{{--                }--}}
 
-                .owl-carousel .owl-dots .owl-dot.active {
-                    /*background: #fff;*/
-                }
-                .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-                    background: #fff;
-                }
-            </style>
+{{--                .owl-carousel .owl-dots .owl-dot.active {--}}
+{{--                    /*background: #fff;*/--}}
+{{--                }--}}
+{{--                .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {--}}
+{{--                    background: #fff;--}}
+{{--                }--}}
+{{--            </style>--}}
 
-            <div class="owl-carousel owl-theme">
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/6.jpg);">
-                    <div class="container">
-                        <div class="row justify-content-center justify-content-md-start">
-                            <div class="col-10 col-md-6 static">
-                                <div class="owl-slide-text">
-                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
-                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                    </div>
-                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/owl-slide-->
+{{--            <div class="owl-carousel owl-theme">--}}
+{{--                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/6.jpg);">--}}
+{{--                    <div class="container">--}}
+{{--                        <div class="row justify-content-center justify-content-md-start">--}}
+{{--                            <div class="col-10 col-md-6 static">--}}
+{{--                                <div class="owl-slide-text">--}}
+{{--                                    <h2 class="owl-slide-animated owl-slide-title"></h2>--}}
+{{--                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">--}}
+{{--                                    </div>--}}
+{{--                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div><!--/owl-slide-->--}}
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/home_1.jpg);">
-                    <div class="container">
-                        <div class="row justify-content-center justify-content-md-start">
-                            <div class="col-10 col-md-6 static">
-                                <div class="owl-slide-text">
-                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
-                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                    </div>
-                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="" target="_blank" role="button"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/owl-slide-->
+{{--                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/home_1.jpg);">--}}
+{{--                    <div class="container">--}}
+{{--                        <div class="row justify-content-center justify-content-md-start">--}}
+{{--                            <div class="col-10 col-md-6 static">--}}
+{{--                                <div class="owl-slide-text">--}}
+{{--                                    <h2 class="owl-slide-animated owl-slide-title"></h2>--}}
+{{--                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">--}}
+{{--                                    </div>--}}
+{{--                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="" target="_blank" role="button"></a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div><!--/owl-slide-->--}}
 
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/inves/i_3_1.jpg);">
-                    <div class="container">
-                        <div class="row justify-content-center justify-content-md-start">
-                            <div class="col-10 col-md-6 static">
-                                <div class="owl-slide-text">
-                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
-                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                    </div>
-                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="" target="_blank" role="button"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/owl-slide-->
+{{--                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/inves/i_3_1.jpg);">--}}
+{{--                    <div class="container">--}}
+{{--                        <div class="row justify-content-center justify-content-md-start">--}}
+{{--                            <div class="col-10 col-md-6 static">--}}
+{{--                                <div class="owl-slide-text">--}}
+{{--                                    <h2 class="owl-slide-animated owl-slide-title"></h2>--}}
+{{--                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">--}}
+{{--                                    </div>--}}
+{{--                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="" target="_blank" role="button"></a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div><!--/owl-slide-->--}}
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/inves/i_1.jpg);">
-                    <div class="container">
-                        <div class="row justify-content-center justify-content-md-start">
-                            <div class="col-10 col-md-6 static">
-                                <div class="owl-slide-text">
-                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
-                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                    </div>
-                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/inves/i_1.jpg);">--}}
+{{--                    <div class="container">--}}
+{{--                        <div class="row justify-content-center justify-content-md-start">--}}
+{{--                            <div class="col-10 col-md-6 static">--}}
+{{--                                <div class="owl-slide-text">--}}
+{{--                                    <h2 class="owl-slide-animated owl-slide-title"></h2>--}}
+{{--                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">--}}
+{{--                                    </div>--}}
+{{--                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/8.jpg);">
-                    <div class="container">
-                        <div class="row justify-content-center justify-content-md-start">
-                            <div class="col-10 col-md-6 static">
-                                <div class="owl-slide-text">
-                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
-                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">
-                                    </div>
-                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/8.jpg);">--}}
+{{--                    <div class="container">--}}
+{{--                        <div class="row justify-content-center justify-content-md-start">--}}
+{{--                            <div class="col-10 col-md-6 static">--}}
+{{--                                <div class="owl-slide-text">--}}
+{{--                                    <h2 class="owl-slide-animated owl-slide-title"></h2>--}}
+{{--                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">--}}
+{{--                                    </div>--}}
+{{--                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <!--/owl-slide-->
-            </div>
+{{--                <!--/owl-slide-->--}}
+{{--            </div>--}}
 
             <!-- other sections here -->
 
 
-{{--            <div class="uk-position-cover">--}}
-{{--                <div class="uk-cover-container">--}}
-{{--                                <video uk-cover loop muted playsinline uk-video="autoplay: inview">--}}
-{{--                                    --}}
+            <div class="uk-position-cover">
+                <div class="uk-cover-container">
+                                <video uk-cover loop muted playsinline uk-video="autoplay: inview">
+
 {{--                                    <source src="https://www.agpgroup.com/app/uploads/2021/06/agp-homepage-video-v2-optim-1.mp4"   type="video/mp4">--}}
-{{--                                    <source src="/site/system/video.mp4" type="video/mp4">--}}
-{{--                                </video>--}}
-{{--                <!-- start of hero -->--}}
+                                    <source src="/site/system/video.mp4" type="video/mp4">
+                                </video>
+                <!-- start of hero -->
 
-{{--                    <!-- end of hero slider -->--}}
-{{--                    <canvas width="1600" height="900"></canvas>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+                    <!-- end of hero slider -->
+                    <canvas width="1600" height="900"></canvas>
+                </div>
+            </div>
 
-{{--            <div class="uk-background-gradient uk-position-cover"></div>--}}
-{{--            <div class="uk-background-gradient-rev uk-position-cover"></div>--}}
+            <div class="uk-background-gradient uk-position-cover"></div>
+            <div class="uk-background-gradient-rev uk-position-cover"></div>
 
 
-{{--            <div class="uk-position-relative uk-container uk-container-medium  uk-section uk-padding-navbar-top"--}}
-{{--                 uk-scrollspy="target: .uk-animation-parent; cls: uk-animation-fade; delay: 250; repeat: true;">--}}
+            <div class="uk-position-relative uk-container uk-container-medium  uk-section uk-padding-navbar-top"
+                 uk-scrollspy="target: .uk-animation-parent; cls: uk-animation-fade; delay: 250; repeat: true;">
 
-{{--                <div uk-grid class="uk-grid uk-grid-large uk-child-width-expand@m uk-flex-middle  uk-wysiwyg-default"--}}
-{{--                     uk-scrollspy="target: .uk-animation-item; cls: uk-animation-slide-bottom-small; delay: 250; repeat: true;">--}}
-{{--                    <div class="uk-animation-parent">--}}
+                <div uk-grid class="uk-grid uk-grid-large uk-child-width-expand@m uk-flex-middle  uk-wysiwyg-default"
+                     uk-scrollspy="target: .uk-animation-item; cls: uk-animation-slide-bottom-small; delay: 250; repeat: true;">
+                    <div class="uk-animation-parent">
 
-{{--                        <h1 class="uk-animation-item uk-style-primary-m uk-text-1 uk-width-large">--}}
-{{--                            Developing, investing & operating sustainable real assets </h1>--}}
-{{--                        <div class="uk-margin-top">--}}
-{{--                            <a class="uk-button uk-color-light uk-style-secondary-b " href="">--}}
-{{--                                <span class="uk-color-light uk-text-middle uk-margin-right">discover our three key investment themes</span>--}}
-{{--                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-light"--}}
-{{--                                      uk-icon="icon: button-circle; ratio: 1"></span>--}}
-{{--                            </a>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+                        <h1 class="uk-animation-item uk-style-primary-m uk-text-1 uk-width-large">
+                            Developing, investing & operating sustainable real assets </h1>
+                        <div class="uk-margin-top">
+                            <a class="uk-button uk-color-light uk-style-secondary-b " href="">
+                                <span class="uk-color-light uk-text-middle uk-margin-right">discover our three key investment themes</span>
+                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-light"
+                                      uk-icon="icon: button-circle; ratio: 1"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-{{--            <div class="uk-scroller uk-container uk-text-center uk-position-bottom uk-position-large">--}}
-{{--                <a href="#scroll-target" uk-scroll>--}}
-{{--                <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: arrow-in-circle; ratio: 1;">--}}
-{{--                    <img class="wind-icon" src="{{ asset('img/icons/wind-energy.png') }}" alt="">--}}
-{{--                </span>--}}
-{{--                    <br/>--}}
-{{--                    <span class="uk-style-secondary">scroll down</span>--}}
-{{--                </a>--}}
-{{--            </div>--}}
+            <div class="uk-scroller uk-container uk-text-center uk-position-bottom uk-position-large">
+                <a href="#scroll-target" uk-scroll>
+                <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: arrow-in-circle; ratio: 1;">
+                    <img class="wind-icon" src="{{ asset('img/icons/wind-energy.png') }}" alt="">
+                </span>
+                    <br/>
+                    <span class="uk-style-secondary">scroll down</span>
+                </a>
+            </div>
         </div>
 
         <div class="uk-background-light uk-section uk-dark">
@@ -647,6 +647,7 @@
             nav: true,
             slideSpeed : 20,
             autoplay : true,
+            autoplayTimeout : 2000,
             navText: [
                 '<svg class="left" width="50" height="50" viewBox="0 0 24 24" style="left: -620"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>',
                 '<svg class="right" width="50" height="50" viewBox="0 0 24 24" style="right: -620"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>' /* icons from https://iconmonstr.com */

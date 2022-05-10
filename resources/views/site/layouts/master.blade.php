@@ -44,11 +44,11 @@
 </head>
 <body class="home page-template-default page page-id-6 preloading" ng-app="App">
 
-<div class="loader">
-    <div class="loading"><i class="icon"></i>
-        <img src="/site/system/loading_3.gif">
-    </div>
-</div>
+{{--<div class="loader">--}}
+{{--    <div class="loading"><i class="icon"></i>--}}
+{{--        <img src="/site/system/loading_3.gif">--}}
+{{--    </div>--}}
+{{--</div>--}}
 
 @include('site.partials.svg')
 
@@ -63,11 +63,11 @@
 <script>
     /* This JavaScript is used for different helper functions, such as Sirv object updates with Ajax. */
 
-    $(window).on('load', function(event) {
-        $('body').removeClass('preloading');
-        // $('.load').delay(1000).fadeOut('fast');
-        $('.loader').delay(1000).fadeOut('fast');
-    });
+    // $(window).on('load', function(event) {
+    //     $('body').removeClass('preloading');
+    //     // $('.load').delay(1000).fadeOut('fast');
+    //     $('.loader').delay(1000).fadeOut('fast');
+    // });
 
     jQuery(document).ajaxComplete(function () {
         if (arguments[1].responseText && arguments[1].responseText.match(/class *= *"[^"]*Sirv/gm)) {

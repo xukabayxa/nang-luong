@@ -214,7 +214,7 @@
                     <a class="uk-visible@m " href="{{route('front.contact')}}">
                         {{trans('message.contact_menu')}} </a>
 
-                    <a class="uk-hidden@m" href="#">
+                    <a class="uk-hidden@m" href="{{route('front.contact')}}">
                         {{trans('message.contact_menu')}}</a>
                 </li>
             </ul>
