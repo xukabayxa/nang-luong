@@ -4,7 +4,11 @@
             <div class="logo" style="margin: 0; font-size: 0;">
                 <a href="{{route('front.home_page')}}" title="RT ENERGY">
                     <span class="uk-logo uk-icon uk-preserve">
-                        <img src="{{ asset('site/system/rt-logo-white.png') }}"  style="height: auto" alt="RT ENERGY">
+                        @if(App::isLocale('vi'))
+                        <img src="{{ asset('site/system/rt-vi.png') }}"  style="height: auto" alt="RT ENERGY VI">
+                        @else
+                        <img src="{{ asset('site/system/rt-en.png') }}"  style="height: auto" alt="RT ENERGY EN">
+                        @endif
                     </span>
                 </a>
             </div>
@@ -115,7 +119,7 @@
                         margin-left: 50px;
                     }
                     .uk-navbar-left img {
-                        width: 120px;
+                        width: 180px;
                     }
                     .choise-lang {
                         top: 80px;
