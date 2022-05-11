@@ -63,11 +63,13 @@
 <script>
     /* This JavaScript is used for different helper functions, such as Sirv object updates with Ajax. */
 
-    $(window).on('load', function(event) {
-        $('body').removeClass('preloading');
-        // $('.load').delay(1000).fadeOut('fast');
-        $('.loader').delay(1000).fadeOut('fast');
+
+    $(document).ready(function() {
+        $(".loader").fadeOut(function() {
+            $(this).remove(); // Optional if it's going to only be used once.
+        });
     });
+
 
     jQuery(document).ajaxComplete(function () {
         if (arguments[1].responseText && arguments[1].responseText.match(/class *= *"[^"]*Sirv/gm)) {
@@ -76,7 +78,6 @@
             }, 100);
         }
     });
-
 
     jQuery(document).ready(function () {
         let count = 0;
