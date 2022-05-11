@@ -431,6 +431,14 @@
                     opacity: 1;
                     transform: none;
                 }
+                .businessItem:hover .businessImg {
+                    transform: scale(1.0);
+                }
+
+                .businessItem:hover .businessTitle, .businessItem:hover .businessTxt, .businessItem:hover .businessLink {
+                    opacity: 1;
+                    transform: none;
+                }
             </style>
 
             <div class="businessList">
