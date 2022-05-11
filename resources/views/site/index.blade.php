@@ -160,7 +160,7 @@
             </style>
 
             <div class="owl-carousel owl-theme">
-                {{-- <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/6.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/slide/s4.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
@@ -173,7 +173,8 @@
                             </div>
                         </div>
                     </div>
-                </div><!--/owl-slide--> --}}
+                </div>
+                <!--/owl-slide-->
 
                 <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/slide/s2.jpg);">
                     <div class="container">
@@ -335,7 +336,7 @@
                 <div class="uk-text-left uk-mega-menu-item items-1">
                     <a href="{{route('front.investments1')}}" class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="/site/system/inves/i1.jpg"
+                            <img data-src="{{ asset('site/system/about_us/a1.jpg') }}"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"
@@ -362,7 +363,7 @@
                 <div class="uk-text-left uk-mega-menu-item items-1">
                     <a href="{{route('front.investments2')}}" class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="/site/system/inves/i2.jpg"
+                            <img data-src="{{ asset('site/system/about_us/a2.jpg') }}"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"
                                  title="iStock-1156913631-scaled"/>
@@ -389,7 +390,7 @@
                 <div class="uk-text-left uk-mega-menu-item items-1">
                     <a href="{{route('front.investments3')}}" class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="/site/system/inves/i3.jpg"
+                            <img data-src="{{ asset('site/system/about_us/a4.jpg') }}"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"
                                  title="green-tech-scaled"/>
@@ -496,7 +497,7 @@
                     <div>
                         <div class="uk-cover-container uk-margin-small-bottom">
                             <canvas width="460" height="370"></canvas>
-                            <img data-src="/site/system/b.jpg"
+                            <img data-src="{{ asset('site/system/about_us/a5.jpg') }}"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
@@ -523,7 +524,7 @@
                     <div>
                         <div class="uk-cover-container uk-margin-small-bottom">
                             <canvas width="460" height="370"></canvas>
-                            <img data-src="/site/system/about_us/a_1.jpg"
+                            <img data-src="{{ asset('site/system/about_us/a2.jpg') }}"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="ASE-EAL-Header-Image.png?w=1024&h=505&scale"
@@ -551,7 +552,7 @@
                     <div>
                         <div class="uk-cover-container uk-margin-small-bottom">
                             <canvas width="460" height="370"></canvas>
-                            <img data-src="/site/system/inves/i3.jpg"
+                            <img data-src="{{ asset('site/system/about_us/a6.jpg') }}"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="iStock-1032683612-scaled.jpg?w=1024&h=683&scale"
@@ -578,14 +579,14 @@
         </div>
         <div
             class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
-            <div class="uk-position-cover uk-cover-container">
+            <div class="uk-position-cover uk-cover-container" >
                 <canvas width="1600" height="708"></canvas>
                 <img data-src="/site/system/sun_enegy.jpg"
                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/>
             </div>
             <div class="uk-text-center">
-                <div class="uk-position-large uk-position-bottom">
+                <div class="uk-position-large uk-position-bottom" style="background: rgba(17, 77, 129,.6)">
                     <h4 class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-margin-small-bottom uk-margin-auto uk-width-1-2@m"
                         uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
                         Partner with us to generate a positive impact for people and the environment </h4>
