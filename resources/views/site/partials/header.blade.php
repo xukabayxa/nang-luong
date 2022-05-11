@@ -575,7 +575,7 @@
                     <h2 class="businessTitle">{{trans('message.renewable_energy')}}</h2>
                     <div class="businessDetail">
                         <h2 class="businessTitle">{{trans('message.renewable_energy')}}</h2>
-                        <a href="{{route('front.investments1')}}}" class="businessLink">Detail</a>
+                        <a href="{{route('front.investments1')}}" class="businessLink">Detail</a>
                     </div>
                 </div>
 
@@ -584,7 +584,7 @@
                     <h2 class="businessTitle"> {{trans('message.sustainable_infrastructure')}}</h2>
                     <div class="businessDetail">
                         <h2 class="businessTitle"> {{trans('message.sustainable_infrastructure')}}</h2>
-                        <a href="{{route('front.investments2')}}}" class="businessLink">Detail</a>
+                        <a href="{{route('front.investments2')}}" class="businessLink">Detail</a>
                     </div>
                 </div>
                 <div class="businessItem">

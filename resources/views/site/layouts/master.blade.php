@@ -66,8 +66,12 @@
     $(window).on('load', function(event) {
         $('body').removeClass('preloading');
         // $('.load').delay(1000).fadeOut('fast');
-        $('.loader').delay(1000).fadeOut('fast');
+        $('.loader').fadeOut('slow');
     });
+
+    // jQuery(document).ready(function() {
+    //     jQuery('#loading').fadeOut(3000);
+    // });
 
     jQuery(document).ajaxComplete(function () {
         if (arguments[1].responseText && arguments[1].responseText.match(/class *= *"[^"]*Sirv/gm)) {
@@ -76,7 +80,6 @@
             }, 100);
         }
     });
-
 
     jQuery(document).ready(function () {
         let count = 0;
