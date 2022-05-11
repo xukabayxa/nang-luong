@@ -439,6 +439,10 @@
                     opacity: 1;
                     transform: none;
                 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 92c76fc600975a885bce27c4f0277bfcdd08df54
             </style>
 
             <div class="businessList">

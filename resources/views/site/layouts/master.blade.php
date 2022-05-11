@@ -63,7 +63,6 @@
 <script>
     /* This JavaScript is used for different helper functions, such as Sirv object updates with Ajax. */
 
-
     $(document).ready(function() {
         $(".loader").fadeOut(function() {
             $(this).remove(); // Optional if it's going to only be used once.
