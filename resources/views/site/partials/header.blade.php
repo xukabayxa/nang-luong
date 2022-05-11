@@ -467,7 +467,7 @@
                     </div>
                 </div>
                 <div class="businessItem">
-                    <div class="businessImg" style="background-image:url(/site/system/k.jpg);"></div>
+                    <div class="businessImg" style="background-image:url(/site/system/about_us/a4.jpg);"></div>
                     <h2 class="businessTitle"> {{trans('message.our_partner')}}</h2>
                     <div class="businessDetail">
                         <h2 class="businessTitle"> {{trans('message.our_partner')}}</h2>
