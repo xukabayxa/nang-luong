@@ -431,11 +431,20 @@
                     opacity: 1;
                     transform: none;
                 }
+                .businessItem:hover .businessImg {
+                    transform: scale(1.0);
+                }
+
+                .businessItem:hover .businessTitle, .businessItem:hover .businessTxt, .businessItem:hover .businessLink {
+                    opacity: 1;
+                    transform: none;
+                }
+
             </style>
 
             <div class="businessList">
                 <div class="businessItem">
-                    <div class="businessImg" style="background-image:url(/site/system/about_us/a1.jpg);"></div>
+                    <div class="businessImg" style="background-image:url(/site/system/a1-min.jpg);"></div>
                     <h2 class="businessTitle">{{trans('message.who_we_are')}}</h2>
                     <div class="businessDetail">
                         <h2 class="businessTitle">{{trans('message.who_we_are')}}</h2>
@@ -563,7 +572,7 @@
 
             <div class="businessList">
                 <div class="businessItem">
-                    <div class="businessImg" style="background-image:url(/site/system/inves/i1.jpg);"></div>
+                    <div class="businessImg" style="background-image:url(/site/system/i1-min.jpg);"></div>
                     <h2 class="businessTitle">{{trans('message.renewable_energy')}}</h2>
                     <div class="businessDetail">
                         <h2 class="businessTitle">{{trans('message.renewable_energy')}}</h2>
