@@ -439,7 +439,10 @@
                     opacity: 1;
                     transform: none;
                 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 92c76fc600975a885bce27c4f0277bfcdd08df54
             </style>
 
             <div class="businessList">
@@ -468,7 +471,7 @@
                     </div>
                 </div>
                 <div class="businessItem">
-                    <div class="businessImg" style="background-image:url(/site/system/k.jpg);"></div>
+                    <div class="businessImg" style="background-image:url(/site/system/about_us/a4.jpg);"></div>
                     <h2 class="businessTitle"> {{trans('message.our_partner')}}</h2>
                     <div class="businessDetail">
                         <h2 class="businessTitle"> {{trans('message.our_partner')}}</h2>
@@ -576,7 +579,7 @@
                     <h2 class="businessTitle">{{trans('message.renewable_energy')}}</h2>
                     <div class="businessDetail">
                         <h2 class="businessTitle">{{trans('message.renewable_energy')}}</h2>
-                        <a href="{{route('front.investments1')}}}" class="businessLink">Detail</a>
+                        <a href="{{route('front.investments1')}}" class="businessLink">Detail</a>
                     </div>
                 </div>
 
@@ -585,7 +588,7 @@
                     <h2 class="businessTitle"> {{trans('message.sustainable_infrastructure')}}</h2>
                     <div class="businessDetail">
                         <h2 class="businessTitle"> {{trans('message.sustainable_infrastructure')}}</h2>
-                        <a href="{{route('front.investments2')}}}" class="businessLink">Detail</a>
+                        <a href="{{route('front.investments2')}}" class="businessLink">Detail</a>
                     </div>
                 </div>
                 <div class="businessItem">
