@@ -175,7 +175,7 @@
                     </div>
                 </div><!--/owl-slide--> --}}
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/slide/s2.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/image/img2.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
@@ -191,7 +191,7 @@
                 </div><!--/owl-slide-->
 
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/slide/s3.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/image/img1.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
@@ -206,7 +206,37 @@
                     </div>
                 </div><!--/owl-slide-->
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/slide/s1.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/image/img8.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center justify-content-md-start">
+                            <div class="col-10 col-md-6 static">
+                                <div class="owl-slide-text">
+                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
+                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">
+                                    </div>
+                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/image/img5.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center justify-content-md-start">
+                            <div class="col-10 col-md-6 static">
+                                <div class="owl-slide-text">
+                                    <h2 class="owl-slide-animated owl-slide-title"></h2>
+                                    <div class="owl-slide-animated owl-slide-subtitle mb-3">
+                                    </div>
+                                    <a class="btn btn-primary owl-slide-animated owl-slide-cta" href="https://unsplash.com/photos/7uwbhGSH5Fg" target="_blank" role="button"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/image/img4.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
