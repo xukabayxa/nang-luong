@@ -62,11 +62,16 @@
 <script src="/site/js/script.js" defer="defer" type="text/javascript"></script>
 <script>
     /* This JavaScript is used for different helper functions, such as Sirv object updates with Ajax. */
+    //
+    // $(window).on('load', function(event) {
+    //     $('body').removeClass('preloading');
+    //     $('.loader').fadeOut('slow');
+    // });
 
-    $(window).on('load', function(event) {
-        $('body').removeClass('preloading');
-        // $('.load').delay(1000).fadeOut('fast');
-        $('.loader').fadeOut('slow');
+    $(document).ready(function() {
+        $(".loader").fadeOut(function() {
+            $(this).remove(); // Optional if it's going to only be used once.
+        });
     });
 
     // jQuery(document).ready(function() {
