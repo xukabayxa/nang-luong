@@ -160,7 +160,7 @@
             </style>
 
             <div class="owl-carousel owl-theme">
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/6.jpg);">
+                {{-- <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/6.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
@@ -173,9 +173,9 @@
                             </div>
                         </div>
                     </div>
-                </div><!--/owl-slide-->
+                </div><!--/owl-slide--> --}}
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/home_1.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/slide/s2.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
@@ -191,7 +191,7 @@
                 </div><!--/owl-slide-->
 
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/inves/i_3_1.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/slide/s3.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
@@ -206,7 +206,7 @@
                     </div>
                 </div><!--/owl-slide-->
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/inves/i_1.jpg);">
+                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/slide/s1.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
@@ -221,7 +221,7 @@
                     </div>
                 </div>
 
-                <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/8.jpg);">
+                {{-- <div class="owl-slide d-flex align-items-center cover" style="background-image: url(/site/system/8.jpg);">
                     <div class="container">
                         <div class="row justify-content-center justify-content-md-start">
                             <div class="col-10 col-md-6 static">
@@ -234,7 +234,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <!--/owl-slide-->
             </div>
