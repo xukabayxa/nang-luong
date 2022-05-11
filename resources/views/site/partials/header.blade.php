@@ -357,7 +357,7 @@
                 .businessItem>.businessTitle {
                     position: absolute;
                     bottom: 0;
-                    padding: 100px 0 50px 50px;
+                    padding: 100px 0 20px 50px;
                     margin: 0;
                     min-width: 25vw;
                     width: 100%;
@@ -369,7 +369,10 @@
                 }
                 .businessDetail {
                     background-color: #333134;
-                    padding: 12px 48px 34px;
+                    /*padding: 12px 48px 50px;*/
+                    padding-top: 12px;
+                    padding-right: 48px;
+                    padding-bottom: 60px;
                     position: absolute;
                     bottom: 0;
                     transform: translateY(140%);
