@@ -116,7 +116,7 @@
                         padding-left: 30px;
                     }
                     .uk-navbar-right {
-                        margin-left: 50px;
+                        margin-left: auto;
                     }
                     .uk-navbar-left img {
                         width: 180px;
