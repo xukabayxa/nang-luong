@@ -111,7 +111,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
 
     // HTML Block 2
     Route::group(['prefix' => 'blocks2'], function () {
-        Route::get('/', 'Admin\Block2Controller@index')->name('Block2.index');
+        Route::get('/{page}', 'Admin\Block2Controller@index')->name('Block2.index');
         Route::get('/searchData', 'Admin\Block2Controller@searchData')->name('Block2.searchData');
         Route::get('/{id}/show', 'Admin\Block2Controller@show')->name('Block2.show');
         Route::get('/{page}/create', 'Admin\Block2Controller@create')->name('Block2.create');

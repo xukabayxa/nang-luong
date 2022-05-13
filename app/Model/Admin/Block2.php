@@ -15,7 +15,7 @@ class Block2 extends BaseModel
 
     public static function searchByFilter($request) {
 
-        $result = self::with([]);
+        $result = self::with([])->where('page', $request->page);
 
         if (!empty($request->name)) {
             $result = $result->where('name', 'like', '%'.$request->name.'%');

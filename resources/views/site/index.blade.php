@@ -399,9 +399,18 @@
             }
 
             .homeIndustry-item p {
-                height: 80px;
+                height: 100px;
                 padding-left: 12px;
-                overflow: hidden;
+                overflow: auto;
+                font-size: 13.5px;
+                border-left: 2px solid #0F4C81 ;
+            }
+
+            .homeIndustry-item pre {
+                width: 520px;
+                height: 100px;
+                padding-left: 12px;
+                overflow: auto;
                 font-size: 13.5px;
                 border-left: 2px solid #0F4C81 ;
             }
@@ -661,14 +670,62 @@
                             <div class="imgDes">
                                 <img src="/site/system/home/h1.jpg">
                             </div>
-                            <p>
-                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm
-                                '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template
-                                refer to elements of the data structure (typically a field of a struct or a key in a
-                                map) to control execution and derive values to be displayed. Execution of the template
-                                walks the structure and sets the cursor, represented by a period '.' and called "dot",
-                                to the value at the current location in the structure as execution proceeds.'}}
-                            </p>
+
+                                @if(App::isLocale('vi'))
+                                  <pre>
+1.Lĩnh vực đầu tư kinh doanh:
+- Năng lượng tái tạo - Renewable energy and technology
+- Năng lượng mới (đang nghiên cứu) - New reliable power system
+- Khu công nghiệp kết hợp năng lượng tái tạo: mô hình khu công nghiệp xanh
+  Sustainable industrial park development
+2.Chiến lược:
+Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể
+chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến
+trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững
+cho các thế hệ tương lai.
+Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:
++ Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo;
++ Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023.
+Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025;
++ Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như
+Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách;
++ Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh –
+trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.
+3.Tầm nhìn:
+RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong trong lĩnh vực
+năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030.
+                                  </pre>
+                                @else
+                                    <pre>
+1. Business investment domains:
+Renewable energy and technology
+- new energy (studying) - New power system
+Sustainable industrial park development
+2. Strategy:
+Renewable energy and new energy is a future and a trend
+ of energy. Rt energy with his future
+to promote and develop – renewable energy towards a green, clean, and sustainable world
+for future generations.
+In fact, that strategy, we target the following goals:
++ development, investment in construction, and operation of renewable energy projects;
++ increase the size of the renewable renewable energy project from 100mw 2021 to 500mw in 2023.
+Towards the investment portfolio with 1gw renewable energy or in 2025;
++ research, application and investment in projects using new technology such as
+Renewable energy, …. when those technologies are financially and financially feasible;
++ development, investment in construction and operation of – industrial parks
+in which power ministries use for industrial production as renewable energy.
+3. Vision:
+Rt energy is developed and developed with the orientation of a pioneer in the field
+renewable energy and industrial parks in asean region in 2025, and in the world by 2030.
+                                    </pre>
+                                @endif
+{{--                                {{App::isLocale('vi') ?--}}
+{{--: ' Templates are executed by applying them to a data structure. Annotations in the template--}}
+{{--                                refer to elements of the data structure (typically a field of a struct or a key in a--}}
+{{--                                map) to control execution and derive values to be displayed. Execution of the template--}}
+{{--                                walks the structure and sets the cursor, represented by a period '.' and called "dot",--}}
+{{--                                to the value at the current location in the structure as execution proceeds.'}}--}}
+
                             <a href="{{route('front.about')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item">
@@ -720,7 +777,7 @@
                 </div>
                 <div class="homeIndustry-figure">
                     <div class="homeIndustry-img active"
-                         style="background-image:url(/site/system/home/h1.jpg);"></div>
+                         style="background-image:url(/site/image/img2.jpg);"></div>
                     <div class="homeIndustry-img"
                          style="background-image:url(/site/system/home/h2.jpg);"></div>
                     <div class="homeIndustry-img"
@@ -733,7 +790,7 @@
                 <a href="{{route('front.about')}}"
                    class="homeIndustry-navItem industry-item active">
                     <div class="homeIndustry-navImg industryItem-img"
-                         style="background-image:url(/site/system/home/h1.jpg);"></div>
+                         style="background-image:url(/site/image/img2.jpg);"></div>
                     <div class="homeIndustry-navTxt industryItem-txt" >{{App::isLocale('vi') ? 'Giới thiệu chung' : 'WHO WE ARE'}}</div>
                 </a>
                 <a href="{{route('front.about2')}}"
@@ -787,11 +844,11 @@
             <div class="homeIndustry-content">
                 <div class="homeIndustry-figure2">
                     <div class="homeIndustry-img2 active"
-                         style="background-image:url(/site/system/home/h5.jpg);"></div>
+                         style="background-image:url(/site/system/home/z1.jpg);"></div>
                     <div class="homeIndustry-img2"
-                         style="background-image:url(/site/system/home/h6.jpg);"></div>
+                         style="background-image:url(/site/system/home/z2.jpg);"></div>
                     <div class="homeIndustry-img2"
-                         style="background-image:url(/site/system/home/h7.jpg);"></div>
+                         style="background-image:url(/site/system/home/z3.jpg);"></div>
                 </div>
                 <div class="homeIndustry-txt h-txt">
                     <h3 class="homeIndustry-title">{{App::isLocale('vi') ? 'Lĩnh vực đầu tư kinh doanh' : 'Business investment'}}</h3>
@@ -852,19 +909,19 @@
                 <a href="{{route('front.investments1')}}"
                    class="homeIndustry-navItem2 industry-item active">
                     <div class="homeIndustry-navImg industryItem-img"
-                         style="background-image:url(/site/system/home/h5.jpg);"></div>
+                         style="background-image:url(/site/system/home/z1.jpg);"></div>
                     <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</div>
                 </a>
                 <a href="{{route('front.investments2')}}"
                    class="homeIndustry-navItem2 industry-item">
                     <div class="homeIndustry-navImg industryItem-img"
-                         style="background-image:url(/site/system/home/h6.jpg);"></div>
+                         style="background-image:url(/site/system/home/z2.jpg);"></div>
                     <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</div>
                 </a>
                 <a href="{{route('front.investments3')}}"
                    class="homeIndustry-navItem2 industry-item">
                     <div class="homeIndustry-navImg industryItem-img"
-                         style="background-image:url(/site/system/home/h7.jpg);"></div>
+                         style="background-image:url(/site/system/home/z3.jpg);"></div>
                     <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</div>
                 </a>
             </div>
@@ -1050,6 +1107,7 @@
         </style>
 
 
+
         <div class="uk-container uk-padding-medium-top partner-row">
             <div uk-grid="" class=" uk-flex-middle">
                 <div class="uk-width-1-1  uk-text-center uk-footer-logos uk-first-column">
@@ -1136,6 +1194,16 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+
+
+        <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
+            <div class="uk-position-cover uk-cover-container">
+                <canvas width="1600" height="708"></canvas>
+                <img data-src="/site/system/home/i5.jpg" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class="Sirv uk-utility-object-fit-cover sirv-image-loaded" referrerpolicy="no-referrer-when-downgrade" id="responsive-image-424658" alt="cta-bg-scaled" title="cta-bg-scaled" src="/site/system/sun_enegy.jpg" style="">
+            </div>
+            <div class="uk-text-center">
             </div>
         </div>
 

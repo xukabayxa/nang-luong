@@ -12,7 +12,7 @@ Quản lý khối nội dung HTML
 @endsection
 
 @section('buttons')
-<a href="{{ route('Block.create') }}" class="btn btn-outline-success btn-sm" class="btn btn-info"><i class="fa fa-plus"></i> Thêm mới</a>
+<a href="{{ route('Block2.create', ['page' => $page]) }}" class="btn btn-outline-success btn-sm" class="btn btn-info"><i class="fa fa-plus"></i> Thêm mới</a>
 @endsection
 
 @section('content')
@@ -35,8 +35,9 @@ Quản lý khối nội dung HTML
 <script>
     let datatable = new DATATABLE('table-list', {
 		ajax: {
-			url: '{!! route('Block.searchData') !!}',
+			url: '{!! route('Block2.searchData') !!}',
 			data: function (d, context) {
+			    d.page = "{{$page}}";
 				DATATABLE.mergeSearch(d, context);
 			}
 		},
