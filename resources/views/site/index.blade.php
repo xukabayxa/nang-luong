@@ -602,6 +602,15 @@
                 z-index: 10;
             }
 
+            .homeIndustry-figure2 {
+                margin-top: -60px;
+                width: 100%;
+                height: 280px;
+                border-radius: 30px 0;
+                position: relative;
+                z-index: 10;
+            }
+
             .homeIndustry-img {
                 background-color: #DDD;
                 border-radius: 30px 0;
@@ -735,6 +744,10 @@
                 display: none;
             }
 
+            .h-txt {
+                margin-left: 34px;
+            }
+
             @media screen and (max-width: 640px) {
                 .homeIndustry-main {
                     margin-top: 24px;
@@ -750,6 +763,10 @@
 
                 .imgDes {
                     display: block;
+                }
+
+                .h-txt {
+                    margin-left: 0;
                 }
 
                 .uk-recent-posts {
@@ -933,7 +950,15 @@
 
         <div class="homeIndustry-main">
             <div class="homeIndustry-content">
-                <div class="homeIndustry-txt">
+                <div class="homeIndustry-figure2">
+                    <div class="homeIndustry-img2 active"
+                         style="background-image:url(/site/system/home/h5.jpg);"></div>
+                    <div class="homeIndustry-img2"
+                         style="background-image:url(/site/system/home/h6.jpg);"></div>
+                    <div class="homeIndustry-img2"
+                         style="background-image:url(/site/system/home/h7.jpg);"></div>
+                </div>
+                <div class="homeIndustry-txt h-txt">
                     <h3 class="homeIndustry-title">{{App::isLocale('vi') ? 'Lĩnh vực đầu tư kinh doanh' : 'Business investment'}}</h3>
                     <div class="homeIndustry-desc"></div>
                     <div class="homeIndustry-intro">
@@ -986,14 +1011,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="homeIndustry-figure">
-                    <div class="homeIndustry-img2 active"
-                         style="background-image:url(/site/system/home/h5.jpg);"></div>
-                    <div class="homeIndustry-img2"
-                         style="background-image:url(/site/system/home/h6.jpg);"></div>
-                    <div class="homeIndustry-img2"
-                         style="background-image:url(/site/system/home/h7.jpg);"></div>
-                </div>
+
             </div>
             <div class="homeIndustry-nav">
                 <a href="{{route('front.investments1')}}"
