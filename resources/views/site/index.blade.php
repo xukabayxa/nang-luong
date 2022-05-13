@@ -666,12 +666,12 @@
             }
 
             .homeIndustry-navItem {
-                height: 164px;
+                height: 260px;
                 width: 23%;
             }
 
             .homeIndustry-navItem2 {
-                height: 164px;
+                height: 260px;
                 width: 33%;
             }
 
@@ -731,6 +731,10 @@
                 pointer-events: auto;
             }
 
+            .imgDes {
+                display: none;
+            }
+
             @media screen and (max-width: 640px) {
                 .homeIndustry-main {
                     margin-top: 24px;
@@ -742,6 +746,14 @@
                     width: 100%;
                     overflow: visible;
                     background: url(../img/patternBg-4.png);
+                }
+
+                .imgDes {
+                    display: block;
+                }
+
+                .uk-recent-posts {
+                    margin-top: -370px;
                 }
 
                 .homeIndustry-title,  .homeIndustry-title2 {
@@ -794,6 +806,9 @@
                     <div class="homeIndustry-intro">
                         <div class="homeIndustry-item active">
                             <h6>{{App::isLocale('vi') ? 'Giới thiệu chung' : 'Who We Are'}}</h6>
+                            <div class="imgDes">
+                                <img src="/site/system/home/h1.jpg">
+                            </div>
                             <p>
                                 {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm
                                 '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template
@@ -806,33 +821,46 @@
                         </div>
                         <div class="homeIndustry-item">
                             <h6>{{App::isLocale('vi') ? 'Lĩnh vực hoạt động' : 'What We Do'}}</h6>
-                            <p>Templates are executed by applying them to a data structure. Annotations in the template
+                            <div class="imgDes">
+                                <img src="/site/system/home/h2.jpg">
+                            </div>
+                            <p>
+                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm
+                                '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template
                                 refer to elements of the data structure (typically a field of a struct or a key in a
                                 map) to control execution and derive values to be displayed. Execution of the template
                                 walks the structure and sets the cursor, represented by a period '.' and called "dot",
-                                to the value at the current location in the structure as execution proceeds.
-
+                                to the value at the current location in the structure as execution proceeds.'}}
                             </p>
                             <a href="{{route('front.about2')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item">
                             <h6>{{App::isLocale('vi') ? 'Bộ máy quản lý' : 'OUR TEAM'}}</h6>
+                            <div class="imgDes">
+                                <img src="/site/system/home/h3.jpg">
+                            </div>
                             <p>
-                                Templates are executed by applying them to a data structure. Annotations in the template
+                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm
+                                '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template
                                 refer to elements of the data structure (typically a field of a struct or a key in a
                                 map) to control execution and derive values to be displayed. Execution of the template
                                 walks the structure and sets the cursor, represented by a period '.' and called "dot",
-                                to the value at the current location in the structure as execution proceeds.
+                                to the value at the current location in the structure as execution proceeds.'}}
                             </p>
                             <a href="{{route('front.about3')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item">
                             <h6>{{App::isLocale('vi') ? 'Đối tác chiến lược' : 'OUR PARTNER'}}</h6>
-                            <p>Templates are executed by applying them to a data structure. Annotations in the template
+                            <div class="imgDes">
+                                <img src="/site/system/home/h4.jpg">
+                            </div>
+                            <p>
+                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm
+                                '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template
                                 refer to elements of the data structure (typically a field of a struct or a key in a
                                 map) to control execution and derive values to be displayed. Execution of the template
                                 walks the structure and sets the cursor, represented by a period '.' and called "dot",
-                                to the value at the current location in the structure as execution proceeds.
+                                to the value at the current location in the structure as execution proceeds.'}}
                             </p>
                             <a href="{{route('front.about4')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
@@ -912,18 +940,47 @@
                         <div class="homeIndustry-item2 active">
                             <h6>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}
                             </h6>
-                            <p></p>
+                            <div class="imgDes">
+                                <img src="/site/system/home/h5.jpg">
+                            </div>
+                            <p>
+                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu
+                                (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và'
+                                :'So Awesome to see a thirty year old song presented in a modern style. The Singer is now in his late seventies and was very famous in germany since the 1960s. With his Band "The Rattles" he played in Hamburg in the Star Club. Yes, the same club and the same time when The Beatles played there. And they even shared some beer together.
+'
+                                }}
+
+                            </p>
                             <a href="{{route('front.investments1')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item2">
                             <h6>{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</h6>
-                            <p></p>
+                            <div class="imgDes">
+                                <img src="/site/system/home/h6.jpg">
+                            </div>
+                            <p>
+                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu
+                                (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và'
+                                :'So Awesome to see a thirty year old song presented in a modern style. The Singer is now in his late seventies and was very famous in germany since the 1960s. With his Band "The Rattles" he played in Hamburg in the Star Club. Yes, the same club and the same time when The Beatles played there. And they even shared some beer together.
+'
+                                }}
+
+                            </p>
                             <a href="{{route('front.investments2')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item2">
                             <h6>{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}
                                 </h6>
+                            <div class="imgDes">
+                                <img src="/site/system/home/h7.jpg">
+                            </div>
                             <p>
+                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu
+                                (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và'
+                                :'So Awesome to see a thirty year old song presented in a modern style. The Singer is now in his late seventies and was very famous in germany since the 1960s. With his Band "The Rattles" he played in Hamburg in the Star Club. Yes, the same club and the same time when The Beatles played there. And they even shared some beer together.
+'
+                                }}
+
                             </p>
                             <a href="{{route('front.investments3')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
