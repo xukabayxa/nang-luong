@@ -3714,7 +3714,7 @@ ul.uk-nav-sub {
     font-size: 1.25em;
     justify-content: center;
     min-height: 80px;
-    padding: 0 15px;
+    padding: 0 5px;
     text-decoration: none
 }
 
@@ -3863,7 +3863,7 @@ ul.uk-nav-sub {
 }
 
 .uk-sticky.uk-active .uk-navbar-container, .uk-sticky.uk-active .uk-submenu-container {
-    background: #0A2C48;
+    background-color: rgba(255,255,255,.7) !important;
     color: #fff;
     transition: all .5s ease
 }
@@ -3905,7 +3905,7 @@ ul.uk-nav-sub {
 
 .uk-navbar-nav li>a {
     font-size: 15px;
-    margin: 0 1.375em
+    margin: 0 10px;
 }
 
 @media (max-width: 1160px) and (min-width: 960px) {
@@ -6133,7 +6133,7 @@ ul.uk-nav-sub {
 }
 
 .uk-height-viewport {
-    min-height: 100vh
+    /* min-height: 100vh */
 }
 
 .uk-height-small {
@@ -9864,3 +9864,6 @@ img.Sirv {
 .wind-icon.win-icon-right {
     margin: -12px 0 0 100px;
 }
+#sozo-main {
+    padding-top: 145px;
+  }
