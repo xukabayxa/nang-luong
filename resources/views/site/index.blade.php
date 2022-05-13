@@ -976,7 +976,7 @@
                                 }}
 
                             </p>
-                            <a href="{{route('front.investments1')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
+                            <a href="{{route('front.investments1')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item2">
                             <h6>{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</h6>
@@ -991,7 +991,7 @@
                                 }}
 
                             </p>
-                            <a href="{{route('front.investments2')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
+                            <a href="{{route('front.investments2')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item2">
                             <h6>{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}
@@ -1007,7 +1007,7 @@
                                 }}
 
                             </p>
-                            <a href="{{route('front.investments3')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
+                            <a href="{{route('front.investments3')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                     </div>
                 </div>
