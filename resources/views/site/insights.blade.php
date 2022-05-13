@@ -19,35 +19,36 @@
                 </h1>
 
                 <div uk-grid class="uk-grid uk-grid-xmedium">
-                    @foreach($posts->take(1) as $post)
-                    <div class="uk-width-2-3@m uk-feat-article" uk-scrollspy="cls: uk-animation-fade; delay: 350;">
-                        <div class="uk-cover-container">
-                            <a href="">
-                                <canvas width="1000" height="662"></canvas>
-                                <img data-src="{{$post->image->path}}"
-                                     data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                     class=" Sirv uk-utility-object-fit-cover "
-                                     alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
-                                     title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"/> </a>
-                        </div>
+{{--                    @foreach($posts->take(1) as $post)--}}
+{{--                    @endforeach--}}
 
-                        <div class="uk-flex@s uk-flex-between uk-flex-middle uk-margin">
-                            <div class="uk-style-primary-m uk-text-4 uk-text-lh-4 uk-width-2-3@m uk-width-1-1">
-                                <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-margin-small-bottom uk-hidden@s">
-                                    22.03.22 </h6>
-                                <a href=""
-                                   class="uk-color-dark">
-                                    {{$post->name}}</a>
+                    <div class="uk-width-2-3@m uk-feat-article" uk-scrollspy="cls: uk-animation-fade; delay: 350;">
+                            <div class="uk-cover-container">
+                                <a href="">
+                                    <canvas width="1000" height="662"></canvas>
+                                    <img data-src="/site/system/post1.jpg"
+                                         data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
+                                         class=" Sirv uk-utility-object-fit-cover "
+                                         alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
+                                         title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"/> </a>
                             </div>
-                            <div class="uk-text-right@s uk-width-expand@m">
-                                <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-visible@s">
-                                    22.03.22 </h6>
-                                <p class="uk-style-primary-l uk-text-11 uk-text-lh-1">
-                                    {{$post->intro}}</p>
+
+                            <div class="uk-flex@s uk-flex-between uk-flex-middle uk-margin">
+                                <div class="uk-style-primary-m uk-text-4 uk-text-lh-4 uk-width-2-3@m uk-width-1-1">
+                                    <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-margin-small-bottom uk-hidden@s">
+                                        22.03.22 </h6>
+                                    <a href=""
+                                       class="uk-color-dark">
+                                        AMPYR Solar Europe signs deal</a>
+                                </div>
+                                <div class="uk-text-right@s uk-width-expand@m">
+                                    <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-visible@s">
+                                        22.03.22 </h6>
+                                    <p class="uk-style-primary-l uk-text-11 uk-text-lh-1">
+                                        </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    @endforeach
 
                     <div class="uk-width-expand@m">
                         <div class="uk-grid" uk-grid>
@@ -56,7 +57,7 @@
                                 <div class="uk-cover-container">
                                     <a href="">
                                         <canvas width="1000" height="662"></canvas>
-                                        <img data-src=""
+                                        <img data-src="/site/system/post2.jpg"
                                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                              class=" Sirv uk-utility-object-fit-cover "
                                              alt="iStock-1032683612-scaled.jpg?w=1024&h=683&scale"
@@ -82,7 +83,7 @@
                                 <div class="uk-cover-container">
                                     <a href="">
                                         <canvas width="1000" height="662"></canvas>
-                                        <img data-src=""
+                                        <img data-src="/site/system/post3.jpg"
                                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                              class=" Sirv uk-utility-object-fit-cover "
                                              alt="ASE-EAL-Header-Image.png?w=1024&h=505&scale"
@@ -124,7 +125,7 @@
                             <div class="uk-cover-container">
                                 <a href="">
                                     <canvas width="467" height="593"></canvas>
-                                    <img data-src=""
+                                    <img data-src="/site/system/post4.jpg"
                                          data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                          class=" Sirv uk-utility-object-fit-cover "
                                          alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
@@ -147,7 +148,7 @@
                             <div class="uk-cover-container">
                                 <a href="">
                                     <canvas width="467" height="593"></canvas>
-                                    <img data-src=""
+                                    <img data-src="/site/system/post5.jpg"
                                          data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                          class=" Sirv uk-utility-object-fit-cover "
                                          alt="ASE-EAL-Header-Image.png?w=1024&h=505&scale"
@@ -169,7 +170,7 @@
                             <div class="uk-cover-container">
                                 <a href="">
                                     <canvas width="467" height="593"></canvas>
-                                    <img data-src=""
+                                    <img data-src="/site/system/post6.jpg"
                                          data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                          class=" Sirv uk-utility-object-fit-cover "
                                          alt="iStock-1032683612-scaled.jpg?w=1024&h=683&scale"
@@ -205,7 +206,7 @@
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
-                <img data-src=""
+                <img data-src="/site/system/post-e.jpg"
                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
             <div class="uk-text-center">

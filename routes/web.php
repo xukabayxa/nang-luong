@@ -109,6 +109,19 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::get('/exportExcel','Admin\BlockController@exportExcel')->name('Block.exportExcel');
     });
 
+    // HTML Block 2
+    Route::group(['prefix' => 'blocks2'], function () {
+        Route::get('/', 'Admin\Block2Controller@index')->name('Block2.index');
+        Route::get('/searchData', 'Admin\Block2Controller@searchData')->name('Block2.searchData');
+        Route::get('/{id}/show', 'Admin\Block2Controller@show')->name('Block2.show');
+        Route::get('/{page}/create', 'Admin\Block2Controller@create')->name('Block2.create');
+        Route::post('/', 'Admin\Block2Controller@store')->name('Block2.store');
+        Route::post('/{id}/update', 'Admin\Block2Controller@update')->name('Block2.update');
+        Route::get('/{id}/edit', 'Admin\Block2Controller@edit')->name('Block2.edit');
+        Route::get('/{id}/delete', 'Admin\Block2Controller@delete')->name('Block2.delete');
+        Route::get('/exportExcel','Admin\Block2Controller@exportExcel')->name('Block2.exportExcel');
+    });
+
     // Customer Review
     Route::group(['prefix' => 'reviews'], function () {
         Route::get('/', 'Admin\ReviewController@index')->name('Review.index');
