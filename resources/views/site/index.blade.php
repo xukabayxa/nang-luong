@@ -893,13 +893,13 @@
 
         <div class="row" style="text-align: center; margin-bottom: 30px; margin-top: -10px; display: flex; justify-content: space-evenly">
             <div>
-                <img class="wind-icon2 win-icon-right" src="http://127.0.0.1:8000/img/icons/wind-energy-blue.png" alt="win-icon">
+                <img class="wind-icon2 win-icon-right" src="/img/icons/wind-energy-blue.png" alt="win-icon">
             </div>
             <div>
-                <img class="wind-icon2 win-icon-right" src="http://127.0.0.1:8000/img/icons/wind-energy-blue.png" alt="win-icon">
+                <img class="wind-icon2 win-icon-right" src="/img/icons/wind-energy-blue.png" alt="win-icon">
             </div>
             <div>
-                <img class="wind-icon2 win-icon-right" src="http://127.0.0.1:8000/img/icons/wind-energy-blue.png" alt="win-icon">
+                <img class="wind-icon2 win-icon-right" src="/img/icons/wind-energy-blue.png" alt="win-icon">
             </div>
         </div>
 
