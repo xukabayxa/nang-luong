@@ -23,14 +23,14 @@ class Block2Controller extends Controller
     protected $view = 'admin.blocks2';
     protected $route = 'Block2';
 
-    public function index()
+    public function index($page)
     {
-        return view($this->view . '.index');
+        return view($this->view . '.index', compact('page'));
     }
 
     // Hàm lấy data cho bảng list
     public function searchData(Request $request)
-    {
+    {dd(2);
         $objects = ThisModel::searchByFilter($request);
         return Datatables::of($objects)
             ->editColumn('name', function ($object) {
@@ -74,7 +74,6 @@ class Block2Controller extends Controller
 
     public function store(Request $request)
     {
-
         $validate = Validator::make(
             $request->all(),
             [

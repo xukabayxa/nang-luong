@@ -10,9 +10,9 @@
 
         <div class="form-group custom-group mb-4">
             <label class="form-label required-label">Tiêu đề</label>
-            <input class="form-control " type="text" ng-model="form.name">
+            <input class="form-control" type="text" ng-model="form.title">
             <span class="invalid-feedback d-block" role="alert">
-                <strong><% errors.name[0] %></strong>
+                <strong><% errors.title[0] %></strong>
             </span>
         </div>
 

@@ -24,22 +24,24 @@ Thêm mới khối nội dung
   app.controller('CreateBlock', function ($scope, $http) {
     $scope.form = new Block2({}, {scope: $scope});
     $scope.loading = {};
-    $scope.page = {{$page}};
+
     $scope.submit = function() {
       $scope.loading.submit = true;
+      let data = $scope.form.submit_data;
+      data.append('page', "{{$page}}");
       $.ajax({
         type: 'POST',
         url: "{!! route('Block2.store') !!}",
         headers: {
           'X-CSRF-TOKEN': CSRF_TOKEN
         },
-        data: $scope.form.submit_data,
+        data: data,
         processData: false,
         contentType: false,
         success: function(response) {
           if (response.success) {
             toastr.success(response.message);
-            window.location.href = "{{ route('Block2.index') }}";
+            window.location.href = "{{ route('Block2.index', ['page' => $page]) }}";
           } else {
             toastr.warning(response.message);
             $scope.errors = response.errors;
