@@ -130,6 +130,48 @@
                 </ul>
             </li>
 
+            <li class="nav-item has-treeview  {{ request()->is('admin/block2') || request()->is('admin/block2/*') ? 'menu-open' : '' }} ">
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-cubes"></i>
+                    <p>
+                        Tùy chỉnh nội dung trang
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item has-treeview ">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-cubes"></i>
+                            <p>
+                                Trang About
+                                <i class="fas fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item has-treeview">
+                                <a href="" class="nav-link">
+                                    <i class="far fas fa-angle-right nav-icon"></i>
+                                    <p>About 1</p>
+                                </a>
+                            </li>
+                            <li class="nav-item has-treeview">
+                                <a href="" class="nav-link">
+                                    <i class="far fas fa-angle-right nav-icon"></i>
+                                    <p>About 2</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a href="{{ route('Block.create') }}" class="nav-link {{ Request::routeIs('Block.create') ? 'active' : '' }}">--}}
+{{--                            <i class="far fas  fa-angle-right nav-icon"></i>--}}
+{{--                            <p>Thêm mới</p>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
+                </ul>
+            </li>
+
+
             <li class="nav-item has-treeview">
                 <a href="#" class="nav-link">
                     <i class="nav-icon far fa-user"></i>

@@ -44,11 +44,11 @@
 </head>
 <body class="home page-template-default page page-id-6 preloading" ng-app="App">
 
-<div class="loader">
-    <div class="loading"><i class="icon"></i>
-        <img src="/site/system/loading_3.gif">
-    </div>
-</div>
+{{--<div class="loader">--}}
+{{--    <div class="loading"><i class="icon"></i>--}}
+{{--        <img src="/site/system/loading_3.gif">--}}
+{{--    </div>--}}
+{{--</div>--}}
 
 @include('site.partials.svg')
 
@@ -68,11 +68,11 @@
     //     $('.loader').fadeOut('slow');
     // });
 
-    $(document).ready(function() {
-        $(".loader").fadeOut(function() {
-            $(this).remove(); // Optional if it's going to only be used once.
-        });
-    });
+    // $(document).ready(function() {
+    //     $(".loader").fadeOut(function() {
+    //         $(this).remove(); // Optional if it's going to only be used once.
+    //     });
+    // });
 
     // jQuery(document).ready(function() {
     //     jQuery('#loading').fadeOut(3000);
