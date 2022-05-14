@@ -258,7 +258,7 @@
                 <div class="uk-text-left uk-mega-menu-item items-1">
                     <a href="{{route('front.investments2')}}" class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="{{ asset('site/system/about_us/a2.jpg') }}"
+                            <img data-src="{{ asset('site/system/home/j.jpg') }}"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"
                                  title="iStock-1156913631-scaled"/>
@@ -285,7 +285,7 @@
                 <div class="uk-text-left uk-mega-menu-item items-1">
                     <a href="{{route('front.investments3')}}" class="uk-animation-zoom">
                         <div class="uk-cover-container ">
-                            <img data-src="{{ asset('site/system/about_us/a4.jpg') }}"
+                            <img data-src="{{ asset('site/system/home/j2.jpg') }}"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"
                                  title="green-tech-scaled"/>
