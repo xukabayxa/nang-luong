@@ -672,7 +672,7 @@
                             </div>
 
                                 @if(App::isLocale('vi'))
-                                  <pre>
+                                  <pre style="font-family: aktiv-grotesk, Helvetica, Arial, sans-serif">
 1.Lĩnh vực đầu tư kinh doanh:
 - Năng lượng tái tạo - Renewable energy and technology
 - Năng lượng mới (đang nghiên cứu) - New reliable power system
@@ -696,7 +696,7 @@ RT Energy được xây dựng và phát triển với định hướng trở th
 năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030.
                                   </pre>
                                 @else
-                                    <pre>
+                                    <pre style="font-family: aktiv-grotesk, Helvetica, Arial, sans-serif">
 1. Business investment domains:
 Renewable energy and technology
 - new energy (studying) - New power system
