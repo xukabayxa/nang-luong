@@ -1,368 +1,442 @@
 @extends('site.layouts.master')
 @section('title')
-<title>{{ "Về chúng tôi - " . ucfirst($_SERVER['HTTP_HOST']) }}</title>
+    <title>{{ "Về chúng tôi - " . ucfirst($_SERVER['HTTP_HOST']) }}</title>
+
+@endsection
+@section('css')
+    <link href="/css/custom-template.css" rel="stylesheet">
+    <link href="/css/solar-skin.css" rel="stylesheet">
+    <link href="/css/css-2.css" rel="stylesheet">
+    <link href="/css/css-3.css" rel="stylesheet">
+
 @endsection
 @section('content')
-<!-- <span></span> -->
-<div uk-sticky="animation: uk-animation-slide-top;">
-    <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
-        @include('site.partials.header')
-    </div>
-</div>
-
-<section id="sozo-main">
-    <div class="uk-section uk-section-page-header uk-background-logo-wash-left">
-        <div class="uk-container uk-container-large">
-            <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-                <div class="uk-flex uk-flex-middle">
-                    <div class="uk-width-1-1">
-                        <div class="uk-width-2xlarge-2">
-                            <h6 class="uk-style-secondary-m uk-text-11 uk-margin-bottom " uk-scrollspy="cls: uk-animation-slide-left-small; delay: 300;">who we are</h6>
-                            <h1 class="uk-style-primary-m uk-text-2 uk-text-lh-4-1" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 600;"><span class="uk-color-primary" style="color: #0F4C81 !important">Providing a global</span> reach for sustainable
-                                solutions</h1>
-                        </div>
-                        <div class="uk-width-xlarge">
-                            <div class="uk-style-primary-l uk-text-9  uk-wysiwyg-default uk-margin-top uk-margin-bottom" style="" uk-scrollspy="cls: uk-animation-fade; delay: 800;">
-                                <p>It is only with the determination and dedication of our people that we can serve
-                                    our clients, generate long-term value for our shareholders and contribute to the
-                                    broader public.</p>
-                            </div>
-                            <div uk-scrollspy="cls: uk-animation-fade; delay: 800;">
-                                <a class="uk-button uk-color-quartary uk-style-secondary-b " href="#">
-                                    <span class="uk-color-quartary uk-text-middle uk-margin-right">Global Reach</span>
-                                    <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}" alt="win-icon">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 500;">
-                    <div class="uk-cover-container">
-                        <img data-src="/site/system/about_us/a_1.jpg" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="iStock-663800200-scaled.jpg?w=1024&h=683&scale" title="iStock-663800200-scaled.jpg?w=1024&h=683&scale" />
-                        <canvas width="850" height="850"></canvas>
-                    </div>
-
-                </div>
-            </div>
+    <style>
+         h3{
+            font-size: 20px;
+            color: #0F4C81 ;
+        }
+    </style>
+    <!-- <span></span> -->
+    <div uk-sticky="animation: uk-animation-slide-top;">
+        <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
+            @include('site.partials.header')
         </div>
     </div>
 
-    <div class="uk-background-light uk-dark">
-        <div class="uk-container uk-container-medium uk-padding-large-bottom">
-            <div class="uk-child-width-1-2@s uk-flex uk-flex-middle uk-grid uk-grid-large" uk-grid uk-height-match=".uk-oval">
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right uk-oval uk-circle-feature-container">
-                    <div class="uk-width-large" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 300;">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-bottom">
-                            OUR MISSION <span class="uk-style-line"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-uppercase uk-text-right uk-text-6 uk-text-lh-4">
-                            drive a sustainable and net zero greenhouse gas emissions future </h4>
-                    </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-red uk-circle-feature uk-scrollspy-inview uk-animation-draw" uk-scrollspy="cls: uk-animation-draw; delay: 700;" uk-icon="icon: half-circle; ratio: 1" style=""><svg viewBox="0 0 482 645" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="645">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                                <g id="Who-we-are" transform="translate(-332.000000, -1000.000000)" stroke="#EC6278" stroke-width="2">
-                                    <g id="Group-17" transform="translate(333.286008, 1001.820590)">
-                                        <path d="M0.751662914,40.9573792 C47.170655,14.8750781 100.731763,0 157.767131,0 C335.050536,0 478.767131,143.716595 478.767131,321 C478.767131,498.283405 335.050536,642 157.767131,642 C100.423648,642 46.5920648,626.963773 0,600.618938" id="Oval-Copy-5" transform="translate(239.383565, 321.000000) rotate(-180.000000) translate(-239.383565, -321.000000) "></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg></span>
-                </div>
-                <div uk-scrollspy="cls: uk-animation-fade; delay: 600;">
-                    <div class="uk-style-primary-l uk-text-10 uk-text-lh-1 uk-margin-small-bottom uk-width-large">
-                        AGP’s mandate is to stimulate, develop, invest, manage and operate sustainable real assets
-                        that generate positive impact for people and the environment. We do this by focusing
-                        entirely on the financing, development and operation of ‘Sustainable Real Assets’;
-                        transformative infrastructure assets that make positive contributions to satisfying the UN
-                        SDGs.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="uk-background-gray uk-section uk-section-sdg-square">
-        <div class="uk-container uk-container-xxmedium">
-            <div class="" uk-grid uk-height-match=".uk-card">
-                <div class="uk-width-3-5@m">
-                    <div class="uk-grid-small uk-grid uk-child-width-1-3@m uk-child-width-1-2 uk-margin-auto uk-light" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 150;">
-                        <div>
-                            <div class="uk-card uk-card-small uk-background-dark uk-card-body uk-position-relative uk-padding-3xmedium-left uk-padding-3xmedium-right uk-padding-xmedium-top uk-padding-xmedium-bottom">
-                                <div class="uk-style-oswald-small uk-text-uppercase uk-flex uk-flex-top">
-                                    <div class="uk-text-4 uk-text-lh" style="color:#26bde2">6</div>
-                                    <div class="uk-margin-xxsmall-left uk-text-lh-2 uk-text-12">clean water and
-                                        sanitation
+    <section id="sozo-main" style="display: grid">
+        <section class="main-title-section-wrapper default"
+                 style="background:url(https://solarwp.wpengine.com/wp-content/uploads/2016/09/page-title-img.jpg)
+           top left repeat;">
+            <div class="container">
+                <div class="main-title-section"><h1>About Us</h1></div>
+                <div class="breadcrumb"><a href="https://solarwp.wpengine.com/">Home</a><span class="fa default"></span><span
+                        class="current">About Us</span></div>
+            </div>
+        </section>
+        <div class="container">
+            <section id="primary" class="content-full-width">    <!-- #post-8 -->
+                <div id="post-8" class="post-8 page type-page status-publish hentry">
+                    <div data-vc-full-width="true" data-vc-full-width-init="true"
+                         class="vc_row wpb_row vc_row-fluid about-section1"
+                         style="position: relative; left: -159.6px; box-sizing: border-box; width: 1519px; padding-left: 159.6px; padding-right: 159.4px;">
+                        <div class="wpb_column vc_column_container vc_col-sm-10">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                        <div class="title-h3 wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper"><h3 style="text-align: left; color: #0b5a7e"
+                                                                             class="vc_custom_heading">
+                                                        {{App::isLocale('vi') ? 'Giới thiệu chung' : 'Introduction'
+                                                                                                                    }}
+                                                        </h3>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p>
+
+                                                                {{App::isLocale('vi') ? '  RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong trong lĩnh vực năng lượng tái tạo và khu công nghiệp
+                                                                xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030' :
+                                                                'We believe we can make a difference to this world, to
+                                                                this very earth on which we live. We have been
+                                                                destroying the forests for whatever reasons for many
+                                                                years. Forests that work much like our lungs, purifying
+                                                                the air and healing us.'}}
+                                                                </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="dt-sc-icon-box type5 ">
+                                                        <div class="icon-wrapper"><img width="80" height="80"
+                                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-ser8@2x.png"
+                                                                                       class="attachment-full" alt=""
+                                                                                       loading="lazy"></div>
+                                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</h4>
+                                                            <p>Twenty &nbsp;year of experience</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="dt-sc-icon-box type5 ">
+                                                        <div class="icon-wrapper"><img width="80" height="80"
+                                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-ser7@2x.png"
+                                                                                       class="attachment-full" alt=""
+                                                                                       loading="lazy"></div>
+                                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</h4>
+                                                            <p>We are open 24/7</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="dt-sc-icon-box type5 ">
+                                                        <div class="icon-wrapper"><img width="80" height="80"
+                                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-ser9@2x.png"
+                                                                                       class="attachment-full" alt=""
+                                                                                       loading="lazy"></div>
+                                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</h4>
+                                                            <p>We use only the latest machines</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-text-center uk-margin-top">
-                                    <img class="uk-height-xxsmall" src="#">
-                                </div>
                             </div>
                         </div>
-                        <div>
-                            <div class="uk-card uk-card-small uk-background-dark uk-card-body uk-position-relative uk-padding-3xmedium-left uk-padding-3xmedium-right uk-padding-xmedium-top uk-padding-xmedium-bottom">
-                                <div class="uk-style-oswald-small uk-text-uppercase uk-flex uk-flex-top">
-                                    <div class="uk-text-4 uk-text-lh" style="color:#ffc300">7</div>
-                                    <div class="uk-margin-xxsmall-left uk-text-lh-2 uk-text-12">Affordable and clean
-                                        energy
+                        <div class="wpb_column vc_column_container vc_col-sm-2">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div
+                                        class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1474870976953">
+
+                                        <figure class="wpb_wrapper vc_figure">
+                                            <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="170"
+                                                                                                           height="436"
+                                                                                                           src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/about-man.jpg"
+                                                                                                           class="vc_single_image-img attachment-full"
+                                                                                                           alt=""
+                                                                                                           loading="lazy"
+                                                                                                           srcset="https://solarwp.wpengine.com/wp-content/uploads/2016/09/about-man.jpg 170w, https://solarwp.wpengine.com/wp-content/uploads/2016/09/about-man-117x300.jpg 117w"
+                                                                                                           sizes="(max-width: 170px) 100vw, 170px">
+                                            </div>
+                                        </figure>
                                     </div>
-                                </div>
-                                <div class="uk-text-center uk-margin-top">
-                                    <img class="uk-height-xxsmall" src="#">
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-small uk-background-dark uk-card-body uk-position-relative uk-padding-3xmedium-left uk-padding-3xmedium-right uk-padding-xmedium-top uk-padding-xmedium-bottom">
-                                <div class="uk-style-oswald-small uk-text-uppercase uk-flex uk-flex-top">
-                                    <div class="uk-text-4 uk-text-lh" style="color:#ff5f03">9</div>
-                                    <div class="uk-margin-xxsmall-left uk-text-lh-2 uk-text-12">Industry, innovation
-                                        & infrastructure
-                                    </div>
-                                </div>
-                                <div class="uk-text-center uk-margin-top">
-                                    <img class="uk-height-xxsmall" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-small uk-background-dark uk-card-body uk-position-relative uk-padding-3xmedium-left uk-padding-3xmedium-right uk-padding-xmedium-top uk-padding-xmedium-bottom">
-                                <div class="uk-style-oswald-small uk-text-uppercase uk-flex uk-flex-top">
-                                    <div class="uk-text-4 uk-text-lh" style="color:#f89d2a">11</div>
-                                    <div class="uk-margin-xxsmall-left uk-text-lh-2 uk-text-12">Sustainable cities
-                                        and communities
-                                    </div>
-                                </div>
-                                <div class="uk-text-center uk-margin-top">
-                                    <img class="uk-height-xxsmall" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-small uk-background-dark uk-card-body uk-position-relative uk-padding-3xmedium-left uk-padding-3xmedium-right uk-padding-xmedium-top uk-padding-xmedium-bottom">
-                                <div class="uk-style-oswald-small uk-text-uppercase uk-flex uk-flex-top">
-                                    <div class="uk-text-4 uk-text-lh" style="color:#c88b00">12</div>
-                                    <div class="uk-margin-xxsmall-left uk-text-lh-2 uk-text-12">Responsible
-                                        consumption and production
-                                    </div>
-                                </div>
-                                <div class="uk-text-center uk-margin-top">
-                                    <img class="uk-height-xxsmall" src="">
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-small uk-background-dark uk-card-body uk-position-relative uk-padding-3xmedium-left uk-padding-3xmedium-right uk-padding-xmedium-top uk-padding-xmedium-bottom">
-                                <div class="uk-style-oswald-small uk-text-uppercase uk-flex uk-flex-top">
-                                    <div class="uk-text-4 uk-text-lh" style="color:#20823f">13</div>
-                                    <div class="uk-margin-xxsmall-left uk-text-lh-2 uk-text-12">Climate action</div>
-                                </div>
-                                <div class="uk-text-center uk-margin-top">
-                                    <img class="uk-height-xxsmall" src="">
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="uk-width-expand@m uk-position-relative uk-flex uk-flex-middle uk-flex-center">
-                    <div class="uk-width-large uk-position-z-index" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 1200;">
-                        <h4 class="uk-style-tertiary uk-text-6 uk-lh-41">
-                            We have identified six SDGs of particular relevance to AGP </h4>
-                        <div class="uk-margin-small-top">
-                            <a class="uk-button uk-color-primary uk-style-secondary-b " href="">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">find out more</span>
-                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary" uk-icon="icon: button-circle; ratio: 1"></span>
-                            </a>
+                    <div class="vc_row-full-width vc_clearfix"></div>
+
+                    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"
+                         class="vc_row wpb_row vc_row-fluid about-section2 vc_custom_1474629663044 vc_row-no-padding">
+                        <div class="wpb_column vc_column_container vc_col-sm-6">
+                            <div class="vc_column-inner vc_custom_1474629531765">
+                                <img src="/site/system/ss.jpg">
+                            </div>
                         </div>
-                    </div>
-                    <span class="uk-visible@m uk-icon uk-preserve uk-position-right uk-oval-reverse uk-oval-teal uk-height-1-1-svg uk-scrollspy-inview uk-animation-draw" uk-icon="icon: half-circle; ratio: 1" uk-scrollspy="cls: uk-animation-draw; delay: 1300;" style=""><svg viewBox="0 0 482 645" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="645">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
-                                <g id="Who-we-are" transform="translate(-332.000000, -1000.000000)" stroke="#EC6278" stroke-width="2">
-                                    <g id="Group-17" transform="translate(333.286008, 1001.820590)">
-                                        <path d="M0.751662914,40.9573792 C47.170655,14.8750781 100.731763,0 157.767131,0 C335.050536,0 478.767131,143.716595 478.767131,321 C478.767131,498.283405 335.050536,642 157.767131,642 C100.423648,642 46.5920648,626.963773 0,600.618938" id="Oval-Copy-5" transform="translate(239.383565, 321.000000) rotate(-180.000000) translate(-239.383565, -321.000000) "></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </svg></span>
-                </div>
-            </div>
-        </div>
-    </div>
+                        <div class="title-h3 r-padding wpb_column vc_column_container vc_col-sm-6">
+                            <div class="vc_column-inner vc_custom_1475647479713">
+                                <div class="wpb_wrapper">
+                                    <h5 style="color: #0b5a7e;text-align: left; margin: 0; font-size: 18px" class="vc_custom_heading vc_custom_1474622035511" >
+                                        {{App::isLocale('vi') ? 'Chiến lược' : 'Strategy'}}
+                                    </h5>
+                                    <h3 style="text-align: left; margin-bottom: 10px" class="vc_custom_heading title-h3"></h3>
+                                    <div class="wpb_text_column wpb_content_element " style="margin: 0">
+                                        <div class="wpb_wrapper">
+                                            <p>
+                                                {{App::isLocale('vi') ? 'Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không
+                                                thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của
+                                                mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.'
+                                                : 'Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+                                                ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
+                                                tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+                                                amet adipiscing sem neque sed ipsum. Nullam quis ante'}}
+
+                                            </p>
+                                            <p> {{App::isLocale('vi') ? 'Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:' : ''}}
+                                                </p>
+
+                                        </div>
+                                    </div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1476849394153">
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper"><h5 style="color: #0b5a7e;text-align: left"
+                                                                             class="vc_custom_heading"></h5>
+                                                    <ul class='dt-sc-fancy-list   tick'>
+                                                        <li>  {{App::isLocale('vi') ? 'Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo': '   Fringilla mauris sit
+                                                                    amet'}}</li>
+                                                        <li> {{App::isLocale('vi') ? 'Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025;': '   Fringilla mauris sit
+                                                                    amet'}}</li>
+
+                                                        <li> {{App::isLocale('vi') ? 'Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách': '   Fringilla mauris sit
+                                                                    amet'}}</li>
+                                                        <li>{{App::isLocale('vi') ? 'Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.': '   Fringilla mauris sit
+                                                                    amet'}}</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
 
 
-    <div class="uk-cover-container uk-height-1-1 uk-background-logo-wash uk-section uk-light">
-        <div class="uk-background-primary-wash uk-position-cover"></div>
-        <div class="uk-container uk-container-xxmedium">
-            <div class="uk-grid-xlarge uk-grid uk-position-relative" uk-grid>
-                <div class="uk-width-2-5@m" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 300;">
-                    <div class="uk-width-3xmedium uk-float-right uk-width-1-1-mobile">
-                        <div class="uk-flex uk-flex-middle uk-flex-right@m uk-style-secondary uk-text-11 uk-lh-21 uk-margin-bottom">
-                            OUR VALUES <span class="uk-style-line orange thick"></span>
-                        </div>
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-text-2 uk-text-lh-4-1">
-                            <div class="uk-text-right@m">
-                                Our purpose comes to life through our core values
+
+{{--                                        <div class="wpb_column vc_column_container vc_col-sm-4">--}}
+{{--                                            <div class="vc_column-inner ">--}}
+{{--                                                <div class="wpb_wrapper"><h5 style="color: #0b5a7e;text-align: left"--}}
+{{--                                                                             class="vc_custom_heading"></h5>--}}
+{{--                                                    <ul class='dt-sc-fancy-list   tick'>--}}
+{{--                                                        <li>--}}
+{{--                                                            <div id="list-icon-wrap-2518" class="uavc-list-content">--}}
+{{--                                                                <div class="uavc-list-icon " data-animation=""--}}
+{{--                                                                     data-animation-delay="03"> {{App::isLocale('vi') ? 'Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách': '   Fringilla mauris sit--}}
+{{--                                                                    amet'}}--}}
+{{--                                                                </div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </li>--}}
+{{--                                                    </ul>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                        <div class="wpb_column vc_column_container vc_col-sm-4">--}}
+{{--                                            <div class="vc_column-inner ">--}}
+{{--                                                <div class="wpb_wrapper"><h5 style="color: #0b5a7e;text-align: left"--}}
+{{--                                                                             class="vc_custom_heading">--}}
+{{--                                                        </h5>--}}
+{{--                                                    <ul class='dt-sc-fancy-list   tick'>--}}
+{{--                                                        <li>--}}
+{{--                                                            <div id="list-icon-wrap-2518" class="uavc-list-content">--}}
+{{--                                                                <div class="uavc-list-icon " data-animation=""--}}
+{{--                                                                     data-animation-delay="03"> {{App::isLocale('vi') ? 'Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.': '   Fringilla mauris sit--}}
+{{--                                                                    amet'}}--}}
+{{--                                                                </div>--}}
+{{--                                                            </div>--}}
+{{--                                                        </li>--}}
+
+{{--                                                    </ul>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="uk-style-primary-l uk-text-9 uk-lh-32">
-                        </div>
                     </div>
-                </div>
-                <div class="uk-width-expand@m">
-                    <div class="uk-grid-medium uk-child-width-1-2@m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 200;">
-                        <div class="uk-padding-large-left uk-padding-remove-mobile">
-                            <h4 class="uk-style-tertiary uk-text-8 uk-lh-36 uk-text-uppercase">
-                                Integrity </h4>
-                            <p class="uk-style-primary-l uk-text-12 uk-lh-28">
-                                AGP commits its adherence to strict governing laws, as well as moral and ethical
-                                codes. In all our dealings, investors’ interests are paramount. We will act fairly
-                                and honesty and disclose the nature of AGP’s role, treating all those with whom the
-                                organisation deals, with professionalism, courtesy and respect. </p>
-                        </div>
-                        <div class="uk-padding-large-left uk-padding-remove-mobile">
-                            <h4 class="uk-style-tertiary uk-text-8 uk-lh-36 uk-text-uppercase">
-                                Sustainability </h4>
-                            <p class="uk-style-primary-l uk-text-12 uk-lh-28">
-                                A high standard of sustainability is at the core of AGP’s investment philosophy. All
-                                portfolio investments undergo an impact assessment, social and environmental risk
-                                screening and ongoing monitoring to ensure they support the organisation’s mission
-                                of financing, developing and operating Sustainable Real Assets. </p>
-                        </div>
-                        <div class="uk-padding-large-left uk-padding-remove-mobile">
-                            <h4 class="uk-style-tertiary uk-text-8 uk-lh-36 uk-text-uppercase">
-                                Profitability </h4>
-                            <p class="uk-style-primary-l uk-text-12 uk-lh-28">
-                                AGP seeks to achieve consistently superior profitability for each investment.
-                                Profitability is fundamental to the company’s sustainability. It funds continued
-                                growth for the company, rewarding both, its investors and employees. </p>
-                        </div>
-                        <div class="uk-padding-large-left uk-padding-remove-mobile">
-                            <h4 class="uk-style-tertiary uk-text-8 uk-lh-36 uk-text-uppercase">
-                                Governance </h4>
-                            <p class="uk-style-primary-l uk-text-12 uk-lh-28">
-                                AGP recognises that superior returns are only achieved through adherence to the
-                                highest corporate governance and prudential standards. </p>
-                        </div>
-                        <div class="uk-padding-large-left uk-padding-remove-mobile">
-                            <h4 class="uk-style-tertiary uk-text-8 uk-lh-36 uk-text-uppercase">
-                                Collaboration </h4>
-                            <p class="uk-style-primary-l uk-text-12 uk-lh-28">
-                                AGP recognises that relationships are the organisation’s most important asset. To
-                                better serve investors, AGP strives to encourage synergies and working
-                                cooperatively. This includes internal teamwork as well as developing and nurturing
-                                partnerships with likeminded organisations whose values align with ours. </p>
-                        </div>
-                        <div class="uk-padding-large-left uk-padding-remove-mobile">
-                            <h4 class="uk-style-tertiary uk-text-8 uk-lh-36 uk-text-uppercase">
-                                Growth </h4>
-                            <p class="uk-style-primary-l uk-text-12 uk-lh-28">
-                                AGP recognises that its most valuable assets are its people. Employees must be
-                                treated as unique individuals, deserving the respect of their peers and superiors.
-                                AGP recruits the best people without discrimination or bias. Advancement and
-                                remuneration are based solely on merit. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="uk-position-relative uk-grid-collapse uk-child-width-expand@m uk-grid uk-grid-match" uk-grid>
-        <div class="uk-position-relative">
-            <div class="uk-position-cover uk-cover-container uk-background-light uk-dark">
-                <div class="uk-background-plain-wash uk-position-cover"></div>
-            </div>
-            <div class="uk-feature-block-half uk-text-left uk-padding-large uk-position-z-index uk-flex uk-flex-middle uk-flex-center uk-dark">
-                <div>
-                    <div class="uk-flex uk-flex-middle uk-margin-medium-bottom">
-                        <h5 class="uk-style-secondary-m uk-text-11 uk-lh-21 uk-color-tertiary" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 200;">
-                            extensive research </h5>
-                        <div class="uk-style-line orange" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 200;"></div>
-                    </div>
-                    <h4 class="uk-style-primary-l uk-text-2 uk-text-lh-4 uk-width-xmedium uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
-                        Commitment to research, innovations & collaborative working in sustainable
-                        development. </h4>
-                </div>
-            </div>
-        </div>
-        <div class="uk-position-relative">
-            <div class="uk-position-cover">
-                <div class="uk-cover-container">
-                    <canvas width="935" height="935"></canvas>
-                    <img data-src="https://media.agpgroup.com/uploads/2021/05/iStock-1216403909.jpg?w=1024&amp;h=683&amp;scale.option=fill&amp;cw=1024&amp;ch=683&amp;cx=center&amp;cy=center" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class="uk-image-grayscale Sirv uk-utility-object-fit-cover sirv-image-loaded" referrerpolicy="no-referrer-when-downgrade" id="responsive-image-4658395" style="" alt="iStock-1216403909.jpg?w=1024&amp;h=683&amp;scale" title="iStock-1216403909.jpg?w=1024&amp;h=683&amp;scale" src="https://media.agpgroup.com/uploads/2021/05/iStock-1216403909.jpg?w=1025&amp;h=0&amp;scale.option=fill&amp;cw=100.0000%25&amp;ch=100.0000%25&amp;cx=center&amp;cy=center&amp;q=80">
-                    <div class="uk-background-gradient-rev uk-position-cover"></div>
-                </div>
-                <div class="uk-background-feat-wash uk-position-cover"></div>
 
-            </div>
-            <div class="uk-feature-block-half uk-text-left uk-padding-large uk-flex uk-flex-middle uk-flex-center  uk-light">
-                <div>
-                    <h4 class="uk-style-primary-l uk-text-5 uk-text-lh-4 uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
-                        Invest into reserach across the world to drive sustainable development forward </h4>
-                    <div class="uk-style-primary-l uk-child-width-1-2@l uk-text-12 uk-text-lh-1" uk-grid>
-                        <div uk-scrollspy="cls: uk-animation-fade; delay: 500;">
-                            AGP is strongly committed to research and innovation. Starting from our belief that
-                            sustainable development generates superior returns, we invest in research into emerging
-                            trends in sustainable development relevant to each of our core business lines: climate
-                            change, energy, transport, water, resource use, land use, conservation, cities and
-                            communities, changing business and lifestyles. We engage in purposeful research that
-                            brings together universities and research institutions, government and business,
-                        </div>
-                        <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                            NGOs and local communities to enhance the relevance, quality and practical influence of
-                            our investment activities and identify new areas of opportunity. <br />
-                            <br />
-                            Our approach to investment and project development is also firmly grounded in thorough
-                            research and analysis with stringent review processes at each key decision point.
+                    <style>
+                        .vc_custom_1475647479713 {
+                            padding-right: 50px!important;
+                            padding-left: 50px!important;
+                        }
+                    </style>
+
+                    <div class="vc_row-full-width vc_clearfix"></div>
+
+                    <div data-vc-full-width="true" data-vc-full-width-init="true"
+                         class="vc_row wpb_row vc_row-fluid section4 vc_custom_1474520837084 vc_column-gap-35"
+                         style="position: relative;text-align: center; margin-top: 65px ">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+{{--                                    <h2 style="text-align: center" class="vc_custom_heading main-title-custom">--}}
+{{--                                        We Cover the Whole Spectrum</h2>--}}
+                                    <div
+                                        class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_2 vc_sep_pos_align_center vc_separator-has-text">
+                            <span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#bae6ec;"
+                                                                              class="vc_sep_line"></span></span><h4 style="color: #0b5a7e; font-size: 18px">Lĩnh vực hoạt động</h4><span class="vc_sep_holder vc_sep_holder_r"><span
+                                                style="border-color:#bae6ec;" class="vc_sep_line"></span></span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="vc_row-full-width vc_clearfix"></div>
+
+                    <div data-vc-full-width="true" data-vc-full-width-init="false"
+                         class="vc_row wpb_row vc_row-fluid section4 vc_custom_1475818391834 vc_column-gap-35">
+                        <div class="skill-set-main wpb_column vc_column_container vc_col-sm-6">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                        <div class="skill-set-1 wpb_column vc_column_container vc_col-sm-6">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_left   skill-set">
+
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <a href="https://solarwp.wpengine.com/" target="_self"
+                                                               class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                                                    width="348" height="294"
+                                                                    src="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img3.jpg"
+                                                                    class="vc_single_image-img attachment-full"
+                                                                    alt="" loading="lazy"
+                                                                    srcset="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img3.jpg 348w, https://solarwp.wpengine.com/wp-content/uploads/2016/11/img3-300x253.jpg 300w"
+                                                                    sizes="(max-width: 348px) 100vw, 348px"/></a>
+                                                        </figure>
+                                                    </div>
+                                                    <h4 style="color: #ffffff;text-align: center"
+                                                        class="vc_custom_heading"><a
+                                                            href="http://solar.dttheme.com/">SOLAR<br/>
+                                                            VENTILATION</a></h4></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-set-2 wpb_column vc_column_container vc_col-sm-6" >
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_left   skill-set">
+
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <a href="https://solarwp.wpengine.com/" target="_self"
+                                                               class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                                                    width="337" height="282"
+                                                                    src="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img2.jpg"
+                                                                    class="vc_single_image-img attachment-full"
+                                                                    alt="" loading="lazy"
+                                                                    srcset="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img2.jpg 337w, https://solarwp.wpengine.com/wp-content/uploads/2016/11/img2-300x251.jpg 300w"
+                                                                    sizes="(max-width: 337px) 100vw, 337px"/></a>
+                                                        </figure>
+                                                    </div>
+                                                    <h4 style="color: #ffffff;text-align: center"
+                                                        class="vc_custom_heading"><a
+                                                            href="http://solar.dttheme.com/">PHOTOVOLTAIC<br/>
+                                                            SOLUTIONS</a></h4></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid" style="height: 330px">
+                                        <div class="skill-set-3 wpb_column vc_column_container vc_col-sm-6">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_left   skill-set">
+
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <a href="https://solarwp.wpengine.com/" target="_self"
+                                                               class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                                                    width="297" height="297"
+                                                                    src="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img4.jpg"
+                                                                    class="vc_single_image-img attachment-full"
+                                                                    alt="" loading="lazy"
+                                                                    srcset="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img4.jpg 297w, https://solarwp.wpengine.com/wp-content/uploads/2016/11/img4-150x150.jpg 150w, https://solarwp.wpengine.com/wp-content/uploads/2016/11/img4-200x200.jpg 200w"
+                                                                    sizes="(max-width: 297px) 100vw, 297px"/></a>
+                                                        </figure>
+                                                    </div>
+                                                    <h4 style="color: #ffffff;text-align: center"
+                                                        class="vc_custom_heading"><a
+                                                            href="http://solar.dttheme.com/">WINDMILLS<br/>
+                                                            ERECTION</a></h4></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-set-4 wpb_column vc_column_container vc_col-sm-6">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_left   skill-set">
+
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <a href="https://solarwp.wpengine.com/" target="_self"
+                                                               class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                                                    width="274" height="320"
+                                                                    src="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img1.jpg"
+                                                                    class="vc_single_image-img attachment-full"
+                                                                    alt="" loading="lazy"
+                                                                    srcset="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img1.jpg 274w, https://solarwp.wpengine.com/wp-content/uploads/2016/11/img1-257x300.jpg 257w"
+                                                                    sizes="(max-width: 274px) 100vw, 274px"/></a>
+                                                        </figure>
+                                                    </div>
+                                                    <h4 style="color: #ffffff;text-align: center"
+                                                        class="vc_custom_heading"><a
+                                                            href="http://solar.dttheme.com/">SOLAR<br/>
+                                                            PANELS</a></h4></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-6">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class='dt-sc-icon-box type4 ' style='margin-bottom: 45px;'>
+                                        <div class="icon-wrapper"><img width="80" height="80"
+                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-skill1.png"
+                                                                       class="attachment-full" alt=""
+                                                                       loading="lazy"/></div>
+                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</h4>
+                                            <p>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</p>
+                                        </div>
+                                    </div>
+                                    <div class='dt-sc-icon-box type4 ' style='margin-bottom: 45px;'>
+                                        <div class="icon-wrapper"><img width="80" height="80"
+                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-skill2.png"
+                                                                       class="attachment-full" alt=""
+                                                                       loading="lazy"/></div>
+                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</h4>
+                                            <p>{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</p></div>
+                                    </div>
+                                    <div class='dt-sc-icon-box type4 '>
+                                        <div class="icon-wrapper"><img width="80" height="80"
+                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-skill3.png"
+                                                                       class="attachment-full" alt=""
+                                                                       loading="lazy"/></div>
+                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</h4>
+                                            <p>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"
+                         class="vc_row wpb_row vc_row-fluid skill-set-img vc_row-no-padding" style="margin-top: -120px">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1474709520991">
+
+                                        <figure class="wpb_wrapper vc_figure">
+                                            <div class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                                    width="1920" height="390"
+                                                    src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img.png"
+                                                    class="vc_single_image-img attachment-full" alt=""
+                                                    loading="lazy"
+                                                    srcset="https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img.png 1920w, https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img-300x61.png 300w, https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img-768x156.png 768w, https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img-1024x208.png 1024w"
+                                                    sizes="(max-width: 1920px) 100vw, 1920px"/></div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-container uk-section"
+                         uk-scrollspy="cls: uk-animation-slide-right-small; target: .uk-width-2xmedium; delay: 200;">
+                        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl uk-flex uk-flex-middle uk-grid"
+                             uk-grid="" uk-height-match=".uk-oval"
+                             uk-scrollspy="cls: uk-animation-draw-reverse; target: .uk-oval-partner; delay: 300;">
+                        </div>
+                    </div>
+                </div><!-- #post-8 -->
+            </section>
         </div>
-    </div>
-    <div class="uk-container uk-container-large uk-margin-medium-top uk-position-relative">
-        <span class="uk-icon uk-preserve" uk-icon="icon: line-globe; ratio: 1;"><svg width="882" height="812" viewBox="0 0 882 812" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>Fill 1</title>
-                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.60907976">
-                    <g id="Who-we-are" transform="translate(-304.000000, -4648.000000)" fill="#1A988B">
-                        <g id="Group-3" transform="translate(-1.000000, 4623.362356)">
-                            <g transform="translate(305.000000, 25.000366)" id="Fill-1">
-                                <path d="M184.909072,811.154574 C183.520437,809.739371 182.085042,808.276345 180.669485,806.761246 C173.858799,799.471622 166.682887,792.723991 159.942695,786.517998 L159.429396,786.045437 C140.409352,768.533408 120.741396,750.424478 103.709367,730.180168 C81.8985919,704.254854 62.2185919,674.349615 45.2163188,641.294795 C24.6747985,601.35915 11.1129387,560.960508 4.90694613,521.220758 C-3.27501697,468.826722 0.298591882,415.996611 4.65968413,366.375592 C4.84566199,364.261467 4.98381697,362.070116 5.11807528,359.951031 C5.40359557,355.436552 5.6983262,350.768685 6.4719941,346.306987 C6.51627454,346.050869 6.67107897,345.827341 6.89496089,345.695209 C7.2343262,345.495061 15.255817,340.833216 19.4698982,343.944891 C21.9694406,345.7905 22.493721,349.846234 21.0285697,355.999091 C19.9364369,360.58619 18.0164369,364.819046 15.9834332,369.300581 C9.27866568,384.080685 2.34541107,399.364168 25.3134996,428.910913 C25.4640531,429.104685 25.5274627,429.351947 25.4888502,429.593541 C24.3666066,436.660699 23.7728945,448.348965 26.9582524,449.628493 C27.9763483,450.037644 31.2088207,449.744685 39.2044517,438.217954 C39.4003483,437.935622 39.7432561,437.792508 40.0815587,437.849895 C40.420924,437.907991 40.6954627,438.157378 40.7865033,438.48895 C40.8169683,438.601246 43.9403336,449.857334 50.652186,461.787194 C56.7997284,472.712773 67.3058834,486.464862 82.4462524,489.931135 C82.6212487,489.97081 82.7795956,490.062913 82.9007469,490.194692 C83.1154185,490.428139 104.621898,513.561659 127.755064,516.509674 C127.972215,516.53695 128.1713,516.644286 128.314061,516.810072 C128.438046,516.953895 131.363743,520.401747 132.655669,526.313009 C133.836363,531.718057 133.80271,540.283666 126.965455,550.438766 C126.668245,551.448714 124.571123,559.152448 126.346238,569.643725 C128.094784,579.983386 134.076186,595.237821 152.640319,609.196434 C152.881559,609.377452 153.013692,609.668995 152.99102,609.969747 C152.942134,610.629703 148.061721,676.157319 145.728319,695.325792 C142.917396,718.416448 164.785913,740.93571 167.288644,743.427814 C168.267064,744.401629 168.771861,744.206087 168.938001,744.142677 C170.024466,743.723961 172.096791,741.009747 173.763507,727.53574 C174.865559,718.623681 175.422784,707.929068 175.791551,700.851991 C176.006577,696.720803 176.16209,693.735592 176.340983,692.451814 C176.749426,689.516552 181.13992,684.136301 187.785529,675.991888 C196.313588,665.540995 207.993352,651.228139 215.380038,636.268434 C220.636304,625.622353 225.24395,622.314426 229.308894,619.396168 C235.294902,615.099194 240.464378,611.388139 246.521588,585.461054 C252.865382,558.306515 248.320437,556.965703 240.070105,554.531696 C235.088732,553.062293 228.888762,551.23298 223.090149,543.724079 C219.022725,538.457186 216.361293,534.178279 214.22237,530.740345 C208.234592,521.11484 206.217529,517.872448 187.640998,515.742028 C175.136201,514.307341 171.2544,508.480035 168.68578,504.62374 C167.482061,502.817098 166.612393,501.511356 165.336762,501.325733 C163.546769,501.067135 160.494252,502.822412 155.445928,507.023031 C147.586326,513.563076 141.560289,515.940404 136.300127,515.940758 C130.188717,515.941467 125.11099,512.733792 119.384998,509.117674 C117.514592,507.936626 115.580422,506.715194 113.508452,505.543002 C107.94116,502.394131 109.241234,497.649747 110.498444,493.061585 C111.493869,489.428817 112.523655,485.672065 110.352496,482.381142 C107.425382,477.943533 99.0925107,474.832921 84.8774258,472.871829 C84.5816325,472.830736 84.3262229,472.643696 84.198341,472.373762 C83.9691454,471.890574 78.6399055,460.40529 83.2872266,448.815504 C86.3298244,441.227607 92.9322155,435.444227 102.911965,431.626899 C103.221573,431.50929 103.572629,431.573054 103.819537,431.79481 C104.047669,431.999209 126.770267,452.212345 137.68947,448.425127 C140.558134,447.430057 142.316599,444.85329 143.065116,440.548168 C145.052422,429.123105 144.641145,422.105541 144.340747,416.981054 C143.988275,410.964581 143.755182,406.989615 147.333751,401.022736 C149.033057,398.189496 150.784791,393.874456 152.63961,389.305777 C157.913588,376.316375 164.474887,360.151179 175.671463,363.42191 C180.762297,364.910795 185.114179,364.085408 188.255965,361.036788 C192.925957,356.505305 194.264644,347.678264 191.750223,337.999976 C190.15719,331.8705 190.6673,328.263947 193.266385,327.280921 C197.000466,325.868552 203.386769,331.214087 205.070843,334.537954 C205.20333,334.800094 205.354592,335.101201 205.521795,335.434899 C210.847492,346.055474 214.710872,351.391799 216.992555,351.289777 C217.648614,351.261083 218.236304,350.602899 218.738976,349.333998 C220.464496,344.978574 217.222459,341.378397 214.086695,337.896891 C211.117426,334.599592 208.047197,331.190707 210.276097,327.475755 C211.963359,324.66377 208.285957,317.626013 204.729706,310.82064 C200.645278,303.004611 196.016378,294.145334 197.053249,287.794102 C197.422016,285.535799 196.933869,285.210958 196.912614,285.198559 C195.964304,284.621851 191.86854,287.685703 189.669042,289.331519 C185.884658,292.162987 183.673824,293.730161 182.227448,293.01388 C181.803773,292.80346 181.29685,292.315666 181.288348,291.184567 C181.258592,287.33146 177.912053,274.463563 172.266828,273.183327 C168.44454,272.313659 163.89499,277.044227 159.110223,286.856065 C148.888525,307.818072 150.819507,309.992419 151.856732,311.161068 C152.745175,312.161806 153.275477,313.081423 151.995596,315.814412 C151.128053,317.667105 150.016437,318.7185 148.596983,319.027401 C145.456614,319.712508 141.714031,316.533172 136.534282,312.134175 C134.509072,310.413969 132.213219,308.464212 129.750164,306.594515 C128.113913,305.352891 126.398311,304.269615 124.73868,303.222471 C120.384319,300.474249 116.271197,297.877998 115.784821,293.423386 C115.230075,288.341054 119.501544,281.599799 129.634326,271.565851 C136.576437,264.691755 142.500806,258.313246 147.728024,252.685024 C161.123389,238.262707 169.208644,229.556463 175.20209,233.829703 C176.198223,234.540316 176.757219,235.458869 176.863492,236.560212 C177.181603,239.867784 173.145706,244.11729 169.243359,248.226869 C166.363714,251.25884 162.78054,255.032596 163.228304,256.596936 C163.342016,256.993688 163.826621,257.305068 164.669013,257.523637 C167.262784,258.195282 170.624909,259.572936 174.185057,261.032065 C181.740363,264.128153 191.143758,267.981969 195.799581,265.884847 C197.046518,265.323371 197.892806,264.361246 198.386621,262.943917 C199.610179,259.435135 199.412511,256.701792 199.254164,254.505127 C199.095817,252.313423 198.959079,250.421054 200.506415,249.023917 C201.954562,247.71605 204.711994,247.024567 210.023876,246.63667 C218.832496,245.993718 223.540393,246.168006 226.473175,248.898161 C229.42119,251.643194 230.007108,256.836758 229.996127,264.326175 C229.984437,272.467046 234.911256,285.117792 242.658208,286.411843 C247.245662,287.178426 256.470518,283.996257 266.700009,254.081098 C266.770149,253.875637 266.913263,253.70312 267.10243,253.596493 C267.319935,253.473216 289.026208,241.165733 302.229928,229.952862 C310.920939,222.571843 309.141928,220.244109 306.194267,216.387105 C304.819802,214.588611 303.261839,212.550293 302.456644,209.697924 C301.877455,207.6465 301.899773,206.410899 302.531389,205.566382 C303.30612,204.53022 304.687669,204.514279 306.287079,204.495858 C309.317632,204.460788 313.468658,204.412965 316.693337,198.027725 C322.493721,186.542795 322.03781,184.150943 320.818858,177.75791 C320.7264,177.273659 320.630046,176.768508 320.53192,176.236079 C319.056496,168.231947 323.079286,159.243725 329.889618,155.329334 C332.19964,154.001629 333.620511,151.519799 332.870577,150.122308 C331.977529,148.457718 326.910075,147.416596 313.582725,154.073541 C307.832998,156.944685 304.390459,157.656006 302.420865,156.379312 C300.373337,155.051961 300.500865,152.070293 300.635832,148.913629 C300.77009,145.759091 300.909662,142.49757 299.037485,140.768508 C297.725721,139.557349 295.402592,139.147135 292.133632,139.548493 C280.063138,141.03171 275.92699,144.008419 272.906356,146.181703 C270.789396,147.705305 268.961145,149.020965 265.424024,149.138928 C263.163596,149.215091 259.903846,148.812316 256.13009,148.345777 C246.076304,147.104153 232.307212,145.402722 224.406164,150.998353 C219.551965,154.435932 219.617145,156.294648 219.679846,158.091725 C219.778326,160.903002 219.262548,162.994102 211.505323,166.317969 C204.415492,169.355253 194.928496,173.939873 194.39288,178.665482 C194.168289,180.647474 195.550902,182.744596 198.502105,184.898751 C203.88519,188.827666 210.725987,190.054412 216.222784,191.039917 C221.470548,191.981142 225.262016,192.660581 225.974754,195.329806 C226.28826,196.50377 227.180599,198.056419 228.214282,199.854205 C231.02485,204.744183 234.874061,211.441511 232.761352,219.655356 C231.79285,223.420257 231.681263,225.887563 231.599787,227.688891 C231.422666,231.589821 230.923891,232.478264 225.595359,233.899489 C222.60519,234.696891 218.930621,236.55171 215.377204,238.345954 C209.598075,241.263858 205.947596,243.010987 203.799108,242.196581 C203.165367,241.956404 202.696348,241.492699 202.443064,240.85577 C202.063315,239.902146 201.848998,238.780965 201.600673,237.482662 C200.763241,233.107401 199.498238,226.494736 189.987507,218.359888 C181.100954,210.758884 172.040821,215.088448 166.627625,217.674781 C164.537234,218.673747 163.156747,219.334057 162.148215,219.138869 C159.067005,218.543031 155.716215,217.558234 151.615492,212.738043 C149.374193,210.103533 144.557898,207.970279 141.940393,209.271415 C139.436245,210.516581 139.740186,214.523784 140.436275,217.666279 C141.330385,221.703592 142.235123,225.099017 142.962385,227.827401 C144.41195,233.265393 144.849441,234.906249 143.706651,235.528301 C142.773573,236.037703 141.809323,235.233216 140.001972,233.24095 C138.528319,231.615681 137.419537,231.006382 136.44147,230.46864 C133.545175,228.877024 132.459773,227.685703 130.809352,215.100139 C130.243271,210.782618 129.666562,209.620345 129.427094,209.312508 C128.579389,209.985216 127.026031,214.025364 125.982075,216.741349 C124.374872,220.920714 122.553352,225.658013 120.481382,228.130279 C115.420658,234.16836 106.464319,235.397231 94.0679203,237.0976 C92.4298982,237.32219 90.7270494,237.555637 88.9611454,237.809984 C73.3209387,240.061555 67.6555218,237.87977 60.7987838,234.294116 C54.5456768,231.024094 52.2671823,232.345423 52.2452192,232.358884 C51.9150642,232.596936 51.4786362,232.570367 51.1683188,232.307873 C50.8576472,232.045733 50.7786509,231.596906 50.9582524,231.231681 C51.0280384,231.089629 58.1313299,216.755873 72.9121417,195.625954 C86.5452044,176.1376 109.697145,146.693939 142.574489,117.099371 C179.529175,83.8344854 220.988068,57.1606551 265.799168,37.8189577 C321.809677,13.6432529 383.240821,0.922367293 448.385854,0.00912744012 C448.533573,0 464.179802,-0.29091684 489.161057,2.77754072 C512.202474,5.60794663 548.150046,11.9623673 588.551522,26.1643452 C633.966607,42.1283304 675.639817,64.5501754 712.413485,92.8078285 C758.382607,128.130869 796.777293,172.719858 826.532688,225.337068 C826.671906,225.583268 826.685013,225.881186 826.568112,226.139076 C826.451212,226.396611 826.21812,226.582943 825.941101,226.64033 C824.873411,226.86067 799.681736,231.991179 789.374666,227.58191 C785.732334,226.023238 780.447728,224.522308 774.852806,222.932817 C764.693101,220.04715 754.188009,217.063002 749.97499,212.891076 C745.465824,208.425127 732.754149,198.747902 724.043655,198.747902 C723.959699,198.747902 723.876806,198.748611 723.793204,198.750736 C721.511168,198.80033 719.680083,199.553806 718.350252,200.990972 C710.698946,209.257954 708.099153,211.566205 699.276009,209.887799 C693.44268,208.777954 689.662902,205.357024 685.661367,201.735238 C683.709131,199.967917 681.689942,198.140729 679.309072,196.450633 C672.602887,191.690662 658.142311,191.472448 646.784909,193.368006 C644.185824,193.802308 642.550282,193.530603 641.64023,192.514279 C640.35716,191.081009 641.022075,188.730249 641.726311,186.241334 C642.491832,183.535976 643.283566,180.738515 641.802828,179.133083 C638.486754,175.537157 620.602061,162.155253 612.027596,162.803164 C610.477072,162.920419 609.380688,163.485437 608.675389,164.529393 C605.468422,169.279445 595.112821,173.256183 585.976525,176.764611 C580.016378,179.053378 572.598872,181.901851 572.33992,183.480006 C571.938208,185.9296 568.707861,187.025275 564.967049,188.29453 C560.465677,189.821674 555.363153,191.552508 555.205514,195.722662 C555.145647,197.305068 555.237396,198.280655 555.297972,198.926441 C555.36457,199.633865 555.412393,200.145039 555.024142,200.569068 C554.638725,200.989201 554.121529,200.985305 553.471138,200.981762 C552.050267,200.969364 548.729588,200.950234 540.905411,203.766116 C531.32454,207.215031 526.6255,203.712626 523.817411,201.620463 C523.004776,201.014353 522.164511,200.389467 521.828688,200.495386 C521.560525,200.581821 520.972481,201.163135 520.041883,204.088124 C519.438252,205.984744 518.913263,207.800242 518.405632,209.555873 C516.553293,215.962367 515.089913,221.022736 511.750459,222.731607 C510.182223,223.534323 508.348658,223.541408 506.144909,222.753216 C498.676393,220.082574 482.881027,225.514899 474.351906,230.464744 C470.618533,232.631297 465.139094,232.983415 458.503758,231.483902 C453.337824,230.315961 447.564009,228.041718 442.663049,225.244611 C436.466267,221.707843 417.235094,219.5505 405.23899,223.569039 C400.268245,225.233984 397.030459,227.749821 395.614902,231.045703 C389.39226,245.534972 378.092599,260.37636 374.379418,265.253231 C371.185204,269.448891 369.723596,273.60346 370.263817,276.952124 C370.646046,279.324139 372.032555,281.342618 374.384378,282.952301 C379.683861,286.579401 382.813603,289.462234 385.575286,292.005349 C386.678046,293.020965 387.719876,293.980257 388.838577,294.935297 C389.251271,295.287061 390.109957,296.019637 389.80885,296.896389 C389.498179,297.800419 388.491418,297.845408 386.822931,297.920153 C382.799787,298.100463 378.839345,298.681068 378.446843,303.514367 C378.394769,304.156611 378.348717,304.751386 378.305854,305.304006 C377.727374,312.770751 377.604806,313.017659 371.761204,318.505246 C371.360201,318.881452 370.931212,319.284227 370.472112,319.717821 C367.674651,322.358707 363.474031,324.226279 359.41192,326.032921 C354.455699,328.236316 349.774725,330.317851 348.632998,333.356552 C348.18488,334.54929 348.306031,335.862471 349.004599,337.370485 C350.604009,340.825068 352.641263,343.533969 354.438341,345.923696 C357.751935,350.329068 360.368732,353.808803 356.638548,358.082043 C354.436924,360.603902 350.648998,360.883401 346.638607,361.179194 C340.715655,361.615976 335.121441,362.02867 334.626562,369.565201 L334.58795,370.1536 C333.958105,379.726677 333.307005,389.626013 336.98299,393.439799 C338.161913,394.663356 339.746444,395.231917 341.828688,395.169216 C347.321588,395.010869 356.406518,384.470353 363.706415,376.000744 C369.321175,369.486559 374.170061,363.861172 377.226828,362.817216 C380.925131,361.555046 385.438193,361.988995 389.301219,363.978781 C393.534784,366.159504 396.643271,369.9616 398.054577,374.684729 C401.070961,384.777127 403.034179,385.967031 403.738415,386.010249 C404.062193,386.033984 404.914858,385.788493 406.074651,383.140168 C407.181662,380.613349 407.587625,378.153127 407.913529,376.176094 C408.291507,373.884847 408.541603,372.371164 409.784998,372.012316 C410.90795,371.6896 412.174016,372.5536 414.62361,375.317408 C417.04026,378.043312 418.364776,380.738043 419.331861,382.705157 C419.832053,383.722899 420.51716,385.115784 420.846607,385.187696 C420.934813,385.195135 421.559699,385.073275 423.604393,382.065393 C425.30547,379.562662 427.153204,375.083961 429.109692,370.342412 C432.723684,361.582677 436.460954,352.52467 441.00023,350.990087 C442.223079,350.577039 443.435655,350.71236 444.60395,351.392862 C447.222518,352.917526 451.067832,353.572877 454.460068,354.151002 C458.958252,354.916877 462.842533,355.578603 463.813514,358.079209 C464.39412,359.573408 463.794739,361.433186 461.981721,363.764463 C458.36702,368.411784 452.016142,369.290662 446.413426,370.066102 C438.978208,371.095179 434.408112,372.011253 434.144555,377.629555 C433.891979,383.015474 441.129175,385.517851 447.514415,387.725851 C452.71471,389.524345 457.20581,391.077703 458.100983,394.079563 C458.516865,395.47422 458.080083,397.018722 456.803035,398.669851 C451.770651,405.176242 449.232142,405.275076 443.670164,405.491164 C440.151108,405.628257 435.331271,405.816006 427.594946,407.69633 C420.920644,409.318412 416.292452,411.544124 412.913323,413.169393 C405.497588,416.735563 402.920466,417.383474 398.066976,407.33571 C393.772127,398.444906 382.668009,392.637792 373.569263,390.826544 C367.491153,389.616094 362.436097,390.164817 360.047079,392.292758 C357.956334,394.155725 355.872673,395.627607 353.666799,397.185924 C348.451625,400.870057 343.05933,404.679592 337.170031,414.165526 C334.058356,419.176655 330.915507,422.874603 328.142489,426.136832 C323.263138,431.877703 319.049411,436.835696 316.445721,446.876729 C315.53319,450.396847 314.501632,453.390913 313.504083,456.286854 C310.059773,466.284316 307.571212,473.507696 316.053928,488.840065 C327.292658,509.154161 329.31716,511.750057 344.913086,511.641659 C351.694725,511.59667 355.962297,508.834279 359.39102,506.614943 C361.958931,504.952478 363.985913,503.640714 366.129795,504.264537 C367.952732,504.796611 369.526282,506.697836 371.230902,510.429083 C373.97133,516.427135 377.221869,517.58374 380.089824,518.603961 C384.269544,520.091784 386.765544,521.644434 386.184585,530.649659 C385.764097,537.166677 387.668511,537.450072 390.55099,537.87977 C395.507212,538.618367 399.636629,540.370102 399.964304,554.382559 C400.215817,565.15298 398.998282,572.559504 398.019861,578.510795 C396.660629,586.77636 395.840555,591.765526 400.338385,598.572316 C406.437751,607.804257 408.717308,616.705334 410.921765,625.313452 C411.62423,628.056006 412.35043,630.892079 413.186799,633.668995 L413.667153,635.268758 C416.456466,644.563046 419.931596,656.129806 423.515477,655.087268 C425.059271,654.63915 438.958725,650.378308 451.413928,638.865393 C453.537618,636.902175 455.683979,635.138043 457.759492,633.432006 C466.41437,626.318441 473.888201,620.17515 473.561942,604.352862 C473.490739,600.878795 473.383404,598.098338 473.297323,595.86377 C472.928909,586.309113 472.914739,585.936448 477.84581,582.380198 C478.442356,581.950854 479.117898,581.463415 479.878813,580.892375 C484.626031,577.331873 484.536762,572.627164 484.388688,564.832744 C484.307212,560.564463 484.206607,555.252581 485.004717,548.98991 C486.168053,539.859991 493.428275,529.159356 500.45009,518.81084 C506.760585,509.509113 512.721795,500.723873 512.835861,494.848744 C512.874828,492.872065 512.408289,491.464301 511.410385,490.545747 C509.297677,488.599888 504.886282,489.051548 501.342784,489.41571 C498.151049,489.742677 495.629898,490.000567 494.374459,488.821998 C494.031906,488.500345 493.63161,487.915843 493.668806,486.957615 C493.839197,482.572079 503.543699,475.630677 515.250385,467.67543 C517.958223,465.835135 520.297647,464.245644 521.896348,463.04157 C524.879433,460.793895 524.993145,454.673984 525.102607,448.755282 C525.231906,441.807858 525.365455,434.624153 529.893751,431.77391 C533.258356,429.656242 538.439876,429.281098 544.483979,430.718264 C551.206813,432.316965 557.496407,435.818662 559.439433,439.04405 C560.371802,440.592094 562.637898,442.377836 565.262134,444.44591 C571.191108,449.118382 579.311433,455.517792 579.871138,465.523046 C580.476186,476.338456 588.419389,492.71974 593.5793,493.793806 C593.995182,493.88095 595.26302,494.145216 596.422105,491.84157 C597.761145,489.181201 599.662016,484.201954 601.863286,478.43664 C610.161795,456.700611 617.0033,440.244227 623.16147,442.394485 C629.07592,444.455829 630.845367,447.607533 633.777086,452.828729 C634.99533,454.999179 636.511846,457.699932 638.649706,460.889541 C640.447846,463.573998 641.64519,465.129127 642.519108,466.264478 C644.744112,469.154751 644.767492,469.281216 645.994592,475.907696 C646.272319,477.405437 646.613101,479.246087 647.057323,481.540877 C650.10488,497.286648 663.238813,504.978692 669.757249,506.846264 C669.771418,506.850515 669.783817,506.853349 669.794444,506.855474 C669.940393,506.639031 670.409411,505.470736 669.46181,499.983504 C668.785559,496.066633 667.616909,491.138043 666.486872,486.371341 C663.403182,473.364581 662.484629,468.726825 664.282769,467.761157 C665.406075,467.155755 666.582518,468.411194 667.025323,468.883046 C672.753086,474.993039 682.680762,476.409305 686.322739,474.34619 C687.557987,473.645851 687.970326,472.645821 687.583138,471.28836 C686.766607,468.422884 683.381101,463.033777 680.394474,458.27912 C675.244835,450.08157 673.543758,447.095651 674.671669,445.778574 C675.398577,444.928744 676.634179,445.460109 677.040142,445.634751 C683.131359,448.253319 688.227153,447.526766 700.707153,436.316729 C707.323359,430.373585 708.059477,418.234013 707.512171,409.096655 C706.886577,398.657806 704.372865,388.839592 703.14116,386.276286 C702.255906,384.433511 702.424171,382.276168 703.580068,380.646293 C704.628629,379.166972 706.289677,378.399327 708.021928,378.591327 C709.603625,378.766677 712.62426,379.938515 715.077396,385.81329 C716.840821,390.035873 720.158311,392.784803 723.95226,393.166323 C726.141131,393.385954 728.095138,392.732729 728.931153,391.501024 C729.496525,390.667489 729.478813,389.617157 728.880142,388.464094 C728.590016,387.904744 728.280762,387.336537 727.966548,386.758766 C724.383728,380.17267 719.925219,371.976183 734.309632,361.866781 C742.074651,356.409305 746.887049,345.768891 746.284127,335.389201 C745.697145,325.277674 740.28147,316.949762 731.034651,311.938987 C725.914415,309.163843 723.59412,306.423061 723.940924,303.55971 C724.681647,297.449718 737.593824,293.58315 749.638459,290.438175 C751.904201,289.846943 753.693485,289.379341 754.325455,289.099489 C756.498739,288.135947 760.214754,289.268817 764.147566,290.46864 C768.275212,291.727976 772.954769,293.154869 774.879728,291.695031 C778.947507,288.608508 790.872053,281.144596 797.100717,283.634928 C797.877219,283.9456 798.4433,284.118116 798.817382,284.232537 C799.410031,284.413555 799.921559,284.569777 800.045544,285.177659 C800.167758,285.779164 799.744437,286.133762 799.371773,286.446205 C798.379182,287.277969 795.359256,289.80833 792.080024,299.220581 C787.864525,311.317644 783.474031,325.910353 786.970415,331.421674 C787.80395,332.735917 789.058326,333.464596 790.805101,333.648094 C796.017441,334.198943 800.512791,323.403371 804.479965,313.880596 C807.62671,306.326353 810.599168,299.190825 814.098385,296.621142 C819.128644,292.927445 819.718813,292.670264 822.55347,291.435371 C824.177677,290.728301 826.63223,289.65884 831.230666,287.350234 C843.645839,281.117674 851.693898,279.992596 852.03043,279.947607 C852.433913,279.893762 852.818976,280.120478 852.969175,280.495976 C853.1424,280.927091 870.334548,324.317674 877.850887,387.454854 C882.265116,424.536714 882.531153,461.084729 878.641204,496.084699 C873.778149,539.845467 862.367256,581.294795 844.726282,619.279976 C844.573603,619.608006 844.236717,619.816301 843.876452,619.791504 C843.515832,619.772729 843.202326,619.536094 843.085072,619.194249 C842.986238,618.905541 832.966813,590.064094 814.753382,569.698987 C808.676334,562.903888 805.698208,557.628493 803.918843,554.476434 C803.301396,553.383238 802.665883,552.257806 802.307035,551.879829 C801.83837,552.402692 800.971537,554.2816 799.982843,556.425127 C798.679581,559.250574 796.709632,563.52098 793.684393,569.193836 C789.380334,577.264567 786.075241,580.479681 783.280614,579.32343 C777.568437,576.952478 779.25499,555.804493 781.069072,549.871622 C781.683684,547.860936 780.974843,547.43053 780.741751,547.289186 C777.442326,545.285585 763.182961,552.064744 756.131035,558.987371 C749.08761,565.902205 743.890503,570.815917 740.095846,574.40405 C739.144348,575.30312 738.298061,576.103002 737.554503,576.810781 C735.822961,578.458013 733.907212,578.43853 731.88023,578.42188 C729.092688,578.394958 725.623581,578.364139 720.69499,582.600537 C713.31468,588.943268 713.394385,592.654323 713.689116,606.462028 C713.72702,608.231474 713.769883,610.236847 713.798577,612.400921 C713.897411,619.824448 711.579596,626.325172 709.887374,631.072035 C708.838459,634.014028 707.753765,637.056271 708.435684,637.729334 C708.921352,638.20898 710.814784,638.291519 717.076038,635.964139 C737.385883,628.416626 759.021662,621.532965 765.305588,620.618662 C767.253573,620.334913 768.168585,620.265836 768.754503,620.79295 C769.234858,621.224773 769.212186,621.813172 769.19412,622.286087 C769.157278,623.251401 769.087846,625.048478 772.98488,628.049984 C775.964422,630.345482 778.025411,632.572257 779.843035,634.536891 C783.012452,637.962072 785.515537,640.66743 791.372599,642.483282 C794.086105,643.324611 796.164452,644.374234 797.998016,645.300581 C802.641441,647.645674 804.973072,648.822116 811.13443,643.168035 C813.590046,640.914338 815.911404,638.003164 818.156245,635.187991 C822.467389,629.781526 826.539064,624.675105 831.371655,624.278707 C833.619684,624.094854 835.78057,624.928035 837.97192,626.825718 C838.768614,626.886293 839.941869,627.272419 840.6833,628.44957 C842.418031,631.204522 840.874946,636.832389 836.095846,645.178013 C809.114887,692.288862 771.32702,737.86619 729.692068,773.513718 C706.331477,793.515371 681.752289,811.074869 656.637485,825.704065 C631.405072,840.401984 604.940954,852.544744 577.98054,861.79546 C575.832053,862.532286 573.675064,863.253172 571.511345,863.956699 L568.42057,862.978633 C625.688998,844.726589 679.210946,814.405113 728.540068,772.168655 C770.024821,736.649364 807.67595,691.237113 834.558784,644.298072 C840.581987,633.779873 839.800171,630.371341 839.184496,629.393629 C838.650297,628.544862 837.706238,628.590205 837.695965,628.589851 C837.451182,628.610043 837.217382,628.525733 837.03778,628.363843 C835.142223,626.65391 833.34054,625.896537 831.516186,626.043902 C827.44699,626.377954 823.60699,631.193541 819.540983,636.292168 C817.253987,639.160478 814.889057,642.126205 812.332127,644.473068 C805.266739,650.955725 802.058001,649.334707 797.199551,646.88157 C795.427979,645.986751 793.419773,644.972552 790.847965,644.17515 C784.537824,642.218308 781.759846,639.216448 778.542961,635.739902 C776.686016,633.732758 774.766016,631.6576 771.904437,629.453142 C767.28333,625.893703 767.378267,623.411519 767.424319,622.218072 C767.425027,622.202485 767.425382,622.186544 767.42609,622.169895 C767.076097,622.174146 766.451566,622.241452 765.560644,622.371105 C759.48395,623.255297 737.563359,630.240626 717.693131,637.624832 C711.398577,639.963548 708.553647,640.333378 707.191581,638.989733 C705.706238,637.524581 706.705913,634.720744 708.218887,630.47726 C709.866474,625.856862 712.121942,619.529718 712.027359,612.424301 C711.998666,610.267666 711.956156,608.26619 711.918252,606.499932 C711.624939,592.770515 711.526105,588.145157 719.540511,581.256891 C724.973544,576.587253 728.974016,576.624094 731.896525,576.650662 C733.767286,576.667666 735.122267,576.680065 736.333426,575.527356 C737.078754,574.818869 737.926105,574.01757 738.878666,573.117083 C742.668363,569.53391 747.859094,564.626574 754.89012,557.72343 C761.577883,551.158589 776.855345,542.857954 781.661367,545.774795 C782.627743,546.362131 783.603684,547.639179 782.76271,550.38988 C780.479965,557.853792 780.322326,576.178102 783.959699,577.686825 C784.571123,577.940463 786.969352,578.020877 792.12147,568.360301 C795.122976,562.733142 797.079463,558.490367 798.374223,555.683341 C800.309455,551.488389 800.961263,550.075312 802.242562,550.022884 C803.399168,549.973998 804.053455,551.112183 805.460865,553.605703 C807.20516,556.695415 810.124481,561.865954 816.073293,568.517939 C831.705352,585.99667 841.364156,609.596729 844.015669,616.589851 C882.884334,531.595843 882.948806,445.318057 876.09809,387.71912 C869.120201,329.047179 853.764452,287.508227 851.583374,281.81943 C849.400171,282.227873 842.132156,283.859873 832.025588,288.932995 C827.383581,291.263563 824.902459,292.34436 823.26054,293.059578 C820.512673,294.256567 820.017441,294.472301 815.146592,298.048744 C812.044835,300.32653 809.030223,307.563371 806.114799,314.561806 C801.836954,324.830972 797.416703,335.43915 791.201145,335.440212 C791.008791,335.440212 790.815374,335.430293 790.619832,335.409393 C788.332481,335.168862 786.601293,334.146515 785.474799,332.370692 C781.594769,326.253969 785.790784,311.885851 790.407286,298.637851 C793.297913,290.34253 796.090061,287.064006 797.552378,285.688478 C797.240998,285.583622 796.872585,285.451489 796.443241,285.279681 C791.407669,283.266869 780.462252,289.682574 775.949898,293.105984 C773.304407,295.11419 768.386444,293.61326 763.631079,292.162987 C760.18181,291.11053 756.615286,290.023002 755.042799,290.718736 C754.280112,291.057039 752.520939,291.516139 750.086223,292.151651 C742.383906,294.163046 726.356865,298.347725 725.699389,303.772611 C725.392968,306.301201 728.890769,308.762485 731.878459,310.381733 C741.684629,315.695386 747.428688,324.540139 748.052511,335.286825 C748.689086,346.254913 743.575935,357.51915 735.328083,363.315991 C722.235596,372.517467 725.940275,379.326736 729.522385,385.912124 C729.842267,386.500522 730.156835,387.079002 730.452275,387.648271 C731.35595,389.389024 731.336466,391.110293 730.396658,392.495386 C729.182311,394.285024 726.642031,395.215976 723.774784,394.928685 C719.323714,394.480921 715.461396,391.328508 713.442917,386.495917 C711.906562,382.816744 709.859389,380.57757 707.826385,380.351563 C706.724688,380.229349 705.705883,380.710057 705.024673,381.670766 C704.241086,382.776006 704.130917,384.246825 704.737382,385.508995 C707.016585,390.253024 715.51099,425.399651 701.891035,437.634161 C688.771979,449.418072 682.993913,450.121954 676.340511,447.261792 C676.270725,447.232035 676.208024,447.206884 676.152407,447.185984 C676.586356,448.88777 679.62116,453.718589 681.894341,457.336832 C685.09316,462.429083 688.400732,467.694205 689.286695,470.802692 C689.894931,472.936301 689.132599,474.789349 687.19595,475.886795 C682.482385,478.557792 671.65316,476.409305 665.733042,470.094559 C665.47657,469.821083 665.283861,469.649629 665.145706,469.542293 C664.803507,471.593718 666.757869,479.837674 668.210267,485.962899 C671.477455,499.743681 672.81685,506.427548 670.986474,508.175031 C670.53623,508.604375 669.926931,508.737924 669.269455,508.549113 C662.389337,506.578102 648.529559,498.467341 645.318695,481.877762 C644.873057,479.576596 644.531212,477.731341 644.253131,476.230057 C643.079876,469.896891 643.079876,469.896891 641.115596,467.345275 C640.226799,466.190087 639.008909,464.608389 637.177824,461.875755 C635.001706,458.62805 633.466061,455.892936 632.232585,453.695917 C629.321411,448.5105 627.860156,445.907519 622.578385,444.066515 C621.421072,443.661969 618.714651,444.50436 613.642592,454.704448 C610.099802,461.82864 606.450385,471.387194 603.517957,479.068257 C601.299684,484.878913 599.383935,489.897127 598.004156,492.63791 C596.540422,495.545541 594.593145,495.813703 593.21868,495.528183 C586.651359,494.160803 578.728348,476.805703 578.102754,465.62188 C577.587684,456.414736 570.145736,450.549526 564.165751,445.837024 C561.405485,443.661615 559.021072,441.783061 557.922208,439.958353 C556.229278,437.147784 550.275861,433.91602 544.074474,432.441659 C538.496555,431.115371 533.795389,431.410456 530.837455,433.272714 C527.118252,435.613555 526.993913,442.310884 526.87347,448.788227 C526.750548,455.422854 526.634356,461.689423 522.961559,464.456419 C521.32885,465.685998 518.973485,467.287179 516.245455,469.140227 C508.519404,474.390825 495.588097,483.177836 495.438607,487.026338 C495.424791,487.37881 495.538149,487.485083 495.58668,487.530781 C496.253721,488.156729 498.861308,487.889629 501.16212,487.653349 C505.262489,487.233216 509.910872,486.757113 512.610208,489.24284 C513.98361,490.507135 514.655256,492.404817 514.606725,494.883105 C514.482385,501.283578 508.378061,510.280301 501.915241,519.805555 C495.011035,529.981201 487.87161,540.50436 486.761411,549.213792 C485.97995,555.348581 486.075241,560.369629 486.159551,564.799445 C486.307271,572.581821 486.414252,578.204729 480.941544,582.309349 C480.167522,582.890308 479.484186,583.383061 478.881972,583.817009 C476.701249,585.389851 475.705824,586.107194 475.272939,587.42498 C474.800024,588.86498 474.889293,591.181024 475.067123,595.795755 C475.153559,598.037054 475.261249,600.826722 475.332806,604.31602 C475.676776,620.997703 467.894754,627.393924 458.88457,634.800094 C456.828186,636.49019 454.702016,638.237674 452.615876,640.166175 C439.8624,651.954692 425.594179,656.328537 424.008939,656.788345 C418.735315,658.314072 415.60026,647.872744 411.971035,635.778161 L411.49068,634.17946 C410.643684,631.367474 409.91288,628.51298 409.20581,625.75236 C407.037839,617.286648 404.796186,608.532581 398.860481,599.548611 C393.980422,592.162633 394.891891,586.61695 396.272024,578.22315 C397.2384,572.344478 398.441411,565.028995 398.193086,554.424006 C397.873913,540.761541 393.844747,540.161452 390.289913,539.631858 C386.543787,539.07357 383.929116,538.094441 384.416909,530.535592 C384.953588,522.21512 382.89933,521.483961 379.496112,520.273157 C376.45564,519.191297 372.67161,517.844817 369.619802,511.165201 C368.187596,508.030854 366.883979,506.329777 365.6335,505.96526 C364.268954,505.565319 362.62668,506.630175 360.3535,508.101703 C356.922297,510.32281 352.223256,513.364345 344.924776,513.412877 C344.692393,513.414293 344.460717,513.415002 344.233647,513.415002 C328.140009,513.415356 325.44457,509.471917 314.504112,489.697334 C305.639876,473.675607 308.236127,466.140139 311.829219,455.709792 C312.815787,452.846441 313.836009,449.885319 314.731537,446.432508 C317.43654,435.99791 321.772481,430.896448 326.792821,424.990146 C329.659359,421.617747 332.623315,418.130574 335.665204,413.231031 C341.744024,403.440094 347.285455,399.525349 352.644452,395.739194 C354.808525,394.210633 356.852511,392.766736 358.868865,390.970013 C361.712378,388.437526 367.196068,387.751356 373.915005,389.089334 C383.444865,390.986308 395.101603,397.125703 399.66178,406.564877 C403.978592,415.501024 405.54612,414.746485 412.145677,411.573172 C415.596009,409.913895 420.321263,407.641777 427.176585,405.975061 C435.085426,404.052581 440.00764,403.86129 443.601441,403.721364 C449.042267,403.509526 450.875477,403.438323 455.402001,397.58622 C456.32268,396.395607 456.65071,395.413998 456.403802,394.585777 C455.768289,392.454293 451.277898,390.901644 446.935227,389.400006 C439.963005,386.989024 432.06054,384.256389 432.375463,377.546662 C432.721204,370.173083 439.558459,369.226899 446.170415,368.311888 C451.696614,367.546722 457.410917,366.75605 460.583522,362.67729 C461.942754,360.929098 462.488998,359.560655 462.162739,358.720389 C461.555212,357.15605 457.797042,356.515932 454.163212,355.896714 C450.621839,355.293792 446.608614,354.609747 443.713027,352.923194 C442.98612,352.500227 442.304909,352.418751 441.567728,352.667784 C437.791138,353.944832 433.885249,363.411637 430.747005,371.017954 C428.754739,375.846648 426.873352,380.407179 425.069544,383.060817 C423.058149,386.019105 421.920319,387.036139 420.721559,386.954662 C419.402001,386.861851 418.741692,385.519268 417.742725,383.486618 C416.81992,381.609836 415.556334,379.039445 413.298385,376.492434 C411.300452,374.238736 410.54733,373.809747 410.297942,373.73571 C410.052806,374.092434 409.836717,375.400655 409.661367,376.464448 C409.337234,378.429437 408.893013,381.120626 407.697086,383.850781 C406.498326,386.587666 405.170267,387.868965 403.630016,387.778279 C401.156688,387.626662 398.913618,383.744862 396.357396,375.191651 C395.085662,370.934353 392.291035,367.511297 388.490001,365.553039 C385.047108,363.779696 381.050533,363.383297 377.799286,364.493496 C375.197367,365.381939 370.267359,371.101555 365.048289,377.156995 C357.129175,386.345009 348.152998,396.758707 341.879699,396.939725 C339.305765,397.011637 337.230961,396.250013 335.707359,394.669024 C331.487965,390.290928 332.135168,380.452877 332.820629,370.037408 L332.859241,369.449364 C333.454725,360.37577 340.692629,359.84157 346.508245,359.412936 C350.145618,359.144419 353.581072,358.890781 355.304112,356.91729 C357.977588,353.854854 356.536525,351.660316 353.023138,346.988198 C351.172924,344.527976 349.075448,341.739725 347.397042,338.114751 C346.501869,336.18129 346.359817,334.370751 346.975138,332.733437 C348.377588,329.000773 353.388009,326.772936 358.692097,324.414382 C362.618533,322.66867 366.678872,320.863445 369.255994,318.430146 C369.716511,317.995135 370.146562,317.591297 370.548629,317.213674 C376.003271,312.09202 376.003271,312.09202 376.53995,305.167268 C376.583168,304.612522 376.629219,304.015622 376.681293,303.370899 C377.23285,296.576862 383.656348,296.289216 386.743581,296.150707 C386.983758,296.140079 387.246252,296.128389 387.491389,296.113157 C386.422282,295.193186 385.426503,294.27605 384.375463,293.308257 C381.658061,290.805526 378.577913,287.969098 373.383994,284.41391 C370.615935,282.51977 368.977913,280.103829 368.514917,277.234456 C367.896762,273.401895 369.478813,268.765555 372.969883,264.180227 C376.650828,259.346574 387.850946,244.635548 393.987507,230.347135 C395.610651,226.567356 399.206931,223.722072 404.676097,221.88957 C417.505736,217.591179 437.097883,220.028375 443.540865,223.706485 C452.993145,229.101615 466.389219,233.037615 473.462754,228.932995 C481.95468,224.005113 498.403271,218.104124 506.741101,221.085437 C508.459182,221.699696 509.834356,221.722722 510.943846,221.154515 C513.601382,219.794928 514.970533,215.059401 516.703846,209.064183 C517.21502,207.297216 517.743197,205.470382 518.353913,203.551091 C519.323123,200.506013 520.144968,199.176537 521.286341,198.809541 C522.490061,198.422353 523.542518,199.206648 524.875891,200.199947 C527.561057,202.201068 531.619271,205.197969 540.305323,202.072124 C548.426001,199.14926 551.970917,199.155637 553.482828,199.155637 L553.545529,199.155637 C553.542341,199.155637 553.538444,199.103209 553.534548,199.064596 C553.473263,198.414559 553.371241,197.340847 553.435714,195.641541 C553.639404,190.253496 559.604865,188.236434 564.398134,186.610102 C567.330208,185.615386 570.362533,184.590205 570.592083,183.18988 C570.995566,180.729305 576.191965,178.622972 585.341367,175.109585 C593.793618,171.863651 604.312525,167.825275 607.207404,163.537511 C608.221249,162.036227 609.797987,161.195253 611.894046,161.036552 C621.64212,160.307519 639.934902,174.495327 643.105027,177.932198 C645.257411,180.266662 644.287138,183.696803 643.430577,186.72346 C642.887876,188.641688 642.326754,190.625452 642.960142,191.332522 C643.215197,191.618043 644.014016,192.035341 646.493013,191.620877 C657.35164,189.808567 672.729352,189.60771 680.334252,195.006382 C682.800496,196.757054 684.859359,198.62002 686.849854,200.422057 C690.827655,204.02188 694.262754,207.131076 699.606872,208.147755 C707.559286,209.661083 709.615669,207.821496 717.050179,199.787961 C718.718666,197.985216 720.974134,197.040448 723.754946,196.979873 C723.848821,196.977747 723.944112,196.977039 724.039049,196.977039 C733.388245,196.977039 746.35533,206.812965 751.221573,211.632803 C755.110459,215.48343 765.856083,218.535947 775.337057,221.22926 C780.987596,222.834338 786.324983,224.3505 790.071463,225.953452 C798.645573,229.621998 819.20268,226.110028 824.383492,225.138338 C757.278075,107.187282 658.836275,52.7478433 587.96454,27.8353119 C547.712555,13.6861164 511.89995,7.35507578 488.944968,4.53529718 C464.08947,1.48278058 448.57254,1.77715696 448.417382,1.77999091 C301.451655,3.8406256 201.655581,66.3171422 143.815049,118.365437 C111.057086,147.843105 87.9873299,177.171991 74.4027985,196.585246 C62.6057801,213.443696 55.7260162,225.942471 53.4223705,230.316316 C55.055079,230.239799 57.6842745,230.667017 61.6192118,232.724463 C68.1702376,236.149998 73.5951232,238.23295 88.7085697,236.056832 C90.479079,235.802131 92.1854701,235.567976 93.8273889,235.342677 C105.830223,233.696153 114.502459,232.506603 119.12392,226.992803 C121.00637,224.746899 122.771212,220.155902 124.328466,216.105836 C126.625027,210.132936 127.814223,207.273482 129.641765,207.490279 C131.090267,207.662441 131.88271,209.6625 132.565692,214.869526 C134.183168,227.206412 135.222872,227.777806 137.294843,228.916699 C138.340215,229.491282 139.640998,230.206146 141.31409,232.051046 C141.81995,232.608626 142.20147,232.99971 142.488407,233.274603 C142.275507,232.127563 141.773544,230.243341 141.251035,228.283666 C140.519522,225.538987 139.609116,222.123017 138.706858,218.049216 C137.198134,211.23853 139.203861,208.653969 141.151846,207.685467 C144.848024,205.847651 150.523359,208.720921 152.964806,211.590648 C156.696762,215.977246 159.596954,216.8416 162.484393,217.399533 C162.924717,217.481364 164.552466,216.703445 165.863876,216.076788 C171.285928,213.486205 181.377263,208.664596 191.138799,217.014116 C201.121027,225.552448 202.456525,232.531755 203.340363,237.150028 C203.571684,238.359415 203.771477,239.403725 204.088525,240.200773 C204.15902,240.377541 204.257145,240.47602 204.426474,240.540493 C205.954326,241.118618 210.536466,238.805762 214.578739,236.764611 C218.212924,234.929984 221.971094,233.032655 225.139094,232.187784 C229.677308,230.977334 229.688998,230.723341 229.830341,227.608832 C229.9104,225.835843 230.031906,223.156699 231.046105,219.213969 C232.979212,211.699046 229.337234,205.363046 226.678636,200.73698 C225.582961,198.83115 224.636776,197.18498 224.263404,195.786781 C223.841145,194.205437 220.165869,193.546544 215.910341,192.783504 C210.234297,191.765762 203.17068,190.498987 197.457795,186.329541 C193.905441,183.736832 192.326931,181.164316 192.632998,178.466043 C193.132835,174.053585 198.568348,169.933378 210.807817,164.689511 C218.030489,161.595194 217.977352,160.076552 217.910046,158.153718 C217.83778,156.09946 217.748511,153.542884 223.3824,149.553039 C231.843153,143.560301 246.006164,145.310264 256.347241,146.587666 C260.046607,147.04464 263.241529,147.439268 265.364865,147.368773 C268.363891,147.268522 269.835418,146.210043 271.87161,144.744183 C275.047404,142.458958 279.396806,139.328862 291.917544,137.790736 C295.780924,137.314987 298.503286,137.864065 300.239079,139.467017 C302.714179,141.75295 302.550164,145.597201 302.405278,148.989437 C302.292629,151.625718 302.186001,154.116404 303.384053,154.892906 C304.711049,155.752655 307.875507,154.944271 312.791345,152.489009 C329.418828,144.184832 333.463935,147.481777 334.431374,149.285231 C335.66981,151.592773 334.028245,154.993157 330.772393,156.86498 C324.682946,160.364906 320.950282,168.732847 322.273736,175.914781 C322.371153,176.443666 322.466799,176.945629 322.558548,177.426338 C323.823197,184.058131 324.346769,186.803164 318.274326,198.826544 C314.564334,206.171784 309.39592,206.231297 306.307625,206.267076 C305.271817,206.278766 304.200939,206.291164 303.94978,206.627341 C303.836068,206.778958 303.629898,207.334766 304.161263,209.216862 C304.874356,211.743681 306.323566,213.639238 307.601677,215.311622 C309.167433,217.360921 310.646754,219.296153 310.371507,221.854146 C310.083861,224.524434 307.926518,227.438795 303.37626,231.302884 C290.886341,241.909998 270.921883,253.452316 268.266828,254.971312 C258.188599,284.280714 248.620481,289.201511 242.366666,288.158618 C233.585677,286.692404 228.211802,273.287829 228.224909,264.323341 C228.236954,256.149526 227.406961,252.18802 225.265913,250.195046 C222.828717,247.925762 218.264289,247.811341 210.152821,248.403282 C200.639256,249.097954 200.735256,250.428139 201.020422,254.3776 C201.182311,256.612522 201.403359,259.672832 200.059359,263.527356 C199.40578,265.401659 198.217293,266.738574 196.526843,267.499843 C191.177057,269.909762 181.792437,266.06374 173.513057,262.670795 C170.010297,261.235401 166.702016,259.87971 164.224791,259.237821 C162.732363,258.851341 161.824083,258.126913 161.52581,257.084375 C160.798902,254.546928 164.117101,251.053024 167.958872,247.007209 C171.419123,243.36346 175.340954,239.233334 175.100422,236.729895 C175.043743,236.146102 174.749367,235.682751 174.173721,235.272183 C169.447758,231.902264 161.323182,240.649954 149.025618,253.890515 C143.787064,259.531135 137.848525,265.924522 130.880555,272.824478 C121.298976,282.312537 117.061514,288.796965 117.545765,293.231386 C117.93933,296.836522 121.528525,299.101555 125.684156,301.724375 C127.375315,302.792065 129.123861,303.895533 130.821042,305.183917 C133.32271,307.083017 135.6384,309.049423 137.680968,310.784153 C142.110075,314.545511 145.93626,317.793216 148.220068,317.296567 C149.063876,317.113068 149.77378,316.382618 150.391935,315.063415 C151.276127,313.174589 151.027448,312.894736 150.532215,312.336803 C148.94733,310.55177 146.77688,308.107135 157.518252,286.079563 C162.779123,275.290722 167.872083,270.369216 172.658621,271.455681 C179.72578,273.058633 183.028393,287.121747 183.059212,291.171105 C183.060275,291.286589 183.069839,291.366293 183.079758,291.419076 C183.982016,291.374441 186.860599,289.22064 188.607728,287.913482 C192.498739,285.001954 195.859094,282.488596 197.831168,283.683814 C199.207758,284.518766 199.044097,286.592508 198.801441,288.079622 C197.859507,293.848478 202.343522,302.429319 206.299359,310.000212 C210.427714,317.900552 213.993175,324.723282 211.794739,328.386869 C210.344821,330.804227 212.19043,333.14436 215.403064,336.711592 C218.737204,340.413792 222.51592,344.609452 220.3855,349.986161 C219.602621,351.963194 218.486754,352.997231 217.070134,353.059223 C217.027271,353.060995 216.983699,353.062057 216.940835,353.062057 C212.935758,353.062766 208.327049,344.980699 203.93868,336.229113 C203.77254,335.897541 203.622695,335.598559 203.490562,335.33819 C202.008053,332.412139 196.400024,327.988345 193.892688,328.937718 C192.349249,329.521511 192.193027,332.662234 193.464407,337.554338 C196.1393,347.848301 194.615699,357.333526 189.489441,362.308168 C185.915123,365.775858 180.832083,366.775533 175.174813,365.122279 C165.511758,362.298958 159.286282,377.643371 154.280821,389.972109 C152.399433,394.605969 150.622193,398.983002 148.852747,401.933851 C145.555448,407.432065 145.763743,410.987253 146.108776,416.87726 C146.414489,422.087829 146.832496,429.224419 144.810474,440.851755 C143.953204,445.779637 141.752644,448.890603 138.269367,450.098574 C127.095463,453.97577 106.32333,436.34436 103.045869,433.474987 C93.8323483,437.104921 87.7414849,442.480921 84.9376472,449.45881 C81.0569092,459.116198 84.7169535,469.02864 85.6128354,471.185984 C100.260806,473.252995 108.597928,476.504596 111.831108,481.405555 C114.443655,485.366707 113.255168,489.70371 112.206607,493.529895 C110.847374,498.490722 110.224968,501.650574 114.380599,504.001688 C116.489411,505.194426 118.442356,506.427548 120.330828,507.619932 C130.770031,514.212758 138.31223,518.975209 154.313057,505.661319 C160.003625,500.9265 163.167728,499.219755 165.592171,499.57329 C167.648909,499.872626 168.812599,501.619401 170.159787,503.642131 C172.689795,507.44033 176.154651,512.641334 187.843271,513.982146 C207.269632,516.209984 209.572215,519.912183 215.726134,529.804788 C217.844156,533.209068 220.479728,537.445821 224.491891,542.641865 C229.940156,549.696626 235.835123,551.435607 240.571359,552.832744 C244.913677,554.114043 248.663699,555.220699 250.333249,559.825865 C252.013426,564.462559 251.37012,572.492906 248.2464,585.863829 C242.037928,612.439179 236.618001,616.329482 230.341869,620.834751 C226.254961,623.76895 222.028481,626.803046 216.967758,637.05202 C209.492511,652.192389 197.739773,666.595223 189.157869,677.111651 C183.404245,684.162515 178.435271,690.251961 178.095197,692.696242 C177.927286,693.904212 177.765042,697.010928 177.560289,700.944448 C176.436983,722.514338 174.894607,743.74557 169.574577,745.795578 C168.7793,746.100936 167.520673,746.157969 166.039227,744.682544 C163.473441,742.128803 141.057618,719.037083 143.970208,695.111829 C146.192732,676.853762 150.737677,616.357113 151.188983,610.31974 C132.419743,596.057895 126.357928,580.453467 124.583168,569.842102 C122.640496,558.227164 125.204511,550.119947 125.314326,549.780227 C125.340186,549.700877 125.377027,549.626131 125.423787,549.556699 C136.980275,532.498456 128.610208,520.118707 127.171625,518.218899 C114.851743,516.540493 103.173042,509.395046 95.5146509,503.665865 C88.0287764,498.065984 82.823876,492.692109 81.7866509,491.595725 C69.3973373,488.654795 58.0959055,478.64281 49.089972,462.621792 C43.8531897,453.306603 40.7691454,444.393127 39.6089978,440.718559 C33.5769387,449.131843 29.3302672,452.489364 26.2975882,451.272183 C23.7984,450.267902 22.6704886,446.309939 22.8497358,439.172286 C22.9545919,434.98867 23.5022524,430.935061 23.6825624,429.698043 C13.3000384,416.26619 8.09620074,404.419932 7.77490185,393.491873 C7.48831882,383.739194 10.9871823,376.026958 14.3702081,368.568714 C16.367079,364.167238 18.2527173,360.009836 19.3055292,355.588877 C20.5723041,350.268847 20.2658834,346.735622 18.4192118,345.370722 C15.844924,343.468079 10.4395218,345.757201 8.14721181,347.020788 C7.44155867,351.265688 7.15922657,355.735533 6.88575055,360.062972 C6.75113801,362.192685 6.6119203,364.394662 6.42417122,366.530751 C2.07264354,416.042662 -1.49388044,468.750205 6.65690923,520.947637 C12.8334996,560.499637 26.336555,600.717615 46.7912856,640.48464 C63.732983,673.421496 83.3389461,703.215858 105.064703,729.039858 C122.024112,749.198087 141.649559,767.267341 160.629219,784.742175 L161.142518,785.215091 C167.907861,791.444109 175.112821,798.219371 181.963891,805.552212 C183.36457,807.051371 184.792171,808.506249 186.173367,809.913659 L184.909072,811.154574 Z"></path>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </svg></span>
-        <div class="uk-position-center-right uk-width-60 uk-globe-text">
-            <div class="uk-text-2 uk-text-lh-4" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 300;">
-                <span class="uk-text-bold">Connected global expertise.</span><br /> Our reach extends across the
-                globe and across asset class.
-            </div>
-            <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-fade; delay: 500;">
-                <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">
-                    <span class="uk-color-tertiary uk-text-middle uk-margin-right">Our locations</span>
-                    <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}"
-                                         alt="win-icon">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
-        <div class="uk-position-cover uk-cover-container">
-            <canvas width="1600" height="708"></canvas>
-            <img data-src="" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled" />
-        </div>
-        <div class="uk-text-center">
-            <div class="uk-position-large uk-position-bottom">
-                <h4 class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-margin-small-bottom uk-margin-auto uk-width-1-2@m" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
-                    Partner with us to generate a positive impact for people and the environment </h4>
-                <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                    <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">
-                        <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
-                        <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary" uk-icon="icon: button-circle; ratio: 1"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+
 @endsection
+@push('scripts')
+    <script type='text/javascript' src='/site/js/solar.js'
+            id='solar-controlpanel-js'></script>
+    <script   type='text/javascript' src='/site/js/solar-2.js' id='solar-jqcustom-js'></script>
+
+@endpush

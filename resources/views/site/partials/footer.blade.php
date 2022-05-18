@@ -6,23 +6,23 @@
                 {{--                <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: logo; ratio: 1;"></span>--}}
             </div>
 
-            <div class="uk-width-1-1 uk-width-2-3@m uk-flex uk-flex-middle uk-flex-center uk-flex-right@m uk-text-center uk-text-right@m uk-footer-logos">
-                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                    <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals.html" rel="noreferrer" target="_blank">
-                        <img src="https://media.agpgroup.com/uploads/2021/04/sustainable-development-goals-logo.png" class="uk-width-footer-logo">
-                    </a>
-                </div>
-                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                    <a href="https://www.unpri.org/" rel="noreferrer" target="_blank">
-                        <img src="https://media.agpgroup.com/uploads/2021/04/PRI-Sig-White.png" class="uk-width-footer-logo">
-                    </a>
-                </div>
-                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                    <a href="https://www.ukgbc.org/" rel="noreferrer" target="_blank">
-                        <img src="https://media.agpgroup.com/uploads/2021/06/ukgbc-colour-1.png" class="uk-width-footer-logo">
-                    </a>
-                </div>
-            </div>
+{{--            <div class="uk-width-1-1 uk-width-2-3@m uk-flex uk-flex-middle uk-flex-center uk-flex-right@m uk-text-center uk-text-right@m uk-footer-logos">--}}
+{{--                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                    <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals.html" rel="noreferrer" target="_blank">--}}
+{{--                        <img src="https://media.agpgroup.com/uploads/2021/04/sustainable-development-goals-logo.png" class="uk-width-footer-logo">--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+{{--                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                    <a href="https://www.unpri.org/" rel="noreferrer" target="_blank">--}}
+{{--                        <img src="https://media.agpgroup.com/uploads/2021/04/PRI-Sig-White.png" class="uk-width-footer-logo">--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+{{--                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                    <a href="https://www.ukgbc.org/" rel="noreferrer" target="_blank">--}}
+{{--                        <img src="https://media.agpgroup.com/uploads/2021/06/ukgbc-colour-1.png" class="uk-width-footer-logo">--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
 {{--            <div class="uk-width-1-1 uk-width-2-3@m uk-flex uk-flex-middle uk-flex-center uk-flex-right@m uk-text-center uk-text-right@m uk-footer-logos">--}}
 {{--                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
@@ -94,27 +94,29 @@
                 {{trans('message.office_footer')}}
             </span>
                 <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
-                    Hà nội </h5>
+                    Hà Nội
+                     </h5>
                 <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
-                    20 TranHungDao<br/>
-                    HoanKiem<br/>
+                    Lô B13/D21+B15/D21 ngõ 72, <br>
+                    phố Trần Thái Tông, Phường Dịch Vọng Hậu, Quận Cầu Giấy,<br/>
+                    <br/>
                 </div>
                 <div class="uk-style-primary-m uk-text-13 uk-lh-28">
-                    <a href="tel:+999 99 99 999" class="uk-text-underline">+999 99 99 999</a>
+                    <a href="tel:+094 8668 889" class="uk-text-underline">+094 8668 889</a>
                 </div>
             </div>
 
-            <div>
-                <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
-                    HCM </h5>
-                <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
-                    66 TaySon<br/>
-                    Q1 <br/>
-                </div>
-                <div class="uk-style-primary-m uk-text-13 uk-lh-28">
-                    <a href="tel:+999 99 99 999" class="uk-text-underline">+999 99 99 999</a>
-                </div>
-            </div>
+{{--            <div>--}}
+{{--                <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">--}}
+{{--                    HCM </h5>--}}
+{{--                <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">--}}
+{{--                    66 TaySon<br/>--}}
+{{--                    Q1 <br/>--}}
+{{--                </div>--}}
+{{--                <div class="uk-style-primary-m uk-text-13 uk-lh-28">--}}
+{{--                    <a href="tel:+999 99 99 999" class="uk-text-underline">+999 99 99 999</a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
         </div>
     </div>
@@ -122,24 +124,24 @@
     <div class="uk-container uk-padding-medium-bottom">
         <div uk-grid class="uk-flex uk-flex-middle uk-grid-small">
             <div class="uk-width-1-1 uk-width-auto@m uk-text-center uk-text-left@m uk-style-secondary uk-text-faded uk-text-14 uk-lh-15">
-                <div class="uk-display-inline-block uk-footer-items">
-                    <span class="uk-margin-right uk-footer-item">
-							<a href="{{route('front.policy')}}">
-								{{trans('message.private_policy_footer')}}							</a>
-						</span>
-                    <span class="uk-margin-right uk-footer-item">
-							<a href="{{route('front.policy')}}">
-								{{trans('message.terms_of_use_footer')}}								</a>
-						</span>
-                    <span class="uk-margin-right uk-footer-item">
-							<a href="{{route('front.policy')}}">
-								{{trans('message.cookie_policy_footer')}}								</a>
-						</span>
-                    <span class="uk-margin-right uk-footer-item">
-							<a href="{{route('front.sitemap')}}/">
-								{{trans('message.sitemap_footer')}}							</a>
-						</span>
-                </div>
+{{--                <div class="uk-display-inline-block uk-footer-items">--}}
+{{--                    <span class="uk-margin-right uk-footer-item">--}}
+{{--							<a href="{{route('front.policy')}}">--}}
+{{--								{{trans('message.private_policy_footer')}}							</a>--}}
+{{--						</span>--}}
+{{--                    <span class="uk-margin-right uk-footer-item">--}}
+{{--							<a href="{{route('front.policy')}}">--}}
+{{--								{{trans('message.terms_of_use_footer')}}								</a>--}}
+{{--						</span>--}}
+{{--                    <span class="uk-margin-right uk-footer-item">--}}
+{{--							<a href="{{route('front.policy')}}">--}}
+{{--								{{trans('message.cookie_policy_footer')}}								</a>--}}
+{{--						</span>--}}
+{{--                    <span class="uk-margin-right uk-footer-item">--}}
+{{--							<a href="{{route('front.sitemap')}}/">--}}
+{{--								{{trans('message.sitemap_footer')}}							</a>--}}
+{{--						</span>--}}
+{{--                </div>--}}
                 <span class="uk-margin-right uk-footer-item">
 					© 2022 RT ENEGRY			</span>
             </div>

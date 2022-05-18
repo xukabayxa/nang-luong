@@ -16,7 +16,7 @@ return [
     'sustainable_infrastructure' => 'DỰ ÁN HẠ TẦNG "XANH"',
     'future_solution' => 'DỰ ÁN NĂNG LƯỢNG MỚI',
 
-    'office_footer' => 'VĂN PHÒNG',
+    'office_footer' => 'TRỤ SỞ CHÍNH',
     'private_policy_footer' => 'CHÍNH SÁCH BẢO MẬT',
     'terms_of_use_footer' => 'ĐIỀU KHOẢN SỬ DỤNG',
     'cookie_policy_footer' => 'CHÍNH SÁCH COOKIE',

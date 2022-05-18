@@ -11,13 +11,8 @@
 
     <!-- <span></span> -->
     <section id="sozo-main">
-        <div class="uk-section uk-section-page-header">
+        <div class="uk-section uk-section-page-header" style="padding: 0">
             <div class="uk-container uk-container-large">
-                <h1 class="uk-style-primary-m uk-text-2 uk-margin-3xmedium-bottom"
-                    uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 150;">
-                    Latest Insights & Press
-                </h1>
-
                 <div uk-grid class="uk-grid uk-grid-xmedium">
 {{--                    @foreach($posts->take(1) as $post)--}}
 {{--                    @endforeach--}}
@@ -39,7 +34,9 @@
                                         22.03.22 </h6>
                                     <a href=""
                                        class="uk-color-dark">
-                                        AMPYR Solar Europe signs deal</a>
+                                      {{App::isLocale('vi') ? 'DỰ ÁN NHÀ MÁY ĐIỆN MẶT TRỜI HÒA HỘI VÀ NHÀ MÁY ĐIỆN GIÓ'
+: ' AMPYR Solar Europe signs deal'
+}} </a>
                                 </div>
                                 <div class="uk-text-right@s uk-width-expand@m">
                                     <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-visible@s">
@@ -70,8 +67,9 @@
                                         </div>
                                         <a href=""
                                            class="uk-color-dark">
-                                            AMPYR Solar Europe Secures €400 Million from CARVAL Investors to Develop and
-                                            Construct&hellip; </a>
+                                            {{App::isLocale('vi') ? 'Nhà máy điện mặt trời Cát Hiệp được trao giải bạc Năng lượng Châu Á 2019'
+: ' AMPYR Solar Europe signs deal'
+}} </a>
                                     </div>
                                     <div class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-visible@s">
                                         16.02.22
@@ -96,8 +94,9 @@
                                         </div>
                                         <a href=""
                                            class="uk-color-dark">
-                                            AMPYR Solar Europe signs deal with Edinburgh Airport to develop solar farm,
-                                            battery&hellip; </a>
+                                            {{App::isLocale('vi') ? 'Tiềm năng phát triển năng lượng gió khu vực Ninh Thuận'
+: ' AMPYR Solar Europe signs deal'
+}}</a>
                                     </div>
                                     <div class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-visible@s">
                                         11.03.22
@@ -109,7 +108,7 @@
                 </div>
             </div>
         </div>
-        <div class="uk-position-relative uk-container uk-section">
+        <div class="uk-position-relative uk-container uk-section" style="margin-top: 30px; margin-bottom: -240px">
 
             <form method="GET" class="sz-form ajax-more-posts">
 
@@ -138,8 +137,9 @@
                             <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">
                                 <a href=""
                                    class="uk-color-dark">
-                                    AGP Sustainable Real Assets and Hartree Partners Announce US Expansion of Global
-                                    Solar&hellip; </a>
+                                    {{App::isLocale('vi') ? 'Siêu dự án nhà máy điện mặt trời HHKL'
+: ' AMPYR Solar Europe signs deal'
+}}</a>
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,9 @@
                             <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">
                                 <a href=""
                                    class="uk-color-dark">
-                                    AMPYR Solar Europe signs deal with Edinburgh Airport to develop solar farm, battery&hellip; </a>
+                                    {{App::isLocale('vi') ? 'Trường Thành Việt Nam và hành trình 10 năm vươn ra biển lớn'
+ : ' AMPYR Solar Europe signs deal'
+ }}</a>
                             </div>
                         </div>
                     </div>
@@ -183,8 +185,9 @@
                             <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">
                                 <a href=""
                                    class="uk-color-dark">
-                                    AMPYR Solar Europe Secures €400 Million from CARVAL Investors to Develop and
-                                    Construct&hellip; </a>
+                                    {{App::isLocale('vi') ? 'Quyết định của Thủ tướng Chính phủ về Dự án nhà máy điện mặt trời Hòa Hội, Phú Yên'
+: ' AMPYR Solar Europe signs deal'
+}}</a>
                             </div>
                         </div>
                     </div>
@@ -213,11 +216,11 @@
                 <div class="uk-position-large uk-position-bottom">
                     <h4 class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-margin-small-bottom uk-margin-auto uk-width-1-2@m"
                         uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
-                        Partner with us to generate a positive impact for people and the environment </h4>
+                       </h4>
                     <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
                         <a class="uk-button uk-color-tertiary uk-style-secondary-b "
                            href="">
-                            <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
+                            <span class="uk-color-tertiary uk-text-middle uk-margin-right"></span>
                             <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
                                   uk-icon="icon: button-circle; ratio: 1"></span>
                         </a>

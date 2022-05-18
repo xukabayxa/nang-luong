@@ -40,7 +40,10 @@
             height: 6px;
             text-indent: -9999px;
         }
+
     </style>
+    <script type='text/javascript' src='/site/js/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+        @yield('css')
 </head>
 <body class="home page-template-default page page-id-6 preloading" ng-app="App">
 
