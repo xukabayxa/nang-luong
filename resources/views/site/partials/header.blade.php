@@ -337,6 +337,33 @@
         <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-position-z-index-menu"
              uk-grid>
             {{--            phần menu about-us trổ xuống--}}
+            <style>
+                h4:after {
+                    display:block;
+                    content: '';
+                    border-bottom: solid 3px #136c63;
+                    transform: scaleX(0);
+                    transition: transform 250ms ease-in-out;
+                }
+                h4.uk-text-lh-4:after{ transform-origin:100% 50%; }
+                h4.uk-text-lh-4:hover:after{ transform: scaleX(1); transform-origin: 100% 50%; }
+
+                @media only screen and (max-width: 1600px) and (min-width: 1300px) {
+                    .uk-text-6-1 {
+                        font-size: 1.3em;
+                    }
+                }
+
+                .uk-text-lh-4-2 {
+                    color: #fff;
+                }
+
+                .uk-position-bottom uk-padding-xmedium {
+                    margin-bottom: 20px;
+                }
+
+            </style>
+
             <div class="uk-text-left uk-mega-menu-item items-4">
                 <a href="{{route('front.about')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
@@ -349,12 +376,12 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
+                        <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 20px">
+                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2" >
                                 {{trans('message.who_we_are')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
+                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -375,12 +402,12 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 {{trans('message.what_we_do')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about2')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
+                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -401,12 +428,12 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 {{trans('message.our_team')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about3')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
+                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -427,12 +454,12 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom css-h4 uk-text-lh-4-2">
                                 {{trans('message.our_partner')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about4')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
+                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -612,12 +639,12 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 {{trans('message.renewable_energy')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments1')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
+                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -640,13 +667,13 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 {{trans('message.sustainable_infrastructure')}}
                             </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments2')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
+                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -669,13 +696,13 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 {{trans('message.future_solution')}} <br/>
                             </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments3')}}/">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
+                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>

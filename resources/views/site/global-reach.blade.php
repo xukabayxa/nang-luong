@@ -21,7 +21,7 @@
                 </div>
                 <div class="uk-background-wash-map uk-position-cover uk-hidden@s"></div>
                 <p class="uk-light uk-margin-remove-top@s uk-margin-small-bottom uk-style-primary-l uk-text-3 uk-text-lh-4 uk-text-center"
-                   uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">Our global expertise</p>
+                   uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200"> {{App::isLocale('vi') ? 'Thị trường toàn cầu' : 'Our global expertise'}}</p>
                 <div class="uk-hidden@s uk-text-center uk-margin-medium-bottom"
                      uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">
                     <a class="uk-button uk-color-tertiary uk-style-secondary-b "
@@ -53,100 +53,96 @@
             <div class="uk-background-gradient-rev uk-position-cover"></div>
 
 
-            <div class="uk-position-relative uk-container uk-container-medium  uk-section uk-padding-navbar-top"
-                 uk-scrollspy="target: .uk-animation-parent; cls: uk-animation-fade; delay: 250; repeat: true;">
-
-                <div uk-grid class="uk-grid uk-grid-large uk-child-width-expand@m uk-flex-middle  uk-wysiwyg-default"
-                     uk-scrollspy="target: .uk-animation-item; cls: uk-animation-slide-bottom-small; delay: 250; repeat: true;">
-                    <div class="uk-animation-parent">
-
-                        <h6 class="uk-animation-item uk-style-secondary uk-text-11 uk-margin-medium-bottom">
-                            our global reach </h6>
-
-                        <h1 class="uk-animation-item uk-style-primary-m uk-text-2 uk-lh-71 uk-width-medium">
-                            AGP has a global outlook integrated with local market and execution capability </h1>
-
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="uk-scroller uk-container uk-text-center uk-position-bottom uk-position-large">
-                <a href="#scroll-target" uk-scroll>
-                    <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: arrow-in-circle; ratio: 1;"></span><br/>
-                    <span class="uk-style-secondary">scroll down</span>
-                </a>
-            </div>
-
 
         </div>
 
-        <div class="uk-position-relative uk-background-dark uk-light  ">
-            <div class=" uk-container   uk-section uk-padding-navbar-top"
-                 uk-scrollspy="target: .uk-animation-parent; cls: uk-animation-fade; delay: 250; repeat: true;">
+        <style>
 
-                <div uk-grid class="uk-grid uk-grid-large uk-child-width-expand@m uk-flex-middle  uk-wysiwyg-default"
-                     uk-scrollspy="target: .uk-animation-item; cls: uk-animation-slide-bottom-small; delay: 250; repeat: true;">
-                    <div class="uk-animation-parent">
-                        <div class="uk-margin-column-image">
-                            <div class="uk-cover-container">
-                                <img data-src="/site/system/inves/i3.jpg" src="/site/system/inves/i3.jpg"
-                                     data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                     class=" Sirv uk-utility-object-fit-cover "
-                                     alt="iStock-1180355744-scaled.jpg?w=1024&h=683&scale"
-                                     title="iStock-1180355744-scaled.jpg?w=1024&h=683&scale"/>
-                                <canvas width="846" height="776.25"></canvas>
+
+                @media screen
+                and (min-width: 1200px)
+                and (max-width: 1600px)
+                 {
+                    .nation1, .nation2 {
+                        margin-top: -200px;
+                    }
+                    .nation {
+                        margin-top: -100px;
+                    }
+
+                }
+
+
+        </style>
+        <div class="uk-background-light uk-dark">
+
+            <div class="uk-container uk-container-medium uk-padding-large-bottom nation" >
+                <div class="uk-child-width-1-2@s uk-flex uk-flex-middle uk-grid uk-grid-large" uk-grid="" uk-height-match=".uk-oval">
+
+                    <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right uk-oval uk-circle-feature-container uk-first-column">
+                        <div class="uk-width-large uk-scrollspy-inview uk-animation-slide-right-small" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 300;" style="">
+                            <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-bottom" style="padding-left: 120px">
+                                <img src="/site/system/mvn.png" style="height: 250px">
                             </div>
 
                         </div>
+                        <span class="uk-icon uk-preserve uk-position-center uk-oval-red uk-circle-feature uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-draw; delay: 700;" uk-icon="icon: half-circle; ratio: 1" style="">
+                            <svg viewBox="0 0 482 645" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="645" style="height: 300px">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                <g id="Who-we-are" transform="translate(-332.000000, -1000.000000)" stroke="#EC6278" stroke-width="2">
+                                    <g id="Group-17" transform="translate(333.286008, 1001.820590)">
+                                        <path d="M0.751662914,40.9573792 C47.170655,14.8750781 100.731763,0 157.767131,0 C335.050536,0 478.767131,143.716595 478.767131,321 C478.767131,498.283405 335.050536,642 157.767131,642 C100.423648,642 46.5920648,626.963773 0,600.618938" id="Oval-Copy-5" transform="translate(239.383565, 321.000000) rotate(-180.000000) translate(-239.383565, -321.000000) "></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        </span>
                     </div>
-                    <div class="uk-animation-parent">
+                    <div uk-scrollspy="cls: uk-animation-fade; delay: 600;" style="" class="uk-scrollspy-inview uk-animation-fade">
+                        <div class="uk-style-primary-l uk-text-10 uk-text-lh-1 uk-margin-small-bottom uk-width-large">
+                            AGP’s mandate is to stimulate, develop, invest, manage and operate sustainable real assets
+                            that generate positive impact for people and the environment. We do this by focusing
+                            entirely on the financing, development and operation of ‘Sustainable Real Assets’;
+                            transformative infrastructure assets that make positive contributions to satisfying the UN
+                            SDGs.
+                        </div>
+                    </div>
 
-                        <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-margin uk-background-oval">
-                            <div class="uk-width-large-2 uk-margin-large-right uk-content-circle-text">
-                                <h4 class="uk-style-tertiary uk-text-6 uk-lh-41 uk-text-uppercase">
-                                    fully integrated local execution and operational capability </h4>
-                                <div class="uk-style-primary-l uk-text-11 uk-lh-32 uk-animation-item uk-wysiwyg-default uk-margin-top uk-margin-large-left uk-width-circle-content">
-                                    <p>We are closely aligned with the investment objectives and thinking of
-                                        international investor partners and global capital markets. We research and
-                                        track long run economic development and investment trends to spot emerging
-                                        opportunities and to inform our sector, asset and project selection which we
-                                        combine with detailed local knowledge of regulatory environments, and local
-                                        construction, delivery and operational sector capability.</p>
-                                </div>
+                    <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right uk-oval uk-circle-feature-container uk-first-column nation1" >
+                        <div class="uk-width-large uk-scrollspy-inview uk-animation-slide-right-small" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 300;" style="">
+                            <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-bottom" style="padding-left: 120px">
+                                <img src="/site/system/phi21.png" style="height: 250px">
                             </div>
-                            <span class="uk-icon uk-preserve uk-position-right-center uk-oval-reverse uk-oval-teal uk-oval-content-circle uk-visible@m"
-                                  uk-scrollspy="cls: uk-animation-draw; delay: 1000;"
-                                  uk-icon="icon: half-circle; ratio: 1.2"></span>
+
+                        </div>
+                        <span class="uk-icon uk-preserve uk-position-center uk-oval-red uk-circle-feature uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-draw; delay: 700;" uk-icon="icon: half-circle; ratio: 1" style="">
+                            <svg viewBox="0 0 482 645" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="645" style="height: 300px">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                <g id="Who-we-are" transform="translate(-332.000000, -1000.000000)" stroke="#EC6278" stroke-width="2">
+                                    <g id="Group-17" transform="translate(333.286008, 1001.820590)">
+                                        <path d="M0.751662914,40.9573792 C47.170655,14.8750781 100.731763,0 157.767131,0 C335.050536,0 478.767131,143.716595 478.767131,321 C478.767131,498.283405 335.050536,642 157.767131,642 C100.423648,642 46.5920648,626.963773 0,600.618938" id="Oval-Copy-5" transform="translate(239.383565, 321.000000) rotate(-180.000000) translate(-239.383565, -321.000000) "></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        </span>
+                    </div>
+                    <div uk-scrollspy="cls: uk-animation-fade; delay: 600;"  class="nation2" >
+                        <div class="uk-style-primary-l uk-text-10 uk-text-lh-1 uk-margin-small-bottom uk-width-large">
+                            AGP’s mandate is to stimulate, develop, invest, manage and operate sustainable real assets
+                            that generate positive impact for people and the environment. We do this by focusing
+                            entirely on the financing, development and operation of ‘Sustainable Real Assets’;
+                            transformative infrastructure assets that make positive contributions to satisfying the UN
+                            SDGs.
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
 
-        <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
-            <div class="uk-position-cover uk-cover-container">
-                <canvas width="1600" height="708"></canvas>
-                <img data-src="/site/system/inves/i_3_2.jpg" src="/site/system/inves/i_3_2.jpg"
-                     data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                     class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
-            <div class="uk-text-center">
-                <div class="uk-position-large uk-position-bottom">
-                    <h4 class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-margin-small-bottom uk-margin-auto uk-width-1-2@m"
-                        uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
-                        Partner with us to generate a positive impact for people and the environment </h4>
-                    <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                        <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                           href="">
-                            <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
-                            <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
-                                  uk-icon="icon: button-circle; ratio: 1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+
     </section>
 @endsection

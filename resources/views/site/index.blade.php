@@ -191,21 +191,26 @@
                             <div
                                 class="uk-style-tertiary uk-text-uppercase uk-text-4 uk-text-lh-4  uk-style-hline uk-position-relative"
                                 style="color: #0F4C81 !important">
-                                Sustainable Development and a Net zero emissions future
+                                {{App::isLocale('vi') ? 'PHÁT TRIỂN NĂNG LƯỢNG BỀN VỮNG' : "Sustainable Development and a Net zero emissions future"}}
                             </div>
 
                         </div>
                         <div class="uk-width-expand@m" uk-scrollspy="cls: uk-animation-fade; delay: 700;">
                             <div class="uk-margin-3xmedium-bottom uk-text-8 uk-style-primary-l"
                                  style="color: #0F4C81 !important">
-                                AGP exclusively invest in sustainable real assets across three key investment themes. We
+                                {{App::isLocale('vi') ? 'Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo
+                                – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.'
+                                : "AGP exclusively invest in sustainable real assets across three key investment themes. We
                                 evaluate our investment strategy against the United Nations Sustainable Development
-                                Goals (SDGs) with the aim to accelerate the transition to a net zero emissions future.
+                                Goals (SDGs) with the aim to accelerate the transition to a net zero emissions future."}}
+
+
+
                             </div>
                             <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">
                                 <span
                                     class="uk-color-tertiary uk-text-middle uk-margin-right"
-                                    style="color: #0F4C81 !important">SDGS of key relevance</span>
+                                    style="color: #0F4C81 !important">{{App::isLocale('vi') ? 'Khám phá' : 'Discover'}}</span>
                                 <img class="wind-icon win-icon-right"
                                      src="{{ asset('img/icons/wind-energy-blue.png') }}"
                                      alt="win-icon">
@@ -224,92 +229,94 @@
         {{--                        class="uk-style-primary">across three key investment themes</span></h1>--}}
         {{--            </div>--}}
         {{--        </div>--}}
-        <div class="uk-margin-top uk-margin-left uk-margin-right uk-margin-bottom uk-section-investments">
-            <div class="uk-grid-collapse uk-child-width-expand@m" uk-grid
-                 uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 400;">
 
-                <div class="uk-text-left uk-mega-menu-item items-1">
-                    <a href="{{route('front.investments1')}}" class="uk-animation-zoom">
-                        <div class="uk-cover-container ">
-                            <img data-src="{{ asset('site/system/about_us/a1.jpg') }}"
-                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                 class=" Sirv uk-utility-object-fit-cover "
-                                 alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"
-                                 title="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"/>
-                            <canvas width="533.33333333333" height="720"></canvas>
-                            <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
-                        </div>
-                        <div
-                            class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                            <div class="uk-position-bottom uk-padding-xmedium">
-                                <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                    {{trans('message.renewable_energy')}}</h4>
-                                <a class="uk-button uk-color-primary uk-style-secondary-b "
-                                   href="{{route('front.investments1')}}">
-                                    <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
-                                    <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}"
-                                         alt="win-icon">
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+{{--        <div class="uk-margin-top uk-margin-left uk-margin-right uk-margin-bottom uk-section-investments">--}}
+{{--            <div class="uk-grid-collapse uk-child-width-expand@m" uk-grid--}}
+{{--                 uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 400;">--}}
 
-                <div class="uk-text-left uk-mega-menu-item items-1">
-                    <a href="{{route('front.investments2')}}" class="uk-animation-zoom">
-                        <div class="uk-cover-container ">
-                            <img data-src="{{ asset('site/system/home/j.jpg') }}"
-                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                 class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"
-                                 title="iStock-1156913631-scaled"/>
-                            <canvas width="533.33333333333" height="720"></canvas>
-                            <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
-                        </div>
-                        <div
-                            class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                            <div class="uk-position-bottom uk-padding-xmedium">
-                                <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                    {{trans('message.sustainable_infrastructure')}}
-                                </h4>
-                                <a class="uk-button uk-color-primary uk-style-secondary-b "
-                                   href="{{route('front.investments2')}}">
-                                    <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
-                                    <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}"
-                                         alt="win-icon">
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+{{--                <div class="uk-text-left uk-mega-menu-item items-1">--}}
+{{--                    <a href="{{route('front.investments1')}}" class="uk-animation-zoom">--}}
+{{--                        <div class="uk-cover-container ">--}}
+{{--                            <img data-src="{{ asset('site/system/about_us/a1.jpg') }}"--}}
+{{--                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                                 class=" Sirv uk-utility-object-fit-cover "--}}
+{{--                                 alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"--}}
+{{--                                 title="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"/>--}}
+{{--                            <canvas width="533.33333333333" height="720"></canvas>--}}
+{{--                            <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
+{{--                        </div>--}}
+{{--                        <div--}}
+{{--                            class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
+{{--                            <div class="uk-position-bottom uk-padding-xmedium">--}}
+{{--                                <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
+{{--                                    {{trans('message.renewable_energy')}}</h4>--}}
+{{--                                <a class="uk-button uk-color-primary uk-style-secondary-b "--}}
+{{--                                   href="{{route('front.investments1')}}">--}}
+{{--                                    <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
+{{--                                    <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}"--}}
+{{--                                         alt="win-icon">--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
 
-                <div class="uk-text-left uk-mega-menu-item items-1">
-                    <a href="{{route('front.investments3')}}" class="uk-animation-zoom">
-                        <div class="uk-cover-container ">
-                            <img data-src="{{ asset('site/system/home/j2.jpg') }}"
-                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                 class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"
-                                 title="green-tech-scaled"/>
-                            <canvas width="533.33333333333" height="720"></canvas>
-                            <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
-                        </div>
-                        <div
-                            class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                            <div class="uk-position-bottom uk-padding-xmedium">
-                                <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                    {{trans('message.future_solution')}} <br/>
-                                </h4>
-                                <a class="uk-button uk-color-primary uk-style-secondary-b "
-                                   href="{{route('front.investments3')}}/">
-                                    <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>
-                                    <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}"
-                                         alt="win-icon">
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+{{--                <div class="uk-text-left uk-mega-menu-item items-1">--}}
+{{--                    <a href="{{route('front.investments2')}}" class="uk-animation-zoom">--}}
+{{--                        <div class="uk-cover-container ">--}}
+{{--                            <img data-src="{{ asset('site/system/home/j.jpg') }}"--}}
+{{--                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                                 class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"--}}
+{{--                                 title="iStock-1156913631-scaled"/>--}}
+{{--                            <canvas width="533.33333333333" height="720"></canvas>--}}
+{{--                            <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
+{{--                        </div>--}}
+{{--                        <div--}}
+{{--                            class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
+{{--                            <div class="uk-position-bottom uk-padding-xmedium">--}}
+{{--                                <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
+{{--                                    {{trans('message.sustainable_infrastructure')}}--}}
+{{--                                </h4>--}}
+{{--                                <a class="uk-button uk-color-primary uk-style-secondary-b "--}}
+{{--                                   href="{{route('front.investments2')}}">--}}
+{{--                                    <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
+{{--                                    <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}"--}}
+{{--                                         alt="win-icon">--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+
+{{--                <div class="uk-text-left uk-mega-menu-item items-1">--}}
+{{--                    <a href="{{route('front.investments3')}}" class="uk-animation-zoom">--}}
+{{--                        <div class="uk-cover-container ">--}}
+{{--                            <img data-src="{{ asset('site/system/home/j2.jpg') }}"--}}
+{{--                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                                 class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"--}}
+{{--                                 title="green-tech-scaled"/>--}}
+{{--                            <canvas width="533.33333333333" height="720"></canvas>--}}
+{{--                            <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
+{{--                        </div>--}}
+{{--                        <div--}}
+{{--                            class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
+{{--                            <div class="uk-position-bottom uk-padding-xmedium">--}}
+{{--                                <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
+{{--                                    {{trans('message.future_solution')}} <br/>--}}
+{{--                                </h4>--}}
+{{--                                <a class="uk-button uk-color-primary uk-style-secondary-b "--}}
+{{--                                   href="{{route('front.investments3')}}/">--}}
+{{--                                    <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
+{{--                                    <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}"--}}
+{{--                                         alt="win-icon">--}}
+{{--                                </a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+
         <div class="uk-position-relative uk-background-image uk-flex uk-flex-middle uk-height-1-1 uk-margin-auto">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
@@ -666,59 +673,59 @@
                                         </div>
                     <div class="homeIndustry-intro">
                         <div class="homeIndustry-item active">
-                            <h6>{{App::isLocale('vi') ? 'Giới thiệu chung' : 'Who We Are'}}</h6>
+{{--                            <h6>{{App::isLocale('vi') ? 'Giới thiệu chung' : 'Who We Are'}}</h6>--}}
                             <div class="imgDes">
                                 <img src="/site/system/home/h1.jpg">
                             </div>
 
-                                @if(App::isLocale('vi'))
-                                  <pre style="font-family: aktiv-grotesk, Helvetica, Arial, sans-serif">
-1.Lĩnh vực đầu tư kinh doanh:
-- Năng lượng tái tạo - Renewable energy and technology
-- Năng lượng mới (đang nghiên cứu) - New reliable power system
-- Khu công nghiệp kết hợp năng lượng tái tạo: mô hình khu công nghiệp xanh
-  Sustainable industrial park development
-2.Chiến lược:
-Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể
-chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến
-trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững
-cho các thế hệ tương lai.
-Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:
-+ Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo;
-+ Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023.
-Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025;
-+ Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như
-Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách;
-+ Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh –
-trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.
-3.Tầm nhìn:
-RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong trong lĩnh vực
-năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030.
-                                  </pre>
-                                @else
-                                    <pre style="font-family: aktiv-grotesk, Helvetica, Arial, sans-serif">
-1. Business investment domains:
-Renewable energy and technology
-- new energy (studying) - New power system
-Sustainable industrial park development
-2. Strategy:
-Renewable energy and new energy is a future and a trend
- of energy. Rt energy with his future
-to promote and develop – renewable energy towards a green, clean, and sustainable world
-for future generations.
-In fact, that strategy, we target the following goals:
-+ development, investment in construction, and operation of renewable energy projects;
-+ increase the size of the renewable renewable energy project from 100mw 2021 to 500mw in 2023.
-Towards the investment portfolio with 1gw renewable energy or in 2025;
-+ research, application and investment in projects using new technology such as
-Renewable energy, …. when those technologies are financially and financially feasible;
-+ development, investment in construction and operation of – industrial parks
-in which power ministries use for industrial production as renewable energy.
-3. Vision:
-Rt energy is developed and developed with the orientation of a pioneer in the field
-renewable energy and industrial parks in asean region in 2025, and in the world by 2030.
-                                    </pre>
-                                @endif
+{{--                                @if(App::isLocale('vi'))--}}
+{{--                                  <pre style="font-family: aktiv-grotesk, Helvetica, Arial, sans-serif">--}}
+{{--1.Lĩnh vực đầu tư kinh doanh:--}}
+{{--- Năng lượng tái tạo - Renewable energy and technology--}}
+{{--- Năng lượng mới (đang nghiên cứu) - New reliable power system--}}
+{{--- Khu công nghiệp kết hợp năng lượng tái tạo: mô hình khu công nghiệp xanh--}}
+{{--  Sustainable industrial park development--}}
+{{--2.Chiến lược:--}}
+{{--Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể--}}
+{{--chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến--}}
+{{--trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững--}}
+{{--cho các thế hệ tương lai.--}}
+{{--Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:--}}
+{{--+ Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo;--}}
+{{--+ Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023.--}}
+{{--Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025;--}}
+{{--+ Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như--}}
+{{--Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách;--}}
+{{--+ Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh –--}}
+{{--trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.--}}
+{{--3.Tầm nhìn:--}}
+{{--RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong trong lĩnh vực--}}
+{{--năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030.--}}
+{{--                                  </pre>--}}
+{{--                                @else--}}
+{{--                                    <pre style="font-family: aktiv-grotesk, Helvetica, Arial, sans-serif">--}}
+{{--1. Business investment domains:--}}
+{{--Renewable energy and technology--}}
+{{--- new energy (studying) - New power system--}}
+{{--Sustainable industrial park development--}}
+{{--2. Strategy:--}}
+{{--Renewable energy and new energy is a future and a trend--}}
+{{-- of energy. Rt energy with his future--}}
+{{--to promote and develop – renewable energy towards a green, clean, and sustainable world--}}
+{{--for future generations.--}}
+{{--In fact, that strategy, we target the following goals:--}}
+{{--+ development, investment in construction, and operation of renewable energy projects;--}}
+{{--+ increase the size of the renewable renewable energy project from 100mw 2021 to 500mw in 2023.--}}
+{{--Towards the investment portfolio with 1gw renewable energy or in 2025;--}}
+{{--+ research, application and investment in projects using new technology such as--}}
+{{--Renewable energy, …. when those technologies are financially and financially feasible;--}}
+{{--+ development, investment in construction and operation of – industrial parks--}}
+{{--in which power ministries use for industrial production as renewable energy.--}}
+{{--3. Vision:--}}
+{{--Rt energy is developed and developed with the orientation of a pioneer in the field--}}
+{{--renewable energy and industrial parks in asean region in 2025, and in the world by 2030.--}}
+{{--                                    </pre>--}}
+{{--                                @endif--}}
 {{--                                {{App::isLocale('vi') ?--}}
 {{--: ' Templates are executed by applying them to a data structure. Annotations in the template--}}
 {{--                                refer to elements of the data structure (typically a field of a struct or a key in a--}}
@@ -729,48 +736,48 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
                             <a href="{{route('front.about')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item">
-                            <h6>{{App::isLocale('vi') ? 'Lĩnh vực hoạt động' : 'What We Do'}}</h6>
+{{--                            <h6>{{App::isLocale('vi') ? 'Lĩnh vực hoạt động' : 'What We Do'}}</h6>--}}
                             <div class="imgDes">
                                 <img src="/site/system/home/h2.jpg">
                             </div>
-                            <p>
-                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm
-                                '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template
-                                refer to elements of the data structure (typically a field of a struct or a key in a
-                                map) to control execution and derive values to be displayed. Execution of the template
-                                walks the structure and sets the cursor, represented by a period '.' and called "dot",
-                                to the value at the current location in the structure as execution proceeds.'}}
-                            </p>
+{{--                            <p>--}}
+{{--                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm--}}
+{{--                                '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template--}}
+{{--                                refer to elements of the data structure (typically a field of a struct or a key in a--}}
+{{--                                map) to control execution and derive values to be displayed. Execution of the template--}}
+{{--                                walks the structure and sets the cursor, represented by a period '.' and called "dot",--}}
+{{--                                to the value at the current location in the structure as execution proceeds.'}}--}}
+{{--                            </p>--}}
                             <a href="{{route('front.about2')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item">
-                            <h6>{{App::isLocale('vi') ? 'Bộ máy quản lý' : 'OUR TEAM'}}</h6>
+{{--                            <h6>{{App::isLocale('vi') ? 'Bộ máy quản lý' : 'OUR TEAM'}}</h6>--}}
                             <div class="imgDes">
                                 <img src="/site/system/home/h3.jpg">
                             </div>
-                            <p>
-                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm
-                                '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template
-                                refer to elements of the data structure (typically a field of a struct or a key in a
-                                map) to control execution and derive values to be displayed. Execution of the template
-                                walks the structure and sets the cursor, represented by a period '.' and called "dot",
-                                to the value at the current location in the structure as execution proceeds.'}}
-                            </p>
+{{--                            <p>--}}
+{{--                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm--}}
+{{--                                '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template--}}
+{{--                                refer to elements of the data structure (typically a field of a struct or a key in a--}}
+{{--                                map) to control execution and derive values to be displayed. Execution of the template--}}
+{{--                                walks the structure and sets the cursor, represented by a period '.' and called "dot",--}}
+{{--                                to the value at the current location in the structure as execution proceeds.'}}--}}
+{{--                            </p>--}}
                             <a href="{{route('front.about3')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item">
-                            <h6>{{App::isLocale('vi') ? 'Đối tác chiến lược' : 'OUR PARTNER'}}</h6>
+{{--                            <h6>{{App::isLocale('vi') ? 'Đối tác chiến lược' : 'OUR PARTNER'}}</h6>--}}
                             <div class="imgDes">
                                 <img src="/site/system/home/h4.jpg">
                             </div>
-                            <p>
-                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm
-                                '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template
-                                refer to elements of the data structure (typically a field of a struct or a key in a
-                                map) to control execution and derive values to be displayed. Execution of the template
-                                walks the structure and sets the cursor, represented by a period '.' and called "dot",
-                                to the value at the current location in the structure as execution proceeds.'}}
-                            </p>
+{{--                            <p>--}}
+{{--                                {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và lấy các giá trị được hiển thị. Việc thực thi mẫu sẽ đi qua cấu trúc và đặt con trỏ, được biểu thị bằng dấu chấm--}}
+{{--                                '.' và được gọi là "dấu chấm", thành giá trị tại vị trí hiện tại trong cấu trúc khi quá trình thực thi diễn ra.' : ' Templates are executed by applying them to a data structure. Annotations in the template--}}
+{{--                                refer to elements of the data structure (typically a field of a struct or a key in a--}}
+{{--                                map) to control execution and derive values to be displayed. Execution of the template--}}
+{{--                                walks the structure and sets the cursor, represented by a period '.' and called "dot",--}}
+{{--                                to the value at the current location in the structure as execution proceeds.'}}--}}
+{{--                            </p>--}}
                             <a href="{{route('front.about4')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                     </div>
@@ -786,32 +793,32 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
                          style="background-image:url(/site/system/home/h4.jpg);"></div>
                 </div>
             </div>
-            <div class="homeIndustry-nav">
-                <a href="{{route('front.about')}}"
-                   class="homeIndustry-navItem industry-item active">
-                    <div class="homeIndustry-navImg industryItem-img"
-                         style="background-image:url(/site/image/img2.jpg);"></div>
-                    <div class="homeIndustry-navTxt industryItem-txt" >{{App::isLocale('vi') ? 'Giới thiệu chung' : 'WHO WE ARE'}}</div>
-                </a>
-                <a href="{{route('front.about2')}}"
-                   class="homeIndustry-navItem industry-item">
-                    <div class="homeIndustry-navImg industryItem-img"
-                         style="background-image:url(/site/system/home/h2.jpg);"></div>
-                    <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Lĩnh vực hoạt động' : 'WHAT WE DO'}}</div>
-                </a>
-                <a href="{{route('front.about3')}}"
-                   class="homeIndustry-navItem industry-item">
-                    <div class="homeIndustry-navImg industryItem-img"
-                         style="background-image:url(/site/system/home/h3.jpg);"></div>
-                    <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Bộ máy quản lý' : 'OUR TEAM'}}</div>
-                </a>
-                <a href="{{route('front.about4')}}"
-                   class="homeIndustry-navItem industry-item">
-                    <div class="homeIndustry-navImg industryItem-img"
-                         style="background-image:url(site/system/home/h4.jpg);"></div>
-                    <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Đối tác chiến lược' : 'OUR PARTNER'}}</div>
-                </a>
-            </div>
+{{--            <div class="homeIndustry-nav">--}}
+{{--                <a href="{{route('front.about')}}"--}}
+{{--                   class="homeIndustry-navItem industry-item active">--}}
+{{--                    <div class="homeIndustry-navImg industryItem-img"--}}
+{{--                         style="background-image:url(/site/image/img2.jpg);"></div>--}}
+{{--                    <div class="homeIndustry-navTxt industryItem-txt" >{{App::isLocale('vi') ? 'Giới thiệu chung' : 'WHO WE ARE'}}</div>--}}
+{{--                </a>--}}
+{{--                <a href="{{route('front.about2')}}"--}}
+{{--                   class="homeIndustry-navItem industry-item">--}}
+{{--                    <div class="homeIndustry-navImg industryItem-img"--}}
+{{--                         style="background-image:url(/site/system/home/h2.jpg);"></div>--}}
+{{--                    <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Lĩnh vực hoạt động' : 'WHAT WE DO'}}</div>--}}
+{{--                </a>--}}
+{{--                <a href="{{route('front.about3')}}"--}}
+{{--                   class="homeIndustry-navItem industry-item">--}}
+{{--                    <div class="homeIndustry-navImg industryItem-img"--}}
+{{--                         style="background-image:url(/site/system/home/h3.jpg);"></div>--}}
+{{--                    <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Bộ máy quản lý' : 'OUR TEAM'}}</div>--}}
+{{--                </a>--}}
+{{--                <a href="{{route('front.about4')}}"--}}
+{{--                   class="homeIndustry-navItem industry-item">--}}
+{{--                    <div class="homeIndustry-navImg industryItem-img"--}}
+{{--                         style="background-image:url(site/system/home/h4.jpg);"></div>--}}
+{{--                    <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Đối tác chiến lược' : 'OUR PARTNER'}}</div>--}}
+{{--                </a>--}}
+{{--            </div>--}}
         </div>
 
         <br/>
@@ -828,7 +835,7 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
             }
         </style>
 
-        <div class="row" style="text-align: center; margin-bottom: 30px; margin-top: -10px; display: flex; justify-content: space-evenly">
+        <div class="row" style="text-align: center; margin-bottom: 50px; margin-top: -110px; display: flex; justify-content: space-evenly">
             <div>
                 <img class="wind-icon2 win-icon-right" src="/img/icons/wind-energy-blue.png" alt="win-icon">
             </div>
@@ -974,7 +981,7 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
         <div class="uk-position-relative uk-container uk-container-large uk-recent-posts">
             <div class="uk-flex uk-flex-middle uk-text-left uk-margin-medium-bottom">
                 <div class="uk-style-secondary-m uk-text-11 uk-light" style="color: black">
-                    latest news & energy insights
+                  {{App::isLocale('vi') ? 'Tin tức' : 'News'}}
                 </div>
                 <div class="uk-style-line orange"></div>
             </div>
@@ -999,11 +1006,10 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
                             <div></div>
                         </div>
                         <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
-                            AGP Sustainable Real Assets and Hartree Partners Announce US Expansion of Global Solar
-                            Partnership </h4>
+                            {{App::isLocale('vi') ? 'Năng lượng gió cho môi trường xanh' : 'Sustainable Real Assets '}} </h4>
                         <a class="uk-button uk-color-teal uk-style-secondary-b " href="#">
                             <span class="uk-color-teal uk-text-middle uk-margin-right"
-                                  style="color: #114D81 !important">Read Article</span>
+                                  style="color: #114D81 !important"> {{App::isLocale('vi') ? 'Chi tiết' : 'Read Article '}}</span>
                             <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}"
                                  alt="win-icon">
                         </a>
@@ -1014,7 +1020,7 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
                     <div>
                         <div class="uk-cover-container uk-margin-small-bottom">
                             <canvas width="460" height="370"></canvas>
-                            <img data-src="{{ asset('site/system/about_us/a2.jpg') }}"
+                            <img data-src="{{ asset('site/system/about_us/1.jpg') }}"
                                  data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                  class=" Sirv uk-utility-object-fit-cover "
                                  alt="ASE-EAL-Header-Image.png?w=1024&h=505&scale"
@@ -1026,12 +1032,11 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
                             <div></div>
                         </div>
                         <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
-                            AMPYR Solar Europe signs deal with Edinburgh Airport to develop solar farm, battery and
-                            electric vehicle infrastructure </h4>
+                            {{App::isLocale('vi') ? 'Năng lượng mặt trời cho môi trường xanh' : 'Sustainable Real Assets '}} </h4>
                         <a class="uk-button uk-color-teal uk-style-secondary-b "
                            href="https://www.agpgroup.com/insights/ampyr-solar-europe-signs-deal-with-edinburgh-airport-to-develop-solar-farm-battery-and-electric-vehicle-infrastructure/">
                             <span class="uk-color-teal uk-text-middle uk-margin-right"
-                                  style="color: #114D81 !important">Read Article</span>
+                                  style="color: #114D81 !important">{{App::isLocale('vi') ? 'Chi tiết' : 'Read Article '}}</span>
                             <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}"
                                  alt="win-icon">
                         </a>
@@ -1054,12 +1059,11 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
                             <div></div>
                         </div>
                         <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
-                            AMPYR Solar Europe Secures €400 Million from CARVAL Investors to Develop and Construct
-                            Pipeline of European Solar Assets </h4>
+                            {{App::isLocale('vi') ? 'Dư án năng lượng tái tạo' : 'Sustainable Real Assets '}}</h4>
                         <a class="uk-button uk-color-teal uk-style-secondary-b "
                            href="https://www.agpgroup.com/insights/ampyr-solar-europe-secures-e400-million-from-carval-investors-to-develop-and-construct-pipeline-of-european-solar-assets/">
                             <span class="uk-color-teal uk-text-middle uk-margin-right"
-                                  style="color: #114D81 !important">Read Article</span>
+                                  style="color: #114D81 !important">{{App::isLocale('vi') ? 'Chi tiết' : 'Read Article '}}</span>
                             <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}"
                                  alt="win-icon">
                         </a>
@@ -1067,35 +1071,37 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
                 </div>
             </div>
         </div>
-        <div
-            class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
-            <div class="uk-position-cover uk-cover-container">
-                <canvas width="1600" height="708"></canvas>
-                <img data-src="/site/system/sun_enegy.jpg"
-                     data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                     class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/>
-            </div>
-            <div class="uk-text-center">
-                <div class="uk-position-large uk-position-bottom" style="background: rgba(17, 77, 129,.6)">
-                    <h4 class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-margin-small-bottom uk-margin-auto uk-width-1-2@m"
-                        uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
-                        Partner with us to generate a positive impact for people and the environment </h4>
-                    <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                        <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="{{route('front.contact')}}">
-                            <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
-                            <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
-                                  uk-icon="icon: button-circle; ratio: 1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+{{--        <div--}}
+{{--            class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">--}}
+{{--            <div class="uk-position-cover uk-cover-container">--}}
+{{--                <canvas width="1600" height="708"></canvas>--}}
+{{--                <img data-src="/site/system/sun_enegy.jpg"--}}
+{{--                     data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"--}}
+{{--                     class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/>--}}
+{{--            </div>--}}
+{{--            <div class="uk-text-center">--}}
+{{--                <div class="uk-position-large uk-position-bottom" style="background: rgba(17, 77, 129,.6)">--}}
+{{--                    <h4 class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-margin-small-bottom uk-margin-auto uk-width-1-2@m"--}}
+{{--                        uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">--}}
+{{--                        Partner with us to generate a positive impact for people and the environment </h4>--}}
+{{--                    <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">--}}
+{{--                        <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="{{route('front.contact')}}">--}}
+{{--                            <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>--}}
+{{--                            <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"--}}
+{{--                                  uk-icon="icon: button-circle; ratio: 1"></span>--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
         <style>
             .partner-row {
                 background-color: #f0f0f0;
                 height: 280px;
                 margin-bottom: 50px;
+                margin-top: 50px;
             }
 
 
@@ -1110,42 +1116,42 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
 
         <div class="uk-container uk-padding-medium-top partner-row">
             <div uk-grid="" class=" uk-flex-middle">
-                <div class="uk-width-1-1  uk-text-center uk-footer-logos uk-first-column">
+                <div class="uk-width-1-1  uk-text-center uk-footer-logos uk-first-column" style="display: flex; justify-content: space-evenly">
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                         <a href="#" rel="noreferrer" target="_blank">
 
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p1.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/1.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
 
                         <a href="#" rel="noreferrer" target="_blank">
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p2.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/2.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                         <a href="" rel="noreferrer" target="_blank">
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p3.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/3.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                         <a href="" rel="noreferrer" target="_blank">
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p4.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/4.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                         <a href="" rel="noreferrer" target="_blank">
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p5.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/5.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href=" rel=" noreferrer"="" target="_blank">
-                        <img src="http://rt.dnsmedia.vn/site/system/partner/p6.png" class="uk-width-footer-logo">
+                        <a href=" rel=" noreferrer="" target="_blank">
+                        <img src="/site/system/partner2/6.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                         <a href="" rel="noreferrer" target="_blank">
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p7.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/7.png" class="uk-width-footer-logo">
                         </a>
                     </div>
 
@@ -1154,42 +1160,42 @@ renewable energy and industrial parks in asean region in 2025, and in the world 
 
 
             <div uk-grid="" class=" uk-flex-middle">
-                <div class="uk-width-1-1  uk-text-center uk-footer-logos uk-first-column">
+                <div class="uk-width-1-1  uk-text-center uk-footer-logos uk-first-column" style="display: flex; justify-content: space-evenly">
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                         <a href="#" rel="noreferrer" target="_blank">
 
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p1.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/8.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
 
                         <a href="#" rel="noreferrer" target="_blank">
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p2.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/9.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                         <a href="" rel="noreferrer" target="_blank">
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p3.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/10.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                         <a href="" rel="noreferrer" target="_blank">
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p4.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/11.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                         <a href="" rel="noreferrer" target="_blank">
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p5.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/12.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href=" rel=" noreferrer"="" target="_blank">
-                        <img src="http://rt.dnsmedia.vn/site/system/partner/p6.png" class="uk-width-footer-logo">
+                        <a href=" rel=" noreferrer="" target="_blank">
+                        <img src="/site/system/partner2/13.png" class="uk-width-footer-logo">
                         </a>
                     </div>
                     <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
                         <a href="" rel="noreferrer" target="_blank">
-                            <img src="http://rt.dnsmedia.vn/site/system/partner/p7.png" class="uk-width-footer-logo">
+                            <img src="/site/system/partner2/14.png" class="uk-width-footer-logo">
                         </a>
                     </div>
 

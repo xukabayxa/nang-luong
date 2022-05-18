@@ -2,6 +2,15 @@
 @section('title')
     <title>{{ "Về chúng tôi - " . ucfirst($_SERVER['HTTP_HOST']) }}</title>
 @endsection
+
+@section('css')
+    <link href="/css/inves-custom.css" rel="stylesheet">
+    <link href="/css/grid-inves.scss" rel="stylesheet">
+    <link href="/css/inves-custom-2.css" rel="stylesheet">
+    <link href="/css/addons.css" rel="stylesheet">
+
+@endsection
+
 @section('content')
     <div uk-sticky="animation: uk-animation-slide-top;">
         <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
@@ -10,14 +19,15 @@
     </div>
     <!-- <span></span> -->
     <section id="sozo-main">
-        <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
+        <div
+            class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
 
             <div class="uk-position-cover">
                 <div class="uk-cover-container">
                     <img data-src="/site/system/inves/i_1.jpg"
                          data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                          class=" Sirv uk-utility-object-fit-cover "
-                         src = "/site/system/inves/i_1.jpg"
+                         src="/site/system/inves/i_1.jpg"
                          alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled.jpg?w=1024&h=684&scale"
                          title="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled.jpg?w=1024&h=684&scale"/>
                     <canvas width="1600" height="900"></canvas>
@@ -56,185 +66,335 @@
 
         </div>
 
-        <div class="uk-section uk-background-dark uk-light">
-            <div class="uk-container uk-container-medium">
-                <div class="uk-child-width-1-2@m" uk-grid>
-                    <div class="uk-style-primary-l">
-                        <h3 class="uk-style-primary-m uk-text-3 uk-text-lh-4 uk-width-small"
-                            uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 150;">
-                            Powering a sustainable future </h3>
+        <style>
+            .container {
+                width: 100%;
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 1240px;
+            }
 
-                        <h4 class="uk-style-primary-l uk-text-9 uk-text-lh-3 uk-margin"
-                            uk-scrollspy="cls: uk-animation-fade; delay: 300;">
-                            AMPYR Energy is AGP’s global renewable energy business. We develop and operate renewable
-                            energy assets </h4>
+            @media screen and (max-width: 768px){
+                #field-tab-2 {
+                    padding-top: 90px;
+                }
+            }
 
-                        <ul class="uk-list uk-list-collapse"
-                            uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > li; delay: 100;">
-                            <li class="uk-text-11 uk-lh-48">
-                                <span class="uk-icon uk-preserve uk-margin-small-right"
-                                      uk-icon="icon: bullet; ratio: 1"></span>
-                                Onshore wind
-                            </li>
-                            <li class="uk-text-11 uk-lh-48">
-                                <span class="uk-icon uk-preserve uk-margin-small-right"
-                                      uk-icon="icon: bullet; ratio: 1"></span>
-                                Ground-mounted solar
-                            </li>
-                            <li class="uk-text-11 uk-lh-48">
-                                <span class="uk-icon uk-preserve uk-margin-small-right"
-                                      uk-icon="icon: bullet; ratio: 1"></span>
-                                Rooftop and behind-the-meter solar
-                            </li>
-                            <li class="uk-text-11 uk-lh-48">
-                                <span class="uk-icon uk-preserve uk-margin-small-right"
-                                      uk-icon="icon: bullet; ratio: 1"></span>
-                                Battery energy storage systems
-                            </li>
-                            <li class="uk-text-11 uk-lh-48">
-                                <span class="uk-icon uk-preserve uk-margin-small-right"
-                                      uk-icon="icon: bullet; ratio: 1"></span>
-                                Energy as a service and decentralised power solutions
-                            </li>
-                        </ul>
 
-                        <div class="uk-margin-top" uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                            <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="https://ampyrenergy.com/"
-                               target="_blank">
-                                <span class="uk-color-tertiary uk-text-middle uk-margin-right">AMPYR website</span>
-                                <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
-                                      uk-icon="icon: button-circle; ratio: 1"></span>
-                            </a>
+        </style>
+
+        <div id="field-page" class="section-page section" style="background-color: #0e1b2f">
+{{--            <div class="section-head">--}}
+{{--                <h1 class="section-title">Lĩnh vực hoạt động</h1>--}}
+{{--            </div>--}}
+
+            <div class="tab-content">
+                <div class="tab-pane  active" id="field-tab-2" data-slug="nang-luong-tai-tao" style="">
+                    <div class="tech-intro">
+                        <div class="text-information" style="margin: 0">
+                            <div class="container">
+                                <div class="text-content">
+                                    <div class="intro-title">Năng lượng tái tạo</div>
+{{--                                    <div class="intro-desc">--}}
+{{--                                        <p>Trong lĩnh vực năng lượng tái tạo, TTVN Group đã đầu tư thành công và đưa vào vận hành thương mại 3 nhà máy điện mặt trời gồm: Nhà máy ĐMT Hòa Hội (tỉnh Phú Yên), Nhà máy ĐMT Bình Nguyên (tỉnh Quảng Ngãi) và Nhà máy ĐMT Cát Hiệp (tỉnh Bình Định) với tổng công suất 357MWp, đưa TTVN Group trở thành một trong 3 doanh nghiệp hàng đầu Việt Nam chiếm gần 8% thị phần phát điện tái tạo của cả nước. Bên cạnh các dự án điện năng lượng mặt trời trên mặt đất, thời gian gần đây, TTVN Group đã mở rộng sang đầu tư xây dựng các dự án điện gió và điện mặt trời trên mái, mục tiêu phát triển khoảng 200MW điện gió và 50MW điện mặt trời trên mái trong giai đoạn từ nay đến 2021.Ngoài ra, hướng phát triển các dự án điện - khí LNG cũng đang được khảo sát, nghiên cứu.</p>--}}
+{{--                                    </div>--}}
+                                </div>
+                            </div>
                         </div>
-
-                        <p class="uk-text-11 uk-text-lh-1 uk-width-large"
-                           uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                            AMPYR Energy invests, develops, operates and manages renewable energy assets and provides
-                            sophisticated financing, supply and risk-management strategies for power users.<br/>
-                            <br/>
-                            AMPYR Energy has been created by highly experienced partners to help accelerate the
-                            transition to a zero-carbon future and to realise the huge potential of that shift – for
-                            investors, for power users and for communities. </p>
-
-
+                        <div class="tech-thumb">
+                            <div class="container">
+{{--                                <img src="https://www.ttvngroup.vn/static/common/img/icon_image/6b4da98376771eb5b913714d2f170410.svg" class="img-fluid">--}}
+                            </div>
+                        </div>
                     </div>
-                    <div uk-scrollspy="cls: uk-animation-slide-right-small; target: > div; delay: 200;">
-                        <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right@m uk-oval uk-height-pointer uk-margin-medium">
-                            <div class="uk-width-medium uk-style-primary-l uk-text-8 uk-lh-36 uk-padding-small-left">
-                                Presently developing a portfolio of over 7GW of renewable energy assets globally
-                            </div>
-                            <span class="uk-visible@m uk-icon uk-preserve uk-position-left uk-oval-pointer uk-oval-teal"
-                                  uk-icon="icon: half-circle; ratio: 1"></span>
+
+                    <div class="tech-frame">
+                        <div class="tech-bg">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1519.2 1264">
+                                <defs><style>.cls-1{fill:#f6f7f6;}.cls-2{fill:rgba(255,255,255,.1);}</style></defs>
+
+                                <rect class="cls-2" width="1519" height="1219.8704246414" style="transform: rotate(36.00583969091385deg) translate(34%, -66.3268191274918px);"></rect>
+                                <rect class="cls-2" width="1219.8704246414" height="1219.8704246414" style="transform: rotate(36.00583969091385deg) translate(70%, -232.1438669462213px);"></rect>
+
+                                <polygon class="cls-1" points="0 40 1519.2 1104 1519.2 1264 0 1519.2 0 40"></polygon>
+                            </svg>
                         </div>
-                        <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right@m uk-oval uk-height-pointer uk-margin-medium">
-                            <div class="uk-width-medium uk-style-primary-l uk-text-8 uk-lh-36 uk-padding-small-left">
-                                Management team with a track record of delivering over 3GW of wind and solar projects in
-                                Asia Pacific
+                        <div class="container">
+                            <div class="tech-list">
+                                <div class="tech-column-one">
+                                    <div class="tech-item">
+                                        <div class="tech-line"></div>
+                                        <img src="https://www.ttvngroup.vn/static/common/img/icon_image/f930a29728517737ce62ada64bbd1856.svg" class="img-fluid tech-item-icon">
+                                        <div class="tech-item-title">Tận dụng năng lượng xanh</div>
+                                        <div class="tech-item-desc">Trong bối cảnh hiện nay khi nguồn nhiên liệu hóa thạch dần cạn kiệt và phát thải từ việc sử dụng nguồn nhiên liệu này đang ảnh hưởng nghiêm trọng đến môi trường sinh thái thì việc tận dụng nguồn năng lượng mặt trời, năng lượng gió, năng lượng sóng biển… ngày càng trở nên cấp bách và thu hút sự quan tâm của các chính phủ và của các doanh nghiệp. Việt Nam với khí hậu nhiệt đới và đường bờ biển dài là địa bàn còn nhiều tiềm năng cho việc triển khai thực hiện các dự án năng lượng tái tạo.</div>
+                                    </div>
+                                    <div class="tech-item tech-item-down">
+                                        <div class="tech-line"></div>
+                                        <img src="https://www.ttvngroup.vn/static/common/img/icon_image/c3836d34114a580cc5fc7a09e8e245ab.svg" class="img-fluid tech-item-icon">
+                                        <div class="tech-item-title">Lợi ích cao đến cộng đồng</div>
+                                        <div class="tech-item-desc">Nguồn năng lượng được tạo ra từ các nhà máy điện năng lượng tái tạo ít gây ra tác động xấu đối với môi trường và  đối với sức khỏe con người. Thêm vào đó, các dự án năng lượng tái tạo còn góp phần thúc đẩy phát triển kinh tế - xã hội, tăng nguồn thu cho ngân sách nhà nước, cải thiện điều kiện sống và tạo ra nhiều việc làm cho cư dân địa phương nơi dự án được triển khai.</div>
+                                    </div>
+                                </div>
+
+                                <div class="tech-column-two">
+                                    <div class="tech-item item-only-thumb text-center">
+                                        <img src="https://www.ttvngroup.vn/static/common/img/icon_image/3321b26a079ca8d772f5008b3a2cdfe5.svg" class="img-fluid">
+                                    </div>
+                                    <div class="tech-item">
+                                        <div class="tech-line"></div>
+                                        <img src="https://www.ttvngroup.vn/static/common/img/icon_image/7e2b25e88de3ad7a579af8b525b2d797.svg" class="img-fluid tech-item-icon">
+                                        <div class="tech-item-title">Vươn tầm khu vực</div>
+                                        <div class="tech-item-desc">Đồng hành với TTVN Group trong phát triển, đầu tư xây dựng các dự án năng lượng tái tạo là những tập đoàn lớn đến từ Thái Lan, Pháp, Ireland, Nga, Nhật Bản... đã triển khai nhiều dự án năng lượng ở nhiều nước trên thế giới. Điều này giúp cho TTVN Group không những nâng cao uy tín, vị thế ở thị trường trong nước mà còn được nhiều nhà đầu tư quốc tế biết đến, đặt vấn đề thiết lập quan hệ đối tác, là điều kiện thuận lợi để hướng tới mục tiêu vươn tầm ra khu vực.</div>
+                                    </div>
+                                </div>
+                                <div class="tech-column-three" style="">
+{{--                                    <img src="https://www.ttvngroup.vn/static/common/img/icon_image/3321b26a079ca8d772f5008b3a2cdfe5.svg" class="img-fluid">--}}
+                                </div>
                             </div>
-                            <span class="uk-visible@m uk-icon uk-preserve uk-position-left uk-oval-pointer uk-oval-teal"
-                                  uk-icon="icon: half-circle; ratio: 1"></span>
-                        </div>
-                        <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right@m uk-oval uk-height-pointer uk-margin-medium">
-                            <div class="uk-width-medium uk-style-primary-l uk-text-8 uk-lh-36 uk-padding-small-left">
-                                Offices with full development and O&amp;M capability in Singapore, Australia, India, UK,
-                                USA
-                            </div>
-                            <span class="uk-visible@m uk-icon uk-preserve uk-position-left uk-oval-pointer uk-oval-teal"
-                                  uk-icon="icon: half-circle; ratio: 1"></span>
-                        </div>
-                        <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right@m uk-oval uk-height-pointer uk-margin-medium">
-                            <div class="uk-width-medium uk-style-primary-l uk-text-8 uk-lh-36 uk-padding-small-left">
-                                Presently developing a portfolio of over 7GW of renewable energy assets globally
-                            </div>
-                            <span class="uk-visible@m uk-icon uk-preserve uk-position-left uk-oval-pointer uk-oval-teal"
-                                  uk-icon="icon: half-circle; ratio: 1"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="uk-position-relative uk-background-image uk-flex uk-flex-middle uk-height-1-1 uk-margin-auto">
-            <div class="uk-position-cover uk-cover-container">
-                <canvas width="1600" height="708"></canvas>
-                <img data-src="/site/system/inves/i_1_1.jpg"
-                     data-options="autostart:created;" class="uk-image-grayscale Sirv uk-utility-object-fit-cover "
-                     alt="64fee03f62e038e277e5863154ebf95e34ac28f6.jpg?w=1024&h=685&scale"
-                     title="64fee03f62e038e277e5863154ebf95e34ac28f6.jpg?w=1024&h=685&scale"/></div>
-            <div class="uk-background-white-wash uk-position-cover"></div>
-            <div class="uk-section uk-width-1-1 uk-section-large">
-                <div class="uk-container">
-                    <div class="uk-flex-middle uk-flex-center uk-text-center uk-grid-column-small uk-grid-row-large uk-child-width-1-2@s uk-child-width-1-3@m uk-style-tertiary uk-text-uppercase uk-text-11 uk-lh-44"
-                         uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 200;">
-                        <div>
-                            <div class="uk-margin-small-bottom">Presently developing</div>
-                            <div>
-                                <span class="uk-text-2">26</span>
-                                <span class="uk-text-6"></span>
-                            </div>
-                            <div class="uk-margin-small-top uk-width-3xmedium uk-margin-auto-left uk-margin-auto-right uk-text-11 uk-text-lh-3">
-                                onshore wind projects
+        <div id="ctl00_divCenter" class="middle-fullwidth">
+
+            <div class='clearfix Module Module-88'>
+                <div class='ModuleContent'>
+                    <section class="clearfix activity-page">
+                        <div class="container">
+                            <h1 class="pagetitle">Dự án đầu tư</h1>
+                            <div class="list-activity">
+                                <div class="row flex flex-wrap mrb-xs-15 mrb-md- mrb-lg-50 wow fadeInUp">
+                                    <div class="col-xs-12 col-lg-6">
+                                        <div class="activitycol">
+                                            <a class="img"
+                                               href=""
+                                               target="_self" title="">
+                                                <img src="/site/system/inves/i_1.jpg"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-lg-6 flex-center bg1">
+                                        <div class="activitycol">
+                                            <figure>
+                                                <figcaption>
+                                                    <div class="activityname">
+                                                        <a href="https://www.fico.com.vn/linh-vuc-hoat-dong/san-xuat-xi-mang-va-san-pham-sau-xi-mang"
+                                                           target="_self"
+                                                           title="Sản xuất xi măng và sản phẩm sau xi măng">Dự án điện gió Adani Phước Minh</a></div>
+                                                    <div class="activitydesc">
+
+                                                            <pre>
+                                                         Quy mô: công suất 27.2 MW, diện tích 30ha
+                                                            Tổng vốn đầu tư: 1150 tỷ đồng
+                                                            Nhà cung cấp: GE
+                                                            Nhà thầu: PowerChina VietNam Limited Company
+                                                            Tư vấn thiết kế: Henste engineering- Singapore)
+                                                            Tư vấn giám sát: Rina
+                                                            COD: 2/2021</pre>
+
+                                                       </div>
+                                                    <a class="viewmore"
+                                                       href=""
+                                                       target="_self"
+                                                       title="">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row flex flex-wrap mrb-xs-15 mrb-md- mrb-lg-50 wow fadeInUp">
+                                    <div class="col-xs-12 col-lg-6 push-lg-6">
+                                        <div class="activitycol">
+                                            <a class="img"
+                                               href=""
+                                               target="_self" title="">
+                                                <img src="/site/system/inves/i2.jpg"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-lg-6 pull-lg-6 flex-center bg1">
+                                        <div class="activitycol">
+                                            <figure>
+                                                <figcaption>
+                                                    <div class="activityname">
+                                                        <a href=""
+                                                           target="_self"
+                                                           title="Sản xuất kinh doanh vật liệu hoàn thiện">Dự án điện mặt trời Adani Phước Minh</a></div>
+                                                    <div class="activitydesc">
+                                                        <pre>
+                                                            Quy mô: công suất 50MW, diện tích 60 ha
+                                                            Tổng vốn đầu tư: 1000 tỷ đồng
+                                                            Nhà cung cấp: JA
+                                                            - Nhà thầu: PECC1  và Rina
+                                                            - Bên tư vấn, giám sát: Rina
+                                                             COD: 9/2020
+                                                        </pre>
+                                                    </div>
+                                                    <a class="viewmore"
+                                                       href=""
+                                                       target="_self"
+                                                       title="">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row flex flex-wrap mrb-xs-15 mrb-md- mrb-lg-50 wow fadeInUp">
+                                    <div class="col-xs-12 col-lg-6">
+                                        <div class="activitycol">
+                                            <a class="img"
+                                               href=""
+                                               target="_self"
+                                               title="n">
+                                                <img src="/site/system/inves/i_3_3.jpg"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-lg-6 flex-center bg1">
+                                        <div class="activitycol">
+                                            <figure>
+                                                <figcaption>
+                                                    <div class="activityname">
+                                                        <a href=""
+                                                           target="_self"
+                                                           title="Cụm dự án điện mặt trời áp mái – tỉnh Bình Phước">Cụm dự án điện mặt trời áp mái – tỉnh Bình Phước</a></div>
+                                                    <div class="activitydesc">
+                                                       <pre>
+                                                           Công suất 23 MW, tổng mức đầu tư 360 tỷ đồng
+                                                       </pre>
+                                                    </div>
+                                                    <a class="viewmore"
+                                                       href=""
+                                                       target="_self"
+                                                       title="Khai thác, chế biến &amp; kinh doanh khoáng sản">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row flex flex-wrap mrb-xs-15 mrb-md- mrb-lg-50 wow fadeInUp">
+                                    <div class="col-xs-12 col-lg-6 push-lg-6">
+                                        <div class="activitycol">
+                                            <a class="img"
+                                               href="https://www.fico.com.vn/linh-vuc-hoat-dong/kinh-doanh-thuong-mai-vat-lieu-xay-dung-1"
+                                               target="_self" title="">
+                                                <img src="/site/system/inves/ic.jpg"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-lg-6 pull-lg-6 flex-center bg1">
+                                        <div class="activitycol">
+                                            <figure>
+                                                <figcaption>
+                                                    <div class="activityname">
+                                                        <a href="https://www.fico.com.vn/linh-vuc-hoat-dong/kinh-doanh-thuong-mai-vat-lieu-xay-dung-1"
+                                                           target="_self"
+                                                           title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">Dự án điện mặt trời đa mục tiêu tại tỉnh Khánh Hòa</a></div>
+                                                    <div class="activitydesc"><p>
+                                                            Công suất 317MW, tổng mức đầu tư dự kiến – 4.400 tỷ đồng
+                                                        </p></div>
+                                                    <a class="viewmore"
+                                                       href=""
+                                                       target="_self"
+                                                       title="">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row flex flex-wrap mrb-xs-15 mrb-md- mrb-lg-50 wow fadeInUp">
+                                    <div class="col-xs-12 col-lg-6">
+                                        <div class="activitycol">
+                                            <a class="img"
+                                               href=""
+                                               target="_self" title="">
+                                                <img src="/site/system/inves/i_1.jpg"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-lg-6 flex-center bg1">
+                                        <div class="activitycol">
+                                            <figure>
+                                                <figcaption>
+                                                    <div class="activityname">
+                                                        <a href=""
+                                                           target="_self"
+                                                           title="Xây lắp hạ tầng &amp; kinh doanh bất động sản">Dự án điện gió tại tỉnh Tiền Giang </a></div>
+                                                    <div class="activitydesc">
+                                                        Giang 535 MW tổng mức đầu tư dự kiến: 21.000 tỷ đồng
+                                                    </div>
+                                                    <a class="viewmore"
+                                                       href=""
+                                                       target="_self"
+                                                       title="">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}
+                                                        </a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row flex flex-wrap mrb-xs-15 mrb-md- mrb-lg-50 wow fadeInUp">
+                                    <div class="col-xs-12 col-lg-6 push-lg-6">
+                                        <div class="activitycol">
+                                            <a class="img"
+                                               href=""
+                                               target="_self" title="">
+                                                <img src="/site/system/inves/i_3_1.jpg"
+                                                     alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-lg-6 pull-lg-6 flex-center bg1">
+                                        <div class="activitycol">
+                                            <figure>
+                                                <figcaption>
+                                                    <div class="activityname">
+                                                        <a href=""
+                                                           target="_self"
+                                                           title="">Dự án điện gió AH1, AH2 tại tỉnh Bến Tre </a></div>
+                                                    <div class="activitydesc"><p>
+                                                            100MW, tổng mức đầu tư dự kiến: 4800 tỷ đồng
+                                                        </p></div>
+                                                    <a class="viewmore"
+                                                       href=""
+                                                       target="_self"
+                                                       title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                        <div>
-                            <div class="uk-margin-small-bottom">Presently developing</div>
-                            <div>
-                                <span class="uk-text-2">67</span>
-                                <span class="uk-text-6"></span>
-                            </div>
-                            <div class="uk-margin-small-top uk-width-3xmedium uk-margin-auto-left uk-margin-auto-right uk-text-11 uk-text-lh-3">
-                                solar projects
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-margin-small-bottom">Presently developing</div>
-                            <div>
-                                <span class="uk-text-2">5</span>
-                                <span class="uk-text-6"></span>
-                            </div>
-                            <div class="uk-margin-small-top uk-width-3xmedium uk-margin-auto-left uk-margin-auto-right uk-text-11 uk-text-lh-3">
-                                battery storage projects
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <span class="uk-text-2">7</span>
-                                <span class="uk-text-6">GW+</span>
-                            </div>
-                            <div class="uk-margin-small-top uk-width-3xmedium uk-margin-auto-left uk-margin-auto-right uk-text-11 uk-text-lh-3">
-                                of renewable energy assets under development
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-margin-small-top uk-width-3xmedium uk-margin-auto-left uk-margin-auto-right uk-text-11 uk-text-lh-3">
-                                Also developing grid ancillary power for balancing requirement as part of PPA
-                            </div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </div>
+
         </div>
-        <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
-            <div class="uk-position-cover uk-cover-container">
-                <canvas width="1600" height="708"></canvas>
-                <img data-src="/site/system/inves/i_1_1.jpg" src = "/site/system/inves/i_1_1.jpg"
-                     data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                     class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
-            <div class="uk-text-center">
-                <div class="uk-position-large uk-position-bottom">
-                    <h4 class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-margin-small-bottom uk-margin-auto uk-width-1-2@m"
-                        uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
-                        Partner with us to generate a positive impact for people and the environment </h4>
-                    <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                        <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                           href="">
-                            <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
-                            <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
-                                  uk-icon="icon: button-circle; ratio: 1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+{{--        <div class="uk-section uk-background-dark uk-light">--}}
+{{--            <div class="uk-container uk-container-medium">--}}
+{{--                <div class="uk-child-width-1-2@m" uk-grid>--}}
+
+
+{{--                  --}}
+
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
     </section>
 @endsection

@@ -2564,9 +2564,9 @@ select.uk-form-width-xsmall {
     padding-left: 2em
 }
 
-*+.uk-grid-margin, .uk-grid+.uk-grid, .uk-grid>.uk-grid-margin {
-    margin-top: 2em
-}
+/**+.uk-grid-margin, .uk-grid+.uk-grid, .uk-grid>.uk-grid-margin {*/
+/*    margin-top: 2em*/
+/*}*/
 
 @media (min-width: 1200px) {
     .uk-grid {
@@ -2577,9 +2577,9 @@ select.uk-form-width-xsmall {
         padding-left: 2.5em
     }
 
-    *+.uk-grid-margin, .uk-grid+.uk-grid, .uk-grid>.uk-grid-margin {
-        margin-top: 2.5em
-    }
+    /**+.uk-grid-margin, .uk-grid+.uk-grid, .uk-grid>.uk-grid-margin {*/
+    /*    margin-top: 2.5em*/
+    /*}*/
 }
 
 .uk-grid-column-small, .uk-grid-small {
@@ -2614,9 +2614,9 @@ select.uk-form-width-xsmall {
     padding-left: 2.5em
 }
 
-*+.uk-grid-margin-large, .uk-grid+.uk-grid-large, .uk-grid+.uk-grid-row-large, .uk-grid-large>.uk-grid-margin, .uk-grid-row-large>.uk-grid-margin {
-    margin-top: 2.5em
-}
+/**+.uk-grid-margin-large, .uk-grid+.uk-grid-large, .uk-grid+.uk-grid-row-large, .uk-grid-large>.uk-grid-margin, .uk-grid-row-large>.uk-grid-margin {*/
+/*    margin-top: 2.5em*/
+/*}*/
 
 @media (min-width: 1200px) {
     .uk-grid-column-large, .uk-grid-large {
@@ -2627,9 +2627,9 @@ select.uk-form-width-xsmall {
         padding-left: 6em
     }
 
-    *+.uk-grid-margin-large, .uk-grid+.uk-grid-large, .uk-grid+.uk-grid-row-large, .uk-grid-large>.uk-grid-margin, .uk-grid-row-large>.uk-grid-margin {
-        margin-top: 6em
-    }
+    /**+.uk-grid-margin-large, .uk-grid+.uk-grid-large, .uk-grid+.uk-grid-row-large, .uk-grid-large>.uk-grid-margin, .uk-grid-row-large>.uk-grid-margin {*/
+    /*    margin-top: 6em*/
+    /*}*/
 }
 
 .uk-grid-collapse, .uk-grid-column-collapse {
@@ -6113,7 +6113,7 @@ ul.uk-nav-sub {
 }
 
 .Sirv.uk-width-footer-logo, .uk-width-footer-logo {
-    max-height: 60px;
+    max-height: 80px;
     max-width: 200px !important;
     width: auto !important
 }
@@ -6385,7 +6385,7 @@ td.uk-text-break, th.uk-text-break {
 }
 
 .uk-style-primary-l {
-    font-weight: 300
+    /*font-weight: 300*/
 }
 
 .uk-style-primary-b {
@@ -8934,7 +8934,7 @@ img.Sirv {
 }
 
 .uk-recent-posts {
-    margin-top: -460px
+    margin-top: -380px
 }
 
 .uk-padding {
