@@ -93,30 +93,43 @@
                         <span class="uk-style-secondary-m uk-text-primary uk-text-14 uk-lh-15 uk-position-meta">
                 {{trans('message.office_footer')}}
             </span>
-                <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
-                    Hà Nội
-                     </h5>
-                <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
-                    Lô B13/D21+B15/D21 ngõ 72, <br>
-                    phố Trần Thái Tông, Phường Dịch Vọng Hậu, Quận Cầu Giấy,<br/>
-                    <br/>
-                </div>
-                <div class="uk-style-primary-m uk-text-13 uk-lh-28">
-                    <a href="tel:+094 8668 889" class="uk-text-underline">+094 8668 889</a>
-                </div>
+                @if(App::isLocale('vi'))
+                    <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
+                        Hà Nội
+                    </h5>
+                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
+                        Lô B13/D21+B15/D21 ngõ 72, <br>
+                        phố Trần Thái Tông, Phường Dịch Vọng Hậu, Quận Cầu Giấy,<br/>
+                        <br/>
+                    </div>
+                    <div class="uk-style-primary-m uk-text-13 uk-lh-28">
+                        <a href="tel:+8494 866 8889" class="uk-text-underline">+8494 866 8889</a>
+                    </div>
+                @else
+
+                    <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
+                        Hanoi
+                    </h5>
+                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
+                        Spring Heirs Tower, No. 9/82 Dich Vong Hau, Cau Giay, Hanoi, <br>
+                      <br/>
+                        <br/>
+                    </div>
+                    <div class="uk-style-primary-m uk-text-13 uk-lh-28">
+                        <a href="tel:+8494 866 8889" class="uk-text-underline">+8494 866 8889</a>
+                    </div>
+                @endif
+
             </div>
 
-{{--            <div>--}}
-{{--                <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">--}}
-{{--                    HCM </h5>--}}
-{{--                <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">--}}
-{{--                    66 TaySon<br/>--}}
-{{--                    Q1 <br/>--}}
-{{--                </div>--}}
-{{--                <div class="uk-style-primary-m uk-text-13 uk-lh-28">--}}
-{{--                    <a href="tel:+999 99 99 999" class="uk-text-underline">+999 99 99 999</a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            <div>
+                <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
+                    Ho Chi Minh </h5>
+                <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
+                    F18, Thao Dien,<br/>
+                    District 2, Ho Chi Minh City <br/>
+                </div>
+            </div>
 
         </div>
     </div>

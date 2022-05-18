@@ -30,9 +30,9 @@
                  style="background:url(https://solarwp.wpengine.com/wp-content/uploads/2016/09/page-title-img.jpg)
            top left repeat;">
             <div class="container">
-                <div class="main-title-section"><h1>About Us</h1></div>
-                <div class="breadcrumb"><a href="https://solarwp.wpengine.com/">Home</a><span class="fa default"></span><span
-                        class="current">About Us</span></div>
+                <div class="main-title-section"><h1>{{App::isLocale('vi') ? 'Về chúng tôi' : 'About Us'}}</h1></div>
+{{--                <div class="breadcrumb"><a href="https://solarwp.wpengine.com/">Home</a><span class="fa default"></span><span--}}
+{{--                        class="current">About Us</span></div>--}}
             </div>
         </section>
         <div class="container">
@@ -421,13 +421,7 @@
                         </div>
                     </div>
 
-                    <div class="uk-container uk-section"
-                         uk-scrollspy="cls: uk-animation-slide-right-small; target: .uk-width-2xmedium; delay: 200;">
-                        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl uk-flex uk-flex-middle uk-grid"
-                             uk-grid="" uk-height-match=".uk-oval"
-                             uk-scrollspy="cls: uk-animation-draw-reverse; target: .uk-oval-partner; delay: 300;">
-                        </div>
-                    </div>
+
                 </div><!-- #post-8 -->
             </section>
         </div>
