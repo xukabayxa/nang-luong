@@ -3863,7 +3863,7 @@ ul.uk-nav-sub {
 }
 
 .uk-sticky.uk-active .uk-navbar-container, .uk-sticky.uk-active .uk-submenu-container {
-    background-color: rgba(255,255,255,.7) !important;
+    background-color: rgba(255,255,255,1) !important;
     color: #fff;
     transition: all .5s ease
 }
@@ -6376,7 +6376,7 @@ td.uk-text-break, th.uk-text-break {
 }
 
 .uk-style-primary, .uk-style-primary-b, .uk-style-primary-i, .uk-style-primary-l, .uk-style-primary-m {
-    font-family: aktiv-grotesk, Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;;
     font-weight: 400
 }
 
