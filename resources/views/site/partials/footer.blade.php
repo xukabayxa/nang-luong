@@ -19,6 +19,15 @@
         }
     }
 
+                            @media screen
+                            and (min-device-width: 1200px)
+                            and (max-device-width: 1600px)
+                            and (-webkit-min-device-pixel-ratio: 1) {
+                                .hn {
+                                    width: 22%;
+                                }
+                            }
+
 </style>
 {{--            <div class="uk-width-1-1 uk-width-2-3@m uk-flex uk-flex-middle uk-flex-center uk-flex-right@m uk-text-center uk-text-right@m uk-footer-logos">--}}
 {{--                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
@@ -104,7 +113,7 @@
     <div class="uk-container">
         <div uk-grid
              class="uk-grid uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-6@l uk-flex-top uk-margin-top">
-            <div>
+            <div class="hn">
                         <span class="uk-style-secondary-m uk-text-primary uk-text-14 uk-lh-15 uk-position-meta">
                 {{trans('message.office_footer')}}
             </span>
