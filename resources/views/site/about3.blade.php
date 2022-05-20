@@ -85,8 +85,7 @@
                                                 </div>
                                             </div>
                                             <div class="detail-leader">
-                                                <p dir="ltr">Hơn 10 năm làm việc trong lĩnh vực đầu tư tài
-                                                    chính và quản trị doanh nghiệp, ông đã đảm nhận nhiều vị trí quan trọng trong công tác quản lý, điều hành các hoạt động hợp tác, liên kết cũng như các hoạt động thị trường vốn.
+                                                <p dir="ltr">Được đào tạo bài bản ở trong nước và quốc tế tại các trường đại học hàng đầu về kỹ thuật và quản trị kinh doanh, ông Tạ Anh Tuấn đã trải qua nhiều vị trí lãnh đạo quản lý tại các tập đoàn, tổng công ty lớn trước khi gắn bó với lĩnh vực năng lượng tái tạo. Với mong muốn phát triển năng lượng sạch vì môi trường xanh và phát triển bền vững, ông luôn tiên phong trong việc hiện đại hóa quy trình quản lý, đảm bảo mọi hoạt động của RT  Energy theo các quy chuẩn quốc tế. Ông cũng đặt nhiều tâm huyết xây dựng RT Energy trở thành tập đoàn tiên phong trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh trong khu vực ASEAN và trên thế giới.
 
                                                 </p>.
                                             </div>
