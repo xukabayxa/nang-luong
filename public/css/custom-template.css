@@ -84761,13 +84761,6 @@ table.tribe-community-event-info {
     top: 0
 }
 
-.skill-set-1:hover img, .skill-set-2:hover img, .skill-set-3:hover img, .skill-set-4:hover img {
-    opacity: .1
-}
-
-.skill-set-1:hover h4, .skill-set-2:hover h4, .skill-set-3:hover h4, .skill-set-4:hover h4 {
-    opacity: 1
-}
 
 .skill-set-1 h4, .skill-set-2 h4, .skill-set-3 h4, .skill-set-4 h4 {
     opacity: 0;

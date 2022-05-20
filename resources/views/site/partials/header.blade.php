@@ -1,5 +1,11 @@
 <div class="uk-navbar-container uk-navbar-transparent uk-padding-xmedium-top uk-padding-xmedium-bottom"
      style="background: #fff">
+    <style>
+        a.uk-animation-zoom:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
     <nav class="uk-navbar uk-container">
         <div class="uk-navbar-left">
             <div class="logo" style="margin: 0; font-size: 0;">
@@ -358,16 +364,13 @@
                     color: #fff;
                 }
 
-                .uk-position-bottom uk-padding-xmedium {
-                    margin-bottom: 20px;
-                }
 
             </style>
 
             <div class="uk-text-left uk-mega-menu-item items-4">
                 <a href="{{route('front.about')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="/site/system/home/im2.jpg"
+                        <img data-src="/site/system/about_us2/1.png"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="iStock-663800200-scaled"
                              title="iStock-663800200-scaled"/>
@@ -376,7 +379,7 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 20px">
+                        <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2" >
                                 {{trans('message.who_we_are')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
@@ -393,7 +396,7 @@
             <div class="uk-text-left uk-mega-menu-item items-4">
                 <a href="{{route('front.about2')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="/site/system/home/img2.jpg"
+                        <img data-src="/site/system/about_us2/2.jpg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="iStock-864106820-scaled"
                              title="iStock-864106820-scaled"/>
@@ -402,9 +405,14 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
-                                {{trans('message.what_we_do')}}</h4>
+                                @if(App::isLocale('vi'))
+                                    LĨNH VỰC <br> HOẠT ĐỘNG
+                                @else
+                                    WHAT WE DO
+                                @endif
+                                </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about2')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
@@ -419,7 +427,7 @@
             <div class="uk-text-left uk-mega-menu-item items-4">
                 <a href="{{route('front.about3')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="/site/system/home/img3.jpg"
+                        <img data-src="/site/system/about_us2/3.jpeg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="iStock-1199544859-scaled"
                              title="iStock-1199544859-scaled"/>
@@ -428,9 +436,14 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
-                                {{trans('message.our_team')}}</h4>
+                                @if(App::isLocale('vi'))
+                                    BỘ MÁY <br> QUẢN LÝ
+                                @else
+                                    OUR TEAM
+                                    @endif
+                               </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about3')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
@@ -445,7 +458,7 @@
             <div class="uk-text-left uk-mega-menu-item items-4">
                 <a href="{{route('front.about4')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
-                        <img data-src="/site/system/home/img4.jpg"
+                        <img data-src="/site/system/about_us2/4.jpg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="iStock-492596662-scaled"
                              title="iStock-492596662-scaled"/>
@@ -454,7 +467,7 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom css-h4 uk-text-lh-4-2">
                                 {{trans('message.our_partner')}}</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
@@ -639,9 +652,14 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
-                                {{trans('message.renewable_energy')}}</h4>
+                                @if(App::isLocale('vi'))
+                                    DỰ ÁN <br> NĂNG LƯỢNG
+                                @else
+                                    RENEWABLE ENERGY
+                                @endif
+                               </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments1')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
@@ -667,9 +685,13 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
-                                {{trans('message.sustainable_infrastructure')}}
+                                @if(App::isLocale('vi'))
+                                    DỰ ÁN <br> HẠ TẦNG "XANH"
+                                @else
+                                    SUSTAINABLE & INFRASTRUCTURE
+                                @endif
                             </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments2')}}">
@@ -696,7 +718,7 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 20px">
+                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 {{trans('message.future_solution')}} <br/>
                             </h4>

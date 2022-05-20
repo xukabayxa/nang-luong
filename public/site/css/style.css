@@ -530,7 +530,7 @@ blockquote footer {
 pre {
     color: #09202e;
     font: 1.125em/1.5 Consolas, monaco, monospace;
-    overflow: auto;
+    /*overflow: auto;*/
     -moz-tab-size: 4;
     tab-size: 4
 }

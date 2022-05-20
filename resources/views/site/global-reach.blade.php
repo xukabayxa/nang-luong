@@ -65,13 +65,28 @@
                  {
                     .nation1, .nation2 {
                         margin-top: -200px;
+                        padding: 0;
                     }
                     .nation {
                         margin-top: -100px;
                     }
-
+                    .nation21 {
+                        padding: 0;
+                    }
+                    .uk-margin-bottom2 {
+                        margin-bottom: 0;
+                    }
                 }
 
+                @media only screen
+                and (min-device-width: 320px)
+                and (max-device-width: 480px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .nation21{
+                      margin-top: -100px;
+                    }
+
+                }
 
         </style>
         <div class="uk-background-light uk-dark">
@@ -81,14 +96,14 @@
 
                     <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right uk-oval uk-circle-feature-container uk-first-column">
                         <div class="uk-width-large uk-scrollspy-inview uk-animation-slide-right-small" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 300;" style="">
-                            <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-bottom" style="padding-left: 120px">
-                                <img src="/site/system/mvn.png" style="height: 250px">
+                            <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-bottom2" style="padding-left: 140px; margin-bottom: 0">
+                                <img src="/site/system/mvn.png" style="height: 170px">
                             </div>
 
                         </div>
                         <span class="uk-icon uk-preserve uk-position-center uk-oval-red uk-circle-feature uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-draw; delay: 700;" uk-icon="icon: half-circle; ratio: 1" style="">
                             <svg viewBox="0 0 482 645" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="645" style="height: 300px">
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="645" style="height: 200px">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
                                 <g id="Who-we-are" transform="translate(-332.000000, -1000.000000)" stroke="#EC6278" stroke-width="2">
                                     <g id="Group-17" transform="translate(333.286008, 1001.820590)">
@@ -99,7 +114,7 @@
                         </svg>
                         </span>
                     </div>
-                    <div uk-scrollspy="cls: uk-animation-fade; delay: 600;" style="" class="uk-scrollspy-inview uk-animation-fade">
+                    <div uk-scrollspy="cls: uk-animation-fade; delay: 600;" class="uk-scrollspy-inview uk-animation-fade nation21">
                         <div class="uk-style-primary-l uk-text-10 uk-text-lh-1 uk-margin-small-bottom uk-width-large">
                             AGP’s mandate is to stimulate, develop, invest, manage and operate sustainable real assets
                             that generate positive impact for people and the environment. We do this by focusing
@@ -111,14 +126,14 @@
 
                     <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right uk-oval uk-circle-feature-container uk-first-column nation1" >
                         <div class="uk-width-large uk-scrollspy-inview uk-animation-slide-right-small" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 300;" style="">
-                            <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-bottom" style="padding-left: 120px">
-                                <img src="/site/system/phi21.png" style="height: 250px">
+                            <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-bottom2" style="padding-left: 140px; margin-bottom: 0">
+                                <img src="/site/system/phi21.png" style="height: 170px">
                             </div>
 
                         </div>
                         <span class="uk-icon uk-preserve uk-position-center uk-oval-red uk-circle-feature uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-draw; delay: 700;" uk-icon="icon: half-circle; ratio: 1" style="">
                             <svg viewBox="0 0 482 645" version="1.1"
-                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="645" style="height: 300px">
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="645" style="height: 200px">
                             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
                                 <g id="Who-we-are" transform="translate(-332.000000, -1000.000000)" stroke="#EC6278" stroke-width="2">
                                     <g id="Group-17" transform="translate(333.286008, 1001.820590)">
@@ -129,7 +144,70 @@
                         </svg>
                         </span>
                     </div>
-                    <div uk-scrollspy="cls: uk-animation-fade; delay: 600;"  class="nation2" >
+                    <div uk-scrollspy="cls: uk-animation-fade; delay: 600;"  class="nation2 nation21" >
+                        <div class="uk-style-primary-l uk-text-10 uk-text-lh-1 uk-margin-small-bottom uk-width-large">
+                            AGP’s mandate is to stimulate, develop, invest, manage and operate sustainable real assets
+                            that generate positive impact for people and the environment. We do this by focusing
+                            entirely on the financing, development and operation of ‘Sustainable Real Assets’;
+                            transformative infrastructure assets that make positive contributions to satisfying the UN
+                            SDGs.
+                        </div>
+                    </div>
+
+
+                    <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right uk-oval uk-circle-feature-container uk-first-column nation1" >
+                        <div class="uk-width-large uk-scrollspy-inview uk-animation-slide-right-small" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 300;" style="">
+                            <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-bottom2" style="padding-left: 140px; margin-bottom: 0">
+                                <img src="/site/system/phi21.png" style="height: 170px">
+                            </div>
+
+                        </div>
+                        <span class="uk-icon uk-preserve uk-position-center uk-oval-red uk-circle-feature uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-draw; delay: 700;" uk-icon="icon: half-circle; ratio: 1" style="">
+                            <svg viewBox="0 0 482 645" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="645" style="height: 200px">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                <g id="Who-we-are" transform="translate(-332.000000, -1000.000000)" stroke="#EC6278" stroke-width="2">
+                                    <g id="Group-17" transform="translate(333.286008, 1001.820590)">
+                                        <path d="M0.751662914,40.9573792 C47.170655,14.8750781 100.731763,0 157.767131,0 C335.050536,0 478.767131,143.716595 478.767131,321 C478.767131,498.283405 335.050536,642 157.767131,642 C100.423648,642 46.5920648,626.963773 0,600.618938" id="Oval-Copy-5" transform="translate(239.383565, 321.000000) rotate(-180.000000) translate(-239.383565, -321.000000) "></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        </span>
+                    </div>
+                    <div uk-scrollspy="cls: uk-animation-fade; delay: 600;"  class="nation2 nation21" >
+                        <div class="uk-style-primary-l uk-text-10 uk-text-lh-1 uk-margin-small-bottom uk-width-large">
+                            AGP’s mandate is to stimulate, develop, invest, manage and operate sustainable real assets
+                            that generate positive impact for people and the environment. We do this by focusing
+                            entirely on the financing, development and operation of ‘Sustainable Real Assets’;
+                            transformative infrastructure assets that make positive contributions to satisfying the UN
+                            SDGs.
+                        </div>
+                    </div>
+
+
+
+                    <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-right uk-oval uk-circle-feature-container uk-first-column nation1" >
+                        <div class="uk-width-large uk-scrollspy-inview uk-animation-slide-right-small" uk-scrollspy="cls: uk-animation-slide-right-small; delay: 300;" style="">
+                            <div class="uk-flex uk-flex-middle uk-style-secondary-m uk-text-11 uk-lh-21 uk-margin-bottom2" style="padding-left: 140px; margin-bottom: 0">
+                                <img src="/site/system/phi21.png" style="height: 170px">
+                            </div>
+
+                        </div>
+                        <span class="uk-icon uk-preserve uk-position-center uk-oval-red uk-circle-feature uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-draw; delay: 700;" uk-icon="icon: half-circle; ratio: 1" style="">
+                            <svg viewBox="0 0 482 645" version="1.1"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="482" height="645" style="height: 200px">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                <g id="Who-we-are" transform="translate(-332.000000, -1000.000000)" stroke="#EC6278" stroke-width="2">
+                                    <g id="Group-17" transform="translate(333.286008, 1001.820590)">
+                                        <path d="M0.751662914,40.9573792 C47.170655,14.8750781 100.731763,0 157.767131,0 C335.050536,0 478.767131,143.716595 478.767131,321 C478.767131,498.283405 335.050536,642 157.767131,642 C100.423648,642 46.5920648,626.963773 0,600.618938" id="Oval-Copy-5" transform="translate(239.383565, 321.000000) rotate(-180.000000) translate(-239.383565, -321.000000) "></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        </span>
+                    </div>
+                    <div uk-scrollspy="cls: uk-animation-fade; delay: 600;"  class="nation2 nation21" >
                         <div class="uk-style-primary-l uk-text-10 uk-text-lh-1 uk-margin-small-bottom uk-width-large">
                             AGP’s mandate is to stimulate, develop, invest, manage and operate sustainable real assets
                             that generate positive impact for people and the environment. We do this by focusing
