@@ -49,7 +49,7 @@
             <div class="uk-scroller uk-container uk-text-center uk-position-bottom uk-position-large">
                 <a href="#scroll-target" uk-scroll>
                     <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: arrow-in-circle; ratio: 1;"></span><br/>
-                    <span class="uk-style-secondary">scroll down</span>
+                    <span class="uk-style-secondary"></span>
                 </a>
             </div>
 

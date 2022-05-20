@@ -2,6 +2,11 @@
 @section('title')
     <title>{{ ucfirst($_SERVER['HTTP_HOST']) . ' - '. $config->web_title }}</title>
 @endsection
+@section('css')
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    @endsection
 @section('content')
     <div uk-sticky="animation: uk-animation-slide-top;">
         <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
@@ -203,14 +208,11 @@
                                 : "AGP exclusively invest in sustainable real assets across three key investment themes. We
                                 evaluate our investment strategy against the United Nations Sustainable Development
                                 Goals (SDGs) with the aim to accelerate the transition to a net zero emissions future."}}
-
-
-
                             </div>
                             <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">
                                 <span
                                     class="uk-color-tertiary uk-text-middle uk-margin-right"
-                                    style="color: #0F4C81 !important">{{App::isLocale('vi') ? 'Khám phá' : 'Discover'}}</span>
+                                    style="color: #0F4C81 !important">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</span>
                                 <img class="wind-icon win-icon-right"
                                      src="{{ asset('img/icons/wind-energy-blue.png') }}"
                                      alt="win-icon">
@@ -1114,94 +1116,243 @@
 
 
 
-        <div class="uk-container uk-padding-medium-top partner-row">
-            <div uk-grid="" class=" uk-flex-middle">
-                <div class="uk-width-1-1  uk-text-center uk-footer-logos uk-first-column" style="display: flex; justify-content: space-evenly">
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href="#" rel="noreferrer" target="_blank">
+{{--        <div class="uk-container uk-padding-medium-top partner-row">--}}
+{{--            <div uk-grid="" class=" uk-flex-middle">--}}
+{{--                <div class="uk-width-1-1  uk-text-center uk-footer-logos uk-first-column" style="display: flex; justify-content: space-evenly">--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href="#" rel="noreferrer" target="_blank">--}}
 
-                            <img src="/site/system/partner2/1.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
+{{--                            <img src="/site/system/partner2/1.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 
-                        <a href="#" rel="noreferrer" target="_blank">
-                            <img src="/site/system/partner2/2.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href="" rel="noreferrer" target="_blank">
-                            <img src="/site/system/partner2/3.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href="" rel="noreferrer" target="_blank">
-                            <img src="/site/system/partner2/4.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href="" rel="noreferrer" target="_blank">
-                            <img src="/site/system/partner2/5.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href=" rel=" noreferrer="" target="_blank">
-                        <img src="/site/system/partner2/6.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href="" rel="noreferrer" target="_blank">
-                            <img src="/site/system/partner2/7.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
+{{--                        <a href="#" rel="noreferrer" target="_blank">--}}
+{{--                            <img src="/site/system/partner2/2.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href="" rel="noreferrer" target="_blank">--}}
+{{--                            <img src="/site/system/partner2/3.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href="" rel="noreferrer" target="_blank">--}}
+{{--                            <img src="/site/system/partner2/4.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href="" rel="noreferrer" target="_blank">--}}
+{{--                            <img src="/site/system/partner2/5.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href=" rel=" noreferrer="" target="_blank">--}}
+{{--                        <img src="/site/system/partner2/6.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href="" rel="noreferrer" target="_blank">--}}
+{{--                            <img src="/site/system/partner2/7.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
 
-                </div>
-            </div>
+{{--                </div>--}}
+{{--            </div>--}}
 
 
-            <div uk-grid="" class=" uk-flex-middle">
-                <div class="uk-width-1-1  uk-text-center uk-footer-logos uk-first-column" style="display: flex; justify-content: space-evenly">
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href="#" rel="noreferrer" target="_blank">
+{{--            <div uk-grid="" class=" uk-flex-middle">--}}
+{{--                <div class="uk-width-1-1  uk-text-center uk-footer-logos uk-first-column" style="display: flex; justify-content: space-evenly">--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href="#" rel="noreferrer" target="_blank">--}}
 
-                            <img src="/site/system/partner2/8.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
+{{--                            <img src="/site/system/partner2/8.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 
-                        <a href="#" rel="noreferrer" target="_blank">
-                            <img src="/site/system/partner2/9.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href="" rel="noreferrer" target="_blank">
-                            <img src="/site/system/partner2/10.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href="" rel="noreferrer" target="_blank">
-                            <img src="/site/system/partner2/11.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href="" rel="noreferrer" target="_blank">
-                            <img src="/site/system/partner2/12.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href=" rel=" noreferrer="" target="_blank">
-                        <img src="/site/system/partner2/13.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
-                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">
-                        <a href="" rel="noreferrer" target="_blank">
-                            <img src="/site/system/partner2/14.png" class="uk-width-footer-logo">
-                        </a>
-                    </div>
+{{--                        <a href="#" rel="noreferrer" target="_blank">--}}
+{{--                            <img src="/site/system/partner2/9.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href="" rel="noreferrer" target="_blank">--}}
+{{--                            <img src="/site/system/partner2/10.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href="" rel="noreferrer" target="_blank">--}}
+{{--                            <img src="/site/system/partner2/11.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href="" rel="noreferrer" target="_blank">--}}
+{{--                            <img src="/site/system/partner2/12.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href=" rel=" noreferrer="" target="_blank">--}}
+{{--                        <img src="/site/system/partner2/13.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
+{{--                        <a href="" rel="noreferrer" target="_blank">--}}
+{{--                            <img src="/site/system/partner2/14.png" class="uk-width-footer-logo">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
 
-                </div>
-            </div>
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
+
+        <style>
+            h2{
+                text-align:center;
+                padding: 20px;
+            }
+            /* Slider */
+
+            .slick-slide {
+                margin: 0px 20px;
+            }
+
+            .slick-slide img {
+                width: 100%;
+            }
+
+            .slick-slider
+            {
+                position: relative;
+                display: block;
+                box-sizing: border-box;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                -webkit-touch-callout: none;
+                -khtml-user-select: none;
+                -ms-touch-action: pan-y;
+                touch-action: pan-y;
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            .slick-list
+            {
+                position: relative;
+                display: block;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            .slick-list:focus
+            {
+                outline: none;
+            }
+            .slick-list.dragging
+            {
+                cursor: pointer;
+                cursor: hand;
+            }
+
+            .slick-slider .slick-track,
+            .slick-slider .slick-list
+            {
+                -webkit-transform: translate3d(0, 0, 0);
+                -moz-transform: translate3d(0, 0, 0);
+                -ms-transform: translate3d(0, 0, 0);
+                -o-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            .slick-track
+            {
+                position: relative;
+                top: 0;
+                left: 0;
+                display: block;
+            }
+            .slick-track:before,
+            .slick-track:after
+            {
+                display: table;
+                content: '';
+            }
+            .slick-track:after
+            {
+                clear: both;
+            }
+            .slick-loading .slick-track
+            {
+                visibility: hidden;
+            }
+
+            .slick-slide
+            {
+                display: none;
+                float: left;
+                height: 100%;
+                min-height: 1px;
+            }
+            [dir='rtl'] .slick-slide
+            {
+                float: right;
+            }
+            .slick-slide img
+            {
+                display: block;
+            }
+            .slick-slide.slick-loading img
+            {
+                display: none;
+            }
+            .slick-slide.dragging img
+            {
+                pointer-events: none;
+            }
+            .slick-initialized .slick-slide
+            {
+                display: block;
+            }
+            .slick-loading .slick-slide
+            {
+                visibility: hidden;
+            }
+            .slick-vertical .slick-slide
+            {
+                display: block;
+                height: auto;
+                border: 1px solid transparent;
+            }
+            .slick-arrow.slick-hidden {
+                display: none;
+            }
+        </style>
+
+        <br>
+
+        <div style="margin-top: 60px" class="container">
+            <section class="customer-logos slider">
+                <div class="slide"><img src="/site/system/partner2/1.png"></div>
+                <div class="slide"><img src="/site/system/partner2/2.png"></div>
+                <div class="slide"><img src="/site/system/partner2/3.png"></div>
+                <div class="slide"><img src="/site/system/partner2/4.png"></div>
+                <div class="slide"><img src="/site/system/partner2/5.png"></div>
+                <div class="slide"><img src="/site/system/partner2/6.png"></div>
+                <div class="slide"><img src="/site/system/partner2/7.png"></div>
+                <div class="slide"><img src="/site/system/partner2/8.png"></div>
+                <div class="slide"><img src="/site/system/partner2/9.png"></div>
+                <div class="slide"><img src="/site/system/partner2/10.png"></div>
+                <div class="slide"><img src="/site/system/partner2/11.png"></div>
+                <div class="slide"><img src="/site/system/partner2/12.png"></div>
+                <div class="slide"><img src="/site/system/partner2/13.png"></div>
+                <div class="slide"><img src="/site/system/partner2/14.png"></div>
+
+            </section>
+        </div>
+
+
+
+
 
 
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
@@ -1216,7 +1367,34 @@
     </section>
 @endsection
 @push('scripts')
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/libs/owl/docs/assets/owlcarousel/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
     <script>
         $(".owl-carousel").on("initialized.owl.carousel", () => {
             setTimeout(() => {
@@ -1262,4 +1440,6 @@
         });
 
     </script>
+
+
 @endpush

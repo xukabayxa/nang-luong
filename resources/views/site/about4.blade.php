@@ -1,147 +1,193 @@
 @extends('site.layouts.master')
 @section('title')
     <title>{{ "Về chúng tôi - " . ucfirst($_SERVER['HTTP_HOST']) }}</title>
+
+@endsection
+@section('css')
+    <link href="/css/about3-custom.css" rel="stylesheet">
+    <link href="/css/custom-template.css" rel="stylesheet">
+    <link href="/css/solar-skin.css" rel="stylesheet">
+    <link href="/css/css-2.css" rel="stylesheet">
+    <link href="/css/css-3.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 @endsection
 @section('content')
+    <style>
+        h3 {
+            font-size: 20px;
+            color: #0F4C81;
+        }
+    </style>
+    <!-- <span></span> -->
     <div uk-sticky="animation: uk-animation-slide-top;">
         <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
             @include('site.partials.header')
         </div>
     </div>
-    <!-- <span></span> -->
-    <section id="sozo-main">
 
-        <div class="uk-section uk-section-page-header uk-background-dark uk-light">
-            <div class="uk-container uk-container-large">
-                <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-width-1-1">
-                            <div class="uk-width-2xlarge-2">
-                                <h6 class="uk-style-secondary-m uk-text-11 uk-margin-bottom uk-color-primary"
-                                    uk-scrollspy="cls: uk-animation-slide-left-small; delay: 300;">AGP partners</h6>
-                                <h1 class="uk-style-primary-m uk-text-2 uk-text-lh-4-1"
-                                    uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 600;">Focus on
-                                    cultivating and sustaining a collaborative work environment</h1>
-                            </div>
-                            <div class="uk-width-xlarge">
-                                <div class="uk-style-primary-l uk-text-9  uk-wysiwyg-default uk-margin-top uk-margin-bottom"
-                                     style="" uk-scrollspy="cls: uk-animation-fade; delay: 800;">
-                                    <p>AGP senior partners brings an average track record of 25 years of successful
-                                        investment and development in infrastructure, real estate and finance. Borne out
-                                        by this experience, we share a belief that sustainable development is not only
-                                        good for the planet, but also achieves superior investment returns … so long as
-                                        it is supported by the right approach to sector, asset and project selection and
-                                        hands-on execution and operation.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 500;">
-                        <div class="uk-cover-container">
-                            <img data-src="/site/system/inves/i_2_1_2.jpg"
-                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                 class=" Sirv uk-utility-object-fit-cover "
-                                 alt="iStock-492596662-scaled.jpg?w=1024&h=475&scale"
-                                 title="iStock-492596662-scaled.jpg?w=1024&h=475&scale"/>
-                            <canvas width="850" height="850"></canvas>
-                        </div>
 
+    <style>
+        @media only screen
+        and (min-device-width: 320px)
+        and (max-device-width: 480px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            .vc_custom_1474870976953 {
+                display: none;
+            }
+
+            .text-br {
+                white-space: pre;
+            }
+        }
+
+    </style>
+    <section id="sozo-main" style="display: grid">
+        <section class="main-title-section-wrapper default"
+                 style="background:url(https://solarwp.wpengine.com/wp-content/uploads/2016/09/page-title-img.jpg)
+           top left repeat;">
+            <div class="container">
+                <div class="main-title-section"><h1>{{App::isLocale('vi') ? 'Đối tác chiến lược' : 'Strategic Partnership'}}</h1></div>
+            </div>
+        </section>
+
+        <style>
+            .mt-5 {
+                margin-top: 3rem!important;
+            }
+            .block-title .block-title-large {
+                color: #000;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .block-title .block-title-small {
+                color: #777;
+                font-size: 16px;
+            }
+            .mt-3 {
+                margin-top: 1rem!important;
+            }
+            .mb-3 {
+                margin-bottom: 1rem!important;
+            }
+
+
+        </style>
+
+        <div class="container">
+            <div class="block-title mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="block-title-large">Đối tác đầu tư</h2>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="uk-container uk-section"
-             uk-scrollspy="cls: uk-animation-slide-right-small; target: .uk-width-2xmedium; delay: 200;">
-            <div class="uk-child-width-1-2@s uk-child-width-1-3@m  uk-child-width-1-4@xl uk-flex uk-flex-middle" uk-grid
-                 uk-height-match=".uk-oval"
-                 uk-scrollspy="cls: uk-animation-draw-reverse; target: .uk-oval-partner; delay: 300;">
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
-                    <div class="uk-width-2xmedium uk-position-z-index">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            SP GROUP
-                            <span class="uk-style-line teal thick"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            <img src="/site/system/partner/image024.png" style="width: auto; max-height: 120px">
-                           </h4>
-{{--                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">--}}
-{{--                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">--}}
-{{--                                <a href="https://au.linkedin.com/in/josh-carmody-35b30413" target="_blank"--}}
-{{--                                   rel="noreferrer">--}}
-{{--                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>--}}
-{{--                                </a>--}}
-{{--                            </div>--}}
-{{--                            <img src="https://media.agpgroup.com/uploads/2021/09/australia-flag-circle.png?h=4096"--}}
-{{--                                 class="uk-display-inline uk-width-flag" width="50" height="50">--}}
-{{--                        </div>--}}
-                    </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-teal"
-                          uk-icon="icon: half-circle; ratio: 1"></span>
-                </div>
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
-                    <div class="uk-width-2xmedium uk-position-z-index">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            Partner
-                            <span class="uk-style-line orange thick"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            <img src="/site/system/partner/image004.png" style="width: auto; max-height: 120px">
 
-                        </h4>
+            <div class="row mt-3" style="border-bottom: 1px solid #eeeef1">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/1.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/2.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/3.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/4.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/5.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/6.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/7.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/8.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/9.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/10.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/11.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/12.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/13.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/14.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div>
+            </div>
 
-                    </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-orange"
-                          uk-icon="icon: half-circle; ratio: 1"></span>
-                </div>
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
-                    <div class="uk-width-2xmedium uk-position-z-index">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            Partner
-                            <span class="uk-style-line orange thick"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            <img src="/site/system/partner/image005.jpg" style="width: auto; max-height: 120px">
-                        </h4>
-                    </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-orange"
-                          uk-icon="icon: half-circle; ratio: 1"></span>
-                </div>
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
-                    <div class="uk-width-2xmedium uk-position-z-index">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            Partner
-                            <span class="uk-style-line teal thick"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            <img src="/site/system/partner/image006.png" style="width: auto; max-height: 140px">
-                        </h4>
-                    </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-teal"
-                          uk-icon="icon: half-circle; ratio: 1"></span>
-                </div>
-                <div class="uk-position-relative uk-flex uk-flex-middle uk-flex-center uk-text-right uk-oval uk-height-partner">
-                    <div class="uk-width-2xmedium uk-position-z-index">
-                        <div class="uk-flex uk-flex-middle uk-flex-right uk-style-secondary uk-text-11 uk-lh-21 uk-margin-small-bottom">
-                            Partner
-                            <span class="uk-style-line orange thick"></span>
-                        </div>
-                        <h4 class="uk-style-tertiary uk-text-right uk-text-6 uk-lh-44">
-                            <img src="/site/system/partner/image029.jpg"
-                                style="width: auto; max-height: 140px"> </h4>
-                        <div class="uk-display-inline-block uk-width-medium uk-text-right uk-margin-xsmall-top uk-float-right">
-                            <div class="uk-text-right uk-display-inline uk-margin-small-top uk-margin-xsmall-right">
-                                <a href="https://www.linkedin.com/in/elmahdi-tahri-5448b83/" target="_blank"
-                                   rel="noreferrer">
-                                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-square; ratio: 1"></span>
-                                </a>
-                            </div>
 
-                        </div>
+            <div class="block-title mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="block-title-large">Nhà cung cấp</h2>
                     </div>
-                    <span class="uk-icon uk-preserve uk-position-center uk-oval-partner uk-oval-orange"
-                          uk-icon="icon: half-circle; ratio: 1"></span>
+                </div>
+            </div>
+
+            <div class="row mt-3" style="border-bottom: 1px solid #eeeef1">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/15.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/16.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/17.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/18.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/19.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/20.jpg" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/21.jpg" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/22.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/23.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/24.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/25.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/26.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/27.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div>
+            </div>
+
+            <div class="block-title mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="block-title-large">Nhà thầu</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/15.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/28.jpg" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/29.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/30.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+                    <img src="/site/system/partner2/31.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div>
             </div>
         </div>
+
+
+
     </section>
+
 @endsection
+@push('scripts')
+    <script type='text/javascript' src='/site/js/solar.js'
+            id='solar-controlpanel-js'></script>
+    <script type='text/javascript' src='/site/js/solar-2.js' id='solar-jqcustom-js'></script>
+
+@endpush

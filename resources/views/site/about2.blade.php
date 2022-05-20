@@ -1,240 +1,254 @@
 @extends('site.layouts.master')
 @section('title')
     <title>{{ "Về chúng tôi - " . ucfirst($_SERVER['HTTP_HOST']) }}</title>
+
+@endsection
+@section('css')
+    <link href="/css/custom-template.css" rel="stylesheet">
+    <link href="/css/solar-skin.css" rel="stylesheet">
+    <link href="/css/css-2.css" rel="stylesheet">
+    <link href="/css/css-3.css" rel="stylesheet">
+
 @endsection
 @section('content')
+    <style>
+        h3{
+            font-size: 20px;
+            color: #0F4C81 ;
+        }
+    </style>
+    <!-- <span></span> -->
     <div uk-sticky="animation: uk-animation-slide-top;">
         <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
             @include('site.partials.header')
         </div>
     </div>
-    <!-- <span></span> -->
-    <section id="sozo-main">
 
-        <div class="uk-section uk-section-page-header uk-background-logo-wash-left">
-            <div class="uk-container uk-container-large">
-                <div class="uk-grid uk-child-width-1-2@m" uk-grid>
-                    <div class="uk-flex uk-flex-middle">
-                        <div class="uk-width-1-1">
-                            <div class="uk-width-2xlarge-2">
-                                <h6 class="uk-style-secondary-m uk-text-11 uk-margin-bottom "
-                                    uk-scrollspy="cls: uk-animation-slide-left-small; delay: 300;">What we do</h6>
-                                <h1 class="uk-style-primary-m uk-text-2 uk-text-lh-4-1"
-                                    uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 600;"><span
-                                        class="uk-color-primary">Entrepreneurial capital</span> managers, with a passion
-                                    for sustainable real assets</h1>
-                            </div>
-                            <div class="uk-width-xlarge">
-                                <div class="uk-style-primary-l uk-text-9  uk-wysiwyg-default uk-margin-top uk-margin-bottom"
-                                     style="" uk-scrollspy="cls: uk-animation-fade; delay: 800;">
-                                    <p>AGP Sustainable Real Assets is a fund and asset management group, formed by a
-                                        group of 8 senior partners who have worked together for over 20 years and share
-                                        a passion for sustainable development. AGP invests in, develops and operates
-                                        sustainable infrastructure across Three key investment themes.</p>
+
+    <style>
+        @media only screen
+        and (min-device-width: 320px)
+        and (max-device-width: 480px)
+        and (-webkit-min-device-pixel-ratio: 2) {
+            .vc_custom_1474870976953 {
+                display: none;
+            }
+            .text-br {
+                white-space: pre;
+            }
+        }
+
+    </style>
+    <section id="sozo-main" style="display: grid">
+        <section class="main-title-section-wrapper default"
+                 style="background:url(https://solarwp.wpengine.com/wp-content/uploads/2016/09/page-title-img.jpg)
+           top left repeat;">
+            <div class="container">
+                <div class="main-title-section"><h1>{{App::isLocale('vi') ? 'Lĩnh vực hoạt động' : 'What We Do'}}</h1></div>
+                {{--                <div class="breadcrumb"><a href="https://solarwp.wpengine.com/">Home</a><span class="fa default"></span><span--}}
+                {{--                        class="current">About Us</span></div>--}}
+            </div>
+        </section>
+        <div class="container">
+            <section id="primary" class="content-full-width">    <!-- #post-8 -->
+                <div id="post-8" class="post-8 page type-page status-publish hentry">
+                    <style>
+                        .vc_custom_1475647479713 {
+                            padding-right: 50px!important;
+                            padding-left: 50px!important;
+                        }
+                    </style>
+
+                    <div class="vc_row-full-width vc_clearfix"></div>
+
+                    <div data-vc-full-width="true" data-vc-full-width-init="true"
+                         class="vc_row wpb_row vc_row-fluid section4 vc_custom_1474520837084 vc_column-gap-35"
+                         style="position: relative;text-align: center; margin-top: 65px ">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    {{--                                    <h2 style="text-align: center" class="vc_custom_heading main-title-custom">--}}
+                                    {{--                                        We Cover the Whole Spectrum</h2>--}}
+                                    <div
+                                        class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_border_width_2 vc_sep_pos_align_center vc_separator-has-text">
+                            <span class="vc_sep_holder vc_sep_holder_l"><span style="border-color:#bae6ec;"
+                                                                              class="vc_sep_line"></span></span><h4 style="color: #0b5a7e; font-size: 18px">{{App::isLocale('vi') ? 'Lĩnh vực hoạt động' : 'What We Do'}}</h4><span class="vc_sep_holder vc_sep_holder_r"><span
+                                                style="border-color:#bae6ec;" class="vc_sep_line"></span></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 500;">
-                        <div class="uk-cover-container">
-                            <img data-src="/site/system/about_us/a_1_2.jpg"
-                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                 class=" Sirv uk-utility-object-fit-cover "
-                                 alt="iStock-864106820-scaled.jpg?w=1024&h=683&scale"
-                                 title="iStock-864106820-scaled.jpg?w=1024&h=683&scale"/>
-                            <canvas width="850" height="850"></canvas>
-                        </div>
+                    <div class="vc_row-full-width vc_clearfix"></div>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="uk-section">
-            <div class="uk-container uk-container-medium uk-text-center">
-                <h1 class="uk-style-primary-l uk-text-3 uk-text-lh-4"
-                    uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">We exclusively invests in
-                    sustainable real assets across three key investment themes</h1>
-            </div>
-        </div>
-        <div class="uk-margin-top uk-margin-left uk-margin-right uk-margin-bottom uk-section-investments">
-            <div class="uk-grid-collapse uk-child-width-expand@m" uk-grid
-                 uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 400;">
-                <div class="uk-text-left uk-mega-menu-item items-1">
-                    <a href="#" class="uk-animation-zoom">
-                        <div class="uk-cover-container uk-height-xlarge">
-                            <img data-src="/site/system/k.jpg"
-                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                 class=" Sirv uk-utility-object-fit-cover "
-                                 alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"
-                                 title="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled"/>
-                            <canvas width="1600" height="720"></canvas>
-                            <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
-                        </div>
-                        <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                            <div class="uk-position-bottom uk-padding-xmedium">
-                                <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                    Renewable Energy</h4>
-                                <a class="uk-button uk-color-light uk-style-secondary-b "
-                                   href="#">
-                                    <span class="uk-color-light uk-text-middle uk-margin-right">find out more</span>
-                                    <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-light"
-                                          uk-icon="icon: button-circle; ratio: 1"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="uk-text-left uk-mega-menu-item items-1">
-                    <a href="#"
-                       class="uk-animation-zoom">
-                        <div class="uk-cover-container uk-height-xlarge">
-                            <img data-src="/site/system/l1.jpg"
-                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                 class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled"
-                                 title="iStock-1156913631-scaled"/>
-                            <canvas width="1600" height="720"></canvas>
-                            <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
-                        </div>
-                        <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                            <div class="uk-position-bottom uk-padding-xmedium">
-                                <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                    Sustainable Communities & Infrastructure</h4>
-                                <a class="uk-button uk-color-light uk-style-secondary-b "
-                                   href="">
-                                    <span class="uk-color-light uk-text-middle uk-margin-right">Find out more</span>
-                                    <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-light"
-                                          uk-icon="icon: button-circle; ratio: 1"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="uk-text-left uk-mega-menu-item items-1">
-                    <a href="" class="uk-animation-zoom">
-                        <div class="uk-cover-container uk-height-xlarge">
-                            <img data-src="/site/system/inves/i_1_1.jpg"
-                                 data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                 class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled"
-                                 title="green-tech-scaled"/>
-                            <canvas width="1600" height="720"></canvas>
-                            <div class="uk-background-gradient-mega-menu uk-position-cover"></div>
-                        </div>
-                        <div class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                            <div class="uk-position-bottom uk-padding-xmedium">
-                                <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">
-                                    Green Technologies</h4>
-                                <a class="uk-button uk-color-light uk-style-secondary-b "
-                                   href="">
-                                    <span class="uk-color-light uk-text-middle uk-margin-right">Find out more</span>
-                                    <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-light"
-                                          uk-icon="icon: button-circle; ratio: 1"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="uk-position-relative uk-grid-collapse uk-child-width-expand@m uk-grid uk-grid-match" uk-grid>
-            <div class="uk-position-relative">
-                <div class="uk-position-cover uk-cover-container uk-background-logo-wash uk-light">
-                    <div class="uk-background-primary-wash uk-position-cover"></div>
-                </div>
-                <div class="uk-feature-block-half uk-text-left uk-padding-large uk-position-z-index uk-flex uk-flex-middle uk-flex-center uk-light">
-                    <div>
-                        <h4 class="uk-style-primary-l uk-text-4 uk-text-lh-4 uk-width-xmedium uk-margin-small-bottom"
-                            uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
-                            We incubate, develop and manage investment platforms and offer institutional investors
-                            attractive risk-adjusted investment opportunities </h4>
-                        <h6 class="uk-style-primary-l uk-text-7 uk-text-lh-3 uk-width-3xmedium uk-margin-small-top"
-                            uk-scrollspy="cls: uk-animation-slide-fade; delay: 600;">
-                            AGP work across the infrastructure and real estate asset classes, with a strong
-                            sustainability mandate </h6>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-position-relative">
-                <div class="uk-position-cover">
-                    <div class="uk-cover-container">
-                        <canvas width="935" height="935"></canvas>
-                        <img data-src=""
-                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                             class="uk-image-grayscale Sirv uk-utility-object-fit-cover "
-                             alt="global-reach-scaled.jpg?w=1024&h=576&scale"
-                             title="global-reach-scaled.jpg?w=1024&h=576&scale"/>
-                        <div class="uk-background-gradient-rev uk-position-cover"></div>
-                    </div>
-                    <div class="uk-background-feat-wash uk-position-cover"></div>
+                    <div data-vc-full-width="true" data-vc-full-width-init="false"
+                         class="vc_row wpb_row vc_row-fluid section4 vc_custom_1475818391834 vc_column-gap-35">
+                        <div class="skill-set-main wpb_column vc_column_container vc_col-sm-6">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                        <div class="skill-set-1 wpb_column vc_column_container vc_col-sm-6">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_left   skill-set">
 
-                </div>
-                <div class="uk-feature-block-half uk-text-left uk-padding-large uk-flex uk-flex-middle uk-flex-center  uk-light">
-                    <div>
-                        <h4 class="uk-style-primary-l uk-text-5 uk-text-lh-4 uk-margin-small-bottom"
-                            uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
-                            We create bespoke investment to take advantage of opportunities in the ever-increasing
-                            complexities of the sustainable energy, infrastructure and green technology markets </h4>
-                        <div class="uk-style-primary-l uk-child-width-1-2@l uk-text-12 uk-text-lh-1" uk-grid>
-                            <div uk-scrollspy="cls: uk-animation-fade; delay: 500;">
-                                We understand the investment return requirements of a wide range of global investors and
-                                are able to structure investments to achieve a variety of investment goals. We have
-                                built up a range of exceptionally strong relationships through creating highly
-                                successful investment platforms
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <a href="https://solarwp.wpengine.com/" target="_self"
+                                                               class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                                                    width="348" height="294"
+                                                                    src="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img3.jpg"
+                                                                    class="vc_single_image-img attachment-full"
+                                                                    alt="" loading="lazy"
+                                                                    srcset="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img3.jpg 348w, https://solarwp.wpengine.com/wp-content/uploads/2016/11/img3-300x253.jpg 300w"
+                                                                    sizes="(max-width: 348px) 100vw, 348px"/></a>
+                                                        </figure>
+                                                    </div>
+                                                    <h4 style="color: #ffffff;text-align: center"
+                                                        class="vc_custom_heading"><a
+                                                            href="http://solar.dttheme.com/">SOLAR<br/>
+                                                            VENTILATION</a></h4></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-set-2 wpb_column vc_column_container vc_col-sm-6" >
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_left   skill-set">
+
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <a href="https://solarwp.wpengine.com/" target="_self"
+                                                               class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                                                    width="337" height="282"
+                                                                    src="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img2.jpg"
+                                                                    class="vc_single_image-img attachment-full"
+                                                                    alt="" loading="lazy"
+                                                                    srcset="https://solarwp.wpengine.com/wp-content/uploads/2016/11/img2.jpg 337w, https://solarwp.wpengine.com/wp-content/uploads/2016/11/img2-300x251.jpg 300w"
+                                                                    sizes="(max-width: 337px) 100vw, 337px"/></a>
+                                                        </figure>
+                                                    </div>
+                                                    <h4 style="color: #ffffff;text-align: center"
+                                                        class="vc_custom_heading"><a
+                                                            href="http://solar.dttheme.com/">PHOTOVOLTAIC<br/>
+                                                            SOLUTIONS</a></h4></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="vc_row wpb_row vc_inner vc_row-fluid" style="height: 330px">
+                                        <div class="skill-set-3 wpb_column vc_column_container vc_col-sm-6">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_left   skill-set">
+
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <a href="https://solarwp.wpengine.com/" target="_self"
+                                                               class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                                                    width="297" height="297"
+                                                                    style="height: 300px"
+                                                                    src="/site/system/anh1.jpg"
+                                                                    class="vc_single_image-img attachment-full"
+                                                                    alt="" loading="lazy"
+                                                                    srcset="/site/system/anh1.jpg 297w, /site/system/anh1.jpg 150w, /site/system/anh1.jpg 200w"
+                                                                    sizes="(max-width: 297px) 100vw, 297px"/></a>
+                                                        </figure>
+                                                    </div>
+                                                    <h4 style="color: #ffffff;text-align: center"
+                                                        class="vc_custom_heading"><a
+                                                            href="http://solar.dttheme.com/">WINDMILLS<br/>
+                                                            ERECTION</a></h4></div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-set-4 wpb_column vc_column_container vc_col-sm-6">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_left   skill-set">
+
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <a href="https://solarwp.wpengine.com/" target="_self"
+                                                               class="vc_single_image-wrapper vc_box_border_grey"><img
+                                                                    width="274" height="320"
+                                                                    style="height: 300px;"
+                                                                    src="/site/system/anh2.jpg"
+                                                                    class="vc_single_image-img attachment-full"
+                                                                    alt="" loading="lazy"
+                                                                    srcset="/site/system/anh2.jpg 274w, /site/system/anh2.jpg 257w"
+                                                                    sizes="(max-width: 274px) 100vw, 274px"/></a>
+                                                        </figure>
+                                                    </div>
+                                                    <h4 style="color: #ffffff;text-align: center"
+                                                        class="vc_custom_heading"><a
+                                                            href="http://solar.dttheme.com/">SOLAR<br/>
+                                                            PANELS</a></h4></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                                and portfolios over the last 10 years that have exceeded investment return objectives
-                                while securing wider Sustainable Development Goals for our partners. We bring an
-                                investment owner’s mindset to the discipline of investing and developing.
+                        </div>
+                        <div class="wpb_column vc_column_container vc_col-sm-6">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class='dt-sc-icon-box type4 ' style='margin-bottom: 45px;'>
+                                        <div class="icon-wrapper"><img width="80" height="80"
+                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-skill1.png"
+                                                                       class="attachment-full" alt=""
+                                                                       loading="lazy"/></div>
+                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</h4>
+                                            <p>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</p>
+                                        </div>
+                                    </div>
+                                    <div class='dt-sc-icon-box type4 ' style='margin-bottom: 45px;'>
+                                        <div class="icon-wrapper"><img width="80" height="80"
+                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-skill2.png"
+                                                                       class="attachment-full" alt=""
+                                                                       loading="lazy"/></div>
+                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</h4>
+                                            <p>{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</p></div>
+                                    </div>
+                                    <div class='dt-sc-icon-box type4 '>
+                                        <div class="icon-wrapper"><img width="80" height="80"
+                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-skill3.png"
+                                                                       class="attachment-full" alt=""
+                                                                       loading="lazy"/></div>
+                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</h4>
+                                            <p>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="uk-position-relative uk-background-image uk-flex uk-flex-middle uk-height-1-1 uk-margin-auto">
-            <div class="uk-position-cover uk-cover-container">
-                <canvas width="1600" height="708"></canvas>
-                <img data-src=""
-                     data-options="autostart:created;" class="uk-image-grayscale Sirv uk-utility-object-fit-cover "
-                     alt="64fee03f62e038e277e5863154ebf95e34ac28f6.jpg?w=1024&h=685&scale"
-                     title="64fee03f62e038e277e5863154ebf95e34ac28f6.jpg?w=1024&h=685&scale"/></div>
-            <div class="uk-background-white-wash uk-position-cover"></div>
-            <div class="uk-section uk-section-xlarge uk-margin-auto uk-section-quote">
-                <div class="uk-container uk-container-article uk-position-relative  uk-text-center">
-                    <div class="uk-margin-auto">
 
-                        <h4 class="uk-style-primary-l uk-text-2 uk-lh-71 uk-margin-xsmall-bottom"
-                            uk-scrollspy="cls: uk-animation-slide-top-small; delay: 300;">Providing a global reach for
-                            sustainable solutions</h4>
-                        <h4 class="uk-style-primary-l uk-text-10 uk-lh-28 uk-padding-xmedium-left uk-padding-xmedium-right"
-                            uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 500;">It is only with the
-                            determination and dedication of our people that we can serve our clients, generate long-term
-                            value for our shareholders and contribute to the broader public.</h4>
+                    <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"
+                         class="vc_row wpb_row vc_row-fluid skill-set-img vc_row-no-padding" style="margin-top: -120px">
+                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                            <div class="vc_column-inner ">
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1474709520991">
 
+                                        <figure class="wpb_wrapper vc_figure">
+                                            <div class="vc_single_image-wrapper   vc_box_border_grey"><img
+                                                    width="1920" height="390"
+                                                    src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img.png"
+                                                    class="vc_single_image-img attachment-full" alt=""
+                                                    loading="lazy"
+                                                    srcset="https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img.png 1920w, https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img-300x61.png 300w, https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img-768x156.png 768w, https://solarwp.wpengine.com/wp-content/uploads/2016/09/skill-set-img-1024x208.png 1024w"
+                                                    sizes="(max-width: 1920px) 100vw, 1920px"/></div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
-            <div class="uk-position-cover uk-cover-container">
-                <canvas width="1600" height="708"></canvas>
-                <img data-src=""
-                     data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                     class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
-            <div class="uk-text-center">
-                <div class="uk-position-large uk-position-bottom">
-                    <h4 class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-margin-small-bottom uk-margin-auto uk-width-1-2@m"
-                        uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
-                        Partner with us to generate a positive impact for people and the environment </h4>
-                    <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                        <a class="uk-button uk-color-tertiary uk-style-secondary-b "
-                           href="#">
-                            <span class="uk-color-tertiary uk-text-middle uk-margin-right">get in touch for a net zero future</span>
-                            <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary"
-                                  uk-icon="icon: button-circle; ratio: 1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
+
+                </div><!-- #post-8 -->
+            </section>
         </div>
     </section>
+
 @endsection
+@push('scripts')
+    <script type='text/javascript' src='/site/js/solar.js'
+            id='solar-controlpanel-js'></script>
+    <script   type='text/javascript' src='/site/js/solar-2.js' id='solar-jqcustom-js'></script>
+
+@endpush

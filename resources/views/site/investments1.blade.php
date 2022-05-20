@@ -45,11 +45,6 @@
                      uk-scrollspy="target: .uk-animation-item; cls: uk-animation-slide-bottom-small; delay: 250; repeat: true;">
                     <div class="uk-animation-parent">
 
-                        <h6 class="uk-animation-item uk-style-secondary uk-text-11 uk-margin-medium-bottom">
-                            Renewable Energy </h6>
-
-                        <h1 class="uk-animation-item uk-style-primary-m uk-text-2 uk-lh-71 uk-width-medium">
-                            Delivering the promise of sustainable net zero future for all </h1>
 
 
                     </div>
@@ -59,7 +54,7 @@
             <div class="uk-scroller uk-container uk-text-center uk-position-bottom uk-position-large">
                 <a href="#scroll-target" uk-scroll>
                     <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: arrow-in-circle; ratio: 1;"></span><br/>
-                    <span class="uk-style-secondary">scroll down</span>
+                    <span class="uk-style-secondary"></span>
                 </a>
             </div>
 
@@ -125,14 +120,19 @@
                                     <div class="tech-item">
                                         <div class="tech-line"></div>
                                         <img src="https://www.ttvngroup.vn/static/common/img/icon_image/f930a29728517737ce62ada64bbd1856.svg" class="img-fluid tech-item-icon">
-                                        <div class="tech-item-title">Tận dụng năng lượng xanh</div>
-                                        <div class="tech-item-desc">Trong bối cảnh hiện nay khi nguồn nhiên liệu hóa thạch dần cạn kiệt và phát thải từ việc sử dụng nguồn nhiên liệu này đang ảnh hưởng nghiêm trọng đến môi trường sinh thái thì việc tận dụng nguồn năng lượng mặt trời, năng lượng gió, năng lượng sóng biển… ngày càng trở nên cấp bách và thu hút sự quan tâm của các chính phủ và của các doanh nghiệp. Việt Nam với khí hậu nhiệt đới và đường bờ biển dài là địa bàn còn nhiều tiềm năng cho việc triển khai thực hiện các dự án năng lượng tái tạo.</div>
+                                        <div class="tech-item-title">Năng lượng xanh cho cuộc sống xanh</div>
+                                        <div class="tech-item-desc">Trong bối cảnh các nguồn nhiên liệu hóa thạch có hạn và đang bị cạn kiệt dần sau khi đã bị khai thác quá mức, cùng với phát thải từ việc sử dụng các nguồn năng lượng này đang ảnh hưởng nghiêm trọng đến môi trường thì việc sử dụng các nguồn năng lượng xanh thay thế càng trở nên cấp thiết hơn bao giờ hết. Đây là xu thế tất yếu và mạnh mẽ, cũng là điều được Chính phủ các quốc gia đặc biệt quan tâm.
+                                            Sở hữu khí hậu nhiệt đới với đường bờ biển dài và số giờ nắng quanh năm lớn, Việt Nam là quốc gia có tiềm năng lớn về năng lượng tái tạo. Đồng thời với các mục tiêu năng lượng xanh đầy tham vọng, Việt Nam có nhiều cơ hội trở thành quốc gia dẫn đầu toàn cầu về năng lượng tái tạo trong tương lai.
+                                        </div>
                                     </div>
                                     <div class="tech-item tech-item-down">
                                         <div class="tech-line"></div>
                                         <img src="https://www.ttvngroup.vn/static/common/img/icon_image/c3836d34114a580cc5fc7a09e8e245ab.svg" class="img-fluid tech-item-icon">
-                                        <div class="tech-item-title">Lợi ích cao đến cộng đồng</div>
-                                        <div class="tech-item-desc">Nguồn năng lượng được tạo ra từ các nhà máy điện năng lượng tái tạo ít gây ra tác động xấu đối với môi trường và  đối với sức khỏe con người. Thêm vào đó, các dự án năng lượng tái tạo còn góp phần thúc đẩy phát triển kinh tế - xã hội, tăng nguồn thu cho ngân sách nhà nước, cải thiện điều kiện sống và tạo ra nhiều việc làm cho cư dân địa phương nơi dự án được triển khai.</div>
+                                        <div class="tech-item-title">Mạnh mẽ bứt phá, vươn tầm khu vực và thế giới
+                                        </div>
+                                        <div class="tech-item-desc">Đối tác đồng hành với RT Energy trong quá trình đầu tư xây dựng các dự án năng lượng tái tạo là những tập đoàn năng lượng lớn đến từ Hoa Kỳ, Italia, Singapore, Trung Quốc… Đây đều là những tập đoàn giàu kinh nghiệm, đã triển khai nhiều dự án lớn ở các nước trên thế giới.
+                                            Với uy tín, vị thế và tiềm lực của mình cùng quyết tâm mạnh mẽ, RT Energy đang từng bước hiện thực hóa mục tiêu trở thành tập đoàn tiên phong trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030.
+                                        </div>
                                     </div>
                                 </div>
 
@@ -143,8 +143,9 @@
                                     <div class="tech-item">
                                         <div class="tech-line"></div>
                                         <img src="https://www.ttvngroup.vn/static/common/img/icon_image/7e2b25e88de3ad7a579af8b525b2d797.svg" class="img-fluid tech-item-icon">
-                                        <div class="tech-item-title">Vươn tầm khu vực</div>
-                                        <div class="tech-item-desc">Đồng hành với TTVN Group trong phát triển, đầu tư xây dựng các dự án năng lượng tái tạo là những tập đoàn lớn đến từ Thái Lan, Pháp, Ireland, Nga, Nhật Bản... đã triển khai nhiều dự án năng lượng ở nhiều nước trên thế giới. Điều này giúp cho TTVN Group không những nâng cao uy tín, vị thế ở thị trường trong nước mà còn được nhiều nhà đầu tư quốc tế biết đến, đặt vấn đề thiết lập quan hệ đối tác, là điều kiện thuận lợi để hướng tới mục tiêu vươn tầm ra khu vực.</div>
+                                        <div class="tech-item-title">Lợi ích bền vững cho cộng đồng</div>
+                                        <div class="tech-item-desc">Sử dụng nguồn năng lượng tái tạo để sản xuất điện mang lại hiệu quả cao hơn nhiều so với sử dụng năng lượng thông thường, lại phát thải ít carbon, không gây tác động xấu đến môi trường và sức khỏe con người. Hơn nữa, các dự án phát triển năng lượng tái tạo còn đem lại nguồn thu lớn cho ngân sách nhà nước, giải quyết việc làm cho người dân địa phương nơi có dự án, qua đó góp phần thúc đẩy kinh tế-xã hội phát triển
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="tech-column-three" style="">
@@ -196,10 +197,7 @@
                                                             COD: 2/2021</pre>
 
                                                        </div>
-                                                    <a class="viewmore"
-                                                       href=""
-                                                       target="_self"
-                                                       title="">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}</a>
+
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -235,10 +233,7 @@
                                                              COD: 9/2020
                                                         </pre>
                                                     </div>
-                                                    <a class="viewmore"
-                                                       href=""
-                                                       target="_self"
-                                                       title="">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}</a>
+
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -271,10 +266,7 @@
                                                            Công suất 23 MW, tổng mức đầu tư 360 tỷ đồng
                                                        </pre>
                                                     </div>
-                                                    <a class="viewmore"
-                                                       href=""
-                                                       target="_self"
-                                                       title="Khai thác, chế biến &amp; kinh doanh khoáng sản">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}</a>
+
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -303,10 +295,7 @@
                                                     <div class="activitydesc"><p>
                                                             Công suất 317MW, tổng mức đầu tư dự kiến – 4.400 tỷ đồng
                                                         </p></div>
-                                                    <a class="viewmore"
-                                                       href=""
-                                                       target="_self"
-                                                       title="">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}</a>
+
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -335,11 +324,7 @@
                                                     <div class="activitydesc">
                                                         Giang 535 MW tổng mức đầu tư dự kiến: 21.000 tỷ đồng
                                                     </div>
-                                                    <a class="viewmore"
-                                                       href=""
-                                                       target="_self"
-                                                       title="">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}
-                                                        </a>
+
                                                 </figcaption>
                                             </figure>
                                         </div>

@@ -5,7 +5,21 @@
                 <img src="/site/system/logo_2.png"  style="height: 120px" alt="RT ENERGY">
                 {{--                <span class="uk-logo uk-icon uk-preserve" uk-icon="icon: logo; ratio: 1;"></span>--}}
             </div>
+<style>
+    .uk-lh-52 {
+        color: #fff;
+    }
 
+    @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 480px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        .ct-2{
+           margin-top: 30px;
+        }
+    }
+
+</style>
 {{--            <div class="uk-width-1-1 uk-width-2-3@m uk-flex uk-flex-middle uk-flex-center uk-flex-right@m uk-text-center uk-text-right@m uk-footer-logos">--}}
 {{--                <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                    <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals.html" rel="noreferrer" target="_blank">--}}
@@ -86,6 +100,7 @@
         </div>
     </div>
     <div class="uk-border-bottom uk-margin uk-opacity-50"></div>
+
     <div class="uk-container">
         <div uk-grid
              class="uk-grid uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-6@l uk-flex-top uk-margin-top">
@@ -99,7 +114,8 @@
                     </h5>
                     <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
                         Lô B13/D21+B15/D21 ngõ 72, <br>
-                        phố Trần Thái Tông, Phường Dịch Vọng Hậu, Quận Cầu Giấy,<br/>
+                        phố Trần Thái Tông, Phường Dịch Vọng Hậu,<br/>
+                        Quận Cầu Giấy,
                         <br/>
                     </div>
                     <div class="uk-style-primary-m uk-text-13 uk-lh-28">
@@ -121,14 +137,29 @@
                 @endif
 
             </div>
-
-            <div>
-                <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
-                    Ho Chi Minh </h5>
-                <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
-                    F18, Thao Dien,<br/>
-                    District 2, Ho Chi Minh City <br/>
-                </div>
+        <br>
+            <div class="ct-2">
+                @if(App::isLocale('vi'))
+                    <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
+                        TP. Hồ Chí Minh </h5>
+                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
+                        Phường 18, Thảo Điền,<br/>
+                        Quận 2, TP. Ho Chi Minh <br/>
+                    </div>
+                    <div class="uk-style-primary-m uk-text-13 uk-lh-28">
+                        <a href="tel:+8494 866 8889" class="uk-text-underline">+8494 866 8889</a>
+                    </div>
+                @else
+                    <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
+                        Ho Chi Minh </h5>
+                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
+                        F18, Thao Dien,<br/>
+                        District 2, Ho Chi Minh City <br/>
+                    </div>
+                    <div class="uk-style-primary-m uk-text-13 uk-lh-28">
+                        <a href="tel:+8494 866 8889" class="uk-text-underline">+8494 866 8889</a>
+                    </div>
+                @endif
             </div>
 
         </div>
@@ -162,10 +193,6 @@
             <div class="uk-width-1-1 uk-width-expand@m uk-flex-inline uk-text-13 uk-text-primary uk-text-underline uk-footer-item-contact">
                 <a href="" class="uk-text-primary">
                     rtenrgy@gmail.com </a>
-                <a href=""
-                   class="uk-margin-medium-left">
-                    <span class="uk-icon uk-preserve" uk-icon="icon: linkedin-full; ratio: 0.6;"></span>
-                </a>
             </div>
 
             <div class="uk-width-1-1 uk-width-1-4@l uk-style-secondary uk-text-14 uk-lh-15 uk-flex uk-flex-middle uk-flex-center uk-flex-right@l">
