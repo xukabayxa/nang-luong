@@ -26,6 +26,9 @@
                                 .hn {
                                     width: 22%;
                                 }
+                                .hcm {
+                                    width: 22%;
+                                }
                             }
 
 </style>
@@ -122,9 +125,8 @@
                         Hà Nội
                     </h5>
                     <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
-                        Lô B13/D21+B15/D21 ngõ 72, <br>
-                        phố Trần Thái Tông, Phường Dịch Vọng Hậu,<br/>
-                        Quận Cầu Giấy,
+                        Spring Heirs Tower, <br>
+                        Số 9/82 Dịch Vọng Hậu, Cầu Giấy, Hà Nội<br/>
                         <br/>
                     </div>
                     <div class="uk-style-primary-m uk-text-13 uk-lh-28">
@@ -147,13 +149,13 @@
 
             </div>
         <br>
-            <div class="ct-2">
+            <div class="ct-2 hcm">
                 @if(App::isLocale('vi'))
                     <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
                         TP. Hồ Chí Minh </h5>
                     <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
-                        Phường 18, Thảo Điền,<br/>
-                        Quận 2, TP. Ho Chi Minh <br/>
+                        146 Nguyễn Văn Hương F18, Thảo Điền,<br/>
+                        Quận 2, TP. Hồ Chí Minh <br/>
                     </div>
                     <div class="uk-style-primary-m uk-text-13 uk-lh-28">
                         <a href="tel:+8494 866 8889" class="uk-text-underline">+8494 866 8889</a>
@@ -162,7 +164,7 @@
                     <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
                         Ho Chi Minh </h5>
                     <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
-                        F18, Thao Dien,<br/>
+                        146 Nguyen Van Huong, F18, Thao Dien,<br/>
                         District 2, Ho Chi Minh City <br/>
                     </div>
                     <div class="uk-style-primary-m uk-text-13 uk-lh-28">
@@ -201,7 +203,7 @@
 
             <div class="uk-width-1-1 uk-width-expand@m uk-flex-inline uk-text-13 uk-text-primary uk-text-underline uk-footer-item-contact">
                 <a href="" class="uk-text-primary">
-                    rtenrgy@gmail.com </a>
+                    infor.RTenergy@gmail.com </a>
             </div>
 
             <div class="uk-width-1-1 uk-width-1-4@l uk-style-secondary uk-text-14 uk-lh-15 uk-flex uk-flex-middle uk-flex-center uk-flex-right@l">
