@@ -195,7 +195,7 @@
                         <div class="uk-width-45@m" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 400;">
                             <div
                                 class="uk-style-tertiary uk-text-uppercase uk-text-4 uk-text-lh-4  uk-style-hline uk-position-relative"
-                                style="color: #0F4C81 !important">
+                                style="color: #0F4C81 !important; font-weight: bold">
                                 {{App::isLocale('vi') ? 'PHÁT TRIỂN NĂNG LƯỢNG BỀN VỮNG' : "Sustainable Development and a Net zero emissions future"}}
                             </div>
 
@@ -209,14 +209,14 @@
                                 evaluate our investment strategy against the United Nations Sustainable Development
                                 Goals (SDGs) with the aim to accelerate the transition to a net zero emissions future."}}
                             </div>
-                            <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">
-                                <span
-                                    class="uk-color-tertiary uk-text-middle uk-margin-right"
-                                    style="color: #0F4C81 !important">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</span>
-                                <img class="wind-icon win-icon-right"
-                                     src="{{ asset('img/icons/wind-energy-blue.png') }}"
-                                     alt="win-icon">
-                            </a>
+{{--                            <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">--}}
+{{--                                <span--}}
+{{--                                    class="uk-color-tertiary uk-text-middle uk-margin-right"--}}
+{{--                                    style="color: #0F4C81 !important; font-size: 1rem">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</span>--}}
+{{--                                <img class="wind-icon win-icon-right"--}}
+{{--                                     src="{{ asset('img/icons/wind-energy-blue.png') }}"--}}
+{{--                                     alt="win-icon">--}}
+{{--                            </a>--}}
                         </div>
                     </div>
                 </div>
@@ -367,6 +367,7 @@
             .homeIndustry-desc {
                 padding-left: 12px;
                 border-left: 2px solid #0F4C81 ;
+                font-family: 'Roboto', sans-serif;
             }
 
             .homeIndustry-intro {
@@ -391,6 +392,7 @@
                 filter: blur(10px);
                 transform: scale(1.5);
                 pointer-events: none;
+
             }
 
             .homeIndustry-item h6 {
@@ -425,9 +427,11 @@
             }
 
             .homeIndustry-item2 p {
-                height: 80px;
+                height: 100px;
                 overflow: hidden;
-                font-size: 13.5px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 1em;
+
             }
 
             .homeIndustry-item a {
@@ -649,6 +653,7 @@
                 .homeIndustry-item p,  .homeIndustry-item2 p{
                     height: auto;
                     margin-bottom: 8px;
+                    font-size: 16px;
                 }
                 .homeIndustry-figure, .homeIndustry-figure2 {
                     margin: 0;
@@ -660,11 +665,31 @@
 
             }
 
+            @media only screen
+            and (min-device-width: 320px)
+            and (max-device-width: 480px)
+            and (-webkit-min-device-pixel-ratio: 2) {
+                .homeIndustry-desc {
+                    font-size: 16px;
+                }
 
+                .uk-feat-article {
+                    margin-bottom: 20px;
+                }
+            }
+
+
+            @media screen
+            and (min-device-width: 1200px)
+            and (max-device-width: 1600px) {
+                .chongchong {
+                    margin-top: -90px;
+                }
+            }
 
         </style>
 
-        <div class="homeIndustry-main" style="margin-top: 20px">
+        <div class="homeIndustry-main" style="margin-top: -30px">
             <div class="homeIndustry-content">
                 <div class="homeIndustry-txt">
                                         <h3 class="homeIndustry-title">{{App::isLocale('vi') ? 'Giới thiệu' : 'About us'}}</h3>
@@ -735,7 +760,7 @@
 {{--                                walks the structure and sets the cursor, represented by a period '.' and called "dot",--}}
 {{--                                to the value at the current location in the structure as execution proceeds.'}}--}}
 
-                            <a href="{{route('front.about')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
+                            <a href="{{route('front.about')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item">
 {{--                            <h6>{{App::isLocale('vi') ? 'Lĩnh vực hoạt động' : 'What We Do'}}</h6>--}}
@@ -750,7 +775,7 @@
 {{--                                walks the structure and sets the cursor, represented by a period '.' and called "dot",--}}
 {{--                                to the value at the current location in the structure as execution proceeds.'}}--}}
 {{--                            </p>--}}
-                            <a href="{{route('front.about2')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
+                            <a href="{{route('front.about2')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item">
 {{--                            <h6>{{App::isLocale('vi') ? 'Bộ máy quản lý' : 'OUR TEAM'}}</h6>--}}
@@ -765,7 +790,7 @@
 {{--                                walks the structure and sets the cursor, represented by a period '.' and called "dot",--}}
 {{--                                to the value at the current location in the structure as execution proceeds.'}}--}}
 {{--                            </p>--}}
-                            <a href="{{route('front.about3')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
+                            <a href="{{route('front.about3')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item">
 {{--                            <h6>{{App::isLocale('vi') ? 'Đối tác chiến lược' : 'OUR PARTNER'}}</h6>--}}
@@ -780,7 +805,7 @@
 {{--                                walks the structure and sets the cursor, represented by a period '.' and called "dot",--}}
 {{--                                to the value at the current location in the structure as execution proceeds.'}}--}}
 {{--                            </p>--}}
-                            <a href="{{route('front.about4')}}" style="color: #0F4C81">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
+                            <a href="{{route('front.about4')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                     </div>
                 </div>
@@ -837,7 +862,7 @@
             }
         </style>
 
-        <div class="row" style="text-align: center; margin-bottom: 50px; margin-top: -110px; display: flex; justify-content: space-evenly">
+        <div class="row chongchong" style="text-align: center; margin-bottom: 50px; display: flex; justify-content: space-evenly">
             <div>
                 <img class="wind-icon2 win-icon-right" src="/img/icons/wind-energy-blue.png" alt="win-icon">
             </div>
