@@ -330,7 +330,7 @@
             font-size: var(--wp--preset--font-size--x-large) !important;
         }
     </style>
-    <link rel='stylesheet' id='app-css' href='/site/css/style.css?ver=20522111' type='text/css' media='all' />
+    <link rel='stylesheet' id='app-css' href='/site/css/style.css?ver=21522111' type='text/css' media='all' />
     <script src="/site/js/sirv.js?ver=5.9.3" defer="defer" type="text/javascript"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="hhttps://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png">
