@@ -686,7 +686,6 @@
                     margin-top: -90px;
                 }
             }
-
         </style>
 
         <div class="homeIndustry-main" style="margin-top: -30px">
@@ -790,7 +789,7 @@
 {{--                                walks the structure and sets the cursor, represented by a period '.' and called "dot",--}}
 {{--                                to the value at the current location in the structure as execution proceeds.'}}--}}
 {{--                            </p>--}}
-                            <a href="{{route('front.about3')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
+                            <a href="{{route('front.about3')}}" class="v-detail" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item">
 {{--                            <h6>{{App::isLocale('vi') ? 'Đối tác chiến lược' : 'OUR PARTNER'}}</h6>--}}
@@ -902,7 +901,7 @@
                                 }}
 
                             </p>
-                            <a href="{{route('front.investments1')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
+                            <a href="{{route('front.investments1')}}" class="v-detail" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</a>
                         </div>
                         <div class="homeIndustry-item2">
                             <h6>{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</h6>
@@ -1147,38 +1146,38 @@
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href="#" rel="noreferrer" target="_blank">--}}
 
-{{--                            <img src="/site/system/partner2/1.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/1.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 
 {{--                        <a href="#" rel="noreferrer" target="_blank">--}}
-{{--                            <img src="/site/system/partner2/2.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/2.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href="" rel="noreferrer" target="_blank">--}}
-{{--                            <img src="/site/system/partner2/3.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/3.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href="" rel="noreferrer" target="_blank">--}}
-{{--                            <img src="/site/system/partner2/4.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/4.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href="" rel="noreferrer" target="_blank">--}}
-{{--                            <img src="/site/system/partner2/5.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/5.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href=" rel=" noreferrer="" target="_blank">--}}
-{{--                        <img src="/site/system/partner2/6.png" class="uk-width-footer-logo">--}}
+{{--                        <img src="/site/system/partner3/6.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href="" rel="noreferrer" target="_blank">--}}
-{{--                            <img src="/site/system/partner2/7.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/7.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 
@@ -1191,38 +1190,38 @@
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href="#" rel="noreferrer" target="_blank">--}}
 
-{{--                            <img src="/site/system/partner2/8.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/8.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 
 {{--                        <a href="#" rel="noreferrer" target="_blank">--}}
-{{--                            <img src="/site/system/partner2/9.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/9.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href="" rel="noreferrer" target="_blank">--}}
-{{--                            <img src="/site/system/partner2/10.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/10.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href="" rel="noreferrer" target="_blank">--}}
-{{--                            <img src="/site/system/partner2/11.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/11.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href="" rel="noreferrer" target="_blank">--}}
-{{--                            <img src="/site/system/partner2/12.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/12.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href=" rel=" noreferrer="" target="_blank">--}}
-{{--                        <img src="/site/system/partner2/13.png" class="uk-width-footer-logo">--}}
+{{--                        <img src="/site/system/partner3/13.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 {{--                    <div class="uk-margin-medium-right uk-margin-bottom uk-display-inline-block">--}}
 {{--                        <a href="" rel="noreferrer" target="_blank">--}}
-{{--                            <img src="/site/system/partner2/14.png" class="uk-width-footer-logo">--}}
+{{--                            <img src="/site/system/partner3/14.png" class="uk-width-footer-logo">--}}
 {{--                        </a>--}}
 {{--                    </div>--}}
 
@@ -1356,22 +1355,22 @@
         <br>
 
         <div style="margin-top: 60px" class="container">
-            <section class="customer-logos slider">
-                <div class="slide"><img src="/site/system/partner2/1.png"></div>
-                <div class="slide"><img src="/site/system/partner2/2.png"></div>
-                <div class="slide"><img src="/site/system/partner2/3.png"></div>
-                <div class="slide"><img src="/site/system/partner2/4.png"></div>
-                <div class="slide"><img src="/site/system/partner2/5.png"></div>
-                <div class="slide"><img src="/site/system/partner2/6.png"></div>
-                <div class="slide"><img src="/site/system/partner2/7.png"></div>
-                <div class="slide"><img src="/site/system/partner2/8.png"></div>
-                <div class="slide"><img src="/site/system/partner2/9.png"></div>
-                <div class="slide"><img src="/site/system/partner2/10.png"></div>
-                <div class="slide"><img src="/site/system/partner2/11.png"></div>
-                <div class="slide"><img src="/site/system/partner2/12.png"></div>
-                <div class="slide"><img src="/site/system/partner2/13.png"></div>
-                <div class="slide"><img src="/site/system/partner2/14.png"></div>
 
+            <section class="customer-logos slider">
+                <div class="slide"><img src="/site/system/partner3/1.png"></div>
+                <div class="slide"><img src="/site/system/partner3/2.png"></div>
+                <div class="slide"><img src="/site/system/partner3/3.png"></div>
+                <div class="slide"><img src="/site/system/partner3/4.png"></div>
+                <div class="slide"><img src="/site/system/partner3/5.png"></div>
+                <div class="slide"><img src="/site/system/partner3/6.png"></div>
+                <div class="slide"><img src="/site/system/partner3/7.png"></div>
+                <div class="slide"><img src="/site/system/partner3/8.png"></div>
+                <div class="slide"><img src="/site/system/partner3/9.png"></div>
+                <div class="slide"><img src="/site/system/partner3/10.png"></div>
+                <div class="slide"><img src="/site/system/partner3/11.png"></div>
+                <div class="slide"><img src="/site/system/partner3/12.png"></div>
+                <div class="slide"><img src="/site/system/partner3/13.png"></div>
+                <div class="slide"><img src="/site/system/partner3/14.png"></div>
             </section>
         </div>
 
