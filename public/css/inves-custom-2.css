@@ -10077,7 +10077,7 @@ header {
       color: #004098; }
     .list-activity .activitycol .activityname:before {
       content: '';
-      background: #004098;
+      /*background: #004098;*/
       width: 50px;
       height: 2px;
       position: absolute;

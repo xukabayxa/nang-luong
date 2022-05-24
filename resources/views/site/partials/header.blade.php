@@ -21,37 +21,69 @@
             </div>
         </div>
 
+        <style>
+           a.a-menu-top {
+             color: #0F4C81 !important
+           }
+           a.a-menu-top:hover{
+                color: #022134 !important;
+            }
+
+           .a-menu-top {
+               display: inline-block;
+               position: relative;
+               color: #0087ca;
+           }
+
+           .a-menu-top:after {
+               content: '';
+               position: absolute;
+               width: 100%;
+               transform: scaleX(0);
+               height: 2px;
+               bottom: 20px;
+               left: 0;
+               background-color: #0087ca;
+               transform-origin: bottom right;
+               transition: transform 0.25s ease-out;
+           }
+
+           .a-menu-top:hover:after {
+               transform: scaleX(1);
+               transform-origin: bottom left;
+           }
+        </style>
         {{--        phần menu header--}}
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@m">
                 <li class="menu-item-1">
-                    <a class="uk-visible@m has-dropdown uk-m1" href="#offcanvas-1" uk-toggle
-                       style="color: #0F4C81 !important">
+                    <a class="uk-visible@m has-dropdown uk-m1 a-menu-top" href="#offcanvas-1" uk-toggle
+                       >
                         {{trans('message.about_menu')}}<span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                                              uk-icon="icon: arrow-down-dark; ratio: 0.6"></span>
                     </a>
 
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
-                            <a class="uk-accordion-title" href="#">{{trans('message.about_menu')}}<span
+                            <a class="uk-accordion-title" style="color: #fff" href="#">{{trans('message.about_menu')}}<span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down-dark; ratio: 0.6"></span></a>
                             <div class="uk-accordion-content">
                                 <ul>
                                     <li>
                                         <a href="{{route('front.about')}}"
-                                           style="color: #0F4C81 !important">{{trans('message.who_we_are')}}</a>
+                                           style="color: #fff !important">{{trans('message.who_we_are')}}</a>
                                     </li>
                                     <li>
                                         <a href="{{route('front.about2')}}"
-                                           style="color: #0F4C81 !important">{{trans('message.what_we_do')}}
+                                           style="color: #fff !important">{{trans('message.what_we_do')}}
                                     </li>
                                     <li>
                                         <a href="{{route('front.about3')}}"
-                                           style="color: #0F4C81 !important">{{trans('message.our_team')}}</a>
+                                           style="color: #fff !important">{{trans('message.our_team')}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about4')}}" style="color: #0F4C81 !important">
+                                        <a href="{{route('front.about4')}}" style="color: #fff !important">
                                             {{trans('message.our_partner')}}</a>
                                     </li>
                                 </ul>
@@ -60,8 +92,8 @@
                     </ul>
                 </li>
                 <li class="menu-item-2">
-                    <a class="uk-visible@m has-dropdown uk-m2" href="#offcanvas-2" uk-toggle
-                       style="color: #0F4C81 !important">
+                    <a class="uk-visible@m has-dropdown uk-m2 a-menu-top" href="#offcanvas-2" uk-toggle
+                       >
                         {{trans('message.our_investments_menu')}}<span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                                                        uk-icon="icon: arrow-down-dark; ratio: 0.6"></span>
                     </a>
@@ -69,7 +101,7 @@
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
                             <a class="uk-accordion-title" href="#"
-                               style="color: #0F4C81 !important">{{trans('message.our_investments_menu')}}<span
+                               style="color: #fff !important">{{trans('message.our_investments_menu')}}<span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down-dark; ratio: 0.6"></span></a>
                             <div class="uk-accordion-content">
@@ -95,17 +127,17 @@
                     </ul>
                 </li>
                 <li class="menu-item-3">
-                    <a class="uk-visible@m uk-m3" href="{{route('front.globalReach')}}" style="color: #0F4C81 !important">
+                    <a class="uk-visible@m uk-m3 a-menu-top" href="{{route('front.globalReach')}}">
                         {{trans('message.our_global_presence_menu')}} </a>
 
-                    <a class="uk-hidden@m" href="{{route('front.globalReach')}}" style="color: #0F4C81 !important">
+                    <a class="uk-hidden@m " href="{{route('front.globalReach')}}" style="color: #fff">
                         {{trans('message.our_global_presence_menu')}}</a>
                 </li>
                 <li class="menu-item-4 ">
-                    <a class="uk-visible@m uk-m4" href="{{route('front.insights')}}" style="color: #0F4C81 !important">
+                    <a class="uk-visible@m uk-m4 a-menu-top" href="{{route('front.insights')}}">
                         {{trans('message.insights_menu')}} </a>
 
-                    <a class="uk-hidden@m" href="{{route('front.insights')}}" style="color: #0F4C81 !important">
+                    <a class="uk-hidden@m " href="{{route('front.insights')}}" style="color: #fff">
                         {{trans('message.insights_menu')}}</a>
                 </li>
 
@@ -115,10 +147,10 @@
                     }
                 </style>
                 <li class="menu-item-5">
-                    <a class="uk-visible@m uk-m5" href="{{route('front.contact')}}" style="color: #0F4C81 !important">
+                    <a class="uk-visible@m uk-m5 a-menu-top" href="{{route('front.contact')}}">
                         {{trans('message.contact_menu')}} </a>
 
-                    <a class="uk-hidden@m" href="{{route('front.contact')}}" style="color: #0F4C81 !important">
+                    <a class="uk-hidden@m" href="{{route('front.contact')}}" style="color: #fff">
                         {{trans('message.contact_menu')}}</a>
                 </li>
 
@@ -720,7 +752,11 @@
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
-                                {{trans('message.future_solution')}} <br/>
+                                @if(App::isLocale('vi'))
+                                    DỰ ÁN <br> NĂNG LƯỢNG MỚI
+                                @else
+                                    FUTURE SOLUTION
+                                @endif
                             </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments3')}}/">

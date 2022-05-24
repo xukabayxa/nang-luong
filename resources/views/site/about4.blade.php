@@ -74,10 +74,10 @@
 
         </style>
 
-        <div class="container">
+        <div class="container" style="margin-top: -60px;">
             <div class="block-title mt-5">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12" style="text-align: center">
                         <h2 class="block-title-large">Đối tác đầu tư</h2>
                     </div>
                 </div>
@@ -85,41 +85,41 @@
 
             <div class="row mt-3" style="border-bottom: 1px solid #eeeef1">
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/1.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/1.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/2.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/2.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/3.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/3.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/4.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/4.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/5.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/5.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/6.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/6.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/7.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/7.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/8.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/8.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/9.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/9.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/10.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/10.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/11.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/11.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/12.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/12.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/13.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/13.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div> <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
-                    <img src="/site/system/partner2/14.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
+                    <img src="/site/system/partner3/14.png" width="306" height="116" loading="lazy" class="box-shadow w-100" alt="Marubeni">
                 </div>
             </div>
 
 
             <div class="block-title mt-5">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12" style="text-align: center">
                         <h2 class="block-title-large">Nhà cung cấp</h2>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
 
             <div class="block-title mt-5">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12" style="text-align: center">
                         <h2 class="block-title-large">Nhà thầu</h2>
                     </div>
                 </div>

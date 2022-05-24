@@ -147,7 +147,7 @@
 
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
-                            <a class="uk-accordion-title" href="{{route('front.about')}}">{{trans('message.about_menu')}}<span
+                            <a class="uk-accordion-title" href="{{route('front.about')}}" style="color: #fff">{{trans('message.about_menu')}}<span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down; ratio: 0.6"></span></a>
                             <div class="uk-accordion-content">
@@ -177,7 +177,7 @@
 
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
-                            <a class="uk-accordion-title" href="#"> {{trans('message.our_investments_menu')}}<span
+                            <a class="uk-accordion-title" href="#" style="color: #fff"> {{trans('message.our_investments_menu')}}<span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down; ratio: 0.6"></span></a>
                             <div class="uk-accordion-content">
@@ -200,21 +200,21 @@
                     <a class="uk-visible@m " href="{{route('front.globalReach')}}">
                         {{trans('message.our_global_presence_menu')}} </a>
 
-                    <a class="uk-hidden@m" href="{{route('front.globalReach')}}">
+                    <a class="uk-hidden@m" href="{{route('front.globalReach')}}" style="color: #fff">
                         {{trans('message.our_global_presence_menu')}} </a>
                 </li>
                 <li>
                     <a class="uk-visible@m " href="{{route('front.insights')}}">
                         {{trans('message.insights_menu')}}  </a>
 
-                    <a class="uk-hidden@m" href="{{route('front.insights')}}">
+                    <a class="uk-hidden@m" href="{{route('front.insights')}}" style="color: #fff">
                         {{trans('message.insights_menu')}}</a>
                 </li>
                 <li>
                     <a class="uk-visible@m " href="{{route('front.contact')}}">
                         {{trans('message.contact_menu')}} </a>
 
-                    <a class="uk-hidden@m" href="{{route('front.contact')}}">
+                    <a class="uk-hidden@m" href="{{route('front.contact')}}" style="color: #fff">
                         {{trans('message.contact_menu')}}</a>
                 </li>
             </ul>
