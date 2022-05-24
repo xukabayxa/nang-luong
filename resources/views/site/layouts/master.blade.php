@@ -62,6 +62,7 @@
 </div>
 
 <script type="text/javascript" src="/site/js/jquery-3.4.1.min.js"></script>
+{{--<script type="text/javascript" src="/site/js/jquery3.3.1.js"></script>--}}
 <script src="/site/js/script.js" defer="defer" type="text/javascript"></script>
 <script>
     /* This JavaScript is used for different helper functions, such as Sirv object updates with Ajax. */
@@ -113,6 +114,7 @@
         });
     });
 </script>
+@yield('script_custom')
 <!-- Angular Js -->
 <script src="{{ asset('libs/angularjs/angular.js') }}"></script>
 <script src="{{ asset('libs/angularjs/angular-resource.js') }}"></script>

@@ -11,11 +11,11 @@
 
     <!-- <span></span> -->
     <section id="sozo-main">
-        <div class="uk-section">
+        <div class="uk-section" style="padding: 0">
             <div class="uk-position-relative uk-background-image uk-light">
                 <div class="uk-position-cover">
                     <div class="uk-cover-container">
-                        <img data-src=""
+                        <img data-src="/site/system/inves/i_1.jpg"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="ASE-EAL-Header-Image"
                              title="ASE-EAL-Header-Image"/>
@@ -33,13 +33,12 @@
                             </h6>
 
                             <h1 class="uk-animation-item uk-style-primary-m uk-text-4 uk-text-lh-4 uk-width-2xmedium">
-                                AMPYR Solar Europe signs deal with Edinburgh Airport to develop solar farm, battery and
-                                electric vehicle infrastructure </h1>
+                                Dự án điện gió Adani Phước Minh </h1>
                             <div class="uk-flex uk-flex-middle uk-margin-top">
                                 <a href="#article-content" uk-scroll>
                                     <span class="uk-icon uk-preserve uk-margin-xxsmall-right"
                                           uk-icon="icon: arrow-in-circle; ratio: 1;"></span>
-                                    <span class="uk-style-secondary uk-text-13">read article</span>
+                                    <span class="uk-style-secondary uk-text-13"></span>
                                 </a>
                             </div>
                         </div>
@@ -51,99 +50,31 @@
         <div class="uk-container uk-container-article uk-section" id="article-content">
             <div class="uk-margin-top uk-wysiwyg-default uk-style-primary-l uk-text-9 uk-text-lh-2 read-area"
                  id="read-area">
-                <p><strong>AMPYR Solar Europe (ASE)</strong>, a pan-European solar developer, and Edinburgh Airport
-                    Limited today announce the signing of a deal to develop a new solar farm linked with battery
-                    technology and electric vehicle charging infrastructure at Scotland’s busiest airport.</p>
-                <p>Under the agreement, ASE along with its local construction partner, Absolute Solar &amp; Wind will
+
+
+                {{App::isLocale('vi') ? 'Các dự án lỡ hẹn hưởng giá FIT ưu đãi sẽ phải chuyển sang cơ chế đấu thầu và giá mua điện chỉ áp dụng tới hết năm 2025, theo đề xuất của Bộ Công Thương.
+
+Với điện mặt trời, theo Quyết định 13/2020, dự án vận hành trước 31/12/2020 sẽ được hưởng giá FIT 7,09 cent một kWh (tương đương 1.644 đồng một kWh) với dự án điện mặt trời mặt đất. Giá với điện mặt trời nổi là 7,69 cent một kWh (khoảng 1.783 đồng một kWh) và điện mặt trời mái nhà 8,38 cent một kWh, tức 1.943 đồng mỗi kWh.
+
+Còn dự án điện gió vận hành thương mại trước 1/11/2021, theo Quyết định 39/2018 là 9,8 cent một kWh (2.223 đồng một kWh) với dự án trên biển; dự án trên bờ là 8,5 cent (1.927 đồng) một kWh.
+
+Đến nay, hàng loạt dự án không kịp vận hành để hưởng các ưu đãi trên. Với xu thế các nước chuyển đổi từ cơ chế giá FIT ưu đãi sang đấu thầu dự án năng lượng tái tạo theo yêu cầu của hệ thống điện, Bộ Công Thương vừa đề xuất Chính phủ chuyển sang cơ chế đấu thầu mua giá điện.
+
+EVN sẽ là đơn vị đấu thầu, dự kiến thực hiện trong năm 2022. Giá mua điện sau đấu thầu sẽ áp dụng trong 3 năm (đến 2025). Sau thời gian này, các dự án điện gió, điện mặt trời sẽ phải đấu thầu tiếp theo quy định do Chính phủ, Bộ Công Thương ban hành.
+
+Đồng tiền tính giá là VND (đồng/kWh) và không điều chỉnh biến động theo tỷ giá VND/USD.
+
+Nhà máy điện sẽ được huy động theo yêu cầu của hệ thống điện, tuân thủ quy định về quy trình điều độ hệ thống điện quốc gia và các quy định khác liên quan; đảm bảo an ninh hệ thống điện.
+
+Các dự án điện gió, điện mặt trời chuyển tiếp được quyền lựa chọn tham gia thị trường điện cạnh tranh. Trường hợp tham gia, nhà máy có trách nhiệm thực hiện quyền, nghĩa vụ của đơn vị phát điện theo quy định thị trường điện.
+
+Bộ Công Thương đề nghị Chính phủ cho phép xây dựng quy định này theo trình tự, thủ tục rút gọn của Luật ban hành Văn bản pháp luật. Quyết định dự kiến trình Thủ tướng trong tháng 5. Bộ này sẽ xây dựng, ban hành Thông tư về khung giá điện áp dụng cho các dự án chuyển tiếp, có hiệu lực đồng thời với quyết định của Thủ tướng.' : 'Under the agreement, ASE along with its local construction partner, Absolute Solar &amp; Wind will
                     build approximately 9MW of solar PV, 1.5MW of battery storage and 40 EV charging points. The large
                     ground-mounted solar PV system and battery will be situated next to the runway on a 16-acre plot of
-                    land, connected to the airport via a high voltage private wire network.</p>
-                <p>The development will be a cornerstone of Edinburgh Airport’s goal to achieve Net-Zero by 2040 by
-                    generating clean, renewable energy that will cover about 30% of the airport’s total consumption.</p>
-                <p>“Our commitment to a net zero future is underpinned by the various strands of work we have going on
-                    across the airport as part of our Greater Good sustainability strategy and one of the most visible
-                    projects will be this solar farm,” said <strong>Gordon Dewar, Edinburgh Airport’s Chief
-                        Executive</strong>. “We are happy to confirm our partners in this exciting step and our
-                    collaboration will enable us to implement this technology and allow us and Scotland to benefit from
-                    it as soon as possible.”</p>
-                <p>The project is in the late stage of design, with construction planned to start this summer and be
-                    fully operational by the start of next year.</p>
-                <p>“We are really pleased to be partnering with Edinburgh Airport on this important step towards a
-                    net-zero future and in support of its impressive “Greater Good” sustainability strategy,” said
-                    <strong>Andrew Gould, Executive Chairman of ASE</strong>. “Edinburgh Airport’s leadership shows a
-                    way forward to zero carbon for the airport sector. This is the first of ASE’s five renewable energy
-                    projects in Scotland to reach the delivery stage: the commitment and support of the Scottish
-                    Government and its strong policy position on climate change is clearly attractive to international
-                    investment.”</p>
-                <p>Edinburgh Airport will purchase the power produced by the solar farm through a long-term Power
-                    Purchase Agreement with ASE. This PPA will generate long-term energy and carbon savings for the
-                    airport.</p>
-                <p>“We are delighted to suppor Edinburgh Airport with its ongoing drive to reduce its carbon impact,”
-                    said <strong>Matthew van Staden, Senior PPA Originator at Hartree Partners</strong>. “Through our
-                    expertise within Hartree and AMPYR Solar Europe, we can drive and deliver innovative energy
-                    solutions for companies within energy-intensive sectors. Our understanding of sustainable generation
-                    and commercially viable strategies in this space helped bring this project to life for Edinburgh
-                    Airport.”</p>
-                <p>The construction is further supported by the Scottish Government’s Low Carbon Infrastructure
-                    Transition Programme, which have provided a grant for a portion of the capital expenditure.</p>
-                <p>“We are proud to be delivering this pioneering project and helping to decarbonise Edinburgh Airport
-                    alongside our funding partners ASE and the Edinburgh Airport project team,” said <strong>Tom Newall,
-                        Managing Director at Absolute Solar &amp; Wind</strong>. “The co-location of utility scale
-                    battery storage and solar PV has enabled us to maximise the green energy generation on site whilst
-                    working with the grid connection constraints. We look forward to entering the construction phase
-                    before progressing to carry out the operation, maintenance and optimisation of the system, as it
-                    generates clean power for years to come, providing energy security for a major, Scottish transport
-                    hub.”</p>
-                <p><strong>About EAL</strong></p>
-                <p>Edinburgh Airport is Scotland’s busiest airport, welcoming more than 14.7 million people through the
-                    doors in 2019. It is also the 6th busiest airport in the UK. As the place where Scotland meets the
-                    World, we fly to more than 150 destinations and work with 40 airlines to welcome people to Scotland
-                    and take Scotland to the world. Edinburgh Airport is owned by Global Infrastructure Partners (GIP),
-                    a leading global, independent infrastructure investor. <em><b>https://corporate.edinburghairport.com/</b></em>
-                </p>
-                <p><strong>About AMPYR Solar Europe</strong></p>
-                <p>Headquartered in London and Maastricht, AMPYR Solar Europe (“ASE”) was created through the merger of
-                    NaGa Solar with the existing Ampyr Energy UK solar joint venture between AGP and Hartree Partners,
-                    to create a major European Solar Enterprise with a combined pipeline of over 5GW of large-scale
-                    solar projects in the UK, Germany and the Netherlands. ASE brings together AGP’s experience in
-                    developing large-scale renewable power projects, Hartree’s cutting edge power trading analytics and
-                    zero-carbon solutions with NaGa’s in-depth local knowledge and land development capability.
-                    Combining these complementary skills will speed up the build out of solar capacity and offers an
-                    attractive opportunity for institutional investors to deploy capital. <a
-                        href="http://www.ampyrenergy.com/global-reach-europe/"><em><b>https://www.ampyrenergy.com/global-reach-europe/</b></em></a>
-                </p>
-                <p><strong>About Hartree Partners</strong></p>
-                <p>Hartree Partners is a global energy and commodities trading company, with decades of experience in
-                    the physical and financial energy and commodities markets. Hartree is at the forefront of finding
-                    investment solutions, consulting, and generating sustainable and commercially viable strategies for
-                    energy renewal and regeneration. The company has an extensive portfolio including midstream natural
-                    gas, oil assets, power generation, renewables, and environmental products. Hartree’s rigorous
-                    research, analytical approach, and entrepreneurial culture have contributed to its strong track
-                    record and growth. <a href="http://www.hartreepartners.com/"><em><b>www.hartreepartners.com</b></em></a>
-                </p>
-                <p><strong>About Absolute Solar &amp; Wind</strong></p>
-                <p>Absolute Solar and Wind is a leading renewable energy solutions specialist providing design,
-                    installation and maintenance services for commercial, industrial and utility energy projects,
-                    primarily in the solar sector. Established in 2007, the business is headquartered in Loch Lomond,
-                    Scotland, but serves customers and projects throughout the UK. Absolute focuses on integrating
-                    commercial scale renewable generators to supply on site loads for high energy users. This involves
-                    working on sensitive and secure live sites with complex grid connection or private wire
-                    arrangements. <a href="http://www.absolutesolarandwind.co.uk/"><em><b>https://www.absolutesolarandwind.co.uk/</b></em></a>
-                </p>
-                <p><strong>About LCITP funding</strong></p>
-                <p>The project benefits from receiving a grant from the Low Carbon Infrastructure Transition Programme
-                    (LCITP) that supports Scotland’s transition to a low-carbon economy. The programme endeavours to
-                    create the conditions that attract commercial investment in innovative low-carbon infrastructure
-                    projects. It also aims to contribute towards reducing Scotland’s greenhouse gas emissions. <a
-                        href="http://www.gov.scot/policies/renewable-and-low-carbon-energy/low-c"><em><b>https://www.gov.scot/policies/renewable-and-low-carbon-energy/low-c</b></em></a>
-                    <em><b>arbon-infrastructure-transition-programme/</b></em></p>
-                <p>&nbsp;</p>
-                <a class="uk-button uk-color-teal uk-style-secondary-b "
-                   href="">
-                    <span class="uk-color-teal uk-text-middle uk-margin-right">Download press release</span>
-                    <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-teal"
-                          uk-icon="icon: button-circle; ratio: 1"></span>
-                </a>
+                    land, connected to the airport via a high voltage private wire network.'
+}}
+
+
 
             </div>
         </div>
@@ -155,7 +86,7 @@
             <div class="uk-position-relative uk-container uk-container-large ">
                 <div class="uk-flex uk-flex-middle uk-text-left uk-margin-medium-bottom">
                     <div class="uk-style-secondary-m uk-text-11 ">
-                        related articles
+                      {{App::isLocale('vi') ? 'Dự án khác' : 'Other Projects'}}
                     </div>
                     <div class="uk-style-line orange"></div>
                 </div>
@@ -167,7 +98,7 @@
                         <div>
                             <div class="uk-cover-container uk-margin-small-bottom">
                                 <canvas width="460" height="370"></canvas>
-                                <img data-src=""
+                                <img data-src="/site/system/slide/s4.jpg"
                                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                      class=" Sirv uk-utility-object-fit-cover "
                                      alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
@@ -177,11 +108,10 @@
                                 <div></div>
                             </div>
                             <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
-                                AGP Sustainable Real Assets and Hartree Partners Announce US Expansion of Global Solar
-                                Partnership </h4>
+                                CỤM DỰ ÁN ĐIỆN MẶT TRỜI ÁP MÁI – TỈNH BÌNH PHƯỚC </h4>
                             <a class="uk-button uk-color-teal uk-style-secondary-b "
                                href="">
-                                <span class="uk-color-teal uk-text-middle uk-margin-right">Read Article</span>
+                                <span class="uk-color-teal uk-text-middle uk-margin-right"> {{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</span>
                                 <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-teal"
                                       uk-icon="icon: button-circle; ratio: 1"></span>
                             </a>

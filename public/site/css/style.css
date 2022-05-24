@@ -3722,10 +3722,10 @@ ul.uk-nav-sub {
     color: #244c5a
 }
 
-.uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a.uk-open, .uk-navbar-nav>li>a:focus {
-    color: #09202e;
-    outline: none
-}
+/*.uk-navbar-nav>li:hover>a, .uk-navbar-nav>li>a.uk-open, .uk-navbar-nav>li>a:focus {*/
+/*    color: #09202e;*/
+/*    outline: none*/
+/*}*/
 
 .uk-navbar-nav>li.uk-active>a, .uk-navbar-nav>li>a:active {
     color: #1a988b
@@ -9789,9 +9789,9 @@ img.Sirv {
     }
 }
 
-.uk-card-primary.uk-card-body, .uk-card-primary.uk-card-body .uk-navbar-nav>li>a, .uk-card-primary.uk-card-body a, .uk-card-primary> :not([class*=uk-card-media]), .uk-card-primary> :not([class*=uk-card-media]) .uk-navbar-nav>li>a, .uk-card-primary> :not([class*=uk-card-media]) a, .uk-card-secondary.uk-card-body, .uk-card-secondary.uk-card-body .uk-navbar-nav>li>a, .uk-card-secondary.uk-card-body a, .uk-card-secondary> :not([class*=uk-card-media]), .uk-card-secondary> :not([class*=uk-card-media]) .uk-navbar-nav>li>a, .uk-card-secondary> :not([class*=uk-card-media]) a, .uk-light, .uk-light .uk-navbar-nav>li>a, .uk-light a, .uk-overlay-primary, .uk-overlay-primary .uk-navbar-nav>li>a, .uk-overlay-primary a, .uk-section-primary:not(.uk-preserve-color), .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-section-primary:not(.uk-preserve-color) a, .uk-section-secondary:not(.uk-preserve-color), .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-section-secondary:not(.uk-preserve-color) a, .uk-tile-primary:not(.uk-preserve-color), .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-tile-primary:not(.uk-preserve-color) a, .uk-tile-secondary:not(.uk-preserve-color), .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-tile-secondary:not(.uk-preserve-color) a {
-    color: #fff
-}
+/*.uk-card-primary.uk-card-body, .uk-card-primary.uk-card-body .uk-navbar-nav>li>a, .uk-card-primary.uk-card-body a, .uk-card-primary> :not([class*=uk-card-media]), .uk-card-primary> :not([class*=uk-card-media]) .uk-navbar-nav>li>a, .uk-card-primary> :not([class*=uk-card-media]) a, .uk-card-secondary.uk-card-body, .uk-card-secondary.uk-card-body .uk-navbar-nav>li>a, .uk-card-secondary.uk-card-body a, .uk-card-secondary> :not([class*=uk-card-media]), .uk-card-secondary> :not([class*=uk-card-media]) .uk-navbar-nav>li>a, .uk-card-secondary> :not([class*=uk-card-media]) a, .uk-light, .uk-light .uk-navbar-nav>li>a, .uk-light a, .uk-overlay-primary, .uk-overlay-primary .uk-navbar-nav>li>a, .uk-overlay-primary a, .uk-section-primary:not(.uk-preserve-color), .uk-section-primary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-section-primary:not(.uk-preserve-color) a, .uk-section-secondary:not(.uk-preserve-color), .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-section-secondary:not(.uk-preserve-color) a, .uk-tile-primary:not(.uk-preserve-color), .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-tile-primary:not(.uk-preserve-color) a, .uk-tile-secondary:not(.uk-preserve-color), .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-nav>li>a, .uk-tile-secondary:not(.uk-preserve-color) a {*/
+/*    color: #fff*/
+/*}*/
 
 .uk-card-primary.uk-card-body .ozo, .uk-card-primary.uk-card-body .uk-navbar-toggle, .uk-card-primary> :not([class*=uk-card-media]) .ozo, .uk-card-primary> :not([class*=uk-card-media]) .uk-navbar-toggle, .uk-card-secondary.uk-card-body .ozo, .uk-card-secondary.uk-card-body .uk-navbar-toggle, .uk-card-secondary> :not([class*=uk-card-media]) .ozo, .uk-card-secondary> :not([class*=uk-card-media]) .uk-navbar-toggle, .uk-light .ozo, .uk-light .uk-navbar-toggle, .uk-overlay-primary .ozo, .uk-overlay-primary .uk-navbar-toggle, .uk-section-primary:not(.uk-preserve-color) .ozo, .uk-section-primary:not(.uk-preserve-color) .uk-navbar-toggle, .uk-section-secondary:not(.uk-preserve-color) .ozo, .uk-section-secondary:not(.uk-preserve-color) .uk-navbar-toggle, .uk-tile-primary:not(.uk-preserve-color) .ozo, .uk-tile-primary:not(.uk-preserve-color) .uk-navbar-toggle, .uk-tile-secondary:not(.uk-preserve-color) .ozo, .uk-tile-secondary:not(.uk-preserve-color) .uk-navbar-toggle {
     fill: #0A2C48  !important

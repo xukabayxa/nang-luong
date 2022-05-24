@@ -27,9 +27,8 @@
                                         Hà Nội
                                     </h5>
                                     <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
-                                        Lô B13/D21+B15/D21 ngõ 72, <br>
-                                        phố Trần Thái Tông, Phường Dịch Vọng Hậu,<br/>
-                                        Quận Cầu Giấy,
+                                        Spring Heirs Tower, <br>
+                                        Số 9/82 Dịch Vọng Hậu, Cầu Giấy, Hà Nội<br/>
                                         <br/>
                                     </div>
                                     <div class="uk-style-primary-m uk-text-13 uk-lh-28">
@@ -59,8 +58,8 @@
                                         <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
                                             TP. Hồ Chí Minh </h5>
                                         <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
-                                            Phường 18, Thảo Điền,<br/>
-                                            Quận 2, TP. Ho Chi Minh <br/>
+                                            146 Nguyễn Văn Hương F18, Thảo Điền,<br/>
+                                            Quận 2, TP. Hồ Chí Minh <br/>
                                         </div>
                                         <div class="uk-style-primary-m uk-text-13 uk-lh-28">
                                             <a href="tel:+8494 866 8889" class="uk-text-underline">+8494 866 8889</a>
@@ -72,7 +71,7 @@
                                         <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
                                             Ho Chi Minh </h5>
                                         <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
-                                            F18, Thao Dien,<br/>
+                                            146 Nguyen Van Huong, F18, Thao Dien,<br/>
                                             District 2, Ho Chi Minh City <br/>
                                         </div>
                                         <div class="uk-style-primary-m uk-text-13 uk-lh-28">

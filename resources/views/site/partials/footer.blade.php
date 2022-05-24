@@ -124,7 +124,7 @@
                     <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
                         Hà Nội
                     </h5>
-                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
+                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28" style="color: #fff">
                         Spring Heirs Tower, <br>
                         Số 9/82 Dịch Vọng Hậu, Cầu Giấy, Hà Nội<br/>
                     </div>
@@ -136,7 +136,7 @@
                     <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
                         Hanoi
                     </h5>
-                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
+                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28" style="color: #fff">
                         Spring Heirs Tower, No. 9/82 Dich Vong Hau, Cau Giay, Hanoi, <br>
                       <br/>
                         <br/>
@@ -152,7 +152,7 @@
                 @if(App::isLocale('vi'))
                     <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
                         TP. Hồ Chí Minh </h5>
-                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
+                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28" style="color: #fff">
                         146 Nguyễn Văn Hương F18, Thảo Điền,<br/>
                         Quận 2, TP. Hồ Chí Minh <br/>
                     </div>
@@ -162,7 +162,7 @@
                 @else
                     <h5 class="uk-style-primary-m uk-text-8 uk-lh-52">
                         Ho Chi Minh </h5>
-                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
+                    <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28" style="color: #fff">
                         146 Nguyen Van Huong, F18, Thao Dien,<br/>
                         District 2, Ho Chi Minh City <br/>
                     </div>

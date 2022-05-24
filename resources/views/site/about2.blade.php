@@ -192,7 +192,6 @@
                                                                        class="attachment-full" alt=""
                                                                        loading="lazy"/></div>
                                         <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</h4>
-                                            <p>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</p>
                                         </div>
                                     </div>
                                     <div class='dt-sc-icon-box type4 ' style='margin-bottom: 45px;'>
@@ -201,7 +200,7 @@
                                                                        class="attachment-full" alt=""
                                                                        loading="lazy"/></div>
                                         <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</h4>
-                                            <p>{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</p></div>
+                                      </div>
                                     </div>
                                     <div class='dt-sc-icon-box type4 '>
                                         <div class="icon-wrapper"><img width="80" height="80"
@@ -209,7 +208,6 @@
                                                                        class="attachment-full" alt=""
                                                                        loading="lazy"/></div>
                                         <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</h4>
-                                            <p>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}.</p>
                                         </div>
                                     </div>
                                 </div>

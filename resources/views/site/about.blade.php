@@ -96,7 +96,8 @@
                                                                                        class="attachment-full" alt=""
                                                                                        loading="lazy"></div>
                                                         <div class="icon-content"><h4>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</h4>
-                                                            <p>Twenty &nbsp;year of experience</p></div>
+
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -110,7 +111,7 @@
                                                                                        class="attachment-full" alt=""
                                                                                        loading="lazy"></div>
                                                         <div class="icon-content"><h4>{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</h4>
-                                                            <p>We are open 24/7</p></div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -125,7 +126,7 @@
                                                                                        loading="lazy"></div>
                                                         <div class="icon-content"><h4 class="text-br">{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp
 năng lượng tái tạo' : 'Sustainable industrial park development'}}</h4>
-                                                            <p>We use only the latest machines</p></div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

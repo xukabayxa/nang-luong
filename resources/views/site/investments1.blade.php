@@ -197,7 +197,10 @@
                                                             COD: 2/2021</pre>
 
                                                        </div>
-
+                                                    <a class="viewmore"
+                                                       href="{{route('front.post')}}"
+                                                       target="_self"
+                                                       title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">{{App::isLocale('vi') ? 'Chi tiết' : 'Read more'}}</a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -210,7 +213,7 @@
                                             <a class="img"
                                                href=""
                                                target="_self" title="">
-                                                <img src="/site/system/inves/i2.jpg"
+                                                <img src="/site/system/slide/s4.jpg"
                                                      alt="">
                                             </a>
                                         </div>
@@ -233,7 +236,10 @@
                                                              COD: 9/2020
                                                         </pre>
                                                     </div>
-
+                                                    <a class="viewmore"
+                                                       href="{{route('front.post')}}"
+                                                       target="_self"
+                                                       title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">{{App::isLocale('vi') ? 'Chi tiết' : 'Read more'}}</a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -266,7 +272,10 @@
                                                            Công suất 23 MW, tổng mức đầu tư 360 tỷ đồng
                                                        </pre>
                                                     </div>
-
+                                                    <a class="viewmore"
+                                                       href="{{route('front.post')}}"
+                                                       target="_self"
+                                                       title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">{{App::isLocale('vi') ? 'Chi tiết' : 'Read more'}}</a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -295,7 +304,10 @@
                                                     <div class="activitydesc"><p>
                                                             Công suất 317MW, tổng mức đầu tư dự kiến – 4.400 tỷ đồng
                                                         </p></div>
-
+                                                    <a class="viewmore"
+                                                       href="{{route('front.post')}}"
+                                                       target="_self"
+                                                       title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">{{App::isLocale('vi') ? 'Chi tiết' : 'Read more'}}</a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -308,7 +320,7 @@
                                             <a class="img"
                                                href=""
                                                target="_self" title="">
-                                                <img src="/site/system/inves/i_1.jpg"
+                                                <img src="/site/system/slide/s5.jpg"
                                                      alt="">
                                             </a>
                                         </div>
@@ -324,7 +336,10 @@
                                                     <div class="activitydesc">
                                                         Giang 535 MW tổng mức đầu tư dự kiến: 21.000 tỷ đồng
                                                     </div>
-
+                                                    <a class="viewmore"
+                                                       href="{{route('front.post')}}"
+                                                       target="_self"
+                                                       title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">{{App::isLocale('vi') ? 'Chi tiết' : 'Read more'}}</a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -354,9 +369,9 @@
                                                             100MW, tổng mức đầu tư dự kiến: 4800 tỷ đồng
                                                         </p></div>
                                                     <a class="viewmore"
-                                                       href=""
+                                                       href="{{route('front.post')}}"
                                                        target="_self"
-                                                       title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">{{App::isLocale('vi') ? 'Xem thêm' : 'Read more'}}</a>
+                                                       title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">{{App::isLocale('vi') ? 'Chi tiết' : 'Read more'}}</a>
                                                 </figcaption>
                                             </figure>
                                         </div>
