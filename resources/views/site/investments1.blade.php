@@ -37,7 +37,6 @@
             <div class="uk-background-gradient uk-position-cover"></div>
             <div class="uk-background-gradient-rev uk-position-cover"></div>
 
-
             <div class="uk-position-relative uk-container uk-container-medium  uk-section uk-padding-navbar-top"
                  uk-scrollspy="target: .uk-animation-parent; cls: uk-animation-fade; delay: 250; repeat: true;" style="height: 480px">
 
