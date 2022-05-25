@@ -9867,3 +9867,13 @@ img.Sirv {
 #sozo-main {
     padding-top: 145px;
   }
+  .carousel-nav .carousel-cell {
+    width: 100px;
+    padding: 5px !important;
+    background: #fff;
+  }
+  .carousel-nav .carousel-cell p {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: normal;
+  }

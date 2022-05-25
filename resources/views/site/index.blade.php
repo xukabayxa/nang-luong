@@ -363,13 +363,13 @@
                 margin-bottom: 12px;
                 margin-top: -32px;
             }
-
             .homeIndustry-desc {
                 padding-left: 12px;
-                border-left: 2px solid #0F4C81 ;
+                border-left: 2px solid #0F4C81;
                 font-family: 'Roboto', sans-serif;
+                font-size: 1.375em;
+                color: #0F4C81;
             }
-
             .homeIndustry-intro {
                 margin: 20px 0 20px;
                 position: relative;
@@ -430,8 +430,8 @@
                 height: 100px;
                 overflow: hidden;
                 font-family: 'Roboto', sans-serif;
-                font-size: 1em;
-
+                font-size: 1.375em;
+                color: #0F4C81;
             }
 
             .homeIndustry-item a {
