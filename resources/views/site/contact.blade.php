@@ -8,6 +8,11 @@
         </div>
     </div>
 
+    <style>
+        .uk-lh-28 {
+            color: #fff;
+        }
+    </style>
     <!-- <span></span> -->
     <section id="sozo-main">
 
@@ -17,7 +22,7 @@
                 <div class="uk-section uk-container uk-container-large">
                     <div class="uk-flex uk-flex-between" uk-grid>
                         <div class="uk-width-2-4@m">
-                            <h1 class="uk-style-primary-l uk-text-0 uk-text-lh-4" style="font-size: 4em">
+                            <h1 class="uk-style-primary-l uk-text-0 uk-text-lh-4" style="font-size: 4em; color: #fff">
                                 {{App::isLocale('vi') ? 'Liên hệ với chúng tôi' : 'Contact us '}} </h1>
                         </div>
                         <div class=" uk-width-2-4@m">
