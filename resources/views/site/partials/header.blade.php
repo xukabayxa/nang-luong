@@ -22,50 +22,52 @@
         </div>
 
         <style>
-           a.a-menu-top {
-             color: #0F4C81 !important
-           }
-           a.a-menu-top:hover{
+            a.a-menu-top {
+                color: #0F4C81 !important
+            }
+
+            a.a-menu-top:hover {
                 color: #022134 !important;
             }
 
-           .a-menu-top {
-               display: inline-block;
-               position: relative;
-               color: #0087ca;
-           }
+            .a-menu-top {
+                display: inline-block;
+                position: relative;
+                color: #0087ca;
+            }
 
-           .a-menu-top:after {
-               content: '';
-               position: absolute;
-               width: 100%;
-               transform: scaleX(0);
-               height: 2px;
-               bottom: 20px;
-               left: 0;
-               background-color: #0087ca;
-               transform-origin: bottom right;
-               transition: transform 0.25s ease-out;
-           }
+            .a-menu-top:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 2px;
+                bottom: 20px;
+                left: 0;
+                background-color: #0087ca;
+                transform-origin: bottom right;
+                transition: transform 0.25s ease-out;
+            }
 
-           .a-menu-top:hover:after {
-               transform: scaleX(1);
-               transform-origin: bottom left;
-           }
+            .a-menu-top:hover:after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
         </style>
         {{--        phần menu header--}}
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@m">
                 <li class="menu-item-1">
                     <a class="uk-visible@m has-dropdown uk-m1 a-menu-top" href="#offcanvas-1" uk-toggle
-                       >
+                    >
                         {{trans('message.about_menu')}}<span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                                              uk-icon="icon: arrow-down-dark; ratio: 0.6"></span>
                     </a>
 
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
-                            <a class="uk-accordion-title" style="color: #fff" href="#">{{trans('message.about_menu')}}<span
+                            <a class="uk-accordion-title" style="color: #fff" href="#">{{trans('message.about_menu')}}
+                                <span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down-dark; ratio: 0.6"></span></a>
                             <div class="uk-accordion-content">
@@ -93,7 +95,7 @@
                 </li>
                 <li class="menu-item-2">
                     <a class="uk-visible@m has-dropdown uk-m2 a-menu-top" href="#offcanvas-2" uk-toggle
-                       >
+                    >
                         {{trans('message.our_investments_menu')}}<span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                                                        uk-icon="icon: arrow-down-dark; ratio: 0.6"></span>
                     </a>
@@ -162,6 +164,15 @@
             </ul>
 
             <style>
+                @media screen
+                and (min-device-width: 1200px)
+                and (max-device-width: 1600px)
+                and (-webkit-min-device-pixel-ratio: 1) {
+                    .lang {
+                        display: none;
+                    }
+                }
+
                 @media only screen and (min-width: 768px) {
                     .uk-navbar-left {
                         padding-left: 30px;
@@ -192,19 +203,15 @@
                     .choise-lang {
                         top: 35px;
                     }
+
+                    .flex-col{
+                        display: none;
+                    }
+
+                    .lang{
+                        display: block;
+                    }
                 }
-
-                /*@media screen and (max-width: 1024px){*/
-                /*    .uk-navbar-right {*/
-                /*        width: 800px;*/
-                /*    }*/
-                /*}*/
-
-                /*@media screen and (max-width: 768px){*/
-                /*    .uk-navbar-right {*/
-                /*        width: 800px;*/
-                /*    }*/
-                /*}*/
 
                 @media only screen and (max-width: 1340px) and (min-width: 1024px) {
                     .uk-navbar-right {
@@ -251,14 +258,15 @@
                         padding: 0;
                         margin: 0;
                     }
+
                     .menu-item-5 {
                         width: 15%;
                     }
 
                     .menu-item-5 .uk-m5 {
-                    padding: 0;
+                        padding: 0;
 
-                }
+                    }
 
                 }
 
@@ -295,11 +303,10 @@
                 .choise-lang {
                     background: #fff none repeat scroll 0 0;
                     border: 1px solid #ccc;
-                    display: block;
+                    display: none;
                     position: absolute;
                     width: 78px;
                     z-index: 9999;
-                    display: none;
                 }
 
                 .choise-lang a:hover, .choise-lang a.selected {
@@ -336,21 +343,140 @@
                         @endif
 
                     </div>
-                    <div class="choise-lang">
-                        <a href="{{route('front.change-language', 'vi')}}"
-                           class="{{config('app.locale') == 'vi' ? 'selected' : '' }} enabled">
-                            <img
-                                src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png">
-                        </a>
-                        <a href="{{route('front.change-language', 'en')}}"
-                           class="{{config('app.locale') == 'en' ? 'selected' : '' }} enabled">
-                            <img
-                                src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"
-                                align="absmiddle">
-                        </a>
-                    </div>
+                                        <div class="choise-lang">
+                                            <a href="{{route('front.change-language', 'vi')}}"
+                                               class="{{config('app.locale') == 'vi' ? 'selected' : '' }} enabled">
+                                                <img
+                                                    src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png">
+                                            </a>
+                                            <a href="{{route('front.change-language', 'en')}}"
+                                               class="{{config('app.locale') == 'en' ? 'selected' : '' }} enabled">
+                                                <img
+                                                    src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"
+                                                    align="absmiddle">
+                                            </a>
+                                        </div>
+
                 </div>
             </div>
+
+            <style>
+                .flex-right {
+                    margin-left: auto;
+                }
+
+                .flex-col {
+                    max-height: 100%;
+                }
+
+                .nav>li.html {
+                    font-size: .85em;
+                }
+                .nav li:first-child {
+                    margin-left: 0 !important;
+                }
+                .wpml-ls-legacy-list-horizontal.wpml-ls-statics-footer {
+                    margin-bottom: 0 !important;
+                }
+                .wpml-ls-legacy-list-horizontal {
+                    border: 1px solid transparent;
+                    padding: 7px;
+                    clear: both;
+                }
+                .nav, .nav ul:not(.nav-dropdown) {
+                    margin: 0;
+                    padding: 0;
+                }
+                .wpml-ls-legacy-list-horizontal.wpml-ls-statics-footer>ul {
+                    text-align: center;
+                }
+                .wpml-ls-legacy-list-horizontal>ul {
+                    padding: 0;
+                    margin: 0 !important;
+                    list-style-type: none;
+                }
+                .nav li:first-child {
+                    margin-left: 0 !important;
+                }
+                .wpml-ls-legacy-list-horizontal .wpml-ls-item {
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+                    display: inline-block;
+                }
+                .wpml-ls-legacy-list-horizontal>ul {
+                    padding: 0;
+                    margin: 0 !important;
+                    list-style-type: none;
+                }
+                .nav>li.html {
+                    font-size: .85em;
+                }
+                .nav>li {
+                    display: inline-block;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    position: relative;
+                    margin: 0 7px;
+                    transition: background-color .3s;
+                }
+                .wpml-ls-legacy-list-horizontal a {
+                    display: block;
+                    text-decoration: none;
+                    padding: 5px 10px 6px;
+                    line-height: 1;
+                }
+                .wpml-ls-legacy-list-horizontal .wpml-ls-item {
+                    padding: 0;
+                    margin: 0;
+                    list-style-type: none;
+                    display: inline-block;
+                }
+                .wpml-ls-legacy-list-horizontal>ul {
+                    padding: 0;
+                    margin: 0 !important;
+                    list-style-type: none;
+                }
+
+                .wpml-ls-legacy-list-horizontal .wpml-ls-flag+span {
+                    margin-left: .4em;
+                }
+                .wpml-ls-legacy-list-horizontal a span {
+                    vertical-align: middle;
+                }
+                .wpml-ls-legacy-list-horizontal a {
+                    display: block;
+                    text-decoration: none;
+                    padding: 5px 10px 6px;
+                    line-height: 1;
+                }
+            </style>
+
+            <div class="flex-col hide-for-medium flex-right">
+                <ul class="header-nav header-nav-main nav nav-right  nav-line-bottom nav-uppercase">
+                    <li class="html custom html_topbar_left">
+                        <div class="wpml-ls-statics-footer wpml-ls wpml-ls-legacy-list-horizontal">
+                            <ul>
+                                <li class="wpml-ls-slot-footer wpml-ls-item wpml-ls-item-vi wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">
+                                    <a href="{{route('front.change-language', 'vi')}}" class="wpml-ls-link">
+                                        <img class="wpml-ls-flag"
+                                             src="https://nadota.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/vi.png"
+                                             alt="" width="18" height="12"><span class="wpml-ls-native">Tiếng Việt</span></a>
+                                </li>
+                                <li class="wpml-ls-slot-footer wpml-ls-item wpml-ls-item-en wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
+                                    <a href="{{route('front.change-language', 'en')}}" class="wpml-ls-link">
+                                        <img class="wpml-ls-flag"
+                                             src="https://nadota.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
+                                             alt="" width="18" height="12"><span
+                                            class="wpml-ls-display">English</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
 
             <a href="#offcanvas" uk-toggle="" class="uk-hidden@m uk-hamburger uk-flex uk-flex-middle">
                 <span class="uk-style-secondary-m">Menu</span>
@@ -377,14 +503,21 @@
             {{--            phần menu about-us trổ xuống--}}
             <style>
                 h4:after {
-                    display:block;
+                    display: block;
                     content: '';
                     border-bottom: solid 3px #136c63;
                     transform: scaleX(0);
                     transition: transform 250ms ease-in-out;
                 }
-                h4.uk-text-lh-4:after{ transform-origin:100% 50%; }
-                h4.uk-text-lh-4:hover:after{ transform: scaleX(1); transform-origin: 100% 50%; }
+
+                h4.uk-text-lh-4:after {
+                    transform-origin: 100% 50%;
+                }
+
+                h4.uk-text-lh-4:hover:after {
+                    transform: scaleX(1);
+                    transform-origin: 100% 50%;
+                }
 
                 @media only screen and (max-width: 1600px) and (min-width: 1300px) {
                     .uk-text-6-1 {
@@ -412,7 +545,7 @@
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2" >
+                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     Giới thiệu <br> Chung
                                 @else
@@ -420,7 +553,8 @@
                                 @endif</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
+                                <span
+                                    class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -441,17 +575,18 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
+                        <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     LĨNH VỰC <br> HOẠT ĐỘNG
                                 @else
                                     WHAT WE DO
                                 @endif
-                                </h4>
+                            </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about2')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
+                                <span
+                                    class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -472,17 +607,18 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
+                        <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     BỘ MÁY <br> QUẢN LÝ
                                 @else
                                     OUR TEAM
-                                    @endif
-                               </h4>
+                                @endif
+                            </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about3')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
+                                <span
+                                    class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -503,16 +639,17 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
+                        <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom css-h4 uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     Đối tác <br> Chiến lược
                                 @else
-                                Strategic partnership
-                                    @endif</h4>
+                                    Strategic partnership
+                                @endif</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about4')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
+                                <span
+                                    class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -678,7 +815,7 @@
         <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-position-z-index-menu"
              uk-grid>
 
-{{--            phần menu dự án đầu tư trổ xuống--}}
+            {{--            phần menu dự án đầu tư trổ xuống--}}
             <div class="uk-text-left uk-mega-menu-item items-3">
                 <a href="{{route('front.investments1')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
@@ -692,17 +829,18 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
+                        <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     DỰ ÁN <br> NĂNG LƯỢNG
                                 @else
                                     RENEWABLE ENERGY
                                 @endif
-                               </h4>
+                            </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments1')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
+                                <span
+                                    class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -725,7 +863,7 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
+                        <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     DỰ ÁN <br> HẠ TẦNG "XANH"
@@ -735,7 +873,8 @@
                             </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments2')}}">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
+                                <span
+                                    class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
@@ -758,7 +897,7 @@
                     </div>
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
-                        <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
+                        <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     DỰ ÁN <br> NĂNG LƯỢNG MỚI
@@ -768,7 +907,8 @@
                             </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.investments3')}}/">
-                                <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
+                                <span
+                                    class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
                                     class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
                                     uk-icon="icon: button-circle; ratio: 1"></span>
