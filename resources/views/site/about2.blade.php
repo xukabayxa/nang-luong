@@ -170,7 +170,21 @@
                     </div>
                 </div>
 
-                <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid skill-set-img vc_row-no-padding" style="margin-top: -120px">
+                <style>
+                    @media only screen and (max-width: 768px) {
+                        .vc_row-no-padding{
+                            margin-top: 0;
+                        }
+                    }
+
+                    @media (min-width:1025px){
+                        .vc_row-no-padding{
+                            margin-top: -120px;
+                        }
+                    }
+
+                </style>
+                <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid skill-set-img vc_row-no-padding">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
                         <div class="vc_column-inner ">
                             <div class="wpb_wrapper">
