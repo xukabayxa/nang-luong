@@ -25,8 +25,6 @@
 
 <!-- <span></span> -->
 <section id="sozo-main">
-
-
     <div class="uk-section uk-background-dark uk-position-relative uk-overflow-hidden" style="padding-top: 0">
         <div class="uk-container">
             <div class="uk-position-map-bg uk-hidden@s">
@@ -34,13 +32,13 @@
             </div>
             <div class="uk-background-wash-map uk-position-cover uk-hidden@s"></div>
             <p class="uk-light uk-margin-remove-top@s uk-margin-small-bottom uk-style-primary-l uk-text-3 uk-text-lh-4 uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200" style="color: #fff; text-transform: uppercase"> {{App::isLocale('vi') ? 'Thị trường toàn cầu' : 'Our global expertise'}}</p>
-            <div class="uk-hidden@s uk-text-center uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">
+            {{-- <div class="uk-hidden@s uk-text-center uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">
                 <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">
                     <span class="uk-color-tertiary uk-text-middle uk-margin-right">see our office locations</span>
                     <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary" uk-icon="icon: button-circle; ratio: 1"></span>
                 </a>
-            </div>
-            <img class="uk-visible@s" src="/site/system/mapp.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 400;">
+            </div> --}}
+            <img class="global-map" src="/site/system/mapp.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 400;">
         </div>
     </div>
 
@@ -93,6 +91,30 @@
         .flickity-viewport {
             height: 200px;
         }
+        .carousel-custom {
+            padding: 150px 0;
+        }
+
+        @media all and (max-width: 768px) {
+            .flickity-viewport {
+                height: 300px;
+            }
+            .note {
+                padding: 15px;
+            }
+            .carousel-custom {
+                padding: 15px;
+            }
+            #sozo-main {
+                padding-top: 0;
+            }
+            .global-map {
+                margin-top: 30px;
+            }
+            .carousel-nation {
+                padding-top: 35px;
+            }
+        }
 
         .cc1 {
             height: 100%;
@@ -136,8 +158,8 @@
             opacity: 1;
         }
     </style>
-    <div class="uk-background-light uk-dark">
-        <div class="carousel-custom" style="padding-top: 150px; padding-bottom: 150px">
+    <div class="uk-background-light uk-dark carousel-nation">
+        <div class="carousel-custom">
             <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
 
                 <div class="carousel-cell thumb-carou" id="carousel-cell1" style="text-align: center; padding-top: 16px; font-weight: bold">
