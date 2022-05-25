@@ -6719,7 +6719,7 @@ td.uk-text-break, th.uk-text-break {
 }
 
 .uk-text-ls-1 {
-    letter-spacing: 4.29px
+    /* letter-spacing: 4.29px */
 }
 
 .uk-background-primary.uk-card-primary.uk-card-body a:hover, .uk-background-primary.uk-card-secondary.uk-card-body a:hover, .uk-background-primary.uk-light a:hover, .uk-background-primary.uk-overlay-primary a:hover, .uk-background-primary.uk-section-primary:not(.uk-preserve-color) a:hover, .uk-background-primary.uk-section-secondary:not(.uk-preserve-color) a:hover, .uk-background-primary.uk-tile-primary:not(.uk-preserve-color) a:hover, .uk-background-primary.uk-tile-secondary:not(.uk-preserve-color) a:hover, .uk-card-primary>.uk-background-primary:not([class*=uk-card-media]) a:hover, .uk-card-secondary>.uk-background-primary:not([class*=uk-card-media]) a:hover {
@@ -9860,13 +9860,24 @@ img.Sirv {
     animation: spin 2s linear infinite;
     transform: none;
 }
-
-.wind-icon.win-icon-right {
-    margin: -12px 0 0 100px;
-}
 #sozo-main {
     padding-top: 145px;
   }
+@media all and (max-width: 768px) {
+    #sozo-main {
+        padding-top: 105px;
+    }
+    .dt-sc-portfolio-sorting.type2 {
+        padding: 0 !important;
+    }
+    .dt-sc-portfolio-sorting.type2 a.active-sort:before {
+        border-bottom: 0 !important;
+    }
+}
+.wind-icon.win-icon-right {
+    margin: -12px 0 0 100px;
+}
+
   .carousel-nav .carousel-cell {
     width: 100px;
     padding: 5px !important;
@@ -9876,4 +9887,10 @@ img.Sirv {
     margin: 0;
     padding: 10px 0;
     font-weight: normal;
+  }
+  .uk-feat-article {
+    padding-bottom: 25px;
+  }
+  .portfolio figure img {
+      margin: auto;
   }

@@ -58,7 +58,7 @@
                 font-size: 16px;
             }
         </style>
-        <div class="container">
+        <div class="uk-container">
             <section id="primary" class="content-full-width">    <!-- #post-8 -->
                 <div class="content-pane-wrap-body">
 
@@ -90,7 +90,7 @@
                                                 </p>.
                                             </div>
                                             <div>
-                                                <p>Quá trình công tác:</p>
+                                                <p class="cong-tac">Quá trình công tác:</p>
                                                 <ul>
                                                     <li>1/2020 đến nay: Tổng Giám đốc, đồng sáng lập RT Energy</li>
                                                     <li>9/2018: Cố vấn trưởng phát triển năng lượng tái tại Tập đoàn thép Đại Dũng</li>
@@ -175,11 +175,11 @@
                                                 </div>
                                             </div>
                                             <div class="detail-leader">
-                                                <p dir="ltr">Trong gần 20 năm làm việc, ông Saumya Swain đã đảm nhận nhiều vị trí quan trọng về quản lý kinh doanh tại các công ty về bất động sản và công nghệ tại Hàn Quốc và nhiều nước trên thế giới. Đặc biệt, với hơn 10 năm kinh nghiệm trong lĩnh vực năng lượng tái tạo,  ông có đóng góp lớn trong việc phát triển Equis Energy- công ty sản xuất năng lượng tái tạo lớn nhất tại khu vực Châu Á - Thái Bình Dương với hơn 180 chi nhánh trong lĩnh vực năng lượng mặt trời, gió và phát điện hydro rộng khắp các quốc gia như Úc, Nhật, Ấn Độ và Philippines…
+                                                <p>Trong gần 20 năm làm việc, ông Saumya Swain đã đảm nhận nhiều vị trí quan trọng về quản lý kinh doanh tại các công ty về bất động sản và công nghệ tại Hàn Quốc và nhiều nước trên thế giới. Đặc biệt, với hơn 10 năm kinh nghiệm trong lĩnh vực năng lượng tái tạo,  ông có đóng góp lớn trong việc phát triển Equis Energy- công ty sản xuất năng lượng tái tạo lớn nhất tại khu vực Châu Á - Thái Bình Dương với hơn 180 chi nhánh trong lĩnh vực năng lượng mặt trời, gió và phát điện hydro rộng khắp các quốc gia như Úc, Nhật, Ấn Độ và Philippines…
                                                 </p>
                                             </div>
                                             <div>
-                                                <p>Quá trình công tác:</p>
+                                                <p class="cong-tac">Quá trình công tác:</p>
                                                 <ul>
                                                     <li>6/2020 đến nay: Sáng lập và điều hành RT Energy PTE LTD-Singapore</li>
                                                     <li>8/2019-5/2020: Giám đốc quản lý Indefol Solar</li>
@@ -255,7 +255,7 @@
                                                 </p>
                                             </div>
                                             <div>
-                                                <p>Quá trình công tác:</p>
+                                                <p class="cong-tac">Quá trình công tác:</p>
                                                 <ul>
                                                     <li>1/2020 đến nay: Đồng sáng lập, Giám đốc điều hành Công ty cổ phần Novus Imperium </li>
                                                     <li>9/2014-12/2020: Giám đốc tiếp thị và Tài chính Công ty cổ phần dược phẩm Hà Nội</li>
