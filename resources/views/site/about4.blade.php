@@ -93,7 +93,7 @@
                         <div id="dt_portfolios-6633"
                              class="type2 with-space portfolio column dt-sc-one-third all-sort first household-sort">
                             <figure>
-                                <img src="/site/system/partner3/2.png"
+                                <img src="/site/system/partner3/21.png"
                                      alt=""
                                      title=""/>
                             </figure>
