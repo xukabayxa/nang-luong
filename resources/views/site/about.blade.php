@@ -67,13 +67,19 @@
                                                         {{App::isLocale('vi') ? 'Giới thiệu chung' : 'Introduction'
                                                                                                                     }}
                                                         </h3>
+                                                    <style>
+                                                        @media only screen and (max-width: 768px) {
+                                                                .pre2{
+                                                                    width: 300px;
+                                                                }
+                                                        }
+                                                    </style>
                                                     <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p class="pre2">
+                                                        <div class="wpb_wrapper pre2" >
+                                                            <p>
 
-                                                                {{App::isLocale('vi') ? '  RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong
- trong lĩnh vực năng lượng tái tạo và khu công nghiệp
-                                                                xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030' :
+                                                                {{App::isLocale('vi') ? 'RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong
+             trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030' :
                                                                 'We believe we can make a difference to this world, to
                                                                 this very earth on which we live. We have been
                                                                 destroying the forests for whatever reasons for many
