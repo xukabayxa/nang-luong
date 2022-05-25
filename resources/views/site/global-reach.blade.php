@@ -25,8 +25,6 @@
 
 <!-- <span></span> -->
 <section id="sozo-main">
-
-
     <div class="uk-section uk-background-dark uk-position-relative uk-overflow-hidden" style="padding-top: 0">
         <div class="uk-container">
             <div class="uk-position-map-bg uk-hidden@s">
@@ -34,13 +32,13 @@
             </div>
             <div class="uk-background-wash-map uk-position-cover uk-hidden@s"></div>
             <p class="uk-light uk-margin-remove-top@s uk-margin-small-bottom uk-style-primary-l uk-text-3 uk-text-lh-4 uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200" style="color: #fff; text-transform: uppercase"> {{App::isLocale('vi') ? 'Thị trường toàn cầu' : 'Our global expertise'}}</p>
-            <div class="uk-hidden@s uk-text-center uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">
+            {{-- <div class="uk-hidden@s uk-text-center uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200">
                 <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">
                     <span class="uk-color-tertiary uk-text-middle uk-margin-right">see our office locations</span>
                     <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-tertiary" uk-icon="icon: button-circle; ratio: 1"></span>
                 </a>
-            </div>
-            <img class="uk-visible@s" src="/site/system/mapp.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 400;">
+            </div> --}}
+            <img class="global-map" src="/site/system/mapp.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 400;">
         </div>
     </div>
 
@@ -93,6 +91,30 @@
         .flickity-viewport {
             height: 200px;
         }
+        .carousel-custom {
+            padding: 150px 0;
+        }
+
+        @media all and (max-width: 768px) {
+            .flickity-viewport {
+                height: 300px;
+            }
+            .note {
+                padding: 15px;
+            }
+            .carousel-custom {
+                padding: 15px;
+            }
+            #sozo-main {
+                padding-top: 0;
+            }
+            .global-map {
+                margin-top: 30px;
+            }
+            .carousel-nation {
+                padding-top: 35px;
+            }
+        }
 
         .cc1 {
             height: 100%;
@@ -136,34 +158,50 @@
             opacity: 1;
         }
     </style>
-    <div class="uk-background-light uk-dark">
-        <div class="carousel-custom" style="padding-top: 150px; padding-bottom: 150px">
+    <div class="uk-background-light uk-dark carousel-nation">
+        <div class="carousel-custom">
             <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
 
                 <div class="carousel-cell thumb-carou" id="carousel-cell1" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/vn.png') }}" alt="">
-                    <p class="">VIỆT NAM</p>
+                    <p class="">@if(App::isLocale('vi')) VIỆT NAM @else Vietnam @endif</p>
                 </div>
-                <div class="carousel-cell thumb-carou" id="carousel-cell2" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/philippin.jpg') }}" alt="">
-                    <p class="">PHILIPPINES</p>
+                <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
+                    <img src="{{ asset('site/system/flags/lao.jpg') }}" alt="">
+                    <p class="">@if(App::isLocale('vi')) Lào @else Laos @endif</p>
                 </div>
                 <div class="carousel-cell thumb-carou" id="carousel-cell3" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/singapore.jpg') }}" alt="">
-                    <p class="">SINGAPORE</p>
+                    <p class="">@if(App::isLocale('vi')) Singapore @else Singapore @endif</p>
                 </div>
+                <div class="carousel-cell thumb-carou" id="carousel-cell2" style="text-align: center; padding-top: 16px; font-weight: bold">
+                    <img src="{{ asset('site/system/flags/philippin.jpg') }}" alt="">
+                    <p class="">@if(App::isLocale('vi')) Philippines @else Philippines @endif</p>
+                </div>
+
                 <div class="carousel-cell thumb-carou" id="carousel-cell4" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/indonesia.jpg') }}" alt="">
-                    <p class="">INDONESIA</p>
+                    <p class="">@if(App::isLocale('vi')) Indonesia @else Indonesia @endif</p>
                 </div>
-                <div class="carousel-cell thumb-carou" id="carousel-cell5" style="text-align: center; padding-top: 16px; font-weight: bold">
+                {{-- <div class="carousel-cell thumb-carou" id="carousel-cell5" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/india.jpg') }}" alt="">
-                    <p class="">ẤN ĐỘ</p>
+                    <p class="">@if(App::isLocale('vi')) @else Vietnam @endif</p>
+                </div> --}}
+                <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
+                    <img src="{{ asset('site/system/flags/koreaflag.jpg') }}" alt="">
+                    <p class="">@if(App::isLocale('vi')) Hàn Quốc @else Korea @endif</p>
                 </div>
                 <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/australia_f.jpg') }}" alt="">
-                    <p class="">AUSTRALIA</p>
+                    <p class="">@if(App::isLocale('vi')) Australia @else Australia @endif</p>
                 </div>
+
+                <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
+                    <img src="{{ asset('site/system/flags/banglades.jpg') }}" alt="">
+                    <p class="">@if(App::isLocale('vi')) Bangladesh @else Bangladesh @endif</p>
+                </div>
+
+
 
             </div>
             <div class="carousel carousel-main" data-flickity='{ "hash": true, "pageDots": false }'>
@@ -171,7 +209,7 @@
                 <div class="carousel-cell cc1" id="carousel-cell1" style="padding-top: 10px">
                     <div class="cc-container">
                         <div class="c-name">
-                            VIỆT NAM
+                            @if(App::isLocale('vi')) Việt Nam @else VietNam @endif
                         </div>
 
                         <div class="note">
@@ -179,10 +217,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-cell cc1" id="carousel-cell2" style="padding-top: 10px">
+                <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
                     <div class="cc-container">
                         <div class="c-name">
-                            PHILIPPINES
+                            @if(App::isLocale('vi')) Lào @else Laos @endif
                         </div>
                         <div class="note">
                             Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
@@ -199,6 +237,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel-cell cc1" id="carousel-cell2" style="padding-top: 10px">
+                    <div class="cc-container">
+                        <div class="c-name">
+                            PHILIPPINES
+                        </div>
+                        <div class="note">
+                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
+                        </div>
+                    </div>
+                </div>
+
                 <div class="carousel-cell cc1" id="carousel-cell4" style="padding-top: 10px">
                     <div class="cc-container">
                         <div class="c-name">
@@ -209,16 +258,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-cell cc1" id="carousel-cell5" style="padding-top: 10px">
+                <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
                     <div class="cc-container">
                         <div class="c-name">
-                            ẤN ĐỘ
+                            @if(App::isLocale('vi')) Hàn Quốc @else Korea @endif
                         </div>
                         <div class="note">
                             Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
                         </div>
                     </div>
                 </div>
+
                 <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
                     <div class="cc-container">
                         <div class="c-name">
@@ -229,6 +279,19 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
+                    <div class="cc-container">
+                        <div class="c-name">
+                            Bangladesh
+                        </div>
+                        <div class="note">
+                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
         </div>

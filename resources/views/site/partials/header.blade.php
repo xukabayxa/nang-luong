@@ -485,7 +485,7 @@
 
 
             <a href="#offcanvas" uk-toggle="" class="uk-hidden@m uk-hamburger uk-flex uk-flex-middle">
-                <span class="uk-style-secondary-m">Menu</span>
+{{--                <span class="uk-style-secondary-m">Menu</span>--}}
                 <span class="uk-navbar-toggle uk-navbar-toggle-icon">
 						<svg width="25" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 							<rect y="9" width="25" height="1"></rect>
