@@ -2490,8 +2490,8 @@ select.uk-form-width-xsmall {
 
 @media (max-width: 640px) {
     .uk-container {
-        padding-left: 30px;
-        padding-right: 30px
+        /*padding-left: 30px;*/
+        /*padding-right: 30px*/
     }
 }
 

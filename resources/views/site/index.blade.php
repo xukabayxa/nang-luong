@@ -201,7 +201,7 @@
 
                     </div>
                     <div class="uk-width-expand@m" uk-scrollspy="cls: uk-animation-fade; delay: 700;">
-                        <div class="uk-margin-3xmedium-bottom uk-text-8 uk-style-primary-l" style="color: #0F4C81 !important">
+                        <div class="uk-margin-3xmedium-bottom uk-text-8 uk-style-primary-l" style="color: #0F4C81 !important; text-align: justify">
                             {{App::isLocale('vi') ? 'Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo
                             – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.'
                             : "AGP exclusively invest in sustainable real assets across three key investment themes. We
@@ -339,7 +339,7 @@
 
         .homeIndustry-desc {
             padding-left: 12px;
-            border-left: 2px solid #0F4C81;
+            /*border-left: 2px solid #0F4C81;*/
             font-family: 'Roboto', sans-serif;
             font-size: 1.375em;
             color: #0F4C81;
@@ -601,7 +601,7 @@
             }
 
             .uk-recent-posts {
-                margin-top: -510px;
+                margin-top: -440px;
             }
 
             .homeIndustry-title,
@@ -670,9 +670,19 @@
         <div class="homeIndustry-content">
             <div class="homeIndustry-txt">
                 <h3 class="homeIndustry-title">{{App::isLocale('vi') ? 'Giới thiệu' : 'About us'}}</h3>
-                <div class="homeIndustry-desc">
-                    {{App::isLocale('vi') ? ' Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo
-                    – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.' : 'Renewable energy and new energy are the future-oriented and indisputable trend of the energy industry in general. RT Energy ties its future to the promotion and development of renewable energy – towards a green, clean, and sustainable world for future generations.'}}
+                <div class="homeIndustry-desc" style="text-align: justify">
+                    @if(App::isLocale('vi'))
+                            Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:
+                    <ul>
+                        <li>Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo</li>
+                        <li>Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025</li>
+                        <li>Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách</li>
+                        <li>Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.</li>
+                    </ul>
+
+                    @else
+                        Renewable energy and new energy are the future-oriented and indisputable trend of the energy industry in general. RT Energy ties its future to the promotion and development of renewable energy – towards a green, clean, and sustainable world for future generations.
+                    @endif
 
                 </div>
                 <div class="homeIndustry-intro">

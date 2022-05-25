@@ -210,12 +210,9 @@
                         top: 35px;
                     }
 
-                    .flex-col{
-                        display: none;
-                    }
 
                     .lang{
-                        display: block;
+                        display: none;
                     }
                 }
 
