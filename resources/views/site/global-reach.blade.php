@@ -22,7 +22,11 @@
         @include('site.partials.header')
     </div>
 </div>
-
+<style>
+    #sozo-main {
+    padding-top: 145px;
+  }
+</style>
 <!-- <span></span> -->
 <section id="sozo-main">
     <div class="uk-section uk-background-dark uk-position-relative uk-overflow-hidden" style="padding-top: 0">

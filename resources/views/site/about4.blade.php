@@ -50,7 +50,7 @@
         </section>
 
         <div id="main"><!-- ** Container ** -->
-            <div class="container">
+            <div class="uk-container">
                 <section id="primary" class="content-full-width">                <!-- #post-6198 -->
                     <div id="post-6198" class="post-6198 page type-page status-publish hentry"></div><!-- #post-6198 -->
                     <div class="dt-sc-clear"></div>
