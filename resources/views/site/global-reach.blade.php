@@ -142,27 +142,35 @@
 
                 <div class="carousel-cell thumb-carou" id="carousel-cell1" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/vn.png') }}" alt="">
-                    <p class="">VIỆT NAM</p>
+                    <p class="">@if(App::isLocale('vi')) VIỆT NAM @else Vietnam @endif</p>
                 </div>
                 <div class="carousel-cell thumb-carou" id="carousel-cell2" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/philippin.jpg') }}" alt="">
-                    <p class="">PHILIPPINES</p>
+                    <p class="">@if(App::isLocale('vi')) Philippines @else Philippines @endif</p>
                 </div>
                 <div class="carousel-cell thumb-carou" id="carousel-cell3" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/singapore.jpg') }}" alt="">
-                    <p class="">SINGAPORE</p>
+                    <p class="">@if(App::isLocale('vi')) Singapore @else Singapore @endif</p>
                 </div>
                 <div class="carousel-cell thumb-carou" id="carousel-cell4" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/indonesia.jpg') }}" alt="">
-                    <p class="">INDONESIA</p>
+                    <p class="">@if(App::isLocale('vi')) Indonesia @else Indonesia @endif</p>
                 </div>
-                <div class="carousel-cell thumb-carou" id="carousel-cell5" style="text-align: center; padding-top: 16px; font-weight: bold">
+                {{-- <div class="carousel-cell thumb-carou" id="carousel-cell5" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/india.jpg') }}" alt="">
-                    <p class="">ẤN ĐỘ</p>
-                </div>
+                    <p class="">@if(App::isLocale('vi')) @else Vietnam @endif</p>
+                </div> --}}
                 <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/australia_f.jpg') }}" alt="">
-                    <p class="">AUSTRALIA</p>
+                    <p class="">@if(App::isLocale('vi')) Australia @else Australia @endif</p>
+                </div>
+                <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
+                    <img src="{{ asset('site/system/flags/koreaflag.jpg') }}" alt="">
+                    <p class="">@if(App::isLocale('vi')) Hàn Quốc @else Korea @endif</p>
+                </div>
+                <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
+                    <img src="{{ asset('site/system/flags/lao.jpg') }}" alt="">
+                    <p class="">@if(App::isLocale('vi')) Lào @else Laos @endif</p>
                 </div>
 
             </div>
@@ -171,7 +179,7 @@
                 <div class="carousel-cell cc1" id="carousel-cell1" style="padding-top: 10px">
                     <div class="cc-container">
                         <div class="c-name">
-                            VIỆT NAM
+                            @if(App::isLocale('vi')) Việt Nam @else VietNam @endif
                         </div>
 
                         <div class="note">
@@ -209,10 +217,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-cell cc1" id="carousel-cell5" style="padding-top: 10px">
+                {{-- <div class="carousel-cell cc1" id="carousel-cell5" style="padding-top: 10px">
                     <div class="cc-container">
                         <div class="c-name">
                             ẤN ĐỘ
+                        </div>
+                        <div class="note">
+                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
+                        </div>
+                    </div>
+                </div> --}}
+                <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
+                    <div class="cc-container">
+                        <div class="c-name">
+                            AUSTRALIA
                         </div>
                         <div class="note">
                             Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
@@ -222,7 +240,17 @@
                 <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
                     <div class="cc-container">
                         <div class="c-name">
-                            AUSTRALIA
+                            @if(App::isLocale('vi')) Hàn Quốc @else Korea @endif
+                        </div>
+                        <div class="note">
+                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
+                    <div class="cc-container">
+                        <div class="c-name">
+                            @if(App::isLocale('vi')) Lào @else Laos @endif
                         </div>
                         <div class="note">
                             Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
