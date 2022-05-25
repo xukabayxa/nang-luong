@@ -162,7 +162,7 @@
                                 <div class='dt-sc-icon-box type4 '>
                                     <div class="icon-wrapper"><img width="80" height="80" src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-skill3.png" class="attachment-full" alt="" loading="lazy" /></div>
                                     <div class="icon-content">
-                                        <h4>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</h4>
+                                        <h4>{{App::isLocale('vi') ? 'Năng lượng mới' : 'New energy'}}</h4>
                                     </div>
                                 </div>
                             </div>
