@@ -211,9 +211,10 @@
                     }
 
 
-                    .lang{
+                    .lang, .langg{
                         display: none;
                     }
+
                 }
 
                 @media only screen and (max-width: 1340px) and (min-width: 1024px) {
@@ -465,14 +466,14 @@
                                     <a href="{{route('front.change-language', 'vi')}}" class="wpml-ls-link">
                                         <img class="wpml-ls-flag"
                                              src="https://nadota.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/vi.png"
-                                             alt="" width="18" height="12"><span class="wpml-ls-native" style="color: dodgerblue">Tiếng Việt</span></a>
+                                             alt="" width="18" height="12"><span class="wpml-ls-native langg" style="color: dodgerblue">Tiếng Việt</span></a>
                                 </li>
                                 <li class="wpml-ls-slot-footer wpml-ls-item wpml-ls-item-en wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
                                     <a href="{{route('front.change-language', 'en')}}" class="wpml-ls-link">
                                         <img class="wpml-ls-flag"
                                              src="https://nadota.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
                                              alt="" width="18" height="12"><span
-                                            class="wpml-ls-display" style="color: dodgerblue">English</span></a>
+                                            class="wpml-ls-display langg" style="color: dodgerblue">English</span></a>
                                 </li>
                             </ul>
                         </div>
