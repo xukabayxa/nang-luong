@@ -164,14 +164,20 @@
             </ul>
 
             <style>
-                @media screen
-                and (min-device-width: 1200px)
-                and (max-device-width: 1600px)
-                and (-webkit-min-device-pixel-ratio: 1) {
+                @media only screen and (min-device-width: 768px){
                     .lang {
                         display: none;
                     }
                 }
+
+                @media screen
+                and (min-device-width: 1400px)
+                and (max-device-width: 1600px)
+                and (-webkit-min-device-pixel-ratio: 1) {
+
+                }
+
+
 
                 @media only screen and (min-width: 768px) {
                     .uk-navbar-left {
