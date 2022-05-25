@@ -413,7 +413,11 @@
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2" >
-                                {{trans('message.who_we_are')}}</h4>
+                                @if(App::isLocale('vi'))
+                                    Giới thiệu <br> Chung
+                                @else
+                                    About US
+                                @endif</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
@@ -501,7 +505,11 @@
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium"  style="margin-bottom: 40px">
                             <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom css-h4 uk-text-lh-4-2">
-                                {{trans('message.our_partner')}}</h4>
+                                @if(App::isLocale('vi'))
+                                    Đối tác <br> Chiến lược
+                                @else
+                                Strategic partnership
+                                    @endif</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about4')}}">
                                 <span class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
