@@ -1103,7 +1103,7 @@
     <div style="margin-top: 60px" class="uk-container uk-container-large ">
         <div class="uk-flex uk-flex-middle uk-text-left uk-margin-medium-bottom">
             <div class="uk-style-secondary-m uk-text-11 uk-light" style="color: black">
-                {{App::isLocale('vi') ? 'Khách hàng tiêu biểu' : 'Customers'}}
+                {{App::isLocale('vi') ? 'Đối tác tiêu biểu' : 'Partner'}}
             </div>
             <div class="uk-style-line orange"></div>
         </div>

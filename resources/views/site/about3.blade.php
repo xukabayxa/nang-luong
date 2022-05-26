@@ -75,7 +75,7 @@
                                         <div class="img-leader"
                                              data-image="">
                                             <img
-                                                src="/site/system/man.jpg">
+                                                src="/site/img/a2.png">
                                         </div>
                                         <div class="body-leader">
                                             <div class="conver-data">
@@ -164,10 +164,23 @@
                                  id="hoi-dong-quan-tri">
                                 <div class="anchor-head"></div>
 
+                                <style>
+                                    @media only screen and (max-width: 768px) {
+                                        .man-2 {
+                                            padding-right: 0;
+                                        }
+                                    }
+
+                                    @media (min-width:1025px){
+                                        .man-2 {
+                                            padding-right: 30px;
+                                        }
+                                    }
+                                </style>
                                 <div class="group-body" style="overflow: hidden;">
                                     <div class="leader-box" id="group-do-minh-phu"
                                          path="">
-                                        <div class="body-leader" style="margin-left: 0; padding-right: 30px">
+                                        <div class="body-leader man-2" style="margin-left: 0;">
                                             <div class="conver-data">
                                                 <div class="content-text" data-content="Ông Đỗ Minh Phú" style="padding: 0; color:#0F4C81">Ông<b> Saumya Swain<b></b></b></div>
                                                 <div class="detail-content-text" style="color:#0F4C81;">
@@ -227,7 +240,7 @@
                         </div>
                     </div>
 
-                    <div class="leader-body d-flex">
+                    <div class="leader-body d-flex" style="margin-bottom: 20px">
                         <div id="page-content-wrapper">
                             <div class="leader load-data active-show"
                                  path="/tpbank_data/sa-website/ve-tpbank/ban-lanh-dao/hoi-dong-quan-tri/hoi-dong-quan-tri"
@@ -240,7 +253,7 @@
                                         <div class="img-leader"
                                              data-image="">
                                             <img
-                                                src="/site/system/man.jpg">
+                                                src="/site/img/a1.jpg">
                                         </div>
                                         <div class="body-leader">
                                             <div class="conver-data">
