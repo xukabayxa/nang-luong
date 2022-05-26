@@ -204,9 +204,7 @@
                         <div class="uk-margin-3xmedium-bottom uk-text-8 uk-style-primary-l" style="color: #0F4C81 !important; text-align: justify">
                             {{App::isLocale('vi') ? 'Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo
                             – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.'
-                            : "AGP exclusively invest in sustainable real assets across three key investment themes. We
-                            evaluate our investment strategy against the United Nations Sustainable Development
-                            Goals (SDGs) with the aim to accelerate the transition to a net zero emissions future."}}
+                            : "Renewable energy and new energy are the future-oriented and indisputable trend of the energy industry in general. RT Energy ties its future to the promotion and development of renewable energy – towards a green, clean, and sustainable world for future generations."}}
                         </div>
                         {{-- <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">--}}
                             {{-- <span--}} {{-- class="uk-color-tertiary uk-text-middle uk-margin-right" --}} {{-- style="color: #0F4C81 !important; font-size: 1rem">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</span>--}}
@@ -697,7 +695,13 @@
                     </ul>
 
                     @else
-                        Renewable energy and new energy are the future-oriented and indisputable trend of the energy industry in general. RT Energy ties its future to the promotion and development of renewable energy – towards a green, clean, and sustainable world for future generations.
+                        Realizing that strategy, we aim at the following goal:
+                        <ul style="margin-top: 10px">
+                            <li>Develop, and invest in the construction and operation of renewable energy projects</li>
+                            <li>Increase investment scale in renewable energy projects from 100MW in 2021 to 500MW in 2023. Towards an investment portfolio with 1GW of renewable energy before or in 2025</li>
+                            <li>Research, apply, and invest in projects using new technologies such as Renewable Energy combined with battery storage / combined hydrogen production, .... when such technologies are financially and policy feasible</li>
+                            <li>Develop, invest in the construction and operation of green industrial zone projects – in which all electricity used for industrial production is renewable energy</li>
+                        </ul>
                     @endif
 
                 </div>
