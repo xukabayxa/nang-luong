@@ -324,10 +324,10 @@
             padding-bottom: 35px;
         }
 
-        .homeIndustry-txt {
-            margin-top: -30px;
-            width: 100%;
-        }
+        /*.homeIndustry-txt {*/
+        /*    margin-top: -40px;*/
+        /*    width: 100%;*/
+        /*}*/
 
         .homeIndustry-title {
             color: var(--color-theme);
@@ -338,7 +338,7 @@
         }
 
         .homeIndustry-desc {
-            padding-left: 12px;
+            /*padding-left: 12px;*/
             /*border-left: 2px solid #0F4C81;*/
             font-family: 'Roboto', sans-serif;
             font-size: 1.375em;
@@ -664,16 +664,32 @@
                 margin-top: -90px;
             }
         }
+
+        @media only screen and (max-width: 768px) {
+            .homeIndustry-txt {
+                margin-top: -60px;
+            }
+            .chongchong {
+                margin-top: -60px;
+            }
+        }
+
+        @media (min-width:1025px){
+            .homeIndustry-txt {
+                margin-top: -30px;
+            }
+        }
+
     </style>
 
-    <div class="homeIndustry-main" style="margin-top: -30px">
+    <div class="homeIndustry-main" >
         <div class="homeIndustry-content">
             <div class="homeIndustry-txt">
-                <h3 class="homeIndustry-title">{{App::isLocale('vi') ? 'Giới thiệu' : 'About us'}}</h3>
+{{--                <h3 class="homeIndustry-title">{{App::isLocale('vi') ? 'Giới thiệu' : 'About us'}}</h3>--}}
                 <div class="homeIndustry-desc" style="text-align: justify">
                     @if(App::isLocale('vi'))
                             Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:
-                    <ul>
+                    <ul style="margin-top: 10px">
                         <li>Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo</li>
                         <li>Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025</li>
                         <li>Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách</li>
