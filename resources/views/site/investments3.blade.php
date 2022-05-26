@@ -38,7 +38,7 @@
                         <h6 class="uk-animation-item uk-style-secondary uk-text-11 uk-margin-medium-bottom">
                         </h6>
 
-                        <h1 class="uk-animation-item uk-style-primary-m uk-text-2 uk-lh-71 uk-width-medium">
+                        <h1 class="uk-animation-item uk-style-primary-m uk-text-2 uk-lh-71 uk-width-medium" style="color: #fff">
                             {{trans('message.future_solution')}} </h1>
 
 

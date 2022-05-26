@@ -137,9 +137,8 @@
                         Hanoi
                     </h5>
                     <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28" style="color: #fff">
-                        Spring Heirs Tower, No. 9/82 Dich Vong Hau, Cau Giay, Hanoi, <br>
-                      <br/>
-                        <br/>
+                        Spring Heirs Tower, <br/>
+                        No. 9/82 Dich Vong Hau, Cau Giay, Hanoi <br>
                     </div>
                     <div class="uk-style-primary-m uk-text-13 uk-lh-28">
                         <a href="tel:+8494 866 8889" class="uk-text-underline">+8494 866 8889</a>
@@ -196,7 +195,7 @@
 {{--								{{trans('message.sitemap_footer')}}							</a>--}}
 {{--						</span>--}}
 {{--                </div>--}}
-                <span class="uk-margin-right uk-footer-item">
+                <span class="uk-margin-right uk-footer-item" style="color: #fff">
 					© 2022 RT ENEGRY			</span>
             </div>
 
@@ -205,12 +204,12 @@
                     infor.RTenergy@gmail.com </a>
             </div>
 
-            <div class="uk-width-1-1 uk-width-1-4@l uk-style-secondary uk-text-14 uk-lh-15 uk-flex uk-flex-middle uk-flex-center uk-flex-right@l">
-                <a href="/" target="_blank" rel="noreferrer">
-                    <span class="uk-text-faded uk-text-middle">Website by</span>
-                    <span class="uk-icon uk-preserve" uk-icon="icon: logo-sozo; ratio: 0.5;"></span>
-                </a>
-            </div>
+{{--            <div class="uk-width-1-1 uk-width-1-4@l uk-style-secondary uk-text-14 uk-lh-15 uk-flex uk-flex-middle uk-flex-center uk-flex-right@l">--}}
+{{--                <a href="/" target="_blank" rel="noreferrer">--}}
+{{--                    <span class="uk-text-faded uk-text-middle">Website by</span>--}}
+{{--                    <span class="uk-icon uk-preserve" uk-icon="icon: logo-sozo; ratio: 0.5;"></span>--}}
+{{--                </a>--}}
+{{--            </div>--}}
         </div>
     </div>
 
