@@ -15,7 +15,7 @@
             <div class="uk-position-relative uk-background-image uk-light">
                 <div class="uk-position-cover">
                     <div class="uk-cover-container">
-                        <img data-src="/site/system/inves/i_1.jpg"
+                        <img data-src="{{$post->image->path ?? ''}}"
                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                              class=" Sirv uk-utility-object-fit-cover " alt="ASE-EAL-Header-Image"
                              title="ASE-EAL-Header-Image"/>
@@ -32,8 +32,8 @@
                                 <span class="read-timer" id="read-timer"></span>
                             </h6>
 
-                            <h1 class="uk-animation-item uk-style-primary-m uk-text-4 uk-text-lh-4 uk-width-2xmedium">
-                                Dự án điện gió Adani Phước Minh </h1>
+                            <h1 class="uk-animation-item uk-style-primary-m uk-text-4 uk-text-lh-4 uk-width-2xmedium" style="color: #fff">
+                               {{$post->name}} </h1>
                             <div class="uk-flex uk-flex-middle uk-margin-top">
                                 <a href="#article-content" uk-scroll>
                                     <span class="uk-icon uk-preserve uk-margin-xxsmall-right"
@@ -52,27 +52,7 @@
                  id="read-area">
 
 
-                {{App::isLocale('vi') ? 'Các dự án lỡ hẹn hưởng giá FIT ưu đãi sẽ phải chuyển sang cơ chế đấu thầu và giá mua điện chỉ áp dụng tới hết năm 2025, theo đề xuất của Bộ Công Thương.
-
-Với điện mặt trời, theo Quyết định 13/2020, dự án vận hành trước 31/12/2020 sẽ được hưởng giá FIT 7,09 cent một kWh (tương đương 1.644 đồng một kWh) với dự án điện mặt trời mặt đất. Giá với điện mặt trời nổi là 7,69 cent một kWh (khoảng 1.783 đồng một kWh) và điện mặt trời mái nhà 8,38 cent một kWh, tức 1.943 đồng mỗi kWh.
-
-Còn dự án điện gió vận hành thương mại trước 1/11/2021, theo Quyết định 39/2018 là 9,8 cent một kWh (2.223 đồng một kWh) với dự án trên biển; dự án trên bờ là 8,5 cent (1.927 đồng) một kWh.
-
-Đến nay, hàng loạt dự án không kịp vận hành để hưởng các ưu đãi trên. Với xu thế các nước chuyển đổi từ cơ chế giá FIT ưu đãi sang đấu thầu dự án năng lượng tái tạo theo yêu cầu của hệ thống điện, Bộ Công Thương vừa đề xuất Chính phủ chuyển sang cơ chế đấu thầu mua giá điện.
-
-EVN sẽ là đơn vị đấu thầu, dự kiến thực hiện trong năm 2022. Giá mua điện sau đấu thầu sẽ áp dụng trong 3 năm (đến 2025). Sau thời gian này, các dự án điện gió, điện mặt trời sẽ phải đấu thầu tiếp theo quy định do Chính phủ, Bộ Công Thương ban hành.
-
-Đồng tiền tính giá là VND (đồng/kWh) và không điều chỉnh biến động theo tỷ giá VND/USD.
-
-Nhà máy điện sẽ được huy động theo yêu cầu của hệ thống điện, tuân thủ quy định về quy trình điều độ hệ thống điện quốc gia và các quy định khác liên quan; đảm bảo an ninh hệ thống điện.
-
-Các dự án điện gió, điện mặt trời chuyển tiếp được quyền lựa chọn tham gia thị trường điện cạnh tranh. Trường hợp tham gia, nhà máy có trách nhiệm thực hiện quyền, nghĩa vụ của đơn vị phát điện theo quy định thị trường điện.
-
-Bộ Công Thương đề nghị Chính phủ cho phép xây dựng quy định này theo trình tự, thủ tục rút gọn của Luật ban hành Văn bản pháp luật. Quyết định dự kiến trình Thủ tướng trong tháng 5. Bộ này sẽ xây dựng, ban hành Thông tư về khung giá điện áp dụng cho các dự án chuyển tiếp, có hiệu lực đồng thời với quyết định của Thủ tướng.' : 'Under the agreement, ASE along with its local construction partner, Absolute Solar &amp; Wind will
-                    build approximately 9MW of solar PV, 1.5MW of battery storage and 40 EV charging points. The large
-                    ground-mounted solar PV system and battery will be situated next to the runway on a 16-acre plot of
-                    land, connected to the airport via a high voltage private wire network.'
-}}
+               {!! $post->body !!}
 
 
 

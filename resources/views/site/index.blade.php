@@ -712,63 +712,6 @@
                             <img src="/site/system/home/h1.jpg">
                         </div>
 
-                        {{-- @if(App::isLocale('vi'))--}}
-                        {{--
-                        <pre style="font-family: aktiv-grotesk, Helvetica, Arial, sans-serif">--}}
-{{--1.Lĩnh vực đầu tư kinh doanh:--}}
-{{--- Năng lượng tái tạo - Renewable energy and technology--}}
-{{--- Năng lượng mới (đang nghiên cứu) - New reliable power system--}}
-{{--- Khu công nghiệp kết hợp năng lượng tái tạo: mô hình khu công nghiệp xanh--}}
-{{--  Sustainable industrial park development--}}
-{{--2.Chiến lược:--}}
-{{--Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể--}}
-{{--chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến--}}
-{{--trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững--}}
-{{--cho các thế hệ tương lai.--}}
-{{--Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:--}}
-{{--+ Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo;--}}
-{{--+ Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023.--}}
-{{--Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025;--}}
-{{--+ Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như--}}
-{{--Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách;--}}
-{{--+ Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh –--}}
-{{--trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.--}}
-{{--3.Tầm nhìn:--}}
-{{--RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong trong lĩnh vực--}}
-{{--năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030.--}}
-{{--                                  </pre>--}}
-                        {{-- @else--}}
-                        {{--
-                        <pre style="font-family: aktiv-grotesk, Helvetica, Arial, sans-serif">--}}
-{{--1. Business investment domains:--}}
-{{--Renewable energy and technology--}}
-{{--- new energy (studying) - New power system--}}
-{{--Sustainable industrial park development--}}
-{{--2. Strategy:--}}
-{{--Renewable energy and new energy is a future and a trend--}}
-{{-- of energy. Rt energy with his future--}}
-{{--to promote and develop – renewable energy towards a green, clean, and sustainable world--}}
-{{--for future generations.--}}
-{{--In fact, that strategy, we target the following goals:--}}
-{{--+ development, investment in construction, and operation of renewable energy projects;--}}
-{{--+ increase the size of the renewable renewable energy project from 100mw 2021 to 500mw in 2023.--}}
-{{--Towards the investment portfolio with 1gw renewable energy or in 2025;--}}
-{{--+ research, application and investment in projects using new technology such as--}}
-{{--Renewable energy, …. when those technologies are financially and financially feasible;--}}
-{{--+ development, investment in construction and operation of – industrial parks--}}
-{{--in which power ministries use for industrial production as renewable energy.--}}
-{{--3. Vision:--}}
-{{--Rt energy is developed and developed with the orientation of a pioneer in the field--}}
-{{--renewable energy and industrial parks in asean region in 2025, and in the world by 2030.--}}
-{{--                                    </pre>--}}
-                        {{-- @endif--}}
-                        {{-- {{App::isLocale('vi') ?--}}
-                        {{--: ' Templates are executed by applying them to a data structure. Annotations in the template--}}
-                        {{-- refer to elements of the data structure (typically a field of a struct or a key in a--}}
-                        {{-- map) to control execution and derive values to be displayed. Execution of the template--}}
-                        {{-- walks the structure and sets the cursor, represented by a period '.' and called "dot",--}}
-                        {{-- to the value at the current location in the structure as execution proceeds.'}}--}}
-
                         <a href="{{route('front.about')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}} <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -812,8 +755,8 @@
         <div class="homeIndustry-content">
             <div class="homeIndustry-figure2">
                 <div class="homeIndustry-img2 active" style="background-image:url(/site/system/home/z1.jpg);"></div>
-                <div class="homeIndustry-img2" style="background-image:url(/site/system/home/z2.jpg);"></div>
                 <div class="homeIndustry-img2" style="background-image:url(/site/system/home/z3.jpg);"></div>
+                <div class="homeIndustry-img2" style="background-image:url(/site/system/home/z2.jpg);"></div>
             </div>
             <div class="homeIndustry-txt h-txt" style="width: 100%">
                 <h3 class="homeIndustry-title">{{App::isLocale('vi') ? 'Lĩnh vực đầu tư kinh doanh' : 'Business investment'}}</h3>
@@ -836,21 +779,6 @@
                         <a href="{{route('front.investments1')}}" class="v-detail" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}} <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                     <div class="homeIndustry-item2">
-                        <h6>{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</h6>
-                        <div class="imgDes">
-                            <img src="/site/system/home/h6.jpg">
-                        </div>
-                        <p>
-                            {{App::isLocale('vi') ? 'RT Energy luôn đổi mới, sáng tạo, nhanh chóng thích ứng với những thay đổi của thị trường nhằm tạo ra sự khác biệt và hiệu quả cao trong các lĩnh vực đầu tư kinh doanh'
-                             :'RT Energy always innovates, creates, adapts quickly to market changes to make a difference and high efficiency in the fields of business investment.
-
-                             '
-                             }}
-
-                        </p>
-                        <a href="{{route('front.investments2')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}} <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                    <div class="homeIndustry-item2">
                         <h6>{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}
                         </h6>
                         <div class="imgDes">
@@ -866,6 +794,22 @@
                         </p>
                         <a href="{{route('front.investments3')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}} <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
+
+                    <div class="homeIndustry-item2">
+                        <h6>{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</h6>
+                        <div class="imgDes">
+                            <img src="/site/system/home/h6.jpg">
+                        </div>
+                        <p>
+                            {{App::isLocale('vi') ? 'RT Energy luôn đổi mới, sáng tạo, nhanh chóng thích ứng với những thay đổi của thị trường nhằm tạo ra sự khác biệt và hiệu quả cao trong các lĩnh vực đầu tư kinh doanh'
+                             :'RT Energy always innovates, creates, adapts quickly to market changes to make a difference and high efficiency in the fields of business investment.
+
+                             '
+                             }}
+
+                        </p>
+                        <a href="{{route('front.investments2')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}} <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -874,15 +818,16 @@
             <a href="{{route('front.investments1')}}" class="homeIndustry-navItem2 industry-item active">
                 <div class="homeIndustry-navImg industryItem-img" style="background-image:url(/site/system/home/z1.jpg);"></div>
                 <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</div>
-            </a>
+
+                <a href="{{route('front.investments3')}}" class="homeIndustry-navItem2 industry-item">
+                    <div class="homeIndustry-navImg industryItem-img" style="background-image:url(/site/system/home/z3.jpg);"></div>
+                    <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</div>
+                </a>
             <a href="{{route('front.investments2')}}" class="homeIndustry-navItem2 industry-item">
                 <div class="homeIndustry-navImg industryItem-img" style="background-image:url(/site/system/home/z2.jpg);"></div>
                 <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</div>
             </a>
-            <a href="{{route('front.investments3')}}" class="homeIndustry-navItem2 industry-item">
-                <div class="homeIndustry-navImg industryItem-img" style="background-image:url(/site/system/home/z3.jpg);"></div>
-                <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</div>
-            </a>
+
         </div>
     </div>
 
@@ -901,62 +846,28 @@
 
 
         <div uk-grid class="uk-grid-large uk-grid-match ajax-results uk-grid uk-child-width-1-3@l uk-child-width-1-2@m" uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 320;">
-            <div class="uk-feat-article">
-                <div>
-                    <div class="uk-cover-container uk-margin-small-bottom">
-                        <canvas width="460" height="370"></canvas>
-                        <img data-src="{{ asset('site/system/about_us/a5.jpg') }}" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale" title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale" />
+            @foreach($news as $post)
+                <div class="uk-feat-article">
+                    <div>
+                        <div class="uk-cover-container uk-margin-small-bottom">
+                            <canvas width="460" height="370"></canvas>
+                            <img data-src="{{ $post->image->path ?? ''}}" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale" title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale" />
+                        </div>
+                        <div class="uk-flex uk-flex-between uk-style-secondary-m uk-text-ls-1 uk-text-dark uk-text-12 uk-margin-small-bottom uk-padding-xsmall-top">
+                            <div>22.03.22</div>
+                            <div></div>
+                        </div>
+                        <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
+                            {{App::isLocale('vi') ? $post->name : 'Sustainable Real Assets '}} </h4>
+                        <a class="uk-button uk-color-teal uk-style-secondary-b " href="{{route('front.post', $post->slug)}}">
+                            <span class="uk-color-teal uk-text-middle uk-margin-right" style="color: #114D81 !important"> {{App::isLocale('vi') ? 'Chi tiết' : 'Read Article '}}</span>
+                            <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}" alt="win-icon">
+                        </a>
                     </div>
-                    <div class="uk-flex uk-flex-between uk-style-secondary-m uk-text-ls-1 uk-text-dark uk-text-12 uk-margin-small-bottom uk-padding-xsmall-top">
-                        <div>22.03.22</div>
-                        <div></div>
-                    </div>
-                    <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
-                        {{App::isLocale('vi') ? 'Năng lượng gió cho môi trường xanh' : 'Sustainable Real Assets '}} </h4>
-                    <a class="uk-button uk-color-teal uk-style-secondary-b " href="#">
-                        <span class="uk-color-teal uk-text-middle uk-margin-right" style="color: #114D81 !important"> {{App::isLocale('vi') ? 'Chi tiết' : 'Read Article '}}</span>
-                        <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}" alt="win-icon">
-                    </a>
-                </div>
 
-            </div>
-            <div class="uk-feat-article">
-                <div>
-                    <div class="uk-cover-container uk-margin-small-bottom">
-                        <canvas width="460" height="370"></canvas>
-                        <img data-src="{{ asset('site/system/about_us/1.jpg') }}" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="ASE-EAL-Header-Image.png?w=1024&h=505&scale" title="ASE-EAL-Header-Image.png?w=1024&h=505&scale" />
-                    </div>
-                    <div class="uk-flex uk-flex-between uk-style-secondary-m uk-text-ls-1 uk-text-dark uk-text-12 uk-margin-small-bottom uk-padding-xsmall-top">
-                        <div>11.03.22</div>
-                        <div></div>
-                    </div>
-                    <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
-                        {{App::isLocale('vi') ? 'Năng lượng mặt trời cho môi trường xanh' : 'Sustainable Real Assets '}} </h4>
-                    <a class="uk-button uk-color-teal uk-style-secondary-b " href="https://www.agpgroup.com/insights/ampyr-solar-europe-signs-deal-with-edinburgh-airport-to-develop-solar-farm-battery-and-electric-vehicle-infrastructure/">
-                        <span class="uk-color-teal uk-text-middle uk-margin-right" style="color: #114D81 !important">{{App::isLocale('vi') ? 'Chi tiết' : 'Read Article '}}</span>
-                        <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}" alt="win-icon">
-                    </a>
                 </div>
+            @endforeach
 
-            </div>
-            <div class="uk-feat-article">
-                <div>
-                    <div class="uk-cover-container uk-margin-small-bottom">
-                        <canvas width="460" height="370"></canvas>
-                        <img data-src="{{ asset('site/system/about_us/a6.jpg') }}" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class=" Sirv uk-utility-object-fit-cover " alt="iStock-1032683612-scaled.jpg?w=1024&h=683&scale" title="iStock-1032683612-scaled.jpg?w=1024&h=683&scale" />
-                    </div>
-                    <div class="uk-flex uk-flex-between uk-style-secondary-m uk-text-ls-1 uk-text-dark uk-text-12 uk-margin-small-bottom uk-padding-xsmall-top">
-                        <div>16.02.22</div>
-                        <div></div>
-                    </div>
-                    <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
-                        {{App::isLocale('vi') ? 'Dư án năng lượng tái tạo' : 'Sustainable Real Assets '}}</h4>
-                    <a class="uk-button uk-color-teal uk-style-secondary-b " href="https://www.agpgroup.com/insights/ampyr-solar-europe-secures-e400-million-from-carval-investors-to-develop-and-construct-pipeline-of-european-solar-assets/">
-                        <span class="uk-color-teal uk-text-middle uk-margin-right" style="color: #114D81 !important">{{App::isLocale('vi') ? 'Chi tiết' : 'Read Article '}}</span>
-                        <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}" alt="win-icon">
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 

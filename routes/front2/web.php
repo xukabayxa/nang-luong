@@ -16,7 +16,7 @@ Route::group(['namespace' => 'Front', 'middleware' => 'locale'], function () {
     Route::get('/load-more-products','FrontController@loadMoreProduct')->name('front.loadmore.products');
     Route::get('/product/{id}/getData','FrontController@getDataProduct')->name('front.product.getData');
     Route::get('/san-pham/{slug}','FrontController@detailProduct')->name('front.product.detail');
-    Route::get('/tin-tuc/{slug?}/{postSlug?}','FrontController@getPostCategory')->name('front.news');
+//    Route::get('/tin-tuc/{slug?}/{postSlug?}','FrontController@getPostCategory')->name('front.news');
     Route::get('/bai-viet/{slug}','FrontController@getPostCategory')->name('front.news.detail');
 
 
@@ -38,7 +38,7 @@ Route::group(['namespace' => 'Front', 'middleware' => 'locale'], function () {
     Route::get('/insights','FrontController@insights')->name('front.insights');
     Route::get('/sitemap','FrontController@sitemap')->name('front.sitemap');
     Route::get('/cookie-policy','FrontController@policy')->name('front.policy');
-    Route::get('/post','FrontController@post')->name('front.post');
+    Route::get('/tin-tuc/{slug}','FrontController@post')->name('front.post');
 
     Route::get('change-language/{language}', 'FrontController@changeLanguage')->name('front.change-language');
 
