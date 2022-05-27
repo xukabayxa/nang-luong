@@ -110,7 +110,7 @@
                                         <div class="uk-cover-container">
                                             <a href="{{route('front.post', $p_s2->slug)}}">
                                                 <canvas width="467" height="593"></canvas>
-                                                <img data-src="{{$post_slice2->image->path ?? ''}}"
+                                                <img data-src="{{$p_s2->image->path ?? ''}}"
                                                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
                                                      class=" Sirv uk-utility-object-fit-cover "
                                                      alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
@@ -123,7 +123,7 @@
                                         <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">
                                             <a href=""
                                                class="uk-color-dark">
-                                                {{$post_slice2->name}}</a>
+                                                {{$p_s2->name}}</a>
                                         </div>
                                     </div>
                                 </div>
