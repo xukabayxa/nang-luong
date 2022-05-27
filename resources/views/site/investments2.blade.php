@@ -39,7 +39,9 @@
                              </h6>
 
                         <h1 class="uk-animation-item uk-style-primary-m uk-text-2 uk-lh-71 uk-width-medium" style="color: #fff">
-                            {{trans('message.sustainable_infrastructure')}} </h1>
+{{--                            {{trans('message.sustainable_infrastructure')}}--}}
+                            {{App::isLocale('vi') ? 'NĂNG LƯỢNG MỚI' : 'NEW ENERGY'}}
+                        </h1>
 
 
                     </div>

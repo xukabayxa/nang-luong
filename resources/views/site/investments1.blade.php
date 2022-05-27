@@ -181,9 +181,9 @@
                                             <figure>
                                                 <figcaption>
                                                     <div class="activityname">
-                                                        <a href="https://www.fico.com.vn/linh-vuc-hoat-dong/san-xuat-xi-mang-va-san-pham-sau-xi-mang"
+                                                        <a href=""
                                                            target="_self"
-                                                           title="Sản xuất xi măng và sản phẩm sau xi măng">Dự án điện gió Adani Phước Minh</a></div>
+                                                           title="">Dự án điện gió Adani Phước Minh</a></div>
                                                     <div class="activitydesc">
 
                                                             <pre>
@@ -199,7 +199,7 @@
                                                     <a class="viewmore"
                                                        href="{{route('front.post')}}"
                                                        target="_self"
-                                                       title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">{{App::isLocale('vi') ? 'Chi tiết' : 'Read more'}}</a>
+                                                       title="">{{App::isLocale('vi') ? 'Chi tiết' : 'Read more'}}</a>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -285,7 +285,7 @@
                                     <div class="col-xs-12 col-lg-6 push-lg-6">
                                         <div class="activitycol">
                                             <a class="img"
-                                               href="https://www.fico.com.vn/linh-vuc-hoat-dong/kinh-doanh-thuong-mai-vat-lieu-xay-dung-1"
+                                               href=""
                                                target="_self" title="">
                                                 <img src="/site/system/inves/ic.jpg"
                                                      alt="">
@@ -297,7 +297,7 @@
                                             <figure>
                                                 <figcaption>
                                                     <div class="activityname">
-                                                        <a href="https://www.fico.com.vn/linh-vuc-hoat-dong/kinh-doanh-thuong-mai-vat-lieu-xay-dung-1"
+                                                        <a href=""
                                                            target="_self"
                                                            title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">Dự án điện mặt trời đa mục tiêu tại tỉnh Khánh Hòa</a></div>
                                                     <div class="activitydesc"><p>

@@ -400,7 +400,7 @@
         }
 
         .homeIndustry-item2 p {
-            height: 100px;
+            height: 150px;
             overflow: hidden;
             font-family: 'Roboto', sans-serif;
             font-size: 1.375em;
@@ -815,10 +815,10 @@
                 <div class="homeIndustry-img2" style="background-image:url(/site/system/home/z2.jpg);"></div>
                 <div class="homeIndustry-img2" style="background-image:url(/site/system/home/z3.jpg);"></div>
             </div>
-            <div class="homeIndustry-txt h-txt">
+            <div class="homeIndustry-txt h-txt" style="width: 100%">
                 <h3 class="homeIndustry-title">{{App::isLocale('vi') ? 'Lĩnh vực đầu tư kinh doanh' : 'Business investment'}}</h3>
                 <div class="homeIndustry-desc"></div>
-                <div class="homeIndustry-intro">
+                <div class="homeIndustry-intro" style="text-align: justify">
                     <div class="homeIndustry-item2 active">
                         <h6>{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}
                         </h6>
@@ -826,9 +826,9 @@
                             <img src="/site/system/home/h5.jpg">
                         </div>
                         <p>
-                            {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu
-                            (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và'
-                            :'So Awesome to see a thirty year old song presented in a modern style. The Singer is now in his late seventies and was very famous in germany since the 1960s. With his Band "The Rattles" he played in Hamburg in the Star Club. Yes, the same club and the same time when The Beatles played there. And they even shared some beer together.
+                            {{App::isLocale('vi') ? 'RT Energy luôn đổi mới, sáng tạo, nhanh chóng thích ứng với những thay đổi của thị trường nhằm tạo ra sự khác biệt và hiệu quả cao trong các lĩnh vực đầu tư kinh doanh'
+                            :'RT Energy always innovates, creates, adapts quickly to market changes to make a difference and high efficiency in the fields of business investment.
+
                             '
                             }}
 
@@ -841,11 +841,11 @@
                             <img src="/site/system/home/h6.jpg">
                         </div>
                         <p>
-                            {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu
-                            (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và'
-                            :'So Awesome to see a thirty year old song presented in a modern style. The Singer is now in his late seventies and was very famous in germany since the 1960s. With his Band "The Rattles" he played in Hamburg in the Star Club. Yes, the same club and the same time when The Beatles played there. And they even shared some beer together.
-                            '
-                            }}
+                            {{App::isLocale('vi') ? 'RT Energy luôn đổi mới, sáng tạo, nhanh chóng thích ứng với những thay đổi của thị trường nhằm tạo ra sự khác biệt và hiệu quả cao trong các lĩnh vực đầu tư kinh doanh'
+                             :'RT Energy always innovates, creates, adapts quickly to market changes to make a difference and high efficiency in the fields of business investment.
+
+                             '
+                             }}
 
                         </p>
                         <a href="{{route('front.investments2')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}} <i class="fa-solid fa-arrow-right"></i></a>
@@ -857,9 +857,9 @@
                             <img src="/site/system/home/h7.jpg">
                         </div>
                         <p>
-                            {{App::isLocale('vi') ? 'Các mẫu được thực thi bằng cách áp dụng chúng vào một cấu trúc dữ liệu. Chú thích trong mẫu đề cập đến các phần tử của cấu trúc dữ liệu
-                            (thường là một trường của cấu trúc hoặc một khóa trong bản đồ) để kiểm soát việc thực thi và'
-                            :'So Awesome to see a thirty year old song presented in a modern style. The Singer is now in his late seventies and was very famous in germany since the 1960s. With his Band "The Rattles" he played in Hamburg in the Star Club. Yes, the same club and the same time when The Beatles played there. And they even shared some beer together.
+                            {{App::isLocale('vi') ? 'RT Energy luôn đổi mới, sáng tạo, nhanh chóng thích ứng với những thay đổi của thị trường nhằm tạo ra sự khác biệt và hiệu quả cao trong các lĩnh vực đầu tư kinh doanh'
+                            :'RT Energy always innovates, creates, adapts quickly to market changes to make a difference and high efficiency in the fields of business investment.
+
                             '
                             }}
 

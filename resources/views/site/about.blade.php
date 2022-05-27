@@ -108,20 +108,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="wpb_column vc_column_container vc_col-sm-4">
-                                            <div class="vc_column-inner ">
-                                                <div class="wpb_wrapper">
-                                                    <div class="dt-sc-icon-box type5 ">
-                                                        <div class="icon-wrapper"><img width="80" height="80"
-                                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-ser7@2x.png"
-                                                                                       class="attachment-full" alt=""
-                                                                                       loading="lazy"></div>
-                                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</h4>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                         <div class="wpb_column vc_column_container vc_col-sm-4">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
@@ -132,6 +119,21 @@
                                                                                        loading="lazy"></div>
                                                         <div class="icon-content"><h4 class="text-br">{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp
 năng lượng tái tạo' : 'Sustainable industrial park development'}}</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="wpb_column vc_column_container vc_col-sm-4">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="dt-sc-icon-box type5 ">
+                                                        <div class="icon-wrapper"><img width="80" height="80"
+                                                                                       src="https://solarwp.wpengine.com/wp-content/uploads/2016/09/icon-ser7@2x.png"
+                                                                                       class="attachment-full" alt=""
+                                                                                       loading="lazy"></div>
+                                                        <div class="icon-content"><h4>{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</h4>
                                                         </div>
                                                     </div>
                                                 </div>
