@@ -88,7 +88,7 @@ class PostController extends Controller
 				'language_id' => 'nullable',
 				// 'intro' => 'nullable|max:255',
 				'body' => 'required',
-				'image' => 'required|file|mimes:jpg,jpeg,png|max:2000'
+				'image' => 'required|file|mimes:jpg,jpeg,png|max:12000'
 			]
 		);
 		$json = new stdClass();
@@ -151,7 +151,7 @@ class PostController extends Controller
 				'status' => 'required|in:0,1',
 				// 'intro' => 'nullable|max:255',
 				'body' => 'required',
-				'image' => 'nullable|file|mimes:jpg,jpeg,png|max:2000'
+				'image' => 'nullable|file|mimes:jpg,jpeg,png|max:12000'
 			]
 		);
 
