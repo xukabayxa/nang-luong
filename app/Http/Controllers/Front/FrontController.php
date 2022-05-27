@@ -52,19 +52,8 @@ class FrontController extends Controller
      */
     public function index()
     {
-        return view('site.index');
-        $banners = Banner::query()->latest()->get();
-        $categoriesSpecial = CategorySpecial::query()->with(['products' => function ($q) {
-            $q->with('manufacturer');
-        }])->where([
-            'type' => CategorySpecial::PRODUCT,
-            'show_home_page' => 1,
-        ])->whereNotNull('order_number')->orderBy('order_number')->get();
-        // dd($categoriesSpecial)
-        // bài viết mới nhất
-        $postsRecent = Post::query()->where('status', 1)->latest()->limit(3)->get();
-
-        return view('site.index', compact('banners', 'categoriesSpecial', 'postsRecent'));
+        $news = Post::query()->where('status', 1)->latest()->get();
+        return view('site.index', compact('news'));
     }
 
     /**
@@ -483,7 +472,8 @@ class FrontController extends Controller
     public function insights()
     {
         $language = Language::query()->where('code', config('app.locale'))->first();
-        $posts = Post::query()->where('language_id', $language->id)->latest()->get();
+//        $posts = Post::query()->where('language_id', $language->id)->latest()->get();
+        $posts = Post::query()->where('status', 1)->latest()->get();
 
         return view('site.insights', compact('posts'));
     }
@@ -498,9 +488,10 @@ class FrontController extends Controller
         return view('site.cookie-policy');
     }
 
-    public function post()
+    public function post($slug)
     {
-        return view('site.news_detail');
+        $post = Post::findBySlug($slug);
+        return view('site.news_detail', compact('post'));
     }
 
     public function changeLanguage($language)
