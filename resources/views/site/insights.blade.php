@@ -34,7 +34,7 @@
                                     <div class="uk-style-primary-m uk-text-4 uk-text-lh-4 uk-width-2-3@m uk-width-1-1">
                                         <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-margin-small-bottom uk-hidden@s">
                                             22.03.22 </h6>
-                                        <a href=""
+                                        <a href="{{route('front.post', $posts->first()->slug)}}"
                                            class="uk-color-dark">
                                            {{$posts->first()->name}} </a>
                                     </div>
@@ -57,7 +57,7 @@
                                            <div class="uk-feat-article uk-width-1-1@m uk-width-1-2@s"
                                                 uk-scrollspy="cls: uk-animation-fade; delay: 450;">
                                                <div class="uk-cover-container">
-                                                   <a href="">
+                                                   <a href="{{route('front.post', $p_s1->slug)}}">
                                                        <canvas width="1000" height="662"></canvas>
                                                        <img data-src="{{$p_s1->image->path ?? ''}}"
                                                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
@@ -70,7 +70,7 @@
                                                        <div class="uk-style-secondary-m uk-color-muted uk-text-12 uk-margin-small-bottom uk-text-ls-1 uk-text-lh-3 uk-hidden@s">
                                                            16.02.22
                                                        </div>
-                                                       <a href=""
+                                                       <a href="{{route('front.post', $p_s1->slug)}}"
                                                           class="uk-color-dark">{{$p_s1->name}}</a>
                                                    </div>
                                                    <div class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-visible@s">
@@ -121,7 +121,7 @@
                                             <div></div>
                                         </div>
                                         <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">
-                                            <a href=""
+                                            <a href="{{route('front.post', $p_s2->slug)}}"
                                                class="uk-color-dark">
                                                 {{$p_s2->name}}</a>
                                         </div>
