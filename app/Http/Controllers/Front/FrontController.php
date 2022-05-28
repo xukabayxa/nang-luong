@@ -52,7 +52,13 @@ class FrontController extends Controller
      */
     public function index()
     {
-        $news = Post::query()->where('status', 1)->latest()->get()->take(3);
+        $language = Language::query()->where('code', config('app.locale'))->first();
+
+        $news = Post::query()->where([
+            'language_id' => $language->id,
+            'status' => 1
+        ])->latest()->get()->take(3);
+
         return view('site.index', compact('news'));
     }
 
@@ -472,8 +478,11 @@ class FrontController extends Controller
     public function insights()
     {
         $language = Language::query()->where('code', config('app.locale'))->first();
-//        $posts = Post::query()->where('language_id', $language->id)->latest()->get();
-        $posts = Post::query()->where('status', 1)->latest()->get();
+        $posts = Post::query()->where([
+            'language_id' => $language->id,
+            'status' => 1
+        ])->latest()->get();
+
         return view('site.insights', compact('posts'));
     }
 
@@ -489,8 +498,13 @@ class FrontController extends Controller
 
     public function post($slug)
     {
+        $language = Language::query()->where('code', config('app.locale'))->first();
         $post = Post::findBySlug($slug);
-        $post_r = Post::query()->whereNotIn('id', [$post->id])->latest()->get();
+        $post_r = Post::query()->whereNotIn('id', [$post->id])
+            ->where([
+                'language_id' => $language->id,
+                'status' => 1])
+            ->latest()->get();
 
         return view('site.news_detail', compact('post', 'post_r'));
     }
