@@ -186,7 +186,7 @@
                                                            title="">Dự án điện gió Adani Phước Minh</a></div>
                                                     <div class="activitydesc">
 
-                                                            <pre>
+                                                            <pre style="min-height: 155px;">
                                                          Quy mô: công suất 27.2 MW, diện tích 30ha
                                                             Tổng vốn đầu tư: 1150 tỷ đồng
                                                             Nhà cung cấp: GE
@@ -226,7 +226,7 @@
                                                            target="_self"
                                                            title="Sản xuất kinh doanh vật liệu hoàn thiện">Dự án điện mặt trời Adani Phước Minh</a></div>
                                                     <div class="activitydesc">
-                                                        <pre>
+                                                        <pre style="min-height: 155px;">
                                                             Quy mô: công suất 50MW, diện tích 60 ha
                                                             Tổng vốn đầu tư: 1000 tỷ đồng
                                                             Nhà cung cấp: JA
@@ -267,7 +267,7 @@
                                                            target="_self"
                                                            title="Cụm dự án điện mặt trời áp mái – tỉnh Bình Phước">Cụm dự án điện mặt trời áp mái – tỉnh Bình Phước</a></div>
                                                     <div class="activitydesc">
-                                                       <pre>
+                                                       <pre style="min-height: 155px;">
                                                            Công suất 23 MW, tổng mức đầu tư 360 tỷ đồng
                                                        </pre>
                                                     </div>
@@ -300,9 +300,10 @@
                                                         <a href=""
                                                            target="_self"
                                                            title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">Dự án điện mặt trời đa mục tiêu tại tỉnh Khánh Hòa</a></div>
-                                                    <div class="activitydesc"><p>
+                                                    <div class="activitydesc"><pre  style="min-height: 155px;">
                                                             Công suất 317MW, tổng mức đầu tư dự kiến – 4.400 tỷ đồng
-                                                        </p></div>
+                                                        </pre>
+                                                    </div>
                                                     <a class="viewmore"
                                                        href=""
                                                        target="_self"
@@ -333,7 +334,9 @@
                                                            target="_self"
                                                            title="Xây lắp hạ tầng &amp; kinh doanh bất động sản">Dự án điện gió tại tỉnh Tiền Giang </a></div>
                                                     <div class="activitydesc">
+                                                        <pre style="min-height: 155px;">
                                                         Giang 535 MW tổng mức đầu tư dự kiến: 21.000 tỷ đồng
+                                                    </pre>
                                                     </div>
                                                     <a class="viewmore"
                                                        href=""
@@ -364,9 +367,10 @@
                                                         <a href=""
                                                            target="_self"
                                                            title="">Dự án điện gió AH1, AH2 tại tỉnh Bến Tre </a></div>
-                                                    <div class="activitydesc"><p>
+                                                    <div class="activitydesc"><pre style="min-height: 155px;">
                                                             100MW, tổng mức đầu tư dự kiến: 4800 tỷ đồng
-                                                        </p></div>
+                                                        </pre>
+                                                    </div>
                                                     <a class="viewmore"
                                                        href=""
                                                        target="_self"
