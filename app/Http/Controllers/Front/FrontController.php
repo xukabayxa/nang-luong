@@ -479,7 +479,7 @@ class FrontController extends Controller
     {
         $language = Language::query()->where('code', config('app.locale'))->first();
         $posts = Post::query()->where([
-//            'language_id' => $language->id,
+            'language_id' => $language->id,
             'status' => 1
         ])->latest()->get();
 
