@@ -92,7 +92,7 @@
                                     {{$p_r->name}} </h4>
                                 <a class="uk-button uk-color-teal uk-style-secondary-b "
                                    href="{{route('front.post', $p_r->slug)}}">
-                                    <span class="uk-color-teal uk-text-middle uk-margin-right" style="color: #0f4c81 "> {{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</span>
+                                    <span class=" uk-text-middle uk-margin-right" style="color: #0f4c81 "> {{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</span>
                                     <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-teal"
                                           uk-icon="icon: button-circle; ratio: 1"></span>
                                 </a>
