@@ -9,6 +9,11 @@
         </div>
     </div>
 
+    <style>
+        .uk-width-2-3 {
+            width: 100%;
+        }
+    </style>
     <!-- <span></span> -->
     <section id="sozo-main">
         @if($posts->isNotEmpty())
@@ -88,12 +93,25 @@
                 </div>
             </div>
 
+        <style>
+            @media only screen and (max-width: 768px) {
+                .post-sl2 {
+                    margin-bottom: -100px;
+                }
+            }
+
+            @media (min-width:1025px){
+                .post-sl2 {
+                    margin-bottom: -150px;
+                }
+            }
+        </style>
             <?php
             $post_slice2 = $posts->slice(3);
             ?>
              @if($post_slice2->isNotEmpty())
 
-                    <div class="uk-position-relative uk-container uk-section" style="margin-top: 30px; ">
+                    <div class="uk-position-relative uk-container uk-section post-sl2" style="margin-top: 30px; ">
 
                         <form method="GET" class="sz-form ajax-more-posts">
 
