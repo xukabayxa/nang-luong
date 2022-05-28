@@ -93,7 +93,7 @@
             ?>
              @if($post_slice2->isNotEmpty())
 
-                    <div class="uk-position-relative uk-container uk-section" style="margin-top: 30px; margin-bottom: -240px">
+                    <div class="uk-position-relative uk-container uk-section" style="margin-top: 30px; ">
 
                         <form method="GET" class="sz-form ajax-more-posts">
 
