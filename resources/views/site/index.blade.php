@@ -858,7 +858,7 @@
                             <div></div>
                         </div>
                         <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
-                            {{App::isLocale('vi') ? $post->name : 'Sustainable Real Assets '}} </h4>
+                            {{ $post->name}} </h4>
                         <a class="uk-button uk-color-teal uk-style-secondary-b " href="{{route('front.post', $post->slug)}}">
                             <span class="uk-color-teal uk-text-middle uk-margin-right" style="color: #114D81 !important"> {{App::isLocale('vi') ? 'Chi tiết' : 'Read Article '}}</span>
                             <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}" alt="win-icon">
