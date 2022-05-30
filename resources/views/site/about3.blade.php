@@ -303,8 +303,11 @@
                                                 </div>
                                                 <div class="detail-leader">
                                                     <p>Ông Nguyễn Đức Dũng là doanh nhân dày dặn kinh nghiệm trong lĩnh vực tài chính và giáo dục, từng tham gia đầu tư, quản lý và phát triển nhiều công ty trong các lĩnh vực này, gần đây nhất là lĩnh vực năng lượng tái tạo.
-                                                        Ông Dũng luôn tâm huyết với sứ mệnh thay đổi và phát triển những ngành nghề cũ với cách làm và công nghệ mới, với khát vọng đưa RT Energy thành một trong những tập đoàn hàng đầu trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh.
-                                                        Ngoài việc tham gia hoạt động đầu tư và quản lý tại các công ty, ông Nguyễn Đức Dũng còn là một giảng viên cao cấp chuyên ngành Tài chính Quốc tế và Đầu tư Quốc tế của Khoa Kinh doanh Quốc tế - Học viện Ngân hàng từ năm 2014. Ông Nguyễn Đức Dũng nhận bằng Thạc sĩ Tài chính Đầu tư tại Đại học Monash, Úc. Trước đó, ông đã hoàn thành bằng Cử nhân Tài chính Ngân hàng với huy chương đồng về chất lượng học tập của trường Đại học London (Anh)
+                                                        <br>
+                                                        Ông luôn tâm huyết với sứ mệnh thay đổi và phát triển những ngành nghề cũ với cách làm và công nghệ mới, với khát vọng đưa RT Energy trở thành một trong những tập đoàn hàng đầu trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh.
+                                                        Ngoài việc tham gia hoạt động đầu tư và quản lý tại các công ty, ông Nguyễn Đức Dũng còn là giảng viên cao cấp chuyên ngành Tài chính Quốc tế và Đầu tư Quốc tế của Khoa Kinh doanh Quốc tế - Học viện Ngân hàng.
+                                                        <br>
+                                                        Ông Nguyễn Đức Dũng nhận bằng Thạc sĩ Tài chính Đầu tư tại Đại học Monash, Úc. Trước đó, ông đã hoàn thành bằng Cử nhân Tài chính Ngân hàng với huy chương đồng về chất lượng học tập của trường Đại học London (Anh)
 
                                                     </p>
                                                 </div>
