@@ -9894,3 +9894,7 @@ img.Sirv {
   .portfolio figure img {
       margin: auto;
   }
+  .activitydesc pre {
+    font-family: roboto;
+    letter-spacing: 0.5px;
+  }
