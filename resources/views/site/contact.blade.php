@@ -23,7 +23,7 @@
                     <div class="uk-flex uk-flex-between" uk-grid>
                         <div class="uk-width-2-4@m">
                             <h1 class="uk-style-primary-l uk-text-0 uk-text-lh-4" style="font-size: 4em; color: #fff">
-                                {{App::isLocale('vi') ? 'Liên hệ với chúng tôi' : 'Contact us '}} </h1>
+                                {{App::isLocale('vi') ? 'LIÊN HỆ VỚI CHÚNG TÔI' : 'CONTACT US '}} </h1>
                         </div>
                         <div class=" uk-width-2-4@m">
                             @if(App::isLocale('vi'))
