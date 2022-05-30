@@ -321,8 +321,9 @@
                                                         <li>09/2014 đến nay: Giảng viên cao cấp Khoa Kinh doanh Quốc tế - Học viện Ngân hàng – Ngân hàng Nhà nước Việt Nam
                                                         </li>
                                                         <li>09/2011 đến nay: Đồng sáng lập CGD Victory Education Group
-                                                            11/2011-09/2014: Quản lý Đầu tư kinh doanh Lãi suất và Forex
+
                                                         </li>
+                                                        <li>  11/2011-09/2014: Quản lý Đầu tư kinh doanh Lãi suất và Forex</li>
                                                         <li>2010-11/2011: Kiểm toán viên Ernst and Young Vietnam
                                                         </li>
                                                     </ul>
