@@ -121,12 +121,16 @@
                                         <img src="https://www.ttvngroup.vn/static/common/img/icon_image/f930a29728517737ce62ada64bbd1856.svg" class="img-fluid tech-item-icon">
                                         <div class="tech-item-title">{{App::isLocale('vi') ? 'Năng lượng xanh cho cuộc sống xanh' : 'Green energy for green life'}}</div>
                                         <div class="tech-item-desc">
-                                            {{App::isLocale('vi') ? 'Trong bối cảnh các nguồn nhiên liệu hóa thạch có hạn và đang bị cạn kiệt dần sau khi đã bị khai thác quá mức, cùng với phát thải từ việc sử dụng các nguồn năng lượng này đang ảnh hưởng nghiêm trọng đến môi trường thì việc sử dụng các nguồn năng lượng xanh thay thế càng trở nên cấp thiết hơn bao giờ hết. Đây là xu thế tất yếu và mạnh mẽ, cũng là điều được Chính phủ các quốc gia đặc biệt quan tâm.
-                                            Sở hữu khí hậu nhiệt đới với đường bờ biển dài và số giờ nắng quanh năm lớn, Việt Nam là quốc gia có tiềm năng lớn về năng lượng tái tạo. Đồng thời với các mục tiêu năng lượng xanh đầy tham vọng, Việt Nam có nhiều cơ hội trở thành quốc gia dẫn đầu toàn cầu về năng lượng tái tạo trong tương lai.'
-                                            : 'In the context that fossil fuel resources are limited and are being gradually depleted after being over-exploited, along with emissions from the use of these energy sources, which are seriously affecting the environment, the use of fossil fuels is very important. Using alternative green energy sources is more urgent than ever. This is an inevitable and strong trend, which is also something that the Governments of many countries pay special attention to.
-Possessing a tropical climate with a long coastline and a large number of sunny hours all year round, Vietnam is a country with great potential for renewable energy. Simultaneously with ambitious green energy goals, Vietnam has many opportunities to become a global leader in renewable energy in the future.
-'}}
-
+                                            @if(App::isLocale('vi'))
+                                                Trong bối cảnh các nguồn nhiên liệu hóa thạch có hạn và đang bị cạn kiệt dần sau khi đã bị khai thác quá mức, cùng với phát thải từ việc sử dụng các nguồn năng lượng này đang ảnh hưởng nghiêm trọng đến môi trường thì việc sử dụng các nguồn năng lượng xanh thay thế càng trở nên cấp thiết hơn bao giờ hết. Đây là xu thế tất yếu và mạnh mẽ, cũng là điều được Chính phủ các quốc gia đặc biệt quan tâm.
+                                            <br>
+                                                Sở hữu khí hậu nhiệt đới với đường bờ biển dài và số giờ nắng quanh năm lớn, Việt Nam là quốc gia có tiềm năng lớn về năng lượng tái tạo. Đồng thời với các mục tiêu năng lượng xanh đầy tham vọng, Việt Nam có nhiều cơ hội trở thành quốc gia dẫn đầu toàn cầu về năng lượng tái tạo trong tương lai.
+                                            @else
+                                                In the context that fossil fuel resources are limited and are being gradually depleted after being over-exploited, along with emissions from the use of these energy sources, which are seriously affecting the environment, the use of fossil fuels is very important.
+                                                Using alternative green energy sources is more urgent than ever. This is an inevitable and strong trend, which is also something that the Governments of many countries pay special attention to.
+                                            <br>
+                                                Possessing a tropical climate with a long coastline and a large number of sunny hours all year round, Vietnam is a country with great potential for renewable energy. Simultaneously with ambitious green energy goals, Vietnam has many opportunities to become a global leader in renewable energy in the future.
+                                            @endif
                                         </div>
                                     </div>
                                     <div class="tech-item tech-item-down">
@@ -135,13 +139,16 @@ Possessing a tropical climate with a long coastline and a large number of sunny 
                                         @if(App::isLocale('vi'))
                                             <div class="tech-item-title">Mạnh mẽ bứt phá, vươn tầm khu vực và thế giới
                                             </div>
-                                            <div class="tech-item-desc">Đối tác đồng hành với RT Energy trong quá trình đầu tư xây dựng các dự án năng lượng tái tạo là những tập đoàn năng lượng lớn đến từ Hoa Kỳ, Italia, Singapore, Trung Quốc… Đây đều là những tập đoàn giàu kinh nghiệm, đã triển khai nhiều dự án lớn ở các nước trên thế giới.
+                                            <div class="tech-item-desc">
+                                                Đối tác đồng hành với RT Energy trong quá trình đầu tư xây dựng các dự án năng lượng tái tạo là những tập đoàn năng lượng lớn đến từ Hoa Kỳ, Italia, Singapore, Trung Quốc… Đây đều là những tập đoàn giàu kinh nghiệm, đã triển khai nhiều dự án lớn ở các nước trên thế giới.
+                                                <br>
                                                 Với uy tín, vị thế và tiềm lực của mình cùng quyết tâm mạnh mẽ, RT Energy đang từng bước hiện thực hóa mục tiêu trở thành tập đoàn tiên phong trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030.
                                             </div>
                                         @else
                                             <div class="tech-item-title">Strongly breaking through, reaching out to the region and the world
                                             </div>
                                             <div class="tech-item-desc">The partners accompanying RT Energy in the investment and construction process of renewable energy projects are large energy corporations from the United States, Italy, Singapore, China... These are experienced corporations, has implemented many large projects in countries around the world.
+                                                <br>
                                                 With its prestige, position, potential and strong determination, RT Energy is gradually realizing its goal of becoming a pioneer in the field of renewable energy and green industrial parks in the ASEAN region in the near future. 2025, and the world before 2030.
                                             </div>
                                         @endif

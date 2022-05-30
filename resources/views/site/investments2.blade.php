@@ -71,8 +71,23 @@
             <div class="uk-section uk-section-large uk-margin-auto uk-width-1-1">
                 <div class="uk-container uk-container-xmedium">
                     <div class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-style-hline large uk-width-xmedium"
-                         uk-scrollspy="cls: uk-animation-slide-left-small; delay: 300;" style="font-weight: normal; max-width: 900px">
-                        {{App::isLocale('vi') ? 'Đang nghiên cứu để triển khai' : 'Studying for implementation'}}
+                         uk-scrollspy="cls: uk-animation-slide-left-small; delay: 300;" style="font-weight: normal; max-width: 1200px; font-size:26px; text-align: justify">
+
+                        @if(App::isLocale('vi'))
+                            <p>
+                                Các khu công nghiệp có lợi thế về diện tích áp mái lớn, nên nếu đầu tư điện mặt trời, doanh nghiệp sẽ được hưởng lãi kép. Ngoài việc được sử dụng điện miễn phí, khi dôi dư, doanh nghiệp có thể bán cho ngành Điện.
+                            </p>
+                            <p>
+                                RT Energy hướng tới hợp tác với các khu chế xuất, khu công nghiệp, xây dựng mô hình Khu công nghiệp kết hợp năng lượng tái tạo nhằm tận dụng tối đa nguồn năng lượng sạch, đem lại hiệu quả kinh tế và môi trường bền vững
+                            </p>
+                        @else
+                            <p>
+                                Industrial parks have the advantage of large attic area, so if they invest in solar power, businesses will enjoy compound interest. In addition to being able to use electricity for free, when there is a surplus, businesses can sell it to the electricity industry.
+                            </p>
+                            <p>
+                                RT Energy aims to cooperate with export processing zones, industrial parks, building a model of Industrial Park combining renewable energy to make the most of clean energy, bring economic efficiency and sustainable environment.
+                            </p>
+                        @endif
                     </div>
                 </div>
             </div>

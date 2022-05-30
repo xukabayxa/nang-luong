@@ -3904,7 +3904,7 @@ ul.uk-nav-sub {
 }
 
 .uk-navbar-nav li>a {
-    font-size: 15px;
+    font-size: 16px;
     margin: 0 10px;
 }
 
@@ -6398,7 +6398,7 @@ td.uk-text-break, th.uk-text-break {
 
 .uk-highlight-source, .uk-navbar-nav li>a, .uk-style-secondary, .uk-style-secondary-b, .uk-style-secondary-i, .uk-style-secondary-m, .uk-wysiwyg-default blockquote .subtitle, .uk-wysiwyg-default blockquote .title {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .uk-style-secondary-i {

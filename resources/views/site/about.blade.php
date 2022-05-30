@@ -180,13 +180,10 @@ năng lượng tái tạo' : 'Sustainable industrial park development'}}</h4>
                                                 {{App::isLocale('vi') ? 'Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không
                                                 thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của
                                                 mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.'
-                                                : 'Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
-                                                ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas
-                                                tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
-                                                amet adipiscing sem neque sed ipsum. Nullam quis ante'}}
+                                                : 'Renewable energy and new energy are the future-oriented and indisputable trend of the energy industry in general. RT Energy ties its future to the promotion and development of renewable energy – towards a green, clean, and sustainable world for future generations.'}}
 
                                             </p>
-                                            <p> {{App::isLocale('vi') ? 'Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:' : ''}}
+                                            <p> {{App::isLocale('vi') ? 'Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:' : 'Realizing that strategy, we aim at the following goals:'}}
                                                 </p>
 
                                         </div>
@@ -197,15 +194,14 @@ năng lượng tái tạo' : 'Sustainable industrial park development'}}</h4>
                                                 <div class="wpb_wrapper"><h5 style="color: #0b5a7e;text-align: left"
                                                                              class="vc_custom_heading"></h5>
                                                     <ul class='dt-sc-fancy-list   tick'>
-                                                        <li>  {{App::isLocale('vi') ? 'Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo': '   Fringilla mauris sit
-                                                                    amet'}}</li>
-                                                        <li> {{App::isLocale('vi') ? 'Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025;': '   Fringilla mauris sit
-                                                                    amet'}}</li>
+                                                        <li>  {{App::isLocale('vi') ? 'Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo': 'Develop, and invest in the construction and operation of renewable energy projects
+                                                                    '}}</li>
+                                                        <li> {{App::isLocale('vi') ? 'Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025': 'Increase investment scale in renewable energy projects from 100MW in 2021 to 500MW in 2023. Towards an investment portfolio with 1GW of renewable energy before or in 2025 '}}</li>
 
-                                                        <li> {{App::isLocale('vi') ? 'Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách': '   Fringilla mauris sit
-                                                                    amet'}}</li>
-                                                        <li>{{App::isLocale('vi') ? 'Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.': '   Fringilla mauris sit
-                                                                    amet'}}</li>
+                                                        <li> {{App::isLocale('vi') ? 'Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách': '
+                                                                    Research, apply, and invest in projects using new technologies such as Renewable Energy combined with battery storage / combined hydrogen production, .... when such technologies are financially and policy feasible'}}</li>
+                                                        <li>{{App::isLocale('vi') ? 'Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.': '
+                                                                   Develop, invest in the construction and operation of green industrial zone projects – in which all electricity used for industrial production is renewable energy'}}</li>
                                                     </ul>
                                                 </div>
                                             </div>
