@@ -17445,6 +17445,7 @@ img {vertical-align: middle;}
 .leader:first-child .leader-box:first-child .body-leader {
     width: 70%;
     margin-left: 50px;
+    font-family: Roboto !important;
 }
 .leader:first-child .leader-box:first-child .body-leader .detail-leader {
     display: -webkit-box !important;

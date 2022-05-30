@@ -231,7 +231,7 @@
                                                             Nhà thầu: PowerChina VietNam Limited Company
                                                             Tư vấn thiết kế: Henste engineering- Singapore)
                                                             Tư vấn giám sát: Rina
-                                                            COD: 2/2021</pre>
+                                                            COD: 10/2021</pre>
 
                                                         </div>
                                                         <a class="viewmore"
@@ -261,7 +261,7 @@ Supplier: GE
 Contractor: PowerChina Vietnam Limited Company
 Design consultant: Henste engineering- Singapore)
 Supervision consultant: Rina
- COD: 2/2021
+ COD: 10/2021
 </pre>
 
                                                         </div>
@@ -304,8 +304,8 @@ Supervision consultant: Rina
                                                             Quy mô: công suất 50MW, diện tích 60 ha
                                                             Tổng vốn đầu tư: 1000 tỷ đồng
                                                             Nhà cung cấp: JA
-                                                            - Nhà thầu: PECC1  và Rina
-                                                            - Bên tư vấn, giám sát: Rina
+                                                             Nhà thầu: PowerChina Huadong Engineering
+                                                             Bên tư vấn, giám sát: Rina
                                                              COD: 9/2020
                                                         </pre>
                                                     </div>
@@ -331,8 +331,8 @@ Supervision consultant: Rina
                                                            Scale: capacity 50MW, area 60 hectares
 Total investment capital: 1000 billion VND
 Vendor: JA
-- Contractors: PECC1 and Rina
-- Consultant and supervisor: Rina
+Contractors: PowerChina Huadong Engineering
+Consultant and supervisor: Rina
  COD: September 2020
 
                                                         </pre>
@@ -391,7 +391,7 @@ Vendor: JA
                                                                title="Cụm dự án điện mặt trời áp mái – tỉnh Bình Phước">Rooftop solar power project cluster - Binh Phuoc province</a></div>
                                                         <div class="activitydesc">
                                                        <pre>
-                                                          23 MW capacity, total investment of 360 billion VND
+                                                           Wattage 23 MW capacity, total investment of 360 billion VND
                                                        </pre>
                                                         </div>
                                                         <a class="viewmore"
@@ -478,7 +478,7 @@ Vendor: JA
                                                                target="_self"
                                                                title="Xây lắp hạ tầng &amp; kinh doanh bất động sản">Dự án điện gió tại tỉnh Tiền Giang </a></div>
                                                         <div class="activitydesc">
-                                                             535 MW tổng mức đầu tư dự kiến: 21.000 tỷ đồng
+                                                             Công suất 535 MW tổng mức đầu tư dự kiến: 21.000 tỷ đồng
                                                         </div>
                                                         <a class="viewmore"
                                                            href=""
@@ -530,7 +530,7 @@ Vendor: JA
                                                                target="_self"
                                                                title="">Dự án điện gió AH1, AH2 tại tỉnh Bến Tre </a></div>
                                                         <div class="activitydesc"><p>
-                                                                100MW, tổng mức đầu tư dự kiến: 4800 tỷ đồng
+                                                               Công suất 100MW, tổng mức đầu tư dự kiến: 4800 tỷ đồng
                                                             </p></div>
                                                         <a class="viewmore"
                                                            href=""

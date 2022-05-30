@@ -34,7 +34,6 @@
                                     <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
                                         Spring Heirs Tower, <br>
                                         Số 9/82 Dịch Vọng Hậu, Cầu Giấy, Hà Nội<br/>
-                                        <br/>
                                     </div>
                                     <div class="uk-style-primary-m uk-text-13 uk-lh-28">
                                         <a href="tel:+8494 866 8889" class="uk-text-underline">+8494 866 8889</a>
@@ -48,8 +47,6 @@
                                     </h5>
                                     <div class="uk-style-primary-l phone-height uk-text-13 uk-lh-28">
                                         Spring Heirs Tower, No. 9/82 Dich Vong Hau, Cau Giay, Hanoi, <br>
-                                        <br/>
-                                        <br/>
                                     </div>
                                     <div class="uk-style-primary-m uk-text-13 uk-lh-28">
                                         <a href="tel:+8494 866 8889" class="uk-text-underline">+8494 866 8889</a>
