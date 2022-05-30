@@ -215,7 +215,7 @@ Possessing a tropical climate with a long coastline and a large number of sunny 
                                                         </div>
                                                         <div class="activitydesc">
 
-                                                            <pre>
+                                                            <pre style="min-height: 155px;">
                                                          Quy mô: công suất 27.2 MW, diện tích 30ha
                                                             Tổng vốn đầu tư: 1150 tỷ đồng
                                                             Nhà cung cấp: GE
@@ -291,7 +291,7 @@ Supervision consultant: Rina
                                                         <p style="font-size: 14px">(Thôn Quán Thẻ 1, Xã Phước Minh, Huyện Thuận Nam, Tỉnh Ninh Thuận, Việt Nam)</p>
                                                     </div>
                                                     <div class="activitydesc">
-                                                        <pre>
+                                                        <pre style="min-height: 155px;">
                                                             Quy mô: công suất 50MW, diện tích 60 ha
                                                             Tổng vốn đầu tư: 1000 tỷ đồng
                                                             Nhà cung cấp: JA
@@ -354,6 +354,7 @@ Vendor: JA
                                     </div>
                                     <div class="col-xs-12 col-lg-6 flex-center bg1">
                                         <div class="activitycol">
+
                                             @if(App::isLocale('vi'))
                                                 <figure>
                                                     <figcaption>
@@ -422,6 +423,7 @@ Vendor: JA
                                                         <a class="viewmore"
                                                            href=""
                                                            target="_self"
+
                                                            title="KINH DOANH THƯƠNG MẠI VẬT LIỆU XÂY DỰNG">{{App::isLocale('vi') ? 'Chi tiết' : 'Read more'}}</a>
                                                     </figcaption>
                                                 </figure>
@@ -442,7 +444,6 @@ Vendor: JA
                                                     </figcaption>
                                                 </figure>
                                                 @endif
-
                                         </div>
                                     </div>
                                 </div>
@@ -493,6 +494,7 @@ Vendor: JA
                                                     </figcaption>
                                                 </figure>
                                                 @endif
+
 
                                         </div>
                                     </div>

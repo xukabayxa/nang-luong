@@ -24,13 +24,13 @@
                         {{--                    @foreach($posts->take(1) as $post)--}}
                         {{--                    @endforeach--}}
 
-                        <div class="uk-width-2-3@m uk-feat-article" uk-scrollspy="cls: uk-animation-fade; delay: 350;">
+                        <div class="uk-width-2-3@m uk-feat-article">
                                 <div class="uk-cover-container">
                                     <a href="{{route('front.post', $posts->first()->slug)}}">
                                         <canvas width="1000" height="662"></canvas>
-                                        <img data-src="{{$posts->first()->image->path ?? ''}}"
+                                        <img src="{{$posts->first()->image->path ?? ''}}"
                                              data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                             class=" Sirv uk-utility-object-fit-cover "
+                                             class=" uk-utility-object-fit-cover "
                                              alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
                                              title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"/> </a>
                                 </div>
@@ -59,14 +59,13 @@
                                 ?>
                                 @if($post_slice1->isNotEmpty())
                                     @foreach($post_slice1 as $p_s1)
-                                           <div class="uk-feat-article uk-width-1-1@m uk-width-1-2@s"
-                                                uk-scrollspy="cls: uk-animation-fade; delay: 450;">
+                                           <div class="uk-feat-article uk-width-1-1@m uk-width-1-2@s">
                                                <div class="uk-cover-container">
                                                    <a href="{{route('front.post', $p_s1->slug)}}">
                                                        <canvas width="1000" height="662"></canvas>
-                                                       <img data-src="{{$p_s1->image->path ?? ''}}"
+                                                       <img src="{{$p_s1->image->path ?? ''}}"
                                                             data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                                            class=" Sirv uk-utility-object-fit-cover "
+                                                            class="uk-utility-object-fit-cover "
                                                             alt="iStock-1032683612-scaled.jpg?w=1024&h=683&scale"
                                                             title="iStock-1032683612-scaled.jpg?w=1024&h=683&scale"/> </a>
                                                </div>
@@ -120,17 +119,16 @@
 
 
                             <div uk-grid
-                                 class="sz-1-results uk-grid-match ajax-results uk-grid uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-large"
-                                 uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 200;">
+                                 class="sz-1-results uk-grid-match ajax-results uk-grid uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-large">
                                 @foreach($post_slice2 as $p_s2)
                                 <div>
                                     <div class="uk-card uk-article-item">
                                         <div class="uk-cover-container">
                                             <a href="{{route('front.post', $p_s2->slug)}}">
                                                 <canvas width="467" height="593"></canvas>
-                                                <img data-src="{{$p_s2->image->path ?? ''}}"
+                                                <img src="{{$p_s2->image->path ?? ''}}"
                                                      data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;"
-                                                     class=" Sirv uk-utility-object-fit-cover "
+                                                     class=" uk-utility-object-fit-cover "
                                                      alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
                                                      title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"/> </a>
                                         </div>
@@ -174,10 +172,9 @@
                      class=" Sirv uk-utility-object-fit-cover " alt="cta-bg-scaled" title="cta-bg-scaled"/></div>
             <div class="uk-text-center">
                 <div class="uk-position-large uk-position-bottom">
-                    <h4 class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-margin-small-bottom uk-margin-auto uk-width-1-2@m"
-                        uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">
+                    <h4 class="uk-style-primary-l uk-text-3 uk-text-lh-4 uk-margin-small-bottom uk-margin-auto uk-width-1-2@m">
                        </h4>
-                    <div uk-scrollspy="cls: uk-animation-fade; delay: 700;">
+                    <div>
                         <a class="uk-button uk-color-tertiary uk-style-secondary-b "
                            href="">
                             <span class="uk-color-tertiary uk-text-middle uk-margin-right"></span>
