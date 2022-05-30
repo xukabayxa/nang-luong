@@ -43,6 +43,18 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::get('/get-parent', 'Admin\CategoryController@getParentCategory')->name('Category.get.parent');
     });
 
+    // quản lý nhân sự điều hành
+    Route::group(['prefix' => 'regent'], function () {
+        Route::get('/', 'Admin\RegentController@index')->name('regent.index');
+        Route::get('/searchData', 'Admin\RegentController@searchData')->name('regent.searchData');
+        Route::get('/{id}/show', 'Admin\RegentController@show')->name('regent.show');
+        Route::get('/create', 'Admin\RegentController@create')->name('regent.create');
+        Route::post('/', 'Admin\RegentController@store')->name('regent.store');
+        Route::get('/{id}/edit', 'Admin\RegentController@edit')->name('regent.edit');
+        Route::post('/{id}/update', 'Admin\RegentController@update')->name('regent.update');
+        Route::get('/{id}/delete', 'Admin\RegentController@delete')->name('regent.delete');
+    });
+
     Route::group(['prefix' => 'products'], function () {
         Route::get('/', 'Admin\ProductController@index')->name('Product.index');
         Route::get('/create', 'Admin\ProductController@create')->name('Product.create')->middleware('checkPermission:Thêm hàng hóa');
