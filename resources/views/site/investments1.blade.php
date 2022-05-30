@@ -74,7 +74,9 @@
                 }
             }
 
-
+            .tech-item-desc {
+                text-align: justify;
+            }
         </style>
 
         <div id="field-page" class="section-page section" style="background-color: #0e1b2f">
@@ -217,12 +219,12 @@
                                                                target="_self"
                                                                title="">Dự án điện gió Adani Phước Minh</a>
                                                             <br>
-                                                            <p style="font-size: 14px">(Thôn Quán Thẻ 1, Xã Phước Minh, Huyện Thuận Nam, Tỉnh Ninh Thuận)</p>
+                                                            <p style="font-size: 14px; font-family: 'Roboto' ">(Thôn Quán Thẻ 1, Xã Phước Minh, Huyện Thuận Nam, Tỉnh Ninh Thuận)</p>
 
                                                         </div>
                                                         <div class="activitydesc">
 
-                                                            <pre style="min-height: 155px;">
+                                                            <pre style="min-height: 155px; font-family: 'Roboto'">
                                                          Quy mô: công suất 27.2 MW, diện tích 30ha
                                                             Tổng vốn đầu tư: 1150 tỷ đồng
                                                             Nhà cung cấp: GE
