@@ -533,7 +533,9 @@
                     color: #fff;
                 }
 
-
+                .{
+                    font-weight: 0;
+                }
             </style>
 
             <div class="uk-text-left uk-mega-menu-item items-4">
@@ -549,7 +551,7 @@
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
+                            <h4 class=" uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     Giới thiệu <br> Chung
                                 @else
@@ -580,7 +582,7 @@
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
+                            <h4 class=" uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     LĨNH VỰC <br> HOẠT ĐỘNG
                                 @else
@@ -612,7 +614,7 @@
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
+                            <h4 class=" uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     BỘ MÁY <br> QUẢN LÝ
                                 @else
@@ -644,7 +646,7 @@
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom css-h4 uk-text-lh-4-2">
+                            <h4 class=" uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom css-h4 uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     Đối tác <br> Chiến lược
                                 @else
@@ -834,7 +836,7 @@
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
+                            <h4 class=" uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     DỰ ÁN <br> NĂNG LƯỢNG
                                 @else
@@ -855,7 +857,7 @@
             </div>
 
             <div class="uk-text-left uk-mega-menu-item items-3">
-                <a href="{{route('front.investments2')}}"
+                <a href="{{route('front.investments3')}}"
                    class="uk-animation-zoom">
                     <div class="uk-cover-container ">
                         <img data-src="/site/system/home/j.jpg"
@@ -868,7 +870,7 @@
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
+                            <h4 class=" uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     DỰ ÁN <br> HẠ TẦNG "XANH"
                                 @else
@@ -876,7 +878,7 @@
                                 @endif
                             </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
-                               href="{{route('front.investments2')}}">
+                               href="{{route('front.investments3')}}">
                                 <span
                                     class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
@@ -889,7 +891,7 @@
             </div>
 
             <div class="uk-text-left uk-mega-menu-item items-3">
-                <a href="{{route('front.investments3')}}"
+                <a href="{{route('front.investments2')}}"
                    class="uk-animation-zoom">
                     <div class="uk-cover-container ">
                         <img data-src="/site/system/home/j2.jpg"
@@ -902,7 +904,7 @@
                     <div
                         class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">
                         <div class="uk-position-bottom uk-padding-xmedium" style="margin-bottom: 40px">
-                            <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
+                            <h4 class=" uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom uk-text-lh-4-2">
                                 @if(App::isLocale('vi'))
                                     DỰ ÁN <br> NĂNG LƯỢNG MỚI
                                 @else
@@ -910,7 +912,7 @@
                                 @endif
                             </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
-                               href="{{route('front.investments3')}}/">
+                               href="{{route('front.investments2')}}/">
                                 <span
                                     class="uk-color-primary uk-text-middle uk-margin-right">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'FIND OUT MORE'}}</span>
                                 <span
