@@ -41,6 +41,7 @@ Route::group(['namespace' => 'Front', 'middleware' => 'locale'], function () {
     Route::get('/tin-tuc/{slug}','FrontController@post')->name('front.post');
 
     Route::get('change-language/{language}', 'FrontController@changeLanguage')->name('front.change-language');
+    Route::get('/load-more-post','FrontController@loadMorePost')->name('front.loadmore.post');
 
 });
 

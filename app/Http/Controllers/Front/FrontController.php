@@ -481,7 +481,7 @@ class FrontController extends Controller
         $posts = Post::query()->where([
             'language_id' => $language->id,
             'status' => 1
-        ])->latest()->get();
+        ])->latest()->get()->take(6);
 
         return view('site.insights', compact('posts'));
     }
@@ -565,5 +565,21 @@ class FrontController extends Controller
         $contact->save();
 
         return $this->responseSuccess();
+    }
+
+    public function loadMorePost(Request $request)
+    {
+        $post_ids = Post::query()->where('status', 1)->pluck('id')->toArray();
+
+        $posts = Post::where('status', 1)->whereIn('id', array_diff($post_ids, $request->post_ids_load_more))->limit(3)->get();
+
+        $html_post_render = '';
+        foreach ($posts as $post) {
+            $html_post_render .= view('site.partials.load_more_post', ['post' => $post])->render();
+        }
+
+        $post_ids = $posts->pluck('id');
+        return response()->json(['success' => true, 'post_render' => $html_post_render,
+            'post_ids' => $post_ids ]);
     }
 }

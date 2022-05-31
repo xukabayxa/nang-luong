@@ -15,7 +15,7 @@
         }
     </style>
     <!-- <span></span> -->
-    <section id="sozo-main">
+    <section id="sozo-main" ng-controller="Insights" ng-cloak>
         @if($posts->isNotEmpty())
             <div class="uk-section uk-section-page-header" style="padding: 0">
                 <div class="uk-container uk-container-large">
@@ -116,10 +116,8 @@
 
 
                             <input type="hidden" value="1" name="query_id"/>
-
-
                             <div uk-grid
-                                 class="sz-1-results uk-grid-match ajax-results uk-grid uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-large">
+                                 class="sz-1-results uk-grid-match ajax-results uk-grid uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-large load-more-post">
                                 @foreach($post_slice2 as $p_s2)
                                 <div>
                                     <div class="uk-card uk-article-item">
@@ -144,16 +142,24 @@
                                     </div>
                                 </div>
                                 @endforeach
-
                             </div>
 
-                            <div class="uk-text-center uk-margin-medium-top">
-                                <div class="uk-button uk-style-secondary-b js-load-more" href="" data-id="2"><span
-                                        class="uk-color-primary uk-text-middle uk-margin-right">Load More</span>
-                                    <span class="uk-icon uk-preserve uk-oval-button uk-position-center-right uk-oval-primary"
-                                          uk-icon="icon: button-circle; ratio: 1"></span></div>
-                            </div>
+                            <style>
+                                @media only screen and (max-width: 768px) {
+                                    .contact-submit-btn {
+                                        margin-bottom: 50px;
+                                    }
+                                }
+                            </style>
+                            @if($posts->count() >= 6)
+                            <div class="contact-submit-btn" style="text-align: center; margin-top: 12px" ng-if="checkLoad" >
+                                <button class="submit-btn" id="loadMore" type="submit" ng-click="loadMorePost()" ng-disabled="loading">
+                                    <div class="lds-ellipsis"  ng-if="loading" style="width: <% loading ? '70px' : '' %>"><div></div><div></div><div></div><div></div></div>
+                                    <span ng-if="! loading">{{App::isLocale('vi') ? 'xem thêm' : 'load more'}}</span>
+                                </button>
 
+                            </div>
+                            @endif
 
                         </form>
 
@@ -163,7 +169,7 @@
         @endif
 
 
-
+        <br>
         <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
@@ -186,4 +192,48 @@
             </div>
         </div>
     </section>
+
 @endsection
+
+@push('scripts')
+    <script>
+        app.controller('Insights', function ($rootScope, $scope, $compile, $interval) {
+            $scope.checkLoad = true;
+            $scope.loading = false;
+            $scope.post_ids = {{$posts->pluck('id')}};
+
+            $scope.loadMorePost = function () {
+
+                $.ajax({
+                    type: 'GET',
+                    url: '{{route('front.loadmore.post')}}',
+                    data: {
+                        post_ids_load_more: $scope.post_ids,
+                    },
+                    beforeSend: function() {
+                        $scope.loading = true;
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            $(".load-more-post").append($compile(response.post_render)($scope));
+                            $scope.post_ids = $scope.post_ids.concat(response.post_ids);
+                            console.log(response.post_ids.length);
+
+                            if(response.post_ids.length < 1) {
+                                $scope.checkLoad = false;
+                            }
+                        }
+                    },
+                    error: function (e) {
+                    },
+                    complete: function () {
+                        $scope.loading = false;
+                        $scope.$applyAsync();
+                    }
+                });
+            }
+
+        })
+
+    </script>
+@endpush

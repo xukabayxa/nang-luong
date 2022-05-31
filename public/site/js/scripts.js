@@ -5924,27 +5924,27 @@ window.icons = {
         },
         d = '<aside style="z-index: 3;" class="uk-overlays uk-overlay-default uk-position-cover uk-margin-remove uk-width-1-1"><div class="uk-height-large uk-position-relative"><div class="uk-position-center"><div class="uk-margin-medium-top" uk-spinner="ratio: 4;"></div></div></div></aside>';
 
-    function f(t, e) {
-        var i = t.find(h.results), n = t.data("search_page"), r = $(d), o = t.find("[name=query_id]").val(),
-            a = t.find("input:visible, input[type=hidden], select:visible").serializeArray(), l = {};
-        $.each(a, (function (t, e) {
-            l[e.name] ? l[e.name] += "|" + e.value : l[e.name] = e.value
-        })), n && l[o + "_s"] && (l.s = l[o + "_s"], delete l[o + "_s"]);
-        var u = "";
-        $.each(l, (function (t, e) {
-            "" !== u && (u += "&"), u += t + "=" + e
-        }));
-        var c = u + "&" + o + "_p=" + e;
-        return function (t, e) {
-            t.append(e)
-        }(i, r), $.get(window.location.href.split("?")[0], "".concat(c, "&result_fragment=true"), (function (t) {
-            s(t, !0), window.history.pushState("", "", "?" + c), function (t) {
-                t.fadeOut(500, (function () {
-                    t.remove()
-                }))
-            }(r)
-        })), !1
-    }
+    // function f(t, e) {
+    //     var i = t.find(h.results), n = t.data("search_page"), r = $(d), o = t.find("[name=query_id]").val(),
+    //         a = t.find("input:visible, input[type=hidden], select:visible").serializeArray(), l = {};
+    //     $.each(a, (function (t, e) {
+    //         l[e.name] ? l[e.name] += "|" + e.value : l[e.name] = e.value
+    //     })), n && l[o + "_s"] && (l.s = l[o + "_s"], delete l[o + "_s"]);
+    //     var u = "";
+    //     $.each(l, (function (t, e) {
+    //         "" !== u && (u += "&"), u += t + "=" + e
+    //     }));
+    //     var c = u + "&" + o + "_p=" + e;
+    //     return function (t, e) {
+    //         t.append(e)
+    //     }(i, r), $.get(window.location.href.split("?")[0], "".concat(c, "&result_fragment=true"), (function (t) {
+    //         s(t, !0), window.history.pushState("", "", "?" + c), function (t) {
+    //             t.fadeOut(500, (function () {
+    //                 t.remove()
+    //             }))
+    //         }(r)
+    //     })), !1
+    // }
 
     function p(t) {
         var e = ("; " + document.cookie).split("; ".concat(t, "="));

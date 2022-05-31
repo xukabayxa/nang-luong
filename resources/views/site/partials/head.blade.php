@@ -354,5 +354,81 @@
     </script>
     <!-- End Google Tag Manager -->
 
+    <style>
+        .lds-ellipsis {
+            display: inline-block;
+            position: relative;
+            /*width: 70px;*/
+            height: 60px;
+        }
+        .lds-ellipsis div {
+            position: absolute;
+            top: 15px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #fff;
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+        .lds-ellipsis div:nth-child(1) {
+            left: 8px;
+            animation: lds-ellipsis1 0.6s infinite;
+        }
+        .lds-ellipsis div:nth-child(2) {
+            left: 8px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+        .lds-ellipsis div:nth-child(3) {
+            left: 32px;
+            animation: lds-ellipsis2 0.6s infinite;
+        }
+        .lds-ellipsis div:nth-child(4) {
+            left: 56px;
+            animation: lds-ellipsis3 0.6s infinite;
+        }
+        @keyframes lds-ellipsis1 {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        @keyframes lds-ellipsis3 {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0);
+            }
+        }
+        @keyframes lds-ellipsis2 {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(24px, 0);
+            }
+        }
 
+        .contact-submit-btn .submit-btn {
+            background: #333333 none repeat scroll 0 0;
+            border: 0 none;
+            border-radius: 3px;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 25px;
+            text-transform: capitalize;
+            -webkit-transition: all 0.4s ease-out 0s;
+            transition: all 0.4s ease-out 0s;
+        }
+        .contact-submit-btn .submit-btn:hover {
+            background: #0F4C81 ;
+        }
+    </style>
     	</head>
