@@ -569,9 +569,13 @@ class FrontController extends Controller
 
     public function loadMorePost(Request $request)
     {
+        $language = Language::query()->where('code', config('app.locale'))->first();
+
         $post_ids = Post::query()->where('status', 1)->pluck('id')->toArray();
 
-        $posts = Post::where('status', 1)->whereIn('id', array_diff($post_ids, $request->post_ids_load_more))->limit(3)->get();
+        $posts = Post::where('status', 1)->whereIn('id', array_diff($post_ids, $request->post_ids_load_more))
+            ->where('language_id', $language->id)
+            ->limit(3)->get();
 
         $html_post_render = '';
         foreach ($posts as $post) {
