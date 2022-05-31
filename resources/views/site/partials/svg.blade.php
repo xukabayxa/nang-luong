@@ -186,10 +186,10 @@
                                         <a href="{{route('front.investments1')}}">{{trans('message.renewable_energy')}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.investments2')}}">{{trans('message.sustainable_infrastructure')}}</a>
+                                        <a href="{{route('front.investments3')}}">{{trans('message.sustainable_infrastructure')}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.investments3')}}"> {{trans('message.future_solution')}}</a>
+                                        <a href="{{route('front.investments2')}}"> {{trans('message.future_solution')}}</a>
                                     </li>
                                 </ul>
                             </div>

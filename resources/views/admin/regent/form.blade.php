@@ -192,6 +192,36 @@
 		</div>
 	</div>
 </div>
+
+<div class="row">
+    <div class="card-block">
+        <ul class="nav nav-tabs  tabs nav-quotation" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#hang_hoa" role="tab" aria-expanded="true">
+                    Hàng hóa
+                </a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" data-toggle="tab" href="#tong_hop_km" role="tab" aria-expanded="false">
+                    Tổng hợp hàng khuyến mại
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content tab-custom">
+            <div class="tab-pane p-0 active" id="hang_hoa">
+                <div class="row">
+                  <p>1</p>
+                </div>
+            </div>
+            <div class="tab-pane p-0" id="tong_hop_km">
+                <div class="row">
+                    <p>2</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 <hr>
 <div class="text-right">
 	<button type="submit" class="btn btn-success btn-cons" ng-click="submit()" ng-disabled="loading.submit">
