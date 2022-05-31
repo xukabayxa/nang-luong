@@ -19,13 +19,10 @@ class CreateRegentTable extends Migration
             $table->string('address');
             $table->date('date_of_birth');
             $table->string('phone_number');
+            $table->string('role');
+            $table->text('description');
             $table->tinyInteger('sex');
-            $table->tinyInteger('status');
-            $table->tinyInteger('show_home_page')->default(0);
             $table->string('email')->nullable();
-            $table->string('facebook')->nullable();
-            $table->string('skype')->nullable();
-            $table->string('twitter')->nullable();
             $table->timestamps();
         });
     }

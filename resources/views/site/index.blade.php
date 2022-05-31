@@ -858,7 +858,7 @@
                             <div></div>
                         </div>
                         <h4 class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-margin-small-bottom uk-padding-medium-right">
-                            {{ $post->name}} </h4>
+                            {{ $post->name }} </h4>
                         <a class="uk-button uk-color-teal uk-style-secondary-b " href="{{route('front.post', $post->slug)}}">
                             <span class="uk-color-teal uk-text-middle uk-margin-right" style="color: #114D81 !important"> {{App::isLocale('vi') ? 'Chi tiết' : 'Read Article '}}</span>
                             <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy-blue.png') }}" alt="win-icon">
@@ -1093,8 +1093,10 @@
             items: 1,
             loop: true,
             nav: true,
-            slideSpeed: 20,
+            slideSpeed: 450,
             autoplay: true,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
             autoplayTimeout: 2000,
             navText: [
                 '<svg class="left" width="50" height="50" viewBox="0 0 24 24" style="left: -620"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>',
