@@ -53,8 +53,8 @@ class Handler extends ExceptionHandler
     public function render($request, Exception $exception)
     {
         // 404 page when a model is not found
-        if ($exception instanceof ModelNotFoundException) {
-            return response()->view('site.error', [], 404);
+        if ($exception instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {
+            return redirect('/');
         }
 
         // custom error message
