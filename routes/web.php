@@ -108,6 +108,21 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::post('/add-to-category-special','Admin\PostController@addToCategorySpecial')->name('Post.add.category.special');
     });
 
+    // Dự án
+    Route::group(['prefix' => 'projects'], function () {
+        Route::get('/', 'Admin\ProjectController@index')->name('Project.index');
+        Route::get('/searchData', 'Admin\ProjectController@searchData')->name('Project.searchData');
+        Route::get('/{id}/show', 'Admin\ProjectController@show')->name('Project.show');
+        Route::get('/{id}/getData', 'Admin\ProjectController@getData')->name('Project.getData');
+        Route::get('/create', 'Admin\ProjectController@create')->name('Project.create')->middleware('checkPermission:Thêm bài viết');
+        Route::post('/', 'Admin\ProjectController@store')->name('Project.store')->middleware('checkPermission:Thêm bài viết');
+        Route::post('/{id}/update', 'Admin\ProjectController@update')->name('Project.update')->middleware('checkPermission:Sửa bài viết');
+        Route::get('/{id}/edit', 'Admin\ProjectController@edit')->name('Project.edit')->middleware('checkPermission:Sửa bài viết');
+        Route::get('/{id}/delete', 'Admin\ProjectController@delete')->name('Project.delete')->middleware('checkPermission:Xóa bài viết');
+        Route::get('/exportExcel','Admin\ProjectController@exportExcel')->name('Project.exportExcel');
+        Route::post('/add-to-category-special','Admin\ProjectController@addToCategorySpecial')->name('Project.add.category.special');
+    });
+
     // HTML Block
     Route::group(['prefix' => 'blocks'], function () {
         Route::get('/', 'Admin\BlockController@index')->name('Block.index');

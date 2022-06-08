@@ -321,8 +321,7 @@
             // options
             pageDots: true,
             setGallerySize: false,
-            // autoPlay:true,
-
+            autoPlay:3500,
         });
         //
         // $('.carousel-nav').flickity({

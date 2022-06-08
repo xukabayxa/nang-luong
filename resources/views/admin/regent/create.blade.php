@@ -17,13 +17,17 @@ Thêm nhân sự điều hành
 
 @section('script')
 @include('admin.regent.Regent')
+@include('admin.regent.RegentEn')
+@include('admin.regent.RegentVi')
 <script>
 app.controller('Attorney', function ($scope, $http) {
 	$scope.form = new Regent({}, {scope: $scope});
+    console.log($scope.form.regentVi);
     $scope.loading = {};
 	$scope.submit = function() {
 		$scope.loading.submit = true;
 		let data = $scope.form.submit_data;
+
 		$.ajax({
 			type: 'POST',
 			url: "{!! route('regent.store') !!}",
@@ -40,6 +44,7 @@ app.controller('Attorney', function ($scope, $http) {
 				} else {
 					toastr.warning(response.message);
 					$scope.errors = response.errors;
+                    console.log($scope.errors)
 				}
 			},
 			error: function(e) {

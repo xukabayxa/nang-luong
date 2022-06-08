@@ -16,11 +16,13 @@
 
 @section('script')
 @include('admin.regent.Regent')
+@include('admin.regent.RegentEn')
+@include('admin.regent.RegentVi')
 <script>
 app.controller('Attorney', function ($scope, $http) {
 
 	$scope.form = new Regent(@json($object), {scope: $scope});
-
+    console.log($scope.form);
     $scope.loading = {};
 	$scope.submit = function() {
 		$scope.loading.submit = true;

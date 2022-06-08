@@ -80,11 +80,7 @@
 
                                                                 {{App::isLocale('vi') ? 'RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong
              trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030' :
-                                                                'We believe we can make a difference to this world, to
-                                                                this very earth on which we live. We have been
-                                                                destroying the forests for whatever reasons for many
-                                                                years. Forests that work much like our lungs, purifying
-                                                                the air and healing us.'}}
+                                                                'RT Energy was built and developed with the orientation to become a pioneer in the field of renewable energy and green industrial parks in the ASEAN before 2025, and in the world before 2030.'}}
                                                                 </p>
                                                         </div>
                                                     </div>

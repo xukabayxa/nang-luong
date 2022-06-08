@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRegentTable extends Migration
+class CreateRegentLanguageTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateRegentTable extends Migration
      */
     public function up()
     {
-        Schema::create('regent', function (Blueprint $table) {
+        Schema::create('regent_language', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('phone_number');
-            $table->tinyInteger('sex');
-            $table->string('email')->nullable();
-            $table->string('date_of_birth')->nullable();
-            $table->integer('created_by');
-            $table->integer('updated_by');
+            $table->integer('regent_id');
+            $table->string('language');
+            $table->string('full_name');
+            $table->string('address')->nullable();
+            $table->string('role');
+            $table->text('description');
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ class CreateRegentTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('regent');
+        Schema::dropIfExists('regent_language');
     }
 }

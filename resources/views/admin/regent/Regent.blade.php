@@ -1,9 +1,10 @@
 <script>
-    class Attorney extends BaseClass {
+    class Regent extends BaseClass {
         no_set = [];
 
         before(form) {
             this.image = {};
+            // this.regentVi = (new RegentVi(form.regentVi, this));
         }
 
         after(form) {
@@ -18,20 +19,31 @@
             this._image = new Image(value, this);
         }
 
+        get regentVi() {
+            return this._regent_vi;
+        }
+
+        set regentVi(value) {
+            this._regent_vi =  (new RegentVi(value, this)) ;
+
+        }
+
+        get regentEn() {
+            return this._regent_en;
+        }
+
+        set regentEn(value) {
+            this._regent_en =  (new RegentEn(value, this)) ;
+        }
+
         get submit_data() {
             let data = {
-                full_name: this.full_name,
+                regent_vi: this.regentVi ? this.regentVi.submit_data : {},
+                regent_en: this.regentEn ? this.regentEn.submit_data : {},
                 email: this.email,
-                address: this.address,
                 phone_number: this.phone_number,
                 date_of_birth: this.date_of_birth,
                 sex: this.sex,
-                facebook: this.facebook,
-                skype: this.skype,
-                twitter: this.twitter,
-                show_home_page: this.show_home_page,
-                career_titles: this.career_titles,
-                intro: this.intro,
             }
 
             data = jsonToFormData(data);

@@ -57,6 +57,7 @@ class FileHelper
             // Type = 6 =>> banners
             // Type = 7 =>> favicon
             // Type = 8 =>> logo đối tác
+            // Type = 9 =>> ảnh ban quản trị
 
             if ($type == 1) {
 //                Image::make($file)->resize(600, 600, function ($constraint) {
@@ -84,6 +85,9 @@ class FileHelper
                 Image::make($file)->resize(32, 32)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
             } else if ($type == 8) {
                 Image::make($file)->resize(115, 75)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
+            }
+            else if ($type == 9) {
+                $file->move($destinationPath, $destinationFile);
             } else {
                 $file->move($destinationPath, $destinationFile);
             }

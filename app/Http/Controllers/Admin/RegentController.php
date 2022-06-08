@@ -4,6 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 //use App\Http\Requests\Attorneys\AttorneyStoreRequest;
 //use App\Http\Requests\Attorneys\AttorneyUpdateRequest;
+use App\Http\Requests\Regent\RegentStoreRequest;
+use App\Model\Admin\Regent;
+use App\Model\Admin\RegentExperience;
+use App\Model\Admin\RegentLanguage;
 use Illuminate\Http\Request;
 use App\Model\Admin\Regent as ThisModel;
 use Spatie\Permission\Models\Permission;
@@ -50,8 +54,11 @@ class RegentController extends Controller
                 $result .= '<a href="' . route($this->route.'.delete', $object->id) . '" title="Khóa" class="btn btn-sm btn-danger confirm"><i class="fas fa-times"></i></a>';
 
                 return $result;
-
             })
+            ->editColumn('full_name', function ($object) {
+                return $object->regentVi->first()->full_name;
+            })
+
             ->rawColumns(['image', 'status', 'action'])
             ->addIndexColumn()
             ->make(true);
@@ -65,32 +72,60 @@ class RegentController extends Controller
     public function edit($id)
     {
         $object = ThisModel::getDataForEdit($id);
+        $object->regentVi = $object->regentLanguages->filter(function ($item) {
+                return $item->language == 'vi';
+            })->first();
+        $object->regentVi->experience = $object->regentVi->experience;
+
+        $object->regentEn = $object->regentLanguages->filter(function ($item) {
+                return $item->language == 'en';
+            })->first();
+
+        if($object->regentEn) {
+            $object->regentEn->experience = $object->regentEn->experience;
+        }
 
         return view($this->view.'.edit', compact(['object']));
     }
 
-    public function store(Request $request)
+    public function store(RegentStoreRequest $request)
     {
         DB::beginTransaction();
         try {
-            $object = new ThisModel();
-            $object->full_name = $request->full_name;
-            $object->address = $request->address;
-            $object->date_of_birth = $request->date_of_birth;
-            $object->phone_number = $request->phone_number;
-            $object->sex = $request->sex;
-            $object->status = $request->status;
-            $object->show_home_page = $request->show_home_page;
-            $object->email = $request->email;
-            $object->facebook = $request->facebook;
-            $object->skype = $request->skype;
-            $object->twitter = $request->twitter;
-            $object->career_titles = $request->career_titles;
-            $object->intro = $request->intro;
+            $regent = new Regent();
+            $regent->phone_number = $request->phone_number;
+            $regent->sex = $request->sex;
+            $regent->email = $request->email;
+            $regent->date_of_birth = $request->date_of_birth;
+            $regent->save();
 
-            $object->save();
+            $dataRegentVi = array_merge($request->regent_vi, ['language' => 'vi', 'regent_id' => $regent->id]);
 
-            FileHelper::uploadFile($request->image, 'attorneys', $object->id, ThisModel::class, 'image', 5);
+            $regent_vi = new RegentLanguage();
+            $regent_vi->fill($dataRegentVi);
+            $regent_vi->save();
+
+            if($request->regent_vi['experience']) {
+                foreach ($request->regent_vi['experience'] as $experience) {
+                    $regent_vi->experience()->create(array_merge($experience, ['regent_language_id' => $regent_vi->id]));
+                }
+            }
+
+            if($request->regent_en['full_name']) {
+                $dataRegentEn = array_merge($request->regent_en, ['language' => 'en', 'regent_id' => $regent->id]);
+                $regent_en = new RegentLanguage();
+                $regent_en->fill($dataRegentEn);
+                $regent_en->save();
+
+                if($request->regent_en['experience']) {
+                    foreach ($request->regent_en['experience'] as $experience) {
+                        $regent_en->experience()->create(array_merge($experience, ['regent_language_id' => $regent_en->id]));
+                    }
+                }
+            }
+
+
+            FileHelper::uploadFile($request->image, 'regent', $regent->id, ThisModel::class, 'image', 9);
 
             DB::commit();
             return $this->responseSuccess();
@@ -102,28 +137,50 @@ class RegentController extends Controller
 
     public function update(Request $request, $id)
     {
+
         DB::beginTransaction();
         try {
-            $object = ThisModel::findOrFail($id);
-            $object->full_name = $request->full_name;
-            $object->address = $request->address;
-            $object->date_of_birth = $request->date_of_birth;
-            $object->phone_number = $request->phone_number;
-            $object->sex = $request->sex;
-            $object->status = $request->status;
-            $object->show_home_page = $request->show_home_page;
-            $object->email = $request->email;
-            $object->facebook = $request->facebook;
-            $object->skype = $request->skype;
-            $object->twitter = $request->twitter;
-            $object->career_titles = $request->career_titles;
-            $object->intro = $request->intro;
+            $regent = ThisModel::findOrFail($id);
+            $regent->phone_number = $request->phone_number;
+            $regent->sex = $request->sex;
+            $regent->email = $request->email;
+            $regent->date_of_birth = $request->date_of_birth;
+            $regent->save();
 
-            $object->save();
+
+            $regentVi = RegentLanguage::query()->where(['language' => 'vi', 'regent_id' => $regent->id])->first();
+            $regentVi->update($request->regent_vi);
+
+            $regentEn = RegentLanguage::query()->where(['language' => 'en', 'regent_id' => $regent->id])->first();
+            if($regentEn) {
+                $regentEn->update($request->regent_en);
+            } else {
+                if($request->regent_en['full_name']) {
+                    $dataRegentEn = array_merge($request->regent_en, ['language' => 'en', 'regent_id' => $regent->id]);
+                    $regent_en = new RegentLanguage();
+                    $regent_en->fill($dataRegentEn);
+                    $regent_en->save();
+                }
+            }
+
+
+            if($request->regent_vi['experience']) {
+                RegentExperience::query()->where('regent_language_id', $regentVi->id)->delete();
+                foreach ($request->regent_vi['experience'] as $experience) {
+                    $regentVi->experience()->create(array_merge($experience, ['regent_language_id' => $regentVi->id]));
+                }
+            }
+
+            if(isset($request->regent_en['experience']) && $regentEn) {
+                RegentExperience::query()->where('regent_language_id', $regentEn->id)->delete();
+                foreach ($request->regent_en['experience'] as $experience) {
+                    $regentEn->experience()->create(array_merge($experience, ['regent_language_id' => $regentEn->id]));
+                }
+            }
 
             if($request->image) {
-                FileHelper::forceDeleteFiles($object->image->id, $object->id, ThisModel::class, 'image');
-                FileHelper::uploadFile($request->image, 'attorneys', $object->id, ThisModel::class, 'image', 5);
+                FileHelper::forceDeleteFiles($regent->image->id, $regent->id, ThisModel::class, 'image');
+                FileHelper::uploadFile($request->image, 'regent', $regent->id, ThisModel::class, 'image', 9);
             }
 
             DB::commit();

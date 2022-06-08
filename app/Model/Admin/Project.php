@@ -8,9 +8,9 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
 use DB;
 
-class Regent extends BaseModel
+class Project extends BaseModel
 {
-    protected $table = 'regent';
+    protected $table = 'projects';
 
     public function image()
     {
@@ -53,7 +53,7 @@ class Regent extends BaseModel
 
     public static function getDataForEdit($id)
     {
-        return self::query()->with(['image', 'regentLanguages'])
+        return self::query()->with(['image', 'languages'])
             ->where('id', $id)
             ->firstOrFail();
     }
@@ -64,19 +64,19 @@ class Regent extends BaseModel
             ->firstOrFail();
     }
 
-    public function regentLanguages()
+    public function languages()
     {
-        return $this->hasMany(RegentLanguage::class, 'regent_id');
+        return $this->hasMany(ProjectLanguage::class, 'project_id');
     }
 
-    public function regentVi()
+    public function projectVi()
     {
-        return $this->regentLanguages()->where('language', 'vi');
+        return $this->languages()->where('language', 'vi');
     }
 
-    public function regentEn()
+    public function projectEn()
     {
-        return $this->regentLanguages()->where('language', 'en');
+        return $this->languages()->where('language', 'en');
     }
 
 }
