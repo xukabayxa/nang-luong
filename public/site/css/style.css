@@ -9873,6 +9873,9 @@ img.Sirv {
     .dt-sc-portfolio-sorting.type2 a.active-sort:before {
         border-bottom: 0 !important;
     }
+    .read-area img {
+        height: auto !important;
+    }
 }
 .wind-icon.win-icon-right {
     margin: -12px 0 0 100px;
