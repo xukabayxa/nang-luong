@@ -96,6 +96,7 @@ class RegentController extends Controller
             $regent->phone_number = $request->phone_number;
             $regent->sex = $request->sex;
             $regent->email = $request->email;
+            $regent->sort_order = $request->sort_order;
             $regent->date_of_birth = $request->date_of_birth;
             $regent->save();
 
@@ -138,12 +139,13 @@ class RegentController extends Controller
     public function update(Request $request, $id)
     {
 
-        DB::beginTransaction();
+       DB::beginTransaction();
         try {
             $regent = ThisModel::findOrFail($id);
             $regent->phone_number = $request->phone_number;
             $regent->sex = $request->sex;
             $regent->email = $request->email;
+            $regent->sort_order = $request->sort_order;
             $regent->date_of_birth = $request->date_of_birth;
             $regent->save();
 
@@ -200,8 +202,7 @@ class RegentController extends Controller
                 "alert-type" => "warning"
             );
         } else {
-            $object->status = 0;
-            $object->save();
+            $object->delete();
             $message = array(
                 "message" => "Thao tác thành công!",
                 "alert-type" => "success"

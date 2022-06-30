@@ -38,14 +38,14 @@
                                 <div class="uk-flex@s uk-flex-between uk-flex-middle uk-margin">
                                     <div class="uk-style-primary-m uk-text-4 uk-text-lh-4 uk-width-2-3@m uk-width-1-1">
                                         <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-margin-small-bottom uk-hidden@s">
-                                            22.03.22 </h6>
+                                           {{$posts->first()->created_at->format('d') .'.' . $posts->first()->created_at->format('m'). '.' .$posts->first()->created_at->format('Y')}} </h6>
                                         <a href="{{route('front.post', $posts->first()->slug)}}"
                                            class="uk-color-dark">
                                            {{$posts->first()->name}} </a>
                                     </div>
                                     <div class="uk-text-right@s uk-width-expand@m">
                                         <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-visible@s">
-                                            22.03.22 </h6>
+                                            {{$posts->first()->created_at->format('d') .'.' . $posts->first()->created_at->format('m'). '.' .$posts->first()->created_at->format('Y')}} </h6>
                                         <p class="uk-style-primary-l uk-text-11 uk-text-lh-1">
                                         </p>
                                     </div>
@@ -72,13 +72,13 @@
                                                <div class="uk-flex@s uk-flex-between uk-margin-top">
                                                    <div class="uk-style-primary-l uk-text-8 uk-text-lh-3 uk-width-2-3">
                                                        <div class="uk-style-secondary-m uk-color-muted uk-text-12 uk-margin-small-bottom uk-text-ls-1 uk-text-lh-3 uk-hidden@s">
-                                                           16.02.22
+                                                           {{$p_s1->first()->created_at->format('d') .'.' . $p_s1->first()->created_at->format('m'). '.' .$p_s1->first()->created_at->format('Y')}}
                                                        </div>
                                                        <a href="{{route('front.post', $p_s1->slug)}}"
                                                           class="uk-color-dark">{{$p_s1->name}}</a>
                                                    </div>
                                                    <div class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-visible@s">
-                                                       16.02.22
+                                                       {{$p_s1->first()->created_at->format('d') .'.' . $p_s1->first()->created_at->format('m'). '.' .$p_s1->first()->created_at->format('Y')}}
                                                    </div>
                                                </div>
                                            </div>
@@ -131,7 +131,7 @@
                                                      title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"/> </a>
                                         </div>
                                         <div class="uk-flex uk-flex-between uk-style-secondary-m uk-text-ls-1 uk-text-dark uk-text-12 uk-margin-small-bottom uk-margin-small-top uk-padding-small-top">
-                                            <div>22.03.22</div>
+                                            <div>{{$p_s2->first()->created_at->format('d') .'.' . $p_s2->first()->created_at->format('m'). '.' .$p_s2->first()->created_at->format('Y')}}</div>
                                             <div></div>
                                         </div>
                                         <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">

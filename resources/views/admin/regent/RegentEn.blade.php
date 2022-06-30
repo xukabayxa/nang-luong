@@ -6,7 +6,7 @@
         }
 
         after(form) {
-
+            this.experience = form.experience || [];
         }
 
         set experience(value) {

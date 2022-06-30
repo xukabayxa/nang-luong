@@ -4,12 +4,10 @@
         no_set = [];
 
         before(form) {
-            this.experience = form.experience || [];
-
         }
 
         after(form) {
-
+            this.experience = form.experience || [];
         }
 
         set experience(value) {

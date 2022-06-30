@@ -4,6 +4,7 @@
 
         before(form) {
             this.image = {};
+            this.sort_order = 1;
             // this.regentVi = (new RegentVi(form.regentVi, this));
         }
 
@@ -24,7 +25,7 @@
         }
 
         set regentVi(value) {
-            this._regent_vi =  (new RegentVi(value, this)) ;
+            this._regent_vi = (new RegentVi(value, this)) ;
 
         }
 
@@ -33,7 +34,7 @@
         }
 
         set regentEn(value) {
-            this._regent_en =  (new RegentEn(value, this)) ;
+            this._regent_en = value ? (new RegentEn(value, this)) : (new RegentEn({}, this));
         }
 
         get submit_data() {
@@ -44,6 +45,7 @@
                 phone_number: this.phone_number,
                 date_of_birth: this.date_of_birth,
                 sex: this.sex,
+                sort_order: this.sort_order,
             }
 
             data = jsonToFormData(data);
