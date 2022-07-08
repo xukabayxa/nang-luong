@@ -187,7 +187,7 @@
             {{-- <img src="{{ asset('site/system/slide/s6.jpg') }}" alt=""> --}}
         </div>
     </div>
-
+    <div id="lazy_load">
     <div class="uk-background-light uk-section uk-dark">
         <div class="uk-container uk-container-xmedium">
             <div>
@@ -204,91 +204,11 @@
                             – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.'
                             : "Renewable energy and new energy are the future-oriented and indisputable trend of the energy industry in general. RT Energy ties its future to the promotion and development of renewable energy – towards a green, clean, and sustainable world for future generations."}}
                         </div>
-                        {{-- <a class="uk-button uk-color-tertiary uk-style-secondary-b " href="">--}}
-                            {{-- <span--}} {{-- class="uk-color-tertiary uk-text-middle uk-margin-right" --}} {{-- style="color: #0F4C81 !important; font-size: 1rem">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}}</span>--}}
-                                {{-- <img class="wind-icon win-icon-right" --}} {{-- src="{{ asset('img/icons/wind-energy-blue.png') }}" --}} {{-- alt="win-icon">--}}
-                                {{-- </a>--}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    {{-- <div class="uk-section uk-background-dark uk-light">--}}
-        {{-- <div class="uk-container uk-container-medium uk-text-center">--}}
-            {{-- <h1 class="uk-style-primary-l uk-text-3 uk-text-lh-4" --}} {{-- uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 400;">We exclusively invest in--}}
-                {{-- sustainable real assets <br />
-                <span--}} {{-- class="uk-style-primary">across three key investment themes</span>
-            </h1>--}}
-            {{-- </div>--}}
-        {{-- </div>--}}
-
-    {{-- <div class="uk-margin-top uk-margin-left uk-margin-right uk-margin-bottom uk-section-investments">--}}
-        {{-- <div class="uk-grid-collapse uk-child-width-expand@m" uk-grid--}} {{-- uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div; delay: 400;">--}}
-
-            {{-- <div class="uk-text-left uk-mega-menu-item items-1">--}}
-                {{-- <a href="{{route('front.investments1')}}" class="uk-animation-zoom">--}}
-                    {{-- <div class="uk-cover-container ">--}}
-                        {{-- <img data-src="{{ asset('site/system/about_us/a1.jpg') }}" --}} {{-- data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" --}} {{-- class=" Sirv uk-utility-object-fit-cover " --}} {{-- alt="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled" --}} {{-- title="b5adbe20174127c806a4c33d5762fd4e8a5caee8-scaled" />--}}
-                        {{-- <canvas width="533.33333333333" height="720"></canvas>--}}
-                        {{-- <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
-                        {{-- </div>--}}
-                    {{-- <div--}} {{-- class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
-                        {{-- <div class="uk-position-bottom uk-padding-xmedium">--}}
-                            {{-- <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
-                                {{-- {{trans('message.renewable_energy')}}</h4>--}}
-                            {{-- <a class="uk-button uk-color-primary uk-style-secondary-b " --}} {{-- href="{{route('front.investments1')}}">--}}
-                                {{-- <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
-                                {{-- <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}" --}} {{-- alt="win-icon">--}}
-                                {{-- </a>--}}
-                            {{-- </div>--}}
-                        {{-- </div>--}}
-            {{-- </a>--}}
-            {{-- </div>--}}
-
-        {{-- <div class="uk-text-left uk-mega-menu-item items-1">--}}
-            {{-- <a href="{{route('front.investments2')}}" class="uk-animation-zoom">--}}
-                {{-- <div class="uk-cover-container ">--}}
-                    {{-- <img data-src="{{ asset('site/system/home/j.jpg') }}" --}} {{-- data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" --}} {{-- class=" Sirv uk-utility-object-fit-cover " alt="iStock-1156913631-scaled" --}} {{-- title="iStock-1156913631-scaled" />--}}
-                    {{-- <canvas width="533.33333333333" height="720"></canvas>--}}
-                    {{-- <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
-                    {{-- </div>--}}
-                {{-- <div--}} {{-- class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
-                    {{-- <div class="uk-position-bottom uk-padding-xmedium">--}}
-                        {{-- <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
-                            {{-- {{trans('message.sustainable_infrastructure')}}--}}
-                            {{-- </h4>--}}
-                        {{-- <a class="uk-button uk-color-primary uk-style-secondary-b " --}} {{-- href="{{route('front.investments2')}}">--}}
-                            {{-- <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
-                            {{-- <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}" --}} {{-- alt="win-icon">--}}
-                            {{-- </a>--}}
-                        {{-- </div>--}}
-                    {{-- </div>--}}
-        {{-- </a>--}}
-        {{-- </div>--}}
-
-    {{-- <div class="uk-text-left uk-mega-menu-item items-1">--}}
-        {{-- <a href="{{route('front.investments3')}}" class="uk-animation-zoom">--}}
-            {{-- <div class="uk-cover-container ">--}}
-                {{-- <img data-src="{{ asset('site/system/home/j2.jpg') }}" --}} {{-- data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" --}} {{-- class=" Sirv uk-utility-object-fit-cover " alt="green-tech-scaled" --}} {{-- title="green-tech-scaled" />--}}
-                {{-- <canvas width="533.33333333333" height="720"></canvas>--}}
-                {{-- <div class="uk-background-gradient-mega-menu uk-position-cover"></div>--}}
-                {{-- </div>--}}
-            {{-- <div--}} {{-- class="uk-position-relative uk-text-left uk-text-uppercase uk-light uk-background-gradient-rev">--}}
-                {{-- <div class="uk-position-bottom uk-padding-xmedium">--}}
-                    {{-- <h4 class="uk-style-tertiary uk-text-uppercase uk-text-6-1 uk-text-lh-4 uk-margin-small-bottom">--}}
-                        {{-- {{trans('message.future_solution')}} <br />--}}
-                        {{-- </h4>--}}
-                    {{-- <a class="uk-button uk-color-primary uk-style-secondary-b " --}} {{-- href="{{route('front.investments3')}}/">--}}
-                        {{-- <span class="uk-color-primary uk-text-middle uk-margin-right">FIND OUT MORE</span>--}}
-                        {{-- <img class="wind-icon win-icon-right" src="{{ asset('img/icons/wind-energy.png') }}" --}} {{-- alt="win-icon">--}}
-                        {{-- </a>--}}
-                    {{-- </div>--}}
-                {{-- </div>--}}
-    {{-- </a>--}}
-    {{-- </div>--}}
-    {{-- </div>--}}
-    {{-- </div>--}}
 
     <div class="uk-position-relative uk-background-image uk-flex uk-flex-middle uk-height-1-1 uk-margin-auto">
         <div class="uk-position-cover uk-cover-container">
@@ -681,7 +601,6 @@
     <div class="homeIndustry-main" >
         <div class="homeIndustry-content">
             <div class="homeIndustry-txt">
-{{--                <h3 class="homeIndustry-title">{{App::isLocale('vi') ? 'Giới thiệu' : 'About us'}}</h3>--}}
                 <div class="homeIndustry-desc" style="text-align: justify">
                     @if(App::isLocale('vi'))
                             Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:
@@ -1033,13 +952,7 @@
             <div class="slide"><img src="/site/system/partner3/14.png"></div>
         </section>
     </div>
-
-
-
-
-
-
-    <div class="uk-position-relative uk-margin-medium uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center" style="margin: 0">
+    <div id="delay_load" class="uk-position-relative uk-margin-medium uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center" style="margin: 0">
         <div class="uk-position-cover uk-cover-container">
             <canvas width="1600" height="708"></canvas>
             <img data-src="/site/system/home/i5.jpg" data-options="quality:80;hdQuality:60;resize:1;fit:cover;autostart:visible;" class="Sirv uk-utility-object-fit-cover sirv-image-loaded" referrerpolicy="no-referrer-when-downgrade" id="responsive-image-424658" alt="cta-bg-scaled" title="cta-bg-scaled" src="/site/system/home/i5.jpg" style="">
@@ -1047,7 +960,7 @@
         <div class="uk-text-center">
         </div>
     </div>
-
+</div>
 </section>
 @endsection
 @push('scripts')
@@ -1126,6 +1039,5 @@
         });
 
 </script>
-
 
 @endpush
