@@ -181,18 +181,23 @@
         {{--end--}}
 
         <div class="owl-carousel owl-theme">
-            @if(count($banners))
-                @foreach($banners as $banner)
-                    <img src="{{$banner->image->path ?? ''}}" alt="">
-                @endforeach
-            @else
+{{--            @if(count($banners))--}}
+{{--                @foreach($banners as $banner)--}}
+{{--                    <img src="{{$banner->image->path ?? ''}}" alt="">--}}
+{{--                @endforeach--}}
+{{--            @else--}}
+{{--                <img src="{{ asset('site/system/slide/s1.jpg') }}" alt="">--}}
+{{--                <img src="{{ asset('site/system/slide/s2.jpg') }}" alt="">--}}
+{{--                <img src="{{ asset('site/system/slide/s3.jpg') }}" alt="">--}}
+{{--                <img src="{{ asset('site/system/slide/s4.jpg') }}" alt="">--}}
+{{--                <img src="{{ asset('site/system/slide/s5.jpg') }}" alt="">--}}
+{{--            @endif--}}
+
                 <img src="{{ asset('site/system/slide/s1.jpg') }}" alt="">
                 <img src="{{ asset('site/system/slide/s2.jpg') }}" alt="">
                 <img src="{{ asset('site/system/slide/s3.jpg') }}" alt="">
                 <img src="{{ asset('site/system/slide/s4.jpg') }}" alt="">
                 <img src="{{ asset('site/system/slide/s5.jpg') }}" alt="">
-            @endif
-
             {{-- <img src="{{ asset('site/system/slide/s6.jpg') }}" alt=""> --}}
         </div>
     </div>
