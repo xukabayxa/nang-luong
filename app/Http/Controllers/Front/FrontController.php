@@ -11,6 +11,7 @@ use App\Model\Admin\Manufacturer;
 use App\Model\Admin\Origin;
 use App\Model\Admin\Policy;
 use App\Model\Admin\PostCategorySpecial;
+use App\Model\Admin\Regent;
 use App\Model\Admin\Store;
 use App\Model\Admin\Tag;
 use App\Model\Admin\Tagable;
@@ -59,7 +60,9 @@ class FrontController extends Controller
             'status' => 1
         ])->latest()->get()->take(3);
 
-        return view('site.index', compact('news'));
+        $banners = Banner::query()->latest()->get();
+
+        return view('site.index', compact('news', 'banners'));
     }
 
     /**
@@ -447,7 +450,17 @@ class FrontController extends Controller
 
     public function introduction3()
     {
-        return view('site.about3');
+        $regents = Regent::query()
+            ->with('regentVi.experience', 'regentEn.experience')
+            ->orderBy('sort_order')->get()->map(function ($regent) {
+                $regent->regentVi = $regent->regentVi()->first();
+                $regent->regentVi->experience = $regent->regentVi()->first()->experience;
+                $regent->regentEn = $regent->regentEn()->first();
+                $regent->regentEn->experience = $regent->regentEn()->first()->experience;
+                return $regent;
+            });
+
+        return view('site.about3', compact('regents'));
     }
 
     public function introduction4()

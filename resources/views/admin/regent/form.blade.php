@@ -91,11 +91,11 @@
             <div class="card-header">
                 <h6>Ảnh đại diện</h6>
             </div>
-            <div class="card-body">
+            <div class="card-body" style="height: 367.5px">
                 <div class="form-group text-center mb-4">
-                    <div class="main-img-preview">
+                    <div class="main-img-preview"  >
                         <p class="help-block-img">* Ảnh định dạng: jpg, png không quá 2MB.</p>
-                        <img class="thumbnail img-preview" ng-src="<% form.image.path %>">
+                        <img class="thumbnail img-preview" ng-src="<% form.image.path %>" height="200px">
                     </div>
                     <div class="input-group" style="width: 100%; text-align: center">
                         <div class="input-group-btn" style="margin: 0 auto">
@@ -199,11 +199,9 @@
                         </div>
                         <div class="card-body">
                             <div class="form-group text-center">
-                                {{--                        <div ng-if="!form.videos || !form.videos.length">Chưa có videos</div>--}}
 
                                 <div ng-repeat="experience in form.regentVi.experience track by $index">
                                     <div class="mb-2 d-flex align-items-center">
-                                        {{--                                <u>Video <% $index + 1 %></u>--}}
                                         <button class="btn btn-link text-danger ml-auto"
                                                 ng-click="form.regentVi.removeExperience($index)"><i
                                                 class="fa fa-times"></i></button>
@@ -294,11 +292,9 @@
                         </div>
                         <div class="card-body">
                             <div class="form-group text-center">
-                                {{--                        <div ng-if="!form.videos || !form.videos.length">Chưa có videos</div>--}}
 
                                 <div ng-repeat="experience in form.regentEn.experience track by $index">
                                     <div class="mb-2 d-flex align-items-center">
-                                        {{--                                <u>Video <% $index + 1 %></u>--}}
                                         <button class="btn btn-link text-danger ml-auto"
                                                 ng-click="form.regentEn.removeExperience($index)"><i
                                                 class="fa fa-times"></i></button>

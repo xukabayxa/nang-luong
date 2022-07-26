@@ -10,7 +10,7 @@
                      title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"/> </a>
         </div>
         <div class="uk-flex uk-flex-between uk-style-secondary-m uk-text-ls-1 uk-text-dark uk-text-12 uk-margin-small-bottom uk-margin-small-top uk-padding-small-top">
-            <div>{{$post->first()->created_at->format('d') .'.' . $post->first()->created_at->format('m'). '.' .$post->first()->created_at->format('Y')}}</div>
+            <div>{{$post->created_at->format('d') .'.' . $post->created_at->format('m'). '.' .$post->created_at->format('Y')}}</div>
             <div></div>
         </div>
         <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">

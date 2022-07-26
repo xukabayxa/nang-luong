@@ -152,7 +152,6 @@ class BannerController extends Controller
                     FileHelper::forceDeleteFiles($object->image->id, $object->id, ThisModel::class, 'image');
                 }
 
-
                 FileHelper::uploadFile($request->image, 'banners', $object->id, ThisModel::class, 'image', 6);
             }
 

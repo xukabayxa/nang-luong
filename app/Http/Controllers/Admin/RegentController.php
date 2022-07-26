@@ -106,19 +106,19 @@ class RegentController extends Controller
             $regent_vi->fill($dataRegentVi);
             $regent_vi->save();
 
-            if($request->regent_vi['experience']) {
+            if($request->regent_vi && $request->regent_vi['experience']) {
                 foreach ($request->regent_vi['experience'] as $experience) {
                     $regent_vi->experience()->create(array_merge($experience, ['regent_language_id' => $regent_vi->id]));
                 }
             }
 
-            if($request->regent_en['full_name']) {
+            if($request->regent_en && $request->regent_en['full_name']) {
                 $dataRegentEn = array_merge($request->regent_en, ['language' => 'en', 'regent_id' => $regent->id]);
                 $regent_en = new RegentLanguage();
                 $regent_en->fill($dataRegentEn);
                 $regent_en->save();
 
-                if($request->regent_en['experience']) {
+                if($request->regent_en && $request->regent_en['experience']) {
                     foreach ($request->regent_en['experience'] as $experience) {
                         $regent_en->experience()->create(array_merge($experience, ['regent_language_id' => $regent_en->id]));
                     }
@@ -136,9 +136,8 @@ class RegentController extends Controller
         }
     }
 
-    public function update(Request $request, $id)
+    public function update(RegentStoreRequest $request, $id)
     {
-
        DB::beginTransaction();
         try {
             $regent = ThisModel::findOrFail($id);
@@ -166,17 +165,21 @@ class RegentController extends Controller
             }
 
 
-            if($request->regent_vi['experience']) {
+            if(@$request->regent_vi['experience']) {
                 RegentExperience::query()->where('regent_language_id', $regentVi->id)->delete();
                 foreach ($request->regent_vi['experience'] as $experience) {
                     $regentVi->experience()->create(array_merge($experience, ['regent_language_id' => $regentVi->id]));
                 }
+            } else {
+                RegentExperience::query()->where('regent_language_id', $regentVi->id)->delete();
             }
 
-            if(isset($request->regent_en['experience']) && $regentEn) {
+            if(@$request->regent_en['experience'] || $regentEn) {
                 RegentExperience::query()->where('regent_language_id', $regentEn->id)->delete();
-                foreach ($request->regent_en['experience'] as $experience) {
-                    $regentEn->experience()->create(array_merge($experience, ['regent_language_id' => $regentEn->id]));
+                if(! empty($request->regent_en['experience'])) {
+                    foreach ($request->regent_en['experience'] as $experience) {
+                        $regentEn->experience()->create(array_merge($experience, ['regent_language_id' => $regentEn->id]));
+                    }
                 }
             }
 

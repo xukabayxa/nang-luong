@@ -33,7 +33,9 @@ class RegentStoreRequest extends BaseRequest
         ];
 
         $regent_en_full_name = $this->regent_en['full_name'];
-        if($regent_en_full_name) {
+        $regent_en_experience= @$this->regent_en['experience'] ?? null;
+        if($regent_en_full_name || $regent_en_experience) {
+            $rules['regent_en.full_name']  = 'required';
             $rules['regent_en.role']  = 'required';
             $rules['regent_en.description']  = 'required';
         }

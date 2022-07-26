@@ -80,7 +80,8 @@ class FileHelper
             } else if ($type == 5) {
                 Image::make($file)->resize(115, 75)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
             } else if ($type == 6) {
-                Image::make($file)->resize(1920, 700)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
+                $file->move($destinationPath, $destinationFile);
+//                Image::make($file)->resize(1920, 700)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
             } else if ($type == 7) {
                 Image::make($file)->resize(32, 32)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
             } else if ($type == 8) {
@@ -193,12 +194,16 @@ class FileHelper
         if (!is_array($fileIds)) {
             $fileIds = [$fileIds];
         }
-        File::query()
+        $file = File::query()
             ->where('model_id', $id)
             ->where('model_type', $class)
             ->where('custom_field', $custom)
-            ->whereIn('id', $fileIds)
-            ->delete();
-        // todo: xóa file khỏi hệ thống
+            ->whereIn('id', $fileIds);
+
+        if(file_exists(public_path($file->first()->path))) {
+            unlink(public_path($file->first()->path));
+        }
+
+        $file->delete();
     }
 }
