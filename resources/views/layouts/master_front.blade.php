@@ -90,6 +90,7 @@
             });
         });
     </script>
+    
     @if ($config->click_call == 1)
     @include('front.blocks.click-call')
     @endif

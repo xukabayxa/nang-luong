@@ -9901,3 +9901,6 @@ img.Sirv {
     font-family: roboto;
     letter-spacing: 0.5px;
   }
+  #delay_load, #footer, #lazy_load {
+      display: none;
+  }

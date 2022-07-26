@@ -138,5 +138,10 @@
 
     });
 </script>
+<script>
+    $(document).ready(function() {
+        $('#delay_load, #footer, #lazy_load').delay(1000).fadeIn();
+    });
+</script>
 </body>
 </html>

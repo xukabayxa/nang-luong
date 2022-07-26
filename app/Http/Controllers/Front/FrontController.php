@@ -526,7 +526,7 @@ class FrontController extends Controller
     {
         \Session::put('language', $language);
 
-        return redirect()->back();
+        return redirect('/');
     }
 
     public function contact(Request $request)

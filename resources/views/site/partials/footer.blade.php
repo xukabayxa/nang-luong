@@ -1,4 +1,4 @@
-<footer class="uk-background-dark uk-light">
+<footer class="uk-background-dark uk-light" id="footer">
     <div class="uk-container uk-padding-medium-top">
         <div uk-grid class="uk-grid uk-flex-middle">
             <div class="uk-width-1-1 uk-width-expand@s uk-text-center uk-text-left@m footer-logo">
