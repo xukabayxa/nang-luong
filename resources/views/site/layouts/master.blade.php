@@ -3,45 +3,7 @@
 <head>
     @include('site.partials.meta-seo')
     @include('site.partials.head')
-    <style>
-        .loading {
-            background: #000;
-            opacity: 0.8;
-            position: fixed;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            z-index: 9999999999999;
-            display: block;
-        }
 
-        .loading .icon {
-            background: url('/site/system/logo.png') no-repeat center center / 170px 170px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            width: 170px;
-            height: 170px;
-            text-indent: -9999px;
-        }
-        .loading img {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            /*width: 200px;*/
-            height: 6px;
-            text-indent: -9999px;
-        }
-
-    </style>
     <script type='text/javascript' src='/site/js/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
         @yield('css')
 </head>
@@ -65,23 +27,6 @@
 {{--<script type="text/javascript" src="/site/js/jquery3.3.1.js"></script>--}}
 <script src="/site/js/script.js" defer="defer" type="text/javascript"></script>
 <script>
-    /* This JavaScript is used for different helper functions, such as Sirv object updates with Ajax. */
-    //
-    // $(window).on('load', function(event) {
-    //     $('body').removeClass('preloading');
-    //     $('.loader').fadeOut('slow');
-    // });
-
-    // $(document).ready(function() {
-    //     $(".loader").fadeOut(function() {
-    //         $(this).remove(); // Optional if it's going to only be used once.
-    //     });
-    // });
-
-    // jQuery(document).ready(function() {
-    //     jQuery('#loading').fadeOut(3000);
-    // });
-
     jQuery(document).ajaxComplete(function () {
         if (arguments[1].responseText && arguments[1].responseText.match(/class *= *"[^"]*Sirv/gm)) {
             setTimeout(function () {

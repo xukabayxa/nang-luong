@@ -113,8 +113,6 @@
                     <div class="uk-position-relative uk-container uk-section post-sl2" style="margin-top: 30px; ">
 
                         <form method="GET" class="sz-form ajax-more-posts">
-
-
                             <input type="hidden" value="1" name="query_id"/>
                             <div uk-grid
                                  class="sz-1-results uk-grid-match ajax-results uk-grid uk-child-width-1-3@l uk-child-width-1-2@s uk-grid-large load-more-post">

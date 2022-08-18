@@ -8,15 +8,10 @@
 <link href="/css/solar-skin.css" rel="stylesheet">
 <link href="/css/css-2.css" rel="stylesheet">
 <link href="/css/css-3.css" rel="stylesheet">
+<link href="/site/css/about/custom-about2.css" rel="stylesheet">
 
 @endsection
 @section('content')
-<style>
-    h3 {
-        font-size: 20px;
-        color: #0F4C81;
-    }
-</style>
 <!-- <span></span> -->
 <div uk-sticky="animation: uk-animation-slide-top;">
     <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
@@ -24,18 +19,6 @@
     </div>
 </div>
 
-
-<style>
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-        .vc_custom_1474870976953 {
-            display: none;
-        }
-
-        .text-br {
-            white-space: pre;
-        }
-    }
-</style>
 <section id="sozo-main" style="display: grid">
     <section class="main-title-section-wrapper default" style="background:url(https://solarwp.wpengine.com/wp-content/uploads/2016/09/page-title-img.jpg)
            top left repeat;">
@@ -52,13 +35,6 @@
         <section id="primary" class="content-full-width">
             <!-- #post-8 -->
             <div id="post-8" class="post-8 page type-page status-publish hentry">
-                <style>
-                    .vc_custom_1475647479713 {
-                        padding-right: 50px !important;
-                        padding-left: 50px !important;
-                    }
-                </style>
-
                 <div class="vc_row-full-width vc_clearfix"></div>
 
                 <div data-vc-full-width="true" data-vc-full-width-init="true" class="vc_row wpb_row vc_row-fluid section4 vc_custom_1474520837084 vc_column-gap-35" style="position: relative;text-align: center; margin-top: 65px ">
@@ -170,20 +146,6 @@
                     </div>
                 </div>
 
-                <style>
-                    @media only screen and (max-width: 768px) {
-                        .vc_row-no-padding{
-                            margin-top: 0;
-                        }
-                    }
-
-                    @media (min-width:1025px){
-                        .vc_row-no-padding{
-                            margin-top: -120px;
-                        }
-                    }
-
-                </style>
                 <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid skill-set-img vc_row-no-padding">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
                         <div class="vc_column-inner ">

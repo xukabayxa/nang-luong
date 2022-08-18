@@ -1,0 +1,30 @@
+h3 {
+    font-size: 20px;
+    color: #0F4C81;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+    .vc_custom_1474870976953 {
+        display: none;
+    }
+
+    .text-br {
+        white-space: pre;
+    }
+}
+
+.vc_custom_1475647479713 {
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .vc_row-no-padding{
+        margin-top: 0;
+    }
+}
+
+@media (min-width:1025px){
+    .vc_row-no-padding{
+        margin-top: -120px;
+    }
+}

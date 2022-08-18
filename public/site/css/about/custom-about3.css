@@ -1,0 +1,41 @@
+h3 {
+    font-size: 20px;
+    color: #0F4C81;
+}
+
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .vc_custom_1474870976953 {
+        display: none;
+    }
+
+    .text-br {
+        white-space: pre;
+    }
+}
+
+.conver-data {
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .man-2 {
+        padding-right: 0;
+    }
+
+    .man-1 {
+        height: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .man-2 {
+        padding-right: 30px;
+    }
+}

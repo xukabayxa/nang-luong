@@ -8,15 +8,9 @@
     <link href="/css/solar-skin.css" rel="stylesheet">
     <link href="/css/css-2.css" rel="stylesheet">
     <link href="/css/css-3.css" rel="stylesheet">
-
+    <link href="/site/css/about/custom.css" rel="stylesheet">
 @endsection
 @section('content')
-    <style>
-         h3{
-            font-size: 20px;
-            color: #0F4C81 ;
-        }
-    </style>
     <!-- <span></span> -->
     <div uk-sticky="animation: uk-animation-slide-top;">
         <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
@@ -24,21 +18,6 @@
         </div>
     </div>
 
-
-    <style>
-        @media only screen
-        and (min-device-width: 320px)
-        and (max-device-width: 480px)
-        and (-webkit-min-device-pixel-ratio: 2) {
-            .vc_custom_1474870976953 {
-                display: none;
-            }
-            .text-br {
-                white-space: pre;
-            }
-        }
-
-    </style>
     <section id="sozo-main" style="display: grid">
         <section class="main-title-section-wrapper default"
                  style="background:url(https://solarwp.wpengine.com/wp-content/uploads/2016/09/page-title-img.jpg)
@@ -67,13 +46,6 @@
                                                         {{App::isLocale('vi') ? 'Giới thiệu chung' : 'Introduction'
                                                                                                                     }}
                                                         </h3>
-                                                    <style>
-                                                        @media only screen and (max-width: 768px) {
-                                                                .pre2{
-                                                                    width: 300px;
-                                                                }
-                                                        }
-                                                    </style>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper pre2" >
                                                             <p>
@@ -248,12 +220,6 @@ năng lượng tái tạo' : 'Sustainable industrial park development'}}</h4>
                     </div>
 
                     <br/>
-                    <style>
-                        .vc_custom_1475647479713 {
-                            padding-right: 50px!important;
-                            padding-left: 50px!important;
-                        }
-                    </style>
                 </div><!-- #post-8 -->
             </section>
         </div>
