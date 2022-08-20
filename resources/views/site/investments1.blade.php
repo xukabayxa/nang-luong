@@ -121,7 +121,7 @@
                                     <div class="tech-item">
                                         <div class="tech-line"></div>
                                         <img src="https://www.ttvngroup.vn/static/common/img/icon_image/f930a29728517737ce62ada64bbd1856.svg" class="img-fluid tech-item-icon">
-                                        <div class="tech-item-title">{{App::isLocale('vi') ? 'Năng lượng xanh cho cuộc sống xanh' : 'Green energy for green life'}}</div>
+                                        <div class="tech-item-title uk-text-8">{{App::isLocale('vi') ? 'Năng lượng xanh cho cuộc sống xanh' : 'Green energy for green life'}}</div>
                                         <div class="tech-item-desc">
                                             @if(App::isLocale('vi'))
                                                 Trong bối cảnh các nguồn nhiên liệu hóa thạch có hạn và đang bị cạn kiệt dần sau khi đã bị khai thác quá mức, cùng với phát thải từ việc sử dụng các nguồn năng lượng này đang ảnh hưởng nghiêm trọng đến môi trường thì việc sử dụng các nguồn năng lượng xanh thay thế càng trở nên cấp thiết hơn bao giờ hết. Đây là xu thế tất yếu và mạnh mẽ, cũng là điều được Chính phủ các quốc gia đặc biệt quan tâm.
@@ -139,7 +139,7 @@
                                         <div class="tech-line"></div>
                                         <img src="https://www.ttvngroup.vn/static/common/img/icon_image/c3836d34114a580cc5fc7a09e8e245ab.svg" class="img-fluid tech-item-icon">
                                         @if(App::isLocale('vi'))
-                                            <div class="tech-item-title">Mạnh mẽ bứt phá, vươn tầm khu vực và thế giới
+                                            <div class="tech-item-title uk-text-8">Mạnh mẽ bứt phá, vươn tầm khu vực và thế giới
                                             </div>
                                             <div class="tech-item-desc">
                                                 Đối tác đồng hành với RT Energy trong quá trình đầu tư xây dựng các dự án năng lượng tái tạo là những tập đoàn năng lượng lớn đến từ Hoa Kỳ, Italia, Singapore, Trung Quốc… Đây đều là những tập đoàn giàu kinh nghiệm, đã triển khai nhiều dự án lớn ở các nước trên thế giới.
@@ -167,7 +167,7 @@
                                         <div class="tech-line"></div>
                                         <img src="https://www.ttvngroup.vn/static/common/img/icon_image/7e2b25e88de3ad7a579af8b525b2d797.svg" class="img-fluid tech-item-icon">
                                         @if(App::isLocale('vi'))
-                                            <div class="tech-item-title">Lợi ích bền vững cho cộng đồng</div>
+                                            <div class="tech-item-title uk-text-8">Lợi ích bền vững cho cộng đồng</div>
                                             <div class="tech-item-desc">Sử dụng nguồn năng lượng tái tạo để sản xuất điện mang lại hiệu quả cao hơn nhiều so với sử dụng năng lượng thông thường, lại phát thải ít carbon, không gây tác động xấu đến môi trường và sức khỏe con người. Hơn nữa, các dự án phát triển năng lượng tái tạo còn đem lại nguồn thu lớn cho ngân sách nhà nước, giải quyết việc làm cho người dân địa phương nơi có dự án, qua đó góp phần thúc đẩy kinh tế-xã hội phát triển
                                             </div>
                                         @else

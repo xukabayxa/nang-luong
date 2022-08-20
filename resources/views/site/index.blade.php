@@ -5,7 +5,8 @@
 @section('css')
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script href="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="/site/css/home/custom-home.css" rel="stylesheet">
 @endsection
 @section('content')
 <div uk-sticky="animation: uk-animation-slide-top;">
@@ -22,163 +23,6 @@
 
     <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
         {{--style banner slick--}}
-        <style>
-            :root {
-                --main-white-color: white;
-                --main-black-color: black;
-            }
-
-            * {
-                padding: 0;
-                margin: 0;
-                box-sizing: border-box;
-            }
-
-            .static {
-                position: static;
-            }
-
-            .cover {
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
-
-            .owl-carousel .owl-slide {
-                position: relative;
-                height: 100vh;
-                background-color: lightgray;
-            }
-
-            .owl-carousel .owl-slide-animated {
-                transform: translateX(20px);
-                opacity: 0;
-                visibility: hidden;
-                transition: all 0.05s;
-            }
-
-            .owl-carousel .owl-slide-animated.is-transitioned {
-                transform: none;
-                opacity: 1;
-                visibility: visible;
-                transition: all 0.5s;
-            }
-
-            .owl-carousel .owl-slide-title.is-transitioned {
-                transition-delay: 0.2s;
-            }
-
-            .owl-carousel .owl-slide-subtitle.is-transitioned {
-                transition-delay: 0.35s;
-            }
-
-            .owl-carousel .owl-slide-cta.is-transitioned {
-                transition-delay: 0.5s;
-            }
-
-            .owl-carousel .owl-dots,
-            .owl-carousel .owl-nav {
-                position: absolute;
-            }
-
-            .owl-carousel .owl-dots .owl-dot,
-            .owl-carousel .owl-nav [class*="owl-"]:focus {
-                outline: none;
-            }
-
-            .owl-carousel .owl-dots .owl-dot span {
-                background: transparent;
-                border: 1px solid var(--main-black-color);
-                transition: all 0.2s ease;
-            }
-
-            /*.owl-carousel .owl-dots .owl-dot:hover span,*/
-            /*.owl-carousel .owl-dots .owl-dot.active span {*/
-            /*    background: var(--main-black-color);*/
-            /*}*/
-
-            .owl-carousel .owl-nav {
-                left: 50%;
-                top: 50%;
-                transform: translateX(-50%);
-                margin: 0;
-                position: absolute;
-                margin-top: 0;
-                width: 100%;
-            }
-
-            .owl-carousel .owl-nav svg {
-                opacity: 0.3;
-                transition: opacity 0.3s;
-                position: relative;
-            }
-
-            .owl-carousel .owl-nav button:hover svg {
-                opacity: 1;
-            }
-
-            .owl-carousel .owl-nav [class*="owl-"]:hover {
-                background: transparent;
-            }
-
-            section {
-                display: none;
-            }
-
-            @media screen and (max-width: 575px) {
-                .owl-carousel .owl-nav {
-                    top: 5%;
-                }
-
-                .owl-carousel .owl-nav svg {
-                    width: 24px;
-                    height: 24px;
-                }
-
-                .owl-prev,
-                .owl-next {
-                    width: 15px;
-                    height: 100px;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    display: block !important;
-                    border: 0px solid black;
-                }
-
-                .owl-prev {
-                    left: -20px;
-                }
-
-                .owl-next {
-                    right: -20px;
-                }
-
-                .owl-prev svg,
-                .owl-next svg {
-                    transform: scale(2, 5);
-                    color: #ccc;
-                }
-            }
-
-            .owl-carousel .owl-dots {
-                display: block;
-                margin-top: -20px;
-                text-align: center;
-                width: 100%;
-            }
-
-            .owl-carousel .owl-dots .owl-dot.active {
-                /*background: #fff;*/
-            }
-
-            .owl-theme .owl-dots .owl-dot.active span,
-            .owl-theme .owl-dots .owl-dot:hover span {
-                background: #fff;
-            }
-        </style>
-        {{--end--}}
-
         <div class="owl-carousel owl-theme">
 {{--            @if(count($banners))--}}
 {{--                @foreach($banners as $banner)--}}
@@ -199,12 +43,13 @@
         </div>
     </div>
     <div id="lazy_load">
+
     <div class="uk-background-light uk-section uk-dark">
         <div class="uk-container uk-container-xmedium">
             <div>
                 <div class="uk-grid uk-grid-large" uk-grid>
                     <div class="uk-width-45@m" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 400;">
-                        <div class="uk-style-tertiary uk-text-uppercase uk-text-4 uk-text-lh-4  uk-style-hline uk-position-relative" style="color: #0F4C81 !important; font-weight: bold">
+                        <div class="uk-style-tertiary uk-text-uppercase uk-text-6 uk-text-lh-6  uk-style-hline uk-position-relative" style="color: #0F4C81 !important; font-weight: bold">
                             {{App::isLocale('vi') ? 'PHÁT TRIỂN NĂNG LƯỢNG BỀN VỮNG' : "Sustainable Development and a Net zero emissions future"}}
                         </div>
 
@@ -229,385 +74,6 @@
         <div class="uk-background-white-wash uk-position-cover"></div>
     </div>
 
-    <style>
-        .homeIndustry-main {
-            /*background: url(/site/system/home_2.png);*/
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            padding: 64px 32px 42px;
-            position: relative;
-            left: 50%;
-            top: 11%;
-            transform: translateX(-50%);
-            width: 100%;
-            height: max-content;
-            max-width: 1120px;
-            margin-top: 0;
-            overflow: hidden;
-        }
-
-        .homeIndustry-content {
-            display: flex;
-            padding-bottom: 35px;
-        }
-
-        /*.homeIndustry-txt {*/
-        /*    margin-top: -40px;*/
-        /*    width: 100%;*/
-        /*}*/
-
-        .homeIndustry-title {
-            color: var(--color-theme);
-            /* text-transform: uppercase; */
-            font-weight: 700;
-            margin-bottom: 12px;
-            margin-top: -32px;
-        }
-
-        .homeIndustry-desc {
-            /*padding-left: 12px;*/
-            /*border-left: 2px solid #0F4C81;*/
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.375em;
-            color: #0F4C81;
-        }
-
-        .homeIndustry-intro {
-            margin: 20px 0 20px;
-            position: relative;
-            min-height: 150px;
-        }
-
-        .homeIndustry-item {
-            position: absolute;
-            opacity: 0;
-            transition: all .75s ease-out;
-            filter: blur(10px);
-            transform: scale(1.5);
-            pointer-events: none;
-        }
-
-        .homeIndustry-item2 {
-            position: absolute;
-            opacity: 0;
-            transition: all .75s ease-out;
-            filter: blur(10px);
-            transform: scale(1.5);
-            pointer-events: none;
-
-        }
-
-        .homeIndustry-item h6 {
-            color: var(--color-theme);
-            font-weight: 700;
-            font-size: 18px;
-            margin-bottom: 24px;
-        }
-
-        .homeIndustry-item2 h6 {
-            color: var(--color-theme);
-            font-weight: 700;
-            font-size: 18px;
-            margin-bottom: 24px;
-        }
-
-        .homeIndustry-item p {
-            height: 100px;
-            padding-left: 12px;
-            overflow: auto;
-            font-size: 13.5px;
-            border-left: 2px solid #0F4C81;
-        }
-
-        .homeIndustry-item pre {
-            width: 520px;
-            height: 100px;
-            padding-left: 12px;
-            overflow: auto;
-            font-size: 13.5px;
-            border-left: 2px solid #0F4C81;
-        }
-
-        .homeIndustry-item2 p {
-            height: 150px;
-            overflow: hidden;
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.375em;
-            color: #0F4C81;
-        }
-
-        .homeIndustry-item a {
-            text-transform: uppercase;
-            background: url(../img/icon-linkArrow.png);
-            background-position: right center;
-            background-repeat: no-repeat;
-            padding: 0 40px 0 0;
-        }
-
-        .homeIndustry-item2 a {
-            text-transform: uppercase;
-            background: url(../img/icon-linkArrow.png);
-            background-position: right center;
-            background-repeat: no-repeat;
-            padding: 0 40px 0 0;
-        }
-
-        .homeIndustry-figure {
-            width: 100%;
-            margin: -44px 0 0 48px;
-            border-radius: 30px 0;
-            position: relative;
-            z-index: 10;
-        }
-
-        .homeIndustry-figure2 {
-            margin-top: -60px;
-            width: 100%;
-            height: 280px;
-            border-radius: 30px 0;
-            position: relative;
-            z-index: 10;
-        }
-
-        .homeIndustry-img {
-            background-color: #DDD;
-            border-radius: 30px 0;
-            height: 100%;
-            width: 100%;
-            background-size: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            opacity: 0;
-            transition: var(--transition-smooth);
-            filter: blur(10px);
-            transform: scale(.75);
-        }
-
-        .homeIndustry-img2 {
-            background-color: #DDD;
-            border-radius: 30px 0;
-            height: 100%;
-            width: 100%;
-            background-size: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            opacity: 0;
-            opacity: 0;
-            transition: var(--transition-smooth);
-            filter: blur(10px);
-            transform: scale(.75);
-        }
-
-        .homeIndustry-img.active {
-            opacity: 1;
-            transform: none;
-            filter: none;
-        }
-
-        .homeIndustry-img2.active {
-            opacity: 1;
-            transform: none;
-            filter: none;
-        }
-
-        .homeIndustry-nav {
-            margin-top: 15px;
-            display: flex;
-            justify-content: space-between;
-            padding-top: 35px;
-            border-top: 1px solid #252426;
-            box-shadow: inset 0 2px 0 #414042;
-        }
-
-        .industry-item {
-            color: #0F4C81;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            position: relative;
-            background-color: transparent;
-            transition: all .15s ease-out;
-        }
-
-        .homeIndustry-navItem {
-            height: 260px;
-            width: 23%;
-        }
-
-        .homeIndustry-navItem2 {
-            height: 260px;
-            width: 33%;
-        }
-
-        .industryItem-img {
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: #000;
-            background-size: cover;
-            background-position: center;
-            transition: all .15s ease-out;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .industryItem-txt {
-            width: 100%;
-            height: 42px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgba(255, 255, 255, .85);
-            border-bottom: 1px solid var(--color-theme);
-            position: absolute;
-            bottom: 0;
-            transition: all .25s ease-out;
-            opacity: 1;
-        }
-
-        .homeIndustry-navItem:hover {
-            padding: 8px;
-        }
-
-        .homeIndustry-navItem2:hover {
-            padding: 8px;
-        }
-
-        .industry-item:hover {
-            background: url(../img/industry-leafBg.png);
-            background-size: 100% 100%;
-            padding: 8px;
-            color: #0F4C81;
-        }
-
-        .homeIndustry-item.active {
-            opacity: 1;
-            filter: none;
-            transform: none;
-            pointer-events: auto;
-        }
-
-        .homeIndustry-item2.active {
-            opacity: 1;
-            filter: none;
-            transform: none;
-            pointer-events: auto;
-        }
-
-        .imgDes {
-            display: none;
-        }
-
-        .h-txt {
-            margin-left: 34px;
-        }
-
-        @media screen and (max-width: 640px) {
-            .homeIndustry-main {
-                margin-top: 24px;
-                padding: 0 15px;
-                background: none;
-                left: 0;
-                transform: none;
-                height: auto;
-                width: 100%;
-                overflow: visible;
-                background: url(../img/patternBg-4.png);
-            }
-
-            .imgDes {
-                display: block;
-            }
-
-            .h-txt {
-                margin-left: 0;
-            }
-
-            .uk-recent-posts {
-                margin-top: -440px;
-            }
-
-            .homeIndustry-title,
-            .homeIndustry-title2 {
-                margin-top: 24px;
-            }
-
-
-            .homeIndustry-intro,
-            .homeIndustry-intro2 {
-                margin: 24px 0;
-            }
-
-            .homeIndustry-item,
-            .homeIndustry-item2 {
-                position: relative;
-                opacity: 1;
-                filter: none;
-                transform: none;
-                pointer-events: auto;
-                padding-bottom: 20px;
-                margin-bottom: 20px;
-                border-bottom: 1px solid rgba(0, 0, 0, .2);
-                box-shadow: 0 1px 0 0 rgb(255 255 255 / 10%);
-            }
-
-            .homeIndustry-item p,
-            .homeIndustry-item2 p {
-                height: auto;
-                margin-bottom: 8px;
-                font-size: 16px;
-            }
-
-            .homeIndustry-figure,
-            .homeIndustry-figure2 {
-                margin: 0;
-                display: none;
-            }
-
-            .homeIndustry-nav,
-            .homeIndustry-nav2 {
-                display: none;
-            }
-
-        }
-
-        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-            .homeIndustry-desc {
-                font-size: 16px;
-            }
-
-            .uk-feat-article {
-                margin-bottom: 20px;
-            }
-        }
-
-
-        @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
-            .chongchong {
-                margin-top: -90px;
-            }
-        }
-
-        @media only screen and (max-width: 768px) {
-            .homeIndustry-txt {
-                margin-top: -60px;
-            }
-            .chongchong {
-                margin-top: -60px;
-            }
-        }
-
-        @media (min-width:1025px){
-            .homeIndustry-txt {
-                margin-top: -30px;
-            }
-        }
-
-    </style>
 
     <div class="homeIndustry-main" >
         <div class="homeIndustry-content">
@@ -653,19 +119,8 @@
         </div>
     </div>
 
-    <br />
-    <style>
-        .wind-icon2 {
-            top: 50%;
-            left: 50%;
-            width: 32px;
-            height: 32px;
-            -webkit-animation: spin 4s linear infinite;
-            -moz-animation: spin 4s linear infinite;
-            animation: spin 2s linear infinite;
-            transform: none;
-        }
-    </style>
+    <br/>
+
 
     <div class="row chongchong" style="text-align: center; margin-bottom: 50px; display: flex; justify-content: space-evenly">
         <div>
@@ -687,7 +142,7 @@
                 <div class="homeIndustry-img2" style="background-image:url(/site/system/home/z2.jpg);"></div>
             </div>
             <div class="homeIndustry-txt h-txt" style="width: 100%">
-                <h3 class="homeIndustry-title">{{App::isLocale('vi') ? 'Lĩnh vực đầu tư kinh doanh' : 'Business investment'}}</h3>
+                <h3 class="homeIndustry-title uk-text-8 uk-text-lh-6 ">{{App::isLocale('vi') ? 'Lĩnh vực đầu tư kinh doanh' : 'Business investment'}}</h3>
                 <div class="homeIndustry-desc"></div>
                 <div class="homeIndustry-intro" style="text-align: justify">
                     <div class="homeIndustry-item2 active">
@@ -722,7 +177,6 @@
                         </p>
                         <a href="{{route('front.investments3')}}" style="color: #0F4C81; font-weight: bold">{{App::isLocale('vi') ? 'Chi tiết' : 'Detail'}} <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-
                     <div class="homeIndustry-item2">
                         <h6>{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</h6>
                         <div class="imgDes">
@@ -766,7 +220,7 @@
 
     <div class="uk-position-relative uk-container uk-container-large uk-recent-posts">
         <div class="uk-flex uk-flex-middle uk-text-left uk-margin-medium-bottom">
-            <div class="uk-style-secondary-m uk-text-11 uk-light" style="color: black">
+            <div class="uk-style-secondary-m uk-text-6 uk-text-lh-6 uk-light" style="color: black">
                 {{App::isLocale('vi') ? 'Tin tức' : 'News'}}
             </div>
             <div class="uk-style-line orange"></div>
@@ -799,149 +253,13 @@
         </div>
     </div>
 
-    <style>
-        .partner-row {
-            background-color: #f0f0f0;
-            height: 280px;
-            margin-bottom: 50px;
-            margin-top: 50px;
-        }
-
-
-        @media only screen and (max-width: 1350px) and (min-width: 320px) {
-            .partner-row {
-                height: auto;
-            }
-        }
-    </style>
-
     </div>
-
-    <style>
-        h2 {
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Slider */
-
-        .slick-slide {
-            margin: 0px 20px;
-        }
-
-        .slick-slide img {
-            width: 100%;
-        }
-
-        .slick-slider {
-            position: relative;
-            display: block;
-            box-sizing: border-box;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            -webkit-touch-callout: none;
-            -khtml-user-select: none;
-            -ms-touch-action: pan-y;
-            touch-action: pan-y;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        .slick-list {
-            position: relative;
-            display: block;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-        }
-
-        .slick-list:focus {
-            outline: none;
-        }
-
-        .slick-list.dragging {
-            cursor: pointer;
-            cursor: hand;
-        }
-
-        .slick-slider .slick-track,
-        .slick-slider .slick-list {
-            -webkit-transform: translate3d(0, 0, 0);
-            -moz-transform: translate3d(0, 0, 0);
-            -ms-transform: translate3d(0, 0, 0);
-            -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-        }
-
-        .slick-track {
-            position: relative;
-            top: 0;
-            left: 0;
-            display: block;
-        }
-
-        .slick-track:before,
-        .slick-track:after {
-            display: table;
-            content: '';
-        }
-
-        .slick-track:after {
-            clear: both;
-        }
-
-        .slick-loading .slick-track {
-            visibility: hidden;
-        }
-
-        .slick-slide {
-            display: none;
-            float: left;
-            height: 100%;
-            min-height: 1px;
-        }
-
-        [dir='rtl'] .slick-slide {
-            float: right;
-        }
-
-        .slick-slide img {
-            display: block;
-        }
-
-        .slick-slide.slick-loading img {
-            display: none;
-        }
-
-        .slick-slide.dragging img {
-            pointer-events: none;
-        }
-
-        .slick-initialized .slick-slide {
-            display: block;
-        }
-
-        .slick-loading .slick-slide {
-            visibility: hidden;
-        }
-
-        .slick-vertical .slick-slide {
-            display: block;
-            height: auto;
-            border: 1px solid transparent;
-        }
-
-        .slick-arrow.slick-hidden {
-            display: none;
-        }
-    </style>
 
     <br>
 
     <div style="margin-top: 60px" class="uk-container uk-container-large ">
         <div class="uk-flex uk-flex-middle uk-text-left uk-margin-medium-bottom">
-            <div class="uk-style-secondary-m uk-text-11 uk-light" style="color: black">
+            <div class="uk-style-secondary-m uk-text-6 uk-text-lh-6 uk-light" style="color: black">
                 {{App::isLocale('vi') ? 'Đối tác tiêu biểu' : 'Partner'}}
             </div>
             <div class="uk-style-line orange"></div>
@@ -963,6 +281,7 @@
             <div class="slide"><img src="/site/system/partner3/14.png"></div>
         </section>
     </div>
+
     <div id="delay_load" class="uk-position-relative uk-margin-medium uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center" style="margin: 0">
         <div class="uk-position-cover uk-cover-container">
             <canvas width="1600" height="708"></canvas>
@@ -971,7 +290,7 @@
         <div class="uk-text-center">
         </div>
     </div>
-</div>
+
 </section>
 @endsection
 @push('scripts')

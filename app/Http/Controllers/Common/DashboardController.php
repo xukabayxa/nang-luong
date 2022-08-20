@@ -66,6 +66,75 @@ class DashboardController extends Controller
 		return view($this->view.'.dash', compact('data','data_analytics','sales'));
 	}
 
+	// public function updateSiteMap ()
+	// {
+		// dd(1);
+		// create new sitemap object
+		$sitemap = App::make('sitemap');
+
+	// set cache key (string), duration in minutes (Carbon|Datetime|int), turn on/off (boolean)
+	// by default cache is disabled
+		$sitemap->setCache('laravel.sitemap', 60);
+
+	// check if there is cached sitemap and build new only if is not
+		if (!$sitemap->isCached()) {
+		// add item to the sitemap (url, date, priority, freq)
+			$sitemap->add(URL::to('/'), \Carbon\Carbon::now(), '1.0', 'daily');
+
+			
+			$sitemap->add(route('front.about'), \Carbon\Carbon::now(), '0.8', 'daily');
+			$sitemap->add(route('front.about2'), \Carbon\Carbon::now(), '0.8', 'daily');
+			$sitemap->add(route('front.about3'), \Carbon\Carbon::now(), '0.8', 'daily');
+			$sitemap->add(route('front.about4'), \Carbon\Carbon::now(), '0.8', 'daily');
+	
+			$sitemap->add(route('front.investments1'), \Carbon\Carbon::now(), '0.8', 'daily');
+			$sitemap->add(route('front.investments2'), \Carbon\Carbon::now(), '0.8', 'daily');
+			$sitemap->add(route('front.investments3'), \Carbon\Carbon::now(), '0.8', 'daily');
+
+			$sitemap->add(route('front.globalReach'), \Carbon\Carbon::now(), '0.8', 'daily');
+			$sitemap->add(route('front.insights'), \Carbon\Carbon::now(), '0.8', 'daily');
+			
+
+			// danh mục bài viết
+			$categories = PostCategory::query()->where(['parent_id' => 0, 'show_home_page' => 1])->latest()->get();
+
+			foreach($categories as $category) {
+				$sitemap->add(route('front.news', $category->slug), $category->updated_at, '0.8' , 'daily');
+			}
+			
+			// bài viết
+			$posts = Post::query()->where('status', 1)->get();
+			foreach	($posts as $post) {
+				$sitemap->add(route('front.post', $post->slug), $post->updated_at, '0.8' , 'daily');
+			}
+
+
+		// get all Catalog from db
+			$catalogs = DB::table('catalog')->orderBy('created_at', 'desc')->get();
+
+		// add every post to the sitemap
+			foreach ($catalogs as $catalog) {
+				$sitemap->add(route('allRoute', $catalog->slug), $catalog->updated_at, '0.8' , 'daily');
+			}
+
+		// get all posts from db
+			$posts = DB::table('article')->orderBy('created_at', 'desc')->get();
+
+		// add every post to the sitemap
+			foreach ($posts as $post) {
+				$sitemap->add(route('allRoute', $post->slug), $post->updated_at, '0.6' , 'daily');
+			}
+
+		}
+
+		$sitemap->store('xml', 'sitemap');
+		if (File::exists(public_path() . '/sitemap.xml')) {
+			chmod(public_path() . '/sitemap.xml', 0777);
+		}
+
+		return redirect()->route('dashboard');
+	}
+
 	public function getOrderByDay()
 		{
 			$select = [

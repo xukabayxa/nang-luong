@@ -499,11 +499,6 @@ class FrontController extends Controller
         return view('site.insights', compact('posts'));
     }
 
-    public function sitemap()
-    {
-        return view('site.sitemap');
-    }
-
     public function policy()
     {
         return view('site.cookie-policy');

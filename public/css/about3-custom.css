@@ -17475,7 +17475,7 @@ img {vertical-align: middle;}
     line-height: 38px;
 }
 .leader:first-child .leader-box:first-child .detail-content-text {
-    font-size: 23px;
+    font-size: 1.6em;
     text-align: left;
     /*padding-bottom: 30px;*/
     color: #3f2b69;
@@ -20269,6 +20269,6 @@ background: #f7f6fc !important;
 }
 p.cong-tac {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.5em;
     color: #000;
 }

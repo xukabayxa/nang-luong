@@ -2125,7 +2125,7 @@ select.uk-form-width-xsmall {
 }
 
 .uk-button span {
-    font-size: 14px !important;
+    font-size: 0.95em !important;
     line-height: 1.5
 }
 
@@ -9517,8 +9517,9 @@ img.Sirv {
 
 .uk-position-meta {
     position: absolute;
-    transform: translateY(-10px)
+    transform: translateY(-30px);
 }
+
 
 @media (max-width: 960px) {
     .uk-position-meta {
