@@ -24,22 +24,15 @@
     <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
         {{--style banner slick--}}
         <div class="owl-carousel owl-theme">
-{{--            @if(count($banners))--}}
-{{--                @foreach($banners as $banner)--}}
-{{--                    <img src="{{$banner->image->path ?? ''}}" alt="">--}}
-{{--                @endforeach--}}
-{{--            @else--}}
-{{--                <img src="{{ asset('site/system/slide/s1.jpg') }}" alt="">--}}
-{{--                <img src="{{ asset('site/system/slide/s2.jpg') }}" alt="">--}}
-{{--                <img src="{{ asset('site/system/slide/s3.jpg') }}" alt="">--}}
-{{--                <img src="{{ asset('site/system/slide/s4.jpg') }}" alt="">--}}
-{{--                <img src="{{ asset('site/system/slide/s5.jpg') }}" alt="">--}}
-{{--            @endif--}}
-
-            <img src="{{ asset('site/system/slide/s1.jpg') }}" alt="">
-            <img src="{{ asset('site/system/slide/s2.jpg') }}" alt="">
-            <img src="{{ asset('site/system/slide/s4.jpg') }}" alt="">
-            {{-- <img src="{{ asset('site/system/slide/s6.jpg') }}" alt=""> --}}
+            @if(count($banners))
+                @foreach($banners as $banner)
+                    <img src="{{$banner->image->path ?? ''}}" alt="">
+                @endforeach
+            @else
+                <img src="{{ asset('site/system/slide/s1.jpg') }}" alt="">
+                <img src="{{ asset('site/system/slide/s2.jpg') }}" alt="">
+                <img src="{{ asset('site/system/slide/s4.jpg') }}" alt="">
+            @endif
         </div>
     </div>
     <div id="lazy_load">
