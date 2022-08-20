@@ -21,7 +21,6 @@
 <section id="sozo-main">
 
     <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
-
         {{--style banner slick--}}
         <style>
             :root {
@@ -746,15 +745,15 @@
         <div class="homeIndustry-nav">
             <a href="{{route('front.investments1')}}" class="homeIndustry-navItem2 industry-item active">
                 <div class="homeIndustry-navImg industryItem-img" style="background-image:url(/site/system/home/z1.jpg);"></div>
-                <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</div>
+                <div class="homeIndustry-navTxt industryItem-txt uk-text-8">{{App::isLocale('vi') ? 'Năng lượng tái tạo' : 'Renewable energy and technology'}}</div>
 
                 <a href="{{route('front.investments3')}}" class="homeIndustry-navItem2 industry-item">
                     <div class="homeIndustry-navImg industryItem-img" style="background-image:url(/site/system/home/z3.jpg);"></div>
-                    <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</div>
+                    <div class="homeIndustry-navTxt industryItem-txt uk-text-8">{{App::isLocale('vi') ? 'Khu công nghiệp kết hợp năng lượng tái tạo' : 'Sustainable industrial park development'}}</div>
                 </a>
             <a href="{{route('front.investments2')}}" class="homeIndustry-navItem2 industry-item">
                 <div class="homeIndustry-navImg industryItem-img" style="background-image:url(/site/system/home/z2.jpg);"></div>
-                <div class="homeIndustry-navTxt industryItem-txt">{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</div>
+                <div class="homeIndustry-navTxt industryItem-txt uk-text-8">{{App::isLocale('vi') ? ' Năng lượng mới' : 'New reliable power system'}}</div>
             </a>
 
         </div>
