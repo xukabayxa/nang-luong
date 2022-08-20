@@ -1,6 +1,6 @@
 <div class="modal fade" id="create-banner" tabindex="-1" role="dialog" aria-hidden="true"
      ng-controller="CreateBanner">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="semi-bold">Thêm banner</h4>
@@ -23,7 +23,16 @@
 </div>
 
 <script>
-    app.controller('CreateBanner', function ($scope, $http) {
+    app.controller('CreateBanner', function ($rootScope, $scope, $http) {
+        $rootScope.$on("createBanner", function (event, data , form){
+            $scope.errors = data;
+            $scope.form = new Banner({}, {scope: $scope});
+            console.log($scope.form);
+            $scope.$applyAsync();
+
+            $('#create-banner').modal('show');
+        });
+
         $scope.form = new Banner({}, {scope: $scope});
         $scope.loading = {};
         $scope.positions = [
@@ -51,6 +60,7 @@
                         $('#create-banner').modal('hide');
                         toastr.success(response.message);
                         datatable.ajax.reload();
+                        $scope.form.clearImage();
                         $scope.errors = null;
                     } else {
                         $scope.errors = response.errors;

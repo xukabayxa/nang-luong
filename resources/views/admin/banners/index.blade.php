@@ -12,7 +12,7 @@ Quản lý banner trang chủ
 @endsection
 
 @section('buttons')
-<a href="javascript:void(0)" class="btn btn-outline-success" data-toggle="modal" data-target="#create-banner" class="btn btn-info" ng-click="errors = null"><i class="fa fa-plus"></i> Thêm mới</a>
+{{--<a href="javascript:void(0)" class="btn btn-outline-success" data-toggle="modal" data-target="#create-banner" class="btn btn-info" ng-click="errors = null"><i class="fa fa-plus"></i> Thêm mới</a>--}}
 @endsection
 @section('content')
 <div ng-cloak>
@@ -58,6 +58,7 @@ Quản lý banner trang chủ
         search_columns: [
             {data: 'title', search_type: "text", placeholder: "nhập tiêu đề"},
         ],
+        create_modal_2: true
     }).datatable;
 
     createReviewCallback = (response) => {
@@ -67,6 +68,11 @@ Quản lý banner trang chủ
     app.controller('Banners', function ($rootScope, $scope, $http) {
         $scope.loading = {};
         $scope.form = {}
+
+        $(document).on('click', '.create-modal', function () {
+            $scope.errors = null;
+            $rootScope.$emit("createBanner", $scope.errors, $scope.form);
+        })
 
         $('#table-list').on('click', '.edit', function () {
             $scope.errors = null;
@@ -103,8 +109,6 @@ Quản lý banner trang chủ
             $scope.$apply();
             $('#edit-banner').modal('show');
         });
-
-
     })
 
 </script>
