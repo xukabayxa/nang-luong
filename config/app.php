@@ -153,6 +153,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
         Darryldecode\Cart\CartServiceProvider::class,
+        // Roumen\Sitemap\SitemapServiceProvider::class,
 
 
         /*

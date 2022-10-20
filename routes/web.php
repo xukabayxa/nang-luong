@@ -5,6 +5,7 @@ Route::get('/dang-nhap', 'Auth\LoginController@showLoginForm');
 
 Auth::routes();
 
+Route::get('/sitemap','Common\DashboardController@updateSiteMap')->name('sitemapUpdate');
 
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {

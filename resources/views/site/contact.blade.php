@@ -22,7 +22,7 @@
                 <div class="uk-section uk-container uk-container-large">
                     <div class="uk-flex uk-flex-between" uk-grid>
                         <div class="uk-width-2-4@m">
-                            <h1 class="uk-style-primary-l uk-text-0 uk-text-lh-4" style="font-size: 4em; color: #fff">
+                            <h1 class="uk-style-primary-l uk-text-4 uk-text-lh-4" style="color: #fff">
                                 {{App::isLocale('vi') ? 'LIÊN HỆ VỚI CHÚNG TÔI' : 'CONTACT US '}} </h1>
                         </div>
                         <div class=" uk-width-2-4@m">

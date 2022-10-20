@@ -64,10 +64,7 @@
                                                             Co-Founder and Chairman of RT Energy
                                                         </div>
                                                     @endif
-
-
                                                 </div>
-
                                                 @if(App::isLocale('vi'))
                                                     <div class="detail-leader">
                                                         <p>Trong gần 20 năm làm việc, ông Saumya Swain đã đảm nhận nhiều

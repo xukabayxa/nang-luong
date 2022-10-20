@@ -37,8 +37,8 @@ class DashboardController extends Controller
 								->sum('price');
 
 		// Google Analytics
+		
 		$data_analytics['active'] = Analytics::getAnalyticsService()->data_realtime->get('ga:'.env('ANALYTICS_VIEW_ID'), 'rt:activeVisitors')->totalsForAllResults['rt:activeVisitors'];
-		// dd($data_analytics['active']);
 		$data_analytics['total_page_views'] = Analytics::fetchTotalVisitorsAndPageViews(Period::days(10));
 		$data_analytics['today'] = Analytics::fetchTotalVisitorsAndPageViews(Period::days(0));
 

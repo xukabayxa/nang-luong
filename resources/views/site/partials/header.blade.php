@@ -1,5 +1,5 @@
-<div class="uk-navbar-container uk-navbar-transparent uk-padding-xmedium-top uk-padding-xmedium-bottom"
-     style="background: #fff">
+<div class="uk-navbar-container uk-navbar-transparent"
+     style="">
     <style>
         a.uk-animation-zoom:hover {
             color: inherit;
@@ -11,49 +11,12 @@
             <div class="logo" style="margin: 0; font-size: 0;">
                 <a href="{{route('front.home_page')}}" title="RT ENERGY">
                     <span class="uk-logo uk-icon uk-preserve">
-                        @if(App::isLocale('vi'))
-                            <img src="{{ asset('site/system/rt-vi.png') }}" style="height: auto" alt="RT ENERGY VI">
-                        @else
-                            <img src="{{ asset('site/system/rt-en.png') }}" style="height: auto" alt="RT ENERGY EN">
-                        @endif
+                            <img class="rt-acean" src="{{ asset('site/system/rt-en.png') }}" style="height: auto" alt="RT ENERGY VI">
+                            {{-- <img class="rt-white" src="{{ asset('site/system/rt-white.png') }}" style="height: auto" alt="RT ENERGY WHITE"> --}}
                     </span>
                 </a>
             </div>
         </div>
-
-        <style>
-            a.a-menu-top {
-                color: #0F4C81 !important
-            }
-
-            a.a-menu-top:hover {
-                color: #022134 !important;
-            }
-
-            .a-menu-top {
-                display: inline-block;
-                position: relative;
-                color: #0087ca;
-            }
-
-            .a-menu-top:after {
-                content: '';
-                position: absolute;
-                width: 100%;
-                transform: scaleX(0);
-                height: 2px;
-                bottom: 20px;
-                left: 0;
-                background-color: #0087ca;
-                transform-origin: bottom right;
-                transition: transform 0.25s ease-out;
-            }
-
-            .a-menu-top:hover:after {
-                transform: scaleX(1);
-                transform-origin: bottom left;
-            }
-        </style>
         {{--        phần menu header--}}
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@m">
@@ -189,7 +152,7 @@
                     }
 
                     .uk-navbar-left img {
-                        width: 180px;
+                        width: 160px;
                     }
 
                     .choise-lang {
@@ -466,14 +429,13 @@
                                     <a href="{{route('front.change-language', 'vi')}}" class="wpml-ls-link">
                                         <img class="wpml-ls-flag"
                                              src="https://nadota.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/vi.png"
-                                             alt="" width="18" height="12"><span class="wpml-ls-native langg" style="color: dodgerblue">Tiếng Việt</span></a>
+                                             alt="" width="18" height="12"></a>
                                 </li>
                                 <li class="wpml-ls-slot-footer wpml-ls-item wpml-ls-item-en wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
                                     <a href="{{route('front.change-language', 'en')}}" class="wpml-ls-link">
                                         <img class="wpml-ls-flag"
                                              src="https://nadota.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
-                                             alt="" width="18" height="12"><span
-                                            class="wpml-ls-display langg" style="color: dodgerblue">English</span></a>
+                                             alt="" width="18" height="12"></a>
                                 </li>
                             </ul>
                         </div>

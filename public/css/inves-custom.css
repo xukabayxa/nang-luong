@@ -2190,11 +2190,14 @@ body {
 #field-page .tech-frame .tech-list .tech-item-title {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    font-size: 20px;
     line-height: 32px;
     color: #222222;
     margin: auto auto 16px;
     max-width: 70%;
+}
+.activitycol figure {
+    padding: 15px;
+    box-sizing: border-box;
 }
 #field-page .tech-frame .tech-list .tech-item-desc {
     font-family: "Open Sans", sans-serif;
