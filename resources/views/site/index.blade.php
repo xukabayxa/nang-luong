@@ -24,66 +24,88 @@
     <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
         {{--style banner slick--}}
         <div class="owl-carousel owl-theme slider-fade">
-            <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55" data-background="https://renumawp.websitelayout.net/wp-content/uploads/2022/01/slide-01.jpg" style="background-image: url(&quot;https://renumawp.websitelayout.net/wp-content/uploads/2022/01/slide-01.jpg&quot;);">
-                <div class="container h-100">
-                    <div class="d-table w-100 h-100">
-                        <div class="d-table-cell align-middle">
-                            <div class="row justify-content-center text-center position-relative">
-                                <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative main-banner-area ">
+            @if($banners->count())
+                @foreach($banners as $banner)
+                    <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55" data-background="{{$banner->image->path ?? ''}}" style="background-image: url({{$banner->image->path ?? ''}});">
+                        <div class="container h-100">
+                            <div class="d-table w-100 h-100">
+                                <div class="d-table-cell align-middle">
+                                    <div class="row justify-content-center text-center position-relative">
+                                        <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative main-banner-area ">
                                     <span class="banner-icon d-none d-lg-block">
                                         <i class="fa-solid fa-solar-panel"></i>
                                     </span>
-                                    <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
-                                    <span class="card-border position-relative"></span>
-                                    <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
-                                    <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                            <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
+                                            <span class="card-border position-relative"></span>
+                                            <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
+                                            <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            @else
+                <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55" data-background="https://renumawp.websitelayout.net/wp-content/uploads/2022/01/slide-01.jpg" style="background-image: url(&quot;https://renumawp.websitelayout.net/wp-content/uploads/2022/01/slide-01.jpg&quot;);">
+                    <div class="container h-100">
+                        <div class="d-table w-100 h-100">
+                            <div class="d-table-cell align-middle">
+                                <div class="row justify-content-center text-center position-relative">
+                                    <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative main-banner-area ">
+                                    <span class="banner-icon d-none d-lg-block">
+                                        <i class="fa-solid fa-solar-panel"></i>
+                                    </span>
+                                        <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
+                                        <span class="card-border position-relative"></span>
+                                        <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
+                                        <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55" data-background="https://themes.webdevia.com/solar-wp/wp-content/uploads/2015/12/slide_3.jpg" style="background-image: url(&quot;https://themes.webdevia.com/solar-wp/wp-content/uploads/2015/12/slide_3.jpg&quot;);">
-                <div class="container h-100">
-                    <div class="d-table w-100 h-100">
-                        <div class="d-table-cell align-middle">
-                            <div class="row justify-content-center text-center position-relative">
-                                <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative main-banner-area ">
+                <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55" data-background="https://themes.webdevia.com/solar-wp/wp-content/uploads/2015/12/slide_3.jpg" style="background-image: url(&quot;https://themes.webdevia.com/solar-wp/wp-content/uploads/2015/12/slide_3.jpg&quot;);">
+                    <div class="container h-100">
+                        <div class="d-table w-100 h-100">
+                            <div class="d-table-cell align-middle">
+                                <div class="row justify-content-center text-center position-relative">
+                                    <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative main-banner-area ">
                                     <span class="banner-icon d-none d-lg-block">
                                         <i class="fa-solid fa-solar-panel"></i>
                                         </span>
-                                    <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
-                                    <span class="card-border position-relative"></span>
-                                    <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
-                                    <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                        <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
+                                        <span class="card-border position-relative"></span>
+                                        <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
+                                        <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55" data-background="https://renumawp.websitelayout.net/wp-content/uploads/2022/01/slide-03.jpg" style="background-image: url(&quot;https://renumawp.websitelayout.net/wp-content/uploads/2022/01/slide-03.jpg&quot;);">
-                <div class="container h-100">
-                    <div class="d-table w-100 h-100">
-                        <div class="d-table-cell align-middle">
-                            <div class="row justify-content-center text-center position-relative">
-                                <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative main-banner-area ">
+                <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55" data-background="https://renumawp.websitelayout.net/wp-content/uploads/2022/01/slide-03.jpg" style="background-image: url(&quot;https://renumawp.websitelayout.net/wp-content/uploads/2022/01/slide-03.jpg&quot;);">
+                    <div class="container h-100">
+                        <div class="d-table w-100 h-100">
+                            <div class="d-table-cell align-middle">
+                                <div class="row justify-content-center text-center position-relative">
+                                    <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative main-banner-area ">
                                     <span class="banner-icon d-none d-lg-block">
                                         <i class="fa-solid fa-solar-panel"></i>
                                     </span>
-                                    <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">Develop, and invest in the construction and operation of renewable energy projects
-                                    </p>
-                                    <span class="card-border position-relative"></span>
-                                    <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE</h1>
-                                    <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                        <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">Develop, and invest in the construction and operation of renewable energy projects
+                                        </p>
+                                        <span class="card-border position-relative"></span>
+                                        <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE</h1>
+                                        <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            
+            @endif
         </div>
         <div class="lte-pos-top-center circle-line" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="lte-effects.default">
             <div class="circle-widget-container">
@@ -99,7 +121,8 @@
         <div class="container">
             <div class="row align-items-xxl-center">
                 <div class="col-lg-6 mb-2-9 mb-lg-0 wow fadeIn" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
-                    <div class="about-image"><img src="https://renumawp.websitelayout.net/wp-content/uploads/2022/04/about1-2.jpg" alt="...">
+                    <div class="about-image">
+                        <img src="{{@$blockOne ? ($blockOne->image->path ?? 'https://renumawp.websitelayout.net/wp-content/uploads/2022/04/about1-2.jpg') : 'https://renumawp.websitelayout.net/wp-content/uploads/2022/04/about1-2.jpg'}}" alt="{{App::isLocale('vi') ? 'VỀ CHÚNG TÔI' : 'ABOUT US'}}">
                         <div class="about-shape3"></div>
                         <div class="about-shape4"></div>
                     </div>
@@ -107,14 +130,15 @@
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
                     <div class="ps-lg-2-9 ps-xl-6 ps-xxl-9">
                         <div class="sec-title half">
-                            <span>About Us</span>
-                            <h2 class="h1 mb-0 z-index-2 position-relative">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE
-                            </h2>
+                            <span>{{App::isLocale('vi') ? 'VỀ CHÚNG TÔI' : 'ABOUT US'}}</span>
+{{--                            <h2 class="h1 mb-0 z-index-2 position-relative">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE--}}
+{{--                            </h2>--}}
                         </div>
-                        <p class="lead fw-bold">Over 30 year's experience providing top quality carpentry across world.</p>
-                        <p class="mb-2-2 mb-lg-2-9">Renewable energy and new energy are the future-oriented and indisputable trend of the energy industry in general. RT Energy ties its future to the promotion and development of renewable energy – towards a green, clean, and sustainable world for future generations.</p>
-                        <p class="mb-2-2 mb-lg-2-9">Renewable energy and new energy are the future-oriented and indisputable trend of the energy industry in general. RT Energy ties its future to the promotion and development of renewable energy – towards a green, clean, and sustainable world for future generations.</p>
-                        
+                        @if(@$blockOne)
+                            {!! printBlock($blockOne->id) !!}
+                        @endif
+
+
                         <div class="pt-2-3 border-top border-color-extra-light-gray d-sm-flex align-items-center">
                             <a class="btn-style2 medium mr-4" href="#"><i class="fa-solid fa-angle-right mr-4"></i> Read More</a>
                             <div class="d-flex align-items-center">
@@ -278,13 +302,13 @@
                                                 <a href="#" class="entry__category-item">Insights</a>
                                             </div>
                                         </div>
-        
+
                                         <h2 class="entry__title ">
                                             <a href="#">Signing credit contract for Adani Phuoc Minh Wind Power Project</a>
                                         </h2>
                                         <span class="entry__meta-item entry__meta-author">
                                             <a class="entry__meta-author-url" rel="author" href="#">
-                                                <span>by</span>			
+                                                <span>by</span>
                                                 <span itemprop="author" itemscope="" itemtype="http://schema.org/Person" class="entry__meta-author-name">RT ADMIN</span>
                                             </a>
                                         </span>
@@ -314,13 +338,13 @@
                                                 <a href="#" class="entry__category-item">Insights</a>
                                             </div>
                                         </div>
-        
+
                                         <h2 class="entry__title ">
                                             <a href="#">Signing credit contract for Adani Phuoc Minh Wind Power Project</a>
                                         </h2>
                                         <span class="entry__meta-item entry__meta-author">
                                             <a class="entry__meta-author-url" rel="author" href="#">
-                                                <span>by</span>			
+                                                <span>by</span>
                                                 <span itemprop="author" itemscope="" itemtype="http://schema.org/Person" class="entry__meta-author-name">RT ADMIN</span>
                                             </a>
                                         </span>
@@ -350,13 +374,13 @@
                                                 <a href="#" class="entry__category-item">Insights</a>
                                             </div>
                                         </div>
-        
+
                                         <h2 class="entry__title ">
                                             <a href="#">Signing credit contract for Adani Phuoc Minh Wind Power Project</a>
                                         </h2>
                                         <span class="entry__meta-item entry__meta-author">
                                             <a class="entry__meta-author-url" rel="author" href="#">
-                                                <span>by</span>			
+                                                <span>by</span>
                                                 <span itemprop="author" itemscope="" itemtype="http://schema.org/Person" class="entry__meta-author-name">RT ADMIN</span>
                                             </a>
                                         </span>
@@ -365,8 +389,8 @@
                             </div>
                         </article>
                     </div>
-                    
-                    
+
+
             </div>
         </div>
     </section>

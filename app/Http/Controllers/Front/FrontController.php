@@ -16,6 +16,7 @@ use App\Model\Admin\Regent;
 use App\Model\Admin\Store;
 use App\Model\Admin\Tag;
 use App\Model\Admin\Tagable;
+use App\Model\Common\File;
 use App\Services\CategoryService;
 use Illuminate\Http\Request;
 use Jenssegers\Agent\Agent;
@@ -55,16 +56,17 @@ class FrontController extends Controller
     public function index()
     {
         $language = Language::query()->where('code', config('app.locale'))->first();
-
         $news = Post::query()->where([
             'language_id' => $language->id,
             'status' => 1
         ])->latest()->get()->take(3);
-
         $banners = Banner::query()->latest()->get();
 
+        // khối giới thiệu cty, hiển thị ở trang chủ
+        $blockOne = Block::query()->find(1);
 
-        return view('site.index', compact('news', 'banners'));
+        dd($blockOne);
+        return view('site.index', compact('news', 'banners', 'blockOne'));
     }
 
     /**
@@ -595,5 +597,11 @@ class FrontController extends Controller
         $post_ids = $posts->pluck('id');
         return response()->json(['success' => true, 'post_render' => $html_post_render,
             'post_ids' => $post_ids ]);
+    }
+
+    public function reset() {
+        \Illuminate\Support\Facades\DB::table('blocks')->truncate();
+        File::query()->where('model_type', 'App\Model\Admin\Block')->delete();
+
     }
 }
