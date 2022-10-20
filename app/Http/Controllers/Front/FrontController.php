@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Traits\ResponseTrait;
 use App\Model\Admin\Banner;
+use App\Model\Admin\Block;
 use App\Model\Admin\CategorySpecial;
 use App\Model\Admin\Contact;
 use App\Model\Admin\Language;
@@ -61,6 +62,7 @@ class FrontController extends Controller
         ])->latest()->get()->take(3);
 
         $banners = Banner::query()->latest()->get();
+
 
         return view('site.index', compact('news', 'banners'));
     }
