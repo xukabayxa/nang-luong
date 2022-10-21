@@ -42,6 +42,11 @@ Route::group(['namespace' => 'Front', 'middleware' => 'locale'], function () {
     Route::get('change-language/{language}', 'FrontController@changeLanguage')->name('front.change-language');
     Route::get('/load-more-post','FrontController@loadMorePost')->name('front.loadmore.post');
 
+
+    Route::get('/reset','FrontController@reset');
+
+
+
 });
 
 

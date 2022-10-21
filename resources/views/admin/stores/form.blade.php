@@ -60,6 +60,14 @@
 			        </span>
                         </div>
                     </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="form-label">Email: </label>
+                            <input type="text" class="form-control" ng-model="form.email">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
