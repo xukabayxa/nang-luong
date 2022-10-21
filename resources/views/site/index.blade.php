@@ -3,9 +3,6 @@
 <title>{{ ucfirst($_SERVER['HTTP_HOST']) . ' - '. $config->web_title }}</title>
 @endsection
 @section('css')
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script href="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="/site/css/home/custom-home.css" rel="stylesheet">
 @endsection
 @section('content')
@@ -393,8 +390,6 @@
 </section>
 @endsection
 @push('scripts')
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/libs/owl/docs/assets/owlcarousel/owl.carousel.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script>
@@ -443,28 +438,4 @@
         });
 
 </script>
-
-<script>
-    $('.homeIndustry-navItem:nth-child(1), .homeIndustry-img:nth-child(1), .homeIndustry-item:nth-child(1)').addClass('active');
-
-        $('.homeIndustry-navItem').mouseover(function () {
-            $('.homeIndustry-navItem').not(this).removeClass('active');
-            $(this).addClass('active');
-            var homeIndustryIndex = $(this).index() + 1;
-            $('.homeIndustry-img, .homeIndustry-item').removeClass('active');
-            $('.homeIndustry-img:nth-child(' + homeIndustryIndex + '), .homeIndustry-item:nth-child(' + homeIndustryIndex + ')').addClass('active');
-        });
-
-        $('.homeIndustry-navItem2:nth-child(1), .homeIndustry-img2:nth-child(1), .homeIndustry-item2:nth-child(1)').addClass('active');
-
-        $('.homeIndustry-navItem2').mouseover(function () {
-            $('.homeIndustry-navItem2').not(this).removeClass('active');
-            $(this).addClass('active');
-            var homeIndustryIndex = $(this).index() + 1;
-            $('.homeIndustry-img2, .homeIndustry-item2').removeClass('active');
-            $('.homeIndustry-img2:nth-child(' + homeIndustryIndex + '), .homeIndustry-item2:nth-child(' + homeIndustryIndex + ')').addClass('active');
-        });
-
-</script>
-
 @endpush

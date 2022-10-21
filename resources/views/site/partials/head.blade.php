@@ -23,7 +23,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
-
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     {{-- <link rel='stylesheet' href='/site/css/head-css-custom.css' type='text/css' media='all' /> --}}
     <script src="/site/js/sirv.js?ver=5.9.3" defer="defer" type="text/javascript"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png">

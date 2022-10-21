@@ -25,7 +25,7 @@
         </div>
 
         <script type="text/javascript" src="/site/js/jquery-3.4.1.min.js"></script>
-        {{--<script type="text/javascript" src="/site/js/jquery3.3.1.js"></script>--}}
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="/site/js/script.js" defer="defer" type="text/javascript"></script>
         <script>
             jQuery(document).ajaxComplete(function () {
@@ -84,8 +84,6 @@
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
             <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
-
-
 
         @stack('scripts')
         <script> new WOW().init(); </script>

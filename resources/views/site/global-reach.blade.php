@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="/site/css/slick.css">--}}
 <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
 <link href="/site/css/owl.carousel.css" rel="stylesheet" type="text/css">
-<link href="/site/css/k.css" rel="stylesheet" type="text/css">
+{{-- <link href="/site/css/k.css" rel="stylesheet" type="text/css"> --}}
 <link href="/site/css/flickity.css" rel="stylesheet" type="text/css">
 @endsection
 @section('content')

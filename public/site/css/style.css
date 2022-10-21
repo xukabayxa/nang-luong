@@ -4066,8 +4066,8 @@ ul.uk-nav-sub {
 }
 
 .uk-sticky.uk-active .uk-mega-menu {
-    height: calc(100vh - 110px);
-    top: 110px !important
+    height: calc(100vh - 81px);
+    top: 81px !important
 }
 
 @media (max-width: 1200px) and (min-width: 960px) {
@@ -4133,11 +4133,11 @@ ul.uk-nav-sub {
 }
 
 .uk-mega-menu {
-    height: calc(100vh - 144px);
+    height: calc(100vh - 81px);
     left: 0;
     position: absolute;
     right: 0;
-    top: 144px !important
+    top: 81px !important
 }
 
 @media (max-width: 1200px) and (min-width: 960px) {
@@ -4940,7 +4940,7 @@ ul.uk-nav-sub {
 }
 
 .uk-offcanvas-close {
-    padding: 5px;
+    padding: 0;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -5025,7 +5025,7 @@ ul.uk-nav-sub {
 }
 
 .uk-offcanvas .uk-mega-menu-item.items-3 {
-    height: calc(33.33333% - 16.66667px)
+    height: 100%;
 }
 
 .uk-offcanvas .uk-mega-menu-item.items-3 .uk-cover-container {
@@ -5033,11 +5033,12 @@ ul.uk-nav-sub {
 }
 
 .uk-offcanvas .uk-mega-menu-item.items-4 {
-    height: calc(25% - 12.5px)
+    height: 100%;
 }
 
 .uk-offcanvas .uk-mega-menu-item.items-4 .uk-cover-container {
-    height: 100%
+    height: 100%;
+    border: 3px solid #fff;
 }
 
 .uk-offcanvas-close {
@@ -9689,7 +9690,8 @@ img.Sirv {
 
 .uk-position-z-index-menu {
     position: relative;
-    z-index: 1001
+    z-index: 1001;
+    height: calc(100vh - 81px);
 }
 
 .uk-oval-content-circle {
@@ -10842,6 +10844,7 @@ footer {
     display: inline-block;
     margin-right: 5px;
 }
+
 footer li:first-child {
     margin-top: 0;
     border-top: 0;
@@ -10892,4 +10895,7 @@ footer li:first-child {
     position: absolute;
     transform: translateX(-100%);
     z-index: 10;
+}
+.position-relative {
+    position: relative!important;
 }
