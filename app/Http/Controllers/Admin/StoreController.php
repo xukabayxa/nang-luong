@@ -94,6 +94,7 @@ class StoreController extends Controller
             $object->province_id = $request->province_id;
             $object->des = $request->des;
             $object->phone = $request->phone;
+            $object->email = $request->email;
             $object->hotline = $request->hotline;
             $object->lat = $request->lat;
             $object->long = $request->long;
@@ -153,6 +154,7 @@ class StoreController extends Controller
             $object->address = $request->address;
             $object->province_id = $request->province_id;
             $object->des = $request->des;
+            $object->email = $request->email;
             $object->phone = $request->phone;
             $object->hotline = $request->hotline;
             $object->lat = $request->lat;

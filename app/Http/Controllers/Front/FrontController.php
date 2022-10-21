@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Front;
 use App\Http\Traits\ResponseTrait;
 use App\Model\Admin\Banner;
 use App\Model\Admin\Block;
+use App\Model\Admin\BusinessSector;
 use App\Model\Admin\CategorySpecial;
 use App\Model\Admin\Contact;
 use App\Model\Admin\Language;
@@ -65,8 +66,16 @@ class FrontController extends Controller
         // khối giới thiệu cty, hiển thị ở trang chủ
         $blockOne = Block::query()->find(1);
 
-        dd($blockOne);
-        return view('site.index', compact('news', 'banners', 'blockOne'));
+
+        $business = BusinessSector::query()
+            ->with('businessVi', 'businessEn', 'image')
+            ->orderBy('created_at')->get()->map(function ($obj) {
+                $obj->businessVi = $obj->businessVi()->first();
+                $obj->businessEn = $obj->businessEn()->first();
+                return $obj;
+            });
+
+        return view('site.index', compact('news', 'banners', 'blockOne', 'business'));
     }
 
     /**

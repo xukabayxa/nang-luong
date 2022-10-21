@@ -124,6 +124,21 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::post('/add-to-category-special','Admin\ProjectController@addToCategorySpecial')->name('Project.add.category.special');
     });
 
+    // Dự án
+    Route::group(['prefix' => 'business-sectors'], function () {
+        Route::get('/', 'Admin\BusinessSectorController@index')->name('business.index');
+        Route::get('/searchData', 'Admin\BusinessSectorController@searchData')->name('business.searchData');
+        Route::get('/{id}/show', 'Admin\BusinessSectorController@show')->name('business.show');
+        Route::get('/{id}/getData', 'Admin\BusinessSectorController@getData')->name('business.getData');
+        Route::get('/create', 'Admin\BusinessSectorController@create')->name('business.create')->middleware('checkPermission:Thêm bài viết');
+        Route::post('/', 'Admin\BusinessSectorController@store')->name('business.store')->middleware('checkPermission:Thêm bài viết');
+        Route::post('/{id}/update', 'Admin\BusinessSectorController@update')->name('business.update')->middleware('checkPermission:Sửa bài viết');
+        Route::get('/{id}/edit', 'Admin\BusinessSectorController@edit')->name('business.edit')->middleware('checkPermission:Sửa bài viết');
+        Route::get('/{id}/delete', 'Admin\BusinessSectorController@delete')->name('business.delete')->middleware('checkPermission:Xóa bài viết');
+        Route::get('/exportExcel','Admin\BusinessSectorController@exportExcel')->name('business.exportExcel');
+        Route::post('/add-to-category-special','Admin\BusinessSectorController@addToCategorySpecial')->name('Project.add.category.special');
+    });
+
     // HTML Block
     Route::group(['prefix' => 'blocks'], function () {
         Route::get('/', 'Admin\BlockController@index')->name('Block.index');

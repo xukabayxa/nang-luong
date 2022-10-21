@@ -118,123 +118,112 @@
         </div>
     </div>
     <section class="about-5 wow fadeIn" data-wow-delay="180ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
-        <div class="container">
-            <div class="row align-items-xxl-center">
-                <div class="col-lg-6 mb-2-9 mb-lg-0 wow fadeIn" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
-                    <div class="about-image">
-                        <img src="{{@$blockOne ? ($blockOne->image->path ?? 'https://renumawp.websitelayout.net/wp-content/uploads/2022/04/about1-2.jpg') : 'https://renumawp.websitelayout.net/wp-content/uploads/2022/04/about1-2.jpg'}}" alt="{{App::isLocale('vi') ? 'VỀ CHÚNG TÔI' : 'ABOUT US'}}">
-                        <div class="about-shape3"></div>
-                        <div class="about-shape4"></div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
-                    <div class="ps-lg-2-9 ps-xl-6 ps-xxl-9">
-                        <div class="sec-title half">
-                            <span>{{App::isLocale('vi') ? 'VỀ CHÚNG TÔI' : 'ABOUT US'}}</span>
-{{--                            <h2 class="h1 mb-0 z-index-2 position-relative">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE--}}
-{{--                            </h2>--}}
+        @if(@$blockOne)
+            <div class="container">
+                <div class="row align-items-xxl-center">
+                    <div class="col-lg-6 mb-2-9 mb-lg-0 wow fadeIn" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeIn;">
+                        <div class="about-image">
+                            <img src="{{@$blockOne ? ($blockOne->image->path ?? 'https://renumawp.websitelayout.net/wp-content/uploads/2022/04/about1-2.jpg') : 'https://renumawp.websitelayout.net/wp-content/uploads/2022/04/about1-2.jpg'}}" alt="{{App::isLocale('vi') ? 'VỀ CHÚNG TÔI' : 'ABOUT US'}}">
+                            <div class="about-shape3"></div>
+                            <div class="about-shape4"></div>
                         </div>
-                        @if(@$blockOne)
-                            {!! printBlock($blockOne->id) !!}
-                        @endif
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
+                        <div class="ps-lg-2-9 ps-xl-6 ps-xxl-9">
+                            <div class="sec-title half">
+                                <span>{{App::isLocale('vi') ? 'VỀ CHÚNG TÔI' : 'ABOUT US'}}</span>
+                                <h2 class="h1 mb-0 z-index-2 position-relative"> {{App::isLocale('vi') ? $blockOne->title : $blockOne->title_en}}
+                                </h2>
+                            </div>
 
+                                {!! App::isLocale('vi') ? $blockOne->body : $blockOne->body_en !!}
 
-                        <div class="pt-2-3 border-top border-color-extra-light-gray d-sm-flex align-items-center">
-                            <a class="btn-style2 medium mr-4" href="#"><i class="fa-solid fa-angle-right mr-4"></i> Read More</a>
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0">
-                                    <i class="fa-solid fa-square-phone display-17 mr-4" style="color: #0F4C81"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <p class="mb-0">Call us for help</p>
-                                    <h4 class="h5 mb-0">{{ $config->hotline }}</h4>
+                            <div class="pt-2-3 border-top border-color-extra-light-gray d-sm-flex align-items-center">
+                                <a class="btn-style2 medium mr-4" href="#"><i class="fa-solid fa-angle-right mr-4"></i>{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'Read More'}} </a>
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0">
+                                        <i class="fa-solid fa-square-phone display-17 mr-4" style="color: #0F4C81"></i>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <p class="mb-0">Call us for help</p>
+                                        <h4 class="h5 mb-0">{{ $config->hotline }}</h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        @endif
         <span class="about-shape1"></span>
         <span class="about-shape2"></span>
     </section>
     <section class="linh_vuc wow bounce" data-wow-delay="150ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadbounceeIn;">
         <div class="container">
             <div class="sec-title text-center wow rollIn" data-wow-delay="220ms" style="visibility: visible; animation-delay: 200ms; animation-name: rollIn;">
-                <span>Business investment</span>
-                <h2 class="h1 mb-0 z-index-2 position-relative">Business investment of RT Energy Group</h2>
+                <span>{{App::isLocale('vi') ? 'Đầu tư kinh doanh' : 'Business investment'}}</span>
+                <h2 class="h1 mb-0 z-index-2 position-relative">
+                    {{App::isLocale('vi') ? 'Lĩnh vực kinh doanh của RT Energy Group' : 'Business investment of RT Energy Group'}}
+                </h2>
             </div>
             <div class="greenenergy_empty_space" data-heightmobile="10px" data-heighttablet="0" data-heightdesktop="0" style="height: 0px;"></div>
             <div class="row">
-                <div class="wpb_column vc_column_container col-lg-4 col-sm-4">
-                    <div class="vc_column-inner vc_custom_1452623145322">
-                        <div class="wpb_wrapper">
-                            <div class="wd-section-blog-services text-center style-3 anim-on">
-                                <article class="layout-2 ">
-                                    <div class="wd-blog-post nohover">
-                                        <div class="svg-wrapper">
-                                        <svg width="172" height="210" xmlns="http://www.w3.org/2000/svg">
-                                            <rect height="166" width="166" class="shape"></rect>
-                                        </svg>
-                                        <div class="img-wrapper">
-                                            <img src="https://demo.zytheme.com/energia/assets/images/projects/modern/2.jpg" alt="icon">
-                                        </div>
-                                        </div>
-                                        <h4 class="wd-title-element">Renewable energy and technology</h4>
-                                        <p>RT Energy always innovates, creates, adapts quickly to market changes to make a difference and high efficiency in the fields of business investment.
-                                        </p>
+                @foreach($business as $b)
+                    @if(App::isLocale('vi'))
+                        <div class="wpb_column vc_column_container col-lg-4 col-sm-4">
+                            <div class="vc_column-inner vc_custom_1452623145322">
+                                <div class="wpb_wrapper">
+                                    <div class="wd-section-blog-services text-center style-3 anim-on">
+                                        <article class="layout-2 ">
+                                            <div class="wd-blog-post nohover">
+                                                <div class="svg-wrapper">
+                                                    <svg width="172" height="210" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect height="166" width="166" class="shape"></rect>
+                                                    </svg>
+                                                    <div class="img-wrapper">
+                                                        <img src="{{$b->image->path ?? ''}}" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <h4 class="wd-title-element">{{$b->businessVi->title}}</h4>
+                                                <p>
+                                                    {{$b->businessVi->description}}
+                                                </p>
+                                            </div>
+                                        </article>
                                     </div>
-                                </article>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="wpb_column vc_column_container col-lg-4 col-sm-4">
-                    <div class="vc_column-inner vc_custom_1452623145322">
-                        <div class="wpb_wrapper">
-                            <div class="wd-section-blog-services text-center style-3 anim-on">
-                                <article class="layout-2 ">
-                                    <div class="wd-blog-post nohover">
-                                        <div class="svg-wrapper">
-                                        <svg width="172" height="210" xmlns="http://www.w3.org/2000/svg">
-                                            <rect height="166" width="166" class="shape"></rect>
-                                        </svg>
-                                        <div class="img-wrapper">
-                                            <img src="http://themes.webdevia.com/solar-wp/wp-content/uploads/2015/11/blog-post3.jpg" alt="icon">
-                                        </div>
-                                        </div>
-                                        <h4 class="wd-title-element">Sustainable industrial park development</h4>
-                                        <p>RT Energy always innovates, creates, adapts quickly to market changes to make a difference and high efficiency in the fields of business investment.
-                                        </p>
+                    @else
+                        <div class="wpb_column vc_column_container col-lg-4 col-sm-4">
+                            <div class="vc_column-inner vc_custom_1452623145322">
+                                <div class="wpb_wrapper">
+                                    <div class="wd-section-blog-services text-center style-3 anim-on">
+                                        <article class="layout-2 ">
+                                            <div class="wd-blog-post nohover">
+                                                <div class="svg-wrapper">
+                                                    <svg width="172" height="210" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect height="166" width="166" class="shape"></rect>
+                                                    </svg>
+                                                    <div class="img-wrapper">
+                                                        <img src="{{$b->image->path ?? ''}}" alt="icon">
+                                                    </div>
+                                                </div>
+                                                <h4 class="wd-title-element">{{$b->businessEn->title}}</h4>
+                                                <p>
+                                                    {{$b->businessEn->description}}
+                                                </p>
+                                            </div>
+                                        </article>
                                     </div>
-                                </article>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="wpb_column vc_column_container col-lg-4 col-sm-4">
-                    <div class="vc_column-inner vc_custom_1452623145322">
-                        <div class="wpb_wrapper">
-                            <div class="wd-section-blog-services text-center style-3 anim-on">
-                                <article class="layout-2 ">
-                                    <div class="wd-blog-post nohover">
-                                        <div class="svg-wrapper">
-                                        <svg width="172" height="210" xmlns="http://www.w3.org/2000/svg">
-                                            <rect height="166" width="166" class="shape"></rect>
-                                        </svg>
-                                        <div class="img-wrapper">
-                                            <img src="https://rtenergygroup.com/site/system/home/z2.jpg" alt="icon">
-                                        </div>
-                                        </div>
-                                        <h4 class="wd-title-element">New reliable power system</h4>
-                                        <p>RT Energy always innovates, creates, adapts quickly to market changes to make a difference and high efficiency in the fields of business investment.
-                                        </p>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    @endif
+
+
+                @endforeach
+
             </div>
         </div>
     </section>
@@ -277,15 +266,16 @@
         <div class="container">
             <div class="sec-title text-center wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
                 <span>Blogs</span>
-                <h2 class="h1 mb-0 z-index-2 position-relative">Lastest News From RTENERGY</h2>
+                <h2 class="h1 mb-0 z-index-2 position-relative">{{App::isLocale('vi') ? 'Tin Nổi Bật' : 'Lastest News From RTENERGY'}}</h2>
             </div>
             <div class="greenenergy_empty_space" data-heightmobile="10px" data-heighttablet="0" data-heightdesktop="0" style="height: 0px;"></div>
             <div class="row">
+                @foreach($news as $post)
                     <div class="post-item-index col-md-4 col-sm-12">
                         <article class="post-item-info" itemscope="itemscope" itemtype="https://schema.org/Article">
                             <figure >
                                 <a href="" title="">
-                                    <img  src="https://solarta.deothemes.com/wp-content/uploads/2021/09/post_1-810x456.jpg" class="post-index-img" alt="" >
+                                    <img  src="{{$post->image->path ?? ''}}" class="post-index-img" alt="" >
                                 </a>
                             </figure>
                             <div class="entry__body">
@@ -297,19 +287,19 @@
                                                     <path d="M12.675 15h-9.35c-.925 0-1.675-.75-1.675-1.675V4c0-.925.75-1.675 1.675-1.675h9.325c.925 0 1.675.75 1.675 1.675v9.325c0 .925-.75 1.675-1.65 1.675zM3.325 3c-.55 0-1 .45-1 1v9.325c0 .55.45 1 1 1h9.325c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H3.325z" fill="currentColor"></path>
                                                     <path d="M10.675 4.325A.33.33 0 0110.35 4V1.325A.33.33 0 0110.675 1a.33.33 0 01.325.325V4a.33.33 0 01-.325.325zm-5.35 0A.33.33 0 015 4V1.325A.33.33 0 015.325 1a.33.33 0 01.325.325V4c.025.175-.125.325-.325.325zM14 7H2a.33.33 0 01-.325-.325A.33.33 0 012 6.35h12a.33.33 0 01.325.325A.33.33 0 0114 7z" fill="currentColor"></path>
                                                 </svg>
-                                                <time class="entry-date published" datetime="2021-09-13T11:29:02+00:00">Oct 13, 2022</time>
+                                                <time class="entry-date published" datetime="2021-09-13T11:29:02+00:00">{{$post->created_at->format('d-m-Y H:i')}}</time>
                                             <div class="entry__meta-item entry__category">
                                                 <a href="#" class="entry__category-item">Insights</a>
                                             </div>
                                         </div>
 
                                         <h2 class="entry__title ">
-                                            <a href="#">Signing credit contract for Adani Phuoc Minh Wind Power Project</a>
+                                            <a href="{{route('front.post', $post->slug)}}">{{$post->name}}</a>
                                         </h2>
                                         <span class="entry__meta-item entry__meta-author">
                                             <a class="entry__meta-author-url" rel="author" href="#">
                                                 <span>by</span>
-                                                <span itemprop="author" itemscope="" itemtype="http://schema.org/Person" class="entry__meta-author-name">RT ADMIN</span>
+                                                <span itemprop="author" itemscope="" itemtype="http://schema.org/Person" class="entry__meta-author-name">{{$post->user_create->name}}</span>
                                             </a>
                                         </span>
                                     </div>
@@ -317,78 +307,9 @@
                             </div>
                         </article>
                     </div>
-                    <div class="post-item-index col-md-4 col-sm-12">
-                        <article class="post-item-info" itemscope="itemscope" itemtype="https://schema.org/Article">
-                            <figure >
-                                <a href="" title="">
-                                    <img  src="https://solarta.deothemes.com/wp-content/uploads/2021/09/post_1-810x456.jpg" class="post-index-img" alt="" >
-                                </a>
-                            </figure>
-                            <div class="entry__body">
-                                <div class="entry__header">
-                                    <div class="entry__header-content">
-                                        <div class="entry__meta">
-                                            <span class="entry__meta-item entry__meta-date">
-                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12.675 15h-9.35c-.925 0-1.675-.75-1.675-1.675V4c0-.925.75-1.675 1.675-1.675h9.325c.925 0 1.675.75 1.675 1.675v9.325c0 .925-.75 1.675-1.65 1.675zM3.325 3c-.55 0-1 .45-1 1v9.325c0 .55.45 1 1 1h9.325c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H3.325z" fill="currentColor"></path>
-                                                    <path d="M10.675 4.325A.33.33 0 0110.35 4V1.325A.33.33 0 0110.675 1a.33.33 0 01.325.325V4a.33.33 0 01-.325.325zm-5.35 0A.33.33 0 015 4V1.325A.33.33 0 015.325 1a.33.33 0 01.325.325V4c.025.175-.125.325-.325.325zM14 7H2a.33.33 0 01-.325-.325A.33.33 0 012 6.35h12a.33.33 0 01.325.325A.33.33 0 0114 7z" fill="currentColor"></path>
-                                                </svg>
-                                                <time class="entry-date published" datetime="2021-09-13T11:29:02+00:00">Oct 13, 2022</time>
-                                            <div class="entry__meta-item entry__category">
-                                                <a href="#" class="entry__category-item">Insights</a>
-                                            </div>
-                                        </div>
 
-                                        <h2 class="entry__title ">
-                                            <a href="#">Signing credit contract for Adani Phuoc Minh Wind Power Project</a>
-                                        </h2>
-                                        <span class="entry__meta-item entry__meta-author">
-                                            <a class="entry__meta-author-url" rel="author" href="#">
-                                                <span>by</span>
-                                                <span itemprop="author" itemscope="" itemtype="http://schema.org/Person" class="entry__meta-author-name">RT ADMIN</span>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="post-item-index col-md-4 col-sm-12">
-                        <article class="post-item-info" itemscope="itemscope" itemtype="https://schema.org/Article">
-                            <figure >
-                                <a href="" title="">
-                                    <img  src="https://solarta.deothemes.com/wp-content/uploads/2021/09/post_1-810x456.jpg" class="post-index-img" alt="" >
-                                </a>
-                            </figure>
-                            <div class="entry__body">
-                                <div class="entry__header">
-                                    <div class="entry__header-content">
-                                        <div class="entry__meta">
-                                            <span class="entry__meta-item entry__meta-date">
-                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12.675 15h-9.35c-.925 0-1.675-.75-1.675-1.675V4c0-.925.75-1.675 1.675-1.675h9.325c.925 0 1.675.75 1.675 1.675v9.325c0 .925-.75 1.675-1.65 1.675zM3.325 3c-.55 0-1 .45-1 1v9.325c0 .55.45 1 1 1h9.325c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H3.325z" fill="currentColor"></path>
-                                                    <path d="M10.675 4.325A.33.33 0 0110.35 4V1.325A.33.33 0 0110.675 1a.33.33 0 01.325.325V4a.33.33 0 01-.325.325zm-5.35 0A.33.33 0 015 4V1.325A.33.33 0 015.325 1a.33.33 0 01.325.325V4c.025.175-.125.325-.325.325zM14 7H2a.33.33 0 01-.325-.325A.33.33 0 012 6.35h12a.33.33 0 01.325.325A.33.33 0 0114 7z" fill="currentColor"></path>
-                                                </svg>
-                                                <time class="entry-date published" datetime="2021-09-13T11:29:02+00:00">Oct 13, 2022</time>
-                                            <div class="entry__meta-item entry__category">
-                                                <a href="#" class="entry__category-item">Insights</a>
-                                            </div>
-                                        </div>
+                @endforeach
 
-                                        <h2 class="entry__title ">
-                                            <a href="#">Signing credit contract for Adani Phuoc Minh Wind Power Project</a>
-                                        </h2>
-                                        <span class="entry__meta-item entry__meta-author">
-                                            <a class="entry__meta-author-url" rel="author" href="#">
-                                                <span>by</span>
-                                                <span itemprop="author" itemscope="" itemtype="http://schema.org/Person" class="entry__meta-author-name">RT ADMIN</span>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
 
 
             </div>

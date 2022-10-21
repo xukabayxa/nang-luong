@@ -47,9 +47,9 @@ class BlockController extends Controller
 				if($object->canEdit()) {
 					$result .= '<a href="' . route($this->route.'.edit', $object->id) . '" title="Sửa" class="btn btn-sm btn-primary edit"><i class="fas fa-pencil-alt"></i></a> ';
 				}
-				if ($object->canDelete()) {
-					$result .= '<a href="' . route($this->route.'.delete', $object->id) . '" title="Xóa" class="btn btn-sm btn-danger confirm"><i class="fas fa-times"></i></a>';
-				}
+//				if ($object->canDelete()) {
+//					$result .= '<a href="' . route($this->route.'.delete', $object->id) . '" title="Xóa" class="btn btn-sm btn-danger confirm"><i class="fas fa-times"></i></a>';
+//				}
 				return $result;
 			})
 			->addIndexColumn()
@@ -87,7 +87,10 @@ class BlockController extends Controller
 			$object = new ThisModel();
 
 			$object->name = $request->name;
+			$object->title = $request->title;
+			$object->title_en = $request->title_en;
 			$object->body = $request->body;
+            $object->body_en = $request->body_en;
 
 			$object->save();
 
@@ -139,7 +142,10 @@ class BlockController extends Controller
 			$object = ThisModel::find($id);
 
 			$object->name = $request->name;
-			$object->body = $request->body;
+            $object->title = $request->title;
+            $object->title_en = $request->title_en;
+            $object->body = $request->body;
+            $object->body_en = $request->body_en;
 
 			$object->save();
 

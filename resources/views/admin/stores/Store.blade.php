@@ -15,6 +15,7 @@
                 name: this.name,
                 address: this.address,
                 phone: this.phone,
+                email: this.email,
                 des: this.des,
                 province_id: this.province_id,
                 hotline: this.hotline,

@@ -8,6 +8,26 @@
             </span>
         </div>
 
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group custom-group mb-4">
+                    <label class="form-label">Tiêu đề</label>
+                    <input class="form-control " type="text" ng-model="form.title">
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+
+                <div class="form-group custom-group mb-4">
+                    <label class="form-label">Tiêu đề (tiếng Anh)</label>
+                    <input class="form-control " type="text" ng-model="form.title_en">
+
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="form-group custom-group mb-4">
             <label class="form-label">Nội dung khối</label>
             <textarea class="form-control" ck-editor rows="5" ng-model="form.body"></textarea>
@@ -16,6 +36,13 @@
             </span>
         </div>
 
+        <div class="form-group custom-group mb-4">
+            <label class="form-label">Nội dung khối (tiếng Anh)</label>
+            <textarea class="form-control" ck-editor rows="5" ng-model="form.body_en"></textarea>
+            <span class="invalid-feedback d-block" role="alert">
+                <strong><% errors.body[0] %></strong>
+            </span>
+        </div>
     </div>
     <div class="col-sm-4">
         <div class="form-group text-center mb-4">
