@@ -160,8 +160,7 @@ class BusinessSectorController extends Controller
                 "alert-type" => "warning"
             );
         } else {
-            $object->status = 0;
-            $object->save();
+            $object->delete();
             $message = array(
                 "message" => "Thao tác thành công!",
                 "alert-type" => "success"
