@@ -18,12 +18,10 @@
     <link href="/plugins/fontawesome/css/all.css" rel="stylesheet">
    <link href="/site/css/flatsome.css" rel="stylesheet">
    <link rel="stylesheet" id="flat-icon-css" href="{{ asset('css/flaticon.css') }}" type="text/css" media="all">
-   <link rel="stylesheet" id="animate-css" href="https://renumawp.websitelayout.net/wp-content/themes/renuma/css/plugins/animate.css?ver=6.0" type="text/css" media="all">
     <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;1,300;1,500;1,900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800&family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Roboto:ital,wght@0,300;0,400;1,300;1,500;1,900&display=swap" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     {{-- <link rel='stylesheet' href='/site/css/head-css-custom.css' type='text/css' media='all' /> --}}
     <script src="/site/js/sirv.js?ver=5.9.3" defer="defer" type="text/javascript"></script>
@@ -35,8 +33,6 @@
     <link rel="stylesheet" href="/libs/owl/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-
-    
     @yield('css')
     <link rel='stylesheet' id='app-css' href='/site/css/style.css' type='text/css' media='all' />
 

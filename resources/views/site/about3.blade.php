@@ -205,8 +205,3 @@
 
     </section>
 @endsection
-@push('scripts')
-    <script type='text/javascript' src='/site/js/solar.js'
-            id='solar-controlpanel-js'></script>
-    <script type='text/javascript' src='/site/js/solar-2.js' id='solar-jqcustom-js'></script>
-@endpush

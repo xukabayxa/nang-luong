@@ -8,8 +8,6 @@
     <link href="/site/css/solar1.css" rel="stylesheet">
     <link href="/site/css/solar2.css" rel="stylesheet">
     <link href="/site/css/about/custom-about4.css" rel="stylesheet">
-
-
 @endsection
 @section('content')
     <!-- <span></span> -->
