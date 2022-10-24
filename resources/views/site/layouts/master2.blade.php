@@ -21,7 +21,8 @@
 @include('site.partials.svg')
 
 <div class="uk-offcanvas-content">
-    @yield('content') @include('site.partials.footer')
+    @yield('content')
+    @include('site.partials.footer')
 </div>
 
 <script type="text/javascript" src="/site/js/jquery-3.4.1.min.js"></script>

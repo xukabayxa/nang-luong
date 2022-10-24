@@ -24,6 +24,7 @@
         <script type="text/javascript" src="/site/js/jquery-3.4.1.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="/site/js/script.js" defer="defer" type="text/javascript"></script>
+        <script src="/site/js/menu-header.js" defer="defer" type="text/javascript"></script>
         <script>
             jQuery(document).ajaxComplete(function () {
                 if (arguments[1].responseText && arguments[1].responseText.match(/class *= *"[^"]*Sirv/gm)) {
