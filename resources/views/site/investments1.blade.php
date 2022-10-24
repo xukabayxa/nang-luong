@@ -122,7 +122,7 @@
     </section>
 @endsection
 @push('scripts')
-    <script type='text/javascript' src='/libs/isotope/jquery.isotope.min.js' ></script>
+    {{-- <script type='text/javascript' src='/libs/isotope/jquery.isotope.min.js' ></script> --}}
     <script>
         $(document).ready(function (e) {
     "use strict";

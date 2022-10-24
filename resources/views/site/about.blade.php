@@ -11,13 +11,6 @@
     <link href="/site/css/about/custom.css" rel="stylesheet">
 @endsection
 @section('content')
-    <!-- <span></span> -->
-    <div uk-sticky="animation: uk-animation-slide-top;">
-        <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
-            @include('site.partials.header')
-        </div>
-    </div>
-
     <section id="sozo-main" style="display: grid">
         <header class="lte-page-header lte-parallax-yes">
             <div class="container">

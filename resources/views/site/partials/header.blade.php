@@ -1,4 +1,7 @@
-<div class="uk-navbar-container uk-navbar-transparent"
+
+<div uk-sticky="animation: uk-animation-slide-top;">
+    <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
+        <div class="uk-navbar-container uk-navbar-transparent"
      style="">
     <style>
         a.uk-animation-zoom:hover {
@@ -12,7 +15,6 @@
                 <a href="{{route('front.home_page')}}" title="RT ENERGY">
                     <span class="uk-logo uk-icon uk-preserve">
                             <img class="rt-acean" src="{{ asset('site/system/rt-en.png') }}" style="height: auto" alt="RT ENERGY VI">
-                            {{-- <img class="rt-white" src="{{ asset('site/system/rt-white.png') }}" style="height: auto" alt="RT ENERGY WHITE"> --}}
                     </span>
                 </a>
             </div>
@@ -59,7 +61,8 @@
                 <li class="menu-item-2">
                     <a class="uk-visible@m has-dropdown uk-m2 a-menu-top" href="#offcanvas-2" uk-toggle
                     >
-                        {{trans('message.our_investments_menu')}}<span class="uk-icon uk-preserve uk-margin-xsmall-left"
+                        {{trans('message.our_investments_menu')}}
+                        <span class="uk-icon uk-preserve uk-margin-xsmall-left"
                                                                        uk-icon="icon: arrow-down-dark; ratio: 0.6"></span>
                     </a>
 
@@ -918,3 +921,5 @@
     </div>
 </div>
 <!-- Sub Menu -->
+    </div>
+</div>

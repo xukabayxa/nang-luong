@@ -11,16 +11,15 @@
         @yield('css')
     </head>
     <body class="home page-template-default page page-id-6 preloading" ng-app="App">
-        {{--<div class="loader">--}}
-        {{--    <div class="loading"><i class="icon"></i>--}}
-        {{--        <img src="/site/system/loading_3.gif">--}}
-        {{--    </div>--}}
-        {{--</div>--}}
-
         @include('site.partials.svg')
-
         <div class="uk-offcanvas-content">
-            @yield('content') @include('site.partials.footer')
+            <div uk-sticky="animation: uk-animation-slide-top;">
+                <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
+                    @include('site.partials.header')
+                </div>
+            </div>
+            @yield('content') 
+            @include('site.partials.footer')
         </div>
         <script type="text/javascript" src="/site/js/jquery-3.4.1.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
