@@ -51,22 +51,6 @@
                                 <img src="/site/system/partner3/1.png"
                                      alt=""
                                      title=""/>
-{{--                                <div class="image-overlay">--}}
-{{--                                    <div class="links">--}}
-{{--                                        <a title="MASSIVE DEPLOYMENT OF SOLAR PANELS"--}}
-{{--                                           href="https://solarwp.wpengine.com/dt_portfolios/suspendisse-tempor-iaculis-leo/">--}}
-{{--                                            <span class="icon icon-linked"> </span> </a>--}}
-{{--                                        <a title="MASSIVE DEPLOYMENT OF SOLAR PANELS" data-gal="prettyPhoto[gallery]"--}}
-{{--                                           href="https://solarwp.wpengine.com/wp-content/uploads/2016/11/portfolio-img12.jpg">--}}
-{{--                                            <span class="icon icon-search"> </span> </a>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="image-overlay-details">--}}
-{{--                                        <h2>--}}
-{{--                                            <a href="https://solarwp.wpengine.com/dt_portfolios/suspendisse-tempor-iaculis-leo/"--}}
-{{--                                               title="Permalink to MASSIVE DEPLOYMENT OF SOLAR PANELS">MASSIVE--}}
-{{--                                                DEPLOYMENT OF SOLAR PANELS</a></h2>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
                             </figure>
                         </div>
                         <div id="dt_portfolios-6633"
@@ -180,22 +164,6 @@
                                 <img src="/site/system/partner4/1.png"
                                      alt=""
                                      title=""/>
-                                {{--                                <div class="image-overlay">--}}
-                                {{--                                    <div class="links">--}}
-                                {{--                                        <a title="MASSIVE DEPLOYMENT OF SOLAR PANELS"--}}
-                                {{--                                           href="https://solarwp.wpengine.com/dt_portfolios/suspendisse-tempor-iaculis-leo/">--}}
-                                {{--                                            <span class="icon icon-linked"> </span> </a>--}}
-                                {{--                                        <a title="MASSIVE DEPLOYMENT OF SOLAR PANELS" data-gal="prettyPhoto[gallery]"--}}
-                                {{--                                           href="https://solarwp.wpengine.com/wp-content/uploads/2016/11/portfolio-img12.jpg">--}}
-                                {{--                                            <span class="icon icon-search"> </span> </a>--}}
-                                {{--                                    </div>--}}
-                                {{--                                    <div class="image-overlay-details">--}}
-                                {{--                                        <h2>--}}
-                                {{--                                            <a href="https://solarwp.wpengine.com/dt_portfolios/suspendisse-tempor-iaculis-leo/"--}}
-                                {{--                                               title="Permalink to MASSIVE DEPLOYMENT OF SOLAR PANELS">MASSIVE--}}
-                                {{--                                                DEPLOYMENT OF SOLAR PANELS</a></h2>--}}
-                                {{--                                    </div>--}}
-                                {{--                                </div>--}}
                             </figure>
                         </div>
                         <div id="dt_portfolios-6647"

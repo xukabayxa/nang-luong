@@ -17,7 +17,6 @@
 </div>
 <!-- <span></span> -->
 <section id="sozo-main">
-
     <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
         {{--style banner slick--}}
         <div class="owl-carousel owl-theme slider-fade">
