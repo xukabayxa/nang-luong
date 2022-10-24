@@ -18,7 +18,7 @@
                     @include('site.partials.header')
                 </div>
             </div>
-            @yield('content') 
+            @yield('content')
             @include('site.partials.footer')
         </div>
         <script type="text/javascript" src="/site/js/jquery-3.4.1.min.js"></script>
@@ -47,10 +47,10 @@
                         });
                         clearInterval(timerId);
                     } else {
-                        if (count == 10) 
+                        if (count == 10)
                             clearInterval(timerId);
                         }
-                    
+
                 }
 
                 jQuery('.svi-img').on('click', function () {
