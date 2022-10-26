@@ -37,9 +37,9 @@
         <section class="projects-page-section">
 			<div class="container">
 				<ul class="filter">
-					<li><a class="" href="#" data-filter="*">Show All</a></li>
+					<li><a href="#" data-filter="*" class="active">Show All</a></li>
 					<li><a href="#" data-filter=".buildings" class="">Buildings</a></li>
-					<li><a href="#" data-filter=".interior" class="active">Interior</a></li>
+					<li><a href="#" data-filter=".interior" class="">Interior</a></li>
 					<li><a href="#" data-filter=".energy" class="">Energy</a></li>
 					<li><a href="#" data-filter=".isolation" class="">Isolation</a></li>
 				</ul>
@@ -48,15 +48,15 @@
 						<img src="/site/system/inves/i_1.jpg" alt="">
 						<div class="hover-box">
 							<h2><a href="single-project.html">Dự án điện gió Adani Phước Minh</a></h2>
-							<span>
-                                Quy mô: công suất 27.2 MW, diện tích 30ha
-                                Tổng vốn đầu tư: 1150 tỷ đồng
-                                Nhà cung cấp: GE
-                                Nhà thầu: PowerChina VietNam Limited Company
-                                Tư vấn thiết kế: Henste engineering- Singapore)
-                                Tư vấn giám sát: Rina
-                                COD: 10/2021
-                            </span>
+							<div class="pj-des">
+                                <p>Quy mô: công suất 27.2 MW, diện tích 30ha</p>
+                                <p>Tổng vốn đầu tư: 1150 tỷ đồng</p>
+                                <p>Nhà cung cấp: GE</p>
+                                <p>Nhà thầu: PowerChina VietNam Limited Company</p>
+                                <p>Tư vấn thiết kế: Henste engineering- Singapore)</p>
+                                <p>Tư vấn giám sát: Rina</p>
+                                <p>COD: 10/2021</p>
+                            </div>
 						</div>
 					</div>
 					<div class="project-post interior">
@@ -122,7 +122,7 @@
     </section>
 @endsection
 @push('scripts')
-    {{-- <script type='text/javascript' src='/libs/isotope/jquery.isotope.min.js' ></script> --}}
+    <script type='text/javascript' src='/libs/isotope/jquery.isotope.min.js' ></script>
     <script>
         $(document).ready(function (e) {
     "use strict";

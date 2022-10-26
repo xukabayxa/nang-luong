@@ -11264,14 +11264,14 @@ ul li {
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
-    color: #222222;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 13px;
+    color: #07294d;
+    font-size: 15px;
     letter-spacing: 1.3px;
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
+    font-weight: 700;
 }
-.projects-page-section ul.filter li a:hover {
+.projects-page-section ul.filter li a:hover, .projects-page-section ul.filter li a.active {
     color: #ffba00;
     border-bottom: 2px solid #ffba00;
 }
@@ -11308,17 +11308,13 @@ ul li {
 }
 
 .projects-page-section .project-box .project-post .hover-box {
-    background: #ffba00;
+    background: rgba(65, 65, 65, .8);
 }
 .project-box .project-post .hover-box h2 {
     color: #222222;
-    font-size: 17px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
     font-weight: 700;
     margin: 0 0 15px;
-    font-size: 15px;
-    margin: 0;
-    font-weight: 400;
 }
 .project-box .project-post .hover-box h2 a {
     display: inline-block;
@@ -11327,15 +11323,19 @@ ul li {
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
-    color: #222222;
+    color: #fff;
 }
-.project-box .project-post .hover-box span {
-    font-size: 14px;
-    color: #666666;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
+.project-box .project-post .hover-box .pj-des {
     line-height: 20px;
     margin: 0 0 10px;
     margin-bottom: 0;
-    font-size: 12px;
+}
+.projects-page-section .project-box.col2 .project-post:hover .hover-box {
+    bottom: 0 !important;
+    color: #fff;
+}
+.project-box .project-post .hover-box .pj-des p {
+    color: #fff;
+    margin: 0;
+    line-height: 22px;
 }
