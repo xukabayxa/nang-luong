@@ -23,6 +23,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
+
+
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="form-label">Tên dự án</label>
@@ -158,13 +160,20 @@
 	</div>
 
 	<div class="col-md-3 col-sm-4 col-xs-12">
-{{--		<div class="form-group custom-group mb-4">--}}
-{{--			<label class="form-label required-label">Trạng thái</label>--}}
-{{--			<select select2 class="form-control" ng-model="form.status">--}}
-{{--				<option value="">Chọn trạng thái</option>--}}
-{{--				<option ng-repeat="s in form.statuses" ng-value="s.id" ng-selected="form.status == s.id"><% s.name %></option>--}}
-{{--			</select>--}}
-{{--		</div>--}}
+        <div class="form-group">
+            <label class="form-label required-label">Danh mục</label>
+            <ui-select class="" remove-selected="true" ng-model="form.category_id" theme="select2">
+                <ui-select-match placeholder="Chọn danh mục">
+                    <% $select.selected.name %>
+                </ui-select-match>
+                <ui-select-choices repeat="t.id as t in (form.all_categories | filter: $select.search)">
+                    <span ng-bind="t.name"></span>
+                </ui-select-choices>
+            </ui-select>
+            <span class="invalid-feedback d-block" role="alert">
+                                                    <strong><% errors.category_id[0] %></strong>
+                                                </span>
+        </div>
 		<div class="form-group text-center mb-4">
 			<div class="main-img-preview">
 				<p class="help-block-img">* Ảnh định dạng: jpg, png không quá 2MB.</p>

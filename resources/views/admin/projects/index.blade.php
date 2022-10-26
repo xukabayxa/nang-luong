@@ -43,9 +43,6 @@ Quản lý dự án
             {data: 'updated_by', title: "Người cập nhật"},
             {
                 data: 'image', title: "Hình ảnh", orderable: false, className: "text-center",
-                render: function (data) {
-                    return `<img src="${data.path}" style="max-width: 55px !important">`;
-                }
             },
             {data: 'action', orderable: false, title: "Hành động"}
         ],

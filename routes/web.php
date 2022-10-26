@@ -86,6 +86,18 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::post('/add-home-page', 'Admin\PostCategoryController@addToHomepage')->name('PostCategory.add.home.page');
     });
 
+    Route::group(['prefix' => 'project-categories'], function() {
+        Route::get('/create', 'Admin\ProjectCategoryController@create')->name('project_categories.create');
+        Route::post('/', 'Admin\ProjectCategoryController@store')->name('project_categories.store');
+        Route::post('/{id}/update', 'Admin\ProjectCategoryController@update')->name('project_categories.update');
+        Route::get('/{id}/edit', 'Admin\ProjectCategoryController@edit')->name('project_categories.edit');
+        Route::get('/{id}/getDataForEdit', 'Admin\ProjectCategoryController@getDataForEdit');
+        Route::get('/{id}/delete', 'Admin\ProjectCategoryController@delete')->name('project_categories.delete');
+        Route::get('/', 'Admin\ProjectCategoryController@index')->name('project_categories.index');
+        Route::get('/searchData', 'Admin\ProjectCategoryController@searchData')->name('project_categories.searchData');
+        Route::post('/nested-sort', 'Admin\ProjectCategoryController@nestedSort')->name('project_categories.nestedSort');
+    });
+
     // danh mục liên hệ
     Route::group(['prefix' => 'contacts'], function () {
         Route::get('/', 'Admin\ContactController@index')->name('contacts.index');

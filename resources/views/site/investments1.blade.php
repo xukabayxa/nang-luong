@@ -8,117 +8,57 @@
         <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
             @include('site.partials.header')
         </div>
-    </div>    
+    </div>
     <!-- <span></span> -->
     <section id="sozo-main">
         <header class="lte-page-header lte-parallax-yes">
             <div class="container">
                 <div class="lte-header-h1-wrapper">
-                    <h1 class="header">Invesments</h1>
+                    <h1 class="header">{{App::isLocale('vi') ? 'Danh mục đầu tư' : 'Invesments'}}</h1>
                 </div>
-                <ul class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-                    <li class="home">
-                        <span property="itemListElement" typeof="ListItem">
-                            <a property="item" typeof="WebPage" title="Go to Home." href="http://sunlux.like-themes.com" class="home">
-                                <span property="name">Home</span>
-                            </a>
-                            <meta property="position" content="1">
-                        </span>
-                    </li>
-                    <li class="post post-page current-item">
-                        <span property="itemListElement" typeof="ListItem">
-                            <span property="name">Investment</span>
-                            <meta property="position" content="2">
-                        </span>
-                    </li>
-                </ul>
+
+               @include('site.partials.bread_crumb2', ['vi' => 'Danh mục đầu tư', 'en' => 'Invesments'])
+
             </div>
         </header>
         <section class="projects-page-section">
 			<div class="container">
 				<ul class="filter">
-					<li><a href="#" data-filter="*" class="active">Show All</a></li>
-					<li><a href="#" data-filter=".buildings" class="">Buildings</a></li>
-					<li><a href="#" data-filter=".interior" class="">Interior</a></li>
-					<li><a href="#" data-filter=".energy" class="">Energy</a></li>
-					<li><a href="#" data-filter=".isolation" class="">Isolation</a></li>
+					<li><a href="#" data-filter="*" class="active">{{App::isLocale('vi') ? 'Tất Cả' : 'Show All'}}</a></li>
+
+                    @foreach($categories as $category)
+                        <li><a href="#" data-filter=".{{$category->slug}}" class="">{{App::isLocale('vi') ? $category->name : $category->en_name}}</a></li>
+                    @endforeach
 				</ul>
 				<div class="project-box iso-call col2" >
-					<div class="project-post buildings isolation">
-						<img src="/site/system/inves/i_1.jpg" alt="">
-						<div class="hover-box">
-							<h2><a href="single-project.html">Dự án điện gió Adani Phước Minh</a></h2>
-							<div class="pj-des">
-                                <p>Quy mô: công suất 27.2 MW, diện tích 30ha</p>
-                                <p>Tổng vốn đầu tư: 1150 tỷ đồng</p>
-                                <p>Nhà cung cấp: GE</p>
-                                <p>Nhà thầu: PowerChina VietNam Limited Company</p>
-                                <p>Tư vấn thiết kế: Henste engineering- Singapore)</p>
-                                <p>Tư vấn giám sát: Rina</p>
-                                <p>COD: 10/2021</p>
+                    @foreach($projects as $project)
+                        @if(App::isLocale('vi'))
+                            <div class="project-post {{$project->category->slug}}">
+                                <img src="{{$project->image->path ?? ''}}" alt="">
+                                <div class="hover-box">
+                                    <h2><a href="#">{{$project->projectVi->title}}</a></h2>
+                                    <div class="pj-des">
+                                        {!! $project->projectVi->short_des !!}
+                                    </div>
+                                </div>
                             </div>
-						</div>
-					</div>
-					<div class="project-post interior">
-						<img src="/site/system/slide/s4.jpg" alt="">
-						<div class="hover-box">
-							<h2><a href="single-project.html">Adani Phuoc Minh solar power project</a></h2>
-							<span>(Quan The 1 Village, Phuoc Minh Commune, Thuan Nam District, Ninh Thuan Province, Vietnam)</span>
-                            <span>Scale: capacity 50MW, area 60 hectares
-                                Total investment capital: 1000 billion VND
-                                Vendor: JA
-                                Contractors: PowerChina Huadong Engineering
-                                Consultant and supervisor: Rina
-                                COD: September 2020
-                            </span>
-						</div>
-					</div>
-					<div class="project-post buildings isolation"">
-						<img src="upload/projects/3.jpg" alt="">
-						<div class="hover-box">
-							<h2><a href="single-project.html">Classic House</a></h2>
-							<span>bulding, house</span>
-						</div>
-					</div>
-					<div class="project-post buildings">
-						<img src="upload/projects/4.jpg" alt="">
-						<div class="hover-box">
-							<h2><a href="single-project.html">Modern and trending house</a></h2>
-							<span>bulding, house</span>
-						</div>
-					</div>
-					<div class="project-post interior isolation">
-						<img src="upload/projects/5.jpg" alt="">
-						<div class="hover-box">
-							<h2><a href="single-project.html">Afarist Building</a></h2>
-							<span>bulding, house</span>
-						</div>
-					</div>
-					<div class="project-post energy" >
-						<img src="upload/projects/6.jpg" alt="">
-						<div class="hover-box">
-							<h2><a href="single-project.html">traditional Building</a></h2>
-							<span>bulding, house</span>
-						</div>
-					</div>
-					<div class="project-post buildings">
-						<img src="upload/projects/7.jpg" alt="">
-						<div class="hover-box">
-							<h2><a href="single-project.html">Small house</a></h2>
-							<span>bulding, house</span>
-						</div>
-					</div>
-					<div class="project-post isolation">
-						<img src="upload/projects/8.jpg" alt="">
-						<div class="hover-box">
-							<h2><a href="single-project.html">Large town Buildings</a></h2>
-							<span>bulding, house</span>
-						</div>
-					</div>
+                        @else
+                            <div class="project-post {{$project->category->slug}}">
+                                <img src="{{$project->image->path ?? ''}}" alt="">
+                                <div class="hover-box">
+                                    <h2><a href="#">{{@$project->projectEn->title ?? ''}}</a></h2>
+                                    <div class="pj-des">
+                                        {!! @$project->projectEn->short_des ?? '' !!}
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+
+                    @endforeach
 				</div>
 			</div>
 		</section>
-        
+
     </section>
 @endsection
 @push('scripts')

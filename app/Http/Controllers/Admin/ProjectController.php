@@ -54,6 +54,9 @@ class ProjectController extends Controller
             ->editColumn('updated_by', function ($object) {
                 return $object->user_update->name ?? '';
             })
+            ->editColumn('image', function ($object) {
+                return ($object->image) ? "<img src=". $object->image->path ." style='max-width: 55px !important'>" : '-';
+            })
             ->addColumn('action', function ($object) {
                 $result = '<a href="' . route($this->route.'.edit',$object->id) .'" title="Sửa" class="btn btn-sm btn-primary edit"><i class="fas fa-pencil-alt"></i></a> ';
                 $result .= '<a href="' . route($this->route.'.delete', $object->id) . '" title="Khóa" class="btn btn-sm btn-danger confirm"><i class="fas fa-times"></i></a>';
@@ -95,6 +98,7 @@ class ProjectController extends Controller
         DB::beginTransaction();
         try {
             $project = new Project();
+            $project->category_id = $request->category_id;
             $project->save();
 
             $dataProjectVi = array_merge($request->project_vi, ['language' => 'vi', 'project_id' => $project->id]);
@@ -127,6 +131,8 @@ class ProjectController extends Controller
         DB::beginTransaction();
         try {
             $project = ThisModel::findOrFail($id);
+            $project->category_id = $request->category_id;
+            $project->save();
 
             ProjectLanguage::query()->where(['language' => 'vi', 'project_id' => $project->id])
                 ->update($request->project_vi);

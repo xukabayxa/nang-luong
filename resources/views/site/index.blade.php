@@ -196,9 +196,9 @@
                                                         <img src="{{$b->image->path ?? ''}}" alt="icon">
                                                     </div>
                                                 </div>
-                                                <h4 class="wd-title-element">{{$b->businessEn->title}}</h4>
+                                                <h4 class="wd-title-element">{{@$b->businessEn->title ?? ''}}</h4>
                                                 <p>
-                                                    {{$b->businessEn->description}}
+                                                    {{@$b->businessEn->description ?? ''}}
                                                 </p>
                                             </div>
                                         </article>
@@ -207,10 +207,7 @@
                             </div>
                         </div>
                     @endif
-
-
                 @endforeach
-
             </div>
         </div>
     </section>
@@ -252,7 +249,7 @@
     <section class="posts-index wow fadeIn" data-wow-delay="150ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
         <div class="container">
             <div class="sec-title text-center wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
-                <span>Blogs</span>
+                <span>{{App::isLocale('vi') ? 'Bài viết' : 'Blogs'}}</span>
                 <h2 class="h1 mb-0 z-index-2 position-relative">{{App::isLocale('vi') ? 'Tin Nổi Bật' : 'Lastest News From RTENERGY'}}</h2>
             </div>
             <div class="greenenergy_empty_space" data-heightmobile="10px" data-heighttablet="0" data-heightdesktop="0" style="height: 0px;"></div>
@@ -294,11 +291,7 @@
                             </div>
                         </article>
                     </div>
-
                 @endforeach
-
-
-
             </div>
         </div>
     </section>

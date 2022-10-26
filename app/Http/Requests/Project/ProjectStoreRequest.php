@@ -23,6 +23,7 @@ class ProjectStoreRequest extends BaseRequest
     public function rules()
     {
         $rules = [
+            'category_id' => 'required',
             'project_vi.title' => 'required',
             'project_vi.des' => 'required',
             'project_vi.short_des' => 'required',

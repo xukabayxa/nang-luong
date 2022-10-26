@@ -13,6 +13,8 @@ use App\Model\Admin\Manufacturer;
 use App\Model\Admin\Origin;
 use App\Model\Admin\Policy;
 use App\Model\Admin\PostCategorySpecial;
+use App\Model\Admin\Project;
+use App\Model\Admin\ProjectCategory;
 use App\Model\Admin\Regent;
 use App\Model\Admin\Store;
 use App\Model\Admin\Tag;
@@ -483,7 +485,16 @@ class FrontController extends Controller
 
     public function investments1()
     {
-        return view('site.investments1');
+        $projects = Project::query()
+            ->with('projectVi', 'projectEn', 'image', 'category')
+            ->orderBy('created_at')->get()->map(function ($obj) {
+                $obj->projectVi = $obj->projectVi()->first();
+                $obj->projectEn = $obj->projectEn()->first();
+                return $obj;
+            });
+        $categories = ProjectCategory::query()->orderBy('sort_order', 'ASC')->get();
+
+        return view('site.investments1', compact('projects', 'categories'));
     }
 
     public function investments2()

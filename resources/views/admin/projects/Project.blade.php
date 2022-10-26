@@ -1,5 +1,6 @@
 <script>
     class Project extends BaseClass {
+        all_categories = @json(\App\Model\Admin\ProjectCategory::getForSelect());
         before(form) {
             this.image = {};
         }
@@ -34,6 +35,7 @@
 
         get submit_data() {
             let data = {
+                category_id : this.category_id,
                 project_vi: this.projectVi ? this.projectVi.submit_data : {},
                 project_en: this.projectEn ? this.projectEn.submit_data : {},
             }

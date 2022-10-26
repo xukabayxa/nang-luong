@@ -64,6 +64,11 @@ class Project extends BaseModel
             ->firstOrFail();
     }
 
+    public function category()
+    {
+        return $this->belongsTo(ProjectCategory::class, 'category_id');
+    }
+
     public function languages()
     {
         return $this->hasMany(ProjectLanguage::class, 'project_id');

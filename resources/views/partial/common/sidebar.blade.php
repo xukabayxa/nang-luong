@@ -72,6 +72,43 @@
                 </ul>
             </li>
 
+            <li class="nav-item has-treeview  {{ request()->is('admin/projects') || request()->is('admin/projects/*') || request()->is('admin/project-categories') || request()->is('admin/project-categories/*') ? 'menu-open' : '' }} ">
+
+                <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-newspaper"></i>
+                    <p>
+                        Dự án
+                        <i class="fas fa-angle-left right"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{{ route('project_categories.index') }}" class="nav-link {{ Request::routeIs('project_categories.create') ? 'active' : '' }}">
+                            <i class="far fas  fa-angle-right nav-icon"></i>
+                            <p>Danh mục dự án</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('project_categories.create') }}" class="nav-link {{ Request::routeIs('project_categories.create') ? 'active' : '' }}">
+                            <i class="far fas  fa-angle-right nav-icon"></i>
+                            <p>Thêm mới danh mục</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('Project.index') }}" class="nav-link {{ Request::routeIs('Project.create') ? 'active' : '' }}">
+                            <i class="far fas  fa-angle-right nav-icon"></i>
+                            <p>Danh sách dự án</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('Project.create') }}" class="nav-link {{ Request::routeIs('Project.create') ? 'active' : '' }}">
+                            <i class="far fas  fa-angle-right nav-icon"></i>
+                            <p>Thêm mới dự án</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="nav-item has-treeview  {{ request()->is('admin/stores') ||  request()->is('admin/banners') ||  request()->is('admin/origins') || request()->is('admin/manufacturers/*') || request()->is('admin/attributes') ? 'menu-open' : '' }} ">
 
                 <a href="#" class="nav-link">
