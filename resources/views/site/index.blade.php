@@ -22,10 +22,10 @@
                                     <span class="banner-icon d-none d-lg-block">
                                         <i class="fa-solid fa-solar-panel"></i>
                                     </span>
-                                            <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
+                                            <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">RT Energy</p>
                                             <span class="card-border position-relative"></span>
-                                            <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
-                                            <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                            <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT - Năng Lượng Cho Tương Lai' : 'RT Producer of Wind Energy'}}</h1>
+                                            <a href="#" class="btn-style2 uk-animation-slide-bottom">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'Read more'}}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -64,8 +64,8 @@
                                         </span>
                                         <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
                                         <span class="card-border position-relative"></span>
-                                        <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
-                                        <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                        <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT - Năng Lượng Cho Tương Lai' : 'RT Producer of Wind Energy'}}</h1>
+                                        <a href="#" class="btn-style2 uk-animation-slide-bottom">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'Read more'}}</a>
                                     </div>
                                 </div>
                             </div>
