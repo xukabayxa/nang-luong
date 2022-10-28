@@ -51,7 +51,7 @@ Quản lý dự án
         ],
         search_by_time: false,
         @if(Auth::user()->type == App\Model\Common\User::SUPER_ADMIN || Auth::user()->type == App\Model\Common\User::QUAN_TRI_VIEN)
-        create_link: "{{ route('Post.create') }}"
+        create_link: "{{ route('Project.create') }}"
         @endif
     }).datatable;
 

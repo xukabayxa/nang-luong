@@ -132,7 +132,7 @@
                                         <i class="fa-solid fa-square-phone display-17 mr-4" style="color: #0F4C81"></i>
                                     </div>
                                     <div class="flex-grow-1 ms-3">
-                                        <p class="mb-0">Call us for help</p>
+                                        <p class="mb-0">{{App::isLocale('vi') ? 'Liên hệ với chúng tôi': 'Call us for help'}}</p>
                                         <h4 class="h5 mb-0">{{ $config->hotline }}</h4>
                                     </div>
                                 </div>

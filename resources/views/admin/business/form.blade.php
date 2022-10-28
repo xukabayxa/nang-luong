@@ -85,7 +85,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="form-label">Giới thiệu</label>
-                                                <textarea id="editor" class="form-control" ck-editor
+                                                <textarea class="form-control"
                                                           ng-model="form.businessEn.description" rows="4"></textarea>
                                                 <span class="invalid-feedback d-block" role="alert">
 				 <strong><% errors['business_en.description'][0] %></strong>
