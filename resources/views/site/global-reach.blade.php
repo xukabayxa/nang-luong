@@ -13,19 +13,16 @@
 <link href="/site/css/flickity.css" rel="stylesheet" type="text/css">
 @endsection
 @section('content')
-<div uk-sticky="animation: uk-animation-slide-top;">
-    <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
-        @include('site.partials.header')
-    </div>
-</div>
-<style>
-    #sozo-main {
-        padding-top: 145px;
-    }
-</style>
-<!-- <span></span> -->
 <section id="sozo-main">
-    <div class="uk-section uk-background-dark uk-position-relative uk-overflow-hidden" style="padding-top: 0">
+    <header class="lte-page-header lte-parallax-yes">
+        <div class="container">
+            <div class="lte-header-h1-wrapper">
+                <h1 class="header">{{App::isLocale('vi') ? 'Danh mục đầu tư' : 'Invesments'}}</h1>
+            </div>
+           @include('site.partials.bread_crumb2', ['vi' => 'Danh mục đầu tư', 'en' => 'Invesments'])
+        </div>
+    </header>
+    {{-- <div class="uk-section uk-background-dark uk-position-relative uk-overflow-hidden" style="padding-top: 0">
         <div class="uk-container">
             <div class="uk-position-map-bg uk-hidden@s">
                 <img src="/site/system/inves/i3.jpg">
@@ -34,24 +31,42 @@
             <p class="uk-light uk-margin-remove-top@s uk-margin-small-bottom uk-style-primary-l uk-text-4 uk-text-lh-4 uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200" style="color: #fff; text-transform: uppercase"> {{App::isLocale('vi') ? 'Thị trường toàn cầu' : 'Our global expertise'}}</p>
             <img class="global-map" src="/site/system/mapp.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 400;">
         </div>
-    </div>
-
-    <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
-
-        <div class="uk-position-cover">
-            <div class="uk-cover-container">
-                <video uk-cover loop muted playsinline uk-video="autoplay: inview">
-                    <source src="/site/system/inves/i_3.mp4" type="video/mp4">
-                </video>
-                <canvas width="1600" height="900"></canvas>
+    </div> --}}
+    <section class="index-hot wow fadeIn" data-wow-delay="150ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="col-hot-wrap">
+                        <div class="circle-widget-wrap">
+                            <div class="lte-pos-top-center circle-line" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="lte-effects.default">
+                                <div class="circle-widget-container">
+                                    <div class="lte-spinning-atoms-sc lte-pos-top-center lte-opacity-0">
+                                        <div class="lte-spinning-atom lte-spinning-atom-1"></div>
+                                        <div class="lte-spinning-atom lte-spinning-atom-2"></div>
+                                        <div class="lte-spinning-atom lte-spinning-atom-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dns-widget-image wind-turbin lte-image-vane-blades" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                                <div class="dns-widget-container">
+                                    <div class="elementor-image">
+                                        <img width="1024" height="1024" src="http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-1024x1024.png" class="attachment-large size-large dns-img" alt="" loading="lazy" srcset="http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-1024x1024.png 1024w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-150x150.png 150w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-300x300.png 300w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-768x768.png 768w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-140x140.png 140w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-110x110.png 110w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-290x290.png 290w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-100x100.png 100w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-360x360.png 360w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-480x480.png 480w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02-600x600.png 600w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/benefits_02.png 1200w" sizes="(max-width: 1024px) 100vw, 1024px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lte-image-vane dns-widget-image turbin-body" data-id="7c2eea2" data-element_type="widget" data-widget_type="image.default">
+                                <div class="dns-widget-container">
+                                    <div class="elementor-image">
+                                        <img width="150" height="750" src="http://sunlux.like-themes.com/wp-content/uploads/2022/08/benefits_01-crop-small.png" class="attachment-full size-full dns-img" alt="" loading="lazy" srcset="http://sunlux.like-themes.com/wp-content/uploads/2022/08/benefits_01-crop-small.png 150w, http://sunlux.like-themes.com/wp-content/uploads/2022/08/benefits_01-crop-small-60x300.png 60w, http://sunlux.like-themes.com/wp-content/uploads/2022/08/benefits_01-crop-small-20x100.png 20w" sizes="(max-width: 150px) 100vw, 150px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-        <div class="uk-background-gradient uk-position-cover"></div>
-        <div class="uk-background-gradient-rev uk-position-cover"></div>
-
-
-    </div>
+    </section>
 
     <style>
         @media screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -154,8 +169,7 @@
     </style>
     <div class="uk-background-light uk-dark carousel-nation">
         <div class="carousel-custom">
-            <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
-
+            <div class="owl-carousel">
                 <div class="carousel-cell thumb-carou" id="carousel-cell1" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/vn.png') }}" alt="">
                     <p class="uk-text-12">@if(App::isLocale('vi')) VIỆT NAM @else Vietnam @endif</p>
@@ -177,10 +191,6 @@
                     <img src="{{ asset('site/system/flags/indonesia.jpg') }}" alt="">
                     <p class="uk-text-12">@if(App::isLocale('vi')) Indonesia @else Indonesia @endif</p>
                 </div>
-                {{-- <div class="carousel-cell thumb-carou" id="carousel-cell5" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/india.jpg') }}" alt="">
-                    <p class="">@if(App::isLocale('vi')) @else Vietnam @endif</p>
-                </div> --}}
                 <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
                     <img src="{{ asset('site/system/flags/koreaflag.jpg') }}" alt="">
                     <p class="uk-text-12">@if(App::isLocale('vi')) Hàn Quốc @else Korea @endif</p>
@@ -194,8 +204,6 @@
                     <img src="{{ asset('site/system/flags/banglades.jpg') }}" alt="">
                     <p class="uk-text-12">@if(App::isLocale('vi')) Bangladesh @else Bangladesh @endif</p>
                 </div>
-
-
 
             </div>
             <div class="carousel carousel-main" data-flickity='{ "hash": true, "pageDots": false }'>
@@ -295,7 +303,6 @@
 @endsection
 
 @push('scripts')
-{{-- <script src="/site/js/slick.min.js"> </script>--}}
 
 @endpush
 
