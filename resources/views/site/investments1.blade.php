@@ -25,7 +25,6 @@
 			<div class="container">
 				<ul class="filter">
 					<li><a href="#" data-filter="*" class="active">{{App::isLocale('vi') ? 'Tất Cả' : 'Show All'}}</a></li>
-
                     @foreach($categories as $category)
                         <li><a href="#" data-filter=".{{$category->slug}}" class="">{{App::isLocale('vi') ? $category->name : $category->en_name}}</a></li>
                     @endforeach
