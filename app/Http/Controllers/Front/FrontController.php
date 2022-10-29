@@ -479,7 +479,7 @@ class FrontController extends Controller
 
     public function introduction4()
     {
-        return view('site.about4');
+        return view('site.about_4_1');
     }
 
     public function investments1()

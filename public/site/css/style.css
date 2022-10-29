@@ -323,7 +323,7 @@ a.a-menu-top:hover {
     50% {transform: scale(1.5);}
     100% {transform: scale(1);}
   } /*End of Zoom in Keyframes */
-  
+
   /* Zoom out Keyframes */
   @-webkit-keyframes zoomout {
     0% {transform: scale(1);}
@@ -335,7 +335,7 @@ a.a-menu-top:hover {
     50% {transform: scale(0.67);}
     100% {transform: scale(1);}
   }/*End of Zoom out Keyframes */
-  
+
 .slider-fade .item {
     position: absolute;
     top: 0;
@@ -11324,7 +11324,7 @@ ul li {
 }
 .projects-page-section .project-box {
     width: 1170px;
-    margin-left: -15px;
+    /*margin-left: -15px;*/
 }
 .project-box .project-post {
     width: 25%;
@@ -11429,3 +11429,17 @@ a.h3.post-title {
     background-image: url(https://rtenergygroup.com/site/system/mapp.jpg) !important;
 }
 
+.project-post img {
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.project-post img:hover {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
