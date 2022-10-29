@@ -10,7 +10,7 @@
 <section id="sozo-main">
     <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
         {{--style banner slick--}}
-        <div class="owl-carousel owl-theme slider-fade">
+        <div class="owl-carousel owl-theme slider-fade cardcontainer">
             @if($banners->count())
                 @foreach($banners as $banner)
                     <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55" data-background="{{$banner->image->path ?? ''}}" style="background-image: url({{$banner->image->path ?? ''}});">
@@ -22,10 +22,11 @@
                                     <span class="banner-icon d-none d-lg-block">
                                         <i class="fa-solid fa-solar-panel"></i>
                                     </span>
-                                            <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
+                                            <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE
+                                            </p>
                                             <span class="card-border position-relative"></span>
-                                            <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
-                                            <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                            <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT - Năng Lượng Cho Tương Lai' : 'RT Producer of Wind Energy'}}</h1>
+                                            <a href="#" class="btn-style2 uk-animation-slide-bottom">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'Read more'}}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -64,8 +65,8 @@
                                         </span>
                                         <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
                                         <span class="card-border position-relative"></span>
-                                        <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
-                                        <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                        <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT - Năng Lượng Cho Tương Lai' : 'RT Producer of Wind Energy'}}</h1>
+                                        <a href="#" class="btn-style2 uk-animation-slide-bottom">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'Read more'}}</a>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +133,7 @@
                                         <i class="fa-solid fa-square-phone display-17 mr-4" style="color: #0F4C81"></i>
                                     </div>
                                     <div class="flex-grow-1 ms-3">
-                                        <p class="mb-0">Call us for help</p>
+                                        <p class="mb-0">{{App::isLocale('vi') ? 'Liên hệ với chúng tôi': 'Call us for help'}}</p>
                                         <h4 class="h5 mb-0">{{ $config->hotline }}</h4>
                                     </div>
                                 </div>

@@ -2,28 +2,19 @@
 @section('title')
     <title>{{ "Về chúng tôi - " . ucfirst($_SERVER['HTTP_HOST']) }}</title>
 @endsection
+@section('page_class') insight @endsection
 @section('content')
-    <div uk-sticky="animation: uk-animation-slide-top;">
-        <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
-            @include('site.partials.header')
-        </div>
-    </div>
-
     <style>
         .uk-width-2-3 {
             width: 100%;
         }
     </style>
-    <!-- <span></span> -->
+    
     <section id="sozo-main" ng-controller="Insights" ng-cloak>
         @if($posts->isNotEmpty())
             <div class="uk-section uk-section-page-header" style="padding: 0">
                 <div class="uk-container uk-container-large">
-
                     <div uk-grid class="uk-grid uk-grid-xmedium">
-                        {{--                    @foreach($posts->take(1) as $post)--}}
-                        {{--                    @endforeach--}}
-
                         <div class="uk-width-2-3@m uk-feat-article">
                                 <div class="uk-cover-container">
                                     <a href="{{route('front.post', $posts->first()->slug)}}">
@@ -40,7 +31,7 @@
                                         <h6 class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-margin-small-bottom uk-hidden@s">
                                            {{$posts->first()->created_at->format('d') .'.' . $posts->first()->created_at->format('m'). '.' .$posts->first()->created_at->format('Y')}} </h6>
                                         <a href="{{route('front.post', $posts->first()->slug)}}"
-                                           class="uk-color-dark">
+                                           class="h2 post-title">
                                            {{$posts->first()->name}} </a>
                                     </div>
                                     <div class="uk-text-right@s uk-width-expand@m">
@@ -75,11 +66,9 @@
                                                            {{$p_s1->created_at->format('d') .'.' . $p_s1->first()->created_at->format('m'). '.' .$p_s1->created_at->format('Y')}}
                                                        </div>
                                                        <a href="{{route('front.post', $p_s1->slug)}}"
-                                                          class="uk-color-dark">{{$p_s1->name}}</a>
+                                                          class="h3 post-title">{{$p_s1->name}}</a>
                                                    </div>
-                                                   <div class="uk-style-secondary-m uk-color-muted uk-text-12 uk-text-ls-1 uk-text-lh-3 uk-visible@s">
-                                                       {{$p_s1->created_at->format('d') .'.' . $p_s1->created_at->format('m'). '.' .$p_s1->created_at->format('Y')}}
-                                                   </div>
+                                                   
                                                </div>
                                            </div>
 
@@ -128,13 +117,10 @@
                                                      alt="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"
                                                      title="SOLAR-IMAGE-PR-17-MARCH-scaled.jpg?w=1024&h=384&scale"/> </a>
                                         </div>
-                                        <div class="uk-flex uk-flex-between uk-style-secondary-m uk-text-ls-1 uk-text-dark uk-text-12 uk-margin-small-bottom uk-margin-small-top uk-padding-small-top">
-                                            <div>{{$p_s2->created_at->format('d') .'.' . $p_s2->created_at->format('m'). '.' .$p_s2->created_at->format('Y')}}</div>
-                                            <div></div>
-                                        </div>
+                                        
                                         <div class="uk-style-primary-l uk-text-8 uk-text-lh-2 uk-margin uk-margin-remove-top">
                                             <a href="{{route('front.post', $p_s2->slug)}}"
-                                               class="uk-color-dark">
+                                               class="h3 post-title">
                                                 {{$p_s2->name}}</a>
                                         </div>
                                     </div>
@@ -151,9 +137,9 @@
                             </style>
                             @if($posts->count() >= 6)
                             <div class="contact-submit-btn" style="text-align: center; margin-top: 12px" ng-if="checkLoad" >
-                                <button class="submit-btn" id="loadMore" type="submit" ng-click="loadMorePost()" ng-disabled="loading">
+                                <button class="btn btn-info" id="loadMore" type="submit" ng-click="loadMorePost()" ng-disabled="loading">
                                     <div class="lds-ellipsis"  ng-if="loading" style="width: <% loading ? '70px' : '' %>"><div></div><div></div><div></div><div></div></div>
-                                    <span ng-if="! loading">{{App::isLocale('vi') ? 'xem thêm' : 'load more'}}</span>
+                                    <span ng-if="! loading">{{App::isLocale('vi') ? 'Xem thêm' : 'Load more'}}</span>
                                 </button>
 
                             </div>
@@ -168,7 +154,7 @@
 
 
         <br>
-        <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
+        {{-- <div class="uk-position-relative uk-margin-medium uk-margin-left uk-margin-right uk-light uk-section uk-section-cta uk-flex uk-flex-bottom uk-flex-center">
             <div class="uk-position-cover uk-cover-container">
                 <canvas width="1600" height="708"></canvas>
                 <img data-src="/site/system/post-e.jpg"
@@ -188,7 +174,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </section>
 
 @endsection

@@ -68,7 +68,6 @@ class FrontController extends Controller
         // khối giới thiệu cty, hiển thị ở trang chủ
         $blockOne = Block::query()->find(1);
 
-
         $business = BusinessSector::query()
             ->with('businessVi', 'businessEn', 'image')
             ->orderBy('created_at')->get()->map(function ($obj) {
