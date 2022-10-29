@@ -30,172 +30,224 @@
                     </li>
                 </ul>
                 <div class="project-box iso-call">
-
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/1.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/21.png"
-                             alt=""
-                             title=""/>
-                    </div>
-
-
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/5.png"
-                             alt=""
-                             title=""/>
-                    </div>
-
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/3.png"
-                             alt=""
-                             title=""/>
-                    </div>
-
-
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/4.png"
-                             alt=""
-                             title=""/>
-                    </div>
-
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/6.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/7.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/8.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/9.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/10.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/11.png"
-                             alt=""
-                             title=""/>
-                    </div>
-
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/12.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/13.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post household-sort partner-post">
-                        <img src="/site/system/partner3/14.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post school-sort partner-post">
-                        <img src="/site/system/partner4/1.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post school-sort partner-post">
-                        <img src="/site/system/partner4/2.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post school-sort partner-post">
-                        <img src="/site/system/partner4/3.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post school-sort partner-post">
-                        <img src="/site/system/partner4/4.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post school-sort partner-post">
-                        <img src="/site/system/partner4/5.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/6.png"
-                             alt=""
-                             title=""/>
+                    <div class="row household-sort">
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/21.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/5.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/4.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/3.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/6.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/7.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/8.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/9.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/10.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/11.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/12.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post household-sort partner-post">
+                                <img src="/site/system/partner3/13.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+{{--                        <div class="col-md-3 col-12 ">--}}
+{{--                            <div class="project-post household-sort partner-post">--}}
+{{--                                <img src="/site/system/partner3/14.png"--}}
+{{--                                     alt=""--}}
+{{--                                     title=""/>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
 
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/7.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/8.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/9.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/10.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/11.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/12.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/13.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/14.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/15.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/16.png"
-                             alt=""
-                             title=""/>
-                    </div>
-                    <div class="project-post research-sort partner-post">
-                        <img src="/site/system/partner4/17.png"
-                             alt=""
-                             title=""/>
+                    <div class="row research-sort ">
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/6.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/7.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/8.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/9.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/10.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/11.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/12.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/13.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/14.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/15.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/16.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post research-sort partner-post">
+                                <img src="/site/system/partner4/17.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
                     </div>
 
-
+                    <div class="row school-sort">
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post school-sort partner-post">
+                                <img src="/site/system/partner4/1.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post school-sort partner-post">
+                                <img src="/site/system/partner4/2.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post school-sort partner-post">
+                                <img src="/site/system/partner4/3.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post school-sort partner-post">
+                                <img src="/site/system/partner4/4.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 ">
+                            <div class="project-post school-sort partner-post">
+                                <img src="/site/system/partner4/5.png"
+                                     alt=""
+                                     title=""/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
