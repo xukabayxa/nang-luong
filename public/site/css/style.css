@@ -11429,13 +11429,13 @@ a.h3.post-title {
     background-image: url(https://rtenergygroup.com/site/system/mapp.jpg) !important;
 }
 
-.project-post {
+.partner-post {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
-.project-post:hover {
+.partner-post:hover {
     -webkit-transform:scale(1.25); /* Safari and Chrome */
     -moz-transform:scale(1.25); /* Firefox */
     -ms-transform:scale(1.25); /* IE 9 */
