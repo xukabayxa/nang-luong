@@ -10,7 +10,7 @@
 <section id="sozo-main">
     <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
         {{--style banner slick--}}
-        <div class="owl-carousel owl-theme slider-fade">
+        <div class="owl-carousel owl-theme slider-fade cardcontainer">
             @if($banners->count())
                 @foreach($banners as $banner)
                     <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55" data-background="{{$banner->image->path ?? ''}}" style="background-image: url({{$banner->image->path ?? ''}});">
@@ -22,7 +22,8 @@
                                     <span class="banner-icon d-none d-lg-block">
                                         <i class="fa-solid fa-solar-panel"></i>
                                     </span>
-                                            <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">RT Energy</p>
+                                            <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE
+                                            </p>
                                             <span class="card-border position-relative"></span>
                                             <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT - Năng Lượng Cho Tương Lai' : 'RT Producer of Wind Energy'}}</h1>
                                             <a href="#" class="btn-style2 uk-animation-slide-bottom">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'Read more'}}</a>
@@ -346,24 +347,24 @@
 </script>
 <script>
     $(".owl-carousel").on("initialized.owl.carousel", () => {
-            setTimeout(() => {
-                $(".owl-item.active .owl-slide-animated").addClass("is-transitioned");
-                $("section").show();
-            }, 50);
-        });
+        setTimeout(() => {
+            $(".owl-item.active .owl-slide-animated").addClass("is-transitioned");
+            $("section").show();
+        }, 50);
+    });
 
-        const $owlCarousel = $(".owl-carousel").owlCarousel({
-            items: 1,
-            loop: true,
-            nav: true,
-            slideSpeed: 3000,
-            autoplay: true,
-            autoplayTimeout: 80000,
-            navText: [
-                '<svg class="left" width="50" height="50" viewBox="0 0 24 24" style="left: -620"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>',
-                '<svg class="right" width="50" height="50" viewBox="0 0 24 24" style="right: -620"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>' /* icons from https://iconmonstr.com */
-            ]
-        });
+    const $owlCarousel = $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        slideSpeed: 3000,
+        autoplay: true,
+        autoplayTimeout: 80000,
+        navText: [
+            '<svg class="left" width="50" height="50" viewBox="0 0 24 24" style="left: -620"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>',
+            '<svg class="right" width="50" height="50" viewBox="0 0 24 24" style="right: -620"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>' /* icons from https://iconmonstr.com */
+        ]
+    });
 
 </script>
 @endpush

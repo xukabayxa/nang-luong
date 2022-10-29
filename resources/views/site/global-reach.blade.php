@@ -2,6 +2,7 @@
 @section('title')
 <title>{{ "Về chúng tôi - " . ucfirst($_SERVER['HTTP_HOST']) }}</title>
 @endsection
+@section('page_class') global @endsection
 @section('css')
 {{--
 <link rel="stylesheet" href="/site/css/s1.css">--}}
@@ -13,46 +14,18 @@
 <link href="/site/css/flickity.css" rel="stylesheet" type="text/css">
 @endsection
 @section('content')
-<div uk-sticky="animation: uk-animation-slide-top;">
-    <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
-        @include('site.partials.header')
+<header class="lte-page-header lte-parallax-yes">
+    <div class="container">
+        <div class="lte-header-h1-wrapper">
+            <h1 class="header">{{App::isLocale('vi') ? 'Thị trường quốc tế' : 'Our Global'}}</h1>
+        </div>
+
+       @include('site.partials.bread_crumb2', ['vi' => 'Thị trường quốc tế', 'en' => 'Our Global'])
+
     </div>
-</div>
-<style>
-    #sozo-main {
-        padding-top: 145px;
-    }
-</style>
+</header>
 <!-- <span></span> -->
 <section id="sozo-main">
-    <div class="uk-section uk-background-dark uk-position-relative uk-overflow-hidden" style="padding-top: 0">
-        <div class="uk-container">
-            <div class="uk-position-map-bg uk-hidden@s">
-                <img src="/site/system/inves/i3.jpg">
-            </div>
-            <div class="uk-background-wash-map uk-position-cover uk-hidden@s"></div>
-            <p class="uk-light uk-margin-remove-top@s uk-margin-small-bottom uk-style-primary-l uk-text-4 uk-text-lh-4 uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 200" style="color: #fff; text-transform: uppercase"> {{App::isLocale('vi') ? 'Thị trường toàn cầu' : 'Our global expertise'}}</p>
-            <img class="global-map" src="/site/system/mapp.jpg" uk-scrollspy="cls: uk-animation-fade; delay: 400;">
-        </div>
-    </div>
-
-    <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
-
-        <div class="uk-position-cover">
-            <div class="uk-cover-container">
-                <video uk-cover loop muted playsinline uk-video="autoplay: inview">
-                    <source src="/site/system/inves/i_3.mp4" type="video/mp4">
-                </video>
-                <canvas width="1600" height="900"></canvas>
-            </div>
-
-        </div>
-        <div class="uk-background-gradient uk-position-cover"></div>
-        <div class="uk-background-gradient-rev uk-position-cover"></div>
-
-
-    </div>
-
     <style>
         @media screen and (min-width: 1200px) and (max-width: 1600px) {
 
@@ -152,146 +125,176 @@
             opacity: 1;
         }
     </style>
-    <div class="uk-background-light uk-dark carousel-nation">
-        <div class="carousel-custom">
-            <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
+    <div class="container">
+        <div class="our-global-carou" style="padding: 50px 0">
+            <div id="big" class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="cc-container">
+                    <div class="c-name uk-text-8">
+                        @if(App::isLocale('vi')) Việt Nam @else VietNam @endif
+                    </div>
 
-                <div class="carousel-cell thumb-carou" id="carousel-cell1" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/vn.png') }}" alt="">
-                    <p class="uk-text-12">@if(App::isLocale('vi')) VIỆT NAM @else Vietnam @endif</p>
+                    <div class="note">
+                        Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
+                    </div>
                 </div>
-                <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/lao.jpg') }}" alt="">
-                    <p class="uk-text-12">@if(App::isLocale('vi')) Lào @else Laos @endif</p>
+              </div>
+              <div class="item">
+                <div class="c-name uk-text-8">
+                    @if(App::isLocale('vi')) Lào @else Laos @endif
                 </div>
-                <div class="carousel-cell thumb-carou" id="carousel-cell3" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/singapore.jpg') }}" alt="">
-                    <p class="uk-text-12">@if(App::isLocale('vi')) Singapore @else Singapore @endif</p>
+                <div class="note">
+                    Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
                 </div>
-                <div class="carousel-cell thumb-carou" id="carousel-cell2" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/philippin.jpg') }}" alt="">
-                    <p class="uk-text-12">@if(App::isLocale('vi')) Philippines @else Philippines @endif</p>
+              </div>
+              <div class="item">
+                <div class="c-name uk-text-8">
+                    @if(App::isLocale('vi')) Lào @else Laos @endif
                 </div>
-
-                <div class="carousel-cell thumb-carou" id="carousel-cell4" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/indonesia.jpg') }}" alt="">
-                    <p class="uk-text-12">@if(App::isLocale('vi')) Indonesia @else Indonesia @endif</p>
+                <div class="note">
+                    Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
                 </div>
-                {{-- <div class="carousel-cell thumb-carou" id="carousel-cell5" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/india.jpg') }}" alt="">
-                    <p class="">@if(App::isLocale('vi')) @else Vietnam @endif</p>
-                </div> --}}
-                <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/koreaflag.jpg') }}" alt="">
-                    <p class="uk-text-12">@if(App::isLocale('vi')) Hàn Quốc @else Korea @endif</p>
+              </div>
+              <div class="item">
+                <div class="c-name uk-text-8">
+                    @if(App::isLocale('vi')) Lào @else Laos @endif
                 </div>
-                <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/australia_f.jpg') }}" alt="">
-                    <p class="uk-text-12">@if(App::isLocale('vi')) Australia @else Australia @endif</p>
+                <div class="note">
+                    Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
                 </div>
-
-                <div class="carousel-cell thumb-carou" id="carousel-cell6" style="text-align: center; padding-top: 16px; font-weight: bold">
-                    <img src="{{ asset('site/system/flags/banglades.jpg') }}" alt="">
-                    <p class="uk-text-12">@if(App::isLocale('vi')) Bangladesh @else Bangladesh @endif</p>
+              </div>
+              <div class="item">
+                <div class="c-name uk-text-8">
+                    @if(App::isLocale('vi')) Lào @else Laos @endif
                 </div>
-
-
-
+                <div class="note">
+                    Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
+                </div>
+              </div>
+              <div class="item">
+                <div class="c-name uk-text-8">
+                    @if(App::isLocale('vi')) Lào @else Laos @endif
+                </div>
+                <div class="note">
+                    Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
+                </div>
+              </div>
+              <div class="item">
+                <div class="c-name uk-text-8">
+                    @if(App::isLocale('vi')) Lào @else Laos @endif
+                </div>
+                <div class="note">
+                    Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
+                </div>
+              </div>
+              <div class="item">
+                <div class="c-name uk-text-8">
+                    @if(App::isLocale('vi')) Lào @else Laos @endif
+                </div>
+                <div class="note">
+                    Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
+                </div>
+              </div>
+            
             </div>
-            <div class="carousel carousel-main" data-flickity='{ "hash": true, "pageDots": false }'>
-
-                <div class="carousel-cell cc1" id="carousel-cell1" style="padding-top: 10px">
-                    <div class="cc-container">
-                        <div class="c-name uk-text-8">
-                            @if(App::isLocale('vi')) Việt Nam @else VietNam @endif
-                        </div>
-
-                        <div class="note">
-                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
-                    <div class="cc-container">
-                        <div class="c-name uk-text-8">
-                            @if(App::isLocale('vi')) Lào @else Laos @endif
-                        </div>
-                        <div class="note">
-                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-cell cc1" id="carousel-cell3" style="padding-top: 10px">
-                    <div class="cc-container">
-                        <div class="c-name uk-text-8">
-                            SINGAPORE
-                        </div>
-                        <div class="note">
-                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-cell cc1" id="carousel-cell2" style="padding-top: 10px">
-                    <div class="cc-container">
-                        <div class="c-name uk-text-8">
-                            PHILIPPINES
-                        </div>
-                        <div class="note">
-                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-cell cc1" id="carousel-cell4" style="padding-top: 10px">
-                    <div class="cc-container">
-                        <div class="c-name uk-text-8">
-                            INDONESIA
-                        </div>
-                        <div class="note">
-                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
-                    <div class="cc-container">
-                        <div class="c-name uk-text-8">
-                            @if(App::isLocale('vi')) Hàn Quốc @else Korea @endif
-                        </div>
-                        <div class="note">
-                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
-                    <div class="cc-container">
-                        <div class="c-name uk-text-8">
-                            AUSTRALIA
-                        </div>
-                        <div class="note">
-                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-cell cc1" id="carousel-cell6" style="padding-top: 10px">
-                    <div class="cc-container">
-                        <div class="c-name uk-text-8">
-                            Bangladesh
-                        </div>
-                        <div class="note">
-                            Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
-                        </div>
-                    </div>
-                </div>
-
-
+            <div id="thumbs" class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="{{ asset('site/system/flags/vn.png') }}" alt="">
+                    <h4 class="h4 nation-name">@if(App::isLocale('vi')) VIỆT NAM @else Vietnam @endif</h4>
+              </div>
+              <div class="item">
+                <img src="{{ asset('site/system/flags/lao.jpg') }}" alt="">
+                    <h4 class="h4 nation-name">@if(App::isLocale('vi')) Lào @else Laos @endif</h4>
+              </div>
+              <div class="item">
+                <img src="{{ asset('site/system/flags/singapore.jpg') }}" alt="">
+                    <h4 class="h4 nation-name">@if(App::isLocale('vi')) Singapore @else Singapore @endif</h4>
+              </div>
+              <div class="item">
+                <img src="{{ asset('site/system/flags/philippin.jpg') }}" alt="">
+                <h4 class="h4 nation-name">@if(App::isLocale('vi')) Philippines @else Philippines @endif</h4>
+              </div>
+              <div class="item">
+                <img src="{{ asset('site/system/flags/indonesia.jpg') }}" alt="">
+                <h4 class="h4 nation-name">@if(App::isLocale('vi')) Indonesia @else Indonesia @endif</h4>
+              </div>
+              <div class="item">
+                <img src="{{ asset('site/system/flags/koreaflag.jpg') }}" alt="">
+                <h4 class="h4 nation-name">@if(App::isLocale('vi')) Hàn Quốc @else Korea @endif</h4>
+              </div>
+              <div class="item">
+                <img src="{{ asset('site/system/flags/australia_f.jpg') }}" alt="">
+                <h4 class="h4 nation-name">@if(App::isLocale('vi')) Australia @else Australia @endif</h4>
+              </div>
+              <div class="item">
+                <img src="{{ asset('site/system/flags/banglades.jpg') }}" alt="">
+                <h4 class="h4 nation-name">@if(App::isLocale('vi')) Bangladesh @else Bangladesh @endif</h4>
+              </div>
             </div>
-
-        </div>
+            </div>
     </div>
 
 </section>
+<style>
+#big .item {
+    background: #fff;
+    padding: 15px;
+    margin: 25px;
+    color: #000;
+    border-radius: 3px;
+    text-align: center;
+}
+#thumbs .item {
+    background: #fff;
+    height: auto;
+    line-height: 70px;
+    padding: 5px;
+    margin: 2px;
+    color: #444;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+.c-name {
+    font-weight: bold;
+    color: #000;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--color-theme);
+    transition: all .25s ease-out;
+    opacity: 1;
+    padding: 25px 0;
+}
+#thumbs .item h1 { font-size: 18px; }
+#thumbs .current .item {
+    background: #136c63;
+    color: #fff;
+}
+h4.h4.nation-name {
+    line-height: 32px;
+    padding-top: 10px;
+}
+.owl-theme .owl-nav [class*='owl-'] { -webkit-transition: all .3s ease; transition: all .3s ease; }
+.owl-theme .owl-nav [class*='owl-'].disabled:hover { background-color: #D6D6D6; }
+#big.owl-theme { position: relative; }
+#big.owl-theme .owl-next, #big.owl-theme .owl-prev {
+    background: #fff;
+    width: 22px;
+    line-height: 40px;
+    height: 40px;
+    margin-top: -20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+}
+#big.owl-theme .owl-prev { left: 10px; }
+#big.owl-theme .owl-next { right: 10px; }
+#thumbs.owl-theme .owl-next, #thumbs.owl-theme .owl-prev { background:#333; }
+</style>
 @endsection
 
 @push('scripts')
@@ -307,6 +310,102 @@
 <script type="text/javascript" src="https://unpkg.com/flickity-hash@1/hash.js"></script>
 
 <script>
+    $(document).ready(function() {
+  var bigimage = $("#big");
+  var thumbs = $("#thumbs");
+  //var totalslides = 10;
+  var syncedSecondary = true;
+
+  bigimage
+    .owlCarousel({
+    items: 1,
+    slideSpeed: 2000,
+    nav: true,
+    autoplay: true,
+    dots: false,
+    loop: true,
+    responsiveRefreshRate: 200,
+    navText: [
+      '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
+      '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
+    ]
+  })
+    .on("changed.owl.carousel", syncPosition);
+
+  thumbs
+    .on("initialized.owl.carousel", function() {
+    thumbs
+      .find(".owl-item")
+      .eq(0)
+      .addClass("current");
+  })
+    .owlCarousel({
+    items: 5,
+    dots: true,
+    nav: false,
+    navText: [
+      '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
+      '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
+    ],
+    smartSpeed: 200,
+    slideSpeed: 500,
+    slideBy: 5,
+    responsiveRefreshRate: 100
+  })
+    .on("changed.owl.carousel", syncPosition2);
+
+  function syncPosition(el) {
+    //if loop is set to false, then you have to uncomment the next line
+    //var current = el.item.index;
+
+    //to disable loop, comment this block
+    var count = el.item.count - 1;
+    var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
+
+    if (current < 0) {
+      current = count;
+    }
+    if (current > count) {
+      current = 0;
+    }
+    //to this
+    thumbs
+      .find(".owl-item")
+      .removeClass("current")
+      .eq(current)
+      .addClass("current");
+    var onscreen = thumbs.find(".owl-item.active").length - 1;
+    var start = thumbs
+    .find(".owl-item.active")
+    .first()
+    .index();
+    var end = thumbs
+    .find(".owl-item.active")
+    .last()
+    .index();
+
+    if (current > end) {
+      thumbs.data("owl.carousel").to(current, 100, true);
+    }
+    if (current < start) {
+      thumbs.data("owl.carousel").to(current - onscreen, 100, true);
+    }
+  }
+
+  function syncPosition2(el) {
+    if (syncedSecondary) {
+      var number = el.item.index;
+      bigimage.data("owl.carousel").to(number, 100, true);
+    }
+  }
+
+  thumbs.on("click", ".owl-item", function(e) {
+    e.preventDefault();
+    var number = $(this).index();
+    bigimage.data("owl.carousel").to(number, 300, true);
+  });
+});
+
     $('.carousel-main').flickity({
             // options
             pageDots: true,

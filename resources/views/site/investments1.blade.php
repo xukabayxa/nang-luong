@@ -4,11 +4,7 @@
 @endsection
 
 @section('content')
-    <div uk-sticky="animation: uk-animation-slide-top;">
-        <div class="uk-background-transparent uk-border-navbar uk-light uk-position-absolute uk-width-1-1">
-            @include('site.partials.header')
-        </div>
-    </div>
+
     <!-- <span></span> -->
     <section id="sozo-main">
         <header class="lte-page-header lte-parallax-yes">

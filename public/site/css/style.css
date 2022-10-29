@@ -310,8 +310,32 @@ a.a-menu-top:hover {
     background-size: cover !important;
     overflow: hidden !important;
     background-position: center !important;
-    background-repeat: no-repeat !important;
+    /* background-repeat: no-repeat !important; */
 }
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+  }
+  @keyframes zoomin {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+  } /*End of Zoom in Keyframes */
+  
+  /* Zoom out Keyframes */
+  @-webkit-keyframes zoomout {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.67);}
+    100% {transform: scale(1);}
+  }
+  @keyframes zoomout {
+      0% {transform: scale(1);}
+    50% {transform: scale(0.67);}
+    100% {transform: scale(1);}
+  }/*End of Zoom out Keyframes */
+  
 .slider-fade .item {
     position: absolute;
     top: 0;
@@ -320,7 +344,19 @@ a.a-menu-top:hover {
     width: 100%;
     background-size: cover;
     background-position: center center;
+    /* animation: shrink 5s infinite alternate; */
+    /* -webkit-animation: zoomin 10s ease-in infinite;
+    animation: zoomin 10s ease-in infinite;
+    transition: all .5s ease-in-out; */
 }
+@keyframes shrink {
+    0% {
+      background-size: 110% 110%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
 [data-overlay-dark]:before, [data-overlay-light]:before {
     content: '';
     position: absolute;
@@ -4043,11 +4079,19 @@ ul.uk-nav-sub {
     color: #fff;
     transition: all .5s ease
 }
-
+.insight .uk-sticky .uk-navbar-container,.insight .uk-sticky .uk-submenu-container {
+    background-color: rgba(255,255,255,1) !important;
+    color: #07294d !important;
+    transition: all .5s ease
+}
 .uk-sticky.uk-active .uk-navbar-container a, .uk-sticky.uk-active .uk-submenu-container a {
-    color: #fff
+    color: #07294d;
+    /* background-color: #fff !important; */
 }
 .uk-sticky.uk-active .uk-navbar-container a {
+    color: #07294d !important;
+}
+.insight .uk-sticky .uk-navbar-container a {
     color: #07294d !important;
 }
 .uk-sticky.uk-active .uk-navbar-container .logo-text, .uk-sticky.uk-active .uk-submenu-container .logo-text {
@@ -6559,7 +6603,7 @@ td.uk-text-break, th.uk-text-break {
 }
 
 .uk-style-primary, .uk-style-primary-b, .uk-style-primary-i, .uk-style-primary-l, .uk-style-primary-m {
-    font-family: 'NamDang Menu', sans-serif;;
+    font-family: 'NamDang', sans-serif;;
     font-weight: 400
 }
 
@@ -10051,6 +10095,9 @@ img.Sirv {
 #sozo-main {
     padding-top: 0;
   }
+.insight #sozo-main {
+    padding-top: 82px;
+}
 @media all and (max-width: 768px) {
     #sozo-main {
         padding-top: 105px;
@@ -10935,9 +10982,9 @@ footer li:first-child {
     background-color: #202020;
     zoom: 1;
     filter: alpha(opacity=50);
-    -webkit-opacity: .5;
-    -moz-opacity: .5;
-    opacity: .5;
+    -webkit-opacity: .7;
+    -moz-opacity: .7;
+    opacity: .7;
     content: "";
 }
 .lte-page-header:after {
@@ -11340,3 +11387,45 @@ ul li {
     margin: 0;
     line-height: 22px;
 }
+
+.wind-icon2 {
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 2s linear infinite;
+    transform: none;
+}
+section.index-hot {
+    background: url(https://rtenergygroup.com/site/system/mapp.jpg);
+    padding: 170px 0 0;
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    position: relative;
+    background-size: contain;
+}
+a.h2.post-title {
+    font-weight: 700;
+    color: #07294d !important;
+    display: block;
+    width: 100%;
+    line-height: 32px !important;
+}
+a.h3.post-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #07294d !important;
+    display: block;
+    width: 100%;
+    line-height: 32px !important;
+    padding-top: 10px;
+}
+.post-sl2 {
+    margin-bottom: 0 !important;
+    padding-top: 0;
+}
+.global .lte-page-header {
+    background-image: url(https://rtenergygroup.com/site/system/mapp.jpg) !important;
+}
+
