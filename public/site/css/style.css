@@ -5080,7 +5080,7 @@ ul.uk-nav-sub {
     height: 100%;
 }
 
-.uk-offcanvas .uk-mega-menu-item.items-4 .uk-cover-container {
+.uk-offcanvas .uk-mega-menu-item.items-3 .uk-cover-container {
     height: 100%;
     border-color: #fff;
     border-style: solid;
@@ -10766,11 +10766,12 @@ span.lte-header.lte-h4 {
     color: var(--deo-primary-color);
 }
 .entry__title {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px;
     position: relative;
     text-align: left;
-    font-weight: 600;
+    font-weight: 700;
+    color: #07294d;
 }
 .entry__meta-item a {
     display: inline;
@@ -10955,7 +10956,6 @@ footer li:first-child {
     position: relative!important;
 }
 .lte-page-header {
-    background-image: url(//sunlux.like-themes.com/wp-content/uploads/2022/07/header_inner_02.jpg) !important;
     text-align: center;
     margin: 0;
     display: flex;
@@ -10971,6 +10971,21 @@ footer li:first-child {
     background-attachment: fixed !important;
     transition: background 0s !important;
     background-size: 100%;
+}
+.lte-page-header.header-about {
+    background-image: url('../img/about-bg.png') !important;
+}
+.lte-page-header.header-investment {
+    background-image: url('../img/investment-bg.jpeg') !important;
+}
+.lte-page-header.header-global {
+    background-image: url('../system/mapp.jpg') !important;
+}
+.lte-page-header.header-insight {
+    background-image: url('../img/insight-bg.jpeg') !important;
+}
+.lte-page-header.header-contact {
+    background-image: url('../img/contact-bg.jpeg') !important;
 }
 .lte-page-header:before {
     height: 100%;
@@ -11447,4 +11462,143 @@ a.h3.post-title {
     .homeIndustry-txt {
         margin-top: -20px;
     }
+}
+.blog-item {
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.blog-item .content {
+    padding: 2rem 1rem;
+}
+.blog-item .content .date {
+    color: #666;
+    font-size: 16px;
+    padding: 0 0 10px;
+}
+.blog-item .content .main-heading {
+    display: inline-block;
+    color: #07294d;
+}
+.blog-item .content p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+    height: 48px;
+    overflow: hidden;
+}
+.blog-item .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: all .2s linear;
+}
+.blog-item .image img:hover {
+    transform: scale(1.2);
+}
+.blog-item .image {
+    border-radius: 1rem;
+    /* height: 30rem; */
+    overflow: hidden;
+}
+.blog-item:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+}
+.contact {
+    padding: 4rem 0;
+}
+.contact>.box-container {
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 5%;
+    overflow: hidden;
+}
+.contact-info {
+    background: linear-gradient(rgba(41,52,98,.8),rgba(41,52,98,.8)),url(/site/img/contact-bg.png);
+    background-position: 50%;
+    background-size: cover;
+    flex: 1 1 42rem;
+    padding: 2rem;
+}
+.contact h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.contact-info .info-item {
+    display: flex;
+    padding: 1rem 0;
+    width: 100%;
+}
+.contact-info .info-item .icon-item {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    width: 4rem;
+}
+.contact-info .info-item .icon {
+    color: #293462;
+    font-size: 1.6rem;
+}
+.contact-info .info-item .content {
+    padding-left: 1rem;
+}
+.contact-info .info-item .content h4 {
+    color: #f24c4c;
+}
+.contact-info .info-item .content p {
+    color: #fff;
+    line-height: 1.6;
+    text-transform: none;
+    margin: 0;
+}
+.contact-form {
+    background-color: #fff;
+    border-radius: 1rem;
+    flex: 1 1 42rem;
+    padding: 2rem;
+}
+
+.contact-form .box {
+    border-bottom: 0.1rem solid #0F4C81;
+    border-width: 0 0 1px 0;
+    color: #6c757d;
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+    padding: 1.5rem 0.5rem;
+    text-transform: none;
+    width: 100%;
+}
+.contact .msg-alert {
+    align-items: center;
+    display: flex;
+    margin-top: 1rem;
+}
+.contact-form button {
+    margin-top: 1rem;
+}
+.contact-info ol {
+    padding: 0 0 0 15px;
+    margin: 0;
+}
+.uk-section-hero .uk-cover-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    height: 100vh;
+}
+.owl-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    width: 100%;
 }

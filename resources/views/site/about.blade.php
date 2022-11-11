@@ -4,15 +4,11 @@
 
 @endsection
 @section('css')
-    {{-- <link href="/css/custom-template.css" rel="stylesheet">
-    <link href="/css/solar-skin.css" rel="stylesheet">
-    <link href="/css/css-2.css" rel="stylesheet">
-    <link href="/css/css-3.css" rel="stylesheet"> --}}
     <link href="/site/css/about/custom.css" rel="stylesheet">
 @endsection
 @section('content')
     <section id="sozo-main" style="display: grid">
-        <header class="lte-page-header lte-parallax-yes">
+        <header class="lte-page-header lte-parallax-yes header-about">
             <div class="container">
                 <div class="lte-header-h1-wrapper">
                     <h1 class="header">About Us</h1>
@@ -20,7 +16,7 @@
                 <ul class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
                     <li class="home">
                         <span property="itemListElement" typeof="ListItem">
-                            <a property="item" typeof="WebPage" title="Go to Home." href="http://sunlux.like-themes.com" class="home">
+                            <a property="item" typeof="WebPage" title="Go to Home." href="#" class="home">
                                 <span property="name">Home</span>
                             </a>
                             <meta property="position" content="1">

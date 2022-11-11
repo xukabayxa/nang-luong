@@ -21,5 +21,6 @@ return [
     'terms_of_use_footer' => 'TERMS OF USE',
     'cookie_policy_footer' => 'COOKIE POLICY',
     'sitemap_footer' => 'SITEMAP',
+    'home_page' => 'Home',
 
 ];

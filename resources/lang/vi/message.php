@@ -21,4 +21,5 @@ return [
     'terms_of_use_footer' => 'ĐIỀU KHOẢN SỬ DỤNG',
     'cookie_policy_footer' => 'CHÍNH SÁCH COOKIE',
     'sitemap_footer' => 'SITEMAP',
+    'home_page' => 'Trang chủ',
 ];

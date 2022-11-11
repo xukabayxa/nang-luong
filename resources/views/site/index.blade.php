@@ -10,10 +10,16 @@
 <section id="sozo-main">
     <div class="uk-position-relative uk-background-image uk-light uk-height-viewport uk-flex uk-flex-middle uk-section-hero ">
         {{--style banner slick--}}
+        <div class="uk-cover-container">
+            <video uk-cover="" loop="" muted="" playsinline="" uk-video="autoplay: inview" class="uk-cover" preload="none" style="height: 850px; width: 1512px;">
+                <source src="https://www.agpgroup.com/app/uploads/2021/06/agp-homepage-video-v2-optim-1.mp4" type="video/mp4">
+            </video>
+            <canvas width="100%" height="100vh"></canvas>
+        </div>
         <div class="owl-carousel owl-theme slider-fade cardcontainer">
             @if($banners->count())
                 @foreach($banners as $banner)
-                    <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55" data-background="{{$banner->image->path ?? ''}}" style="background-image: url({{$banner->image->path ?? ''}});">
+                    <div class="item bg-img cover-background theme-overlay-dark-blue" data-overlay-dark="55">
                         <div class="container h-100">
                             <div class="d-table w-100 h-100">
                                 <div class="d-table-cell align-middle">

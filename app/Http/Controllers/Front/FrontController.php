@@ -41,6 +41,8 @@ use App\Model\Admin\Config;
 use DB;
 use Mail;
 use SluggableScopeHelpers;
+use Image;
+use URL;
 
 class FrontController extends Controller
 {
@@ -51,6 +53,16 @@ class FrontController extends Controller
     public function __construct(CategoryService $categoryService)
     {
         $this->categoryService = $categoryService;
+    }
+
+    public function resizeImage()
+    {
+        foreach (Post::orderBy('created_at','desc')->get() as $post) {
+            $img = URL::to('/') .$post->image->path;
+            Image::make($img)->resize(800, 600)->save();
+            echo 'Thành công: ' . $post->image->path;
+            echo "<br>";
+        }
     }
 
     /**

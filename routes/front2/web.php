@@ -1,6 +1,7 @@
 <?php
 
 Route::group(['namespace' => 'Front', 'middleware' => 'locale'], function () {
+    Route::get('/resize-img', 'FrontController@resizeImage');
     Route::get('/gio-hang','CartController@index')->name('cart');
     Route::post('/{productId}/add-product-to-cart','CartController@addItem')->name('cart.add.item');
     Route::get('/remove-product-to-cart','CartController@removeItem')->name('cart.remove.item');
