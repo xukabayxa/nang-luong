@@ -10987,6 +10987,13 @@ footer li:first-child {
 .lte-page-header.header-contact {
     background-image: url('../img/contact-bg.jpeg') !important;
 }
+.lte-page-header.header-ourteam {
+    background-image: url('../img/ourteam-bg.jpeg') !important;
+}
+.lte-page-header.header-partner {
+    background-image: url('../img/partner-bg.jpeg') !important;
+}
+
 .lte-page-header:before {
     height: 100%;
     width: 100%;

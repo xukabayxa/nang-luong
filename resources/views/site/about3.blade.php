@@ -12,7 +12,7 @@
     </div>
 
     <section id="sozo-main" style="display: grid">
-        <header class="lte-page-header lte-parallax-yes">
+        <header class="lte-page-header lte-parallax-yes header-ourteam">
             <div class="container">
                 <div class="lte-header-h1-wrapper">
                     <h1 class="header">About Us</h1>
@@ -28,7 +28,7 @@
                     </li>
                     <li class="post post-page current-item">
                         <span property="itemListElement" typeof="ListItem">
-                            <span property="name">About Us</span>
+                            <span property="name">Our Team</span>
                             <meta property="position" content="2">
                         </span>
                     </li>
