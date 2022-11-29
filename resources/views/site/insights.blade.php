@@ -14,13 +14,13 @@
 
         </div>
     </header>
-    
+
     <section id="sozo-main" ng-controller="Insights" ng-cloak >
              @if($posts->isNotEmpty())
                     <div class="container" style="margin-top: 70px">
                         <div class="row">
-                        @foreach($posts as $p_s2)
-                        <div class="blog-item col-lg-4 col-md-3 col-sm-12 wow rollIn" data-wow-delay="220ms" style="visibility: visible; animation-delay: 200ms; animation-name: rollIn;">
+                        @foreach($posts as $key => $p_s2)
+                        <div class="blog-item col-lg-4 col-md-3 col-sm-12 wow zoomIn" data-wow-duration="0.5s" data-wow-delay="{{ $key/2 }}s" >
                             <div class="image">
                                 <a href="{{route('front.post', $p_s2->slug)}}">
                                     <img src="{{$p_s2->image->path ?? ''}}" alt="Blog">

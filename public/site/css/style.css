@@ -11048,7 +11048,7 @@ footer li:first-child {
 }
 @media (max-width: 1599px) {
     .lte-page-header h1 {
-        font-size: 48px;
+        font-size: 62px;
     }
 }
 .lte-page-header .breadcrumbs {
@@ -11059,7 +11059,7 @@ footer li:first-child {
 .lte-page-header .breadcrumbs li {
     display: inline-block;
     margin: 0;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 26px;
     color: #fff;
@@ -11334,7 +11334,7 @@ ul li {
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     color: #07294d;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 1.3px;
     padding-bottom: 3px;
     border-bottom: 2px solid transparent;
@@ -11557,7 +11557,7 @@ a.h3.post-title {
     padding-left: 1rem;
 }
 .contact-info .info-item .content h4 {
-    color: #f24c4c;
+    color: #1cbfaa;
 }
 .contact-info .info-item .content p {
     color: #fff;
@@ -11576,7 +11576,7 @@ a.h3.post-title {
     border-bottom: 0.1rem solid #0F4C81;
     border-width: 0 0 1px 0;
     color: #6c757d;
-    font-size: 1.6rem;
+    font-size: 1.375em;
     margin: 0.5rem 0;
     padding: 1.5rem 0.5rem;
     text-transform: none;

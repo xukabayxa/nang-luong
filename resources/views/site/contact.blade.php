@@ -28,7 +28,7 @@
                             </div>
                             <div class="content">
                                 <h4>Hotline</h4><ol>
-                                    <p>Ha noi: +8494 866 8889</p>
+                                    <p>Ha noi (Head Office): +8494 866 8889</p>
                                     <p>HCM: +8494 866 8889</p>
                                 </ol>
                             </div>
@@ -72,7 +72,7 @@
                                 <div class="content">
                                     <h4>Address</h4>
                                     <ol>
-                                        <p>Ha noi head office: IDMC Building, No. 21 Duy Tan street, Cau Giay, Hanoi
+                                        <p>Ha noi (Head Office): IDMC Building, No. 21 Duy Tan street, Cau Giay, Hanoi
                                         </p>
                                         <p>Ho Chi Minh City: 146 Nguyen Van Huong, F18, Thao Dien, District 2, Ho Chi Minh City
                                         </p>
@@ -83,10 +83,10 @@
                     </div>
                     <form method="post" class="contact-form" id="contactUs-Form">
                         <h3>Send message</h3>
-                        <input type="text" name="name" class="box" id="name" placeholder="name" required="" value="">
-                        <input type="email" name="email" class="box" id="email" placeholder="email" required="" value="">
-                        <input type="text" name="subject" class="box" id="subject" placeholder="subject" value="">
-                        <textarea cols="30" rows="3" name="comment" id="comment" class="box" placeholder="message"></textarea>
+                        <input type="text" name="name" class="box" id="name" placeholder="Name" required="" value="">
+                        <input type="email" name="email" class="box" id="email" placeholder="Email" required="" value="">
+                        <input type="text" name="subject" class="box" id="subject" placeholder="Subject" value="">
+                        <textarea cols="30" rows="3" name="comment" id="comment" class="box" placeholder="Message"></textarea>
                         <div class="msg-alert">
                             <a href="#" type="submit" class="btn-style2 uk-animation-slide-bottom">Send message</a>
                         </div>

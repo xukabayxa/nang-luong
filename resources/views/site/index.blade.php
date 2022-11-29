@@ -32,7 +32,7 @@
                                             </p>
                                             <span class="card-border position-relative"></span>
                                             <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT - Năng Lượng Cho Tương Lai' : 'RT Producer of Wind Energy'}}</h1>
-                                            <a href="#" class="btn-style2 uk-animation-slide-bottom">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'Read more'}}</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@
                                         <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
                                         <span class="card-border position-relative"></span>
                                         <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
-                                        <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@
                                         <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
                                         <span class="card-border position-relative"></span>
                                         <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT - Năng Lượng Cho Tương Lai' : 'RT Producer of Wind Energy'}}</h1>
-                                        <a href="#" class="btn-style2 uk-animation-slide-bottom">{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'Read more'}}</a>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@
                                         </p>
                                         <span class="card-border position-relative"></span>
                                         <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE</h1>
-                                        <a href="#" class="btn-style2 uk-animation-slide-bottom">Read more</a>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -154,10 +154,10 @@
     </section>
     <section class="linh_vuc wow bounce" data-wow-delay="150ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadbounceeIn;">
         <div class="container">
-            <div class="sec-title text-center wow rollIn" data-wow-delay="220ms" style="visibility: visible; animation-delay: 200ms; animation-name: rollIn;">
+            <div class="sec-title text-center">
                 <span>{{App::isLocale('vi') ? 'Đầu tư kinh doanh' : 'Business investment'}}</span>
                 <h2 class="h1 mb-0 z-index-2 position-relative">
-                    {{App::isLocale('vi') ? 'Lĩnh vực kinh doanh của RT Energy Group' : 'Business investment of RT Energy Group'}}
+                    {{App::isLocale('vi') ? 'Lĩnh Vực Kinh Doanh của RT Energy Group' : 'Business Investment Of RT Energy Group'}}
                 </h2>
             </div>
             <div class="greenenergy_empty_space" data-heightmobile="10px" data-heighttablet="0" data-heightdesktop="0" style="height: 0px;"></div>
@@ -253,55 +253,7 @@
             </div>
         </div>
     </section>
-    <section class="posts-index wow fadeIn" data-wow-delay="150ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
-        <div class="container">
-            <div class="sec-title text-center wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
-                <span>{{App::isLocale('vi') ? 'Bài viết' : 'Blogs'}}</span>
-                <h2 class="h1 mb-0 z-index-2 position-relative">{{App::isLocale('vi') ? 'Tin Nổi Bật' : 'Lastest News From RTENERGY'}}</h2>
-            </div>
-            <div class="greenenergy_empty_space" data-heightmobile="10px" data-heighttablet="0" data-heightdesktop="0" style="height: 0px;"></div>
-            <div class="row">
-                @foreach($news as $post)
-                    <div class="post-item-index col-md-4 col-sm-12">
-                        <article class="post-item-info" itemscope="itemscope" itemtype="https://schema.org/Article">
-                            <figure >
-                                <a href="" title="">
-                                    <img  src="{{$post->image->path ?? ''}}" class="post-index-img" alt="" >
-                                </a>
-                            </figure>
-                            <div class="entry__body">
-                                <div class="entry__header">
-                                    <div class="entry__header-content">
-                                        <div class="entry__meta">
-                                            <span class="entry__meta-item entry__meta-date">
-                                                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M12.675 15h-9.35c-.925 0-1.675-.75-1.675-1.675V4c0-.925.75-1.675 1.675-1.675h9.325c.925 0 1.675.75 1.675 1.675v9.325c0 .925-.75 1.675-1.65 1.675zM3.325 3c-.55 0-1 .45-1 1v9.325c0 .55.45 1 1 1h9.325c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1H3.325z" fill="currentColor"></path>
-                                                    <path d="M10.675 4.325A.33.33 0 0110.35 4V1.325A.33.33 0 0110.675 1a.33.33 0 01.325.325V4a.33.33 0 01-.325.325zm-5.35 0A.33.33 0 015 4V1.325A.33.33 0 015.325 1a.33.33 0 01.325.325V4c.025.175-.125.325-.325.325zM14 7H2a.33.33 0 01-.325-.325A.33.33 0 012 6.35h12a.33.33 0 01.325.325A.33.33 0 0114 7z" fill="currentColor"></path>
-                                                </svg>
-                                                <time class="entry-date published" datetime="2021-09-13T11:29:02+00:00">{{$post->created_at->format('d-m-Y H:i')}}</time>
-                                            <div class="entry__meta-item entry__category">
-                                                <a href="#" class="entry__category-item">Insights</a>
-                                            </div>
-                                        </div>
-
-                                        <h2 class="entry__title ">
-                                            <a href="{{route('front.post', $post->slug)}}">{{$post->name}}</a>
-                                        </h2>
-                                        <span class="entry__meta-item entry__meta-author">
-                                            <a class="entry__meta-author-url" rel="author" href="#">
-                                                <span>by</span>
-                                                <span itemprop="author" itemscope="" itemtype="http://schema.org/Person" class="entry__meta-author-name">{{$post->user_create->name}}</span>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
+   
     <section class="partner wow fadeIn" data-wow-delay="150ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
         <div class="container">
             <section class="customer-logos slider">

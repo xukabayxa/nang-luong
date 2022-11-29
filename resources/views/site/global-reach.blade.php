@@ -131,7 +131,7 @@
               <div class="item">
                 <div class="cc-container">
                     <div class="c-name uk-text-8">
-                        @if(App::isLocale('vi')) Việt Nam @else VietNam @endif
+                        @if(App::isLocale('vi')) Việt Nam @else Viet Nam @endif
                     </div>
 
                     <div class="note">
