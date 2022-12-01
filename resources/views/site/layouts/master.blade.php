@@ -91,6 +91,12 @@
                 $(".choise-lang").toggle()
 
             });
+
+            $(".lang-mobi").on("click", function () {
+
+                $(".choise-lang").toggle()
+
+            });
         </script>
         <script>
             $(document).ready(function () {

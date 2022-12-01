@@ -66,7 +66,7 @@
                     <a class="uk-m5 a-menu-top" href="{{route('front.investments1')}}">
                        @if(App::getLocale() == 'vi') Danh mục đầu tư @else Our Investments @endif</a>
                 </li>
-                
+
                 <li class="menu-item-3">
                     <a class="uk-visible@m uk-m3 a-menu-top" href="{{route('front.globalReach')}}">
                         {{trans('message.our_global_presence_menu')}} </a>
@@ -96,8 +96,6 @@
                 </li>
             </ul>
 
-            
-
             <div class="lang">
                 <div class="lang_box">
                     <div class="select-lang">
@@ -115,46 +113,76 @@
                         @endif
 
                     </div>
-                                        <div class="choise-lang">
-                                            <a href="{{route('front.change-language', 'vi')}}"
-                                               class="{{config('app.locale') == 'vi' ? 'selected' : '' }} enabled">
-                                                <img
-                                                    src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png">
-                                            </a>
-                                            <a href="{{route('front.change-language', 'en')}}"
-                                               class="{{config('app.locale') == 'en' ? 'selected' : '' }} enabled">
-                                                <img
-                                                    src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"
+                    <div class="choise-lang">
+                        <a href="{{route('front.change-language', 'vi')}}"
+                           class="{{config('app.locale') == 'vi' ? 'selected' : '' }} enabled">
+                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png">
+                        </a>
+                        <a href="{{route('front.change-language', 'en')}}"
+                           class="{{config('app.locale') == 'en' ? 'selected' : '' }} enabled">
+                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"
                                                     align="absmiddle">
-                                            </a>
-                                        </div>
+                        </a>
+                    </div>
 
                 </div>
             </div>
 
+            <div class="lang-mobi">
+                <div class="lang_box">
+                    <div class="select-lang">
+                        <!-- <span id="edit-lang-dropdown-select_arrow" class="arrow">
+                            <i class="fa fa-angle-down"></i>
+                        </span> -->
+                        @if(config('app.locale') == 'vi')
+                            <span class="ddTitleText" id="edit-lang-dropdown-select_titletext">
+                            <img
+                                src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png"></span>
+                        @else
+                            <span class="ddTitleText" id="edit-lang-dropdown-select_titletext">
+                            <img
+                                src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"></span>
+                        @endif
 
-            <div class="flex-col hide-for-medium flex-right">
-                <ul class="header-nav header-nav-main nav nav-right  nav-line-bottom nav-uppercase">
-                    <li class="html custom html_topbar_left">
-                        <div class="wpml-ls-statics-footer wpml-ls wpml-ls-legacy-list-horizontal">
-                            <ul>
-                                <li class="wpml-ls-slot-footer wpml-ls-item wpml-ls-item-vi wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">
-                                    <a href="{{route('front.change-language', 'vi')}}" class="wpml-ls-link">
-                                        <img class="wpml-ls-flag"
-                                             src="https://nadota.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/vi.png"
-                                             alt="" width="18" height="12"></a>
-                                </li>
-                                <li class="wpml-ls-slot-footer wpml-ls-item wpml-ls-item-en wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
-                                    <a href="{{route('front.change-language', 'en')}}" class="wpml-ls-link">
-                                        <img class="wpml-ls-flag"
-                                             src="https://nadota.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"
-                                             alt="" width="18" height="12"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                    <div class="choise-lang">
+                        <a href="{{route('front.change-language', 'vi')}}"
+                           class="{{config('app.locale') == 'vi' ? 'selected' : '' }} enabled">
+                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png">
+                        </a>
+                        <a href="{{route('front.change-language', 'en')}}"
+                           class="{{config('app.locale') == 'en' ? 'selected' : '' }} enabled">
+                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"
+                                 align="absmiddle">
+                        </a>
+                    </div>
+
+                </div>
             </div>
+
+{{--            <div class="flex-col hide-for-medium flex-right">--}}
+{{--                <ul class="header-nav header-nav-main nav nav-right  nav-line-bottom nav-uppercase">--}}
+{{--                    <li class="html custom html_topbar_left">--}}
+{{--                        <div class="wpml-ls-statics-footer wpml-ls wpml-ls-legacy-list-horizontal">--}}
+{{--                            --}}
+{{--                            <ul>--}}
+{{--                                <li class="wpml-ls-slot-footer wpml-ls-item wpml-ls-item-vi wpml-ls-current-language wpml-ls-first-item wpml-ls-item-legacy-list-horizontal">--}}
+{{--                                    <a href="{{route('front.change-language', 'vi')}}" class="wpml-ls-link">--}}
+{{--                                        <img class="wpml-ls-flag"--}}
+{{--                                             src="https://nadota.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/vi.png"--}}
+{{--                                             alt="" width="18" height="12"></a>--}}
+{{--                                </li>--}}
+{{--                                <li class="wpml-ls-slot-footer wpml-ls-item wpml-ls-item-en wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">--}}
+{{--                                    <a href="{{route('front.change-language', 'en')}}" class="wpml-ls-link">--}}
+{{--                                        <img class="wpml-ls-flag"--}}
+{{--                                             src="https://nadota.vn/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png"--}}
+{{--                                             alt="" width="18" height="12"></a>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </div>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </div>--}}
 
             <a href="#offcanvas" uk-toggle="" class="uk-hidden@m uk-hamburger uk-flex uk-flex-middle">
 {{--                <span class="uk-style-secondary-m">Menu</span>--}}
@@ -178,7 +206,7 @@
         <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-position-z-index-menu"
              uk-grid>
             {{--            phần menu about-us trổ xuống--}}
-            
+
             <div class="uk-text-left uk-mega-menu-item items-3">
                 <a href="{{route('front.about')}}" class="uk-animation-zoom">
                     <div class="uk-cover-container ">
@@ -508,13 +536,25 @@
         color: #fff;
     }
 
-    .{
-        font-weight: 0;
-    }
+    /*.{*/
+    /*    font-weight: 0;*/
+    /*}*/
 </style>
 <style>
-    @media only screen and (min-device-width: 768px){
-        .lang {
+    /*@media only screen and (min-device-width: 768px){*/
+    /*    .lang {*/
+    /*        display: none;*/
+    /*    }*/
+    /*}*/
+
+    @media only screen and (max-width: 768px) {
+        .lang-mobi {
+           display: block;
+        }
+    }
+
+    @media (min-width:1025px){
+        .lang-mobi {
             display: none;
         }
     }
