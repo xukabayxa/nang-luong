@@ -13,9 +13,12 @@
         <div class="uk-navbar-left">
             <div class="logo" style="margin: 0; font-size: 0;">
                 <a href="{{route('front.home_page')}}" title="RT ENERGY">
-                    <span class="uk-logo uk-icon uk-preserve">
-                            <img class="rt-acean" src="{{ asset('site/system/rt-en.png') }}" style="height: auto" alt="RT ENERGY VI">
-                    </span>
+                <span class="uk-logo uk-icon uk-preserve logo-white">
+                        <img class="rt-acean" src="{{ asset('site/system/rt-white.png') }}" style="height: auto" alt="RT ENERGY VI">
+                </span>
+                <span class="uk-logo uk-icon uk-preserve logo-blue">
+                    <img class="rt-acean" src="{{ asset('site/system/rt-en-1.png') }}" style="height: auto" alt="RT ENERGY VI">
+                </span>
                 </a>
             </div>
         </div>
@@ -675,7 +678,7 @@
     .lang_box {
         border-radius: 4px;
         height: 26px;
-        line-height: 35px;
+        line-height: 26px;
         background-color: transparent;
         cursor: pointer;
         border: 0px solid #592c7c;
@@ -698,7 +701,7 @@
         border: 1px solid #ccc;
         display: none;
         position: absolute;
-        width: 78px;
+        width: 46px;
         z-index: 9999;
     }
 
@@ -713,7 +716,7 @@
     }
 
     .choise-lang a img {
-        height: 20px;
+        height: 18px;
         padding: 0 2px 0 0;
         vertical-align: middle;
     }

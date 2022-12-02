@@ -11609,3 +11609,12 @@ a.h3.post-title {
     z-index: 3;
     width: 100%;
 }
+.uk-active .logo-white {
+    display: none;
+}
+.uk-active .logo-blue {
+    display: block !important;
+}
+.logo-blue {
+    display: none;
+}
