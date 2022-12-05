@@ -96,7 +96,7 @@ return [
     'password' => 'Mật khẩu không hợp lệ',
     'present' => 'The :attribute field must be present.',
     'regex' => 'Không hợp lệ',
-    'required' => 'Bắt buộc phải nhập',
+    'required' => 'The :attribute field must be required',
     'required_if' => 'Bắt buộc phải nhập',
     'required_unless' => 'Bắt buộc phải nhập',
     'required_with' => 'Bắt buộc phải nhập',

@@ -22,6 +22,7 @@ use App\Model\Admin\Tagable;
 use App\Model\Common\File;
 use App\Services\CategoryService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Jenssegers\Agent\Agent;
 use Vanthao03596\HCVN\Models\Province;
 use Yajra\DataTables\DataTables;
@@ -571,18 +572,20 @@ class FrontController extends Controller
         $rule = [
             'user_name' => 'required',
             'email' => 'required|email',
-            'phone_number' => 'required|regex:/^(0)[0-9]{9,11}$/',
             'content' => 'required',
         ];
 
-        $translate =
-            [
-                'user_name.required' => 'Vui lòng nhập họ tên',
-                'email.email' => 'Email không hợp lệ',
-                'phone_number.required' => 'Vui lòng nhập số điện thoại',
-                'phone_number.regex' => 'Số điện thoại không hợp lệ',
-                'content.required' => 'Vui lòng nhập nội dung liên hệ',
-            ];
+        $translate = [];
+
+        if(App::isLocale('vi')) {
+            $translate =
+                [
+                    'user_name.required' => 'Vui lòng nhập họ tên',
+                    'email.required' => 'Vui lòng nhập email',
+                    'email.email' => 'Email không hợp lệ',
+                    'content.required' => 'Vui lòng nhập tin nhắn',
+                ];
+        }
 
         $validate = Validator::make(
             $request->all(),
@@ -601,7 +604,6 @@ class FrontController extends Controller
         $contact = new Contact();
         $contact->user_name = $request->user_name;
         $contact->email = $request->email;
-        $contact->phone_number = $request->phone_number;
         $contact->content = $request->content;
         $contact->address = $request->address;
 

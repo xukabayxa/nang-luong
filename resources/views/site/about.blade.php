@@ -13,22 +13,8 @@
                 <div class="lte-header-h1-wrapper">
                     <h1 class="header">About Us</h1>
                 </div>
-                <ul class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">
-                    <li class="home">
-                        <span property="itemListElement" typeof="ListItem">
-                            <a property="item" typeof="WebPage" title="Go to Home." href="#" class="home">
-                                <span property="name">Home</span>
-                            </a>
-                            <meta property="position" content="1">
-                        </span>
-                    </li>
-                    <li class="post post-page current-item">
-                        <span property="itemListElement" typeof="ListItem">
-                            <span property="name">About Us</span>
-                            <meta property="position" content="2">
-                        </span>
-                    </li>
-                </ul>
+                @include('site.partials.bread_crumb2', ['vi' => 'Về chúng tôi', 'en' => 'About Us'])
+
             </div>
         </header>
         <section class="about-block-1 about-block">
@@ -55,7 +41,7 @@
                                 </p>
                             </div>
                             </div>
-                        </div>       
+                        </div>
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <div class="about-image-wrap">
@@ -92,7 +78,7 @@
                                         <div class="lte-inner">
                                             <i class="lte-icon-text">01</i>
                                             <span class="lte-icon-content">
-                                                <span class="lte-header font-weight-bold">Renewable energy and technology</span> 
+                                                <span class="lte-header font-weight-bold">Renewable energy and technology</span>
                                                 <span class="lte-descr">Enim pharetra, interdum aliquet augue non lobortis vitae. Dui, mauris egestas turpis egestas. At dictum metus nullam sit habitasse aliquam. A sagittis, phasellus eget in libero elementum egestas nascetur.</span>
                                             </span>
                                         </div>
@@ -117,9 +103,9 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>       
+                        </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>

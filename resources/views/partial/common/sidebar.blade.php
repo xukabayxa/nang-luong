@@ -147,6 +147,20 @@
                             <p>Danh mục lĩnh vực kinh doanh</p>
                         </a>
                     </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('regent.index') }}" class="nav-link {{ Request::routeIs('regent.index') ? 'active' : '' }}">
+                            <i class="far fas  fa-angle-right nav-icon"></i>
+                            <p>Danh mục nhân sự điều hành</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('contacts.index') }}" class="nav-link {{ Request::routeIs('contacts.index') ? 'active' : '' }}">
+                            <i class="far fas  fa-angle-right nav-icon"></i>
+                            <p>Danh sách tin nhắn liên hệ</p>
+                        </a>
+                    </li>
                 </ul>
             </li>
 

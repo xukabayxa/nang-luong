@@ -108,22 +108,22 @@
                         @if(config('app.locale') == 'vi')
                             <span class="ddTitleText" id="edit-lang-dropdown-select_titletext">
                             <img
-                                src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png"></span>
+                                src="/img/icons/vi.png"></span>
                         @else
                             <span class="ddTitleText" id="edit-lang-dropdown-select_titletext">
                             <img
-                                src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"></span>
+                                src="/img/icons/en.png"></span>
                         @endif
 
                     </div>
                     <div class="choise-lang">
                         <a href="{{route('front.change-language', 'vi')}}"
                            class="{{config('app.locale') == 'vi' ? 'selected' : '' }} enabled">
-                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png">
+                            <img src="/img/icons/vi.png">
                         </a>
                         <a href="{{route('front.change-language', 'en')}}"
                            class="{{config('app.locale') == 'en' ? 'selected' : '' }} enabled">
-                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"
+                            <img src="/img/icons/en.png"
                                                     align="absmiddle">
                         </a>
                     </div>
@@ -140,22 +140,22 @@
                         @if(config('app.locale') == 'vi')
                             <span class="ddTitleText" id="edit-lang-dropdown-select_titletext">
                             <img
-                                src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png"></span>
+                                src="/img/icons/vi.png"></span>
                         @else
                             <span class="ddTitleText" id="edit-lang-dropdown-select_titletext">
                             <img
-                                src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"></span>
+                                src="/img/icons/en.png"></span>
                         @endif
 
                     </div>
                     <div class="choise-lang">
                         <a href="{{route('front.change-language', 'vi')}}"
                            class="{{config('app.locale') == 'vi' ? 'selected' : '' }} enabled">
-                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/vi.png">
+                            <img src="/img/icons/vi.png">
                         </a>
                         <a href="{{route('front.change-language', 'en')}}"
                            class="{{config('app.locale') == 'en' ? 'selected' : '' }} enabled">
-                            <img src="https://tpb.vn/wps/contenthandler/dav/themelist/custom.portal.theme.TPBThemev1/custom/images/en.png"
+                            <img src="/img/icons/en.png"
                                  align="absmiddle">
                         </a>
                     </div>

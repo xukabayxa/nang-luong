@@ -6,14 +6,14 @@
     <div class="container">
         <div class="lte-header-h1-wrapper">
             <h1 class="header">{{App::isLocale('vi') ? 'Liên hệ' : 'Contact'}}</h1>
-        </div>  
+        </div>
 
     @include('site.partials.bread_crumb2', ['vi' => 'Liên hệ', 'en' => 'Contact'])
 
     </div>
 </header>
     <section id="sozo-main">
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" ng-controller="Contact">
         <div class="box-container">
             <div class="contact-info">
                 <h3 style="color: #fff">Contact info</h3>
@@ -81,17 +81,70 @@
                             </div>
                         </div>
                     </div>
-                    <form method="post" class="contact-form" id="contactUs-Form">
-                        <h3>Send message</h3>
-                        <input type="text" name="name" class="box" id="name" placeholder="Name" required="" value="">
-                        <input type="email" name="email" class="box" id="email" placeholder="Email" required="" value="">
-                        <input type="text" name="subject" class="box" id="subject" placeholder="Subject" value="">
-                        <textarea cols="30" rows="3" name="comment" id="comment" class="box" placeholder="Message"></textarea>
+                    <form class="contact-form" id="contactUs-Form">
+                        <h3>{{App::isLocale('vi') ? 'Gửi tin nhắn' : 'Send message'}}</h3>
+                        <input type="text" name="name" class="box" id="name" placeholder="{{App::isLocale('vi') ? 'Họ tên' : 'Name'}}" ng-model="contact.user_name" required="" value="">
+                        <span class="invalid-feedback d-block" role="alert" ng-if="errors && errors.user_name" >
+                            <strong><% errors.user_name[0] %></strong>
+                        </span>
+                        <input type="email" name="email" class="box" id="email" placeholder="Email" ng-model="contact.email" required="" value="">
+                        <span class="invalid-feedback d-block" role="alert" ng-if="errors && errors.email" >
+                            <strong><% errors.email[0] %></strong>
+                        </span>
+                        <input type="text" name="subject" class="box" id="subject" placeholder="{{App::isLocale('vi') ? 'Địa chỉ' : 'Address'}}" ng-model="contact.address" value="">
+                        <span class="invalid-feedback d-block" role="alert" ng-if="errors && errors.address" >
+                            <strong><% errors.address[0] %></strong>
+                        </span>
+                        <textarea cols="30" rows="3" name="comment" id="comment" class="box" placeholder="{{App::isLocale('vi') ? 'Tin nhắn' : 'Message'}}" ng-model="contact.content" ></textarea>
+                        <span class="invalid-feedback d-block" role="alert" ng-if="errors && errors.content" >
+                            <strong><% errors.content[0] %></strong>
+                        </span>
                         <div class="msg-alert">
-                            <a href="#" type="submit" class="btn-style2 uk-animation-slide-bottom">Send message</a>
+                            <button href="#" type="button" class="btn-style2 uk-animation-slide-bottom" ng-click="submit()">
+                                <span ng-if="!loading"> {{App::isLocale('vi') ? 'Gửi tin' : 'Send'}}</span>
+                                <i class="fa fa-spinner fa-spin" ng-if="loading"></i>
+                            </button>
                         </div>
                     </form>
                 </div>
-            </section>     
+            </section>
     </section>
 @endsection
+@push('scripts')
+    <script>
+        app.controller('Contact', function ($scope, $http) {
+            $scope.contact = {};
+            $scope.submit = function() {
+                var url = "{{route('send.contact')}}";
+                $scope.loading = true;
+                $.ajax({
+                    url: url,
+                    type: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': '{!! csrf_token() !!}'
+                    },
+                    data: $scope.contact,
+                    beforeSend: function() {
+                        $('.loading').show();
+                    },
+                    success: function(response) {
+                        if (response.success) {
+                            $scope.errors = null;
+                            $scope.sendSuccess = true;
+                            $scope.contact = null;
+                        } else {
+                            $scope.errors = response.errors;
+                        }
+                    },
+                    error: function(err) {
+                        console.log(err);
+                    },
+                    complete: function() {
+                        $scope.loading = false;
+                        $scope.$apply();
+                    }
+                });
+            }
+        })
+    </script>
+@endpush
