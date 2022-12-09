@@ -132,7 +132,7 @@
 
                                 {!! App::isLocale('vi') ? $blockOne->body : $blockOne->body_en !!}
 
-                            <div class="pt-2-3 border-top border-color-extra-light-gray d-sm-flex align-items-center">
+                            <div class="pt-2-3 border-top border-color-extra-light-gray d-sm-flex align-items-center contact-index">
                                 <a class="btn-style2 medium mr-4" href="#"><i class="fa-solid fa-angle-right mr-4"></i>{{App::isLocale('vi') ? 'Tìm hiểu thêm' : 'Read More'}} </a>
                                 <div class="d-flex align-items-center">
                                     <div class="flex-shrink-0">

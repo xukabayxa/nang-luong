@@ -10099,8 +10099,17 @@ img.Sirv {
     padding-top: 82px;
 }
 @media all and (max-width: 768px) {
+    .uk-active .logo-blue {
+        display: block !important;
+    }
+    .logo-blue {
+        display: block;
+    }
+    .logo-white {
+        display: none;
+    }
     #sozo-main {
-        padding-top: 105px;
+        padding-top: 50px;
     }
     .dt-sc-portfolio-sorting.type2 {
         padding: 0 !important;
@@ -11617,4 +11626,67 @@ a.h3.post-title {
 }
 .logo-blue {
     display: none;
+}
+@media all and (max-width: 768px) {
+    .uk-active .logo-blue {
+        display: block !important;
+    }
+    .logo-blue {
+        display: block;
+    }
+    .logo-white {
+        display: none;
+    }
+    #sozo-main {
+        padding-top: 50px;
+    }
+    .dt-sc-portfolio-sorting.type2 {
+        padding: 0 !important;
+    }
+    .dt-sc-portfolio-sorting.type2 a.active-sort:before {
+        border-bottom: 0 !important;
+    }
+    .read-area img {
+        height: auto !important;
+    }
+    section .about-5 {
+        padding: 15px 0;
+    }
+    .contact-index {
+        display: none;
+    }
+    .section.index-hot {
+        background-size: cover;
+    }
+    .lte-page-header {
+        background-size: cover;
+    }
+    .about-block {
+        padding: 15px;
+    }
+    .lte-heading .lte-heading-content .lte-header {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .teacher-details-content .teacher-name {
+        font-weight: 700;
+        font-size: 28px;
+        padding-bottom: 10px;
+        margin-top: 15px;
+    }
+    .teachers-row {
+        padding-bottom: 25px;
+    }
+    .projects-page-section ul.filter li a {
+        font-size: 18px;
+    }
+    .lte-page-header h1 {
+        font-size: 36px;
+    }
+    .lte-page-header .breadcrumbs li {
+        font-size: 18px;
+    }
+    .projects-page-section .project-box .project-post {
+        text-align: center;
+    }
 }
