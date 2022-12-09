@@ -340,18 +340,33 @@ h4.h4.nation-name {
       .addClass("current");
   })
     .owlCarousel({
-    items: 5,
-    dots: true,
-    nav: false,
-    navText: [
-      '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
-      '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
-    ],
-    smartSpeed: 200,
-    slideSpeed: 500,
-    slideBy: 5,
-    responsiveRefreshRate: 100
-  })
+      items: 5,
+      dots: true,
+      nav: false,
+      navText: [
+        '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
+        '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
+      ],
+      smartSpeed: 200,
+      slideSpeed: 500,
+      slideBy: 5,
+      responsiveRefreshRate: 100,
+      responsive:{
+        0:{
+            items:3,
+            nav:true
+        },
+        600:{
+            items:4,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+      }
+    })
     .on("changed.owl.carousel", syncPosition2);
 
   function syncPosition(el) {

@@ -19,103 +19,91 @@
         </header>
         <section class="projects-page-section">
 			<div class="container">
-				<ul class="filter">
-					<li><a href="#" data-filter="*" class="active">{{App::isLocale('vi') ? 'Tất Cả' : 'Show All'}}</a></li>
-                    @foreach($categories as $category)
-                        <li><a href="#" data-filter=".{{$category->slug}}" class="">{{App::isLocale('vi') ? $category->name : $category->en_name}}</a></li>
+                <div id="filters" class="button-group">
+                    <div class="iso-choose">
+                        <div class="button is-checked" data-filter="*">{{App::isLocale('vi') ? 'Tất Cả' : 'Show All'}}</div>
+                        @foreach($categories as $category)
+                        <div class="button" data-filter=".{{$category->slug}}">{{App::isLocale('vi') ? $category->name : $category->en_name}}</div>
                     @endforeach
-				</ul>
-				<div class="project-box iso-call col2" >
+                    </div>
+                </div>
+                <div class="grid">
                     @foreach($projects as $project)
                         @if(App::isLocale('vi'))
-                            <div class="project-post {{$project->category->slug}}">
-                                <img src="{{$project->image->path ?? ''}}" alt="">
-                                <div class="hover-box">
-                                    <h2><a href="#">{{$project->projectVi->title}}</a></h2>
-                                    <div class="pj-des">
-                                        {!! $project->projectVi->short_des !!}
-                                    </div>
+                        <div class="element-item post-transition metal project-iso {{$project->category->slug}}" data-category="{{$project->category->slug}}">
+                            <img src="{{$project->image->path ?? ''}}" alt="">
+                            <div class="hover-box">
+                                <h2><a href="#">{{$project->projectVi->title}}</a></h2>
+                                <div class="pj-des">
+                                    {!! $project->projectVi->short_des !!}
                                 </div>
                             </div>
+                        </div>
                         @else
-                            <div class="project-post {{$project->category->slug}}">
-                                <img src="{{$project->image->path ?? ''}}" alt="">
-                                <div class="hover-box">
-                                    <h2><a href="#">{{@$project->projectEn->title ?? ''}}</a></h2>
-                                    <div class="pj-des">
-                                        {!! @$project->projectEn->short_des ?? '' !!}
-                                    </div>
+                        <div class="element-item post-transition metal project-iso {{$project->category->slug}}" data-category="{{$project->category->slug}}">
+                            <img src="{{$project->image->path ?? ''}}" alt="">
+                            <div class="hover-box">
+                                <h2><a href="#">{{$project->projectEn->title}}</a></h2>
+                                <div class="pj-des">
+                                    {!! $project->projectEn->short_des !!}
                                 </div>
                             </div>
+                        </div>
                         @endif
-
                     @endforeach
-				</div>
-			</div>
-		</section>
-
+                </div>
+            </div>
+        </section>
     </section>
 @endsection
 @push('scripts')
-    <script type='text/javascript' src='/libs/isotope/jquery.isotope.min.js' ></script>
+    <script type='text/javascript' src='https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js' ></script>
     <script>
-        $(document).ready(function (e) {
-    "use strict";
-    var a = e(window),
-        t = e(".iso-call"),
-        s = e(".filter");
-    try {
-            t.trigger("resize"),
-            t.isotope({
-                filter: "*",
-                layoutMode: "masonry",
-                animationOptions: {
-                    duration: 750,
-                    easing: "linear"
-                }
-            })
-    } catch (i) {}
-    a.bind("resize", function () {
-        var e = s
-            .find("a.active")
-            .attr("data-filter");
-        try {
-            t.isotope({
-                filter: e,
-                animationOptions: {
-                    duration: 750,
-                    easing: "linear",
-                    queue: !1
-                }
-            })
-        } catch (a) {}
-        return !1
-    }),
-    s
-        .find("a")
-        .click(function () {
-            var a = e(this).attr("data-filter");
-            try {
-                t.isotope({
-                    filter: a,
-                    animationOptions: {
-                        duration: 750,
-                        easing: "linear",
-                        queue: !1
-                    }
-                })
-            } catch (s) {}
-            return !1
+        // init Isotope
+        var $grid = $('.grid').isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows',
+        getSortData: {
+            name: '.name',
+            symbol: '.symbol',
+            number: '.number parseInt',
+            category: '[data-category]',
+            weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+            }
+        }
         });
-    var r = e(".filter li a");
-    r.on("click", function () {
-        var a = e(this);
-        a.hasClass("active") || (r.removeClass("active"), a.addClass("active"))
-    });
-    try {
-        e.browserSelector(),
-        e("html").hasClass("chrome") && e.smoothScroll()
-    } catch (i) {}
-});
+
+        // filter functions
+        var filterFns = {
+        // show if number is greater than 50
+        numberGreaterThan50: function() {
+            var number = $(this).find('.number').text();
+            return parseInt( number, 10 ) > 50;
+        },
+        // show if name ends with -ium
+        ium: function() {
+            var name = $(this).find('.name').text();
+            return name.match( /ium$/ );
+        }
+        };
+
+        // bind filter button click
+        $('#filters').on( 'click', '.button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        // use filterFn if matches value
+        filterValue = filterFns[ filterValue ] || filterValue;
+        $grid.isotope({ filter: filterValue });
+        });
+
+        // change is-checked class on buttons
+        $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+            $buttonGroup.find('.is-checked').removeClass('is-checked');
+            $( this ).addClass('is-checked');
+        });
+        });
     </script>
 @endpush
