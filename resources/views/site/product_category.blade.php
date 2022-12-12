@@ -137,16 +137,6 @@
                                                             @endif
                                                         </div>
 
-                                                        <div class="product-rating">
-                                                            {{--                                                            <ul class="d-flex">--}}
-                                                            {{--                                                                <li><a href="#"><i class="icon-star"></i></a></li>--}}
-                                                            {{--                                                                <li><a href="#"><i class="icon-star"></i></a></li>--}}
-                                                            {{--                                                                <li><a href="#"><i class="icon-star"></i></a></li>--}}
-                                                            {{--                                                                <li><a href="#"><i class="icon-star"></i></a></li>--}}
-                                                            {{--                                                                <li class="bad-reting"><a href="#"><i class="icon-star"></i></a></li>--}}
-                                                            {{--                                                            </ul>--}}
-                                                        </div>
-
                                                         <p>{!! $product->short_des !!}</p>
                                                     </div>
                                                 </div>
