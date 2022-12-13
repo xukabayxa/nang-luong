@@ -132,7 +132,7 @@
         <div class="uk-offcanvas-logo uk-container uk-flex uk-flex-middle">
             <div class="uk-navbar-right uk-style-secondary-m uk-text-14">
 				<span class="uk-offcanvas-close uk-color-primary" uk-close>
-					<span class="uk-margin-small-right">CLOSE</span>
+					<span class="uk-margin-small-right">{{App::isLocale('vi') ? 'ĐÓNG' : 'CLOSE'}}</span>
 				</span>
             </div>
         </div>
@@ -156,13 +156,10 @@
                                         <a href="{{route('front.about')}}">{{trans('message.who_we_are')}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about2')}}">{{trans('message.what_we_do')}}</a>
-                                    </li>
-                                    <li>
                                         <a href="{{route('front.about3')}}">{{trans('message.our_team')}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about4')}}">{{trans('message.our_partner')}}</a>
+                                        <a href="{{route('front.about4')}}">{{trans('message.strategic_partnership')}}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -170,31 +167,37 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="uk-visible@m has-dropdown" href="#offcanvas-" uk-toggle>
-                        {{trans('message.our_investments_menu')}} <span class="uk-icon uk-preserve uk-margin-xsmall-left"
-                                              uk-icon="icon: arrow-down; ratio: 0.6"></span>
-                    </a>
+{{--                    <a class="uk-visible@m has-dropdown" href="#offcanvas-" uk-toggle>--}}
+{{--                        {{trans('message.our_investments_menu')}} <span class="uk-icon uk-preserve uk-margin-xsmall-left"--}}
+{{--                                              uk-icon="icon: arrow-down; ratio: 0.6"></span>--}}
+{{--                    </a>--}}
 
-                    <ul uk-accordion class="uk-hidden@m">
-                        <li>
-                            <a class="uk-accordion-title" href="#" style="color: #fff"> {{trans('message.our_investments_menu')}}<span
-                                    class="uk-icon uk-preserve uk-margin-xsmall-left"
-                                    uk-icon="icon: arrow-down; ratio: 0.6"></span></a>
-                            <div class="uk-accordion-content">
-                                <ul>
-                                    <li>
-                                        <a href="{{route('front.investments1')}}">{{trans('message.renewable_energy')}}</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{route('front.investments3')}}">{{trans('message.sustainable_infrastructure')}}</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{route('front.investments2')}}"> {{trans('message.future_solution')}}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+{{--                    <ul uk-accordion class="uk-hidden@m">--}}
+{{--                        <li>--}}
+{{--                            <a class="uk-accordion-title" href="#" style="color: #fff"> {{trans('message.our_investments_menu')}}<span--}}
+{{--                                    class="uk-icon uk-preserve uk-margin-xsmall-left"--}}
+{{--                                    uk-icon="icon: arrow-down; ratio: 0.6"></span></a>--}}
+{{--                            <div class="uk-accordion-content">--}}
+{{--                                <ul>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{route('front.investments1')}}">{{trans('message.renewable_energy')}}</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{route('front.investments3')}}">{{trans('message.sustainable_infrastructure')}}</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{route('front.investments2')}}"> {{trans('message.future_solution')}}</a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
+
+                    <a class="uk-visible@m " href="{{route('front.investments1')}}">
+                        {{trans('message.our_investments_menu')}} </a>
+
+                    <a class="uk-hidden@m" href="{{route('front.investments1')}}" style="color: #fff">
+                        {{trans('message.our_investments_menu')}} </a>
                 </li>
                 <li>
                     <a class="uk-visible@m " href="{{route('front.globalReach')}}">
@@ -230,7 +233,7 @@
             </div>
             <div class="uk-navbar-right uk-style-secondary-m">
 				<span class="uk-offcanvas-close uk-color-primary" uk-close>
-					<span class="uk-margin-small-right">CLOSE</span>
+					<span class="uk-margin-small-right">{{App::isLocale('vi') ? 'ĐÓNG' : 'CLOSE'}}</span>
 				</span>
             </div>
         </div>
@@ -321,7 +324,7 @@
             </div>
             <div class="uk-navbar-right uk-style-secondary-m">
 				<span class="uk-offcanvas-close uk-color-primary" uk-close>
-					<span class="uk-margin-small-right">CLOSE</span>
+					<span class="uk-margin-small-right">{{App::isLocale('vi') ? 'ĐÓNG' : 'CLOSE'}}</span>
 				</span>
             </div>
         </div>
