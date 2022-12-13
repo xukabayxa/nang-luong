@@ -70,30 +70,6 @@
                                         </svg>
                                     </div>
                                 </div>
-                                <style>
-                                    @media only screen and (max-width: 768px) {
-                                        .contact-info .info-item .icon-item-address {
-                                            align-items: center;
-                                            background-color: #fff;
-                                            border-radius: 50%;
-                                            display: flex;
-                                            height: 4rem;
-                                            justify-content: center;
-                                            width: 10rem;
-                                        }
-                                    }
-                                    @media (min-width:1025px){
-                                        .contact-info .info-item .icon-item-address {
-                                            align-items: center;
-                                            background-color: #fff;
-                                            border-radius: 50%;
-                                            display: flex;
-                                            height: 4rem;
-                                            justify-content: center;
-                                            width: 4rem;
-                                        }
-                                    }
-                                </style>
                                 <div class="content">
                                     <h4>Address</h4>
                                     <ol>
