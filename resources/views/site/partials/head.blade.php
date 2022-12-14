@@ -5,6 +5,7 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <link rel='preload' href='/site/js/script.js' as='script' />
 
+
     <title>FOR A SUSTAINABLE FUTURE</title>
     <link rel="icon" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png" sizes="32x32" />
     <link rel="icon" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-192x192.png" sizes="192x192" />
