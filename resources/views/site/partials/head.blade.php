@@ -5,6 +5,7 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <link rel='preload' href='/site/js/script.js' as='script' />
 
+
     <title>FOR A SUSTAINABLE FUTURE</title>
     <link rel="icon" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png" sizes="32x32" />
     <link rel="icon" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-192x192.png" sizes="192x192" />
@@ -34,7 +35,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     @yield('css')
-    <link rel='stylesheet' id='app-css' href='/site/css/style.css?v=291022.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='app-css' href='/site/css/style.css?v=121222.2' type='text/css' media='all' />
 
     <!-- Google Tag Manager -->
     <script>

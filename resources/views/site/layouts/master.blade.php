@@ -4,8 +4,7 @@
         @include('site.partials.meta-seo')
         @include('site.partials.head')
 
-        <script
-            type='text/javascript'
+        <script type='text/javascript'
             src='/site/js/jquery.min.js?ver=3.6.0'
             id='jquery-core-js'></script>
         @yield('css')

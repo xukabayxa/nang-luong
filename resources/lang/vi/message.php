@@ -11,6 +11,7 @@ return [
     'what_we_do' => 'LĨNH VỰC HOẠT ĐỘNG',
     'our_team' => 'BỘ MÁY QUẢN LÝ',
     'our_partner' => 'ĐỐI TÁC CHIẾN LƯỢC',
+    'strategic_partnership' => 'ĐỐI TÁC CHIẾN LƯỢC',
 
     'renewable_energy' => 'DỰ ÁN NĂNG LƯỢNG',
     'sustainable_infrastructure' => 'DỰ ÁN HẠ TẦNG "XANH"',

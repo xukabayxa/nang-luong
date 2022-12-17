@@ -11395,59 +11395,59 @@ ul li {
     border: none;
     cursor: pointer;
   }
-  
+
   .button:hover {
     /* color: #222; */
   }
-  
+
   .button:active,
   .button.is-checked {
     background-color: #fff;
     color: #1cbfaa !important;
   }
-  
+
   .button.is-checked {
     color: white;
   }
-  
+
   .button:active {
-   
+
   }
-  
+
   /* ---- button-group ---- */
-  
+
   .button-group {
     margin-bottom: 20px;
   }
-  
+
   .button-group:after {
     content: '';
     display: block;
     clear: both;
   }
-  
+
   .button-group .button {
     float: left;
     border-radius: 0;
     margin-left: 0;
     margin-right: 1px;
   }
-  
+
   /* ---- isotope ---- */
-  
+
   .grid {
-    
+
   }
-  
+
   /* clear fix */
   .grid:after {
     content: '';
     display: block;
     clear: both;
   }
-  
+
   /* ---- .element-item ---- */
-  
+
   .element-item {
     position: relative;
     float: left;
@@ -11466,10 +11466,10 @@ ul li {
     margin: 0;
     padding: 0;
   }
-  
+
   .element-item .name {
     position: absolute;
-  
+
     left: 10px;
     top: 60px;
     text-transform: none;
@@ -11477,7 +11477,7 @@ ul li {
     font-size: 12px;
     font-weight: normal;
   }
-  
+
   .element-item .symbol {
     position: absolute;
     left: 10px;
@@ -11486,13 +11486,13 @@ ul li {
     font-weight: bold;
     color: white;
   }
-  
+
   .element-item .number {
     position: absolute;
     right: 8px;
     top: 5px;
   }
-  
+
   .element-item .weight {
     position: absolute;
     left: 10px;
@@ -11804,7 +11804,7 @@ a.h3.post-title {
         text-align: center;
     }
     .project-iso .hover-box {
-        
+
     }
     .project-iso .hover-box .pj-des {
         color: #fff;
@@ -11824,7 +11824,7 @@ a.h3.post-title {
         width: 50%;
         margin-bottom: 15px;
     }
-    
+
 }
 @media all and (max-width: 600px) {
     .element-item {
@@ -11832,5 +11832,29 @@ a.h3.post-title {
     }
     .iso-choose {
         width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .contact-info .info-item .icon-item-address {
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        height: 4rem;
+        justify-content: center;
+        width: 10rem;
+    }
+}
+@media (min-width:1025px){
+    .contact-info .info-item .icon-item-address {
+        align-items: center;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        height: 4rem;
+        justify-content: center;
+        width: 4rem;
     }
 }

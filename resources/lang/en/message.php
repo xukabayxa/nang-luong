@@ -11,6 +11,7 @@ return [
     'what_we_do' => 'WHAT WE DO',
     'our_team' => 'OUR TEAM',
     'our_partner' => 'OUR PARTNER',
+    'strategic_partnership' => 'STRATEGIC PARTNERSHIP',
 
     'renewable_energy' => 'RENEWABLE ENERGY',
     'sustainable_infrastructure' => 'SUSTAINABLE & INFRASTRUCTURE',
