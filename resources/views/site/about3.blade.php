@@ -112,7 +112,7 @@
                                         hydro rộng khắp các quốc gia như Úc, Nhật, Ấn Độ và
                                         Philippines…
                                     @else
-                                    @endif
+                                    
                                     During nearly 20 years of working, Mr. Saumya Swain has held
                                     many important positions in business management at real
                                     estate and technology companies in Korea and many countries
@@ -123,6 +123,7 @@
                                     with more than 180 branches in the field of solar, wind and
                                     hydrogen power generation across countries such as
                                     Australia, Japan, India and the Philippines...
+                                    @endif
                                 </p>
                                 <ul class="teacher-contact">
                                     @if(App::isLocale('vi'))

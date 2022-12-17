@@ -27,12 +27,11 @@
                                 </a>
                             </div>
                             <div class="content">
-                                <div class="date">5th feb, 2022</div>
+                                <div class="date">{{ \Carbon\Carbon::parse($p_s2->created_at)->format('d/m/Y ') }}</div>
                                 <div class="category"></div><br>
                                 <h2 class="entry__title ">
                                     <a class="main-heading" href="{{route('front.post', $p_s2->slug)}}">{{$p_s2->name}}</a>
                                 </h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam possimus modi.</p>
                             </div>
                         </div>
                         @endforeach

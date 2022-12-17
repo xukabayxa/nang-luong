@@ -11,7 +11,7 @@
         <header class="lte-page-header lte-parallax-yes header-about">
             <div class="container">
                 <div class="lte-header-h1-wrapper">
-                    <h1 class="header">About Us</h1>
+                    <h1 class="header">@if(App::isLocale('en')) About Us @else Về chúng tôi @endif</h1>
                 </div>
                 @include('site.partials.bread_crumb2', ['vi' => 'Về chúng tôi', 'en' => 'About Us'])
 
@@ -24,9 +24,11 @@
                         <div class="about-text-wrap">
                             <div class="sec-title half">
                                 <span>Introduction</span>
-                                <h2 class="h1 mb-0 z-index-2 position-relative">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE</h2>
+                                <h2 class="h1 mb-0 z-index-2 position-relative">@if(App::isLocale('en')) SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE @else PHÁT TRIỂN NĂNG LƯỢNG BỀN VỮNG @endif
+                                </h2>
                             </div>
                             <div class="about-intro">
+                                @if(App::isLocale('en'))
                                 <p>Renewable energy and new energy are the future-oriented and indisputable trend of the energy industry in general. RT Energy ties its future to the promotion and development of renewable energy – towards a green, clean, and sustainable world for future generations.
                                 </p>
                                 <h5 style="margin-bottom: 15px"><b>Realizing that strategy, we aim at the following goal:</b></h5>
@@ -39,13 +41,28 @@
                                 </p>
                                 <p>Develop, invest in the construction and operation of green industrial zone projects – in which all electricity used for industrial production is renewable energy
                                 </p>
+                                @else
+                                <p>Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
+                                </p>
+                                <h5 style="margin-bottom: 15px"><b>Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:
+                                </b></h5>
+                                <div>
+                                <p>Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo
+                                </p>
+                                <p>Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025
+                                </p>
+                                <p>Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách
+                                </p>
+                                <p>Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.
+                                </p>
+                                @endif
                             </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12">
                         <div class="about-image-wrap">
-                            <img width="837" height="800" src="http://sunlux.like-themes.com/wp-content/uploads/2022/07/facts_01.png" class="attachment-large size-large" alt="" loading="lazy" srcset="http://sunlux.like-themes.com/wp-content/uploads/2022/07/facts_01.png 837w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/facts_01-300x287.png 300w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/facts_01-768x734.png 768w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/facts_01-100x96.png 100w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/facts_01-480x459.png 480w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/facts_01-600x573.png 600w" sizes="(max-width: 837px) 100vw, 837px">
+                            <img width="837" height="800" src="{{ asset('site/img/about1.png') }}" class="attachment-large size-large" alt="" loading="lazy" srcset="{{ asset('site/img/about1.png') }}" sizes="(max-width: 837px) 100vw, 837px">
                         </div>
                     </div>
                 </div>
@@ -56,7 +73,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
                         <div class="about-image-wrap">
-                            <img width="1024" height="1024" src="http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-1024x1024.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-1024x1024.jpg 1024w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-150x150.jpg 150w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-300x300.jpg 300w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-768x768.jpg 768w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-140x140.jpg 140w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-110x110.jpg 110w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-290x290.jpg 290w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-100x100.jpg 100w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-360x360.jpg 360w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-480x480.jpg 480w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1-600x600.jpg 600w, http://sunlux.like-themes.com/wp-content/uploads/2022/07/about_01-1.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px">
+                            <img width="1024" height="1024" src="{{ asset('site/img/facts_01.jpeg') }}" class="attachment-large size-large" alt="" loading="lazy" srcset="{{ asset('site/img/facts_01.jpeg') }}" sizes="(max-width: 1024px) 100vw, 1024px">
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12">
@@ -69,11 +86,13 @@
                             <div class="about-intro">
                                 <div class="lte-heading">
                                     <div class="lte-heading-content">
-                                        <h4 class="lte-header">RT Energy was built and developed with the orientation to become a pioneer in the field of renewable energy and green industrial parks in the ASEAN before 2025, and in the world before 2030.
+                                        <h4 class="lte-header">@if(App::isLocale('en')) RT Energy was built and developed with the orientation to become a pioneer in the field of renewable energy and green industrial parks in the ASEAN before 2025, and in the world before 2030.@else RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong
+                                            trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030' @endif
                                         </h4>
                                     </div>
                                 </div>
                                 <ul>
+                                    @if(App::isLocale('en'))
                                     <li class="col-xl-12 col-xs-12">
                                         <div class="lte-inner">
                                             <i class="lte-icon-text">01</i>
@@ -101,6 +120,35 @@
                                             </span>
                                         </div>
                                     </li>
+                                    @else
+                                    <li class="col-xl-12 col-xs-12">
+                                        <div class="lte-inner">
+                                            <i class="lte-icon-text">01</i>
+                                            <span class="lte-icon-content">
+                                                <span class="lte-header font-weight-bold">Năng lượng tái tạo</span>
+                                                <span class="lte-descr">Enim pharetra, interdum aliquet augue non lobortis vitae. Dui, mauris egestas turpis egestas. At dictum metus nullam sit habitasse aliquam. A sagittis, phasellus eget in libero elementum egestas nascetur.</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-12 col-xs-12">
+                                        <div class="lte-inner">
+                                            <i class="lte-icon-text">02</i>
+                                            <span class="lte-icon-content">
+                                                <span class="lte-header font-weight-bold"> Khu công nghiệp kết hợpç năng lượng tái tạo </span>
+                                                <span class="lte-descr">Adipiscing neque, amet scelerisque nulla. Morbi faucibus facilisis sed in risus. Interdum sed egestas bibendum bibendum aenean purus tempor nisi, sit. Habitasse cras arcu morbi porttitor sit eleifend augue sed in.</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-12 col-xs-12">
+                                        <div class="lte-inner">
+                                            <i class="lte-icon-text no-border">03</i>
+                                            <span class="lte-icon-content">
+                                                <span class="lte-header font-weight-bold">Năng lượng mới</span>
+                                                <span class="lte-descr">Scelerisque facilisis elementum orci accumsan. Ultrices elementum morbi nulla sed in vestibulum habitasse. Eu tellus diam quisque suscipit commodo. Turpis nunc molestie non euismod tempor.</span>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    @endif
                                 </ul>
                             </div>
                         </div>
