@@ -9,7 +9,7 @@
             id='jquery-core-js'></script>
         @yield('css')
     </head>
-    <body class="home page-template-default page preloading " ng-app="App">
+    <body class="home page-template-default page preloading @yield('page_class') " ng-app="App">
         @include('site.partials.svg')
         <div class="uk-offcanvas-content">
             <div uk-sticky="animation: uk-animation-slide-top;">

@@ -11846,6 +11846,14 @@ a.h3.post-title {
         justify-content: center;
         width: 10rem;
     }
+    .lte-page-header h1 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .news_detail #sozo-main {
+        padding-top: 0;
+    }
+    
 }
 @media (min-width:1025px){
     .contact-info .info-item .icon-item-address {
