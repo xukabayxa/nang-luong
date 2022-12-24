@@ -149,7 +149,7 @@
               </div>
               <div class="item">
                 <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Lào @else Laos @endif
+                    @if(App::isLocale('vi')) Singapore @else Singapore @endif
                 </div>
                 <div class="note">
                     Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
@@ -157,7 +157,7 @@
               </div>
               <div class="item">
                 <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Lào @else Laos @endif
+                    @if(App::isLocale('vi')) Philippines @else Philippines @endif
                 </div>
                 <div class="note">
                     Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
@@ -165,7 +165,7 @@
               </div>
               <div class="item">
                 <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Lào @else Laos @endif
+                    @if(App::isLocale('vi')) Indonesia @else Indonesia @endif
                 </div>
                 <div class="note">
                     Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
@@ -173,7 +173,7 @@
               </div>
               <div class="item">
                 <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Lào @else Laos @endif
+                    @if(App::isLocale('vi')) Hàn Quốc @else Korea @endif
                 </div>
                 <div class="note">
                     Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
@@ -181,7 +181,7 @@
               </div>
               <div class="item">
                 <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Lào @else Laos @endif
+                    @if(App::isLocale('vi')) Úc @else Australia @endif
                 </div>
                 <div class="note">
                     Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
@@ -189,7 +189,7 @@
               </div>
               <div class="item">
                 <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Lào @else Laos @endif
+                    @if(App::isLocale('vi')) Bangladesh @else Bangladesh @endif
                 </div>
                 <div class="note">
                     Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
