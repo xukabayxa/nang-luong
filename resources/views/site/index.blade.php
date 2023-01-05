@@ -24,15 +24,15 @@
                             <div class="d-table w-100 h-100">
                                 <div class="d-table-cell align-middle">
                                     <div class="row justify-content-center text-center position-relative">
-                                        <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative main-banner-area ">
+                                        <div class="col-md-10 col-lg-10 col-xl-10 z-index-3 position-relative main-banner-area ">
                                     <span class="banner-icon d-none d-lg-block">
                                         <i class="fa-solid fa-solar-panel"></i>
                                     </span>
-                                            <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE
+                                            <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">
                                             </p>
                                             <span class="card-border position-relative"></span>
-                                            <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT - Năng Lượng Cho Tương Lai' : 'RT Producer of Wind Energy'}}</h1>
-                                            
+                                            <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT Năng Lượng Cho Tương Lai' : 'RT Energy for future'}}</h1>
+
                                         </div>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@
                                         <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
                                         <span class="card-border position-relative"></span>
                                         <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">Evergreen Producer of Wind Energy</h1>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@
                                         <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">As a world innovator in energy stockpiling.</p>
                                         <span class="card-border position-relative"></span>
                                         <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT - Năng Lượng Cho Tương Lai' : 'RT Producer of Wind Energy'}}</h1>
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@
                                         </p>
                                         <span class="card-border position-relative"></span>
                                         <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE</h1>
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -253,7 +253,7 @@
             </div>
         </div>
     </section>
-   
+
     <section class="partner wow fadeIn" data-wow-delay="150ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
         <div class="container">
             <section class="customer-logos slider">

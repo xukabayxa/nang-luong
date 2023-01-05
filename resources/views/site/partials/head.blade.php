@@ -35,7 +35,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     @yield('css')
-    <link rel='stylesheet' id='app-css' href='/site/css/style.css?v=121222.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='app-css' href='/site/css/style.css?v=121222.3' type='text/css' media='all' />
 
     <!-- Google Tag Manager -->
     <script>

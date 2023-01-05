@@ -99,7 +99,7 @@
                             <div class="teacher-details-content mt-45">
                                 <h4 class="teacher-name">{{App::isLocale('vi') ? 'Ông Saumya Swain' : 'Mr. Saumya Swain'}}</h4>
                                 <span class="designation">{{App::isLocale('vi') ? 'Nhà đồng sáng lập và Chủ tịch RT Energy' : 'Co-Founder and Chairman of RT Energy'}}</span>
-                                <p>
+                                <p class="des-agent">
                                     @if(App::isLocale('vi'))
                                         Trong gần 20 năm làm việc, ông Saumya Swain đã đảm nhận nhiều
                                         vị trí quan trọng về quản lý kinh doanh tại các công ty về
@@ -112,7 +112,7 @@
                                         hydro rộng khắp các quốc gia như Úc, Nhật, Ấn Độ và
                                         Philippines…
                                     @else
-                                    
+
                                     During nearly 20 years of working, Mr. Saumya Swain has held
                                     many important positions in business management at real
                                     estate and technology companies in Korea and many countries
@@ -125,11 +125,11 @@
                                     Australia, Japan, India and the Philippines...
                                     @endif
                                 </p>
-                                <ul class="teacher-contact">
+                                <ul class="teacher-contact des-agent" >
                                     @if(App::isLocale('vi'))
-                                        <li>6/2020 đến nay: Sáng lập và điều hành RT Energy PTE LTD-Singapore</li>
-                                        <li>8/2019-5/2020: Cổ đông sáng lập, cố vấn cấp cao Indefol Solar</li>
-                                        <li>12/2012-12/2020: Giám đốc khu vực, Equis Energy</li>
+                                        <li><strong>6/2020 đến nay: Sáng lập và điều hành RT Energy PTE LTD-Singapore</strong></li>
+                                        <li><strong>8/2019-5/2020: Cổ đông sáng lập, cố vấn cấp cao Indefol Solar</strong></li>
+                                        <li><strong>12/2012-12/2020: Giám đốc khu vực, Equis Energy</strong></li>
                                     @else
                                         <li><strong>6/2020 to present: </strong> <span>Founding and operating RT Energy PTE LTD-Singapore</span></li>
                                         <li><strong>8/2019-5/2020: </strong> <span>Founding shareholder, senior advisor Indefol Solar</span></li>
@@ -162,7 +162,7 @@
                             <div class="teacher-details-content mt-45">
                                 <h4 class="teacher-name">{{App::isLocale('vi') ? 'Ông Tạ Anh Tuấn' : 'Mr. Ta Anh Tuan'}}</h4>
                                 <span class="designation">{{App::isLocale('vi') ? 'Tổng Giám đốc RT Energy' : 'General Director of RT Energy'}}</span>
-                                <p>
+                                <p class="des-agent">
                                     @if(App::isLocale('vi'))
                                         Tốt nghiệp Cao học Quản trị kinh doanh tại Trường kinh doanh
                                         Melbourne – trường đại học số 1 Châu Úc, ông Tạ Anh Tuấn đã
@@ -191,25 +191,25 @@
                                         region and around the world.
                                     @endif
                                 </p>
-                                <ul class="teacher-contact">
+                                <ul class="teacher-contact des-agent">
                                     @if(App::isLocale('vi'))
-                                        <li>Từ cuối năm 2021 đến nay: Tổng giám đốc, Adani Solar và
+                                        <li><strong>Từ cuối năm 2021 đến nay: Tổng giám đốc, Adani Solar và
                                             Adani Wind Power Co.,Ltd
-                                        </li>
-                                        <li>1/2020 đến nay: Tổng Giám đốc, đồng sáng lập RT Energy
-                                        </li>
-                                        <li>9/2018: Cố vấn trưởng phát triển năng lượng tái tại Tập
+                                                </strong></li>
+                                        <li><strong>1/2020 đến nay: Tổng Giám đốc, đồng sáng lập RT Energy
+                                                </strong> </li>
+                                        <li><strong>9/2018: Cố vấn trưởng phát triển năng lượng tái tại Tập
                                             đoàn thép Đại Dũng
-                                        </li>
-                                        <li>4/2015: Chủ tịch kiêm Tổng Giám đốc Công ty TNHH Đầu tư
+                                                </strong></li>
+                                        <li><strong>4/2015: Chủ tịch kiêm Tổng Giám đốc Công ty TNHH Đầu tư
                                             và phát triển Clavie
-                                        </li>
-                                        <li>10/2011-3/2013: Giám đốc đại lý miền Bắc Công ty TNHH
+                                                </strong></li>
+                                        <li><strong>10/2011-3/2013: Giám đốc đại lý miền Bắc Công ty TNHH
                                             Honda Việt Nam
-                                        </li>
-                                        <li>9/2010-9/2011: Giám đốc Nhà phân phối Công ty TNHH
+                                                </strong></li>
+                                        <li><strong>9/2010-9/2011: Giám đốc Nhà phân phối Công ty TNHH
                                             Unilever Việt Nam
-                                        </li>
+                                                </strong> </li>
                                     @else
                                         <li><strong>From the end of 2021 to present:</strong> <span>General Director, Adani Solar and Adani Wind Power Co.,Ltd</span></li>
                                         <li><strong>January 2020 to present: </strong> <span>CEO, co-founder of RT Energy</span></li>
@@ -245,7 +245,7 @@
                             <div class="teacher-details-content mt-45">
                                 <h4 class="teacher-name">{{App::isLocale('vi') ? 'Nguyễn Đức Dũng' : 'Mr. NGUYEN DUC DUNG'}}</h4>
                                 <span class="designation">{{App::isLocale('vi') ? 'Phó Tổng giám đốc RT Energy' : 'Deputy General Director of RT Energy'}}</span>
-                                <p>
+                                <p class="des-agent">
                                     @if(App::isLocale('vi'))
                                         Ông Nguyễn Đức Dũng là doanh nhân dày dặn kinh nghiệm trong
                                         lĩnh vực tài chính và giáo dục, từng tham gia đầu tư, quản
@@ -289,28 +289,28 @@
                                     @endif
 
                                 </p>
-                                <ul class="teacher-contact">
+                                <ul class="teacher-contact des-agent">
                                     @if(App::isLocale('vi'))
-                                        <li>1/2020 đến nay: Phó Tổng giám đốc RT Energy
-                                        </li>
-                                        <li>1/2019 đến nay: Tổng giám đốc, Đồng sáng lập Novus
+                                        <li><strong>1/2020 đến nay: Phó Tổng giám đốc RT Energy
+                                                </strong> </li>
+                                        <li><strong>1/2019 đến nay: Tổng giám đốc, Đồng sáng lập Novus
                                             Imperium Corporation
-                                        </li>
-                                        <li>09/2014-12/2020: Giám đốc Tài chính và Tiếp thị Công ty
+                                                </strong></li>
+                                        <li><strong>09/2014-12/2020: Giám đốc Tài chính và Tiếp thị Công ty
                                             Cổ phần Dược phẩm Hà Nội
-                                        </li>
-                                        <li>09/2014 đến nay: Giảng viên cao cấp Khoa Kinh doanh Quốc
+                                                </strong> </li>
+                                        <li><strong>09/2014 đến nay: Giảng viên cao cấp Khoa Kinh doanh Quốc
                                             tế - Học viện Ngân hàng – Ngân hàng Nhà nước Việt Nam
-                                        </li>
-                                        <li>09/2011 đến nay: Đồng sáng lập CGD Victory Education
+                                                </strong></li>
+                                        <li><strong>09/2011 đến nay: Đồng sáng lập CGD Victory Education
                                             Group
 
+                                                </strong> </li>
+                                        <li> <strong>11/2011-09/2014: Quản lý Đầu tư kinh doanh Lãi suất và
+                                                </strong> Forex
                                         </li>
-                                        <li> 11/2011-09/2014: Quản lý Đầu tư kinh doanh Lãi suất và
-                                            Forex
-                                        </li>
-                                        <li>2010-11/2011: Kiểm toán viên Ernst and Young Vietnam
-                                        </li>
+                                        <li><strong>2010-11/2011: Kiểm toán viên Ernst and Young Vietnam
+                                                </strong></li>
                                     @else
                                         <li><strong>January 2020 to present: </strong> <span>Deputy General Director of RT</span>
                                             Energy

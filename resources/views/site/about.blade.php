@@ -23,7 +23,7 @@
                     <div class="col-lg-6 col-sm-12">
                         <div class="about-text-wrap">
                             <div class="sec-title half">
-                                <span>Introduction</span>
+                                <span>{{App::isLocale('vi') ? 'Giới thiệu' : 'Introduction' }}</span>
                                 <h2 class="h1 mb-0 z-index-2 position-relative">@if(App::isLocale('en')) SUSTAINABLE DEVELOPMENT AND A NET ZERO EMISSIONS FUTURE @else PHÁT TRIỂN NĂNG LƯỢNG BỀN VỮNG @endif
                                 </h2>
                             </div>
@@ -34,11 +34,11 @@
                                 <h5 style="margin-bottom: 15px"><b>Realizing that strategy, we aim at the following goal:</b></h5>
                                 <div>
                                 <p>Develop, and invest in the construction and operation of renewable energy projects
-                                </p>
+                                </p> <br/>
                                 <p>Increase investment scale in renewable energy projects from 100MW in 2021 to 500MW in 2023. Towards an investment portfolio with 1GW of renewable energy before or in 2025
-                                </p>
+                                </p> <br/>
                                 <p>Research, apply, and invest in projects using new technologies such as Renewable Energy combined with battery storage / combined hydrogen production, .... when such technologies are financially and policy feasible
-                                </p>
+                                </p> <br/>
                                 <p>Develop, invest in the construction and operation of green industrial zone projects – in which all electricity used for industrial production is renewable energy
                                 </p>
                                 @else
@@ -48,11 +48,11 @@
                                 </b></h5>
                                 <div>
                                 <p>Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo
-                                </p>
+                                </p> <br/>
                                 <p>Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025
-                                </p>
+                                </p> <br/>
                                 <p>Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách
-                                </p>
+                                </p> <br/>
                                 <p>Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.
                                 </p>
                                 @endif
@@ -87,7 +87,7 @@
                                 <div class="lte-heading">
                                     <div class="lte-heading-content">
                                         <h4 class="lte-header">@if(App::isLocale('en')) RT Energy was built and developed with the orientation to become a pioneer in the field of renewable energy and green industrial parks in the ASEAN before 2025, and in the world before 2030.@else RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong
-                                            trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh ở khu vực Asean trong năm 2025, và trên thế giới trước năm 2030' @endif
+                                            trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh ở khu vực ASEAN trong năm 2025, và trên thế giới trước năm 2030 @endif
                                         </h4>
                                     </div>
                                 </div>
@@ -98,7 +98,7 @@
                                             <i class="lte-icon-text">01</i>
                                             <span class="lte-icon-content">
                                                 <span class="lte-header font-weight-bold">Renewable energy and technology</span>
-                                                <span class="lte-descr">Enim pharetra, interdum aliquet augue non lobortis vitae. Dui, mauris egestas turpis egestas. At dictum metus nullam sit habitasse aliquam. A sagittis, phasellus eget in libero elementum egestas nascetur.</span>
+{{--                                                <span class="lte-descr">Enim pharetra, interdum aliquet augue non lobortis vitae. Dui, mauris egestas turpis egestas. At dictum metus nullam sit habitasse aliquam. A sagittis, phasellus eget in libero elementum egestas nascetur.</span>--}}
                                             </span>
                                         </div>
                                     </li>
@@ -107,7 +107,7 @@
                                             <i class="lte-icon-text">02</i>
                                             <span class="lte-icon-content">
                                                 <span class="lte-header font-weight-bold"> Sustainable industrial park development </span>
-                                                <span class="lte-descr">Adipiscing neque, amet scelerisque nulla. Morbi faucibus facilisis sed in risus. Interdum sed egestas bibendum bibendum aenean purus tempor nisi, sit. Habitasse cras arcu morbi porttitor sit eleifend augue sed in.</span>
+{{--                                                <span class="lte-descr">Adipiscing neque, amet scelerisque nulla. Morbi faucibus facilisis sed in risus. Interdum sed egestas bibendum bibendum aenean purus tempor nisi, sit. Habitasse cras arcu morbi porttitor sit eleifend augue sed in.</span>--}}
                                             </span>
                                         </div>
                                     </li>
@@ -116,7 +116,7 @@
                                             <i class="lte-icon-text no-border">03</i>
                                             <span class="lte-icon-content">
                                                 <span class="lte-header font-weight-bold">New reliable power system</span>
-                                                <span class="lte-descr">Scelerisque facilisis elementum orci accumsan. Ultrices elementum morbi nulla sed in vestibulum habitasse. Eu tellus diam quisque suscipit commodo. Turpis nunc molestie non euismod tempor.</span>
+{{--                                                <span class="lte-descr">Scelerisque facilisis elementum orci accumsan. Ultrices elementum morbi nulla sed in vestibulum habitasse. Eu tellus diam quisque suscipit commodo. Turpis nunc molestie non euismod tempor.</span>--}}
                                             </span>
                                         </div>
                                     </li>
@@ -126,7 +126,7 @@
                                             <i class="lte-icon-text">01</i>
                                             <span class="lte-icon-content">
                                                 <span class="lte-header font-weight-bold">Năng lượng tái tạo</span>
-                                                <span class="lte-descr">Enim pharetra, interdum aliquet augue non lobortis vitae. Dui, mauris egestas turpis egestas. At dictum metus nullam sit habitasse aliquam. A sagittis, phasellus eget in libero elementum egestas nascetur.</span>
+{{--                                                <span class="lte-descr">Enim pharetra, interdum aliquet augue non lobortis vitae. Dui, mauris egestas turpis egestas. At dictum metus nullam sit habitasse aliquam. A sagittis, phasellus eget in libero elementum egestas nascetur.</span>--}}
                                             </span>
                                         </div>
                                     </li>
@@ -134,8 +134,8 @@
                                         <div class="lte-inner">
                                             <i class="lte-icon-text">02</i>
                                             <span class="lte-icon-content">
-                                                <span class="lte-header font-weight-bold"> Khu công nghiệp kết hợpç năng lượng tái tạo </span>
-                                                <span class="lte-descr">Adipiscing neque, amet scelerisque nulla. Morbi faucibus facilisis sed in risus. Interdum sed egestas bibendum bibendum aenean purus tempor nisi, sit. Habitasse cras arcu morbi porttitor sit eleifend augue sed in.</span>
+                                                <span class="lte-header font-weight-bold"> Khu công nghiệp kết hợp năng lượng tái tạo </span>
+{{--                                                <span class="lte-descr">Adipiscing neque, amet scelerisque nulla. Morbi faucibus facilisis sed in risus. Interdum sed egestas bibendum bibendum aenean purus tempor nisi, sit. Habitasse cras arcu morbi porttitor sit eleifend augue sed in.</span>--}}
                                             </span>
                                         </div>
                                     </li>
@@ -144,7 +144,7 @@
                                             <i class="lte-icon-text no-border">03</i>
                                             <span class="lte-icon-content">
                                                 <span class="lte-header font-weight-bold">Năng lượng mới</span>
-                                                <span class="lte-descr">Scelerisque facilisis elementum orci accumsan. Ultrices elementum morbi nulla sed in vestibulum habitasse. Eu tellus diam quisque suscipit commodo. Turpis nunc molestie non euismod tempor.</span>
+{{--                                                <span class="lte-descr">Scelerisque facilisis elementum orci accumsan. Ultrices elementum morbi nulla sed in vestibulum habitasse. Eu tellus diam quisque suscipit commodo. Turpis nunc molestie non euismod tempor.</span>--}}
                                             </span>
                                         </div>
                                     </li>

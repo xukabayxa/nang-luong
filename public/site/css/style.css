@@ -11853,7 +11853,7 @@ a.h3.post-title {
     .news_detail #sozo-main {
         padding-top: 0;
     }
-    
+
 }
 @media (min-width:1025px){
     .contact-info .info-item .icon-item-address {
@@ -11865,4 +11865,13 @@ a.h3.post-title {
         justify-content: center;
         width: 4rem;
     }
+}
+
+
+p.des-agent {
+    font-size: 24px;
+}
+
+ul.des-agent {
+    font-size: 24px;
 }
