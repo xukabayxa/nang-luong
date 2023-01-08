@@ -47,13 +47,13 @@
                                 <h5 style="margin-bottom: 15px"><b>Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:
                                 </b></h5>
                                 <div>
-                                <p>Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo
+                                <p class="list">Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo
                                 </p> <br/>
-                                <p>Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025
+                                <p class="list">Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025
                                 </p> <br/>
-                                <p>Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách
+                                <p class="list">Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách
                                 </p> <br/>
-                                <p>Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.
+                                <p class="list">Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.
                                 </p>
                                 @endif
                             </div>

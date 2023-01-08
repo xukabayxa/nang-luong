@@ -11261,7 +11261,7 @@ span.lte-header.font-weight-bold {
 }
 .teacher-details-content .teacher-contact li {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 22px;
     color: #303030;
     margin-top: 10px;
 }
@@ -11869,9 +11869,16 @@ a.h3.post-title {
 
 
 p.des-agent {
+    text-align: justify;
     font-size: 24px;
 }
 
 ul.des-agent {
     font-size: 24px;
+}
+
+
+.list {
+    list-style:disc outside none;
+    display:list-item;
 }
