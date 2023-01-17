@@ -100,6 +100,10 @@ class Post extends BaseModel
             $result = $result->where('cate_id', $request->cate_id);
         }
 
+        if (!empty($request->language_id)) {
+            $result = $result->where('language_id', $request->language_id);
+        }
+
         if (!empty($request->cate_special_id)) {
             $cate_special_id = $request->cate_special_id;
             $result = $result->whereHas('category_specials', function ($q) use ($cate_special_id) {

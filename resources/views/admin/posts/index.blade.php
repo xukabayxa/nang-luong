@@ -120,6 +120,10 @@ Quản lý bài viết
             {
                 data: 'cate_special_id', search_type: "select", placeholder: "Danh mục đặc biệt",
                 column_data: @json(App\Model\Admin\CategorySpecial::getForSelectForPost())
+            },
+            {
+                data: 'language_id', search_type: "select", placeholder: "Ngôn ngữ",
+                column_data: [{id: 1, name: "Tiếng Việt"}, {id: 2, name: "Tiếng Anh"}]
             }
         ],
         search_by_time: false,
