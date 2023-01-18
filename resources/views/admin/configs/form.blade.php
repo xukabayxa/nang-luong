@@ -67,10 +67,6 @@
 						<strong><% errors.slogan_en[0] %></strong>
 					</span>
                 </div>
-				<div class="form-group custom-group">
-                    <label class="form-label">Video trang chủ</label>
-                    <input class="form-control" ng-model="form.video" type="text">
-                </div>
                 <div class="form-group custom-group">
                     <label class="form-label">Twitter</label>
                     <input class="form-control" ng-model="form.twitter" type="text">
