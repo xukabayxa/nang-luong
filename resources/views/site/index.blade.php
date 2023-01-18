@@ -12,7 +12,7 @@
         {{--style banner slick--}}
         <div class="uk-cover-container">
             <video uk-cover="" loop="" muted="" playsinline="" uk-video="autoplay: inview" class="uk-cover" preload="none" style="height: 850px; width: 1512px;">
-                <source src="https://www.agpgroup.com/app/uploads/2021/06/agp-homepage-video-v2-optim-1.mp4" type="video/mp4">
+                <source src="{{ $config->video }}" type="video/mp4">
             </video>
             <canvas width="100%" height="100vh"></canvas>
         </div>
@@ -31,7 +31,7 @@
                                             <p class="text-light-blue font-weight-800 display-29 display-lg-28 display-xl-26 mb-2 text-shadow uk-animation-scale-up">
                                             </p>
                                             <span class="card-border position-relative"></span>
-                                            <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? 'RT Năng Lượng Cho Tương Lai' : 'RT Energy for future'}}</h1>
+                                            <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? $config->slogan_vi : $config->slogan_en}}</h1>
 
                                         </div>
                                     </div>

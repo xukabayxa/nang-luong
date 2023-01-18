@@ -83,7 +83,7 @@ class FileHelper
                 $file->move($destinationPath, $destinationFile);
 //                Image::make($file)->resize(1920, 700)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
             } else if ($type == 7) {
-                Image::make($file)->resize(32, 32)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
+                Image::make($file)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
             } else if ($type == 8) {
                 Image::make($file)->resize(115, 75)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
             }

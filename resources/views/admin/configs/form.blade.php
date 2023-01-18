@@ -49,6 +49,28 @@
 						<strong><% errors.facebook[0] %></strong>
 					</span>
 				</div>
+				<div class="form-group custom-group">
+                    <label class="form-label">Video trang chủ</label>
+                    <input class="form-control" ng-model="form.video" type="text">
+                </div>
+				<div class="form-group custom-group">
+                    <label class="form-label required-label">slogan tiếng Việt</label>
+                    <input class="form-control" ng-model="form.slogan_vi" type="text">
+					<span class="invalid-feedback d-block" role="alert">
+						<strong><% errors.slogan_vi[0] %></strong>
+					</span>
+                </div>
+				<div class="form-group custom-group">
+                    <label class="form-label required-label">slogan tiếng Anh</label>
+                    <input class="form-control" ng-model="form.slogan_en" type="text">
+					<span class="invalid-feedback d-block" role="alert">
+						<strong><% errors.slogan_en[0] %></strong>
+					</span>
+                </div>
+				<div class="form-group custom-group">
+                    <label class="form-label">Video trang chủ</label>
+                    <input class="form-control" ng-model="form.video" type="text">
+                </div>
                 <div class="form-group custom-group">
                     <label class="form-label">Twitter</label>
                     <input class="form-control" ng-model="form.twitter" type="text">

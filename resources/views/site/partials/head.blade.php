@@ -7,9 +7,7 @@
 
 
     <title>FOR A SUSTAINABLE FUTURE</title>
-    <link rel="icon" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png" sizes="32x32" />
-    <link rel="icon" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-192x192.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-180x180.png" />
+    <link rel="icon" type="image/x-icon" href="{{ $config->favicon->path }}">
     <link rel="canonical" href="" />
     <meta property="og:locale" content="" />
     <meta property="og:type" content="website" />
@@ -26,8 +24,6 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     {{-- <link rel='stylesheet' href='/site/css/head-css-custom.css' type='text/css' media='all' /> --}}
     <script src="/site/js/sirv.js?ver=5.9.3" defer="defer" type="text/javascript"></script>
-    <link rel="icon" type="image/png" sizes="32x32" href="https://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="hhttps://rtenergygroup.com/wp-content/uploads/2021/04/cropped-logo-Energy-favicon-stretched-1-32x32.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#4a90e2">
     <link rel="stylesheet" href="/libs/owl/docs/assets/owlcarousel/assets/owl.carousel.min.css">

@@ -69,67 +69,6 @@ Admin Panel - {{ $config->web_title }}
 </div>
 <!-- /.row -->
 <!-- Main row -->
-<div class="row">
-    <section class="col-lg-12 connectedSortable">
-        <!-- BAR CHART -->
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">Biểu đồ doanh số đặt hàng 10 ngày gần nhất</h3>
-
-                <div class="card-tools">
-                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-tool" data-card-widget="remove"><i class="fas fa-times"></i></button>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="chart">
-                    <canvas id="barChart" style="min-height: 250px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
-                </div>
-            </div>
-            <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
-    </section>
-    <section class="col-lg-6 connectedSortable">
-        <!-- TO DO List -->
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">
-                    <i class="ion ion-clipboard mr-1"></i>
-                    Số lượt truy cập theo ngày
-                </h3>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body">
-                <div id="area-chart"></div>
-
-            </div>
-            <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
-    </section>
-
-    <section class="col-lg-6 connectedSortable">
-        <!-- TO DO List -->
-        <div class="card">
-            <div class="card-header">
-                <h3 class="card-title">
-                    <i class="ion ion-clipboard mr-1"></i>
-                    Nguồn truy cập (30 ngày gần nhất)
-                </h3>
-            </div>
-            <!-- /.card-header -->
-            <div class="card-body">
-                <div id="organic-chart"></div>
-
-            </div>
-            <!-- /.card-body -->
-        </div>
-        <!-- /.card -->
-    </section>
-
-</div>
 
 <div class="row">
 

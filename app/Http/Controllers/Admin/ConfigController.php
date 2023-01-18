@@ -38,7 +38,9 @@ class ConfigController extends Controller
 				'facebook' => 'nullable|max:255',
 				'image' => 'nullable|file|mimes:jpg,jpeg,png|max:3000',
                 'favicon' => 'nullable|file|mimes:jpg,jpeg,png|max:3000',
-                'location' => 'nullable|max:255'
+                'location' => 'nullable|max:255',
+                'slogan_vi' => 'required|max:255',
+                'slogan_en' => 'required|max:255',
 			]
 		);
 
@@ -68,6 +70,9 @@ class ConfigController extends Controller
 			$object->location = $request->location;
 			$object->introduction = $request->introduction;
 			$object->address = $request->address;
+			$object->video = $request->video;
+			$object->slogan_vi = $request->slogan_vi;
+			$object->slogan_en = $request->slogan_en;
 
 			$object->click_call = $request->click_call;
 			$object->facebook_chat = $request->facebook_chat;
