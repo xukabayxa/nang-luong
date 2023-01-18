@@ -1,19 +1,5 @@
 <div class="row">
 	<div class="col-md-9 col-sm-8 col-xs-12">
-		<div class="form-group custom-group mb-4">
-            <label class="form-label required-label">Danh mục</label>
-            <ui-select class="" remove-selected="true" ng-model="form.cate_id" theme="select2">
-                <ui-select-match placeholder="Chọn danh mục">
-                    <% $select.selected.name %>
-                </ui-select-match>
-                <ui-select-choices repeat="t.id as t in (form.all_categories | filter: $select.search)">
-                    <span ng-bind="t.name"></span>
-                </ui-select-choices>
-            </ui-select>
-            <span class="invalid-feedback d-block" role="alert">
-                <strong><% errors.cate_id[0] %></strong>
-            </span>
-        </div>
 
 		<div class="form-group custom-group mb-4">
 			<label class="form-label required-label">Tiêu đề bài viết</label>

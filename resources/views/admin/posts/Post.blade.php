@@ -7,6 +7,7 @@
         before(form) {
             this.image = {};
             this.status = 0;
+            this.cate_id = 1;
         }
 
         after(form) {
@@ -24,7 +25,7 @@
         get submit_data() {
             let data = {
                 name: this.name,
-                cate_id: this.cate_id,
+                cate_id: 1,
                 intro: this.intro,
                 body: this.body,
                 status: this.status,

@@ -46,18 +46,6 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{{ route('PostCategory.index') }}" class="nav-link {{ Request::routeIs('PostCategory.create') ? 'active' : '' }}">
-                            <i class="far fas  fa-angle-right nav-icon"></i>
-                            <p>Danh mục bài viết</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ route('PostCategory.create') }}" class="nav-link {{ Request::routeIs('PostCategory.create') ? 'active' : '' }}">
-                            <i class="far fas  fa-angle-right nav-icon"></i>
-                            <p>Thêm mới danh mục</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
                         <a href="{{ route('Post.index') }}" class="nav-link {{ Request::routeIs('Post.create') ? 'active' : '' }}">
                             <i class="far fas  fa-angle-right nav-icon"></i>
                             <p>Danh sách bài viết</p>
