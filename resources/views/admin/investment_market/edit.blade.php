@@ -1,6 +1,6 @@
 <div class="modal fade" id="edit-partner" tabindex="-1" role="dialog" aria-hidden="true"
      ng-controller="EditPartner">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="semi-bold">Chỉnh sửa thị trường</h4>

@@ -35,7 +35,7 @@ class Partner extends BaseModel
 
     public function canDelete()
     {
-        return $this->products()->count() > 0 ? false : true;
+        return true;
     }
 
     public function products() {

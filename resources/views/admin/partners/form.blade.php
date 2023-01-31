@@ -44,6 +44,10 @@
                                     ng-selected="arrayInclude(form.cate_ids, c.id)"><% c.name %></option>
 
                         </select>
+
+                        <span class="invalid-feedback d-block" role="alert">
+                        <strong><% errors.cate_ids[0] %></strong>
+                    </span>
                     </div>
             </div>
 
