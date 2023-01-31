@@ -8,9 +8,12 @@ use App\Model\Admin\Block;
 use App\Model\Admin\BusinessSector;
 use App\Model\Admin\CategorySpecial;
 use App\Model\Admin\Contact;
+use App\Model\Admin\InvestmentMarket;
 use App\Model\Admin\Language;
 use App\Model\Admin\Manufacturer;
 use App\Model\Admin\Origin;
+use App\Model\Admin\Partner;
+use App\Model\Admin\PartnerCategory;
 use App\Model\Admin\Policy;
 use App\Model\Admin\PostCategorySpecial;
 use App\Model\Admin\Project;
@@ -492,7 +495,10 @@ class FrontController extends Controller
 
     public function introduction4()
     {
-        return view('site.about_4_1');
+        $categories = PartnerCategory::query()->get();
+        $partners = Partner::query()->with('categories')->get();
+
+        return view('site.about_4_1', compact('categories', 'partners'));
     }
 
     public function investments1()
@@ -521,7 +527,9 @@ class FrontController extends Controller
 
     public function globalReach()
     {
-        return view('site.global-reach');
+        $markets = InvestmentMarket::query()->where('is_show', true)->orderBy('order', 'asc')->get();
+
+        return view('site.global-reach', compact('markets'));
     }
 
     public function insights()

@@ -1,5 +1,5 @@
 <script>
-    class Partner extends BaseClass {
+    class Market extends BaseClass {
         no_set = [];
         statuses = @json(\App\Model\Admin\Partner::STATUSES);
 
@@ -28,9 +28,11 @@
             let data = {
                 name: this.name,
                 code: this.code,
+                order: this.order,
+                des: this.des,
                 is_show: this.is_show,
-                cate_ids: this.cate_ids,
-
+                en_name: this.en_name,
+                en_des: this.en_des,
             }
             data = jsonToFormData(data);
 

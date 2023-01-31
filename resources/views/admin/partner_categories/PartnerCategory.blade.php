@@ -1,17 +1,27 @@
 <script>
-    class Partner extends BaseClass {
+    class PartnerCategory extends BaseClass {
         no_set = [];
-        statuses = @json(\App\Model\Admin\Partner::STATUSES);
+        all_categories = @json(\App\Model\Admin\PartnerCategory::getForSelect());
 
         before(form) {
             this.image = {};
         }
 
         after(form) {
-
+            if(this.categories) {
+                this.all_categories = this.categories;
+            }
         }
 
-        // Ảnh đại diện
+
+        get parent_id() {
+            return this._parent_id;
+        }
+
+        set parent_id(value) {
+            this._parent_id = Number(value);
+        }
+
         get image() {
             return this._image;
         }
@@ -20,20 +30,19 @@
             this._image = new Image(value, this);
         }
 
-        clearImage() {
-            if (this.image) this.image.clear();
-        }
+		clearImage() {
+			if (this.image) this.image.clear();
+		}
 
         get submit_data() {
             let data = {
                 name: this.name,
-                code: this.code,
-                is_show: this.is_show,
-                cate_ids: this.cate_ids,
+                en_name: this.en_name,
+                parent_id: this._parent_id,
+                intro: this.intro,
 
             }
             data = jsonToFormData(data);
-
             let image = this.image.submit_data;
             if (image) data.append('image', image);
 

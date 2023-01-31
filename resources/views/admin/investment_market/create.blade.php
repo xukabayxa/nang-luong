@@ -1,12 +1,12 @@
 <div class="modal fade" id="create-partner" tabindex="-1" role="dialog" aria-hidden="true"
      ng-controller="CreatePartner">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="semi-bold">Thêm đối tác</h4>
+                <h4 class="semi-bold">Thêm thị trường</h4>
             </div>
             <div class="modal-body">
-                @include('admin.partners.form')
+                @include('admin.investment_market.form')
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success btn-cons" ng-click="submit()" ng-disabled="loading.submit">
@@ -26,18 +26,17 @@
     app.controller('CreatePartner', function ($rootScope, $scope, $http) {
         $rootScope.$on("createPartner", function (event, data , form){
             $scope.errors = data;
-            $scope.form = new Partner({}, {scope: $scope});
-            $scope.cates = @json($cates);
+            $scope.form = new Market({}, {scope: $scope});
             $scope.$applyAsync();
             $('#create-partner').modal('show');
         });
 
-        $scope.form = new Partner({}, {scope: $scope});
+        $scope.form = new Market({}, {scope: $scope});
         $scope.loading = {};
 
         // Submit Form tạo mới
         $scope.submit = function () {
-            let url = "{!! route('partners.store') !!}";
+            let url = "{!! route('investment-market.store') !!}";
             $scope.loading.submit = true;
             // return 0;
             $.ajax({

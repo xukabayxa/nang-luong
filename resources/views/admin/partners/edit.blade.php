@@ -27,8 +27,13 @@
             $scope.form = new Partner(data, {scope: $scope});
             $scope.$applyAsync();
             $scope.loading.submit = false;
+            $scope.cates = @json($cates);
+
             $('#edit-manufacturer').modal('show');
         });
+
+        $scope.arrayInclude = arrayInclude;
+
         $scope.loading = {};
         // Submit Form sửa
         $scope.submit = function () {

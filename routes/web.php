@@ -232,6 +232,32 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
         Route::get('/exportExcel','Admin\PartnerController@exportExcel')->name('partners.exportExcel');
     });
 
+    // thị trường đầu tư
+    Route::group(['prefix' => 'investment-market'], function () {
+        Route::get('/', 'Admin\InvestmentMarketController@index')->name('investment-market.index');
+        Route::get('/searchData', 'Admin\InvestmentMarketController@searchData')->name('investment-market.searchData');
+        Route::get('/{id}/show', 'Admin\InvestmentMarketController@show')->name('investment-market.show');
+        Route::get('/create', 'Admin\InvestmentMarketController@create')->name('investment-market.create');
+        Route::post('/', 'Admin\InvestmentMarketController@store')->name('investment-market.store');
+        Route::post('/{id}/update', 'Admin\InvestmentMarketController@update')->name('investment-market.update');
+        Route::get('/{id}/delete', 'Admin\InvestmentMarketController@delete')->name('investment-market.delete');
+        Route::get('/{id}/getDataForEdit', 'Admin\InvestmentMarketController@getDataForEdit');
+        Route::get('/exportExcel','Admin\InvestmentMarketController@exportExcel')->name('investment-market.exportExcel');
+    });
+
+    // danh mục đối tác
+    Route::group(['prefix' => 'partner-categories'], function() {
+        Route::get('/create', 'Admin\PartnerCategoryController@create')->name('partner-category.create');
+        Route::post('/', 'Admin\PartnerCategoryController@store')->name('partner-category.store');
+        Route::post('/{id}/update', 'Admin\PartnerCategoryController@update')->name('partner-category.update');
+        Route::get('/{id}/edit', 'Admin\PartnerCategoryController@edit')->name('partner-category.edit');
+        Route::get('/{id}/getDataForEdit', 'Admin\PartnerCategoryController@getDataForEdit');
+        Route::get('/{id}/delete', 'Admin\PartnerCategoryController@delete')->name('partner-category.delete');
+        Route::get('/', 'Admin\PartnerCategoryController@index')->name('partner-category.index');
+        Route::get('/searchData', 'Admin\PartnerCategoryController@searchData')->name('partner-category.searchData');
+        Route::post('/nested-sort', 'Admin\PartnerCategoryController@nestedSort')->name('partner-category.nestedSort');
+    });
+
     // Danh mục đặc biệt
     Route::group(['prefix' => 'category-special'], function () {
         Route::get('/', 'Admin\CategorySpecialController@index')->name('category_special.index');

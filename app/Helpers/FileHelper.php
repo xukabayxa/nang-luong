@@ -89,7 +89,9 @@ class FileHelper
             }
             else if ($type == 9) {
                 $file->move($destinationPath, $destinationFile);
-            } else {
+            } else if ($type == 10) {
+                Image::make($file)->resize(300, 200)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
+            }else {
                 $file->move($destinationPath, $destinationFile);
             }
 

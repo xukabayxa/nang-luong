@@ -109,9 +109,16 @@
 
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
+                        <a href="{{ route('partner-category.index') }}" class="nav-link {{ Request::routeIs('partner-category.index') ? 'active' : '' }}">
+                            <i class="far fas  fa-angle-right nav-icon"></i>
+                            <p>Quản lý danh mục đối tác</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
                         <a href="{{ route('partners.index') }}" class="nav-link {{ Request::routeIs('partners.index') ? 'active' : '' }}">
                             <i class="far fas  fa-angle-right nav-icon"></i>
-                            <p>Danh mục đối tác</p>
+                            <p>Quản lý đối tác</p>
                         </a>
                     </li>
 
@@ -147,6 +154,13 @@
                         <a href="{{ route('contacts.index') }}" class="nav-link {{ Request::routeIs('contacts.index') ? 'active' : '' }}">
                             <i class="far fas  fa-angle-right nav-icon"></i>
                             <p>Danh sách tin nhắn liên hệ</p>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ route('investment-market.index') }}" class="nav-link {{ Request::routeIs('investment-market.index') ? 'active' : '' }}">
+                            <i class="far fas  fa-angle-right nav-icon"></i>
+                            <p>Danh mục thị trường đầu tư</p>
                         </a>
                     </li>
                 </ul>

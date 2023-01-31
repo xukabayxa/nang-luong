@@ -1,12 +1,12 @@
-<div class="modal fade" id="create-partner" tabindex="-1" role="dialog" aria-hidden="true"
-     ng-controller="CreatePartner">
+<div class="modal fade" id="edit-partner" tabindex="-1" role="dialog" aria-hidden="true"
+     ng-controller="EditPartner">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="semi-bold">Thêm đối tác</h4>
+                <h4 class="semi-bold">Chỉnh sửa thị trường</h4>
             </div>
             <div class="modal-body">
-                @include('admin.partners.form')
+                @include('admin.investment_market.form')
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success btn-cons" ng-click="submit()" ng-disabled="loading.submit">
@@ -21,25 +21,19 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
-
 <script>
-    app.controller('CreatePartner', function ($rootScope, $scope, $http) {
-        $rootScope.$on("createPartner", function (event, data , form){
-            $scope.errors = data;
-            $scope.form = new Partner({}, {scope: $scope});
-            $scope.cates = @json($cates);
+    app.controller('EditPartner', function ($rootScope, $scope, $http) {
+        $rootScope.$on("editPartner", function (event, data){
+            $scope.form = new Market(data, {scope: $scope});
             $scope.$applyAsync();
-            $('#create-partner').modal('show');
+            $scope.loading.submit = false;
+            $('#edit-manufacturer').modal('show');
         });
-
-        $scope.form = new Partner({}, {scope: $scope});
         $scope.loading = {};
-
-        // Submit Form tạo mới
+        // Submit Form sửa
         $scope.submit = function () {
-            let url = "{!! route('partners.store') !!}";
+            let url = "/admin/investment-market/" + $scope.form.id + "/update";
             $scope.loading.submit = true;
-            // return 0;
             $.ajax({
                 type: "POST",
                 url: url,
@@ -51,7 +45,7 @@
                 contentType: false,
                 success: function (response) {
                     if (response.success) {
-                        $('#create-partner').modal('hide');
+                        $('#edit-partner').modal('hide');
                         toastr.success(response.message);
                         datatable.ajax.reload();
                         $scope.errors = null;
@@ -69,6 +63,5 @@
                 },
             });
         }
-
     })
 </script>

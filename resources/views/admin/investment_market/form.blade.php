@@ -12,10 +12,20 @@
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group custom-group">
-                    <label class="form-label required-label">Tên đối tác</label>
+                    <label class="form-label required-label">Tên thị trường</label>
                     <input class="form-control " type="text" ng-model="form.name">
                     <span class="invalid-feedback d-block" role="alert">
                         <strong><% errors.name[0] %></strong>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group custom-group">
+                    <label class="form-label required-label">Tên thị trường (tiếng Anh)</label>
+                    <input class="form-control " type="text" ng-model="form.en_name">
+                    <span class="invalid-feedback d-block" role="alert">
+                        <strong><% errors.en_name[0] %></strong>
                     </span>
                 </div>
             </div>
@@ -33,20 +43,36 @@
             </div>
 
             <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="form-group custom-group mb-4">
-                        <label class="form-label">Danh mục</label>
-                        <select select2 class="select2 form-control" name="tag_group_id[]"
-                                ng-model="form.cate_ids"
-                                ng-class="{'is-invalid': errors && errors.cate_ids}"
-                                multiple>
-                            <option ng-repeat="c in cates"
-                                    value="<% c.id %>"
-                                    ng-selected="arrayInclude(form.cate_ids, c.id)"><% c.name %></option>
+                <div class="form-group custom-group">
+                    <label class="form-label required-label">Thứ tự</label>
+                    <input type="number" class="form-control" ng-model="form.order" min="1" title="thứ tự">
 
-                        </select>
-                    </div>
+                    <span class="invalid-feedback d-block" role="alert">
+                        <strong><% errors.order[0] %></strong>
+                    </span>
+                </div>
             </div>
 
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group custom-group">
+                    <label class="form-label required-label">Mô tả</label>
+                    <textarea id="editor" class="form-control"
+                              ng-model="form.des" rows="4"></textarea>
+                    <span class="invalid-feedback d-block" role="alert">
+                        <strong><% errors.des[0] %></strong>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="form-group custom-group">
+                    <label class="form-label required-label">Mô tả (tiếng Anh)</label>
+                    <textarea id="editor" class="form-control"
+                              ng-model="form.en_des" rows="4"></textarea>
+                    <span class="invalid-feedback d-block" role="alert">
+                        <strong><% errors.en_des[0] %></strong>
+                    </span>
+                </div>
+            </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <label class="form-label">Ảnh đại diện</label>
                 <div class="main-img-preview">

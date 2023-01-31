@@ -9,7 +9,7 @@ use App\Model\Common\File;
 use DB;
 use App\Model\Common\Notification;
 
-class Partner extends BaseModel
+class InvestmentMarket extends BaseModel
 {
     public const STATUSES = [
         [
@@ -24,10 +24,6 @@ class Partner extends BaseModel
         ],
     ];
 
-    public function categories() {
-        return $this->belongsToMany(PartnerCategory::class, 'partner_has_categories', 'partner_id', 'category_id');
-    }
-
     public function canEdit()
     {
         return Auth::user()->id = $this->create_by;
@@ -35,7 +31,7 @@ class Partner extends BaseModel
 
     public function canDelete()
     {
-        return $this->products()->count() > 0 ? false : true;
+        return true;
     }
 
     public function products() {
@@ -72,11 +68,8 @@ class Partner extends BaseModel
     }
 
     public static function getDataForEdit($id) {
-        $obj =  self::where('id', $id)->with('image')
+        return self::where('id', $id)->with('image')
             ->firstOrFail();
-        $obj->cate_ids = $obj->categories->pluck('id')->toArray();
-
-        return $obj;
     }
 
     public static function getDataForShow($id) {

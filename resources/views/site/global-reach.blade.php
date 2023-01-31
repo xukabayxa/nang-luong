@@ -133,112 +133,144 @@
 
 
     <div class="container">
-        <div class="our-global-carou" style="padding: 50px 0">
-            <div id="big" class="owl-carousel owl-theme">
-              <div class="item">
-                <div class="cc-container">
-                    <div class="c-name uk-text-8">
-                        @if(App::isLocale('vi')) Việt Nam @else Viet Nam @endif
+        @if($markets->count())
+            <div class="our-global-carou" style="padding: 50px 0">
+                <div id="big" class="owl-carousel owl-theme">
+                    @foreach($markets as $market)
+                        <div class="item">
+                            <div class="cc-container">
+                                <div class="c-name uk-text-8">
+                                    @if(App::isLocale('vi')) {{$market->name}} @else {{$market->en_name}} @endif
+                                </div>
+
+                                <div class="note">
+                                    @if(App::isLocale('vi')) {{$market->des}} @else {{$market->en_des}} @endif
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                </div>
+                <div id="thumbs" class="owl-carousel owl-theme">
+                    @foreach($markets as $market)
+                        <div class="item">
+                            <img src="{{ $market->image->path ?? '' }}" alt="">
+                            <h4 class="h4 nation-name">@if(App::isLocale('vi')) {{$market->name}} @else {{$market->en_name}} @endif
+                            </h4>
+                        </div>
+                    @endforeach
+
+                </div>
+            </div>
+        @else
+            <div class="our-global-carou" style="padding: 50px 0">
+                <div id="big" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="cc-container">
+                            <div class="c-name uk-text-8">
+                                @if(App::isLocale('vi')) Việt Nam @else Viet Nam @endif
+                            </div>
+
+                            <div class="note">
+                                {{$note}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="c-name uk-text-8">
+                            @if(App::isLocale('vi')) Lào @else Laos @endif
+                        </div>
+                        <div class="note">
+                            {{$note}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="c-name uk-text-8">
+                            @if(App::isLocale('vi')) Singapore @else Singapore @endif
+                        </div>
+                        <div class="note">
+                            {{$note}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="c-name uk-text-8">
+                            @if(App::isLocale('vi')) Philippines @else Philippines @endif
+                        </div>
+                        <div class="note">
+                            {{$note}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="c-name uk-text-8">
+                            @if(App::isLocale('vi')) Indonesia @else Indonesia @endif
+                        </div>
+                        <div class="note">
+                            {{$note}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="c-name uk-text-8">
+                            @if(App::isLocale('vi')) Hàn Quốc @else Korea @endif
+                        </div>
+                        <div class="note">
+                            {{$note}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="c-name uk-text-8">
+                            @if(App::isLocale('vi')) Úc @else Australia @endif
+                        </div>
+                        <div class="note">
+                            {{$note}}
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="c-name uk-text-8">
+                            @if(App::isLocale('vi')) Bangladesh @else Bangladesh @endif
+                        </div>
+                        <div class="note">
+                            {{$note}}
+                        </div>
                     </div>
 
-                    <div class="note">
-                        {{$note}}
+                </div>
+                <div id="thumbs" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="{{ asset('site/system/flags/vn.png') }}" alt="">
+                        <h4 class="h4 nation-name">@if(App::isLocale('vi')) VIỆT NAM @else Vietnam @endif</h4>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('site/system/flags/lao.jpg') }}" alt="">
+                        <h4 class="h4 nation-name">@if(App::isLocale('vi')) Lào @else Laos @endif</h4>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('site/system/flags/singapore.jpg') }}" alt="">
+                        <h4 class="h4 nation-name">@if(App::isLocale('vi')) Singapore @else Singapore @endif</h4>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('site/system/flags/philippin.jpg') }}" alt="">
+                        <h4 class="h4 nation-name">@if(App::isLocale('vi')) Philippines @else Philippines @endif</h4>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('site/system/flags/indonesia.jpg') }}" alt="">
+                        <h4 class="h4 nation-name">@if(App::isLocale('vi')) Indonesia @else Indonesia @endif</h4>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('site/system/flags/koreaflag.jpg') }}" alt="">
+                        <h4 class="h4 nation-name">@if(App::isLocale('vi')) Hàn Quốc @else Korea @endif</h4>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('site/system/flags/australia_f.jpg') }}" alt="">
+                        <h4 class="h4 nation-name">@if(App::isLocale('vi')) Australia @else Australia @endif</h4>
+                    </div>
+                    <div class="item">
+                        <img src="{{ asset('site/system/flags/banglades.jpg') }}" alt="">
+                        <h4 class="h4 nation-name">@if(App::isLocale('vi')) Bangladesh @else Bangladesh @endif</h4>
                     </div>
                 </div>
-              </div>
-              <div class="item">
-                <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Lào @else Laos @endif
-                </div>
-                <div class="note">
-                    {{$note}}
-                </div>
-              </div>
-              <div class="item">
-                <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Singapore @else Singapore @endif
-                </div>
-                <div class="note">
-                    {{$note}}
-                </div>
-              </div>
-              <div class="item">
-                <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Philippines @else Philippines @endif
-                </div>
-                <div class="note">
-                    {{$note}}
-                </div>
-              </div>
-              <div class="item">
-                <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Indonesia @else Indonesia @endif
-                </div>
-                <div class="note">
-                    {{$note}}
-                </div>
-              </div>
-              <div class="item">
-                <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Hàn Quốc @else Korea @endif
-                </div>
-                <div class="note">
-                    {{$note}}
-                </div>
-              </div>
-              <div class="item">
-                <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Úc @else Australia @endif
-                </div>
-                <div class="note">
-                    {{$note}}
-                </div>
-              </div>
-              <div class="item">
-                <div class="c-name uk-text-8">
-                    @if(App::isLocale('vi')) Bangladesh @else Bangladesh @endif
-                </div>
-                <div class="note">
-                    {{$note}}
-                </div>
-              </div>
+            </div>
+        @endif
 
-            </div>
-            <div id="thumbs" class="owl-carousel owl-theme">
-              <div class="item">
-                <img src="{{ asset('site/system/flags/vn.png') }}" alt="">
-                    <h4 class="h4 nation-name">@if(App::isLocale('vi')) VIỆT NAM @else Vietnam @endif</h4>
-              </div>
-              <div class="item">
-                <img src="{{ asset('site/system/flags/lao.jpg') }}" alt="">
-                    <h4 class="h4 nation-name">@if(App::isLocale('vi')) Lào @else Laos @endif</h4>
-              </div>
-              <div class="item">
-                <img src="{{ asset('site/system/flags/singapore.jpg') }}" alt="">
-                    <h4 class="h4 nation-name">@if(App::isLocale('vi')) Singapore @else Singapore @endif</h4>
-              </div>
-              <div class="item">
-                <img src="{{ asset('site/system/flags/philippin.jpg') }}" alt="">
-                <h4 class="h4 nation-name">@if(App::isLocale('vi')) Philippines @else Philippines @endif</h4>
-              </div>
-              <div class="item">
-                <img src="{{ asset('site/system/flags/indonesia.jpg') }}" alt="">
-                <h4 class="h4 nation-name">@if(App::isLocale('vi')) Indonesia @else Indonesia @endif</h4>
-              </div>
-              <div class="item">
-                <img src="{{ asset('site/system/flags/koreaflag.jpg') }}" alt="">
-                <h4 class="h4 nation-name">@if(App::isLocale('vi')) Hàn Quốc @else Korea @endif</h4>
-              </div>
-              <div class="item">
-                <img src="{{ asset('site/system/flags/australia_f.jpg') }}" alt="">
-                <h4 class="h4 nation-name">@if(App::isLocale('vi')) Australia @else Australia @endif</h4>
-              </div>
-              <div class="item">
-                <img src="{{ asset('site/system/flags/banglades.jpg') }}" alt="">
-                <h4 class="h4 nation-name">@if(App::isLocale('vi')) Bangladesh @else Bangladesh @endif</h4>
-              </div>
-            </div>
-            </div>
     </div>
 
 </section>

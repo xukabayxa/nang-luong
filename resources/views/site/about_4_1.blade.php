@@ -18,113 +18,141 @@
             </div>
         </header>
         <section class="projects-page-section partner-section">
-            <div class="container">
+            @if($categories->count())
+                <div class="container">
 
-                <div id="filters" class="button-group">
-                    <div class="iso-choose">
-                        <div class="button is-checked" data-filter="*">{{App::isLocale('vi') ? 'Tất Cả' : 'Show All'}}</div>
-                        <div class="button" data-filter=".household-sort">{{App::isLocale('vi') ? 'Đối Tác Đầu Tư' : 'Investment Partner'}}</div>
-                        <div class="button" data-filter=".research-sort">{{App::isLocale('vi') ? 'Nhà Cung Cấp' : 'Supplier'}}</div> 
-                        <div class="button" data-filter=".school-sort">{{App::isLocale('vi') ? 'Nhà Thầu' : 'Contractors'}}</div> 
+                    <div id="filters" class="button-group">
+                        <div class="iso-choose">
+                            <div class="button is-checked" data-filter="*">{{App::isLocale('vi') ? 'Tất Cả' : 'Show All'}}</div>
+                            @foreach($categories as $category)
+                                <div class="button" data-filter=".{{$category->slug}}">{{App::isLocale('vi') ? $category->name : $category->en_name}}</div>
+                            @endforeach
+                        </div>
                     </div>
+                    <div class="grid">
+                        {{-- houseHold --}}
+                        @foreach($partners as $partner)
+                            @foreach($partner->categories as $categori)
+                                <div class="element-item post-transition metal project-iso {{$categori->slug}}" data-category="{{$categori->slug}}">
+                                    <img src="{{$partner->image->path ?? ''}}" alt="" title=""/>
+                                </div>
+                            @endforeach
+                        @endforeach
+
+
+                    </div>
+
                 </div>
-                <div class="grid">
-                    {{-- houseHold --}}
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/21.png" alt="" title=""/>
+            @else
+                <div class="container">
+
+                    <div id="filters" class="button-group">
+                        <div class="iso-choose">
+                            <div class="button is-checked" data-filter="*">{{App::isLocale('vi') ? 'Tất Cả' : 'Show All'}}</div>
+                            <div class="button" data-filter=".household-sort">{{App::isLocale('vi') ? 'Đối Tác Đầu Tư' : 'Investment Partner'}}</div>
+                            <div class="button" data-filter=".research-sort">{{App::isLocale('vi') ? 'Nhà Cung Cấp' : 'Supplier'}}</div>
+                            <div class="button" data-filter=".school-sort">{{App::isLocale('vi') ? 'Nhà Thầu' : 'Contractors'}}</div>
+                        </div>
                     </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/5.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/4.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/3.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/6.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/7.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/8.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/9.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/10.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/11.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/12.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
-                        <img src="/site/system/partner3/13.png" alt="" title=""/>
+                    <div class="grid">
+                        {{-- houseHold --}}
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/21.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/5.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/4.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/3.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/6.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/7.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/8.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/9.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/10.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/11.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/12.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso household-sort" data-category="household-sort">
+                            <img src="/site/system/partner3/13.png" alt="" title=""/>
+                        </div>
+
+                        {{-- research-sort --}}
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/6.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/7.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/8.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/9.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/10.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/11.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/12.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/13.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/14.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/15.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/16.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
+                            <img src="/site/system/partner4/17.png" alt="" title=""/>
+                        </div>
+
+                        {{-- school-sort --}}
+                        <div class="element-item post-transition metal project-iso school-sort" data-category="school-sort">
+                            <img src="/site/system/partner4/1.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso school-sort" data-category="school-sort">
+                            <img src="/site/system/partner4/2.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso school-sort" data-category="school-sort">
+                            <img src="/site/system/partner4/3.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso school-sort" data-category="school-sort">
+                            <img src="/site/system/partner4/4.png" alt="" title=""/>
+                        </div>
+                        <div class="element-item post-transition metal project-iso school-sort" data-category="school-sort">
+                            <img src="/site/system/partner4/5.png" alt="" title=""/>
+                        </div>
+
                     </div>
 
-                    {{-- research-sort --}}
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/6.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/7.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/8.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/9.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/10.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/11.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/12.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/13.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/14.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/15.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/16.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso research-sort" data-category="research-sort">
-                        <img src="/site/system/partner4/17.png" alt="" title=""/>
-                    </div>
-
-                    {{-- school-sort --}}
-                    <div class="element-item post-transition metal project-iso school-sort" data-category="school-sort">
-                        <img src="/site/system/partner4/1.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso school-sort" data-category="school-sort">
-                        <img src="/site/system/partner4/2.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso school-sort" data-category="school-sort">
-                        <img src="/site/system/partner4/3.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso school-sort" data-category="school-sort">
-                        <img src="/site/system/partner4/4.png" alt="" title=""/>
-                    </div>
-                    <div class="element-item post-transition metal project-iso school-sort" data-category="school-sort">
-                        <img src="/site/system/partner4/5.png" alt="" title=""/>
-                    </div>
-                   
                 </div>
+            @endif
 
-            </div>
         </section>
 
     </section>

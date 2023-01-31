@@ -3,9 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Helpers\FileHelper;
-use App\Model\Admin\PartnerCategory;
 use Illuminate\Http\Request;
-use App\Model\Admin\Partner as ThisModel;
+use App\Model\Admin\InvestmentMarket as ThisModel;
 use Illuminate\Support\Facades\Response;
 use Yajra\DataTables\DataTables;
 use Illuminate\Support\Facades\Validator;
@@ -15,16 +14,14 @@ use Rap2hpoutre\FastExcel\FastExcel;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 
-class PartnerController extends Controller
+class InvestmentMarketController extends Controller
 {
-    protected $view = 'admin.partners';
-    protected $route = 'partners';
+    protected $view = 'admin.investment_market';
+    protected $route = 'investment-market';
 
     public function index()
     {
-        $cates = PartnerCategory::query()->get();
-
-        return view($this->view.'.index', compact('cates'));
+        return view($this->view.'.index');
     }
 
     // Hàm lấy data cho bảng list
@@ -64,9 +61,7 @@ class PartnerController extends Controller
 
     public function create()
     {
-        $cates = PartnerCategory::query()->get();
-
-        return view($this->view.'.create', compact('cates'));
+        return view($this->view.'.create');
     }
 
     public function store(Request $request)
@@ -75,10 +70,13 @@ class PartnerController extends Controller
             $request->all(),
             [
                 'name' => 'required|max:255',
-                'code' => 'required|max:255|unique:origins,code',
+                'en_name' => 'required|max:255',
+                'code' => 'required|max:255|unique:investment_markets,code',
                 'is_show' => 'required',
-                'cate_ids' => 'required|array',
-                'image' => 'nullable|file|mimes:jpg,jpeg,png|max:3000',
+                'des' => 'required',
+                'en_des' => 'required',
+                'order' => 'required',
+                'image' => 'required|file|mimes:jpg,jpeg,png|max:3000',
 
             ]
         );
@@ -96,16 +94,18 @@ class PartnerController extends Controller
             $object = new ThisModel();
 
             $object->name = $request->name;
+            $object->en_name = $request->en_name;
+            $object->en_des = $request->en_des;
             $object->code = $request->code;
             $object->is_show = $request->is_show;
+            $object->des = $request->des;
+            $object->order = $request->order;
             $object->created_by = auth()->id();
             $object->save();
 
             if($request->image) {
-                FileHelper::uploadFile($request->image, 'partners', $object->id, \App\Model\Admin\Partner::class, 'image',8);
+                FileHelper::uploadFile($request->image, 'investment_markets', $object->id, \App\Model\Admin\InvestmentMarket::class, 'image',10);
             }
-
-            $object->categories()->syncWithoutDetaching($request->cate_ids);
 
             DB::commit();
             $json->success = true;
@@ -133,9 +133,12 @@ class PartnerController extends Controller
             $request->all(),
             [
                 'name' => 'required|max:255',
-                'code' => 'required|unique:origins,code,' . $id,
+                'en_name' => 'required|max:255',
+                'code' => 'required|unique:investment_markets,code,' . $id,
                 'is_show' => 'required',
-                'cate_ids' => 'required|array',
+                'des' => 'required',
+                'en_des' => 'required',
+                'order' => 'required',
                 'image' => 'nullable|file|mimes:jpg,jpeg,png|max:3000',
 
             ]
@@ -154,18 +157,19 @@ class PartnerController extends Controller
             $object = ThisModel::findOrFail($id);
             $object->code = $request->code;
             $object->name = $request->name;
+            $object->en_name = $request->en_name;
+            $object->en_des = $request->en_des;
             $object->is_show = $request->is_show;
-
+            $object->des = $request->des;
+            $object->order = $request->order;
             $object->save();
 
             if($request->image) {
                 if($object->image) {
-                    FileHelper::forceDeleteFiles($object->image->id, $object->id, \App\Model\Admin\Partner::class, 'image');
+                    FileHelper::forceDeleteFiles($object->image->id, $object->id, \App\Model\Admin\InvestmentMarket::class, 'image');
                 }
-                FileHelper::uploadFile($request->image, 'manufacturers', $object->id, ThisModel::class, 'image',8);
+                FileHelper::uploadFile($request->image, 'investment_markets', $object->id, \App\Model\Admin\InvestmentMarket::class, 'image',10);
             }
-
-            $object->categories()->syncWithoutDetaching($request->cate_ids);
 
             DB::commit();
             $json->success = true;
