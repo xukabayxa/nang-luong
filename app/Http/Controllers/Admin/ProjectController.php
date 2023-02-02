@@ -165,19 +165,12 @@ class ProjectController extends Controller
     public function delete($id)
     {
         $object = ThisModel::findOrFail($id);
-        if (!$object->canDelete()) {
-            $message = array(
-                "message" => "Không thể khóa!",
-                "alert-type" => "warning"
-            );
-        } else {
-            $object->status = 0;
-            $object->save();
-            $message = array(
-                "message" => "Thao tác thành công!",
-                "alert-type" => "success"
-            );
-        }
+        $object->delete();
+        $message = array(
+            "message" => "Thao tác thành công!",
+            "alert-type" => "success"
+        );
+
         return redirect()->route($this->route.'.index')->with($message);
     }
 
