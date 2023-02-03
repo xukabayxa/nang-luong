@@ -24,7 +24,7 @@
                             <div class="d-table w-100 h-100">
                                 <div class="d-table-cell align-middle">
                                     <div class="row justify-content-center text-center position-relative">
-                                        <div class="col-md-10 col-lg-10 col-xl-10 z-index-3 position-relative main-banner-area ">
+                                        <div class="col-md-12 col-lg-12 col-xl-12 z-index-3 position-relative main-banner-area ">
                                     <span class="banner-icon d-none d-lg-block">
                                         <i class="fa-solid fa-solar-panel"></i>
                                     </span>
@@ -32,7 +32,6 @@
                                             </p>
                                             <span class="card-border position-relative"></span>
                                             <h1 class="text-white display-19 display-sm-15 display-md-13 display-lg-4 display-xxl-3 mb-4 text-shadow uk-animation-slide-bottom">{{App::isLocale('vi') ? $config->slogan_vi : $config->slogan_en}}</h1>
-
                                         </div>
                                     </div>
                                 </div>

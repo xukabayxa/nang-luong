@@ -10294,6 +10294,7 @@ section .about-5 {
 }
 .sec-title.half h2 {
     color: #07294d;
+    font-size: 32px;
 }
 .sec-title span:before {
     position: absolute;
@@ -11404,6 +11405,7 @@ ul li {
   .button.is-checked {
     background-color: #fff;
     color: #1cbfaa !important;
+    border-bottom: 1px solid !important;
   }
 
   .button.is-checked {

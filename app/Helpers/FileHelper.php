@@ -74,9 +74,7 @@ class FileHelper
             } else if ($type == 2) {
                 Image::make($file)->resize(120, 120)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
             } else if ($type == 3) {
-                $file->move($destinationPath, $destinationFile);
-
-//                Image::make($file)->resize(473, 358)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
+               Image::make($file)->resize(473, 358)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
             } else if ($type == 5) {
                 Image::make($file)->resize(115, 75)->save($destinationPath . DIRECTORY_SEPARATOR . $destinationFile);
             } else if ($type == 6) {
