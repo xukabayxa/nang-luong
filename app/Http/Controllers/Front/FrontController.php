@@ -62,10 +62,12 @@ class FrontController extends Controller
     public function resizeImage()
     {
         foreach (Post::orderBy('created_at','desc')->get() as $post) {
-            $img = URL::to('/') .$post->image->path;
-            Image::make($img)->resize(800, 600)->save();
-            echo 'Thành công: ' . $post->image->path;
-            echo "<br>";
+            if(isset($post->image)) {
+                $img = URL::to('/') .$post->image->path;
+                Image::make($img)->resize(800, 600)->save();
+                echo 'Thành công: ' . $post->image->path;
+                echo "<br>";
+            }
         }
     }
 
