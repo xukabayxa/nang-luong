@@ -4,11 +4,11 @@
 @endsection
 
 @section('page_title')
-Quản lý danh sách cửa hàng
+Quản lý danh sách chi nhánh
 @endsection
 
 @section('title')
-    Quản lý danh sách cửa hàng
+    Quản lý danh sách chi nhánh
 @endsection
 
 @section('buttons')

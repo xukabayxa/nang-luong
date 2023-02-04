@@ -1,15 +1,15 @@
 @extends('layouts.main')
 
 @section('title')
-    Thêm mới cửa hàng
+    Thêm mới chi nhánh
 @endsection
 
 @section('page_title')
-    Thêm mới cửa hàng
+    Thêm mới chi nhánh
 @endsection
 
 @section('title')
-    Thêm mới cửa hàng
+    Thêm mới chi nhánh
 @endsection
 @section('content')
     <div ng-controller="CreateStore" ng-cloak>

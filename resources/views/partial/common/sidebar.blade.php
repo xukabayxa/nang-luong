@@ -132,7 +132,7 @@
                     <li class="nav-item">
                         <a href="{{ route('stores.index') }}" class="nav-link {{ Request::routeIs('stores.index') ? 'active' : '' }}">
                             <i class="far fas  fa-angle-right nav-icon"></i>
-                            <p>Danh mục cửa hàng chi nhánh</p>
+                            <p>Danh mục chi nhánh</p>
                         </a>
                     </li>
 

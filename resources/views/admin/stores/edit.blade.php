@@ -1,15 +1,15 @@
 @extends('layouts.main')
 
 @section('title')
-    Chỉnh sửa cửa hàng
+    Chỉnh sửa chi nhánh
 @endsection
 
 @section('page_title')
-    Chỉnh sửa cửa hàng
+    Chỉnh sửa chi nhánh
 @endsection
 
 @section('title')
-    Chỉnh sửa cửa hàng
+    Chỉnh sửa chi nhánh
 @endsection
 @section('content')
     <div ng-controller="EditStore" ng-cloak>
@@ -45,8 +45,7 @@
                         if (response.success) {
                             $('#edit-store').modal('hide');
                             toastr.success(response.message);
-                            datatable.ajax.reload();
-                            $scope.errors = null;
+                            location.reload();
                         } else {
                             $scope.errors = response.errors;
                             toastr.warning(response.message);

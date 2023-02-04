@@ -15,12 +15,12 @@
                         <div>
                             <div class="textwidget">
                                 <div class="sec-title pb-4">
-                                    <h3 class="text-white h5 text-uppercase">{{$store->name}}</h3>
+                                    <h3 class="text-white h5 text-uppercase">{{App::isLocale('vi') ? $store->name : $store->en_name }}</h3>
                                 </div>
                                 <ul class="list-unstyled mb-0">
-                                    <li class="mb-3"><i class="far fa-envelope text-primary display-25 mr-3"></i>{{ $store->email }}</li>
-                                    <li class="mb-3"><i class="fas fa-mobile-alt text-primary display-25 mr-3"></i>{{ $store->hotline }}</li>
-                                    <li><i class="fas fa-map-marker-alt text-primary display-25 mr-3"></i>{{$store->address}}</li>
+                                    <li class="mb-3"><i class="far fa-envelope text-primary display-25 mr-3"></i>{{App::isLocale('vi') ? $store->email : $store->en_email }}</li>
+                                    <li class="mb-3"><i class="fas fa-mobile-alt text-primary display-25 mr-3"></i>{{App::isLocale('vi') ? $store->hotline : $store->en_hotline }}</li>
+                                    <li><i class="fas fa-map-marker-alt text-primary display-25 mr-3"></i>{{App::isLocale('vi') ? $store->address : $store->en_address }}</li>
                                 </ul>
                             </div>
                         </div>

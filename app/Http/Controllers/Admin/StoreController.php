@@ -70,8 +70,8 @@ class StoreController extends Controller
             [
                 'name' => 'required',
                 'address' => 'required',
-                'province_id' => 'required',
-                'lat' => 'required',
+//                'province_id' => 'required',
+//                'lat' => 'required',
 
             ]
         );
@@ -90,11 +90,16 @@ class StoreController extends Controller
             $object = new ThisModel();
 
             $object->name = $request->name;
+            $object->en_name = $request->en_name;
             $object->address = $request->address;
+            $object->en_address = $request->en_address;
             $object->province_id = $request->province_id;
             $object->des = $request->des;
             $object->phone = $request->phone;
+            $object->en_phone = $request->en_phone;
             $object->email = $request->email;
+            $object->en_email = $request->en_email;
+            $object->en_hotline = $request->en_hotline;
             $object->hotline = $request->hotline;
             $object->lat = $request->lat;
             $object->long = $request->long;
@@ -134,8 +139,8 @@ class StoreController extends Controller
             [
                 'name' => 'required',
                 'address' => 'required',
-                'province_id' => 'required',
-                'lat' => 'required',
+//                'province_id' => 'required',
+//                'lat' => 'required',
             ]
         );
         $json = new stdClass();
@@ -151,12 +156,17 @@ class StoreController extends Controller
         try {
             $object = ThisModel::findOrFail($id);
             $object->name = $request->name;
+            $object->en_name = $request->en_name;
             $object->address = $request->address;
+            $object->en_address = $request->en_address;
             $object->province_id = $request->province_id;
             $object->des = $request->des;
             $object->email = $request->email;
+            $object->en_email = $request->en_email;
             $object->phone = $request->phone;
+            $object->en_phone = $request->en_phone;
             $object->hotline = $request->hotline;
+            $object->en_hotline = $request->en_hotline;
             $object->lat = $request->lat;
             $object->long = $request->long;
 
