@@ -95,7 +95,7 @@
                             <div class="content">
                                 <h4>Đường dây nóng</h4><ol>
                                     <p>Hà Nội (Trụ sở chính): +8494 866 8889</p>
-                                    <p>Tp. Hồ Chí Minh: +8494 866 8889</p>
+                                    <p>TP Hồ Chí Minh: +8494 866 8889</p>
                                 </ol>
                             </div>
                             </div>
@@ -141,7 +141,7 @@
                                     <ol>
                                         <p>Trụ sở chính: Tòa nhà IDMC, số 21 phố Duy Tân, quận Cầu Giấy, thành phố Hà Nội, Việt Nam.
                                         </p>
-                                        <p>Văn phòng tại TPHCM: Số 146 Nguyễn Văn Hưởng, F18, phường Thảo Điền, thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
+                                        <p>Văn phòng tại TP HCM: Số 146 Nguyễn Văn Hưởng, F18, phường Thảo Điền, thành phố Thủ Đức, thành phố Hồ Chí Minh, Việt Nam
                                         </p>
                                     </ol>
                                 </div>
