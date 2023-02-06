@@ -7,10 +7,10 @@
     <header class="lte-page-header lte-parallax-yes header-insight">
         <div class="container">
             <div class="lte-header-h1-wrapper">
-                <h1 class="header">{{App::isLocale('vi') ? 'Tin chuyên ngành' : 'Insights'}}</h1>
+                <h1 class="header">{{App::isLocale('vi') ? 'Thông tin chuyên ngành' : 'Insights'}}</h1>
             </div>  
 
-        @include('site.partials.bread_crumb2', ['vi' => 'Tin chuyên ngành', 'en' => 'Insights'])
+        @include('site.partials.bread_crumb2', ['vi' => 'Thông tin chuyên ngành', 'en' => 'Insights'])
 
         </div>
     </header>

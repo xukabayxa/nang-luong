@@ -73,7 +73,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
                         <div class="about-image-wrap">
-                            <img width="1024" height="1024" src="{{ asset('site/img/facts_01.jpeg') }}" class="attachment-large size-large" alt="" loading="lazy" srcset="{{ asset('site/img/facts_01.jpeg') }}" sizes="(max-width: 1024px) 100vw, 1024px">
+                            <img width="1024" height="1024" src="{{ asset('site/img/about_img_rt.jpeg') }}" class="attachment-large size-large" alt="" loading="lazy" srcset="{{ asset('site/img/about_img_rt.jpeg') }}" sizes="(max-width: 1024px) 100vw, 1024px">
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12">

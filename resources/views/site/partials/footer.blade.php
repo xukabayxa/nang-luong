@@ -29,23 +29,6 @@
 
             @endforeach
 
-            <div class="col-lg-2 mt-3 wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
-                <div>
-                    <div class="textwidget">
-                        <div class="sec-title pb-4">
-                            <h3 class="text-white h5">Links</h3>
-                        </div>
-                        <ul class="footer-link mb-0 list-unstyled">
-                            <li class="mb-3"><a href="{{route('front.home_page')}}">Home</a></li>
-                            <li class="mb-3"><a href="{{route('front.about')}}">About</a></li>
-                            <li class="mb-3"><a href="{{route('front.globalReach')}}">Our global presence</a></li>
-                            <li class="mb-3"><a href="{{route('front.insights')}}">Insights</a></li>
-                            <li><a href="{{route('front.contact')}}">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
     <div class="border-top border-color-light-white z-index-9 position-relative wow fadeIn" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeIn;">
@@ -61,8 +44,8 @@
                     <ul class="social-icon-style1 pull-right">
                         <li><a target="_blank" href="{{$config->facebook}}"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a target="_blank" href="{{$config->twitter}}"><i class="fab fa-twitter"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fab fa-youtube"></i></a></li>
-                        <li><a target="_blank" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a target="_blank" href="{{$config->youtube}}"><i class="fab fa-youtube"></i></a></li>
+                        <li><a target="_blank" href="{{$config->linkedin}}"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
             </div>

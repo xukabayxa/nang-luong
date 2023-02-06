@@ -39,6 +39,7 @@
                 instagram: this.instagram,
                 youtube: this.youtube,
                 facebook: this.facebook,
+                linkedin: this.linkedin,
                 hotline: this.hotline,
                 address_company: this.address_company,
                 address_center_insurance: this.address_center_insurance,

@@ -139,9 +139,9 @@
                                 <div class="content">
                                     <h4>Địa chỉ</h4>
                                     <ol>
-                                        <p>Trụ sở chính: Tòa nhà IDMC, số 21 phố Duy Tân, quận Cầu Giấy, thành phố Hà Nội, Việt Nam.
+                                        <p>Trụ sở chính: Tòa nhà IDMC, số 21 phố Duy Tân, quận Cầu Giấy, thành phố Hà Nội, Việt Nam.
                                         </p>
-                                        <p>Văn phòng tại TPHCM: Số 146 Nguyễn Văn Hưởng, F18, phường Thảo Điền, thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
+                                        <p>Văn phòng tại TPHCM: Số 146 Nguyễn Văn Hưởng, F18, phường Thảo Điền, thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam
                                         </p>
                                     </ol>
                                 </div>

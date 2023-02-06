@@ -80,6 +80,10 @@
                     <input class="form-control" ng-model="form.youtube" type="text">
                 </div>
 				<div class="form-group custom-group">
+                    <label class="form-label">Linkedin</label>
+                    <input class="form-control" ng-model="form.linkedin" type="text">
+                </div>
+				<div class="form-group custom-group">
 					<label class="form-label required-label">Link map</label>
 					<input class="form-control" ng-model="form.location" type="text">
 					<span class="invalid-feedback d-block" role="alert">

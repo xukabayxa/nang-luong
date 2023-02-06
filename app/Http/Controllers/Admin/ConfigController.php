@@ -36,6 +36,10 @@ class ConfigController extends Controller
 				'zalo' => 'required|max:10',
 				'email' => 'required|email',
 				'facebook' => 'nullable|max:255',
+				'youtube' => 'nullable|max:255',
+				'twitter' => 'nullable|max:255',
+				'linkedin' => 'nullable|max:255',
+				'instagram' => 'nullable|max:255',
 				'image' => 'nullable|file|mimes:jpg,jpeg,png|max:3000',
                 'favicon' => 'nullable|file|mimes:jpg,jpeg,png|max:3000',
                 'location' => 'nullable|max:255',
@@ -66,6 +70,7 @@ class ConfigController extends Controller
 			$object->facebook = $request->facebook;
 			$object->twitter = $request->twitter;
 			$object->instagram = $request->instagram;
+			$object->linkedin = $request->linkedin;
 			$object->youtube = $request->youtube;
 			$object->location = $request->location;
 			$object->introduction = $request->introduction;
