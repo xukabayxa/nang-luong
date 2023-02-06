@@ -202,7 +202,7 @@
                                 @if(App::isLocale('vi'))
                                     Giới thiệu <br> Chung
                                 @else
-                                    About US
+                                    General information
                                 @endif</h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
                                href="{{route('front.about')}}">
@@ -233,7 +233,7 @@
                                 @if(App::isLocale('vi'))
                                     BỘ MÁY <br> QUẢN LÝ
                                 @else
-                                    OUR TEAM
+                                    Management apparatus
                                 @endif
                             </h4>
                             <a class="uk-button uk-color-primary uk-style-secondary-b "
