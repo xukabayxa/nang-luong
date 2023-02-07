@@ -16,7 +16,7 @@
     <section class="contact" id="contact" ng-controller="Contact">
         <div class="box-container">
             <div class="contact-info">
-                <h3 style="color: #fff">@if(App::isLocale('en')) Contact info @else Thông tin liên hệ: @endif</h3>
+                <h3 style="color: #fff">@if(App::isLocale('en')) Contact info @else Thông tin liên hệ: @endif</h3>
                 <div class="box-container">
                     @if(App::isLocale('en'))
                     <div class="info-item">
