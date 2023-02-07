@@ -29,7 +29,7 @@
                             </div>
                             <div class="content">
                                 <h4>Hotline</h4><ol>
-                                    <p>Ha noi (Head Office): +8494 866 8889</p>
+                                    <p>Ha Noi (Head Office): +8494 866 8889</p>
                                     <p>HCM: +8494 866 8889</p>
                                 </ol>
                             </div>
@@ -74,9 +74,9 @@
                                 <div class="content">
                                     <h4>Address</h4>
                                     <ol>
-                                        <p>Ha noi (Head Office): IDMC Building, No. 21 Duy Tan street, Cau Giay, Hanoi
+                                        <p>Ha Noi (Head Office): IDMC Building, No. 21 Duy Tan street, Cau Giay, Ha Noi
                                         </p>
-                                        <p>Ho Chi Minh City: 146 Nguyen Van Huong, F18, Thao Dien, District 2, Ho Chi Minh City
+                                        <p>Ho Chi Minh City: 146 Nguyen Van Huong, F18, Thao Dien, Thu Duc City, Ho Chi Minh City
                                         </p>
                                     </ol>
                                 </div>

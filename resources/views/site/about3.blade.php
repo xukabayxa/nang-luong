@@ -15,9 +15,9 @@
         <header class="lte-page-header lte-parallax-yes header-ourteam">
             <div class="container">
                 <div class="lte-header-h1-wrapper">
-                    <h1 class="header">{{App::isLocale('vi') ? 'Bộ máy quản lý' : 'Management apparatus'}}</h1>
+                    <h1 class="header">{{App::isLocale('vi') ? 'Bộ máy quản lý' : 'Management Apparatus'}}</h1>
                 </div>
-                @include('site.partials.bread_crumb2', ['vi' => 'Bộ máy quản lý', 'en' => 'Management apparatus'])
+                @include('site.partials.bread_crumb2', ['vi' => 'Bộ máy quản lý', 'en' => 'Management Apparatus'])
 
             </div>
         </header>

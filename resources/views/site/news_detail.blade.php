@@ -10,7 +10,7 @@
             <div class="lte-header-h1-wrapper">
                 <h1 class="header"> {{$post->name}} </h1>
             </div>  
-        @include('site.partials.bread_crumb2', ['vi' => 'Tin chuyên ngành', 'en' => 'Insights'])
+        @include('site.partials.bread_crumb2', ['vi' => 'Thông tin chuyên ngành', 'en' => 'Insights'])
         </div>
     </header>
 

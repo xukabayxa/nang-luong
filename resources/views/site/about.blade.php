@@ -11,9 +11,9 @@
         <header class="lte-page-header lte-parallax-yes header-about">
             <div class="container">
                 <div class="lte-header-h1-wrapper">
-                    <h1 class="header">@if(App::isLocale('en')) General information @else Về chúng tôi @endif</h1>
+                    <h1 class="header">@if(App::isLocale('en')) General Information @else Về chúng tôi @endif</h1>
                 </div>
-                @include('site.partials.bread_crumb2', ['vi' => 'Về chúng tôi', 'en' => 'General information'])
+                @include('site.partials.bread_crumb2', ['vi' => 'Về chúng tôi', 'en' => 'General Information'])
 
             </div>
         </header>
