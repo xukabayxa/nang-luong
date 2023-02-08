@@ -53,7 +53,7 @@
                                 </p> <br/>
                                 <p class="list">Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách
                                 </p> <br/>
-                                <p class="list">Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toán bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.
+                                <p class="list">Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toàn bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.
                                 </p>
                                 @endif
                             </div>
@@ -86,7 +86,7 @@
                             <div class="about-intro">
                                 <div class="lte-heading">
                                     <div class="lte-heading-content">
-                                        <h4 class="lte-header">@if(App::isLocale('en')) RT Energy was built and developed with the orientation to become a pioneer in the field of renewable energy and green industrial parks in the ASEAN before 2025, and in the world before 2030.@else RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong
+                                        <h4 class="lte-header" style="text-align: justify">@if(App::isLocale('en')) RT Energy was built and developed with the orientation to become a pioneer in the field of renewable energy and green industrial parks in the ASEAN before 2025, and in the world before 2030.@else RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong
                                             trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh ở khu vực ASEAN trong năm 2025, và trên thế giới trước năm 2030 @endif
                                         </h4>
                                     </div>
