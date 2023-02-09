@@ -153,13 +153,31 @@
                             <div class="uk-accordion-content">
                                 <ul>
                                     <li>
-                                        <a href="{{route('front.about')}}">{{trans('message.who_we_are')}}</a>
+                                        <a href="{{route('front.about')}}">
+                                            @if(App::isLocale('vi'))
+                                                Giới thiệu <br> Chung
+                                            @else
+                                                General information
+                                            @endif
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about3')}}">{{trans('message.our_team')}}</a>
+                                        <a href="{{route('front.about3')}}">
+                                            @if(App::isLocale('vi'))
+                                                BỘ MÁY <br> QUẢN LÝ
+                                            @else
+                                                Management apparatus
+                                            @endif
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="{{route('front.about4')}}">{{trans('message.strategic_partnership')}}</a>
+                                        <a href="{{route('front.about4')}}">
+                                            @if(App::isLocale('vi'))
+                                                Đối tác <br> Chiến lược
+                                            @else
+                                                Strategic partnership
+                                            @endif
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -167,31 +185,6 @@
                     </ul>
                 </li>
                 <li>
-{{--                    <a class="uk-visible@m has-dropdown" href="#offcanvas-" uk-toggle>--}}
-{{--                        {{trans('message.our_investments_menu')}} <span class="uk-icon uk-preserve uk-margin-xsmall-left"--}}
-{{--                                              uk-icon="icon: arrow-down; ratio: 0.6"></span>--}}
-{{--                    </a>--}}
-
-{{--                    <ul uk-accordion class="uk-hidden@m">--}}
-{{--                        <li>--}}
-{{--                            <a class="uk-accordion-title" href="#" style="color: #fff"> {{trans('message.our_investments_menu')}}<span--}}
-{{--                                    class="uk-icon uk-preserve uk-margin-xsmall-left"--}}
-{{--                                    uk-icon="icon: arrow-down; ratio: 0.6"></span></a>--}}
-{{--                            <div class="uk-accordion-content">--}}
-{{--                                <ul>--}}
-{{--                                    <li>--}}
-{{--                                        <a href="{{route('front.investments1')}}">{{trans('message.renewable_energy')}}</a>--}}
-{{--                                    </li>--}}
-{{--                                    <li>--}}
-{{--                                        <a href="{{route('front.investments3')}}">{{trans('message.sustainable_infrastructure')}}</a>--}}
-{{--                                    </li>--}}
-{{--                                    <li>--}}
-{{--                                        <a href="{{route('front.investments2')}}"> {{trans('message.future_solution')}}</a>--}}
-{{--                                    </li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
 
                     <a class="uk-visible@m " href="{{route('front.investments1')}}">
                         {{trans('message.our_investments_menu')}} </a>

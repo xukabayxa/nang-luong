@@ -33,13 +33,13 @@
                                 </p>
                                 <h5 style="margin-bottom: 15px"><b>Realizing that strategy, we aim at the following goal:</b></h5>
                                 <div>
-                                <p>Develop, and invest in the construction and operation of renewable energy projects
+                                <p>Develop, and invest in the construction and operation of renewable energy projects.
                                 </p> <br/>
-                                <p>Increase investment scale in renewable energy projects from 100MW in 2021 to 500MW in 2023. Towards an investment portfolio with 1GW of renewable energy before or in 2025
+                                <p>Increase investment scale in renewable energy projects from 100MW in 2021 to 500MW in 2023. Towards an investment portfolio with 1GW of renewable energy before or in 2025.
                                 </p> <br/>
-                                <p>Research, apply, and invest in projects using new technologies such as Renewable Energy combined with battery storage / combined hydrogen production, .... when such technologies are financially and policy feasible
+                                <p>Research, apply, and invest in projects using new technologies such as Renewable Energy combined with battery storage / combined hydrogen production, .... when such technologies are financially and policy feasible.
                                 </p> <br/>
-                                <p>Develop, invest in the construction and operation of green industrial zone projects – in which all electricity used for industrial production is renewable energy
+                                <p>Develop, invest in the construction and operation of green industrial zone projects – in which all electricity used for industrial production is renewable energy.
                                 </p>
                                 @else
                                 <p>Năng lượng tái tạo và năng lượng mới là định hướng tương lai và là xu thế không thể chối cãi của ngành năng lượng nói chung. RT Energy gắn tương lai của mình với tiến trình thúc đẩy và phát triển năng lượng tái tạo – hướng tới một thế giới xanh, sạch, và bền vững cho các thế hệ tương lai.
@@ -47,11 +47,11 @@
                                 <h5 style="margin-bottom: 15px"><b>Hiện thực hóa chiến lược đó, chúng tôi nhắm tới những mục tiêu sau đây:
                                 </b></h5>
                                 <div>
-                                <p class="list">Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo
+                                <p class="list">Phát triển, đầu tư xây dựng, và vận hành các dự án năng lượng tái tạo.
                                 </p> <br/>
-                                <p class="list">Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025
+                                <p class="list">Tăng quy mô danh mục dự án năng lượng tái tạo đầu tư từ 100MW năm 2021 lên 500MW trong năm 2023. Hướng tới danh mục đầu tư với quy mô 1GW năng lượng tái tạo trước hoặc trong năm 2025.
                                 </p> <br/>
-                                <p class="list">Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách
+                                <p class="list">Nghiên cứu, ứng dụng và đầu tư vào các dự án sử dụng công nghệ mới như Năng lượng tái tạo kết hợp pin lưu trữ/ kết hợp sản xuất hydrogen, …. khi các công nghệ đó khả thi về mặt tài chính và chính sách.
                                 </p> <br/>
                                 <p class="list">Phát triển, đầu tư xây dựng và vận hành các dự án khu công nghiệp xanh – trong đó toàn bộ nguồn điện sử dụng cho sản xuất công nghiệp là năng lượng tái tạo.
                                 </p>
@@ -87,7 +87,7 @@
                                 <div class="lte-heading">
                                     <div class="lte-heading-content">
                                         <h4 class="lte-header" style="text-align: justify">@if(App::isLocale('en')) RT Energy was built and developed with the orientation to become a pioneer in the field of renewable energy and green industrial parks in the ASEAN before 2025, and in the world before 2030.@else RT Energy được xây dựng và phát triển với định hướng trở thành tập đoàn tiên phong
-                                            trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh ở khu vực ASEAN trong năm 2025, và trên thế giới trước năm 2030 @endif
+                                            trong lĩnh vực năng lượng tái tạo và khu công nghiệp xanh ở khu vực ASEAN trong năm 2025, và trên thế giới trước năm 2030. @endif
                                         </h4>
                                     </div>
                                 </div>

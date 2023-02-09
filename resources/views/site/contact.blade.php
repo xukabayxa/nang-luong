@@ -109,7 +109,7 @@
                                 </div>
                                 <div class="content">
                                     <h4>Giờ làm việc</h4>
-                                    <ol><p>Thứ 2 - Thứ 6 : 8h - 18h</p><p>Thứ 7 : 9h - 12h</p></ol>
+                                    <ol><p>Thứ 2 - Thứ 6 : 8h - 18h</p><p>Thứ 7 : 8h - 12h</p></ol>
                                 </div>
                             </div>
                             <div class="info-item">

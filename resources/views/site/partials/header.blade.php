@@ -25,14 +25,6 @@
         {{--        phần menu header--}}
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@m">
-                <li class="menu-item-4 ">
-                    <a class="uk-visible@m uk-m4 a-menu-top" href="{{route('front.home_page')}}">
-                        {{trans('message.home_page')}} </a>
-
-                    <a class="uk-hidden@m " href="{{route('front.home_page')}}" style="color: #fff">
-                        {{trans('message.home_page')}}</a>
-                </li>
-
                 <li class="menu-item-1">
                     <a class="uk-visible@m has-dropdown uk-m1 a-menu-top" href="#offcanvas-1" uk-toggle
                     >
@@ -42,7 +34,7 @@
 
                     <ul uk-accordion class="uk-hidden@m">
                         <li>
-                            <a class="uk-accordion-title" style="color: #fff" href="#">{{trans('message.about_menu')}}
+                            <a class="uk-accordion-title" style="color: #fff" href="#">1111
                                 <span
                                     class="uk-icon uk-preserve uk-margin-xsmall-left"
                                     uk-icon="icon: arrow-down-dark; ratio: 0.6"></span></a>
@@ -50,15 +42,32 @@
                                 <ul>
                                     <li>
                                         <a href="{{route('front.about')}}"
-                                           style="color: #fff !important">{{trans('message.who_we_are')}}</a>
+                                           style="color: #fff !important">
+                                           @if(App::isLocale('vi'))
+                                                Giới thiệu <br> Chung
+                                            @else
+                                                General information
+                                            @endif</h4>
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="{{route('front.about3')}}"
-                                           style="color: #fff !important">{{trans('message.our_team')}}</a>
+                                           style="color: #fff !important">
+                                            @if(App::isLocale('vi'))
+                                                BỘ MÁY <br> QUẢN LÝ
+                                            @else
+                                                Management apparatus
+                                            @endif
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="{{route('front.about4')}}" style="color: #fff !important">
-                                            {{trans('message.our_partner')}}</a>
+                                            @if(App::isLocale('vi'))
+                                                Đối tác <br> Chiến lược
+                                            @else
+                                                Strategic partnership
+                                            @endif</h4>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -163,7 +172,6 @@
                 </div>
             </div>
             <a href="#offcanvas" uk-toggle="" class="uk-hidden@m uk-hamburger uk-flex uk-flex-middle">
-{{--                <span class="uk-style-secondary-m">Menu</span>--}}
                 <span class="uk-navbar-toggle uk-navbar-toggle-icon">
 						<svg width="25" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
 							<rect y="9" width="25" height="1"></rect>
@@ -173,7 +181,6 @@
 					</span>
             </a>
         </div>
-        {{--        end --}}
     </nav>
 </div>
 
