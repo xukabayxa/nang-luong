@@ -17,10 +17,10 @@
 <header class="lte-page-header lte-parallax-yes header-global">
     <div class="container">
         <div class="lte-header-h1-wrapper">
-            <h1 class="header">{{App::isLocale('vi') ? 'Thị trường nước ngoài' : 'Our Global'}}</h1>
+            <h1 class="header">{{App::isLocale('vi') ? 'Thị trường nước ngoài' : 'Our Global Presence'}}</h1>
         </div>
 
-       @include('site.partials.bread_crumb2', ['vi' => 'Thị trường nước ngoài', 'en' => 'Our Global'])
+       @include('site.partials.bread_crumb2', ['vi' => 'Thị trường nước ngoài', 'en' => 'Our Global Presence'])
 
     </div>
 </header>

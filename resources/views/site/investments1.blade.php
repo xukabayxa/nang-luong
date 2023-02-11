@@ -10,10 +10,10 @@
         <header class="lte-page-header lte-parallax-yes header-investment">
             <div class="container">
                 <div class="lte-header-h1-wrapper">
-                    <h1 class="header">{{App::isLocale('vi') ? 'Danh mục đầu tư' : 'Invesments'}}</h1>
+                    <h1 class="header">{{App::isLocale('vi') ? 'Danh mục đầu tư' : 'Our Invesments'}}</h1>
                 </div>
 
-               @include('site.partials.bread_crumb2', ['vi' => 'Danh mục đầu tư', 'en' => 'Invesments'])
+               @include('site.partials.bread_crumb2', ['vi' => 'Danh mục đầu tư', 'en' => 'Our Invesments'])
 
             </div>
         </header>
@@ -21,7 +21,7 @@
 			<div class="container">
                 <div id="filters" class="button-group">
                     <div class="iso-choose">
-                        <div class="button is-checked" data-filter="*">{{App::isLocale('vi') ? 'Tất Cả' : 'Show All'}}</div>
+                        <div class="button is-checked" data-filter="*" id="show_all">{{App::isLocale('vi') ? 'Tất Cả' : 'Show All'}}</div>
                         @foreach($categories as $category)
                         <div class="button" data-filter=".{{$category->slug}}">{{App::isLocale('vi') ? $category->name : $category->en_name}}</div>
                     @endforeach

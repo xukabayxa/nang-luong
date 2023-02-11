@@ -34,7 +34,7 @@
 
                     <!-- Portfolio Template -->
                     <div class="dt-sc-portfolio-sorting type2" style="background: #0A2C48">
-                        <a href="#" class="active-sort" title="All" data-filter=".all-sort">{{App::isLocale('vi') ? 'TẤT CẢ' : 'ALL'}}</a>
+                        <a href="#" id="show_all" class="active-sort" title="All" data-filter=".all-sort">{{App::isLocale('vi') ? 'TẤT CẢ' : 'ALL'}}</a>
                         <a href='#' data-filter=".household-sort">
                             {{App::isLocale('vi') ? 'ĐỐI TÁC ĐẦU TƯ' : 'INVESTMENT PARTNER'}} </a>
                         <a href='#' data-filter=".research-sort">

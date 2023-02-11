@@ -150,7 +150,7 @@
                     </div>
                     @endif
                     <form class="contact-form" id="contactUs-Form">
-                        <h3>{{App::isLocale('vi') ? 'Gửi tin nhắn' : 'Send message'}}</h3>
+                        <h3>{{App::isLocale('vi') ? 'Gửi tin nhắn' : 'Send us a message'}}</h3>
                         <input type="text" name="name" class="box" id="name" placeholder="{{App::isLocale('vi') ? 'Họ tên' : 'Name'}}" ng-model="contact.user_name" required="" value="">
                         <span class="invalid-feedback d-block" role="alert" ng-if="errors && errors.user_name" >
                             <strong><% errors.user_name[0] %></strong>

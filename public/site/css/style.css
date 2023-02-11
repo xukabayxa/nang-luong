@@ -11884,3 +11884,8 @@ ul.des-agent {
     list-style:disc outside none;
     display:list-item;
 }
+ @media all and (max-width: 767px) {
+     #show_all {
+         display: none;
+     }
+ }
