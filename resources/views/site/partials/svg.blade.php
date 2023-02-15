@@ -155,27 +155,27 @@
                                     <li>
                                         <a href="{{route('front.about')}}">
                                             @if(App::isLocale('vi'))
-                                                Giới thiệu <br> Chung
+                                                Giới thiệu <br> chung
                                             @else
-                                                General information
+                                                General Information
                                             @endif
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{route('front.about3')}}">
                                             @if(App::isLocale('vi'))
-                                                BỘ MÁY <br> QUẢN LÝ
+                                                Bộ máy <br> quản lý
                                             @else
-                                                Management apparatus
+                                                Management Apparatus
                                             @endif
                                         </a>
                                     </li>
                                     <li>
                                         <a href="{{route('front.about4')}}">
                                             @if(App::isLocale('vi'))
-                                                Đối tác <br> Chiến lược
+                                                Đối tác <br> chiến lược
                                             @else
-                                                Strategic partnership
+                                                Strategic Partnership
                                             @endif
                                         </a>
                                     </li>

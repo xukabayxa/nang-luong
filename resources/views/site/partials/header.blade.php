@@ -46,7 +46,7 @@
                                            @if(App::isLocale('vi'))
                                                 Giới thiệu <br> Chung
                                             @else
-                                                General information
+                                                General Information
                                             @endif</h4>
                                         </a>
                                     </li>
@@ -56,7 +56,7 @@
                                             @if(App::isLocale('vi'))
                                                 BỘ MÁY <br> QUẢN LÝ
                                             @else
-                                                Management apparatus
+                                                Management Apparatus
                                             @endif
                                         </a>
                                     </li>
@@ -65,7 +65,7 @@
                                             @if(App::isLocale('vi'))
                                                 Đối tác <br> Chiến lược
                                             @else
-                                                Strategic partnership
+                                                Strategic Partnership
                                             @endif</h4>
                                         </a>
                                     </li>
