@@ -153,7 +153,7 @@
                                 </div>
                                 <div class="teacher-image">
                                     <a href="teacher-details.html">
-                                        <img src="https://rtenergygroup.com/site/img/a2.png" width="373" height="503" alt="teacher">
+                                        <img src="https://rtenergygroup.com/site/img/anh_tuan.png" width="373" height="503" alt="teacher">
                                     </a>
                                 </div>
                             </div>
@@ -236,7 +236,7 @@
                                 </div>
                                 <div class="teacher-image">
                                     <a href="teacher-details.html">
-                                        <img src="https://rtenergygroup.com/site/img/a1.jpg" width="373" height="503" alt="teacher">
+                                        <img src="https://rtenergygroup.com/site/img/duc_dung.jpg" width="373" height="503" alt="teacher">
                                     </a>
                                 </div>
                             </div>
