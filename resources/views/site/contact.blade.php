@@ -76,7 +76,7 @@
                                     <ol>
                                         <p>Ha Noi (Head Office): IDMC Building, No. 21 Duy Tan street, Cau Giay, Ha Noi
                                         </p>
-                                        <p>Ho Chi Minh City: 146 Nguyen Van Huong, F18, Thao Dien, Thu Duc City, Ho Chi Minh City
+                                        <p>Ho Chi Minh City: 146 Nguyen Van Huong, F18, Thao Dien, Thu Duc, Ho Chi Minh, Vietnam
                                         </p>
                                     </ol>
                                 </div>
@@ -139,9 +139,9 @@
                                 <div class="content">
                                     <h4>Địa chỉ</h4>
                                     <ol>
-                                        <p>Trụ sở chính: Tòa nhà IDMC, số 21 phố Duy Tân, quận Cầu Giấy, thành phố Hà Nội, Việt Nam.
+                                        <p>Trụ sở chính: Tòa nhà IDMC, số 21 phố Duy Tân, quận Cầu Giấy, thành phố Hà Nội, Việt Nam
                                         </p>
-                                        <p>Văn phòng tại TP HCM: Số 146 Nguyễn Văn Hưởng, F18, phường Thảo Điền, thành phố Thủ Đức, thành phố Hồ Chí Minh, Việt Nam.
+                                        <p>Văn phòng tại TP HCM: Số 146 Nguyễn Văn Hưởng, F18, phường Thảo Điền, thành phố Thủ Đức, thành phố Hồ Chí Minh, Việt Nam
                                         </p>
                                     </ol>
                                 </div>
